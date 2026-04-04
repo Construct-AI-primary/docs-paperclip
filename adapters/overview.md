@@ -23,7 +23,7 @@ When a heartbeat fires, Paperclip:
 | [Gemini Local](/adapters/gemini-local) | `gemini_local` | Runs Gemini CLI locally |
 | OpenCode Local | `opencode_local` | Runs OpenCode CLI locally (multi-provider `provider/model`) |
 | Cursor Local | `cursor` | Runs Cursor CLI locally |
-| OpenClaw Gateway | `openclaw_gateway` | Sends wake payloads to an OpenClaw gateway |
+| [OpenClaw Gateway](/adapters/openclaw-gateway) | `openclaw_gateway` | AI orchestration with HITL and multi-agent coordination |
 | Hermes Local | `hermes_local` | Runs Hermes Agent CLI locally |
 | Pi Local | `pi_local` | Runs Pi CLI locally |
 | [Process](/adapters/process) | `process` | Executes arbitrary shell commands |
