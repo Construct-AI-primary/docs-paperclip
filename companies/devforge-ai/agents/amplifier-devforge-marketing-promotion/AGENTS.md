@@ -1,7 +1,7 @@
 ---
 name: amplifier-devforge-marketing-promotion
 slug: amplifier-devforge-marketing-promotion
-reportsTo: null
+reportsTo: nexus-devforge-ceo
 skills:
   - amplifier-devforge-marketing-promotion
 ---

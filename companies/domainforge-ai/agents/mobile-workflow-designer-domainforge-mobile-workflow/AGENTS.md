@@ -1,7 +1,7 @@
 ---
 name: mobile-workflow-designer-domainforge-mobile-workflow
 slug: mobile-workflow-designer-domainforge-mobile-workflow
-reportsTo: null
+reportsTo: orion-domainforge-ceo
 skills:
   - mobile-workflow-designer-domainforge-mobile-workflow
 ---

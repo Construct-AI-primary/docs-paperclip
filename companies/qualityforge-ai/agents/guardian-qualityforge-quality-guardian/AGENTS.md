@@ -1,7 +1,7 @@
 ---
 name: guardian-qualityforge-quality-guardian
 slug: guardian-qualityforge-quality-guardian
-reportsTo: null
+reportsTo: apex-qualityforge-ceo
 skills:
   - guardian-qualityforge-quality-guardian
 ---

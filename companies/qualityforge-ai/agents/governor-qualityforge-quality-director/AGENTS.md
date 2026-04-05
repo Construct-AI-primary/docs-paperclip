@@ -1,7 +1,7 @@
 ---
 name: governor-qualityforge-quality-director
 slug: governor-qualityforge-quality-director
-reportsTo: null
+reportsTo: apex-qualityforge-ceo
 skills:
   - governor-qualityforge-quality-director
 ---

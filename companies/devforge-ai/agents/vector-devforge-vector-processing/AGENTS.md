@@ -1,7 +1,7 @@
 ---
 name: vector-devforge-vector-processing
 slug: vector-devforge-vector-processing
-reportsTo: null
+reportsTo: nexus-devforge-ceo
 skills:
   - vector-devforge-vector-processing
 ---

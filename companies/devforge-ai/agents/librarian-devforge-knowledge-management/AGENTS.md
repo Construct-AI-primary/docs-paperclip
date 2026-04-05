@@ -1,7 +1,7 @@
 ---
 name: librarian-devforge-knowledge-management
 slug: librarian-devforge-knowledge-management
-reportsTo: null
+reportsTo: nexus-devforge-ceo
 skills:
   - librarian-devforge-knowledge-management
 ---

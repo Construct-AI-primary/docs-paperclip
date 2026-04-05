@@ -1,7 +1,7 @@
 ---
 name: loadtester-qualityforge-scalability-testing
 slug: loadtester-qualityforge-scalability-testing
-reportsTo: null
+reportsTo: apex-qualityforge-ceo
 skills:
   - loadtester-qualityforge-scalability-testing
 ---

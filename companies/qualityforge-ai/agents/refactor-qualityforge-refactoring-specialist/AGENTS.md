@@ -1,7 +1,7 @@
 ---
 name: refactor-qualityforge-refactoring-specialist
 slug: refactor-qualityforge-refactoring-specialist
-reportsTo: null
+reportsTo: apex-qualityforge-ceo
 skills:
   - refactor-qualityforge-refactoring-specialist
 ---

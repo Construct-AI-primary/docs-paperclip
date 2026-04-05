@@ -1,7 +1,7 @@
 ---
 name: debugger-qualityforge-debugger-specialist
 slug: debugger-qualityforge-debugger-specialist
-reportsTo: null
+reportsTo: apex-qualityforge-ceo
 skills:
   - debugger-qualityforge-debugger-specialist
 ---

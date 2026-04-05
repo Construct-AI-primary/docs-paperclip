@@ -1,23 +1,27 @@
 ---
 name: Growth
-description: Market growth, partnerships, and sales
+description: Marketing, sales, brand development, and customer acquisition
 slug: growth
-manager: ../agents/nexus-devforge-ceo/AGENTS.md
+manager: ../../agents/nexus-devforge-ceo/AGENTS.md
 tags:
   - team
   - growth
+  - marketing
 ---
 
 # Growth Team
 
-Drives market growth, partnerships, sales, and marketing initiatives.
+Drives revenue through marketing, sales, brand development, partnership management, commerce operations, market analysis, and competitive intelligence.
 
 ## Members
 
-- ambassador-devforge-brand-representation
-- ally-devforge-partnership-management
 - amplifier-devforge-marketing-promotion
-- catalystx-devforge-market-disruption
+- brandforge-devforge-brand-development
+- ally-devforge-partnership-management
 - dealmaker-devforge-sales-negotiation
 - merchant-devforge-commerce-operations
+- analyst-devforge-market-analysis
+- scout-devforge-competitive-intelligence
 - voyager-devforge-market-exploration
+- catalystx-devforge-market-disruption
+- navigator-devforge-data-discovery

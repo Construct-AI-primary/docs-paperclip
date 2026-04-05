@@ -1,24 +1,27 @@
 ---
 name: Data
-description: Data management, processing, and analytics
+description: Data engineering, analytics, ML pipelines, and data quality
 slug: data
-manager: ../agents/navigator-devforge-data-discovery/AGENTS.md
+manager: ../../agents/nexus-devforge-ceo/AGENTS.md
 tags:
   - team
   - data
+  - analytics
 ---
 
 # Data Team
 
-Manages data infrastructure, processing pipelines, and data-driven insights.
+Manages data transformation, processing, streaming, synthetic data generation, vector processing, schema management, quality monitoring, and predictive analytics.
 
 ## Members
 
-- navigator-devforge-data-discovery
 - dataforge-devforge-data-transformation
-- schema-devforge-data-schema-management
-- pulse-devforge-realtime-monitoring
-- sentinel-devforge-data-quality-monitoring
 - stream-devforge-data-streaming
-- cloudops-devforge-cloud-operations
+- schema-devforge-data-schema-management
+- sentinel-devforge-data-quality-monitoring
+- sentinelx-devforge-advanced-monitoring
+- synth-devforge-synthetic-data
+- vector-devforge-vector-processing
+- oracle-devforge-predictive-analytics
 - ledgerai-devforge-financial-data
+- promptsmith-devforge-prompt-engineering

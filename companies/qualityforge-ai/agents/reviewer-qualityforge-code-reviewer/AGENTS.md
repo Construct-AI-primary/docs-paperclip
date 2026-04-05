@@ -1,7 +1,7 @@
 ---
 name: reviewer-qualityforge-code-reviewer
 slug: reviewer-qualityforge-code-reviewer
-reportsTo: null
+reportsTo: apex-qualityforge-ceo
 skills:
   - reviewer-qualityforge-code-reviewer
 ---

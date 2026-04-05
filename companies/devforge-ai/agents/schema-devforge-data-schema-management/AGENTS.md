@@ -1,7 +1,7 @@
 ---
 name: schema-devforge-data-schema-management
 slug: schema-devforge-data-schema-management
-reportsTo: null
+reportsTo: nexus-devforge-ceo
 skills:
   - schema-devforge-data-schema-management
 ---

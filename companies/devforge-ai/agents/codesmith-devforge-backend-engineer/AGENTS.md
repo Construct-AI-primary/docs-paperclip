@@ -1,7 +1,7 @@
 ---
 name: codesmith-devforge-backend-engineer
 slug: codesmith-devforge-backend-engineer
-reportsTo: null
+reportsTo: nexus-devforge-ceo
 skills:
   - codesmith-devforge-backend-engineer
 ---

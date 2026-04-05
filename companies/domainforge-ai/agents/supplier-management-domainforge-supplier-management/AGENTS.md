@@ -1,7 +1,7 @@
 ---
 name: supplier-management-domainforge-supplier-management
 slug: supplier-management-domainforge-supplier-management
-reportsTo: null
+reportsTo: orion-domainforge-ceo
 skills:
   - supplier-management-domainforge-supplier-management
 ---

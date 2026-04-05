@@ -1,7 +1,7 @@
 ---
 name: sentinelx-devforge-advanced-monitoring
 slug: sentinelx-devforge-advanced-monitoring
-reportsTo: null
+reportsTo: nexus-devforge-ceo
 skills:
   - sentinelx-devforge-advanced-monitoring
 ---

@@ -1,25 +1,23 @@
 ---
 name: Strategy
-description: Strategic planning, market analysis, and business intelligence
+description: Strategic planning, decision making, direction setting, and orchestration
 slug: strategy
-manager: ../agents/nexus-devforge-ceo/AGENTS.md
+manager: ../../agents/nexus-devforge-ceo/AGENTS.md
 tags:
   - team
   - strategy
+  - planning
 ---
 
 # Strategy Team
 
-Provides strategic planning, market analysis, and competitive intelligence.
+Defines organizational strategy, makes key decisions, sets direction, identifies opportunities, and orchestrates cross-functional execution.
 
 ## Members
 
-- strategos-devforge-strategic-planning
 - council-devforge-strategic-decision-making
+- strategos-devforge-strategic-planning
 - compass-devforge-direction-setting
-- analyst-devforge-market-analysis
-- scout-devforge-competitive-intelligence
-- oracle-devforge-predictive-analytics
 - pathfinder-devforge-opportunity-identification
-- librarian-devforge-knowledge-management
-- mentor-devforge-team-development
+- orion-devforge-orchestrator
+- ledger-devforge-financial-oversight

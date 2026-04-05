@@ -1,7 +1,7 @@
 ---
 name: validator-qualityforge-validator
 slug: validator-qualityforge-validator
-reportsTo: null
+reportsTo: apex-qualityforge-ceo
 skills:
   - validator-qualityforge-validator
 ---

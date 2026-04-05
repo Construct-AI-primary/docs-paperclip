@@ -1,7 +1,7 @@
 ---
 name: council-devforge-strategic-decision-making
 slug: council-devforge-strategic-decision-making
-reportsTo: null
+reportsTo: nexus-devforge-ceo
 skills:
   - council-devforge-strategic-decision-making
 ---

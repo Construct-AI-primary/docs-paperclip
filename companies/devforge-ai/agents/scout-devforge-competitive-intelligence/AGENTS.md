@@ -1,7 +1,7 @@
 ---
 name: scout-devforge-competitive-intelligence
 slug: scout-devforge-competitive-intelligence
-reportsTo: null
+reportsTo: nexus-devforge-ceo
 skills:
   - scout-devforge-competitive-intelligence
 ---

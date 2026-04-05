@@ -1,23 +1,24 @@
 ---
 name: Product
-description: Product management, development, and customer experience
+description: Product innovation, design, roadmap, and launches
 slug: product
-manager: ../agents/nexus-devforge-ceo/AGENTS.md
+manager: ../../agents/nexus-devforge-ceo/AGENTS.md
 tags:
   - team
   - product
+  - innovation
 ---
 
 # Product Team
 
-Manages product strategy, development, and customer experience.
+Drives product strategy, innovation, roadmap planning, feature mapping, launches, and storytelling.
 
 ## Members
 
-- atlas-devforge-product-mapping
-- brandforge-devforge-brand-development
-- cartographer-devforge-product-roadmapping
 - catalyst-devforge-product-innovation
-- concierge-devforge-customer-experience
+- cartographer-devforge-product-roadmapping
+- atlas-devforge-product-mapping
 - nova-devforge-product-launches
 - storycraft-devforge-product-storytelling
+- concierge-devforge-customer-experience
+- insight-devforge-business-intelligence

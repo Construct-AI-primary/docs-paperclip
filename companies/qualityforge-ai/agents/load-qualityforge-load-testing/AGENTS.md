@@ -1,7 +1,7 @@
 ---
 name: load-qualityforge-load-testing
 slug: load-qualityforge-load-testing
-reportsTo: null
+reportsTo: apex-qualityforge-ceo
 skills:
   - load-qualityforge-load-testing
 ---

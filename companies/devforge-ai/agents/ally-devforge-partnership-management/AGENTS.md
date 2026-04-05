@@ -1,7 +1,7 @@
 ---
 name: ally-devforge-partnership-management
 slug: ally-devforge-partnership-management
-reportsTo: null
+reportsTo: nexus-devforge-ceo
 skills:
   - ally-devforge-partnership-management
 ---

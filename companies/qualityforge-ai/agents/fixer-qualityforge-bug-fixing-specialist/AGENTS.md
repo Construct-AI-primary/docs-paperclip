@@ -1,7 +1,7 @@
 ---
 name: fixer-qualityforge-bug-fixing-specialist
 slug: fixer-qualityforge-bug-fixing-specialist
-reportsTo: null
+reportsTo: apex-qualityforge-ceo
 skills:
   - fixer-qualityforge-bug-fixing-specialist
 ---

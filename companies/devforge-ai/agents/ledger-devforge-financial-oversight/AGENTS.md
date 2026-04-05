@@ -1,7 +1,7 @@
 ---
 name: ledger-devforge-financial-oversight
 slug: ledger-devforge-financial-oversight
-reportsTo: null
+reportsTo: nexus-devforge-ceo
 skills:
   - ledger-devforge-financial-oversight
 ---

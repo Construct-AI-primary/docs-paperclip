@@ -1,7 +1,7 @@
 ---
 name: tracer-qualityforge-execution-tracer
 slug: tracer-qualityforge-execution-tracer
-reportsTo: null
+reportsTo: apex-qualityforge-ceo
 skills:
   - tracer-qualityforge-execution-tracer
 ---

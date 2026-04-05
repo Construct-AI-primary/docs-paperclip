@@ -1,7 +1,7 @@
 ---
 name: integration-qualityforge-integration-testing
 slug: integration-qualityforge-integration-testing
-reportsTo: null
+reportsTo: apex-qualityforge-ceo
 skills:
   - integration-qualityforge-integration-testing
 ---

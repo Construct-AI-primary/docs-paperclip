@@ -1,29 +1,25 @@
 ---
 name: Governance
-description: Governance, strategy, legal compliance, and mobile workflow teams
+description: Strategic planning, governance standards, finance, compliance, and quality oversight
 slug: governance
-manager: ../agents/orion-domainforge-ceo/AGENTS.md
+manager: ../../agents/orion-domainforge-ceo/AGENTS.md
 tags:
   - team
   - governance
-  - strategy
+  - compliance
 ---
 
 # Governance Team
 
-Team responsible for strategic planning, governance standards, legal compliance, and mobile workflow design.
+Provides strategic planning, governance, financial management, compliance, safety, and quality oversight across all domains.
 
-## Divisions
+## Members
 
-### Strategy
-- strategos-domainforge-strategic-planning
-
-### Governance Standards
 - council-domainforge-governance-standards
-
-### Legal Compliance
+- strategos-domainforge-strategic-planning
+- finance-domainforge-finance-cost-management
+- financial-compliance-domainforge-financial-compliance
+- safety-domainforge-safety-risk-management
+- quality-assurance-domainforge-quality-assurance
+- quality-control-domainforge-quality-control
 - legal-domainforge-legal-regulatory-compliance
-
-### Mobile Workflows
-- mobile-workflow-designer-domainforge-mobile-workflow
-- mobile-testing-domainforge-mobile-testing

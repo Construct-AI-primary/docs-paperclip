@@ -1,7 +1,7 @@
 ---
 name: maintainer-qualityforge-code-maintainer
 slug: maintainer-qualityforge-code-maintainer
-reportsTo: null
+reportsTo: apex-qualityforge-ceo
 skills:
   - maintainer-qualityforge-code-maintainer
 ---

@@ -1,7 +1,7 @@
 ---
 name: atlas-devforge-product-mapping
 slug: atlas-devforge-product-mapping
-reportsTo: null
+reportsTo: nexus-devforge-ceo
 skills:
   - atlas-devforge-product-mapping
 ---

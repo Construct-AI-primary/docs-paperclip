@@ -1,7 +1,7 @@
 ---
 name: reviewer-devforge-code-review-qa
 slug: reviewer-devforge-code-review-qa
-reportsTo: null
+reportsTo: nexus-devforge-ceo
 skills:
   - reviewer-devforge-code-review-qa
 ---

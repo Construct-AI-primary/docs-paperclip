@@ -1,20 +1,21 @@
 ---
 name: Executive
-description: Executive leadership and oversight
+description: CEO, leadership, brand representation, and organizational management
 slug: executive
-manager: ../agents/nexus-devforge-ceo/AGENTS.md
+manager: ../../agents/nexus-devforge-ceo/AGENTS.md
 tags:
   - team
   - executive
+  - leadership
 ---
 
 # Executive Team
 
-Provides executive leadership and strategic oversight for all DevForge operations.
+Provides executive leadership, organizational direction, and team development.
 
 ## Members
 
 - nexus-devforge-ceo
-- orion-devforge-orchestrator
-- insight-devforge-business-intelligence
-- ledger-devforge-financial-oversight
+- ambassador-devforge-brand-representation
+- mentor-devforge-team-development
+- librarian-devforge-knowledge-management

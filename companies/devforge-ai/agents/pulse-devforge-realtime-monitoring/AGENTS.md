@@ -1,7 +1,7 @@
 ---
 name: pulse-devforge-realtime-monitoring
 slug: pulse-devforge-realtime-monitoring
-reportsTo: null
+reportsTo: nexus-devforge-ceo
 skills:
   - pulse-devforge-realtime-monitoring
 ---

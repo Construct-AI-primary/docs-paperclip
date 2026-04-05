@@ -1,7 +1,7 @@
 ---
 name: mentor-devforge-team-development
 slug: mentor-devforge-team-development
-reportsTo: null
+reportsTo: nexus-devforge-ceo
 skills:
   - mentor-devforge-team-development
 ---

@@ -1,7 +1,7 @@
 ---
 name: voyager-devforge-market-exploration
 slug: voyager-devforge-market-exploration
-reportsTo: null
+reportsTo: nexus-devforge-ceo
 skills:
   - voyager-devforge-market-exploration
 ---

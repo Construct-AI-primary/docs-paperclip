@@ -1,7 +1,7 @@
 ---
 name: coverage-qualityforge-test-coverage-analyst
 slug: coverage-qualityforge-test-coverage-analyst
-reportsTo: null
+reportsTo: apex-qualityforge-ceo
 skills:
   - coverage-qualityforge-test-coverage-analyst
 ---

@@ -1,7 +1,7 @@
 ---
 name: compatibility-qualityforge-compatibility-testing
 slug: compatibility-qualityforge-compatibility-testing
-reportsTo: null
+reportsTo: apex-qualityforge-ceo
 skills:
   - compatibility-qualityforge-compatibility-testing
 ---

@@ -1,7 +1,7 @@
 ---
 name: forge-devforge-system-architecture
 slug: forge-devforge-system-architecture
-reportsTo: null
+reportsTo: nexus-devforge-ceo
 skills:
   - forge-devforge-system-architecture
 ---

@@ -1,7 +1,7 @@
 ---
 name: automata-devforge-automation-systems
 slug: automata-devforge-automation-systems
-reportsTo: null
+reportsTo: nexus-devforge-ceo
 skills:
   - automata-devforge-automation-systems
 ---

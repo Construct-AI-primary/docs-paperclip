@@ -1,7 +1,7 @@
 ---
 name: probe-qualityforge-prompt-testing
 slug: probe-qualityforge-prompt-testing
-reportsTo: null
+reportsTo: apex-qualityforge-ceo
 skills:
   - probe-qualityforge-prompt-testing
 ---

@@ -1,7 +1,7 @@
 ---
 name: dealmaker-devforge-sales-negotiation
 slug: dealmaker-devforge-sales-negotiation
-reportsTo: null
+reportsTo: nexus-devforge-ceo
 skills:
   - dealmaker-devforge-sales-negotiation
 ---
