@@ -1,7 +1,7 @@
 ---
 name: insight-devforge-business-intelligence
 slug: insight-devforge-business-intelligence
-reportsTo: nexus-devforge-ceo
+reportsTo: null
 skills:
   - insight-devforge-business-intelligence
 ---

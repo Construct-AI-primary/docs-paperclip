@@ -1,7 +1,7 @@
 ---
 name: ledgerai-devforge-financial-data
 slug: ledgerai-devforge-financial-data
-reportsTo: nexus-devforge-ceo
+reportsTo: null
 skills:
   - ledgerai-devforge-financial-data
 ---

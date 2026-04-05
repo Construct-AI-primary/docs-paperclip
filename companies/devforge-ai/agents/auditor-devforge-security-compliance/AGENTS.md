@@ -1,7 +1,7 @@
 ---
 name: auditor-devforge-security-compliance
 slug: auditor-devforge-security-compliance
-reportsTo: nexus-devforge-ceo
+reportsTo: null
 skills:
   - auditor-devforge-security-compliance
 ---

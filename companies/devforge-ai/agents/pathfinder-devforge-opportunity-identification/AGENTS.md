@@ -1,7 +1,7 @@
 ---
 name: pathfinder-devforge-opportunity-identification
 slug: pathfinder-devforge-opportunity-identification
-reportsTo: nexus-devforge-ceo
+reportsTo: null
 skills:
   - pathfinder-devforge-opportunity-identification
 ---

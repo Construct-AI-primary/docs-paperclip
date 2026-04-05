@@ -1,7 +1,7 @@
 ---
 name: strategos-devforge-strategic-planning
 slug: strategos-devforge-strategic-planning
-reportsTo: nexus-devforge-ceo
+reportsTo: null
 skills:
   - strategos-devforge-strategic-planning
 ---

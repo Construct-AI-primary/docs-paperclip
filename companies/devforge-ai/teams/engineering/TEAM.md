@@ -1,26 +1,27 @@
 ---
 name: Engineering
-description: Core development, system architecture, automation, and API integration
+description: Core engineering, development, and system architecture
 slug: engineering
-manager: ../../agents/nexus-devforge-ceo/AGENTS.md
+manager: ../agents/nexus-devforge-ceo/AGENTS.md
 tags:
   - team
   - engineering
-  - development
 ---
 
 # Engineering Team
 
-Handles system architecture, core development, code review, bug fixing, automation, cloud operations, and API integration.
+Responsible for core development, system architecture, and technical infrastructure.
 
 ## Members
 
 - forge-devforge-system-architecture
-- devcore-devforge-core-development
 - codesmith-devforge-backend-engineer
-- fixer-devforge-bug-fixing
-- reviewer-devforge-code-review-qa
+- devcore-devforge-core-development
 - automata-devforge-automation-systems
-- cloudops-devforge-cloud-operations
 - interface-devforge-api-integration
+- reviewer-devforge-code-review-qa
+- fixer-devforge-bug-fixing
 - cortex-devforge-ai-reasoning
+- synth-devforge-synthetic-data
+- vector-devforge-vector-processing
+- promptsmith-devforge-prompt-engineering

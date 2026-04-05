@@ -1,7 +1,7 @@
 ---
 name: mobile-testing-domainforge-mobile-testing
 slug: mobile-testing-domainforge-mobile-testing
-reportsTo: orion-domainforge-ceo
+reportsTo: null
 skills:
   - mobile-testing-domainforge-mobile-testing
 ---

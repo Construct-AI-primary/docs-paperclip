@@ -1,7 +1,7 @@
 ---
 name: analyzer-promptforge-prompt-analytics
 slug: analyzer-promptforge-prompt-analytics
-reportsTo: sage-promptforge-chief-architect
+reportsTo: null
 skills:
   - analyzer-promptforge-prompt-analytics
 ---

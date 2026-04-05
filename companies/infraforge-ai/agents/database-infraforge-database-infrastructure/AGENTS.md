@@ -1,7 +1,7 @@
 ---
 name: database-infraforge-database-infrastructure
 slug: database-infraforge-database-infrastructure
-reportsTo: orchestrator-infraforge-ceo
+reportsTo: null
 skills:
   - database-infraforge-database-infrastructure
 ---

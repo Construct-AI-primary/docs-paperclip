@@ -1,7 +1,7 @@
 ---
 name: legal-domainforge-legal-regulatory-compliance
 slug: legal-domainforge-legal-regulatory-compliance
-reportsTo: orion-domainforge-ceo
+reportsTo: null
 skills:
   - legal-domainforge-legal-regulatory-compliance
 ---

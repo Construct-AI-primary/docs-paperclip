@@ -1,7 +1,7 @@
 ---
 name: performance-qualityforge-performance-testing
 slug: performance-qualityforge-performance-testing
-reportsTo: apex-qualityforge-ceo
+reportsTo: null
 skills:
   - performance-qualityforge-performance-testing
 ---

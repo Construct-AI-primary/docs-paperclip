@@ -1,7 +1,7 @@
 ---
 name: guardian-devforge-threat-protection
 slug: guardian-devforge-threat-protection
-reportsTo: nexus-devforge-ceo
+reportsTo: null
 skills:
   - guardian-devforge-threat-protection
 ---

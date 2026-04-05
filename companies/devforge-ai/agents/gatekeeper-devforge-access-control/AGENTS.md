@@ -1,7 +1,7 @@
 ---
 name: gatekeeper-devforge-access-control
 slug: gatekeeper-devforge-access-control
-reportsTo: nexus-devforge-ceo
+reportsTo: null
 skills:
   - gatekeeper-devforge-access-control
 ---

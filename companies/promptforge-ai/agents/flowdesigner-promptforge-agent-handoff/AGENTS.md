@@ -1,7 +1,7 @@
 ---
 name: flowdesigner-promptforge-agent-handoff
 slug: flowdesigner-promptforge-agent-handoff
-reportsTo: sage-promptforge-chief-architect
+reportsTo: null
 skills:
   - flowdesigner-promptforge-agent-handoff
 ---

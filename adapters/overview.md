@@ -20,12 +20,12 @@ When a heartbeat fires, Paperclip:
 |---------|----------|-------------|
 | [Claude Local](/adapters/claude-local) | `claude_local` | Runs Claude Code CLI locally |
 | [Codex Local](/adapters/codex-local) | `codex_local` | Runs OpenAI Codex CLI locally |
-| [Gemini Local](/adapters/gemini-local) | `gemini_local` | Runs Gemini CLI locally |
+| [Gemini Local](/adapters/gemini-local) | `gemini_local` | Runs Gemini CLI locally (experimental — adapter package exists, not yet in stable type enum) |
 | OpenCode Local | `opencode_local` | Runs OpenCode CLI locally (multi-provider `provider/model`) |
-| Cursor Local | `cursor` | Runs Cursor CLI locally |
-| [OpenClaw Gateway](/adapters/openclaw-gateway) | `openclaw_gateway` | AI orchestration with HITL and multi-agent coordination |
-| Hermes Local | `hermes_local` | Runs Hermes Agent CLI locally |
-| Pi Local | `pi_local` | Runs Pi CLI locally |
+| Hermes Local | `hermes_local` | Runs Hermes CLI locally |
+| Cursor | `cursor` | Runs Cursor in background mode |
+| Pi Local | `pi_local` | Runs an embedded Pi agent locally |
+| OpenClaw Gateway | `openclaw_gateway` | Connects to an OpenClaw gateway endpoint |
 | [Process](/adapters/process) | `process` | Executes arbitrary shell commands |
 | [HTTP](/adapters/http) | `http` | Sends webhooks to external agents |
 
@@ -58,7 +58,7 @@ Three registries consume these modules:
 
 ## Choosing an Adapter
 
-- **Need a coding agent?** Use `claude_local`, `codex_local`, `gemini_local`, or `opencode_local`
+- **Need a coding agent?** Use `claude_local`, `codex_local`, `opencode_local`, or `hermes_local`
 - **Need to run a script or command?** Use `process`
 - **Need to call an external service?** Use `http`
 - **Need something custom?** [Create your own adapter](/adapters/creating-an-adapter)

@@ -1,7 +1,7 @@
 ---
 name: catalystx-devforge-market-disruption
 slug: catalystx-devforge-market-disruption
-reportsTo: nexus-devforge-ceo
+reportsTo: null
 skills:
   - catalystx-devforge-market-disruption
 ---

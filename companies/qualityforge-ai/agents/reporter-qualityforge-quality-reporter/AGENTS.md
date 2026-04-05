@@ -1,7 +1,7 @@
 ---
 name: reporter-qualityforge-quality-reporter
 slug: reporter-qualityforge-quality-reporter
-reportsTo: apex-qualityforge-ceo
+reportsTo: null
 skills:
   - reporter-qualityforge-quality-reporter
 ---

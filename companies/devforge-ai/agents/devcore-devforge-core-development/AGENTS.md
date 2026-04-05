@@ -1,7 +1,7 @@
 ---
 name: devcore-devforge-core-development
 slug: devcore-devforge-core-development
-reportsTo: nexus-devforge-ceo
+reportsTo: null
 skills:
   - devcore-devforge-core-development
 ---

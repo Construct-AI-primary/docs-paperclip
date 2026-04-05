@@ -1,7 +1,7 @@
 ---
 name: civil-domainforge-civil-engineering
 slug: civil-domainforge-civil-engineering
-reportsTo: orion-domainforge-ceo
+reportsTo: null
 skills:
   - civil-domainforge-civil-engineering
 ---

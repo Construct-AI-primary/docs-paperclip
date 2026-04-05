@@ -1,7 +1,7 @@
 ---
 name: accessibility-qualityforge-accessibility-testing
 slug: accessibility-qualityforge-accessibility-testing
-reportsTo: apex-qualityforge-ceo
+reportsTo: null
 skills:
   - accessibility-qualityforge-accessibility-testing
 ---

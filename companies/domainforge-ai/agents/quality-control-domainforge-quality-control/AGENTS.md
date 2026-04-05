@@ -1,7 +1,7 @@
 ---
 name: quality-control-domainforge-quality-control
 slug: quality-control-domainforge-quality-control
-reportsTo: orion-domainforge-ceo
+reportsTo: null
 skills:
   - quality-control-domainforge-quality-control
 ---

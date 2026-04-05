@@ -1,7 +1,7 @@
 ---
 name: auditor-qualityforge-quality-auditor
 slug: auditor-qualityforge-quality-auditor
-reportsTo: apex-qualityforge-ceo
+reportsTo: null
 skills:
   - auditor-qualityforge-quality-auditor
 ---

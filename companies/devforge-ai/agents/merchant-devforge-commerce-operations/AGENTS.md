@@ -1,7 +1,7 @@
 ---
 name: merchant-devforge-commerce-operations
 slug: merchant-devforge-commerce-operations
-reportsTo: nexus-devforge-ceo
+reportsTo: null
 skills:
   - merchant-devforge-commerce-operations
 ---

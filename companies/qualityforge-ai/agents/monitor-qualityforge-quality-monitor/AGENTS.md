@@ -1,7 +1,7 @@
 ---
 name: monitor-qualityforge-quality-monitor
 slug: monitor-qualityforge-quality-monitor
-reportsTo: apex-qualityforge-ceo
+reportsTo: null
 skills:
   - monitor-qualityforge-quality-monitor
 ---

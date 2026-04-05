@@ -1,7 +1,7 @@
 ---
 name: contract-administration-domainforge-contract-administration
 slug: contract-administration-domainforge-contract-administration
-reportsTo: orion-domainforge-ceo
+reportsTo: null
 skills:
   - contract-administration-domainforge-contract-administration
 ---

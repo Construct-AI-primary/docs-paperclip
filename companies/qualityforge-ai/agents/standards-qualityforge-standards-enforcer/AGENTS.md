@@ -1,7 +1,7 @@
 ---
 name: standards-qualityforge-standards-enforcer
 slug: standards-qualityforge-standards-enforcer
-reportsTo: apex-qualityforge-ceo
+reportsTo: null
 skills:
   - standards-qualityforge-standards-enforcer
 ---

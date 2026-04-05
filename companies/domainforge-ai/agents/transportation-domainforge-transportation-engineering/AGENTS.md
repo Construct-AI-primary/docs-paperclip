@@ -1,7 +1,7 @@
 ---
 name: transportation-domainforge-transportation-engineering
 slug: transportation-domainforge-transportation-engineering
-reportsTo: orion-domainforge-ceo
+reportsTo: null
 skills:
   - transportation-domainforge-transportation-engineering
 ---

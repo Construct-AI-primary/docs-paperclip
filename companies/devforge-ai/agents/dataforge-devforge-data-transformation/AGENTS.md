@@ -1,7 +1,7 @@
 ---
 name: dataforge-devforge-data-transformation
 slug: dataforge-devforge-data-transformation
-reportsTo: nexus-devforge-ceo
+reportsTo: null
 skills:
   - dataforge-devforge-data-transformation
 ---

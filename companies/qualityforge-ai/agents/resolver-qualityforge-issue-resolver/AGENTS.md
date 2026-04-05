@@ -1,7 +1,7 @@
 ---
 name: resolver-qualityforge-issue-resolver
 slug: resolver-qualityforge-issue-resolver
-reportsTo: apex-qualityforge-ceo
+reportsTo: null
 skills:
   - resolver-qualityforge-issue-resolver
 ---

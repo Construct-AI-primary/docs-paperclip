@@ -1,7 +1,7 @@
 ---
 name: geotechnical-domainforge-geotechnical-engineering
 slug: geotechnical-domainforge-geotechnical-engineering
-reportsTo: orion-domainforge-ceo
+reportsTo: null
 skills:
   - geotechnical-domainforge-geotechnical-engineering
 ---

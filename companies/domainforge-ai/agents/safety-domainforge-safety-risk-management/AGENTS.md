@@ -1,7 +1,7 @@
 ---
 name: safety-domainforge-safety-risk-management
 slug: safety-domainforge-safety-risk-management
-reportsTo: orion-domainforge-ceo
+reportsTo: null
 skills:
   - safety-domainforge-safety-risk-management
 ---

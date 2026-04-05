@@ -1,7 +1,7 @@
 ---
 name: logistics-domainforge-supply-chain
 slug: logistics-domainforge-supply-chain
-reportsTo: orion-domainforge-ceo
+reportsTo: null
 skills:
   - logistics-domainforge-supply-chain
 ---

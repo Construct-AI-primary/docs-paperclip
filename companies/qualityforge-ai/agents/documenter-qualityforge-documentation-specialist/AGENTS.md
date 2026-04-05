@@ -1,7 +1,7 @@
 ---
 name: documenter-qualityforge-documentation-specialist
 slug: documenter-qualityforge-documentation-specialist
-reportsTo: apex-qualityforge-ceo
+reportsTo: null
 skills:
   - documenter-qualityforge-documentation-specialist
 ---

@@ -1,7 +1,7 @@
 ---
 name: analyzer-qualityforge-code-analyzer
 slug: analyzer-qualityforge-code-analyzer
-reportsTo: apex-qualityforge-ceo
+reportsTo: null
 skills:
   - analyzer-qualityforge-code-analyzer
 ---

@@ -1,7 +1,7 @@
 ---
 name: watchtower-devforge-security-oversight
 slug: watchtower-devforge-security-oversight
-reportsTo: nexus-devforge-ceo
+reportsTo: null
 skills:
   - watchtower-devforge-security-oversight
 ---

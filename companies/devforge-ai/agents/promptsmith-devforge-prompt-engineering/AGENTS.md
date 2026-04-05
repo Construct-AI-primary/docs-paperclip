@@ -1,7 +1,7 @@
 ---
 name: promptsmith-devforge-prompt-engineering
 slug: promptsmith-devforge-prompt-engineering
-reportsTo: nexus-devforge-ceo
+reportsTo: null
 skills:
   - promptsmith-devforge-prompt-engineering
 ---

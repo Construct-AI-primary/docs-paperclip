@@ -1,7 +1,7 @@
 ---
 name: compliance-promptforge-regulatory-compliance
 slug: compliance-promptforge-regulatory-compliance
-reportsTo: sage-promptforge-chief-architect
+reportsTo: null
 skills:
   - compliance-promptforge-regulatory-compliance
 ---

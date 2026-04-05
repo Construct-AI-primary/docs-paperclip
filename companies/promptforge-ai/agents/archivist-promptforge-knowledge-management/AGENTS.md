@@ -1,7 +1,7 @@
 ---
 name: archivist-promptforge-knowledge-management
 slug: archivist-promptforge-knowledge-management
-reportsTo: sage-promptforge-chief-architect
+reportsTo: null
 skills:
   - archivist-promptforge-knowledge-management
 ---

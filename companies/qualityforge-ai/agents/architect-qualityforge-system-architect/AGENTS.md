@@ -1,7 +1,7 @@
 ---
 name: architect-qualityforge-system-architect
 slug: architect-qualityforge-system-architect
-reportsTo: apex-qualityforge-ceo
+reportsTo: null
 skills:
   - architect-qualityforge-system-architect
 ---

@@ -1,7 +1,7 @@
 ---
 name: migrator-qualityforge-migration-specialist
 slug: migrator-qualityforge-migration-specialist
-reportsTo: apex-qualityforge-ceo
+reportsTo: null
 skills:
   - migrator-qualityforge-migration-specialist
 ---

@@ -1,7 +1,7 @@
 ---
 name: concierge-devforge-customer-experience
 slug: concierge-devforge-customer-experience
-reportsTo: nexus-devforge-ceo
+reportsTo: null
 skills:
   - concierge-devforge-customer-experience
 ---

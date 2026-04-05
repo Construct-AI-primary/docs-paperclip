@@ -1,7 +1,7 @@
 ---
 name: codesmith-qualityforge-code-architect
 slug: codesmith-qualityforge-code-architect
-reportsTo: apex-qualityforge-ceo
+reportsTo: null
 skills:
   - codesmith-qualityforge-code-architect
 ---

@@ -1,7 +1,7 @@
 ---
 name: fixer-devforge-bug-fixing
 slug: fixer-devforge-bug-fixing
-reportsTo: nexus-devforge-ceo
+reportsTo: null
 skills:
   - fixer-devforge-bug-fixing
 ---

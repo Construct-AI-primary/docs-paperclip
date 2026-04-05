@@ -1,7 +1,7 @@
 ---
 name: synth-devforge-synthetic-data
 slug: synth-devforge-synthetic-data
-reportsTo: nexus-devforge-ceo
+reportsTo: null
 skills:
   - synth-devforge-synthetic-data
 ---

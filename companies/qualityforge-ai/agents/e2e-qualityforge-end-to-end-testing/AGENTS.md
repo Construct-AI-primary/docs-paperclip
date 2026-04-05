@@ -1,7 +1,7 @@
 ---
 name: e2e-qualityforge-end-to-end-testing
 slug: e2e-qualityforge-end-to-end-testing
-reportsTo: apex-qualityforge-ceo
+reportsTo: null
 skills:
   - e2e-qualityforge-end-to-end-testing
 ---

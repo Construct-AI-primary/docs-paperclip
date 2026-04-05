@@ -1,23 +1,22 @@
 ---
 name: Security
-description: Security compliance, threat protection, and access control
+description: Threat protection, access control, and security compliance
 slug: security
-manager: ../../agents/nexus-devforge-ceo/AGENTS.md
+manager: ../agents/nexus-devforge-ceo/AGENTS.md
 tags:
   - team
   - security
-  - compliance
 ---
 
 # Security Team
 
-Ensures system security through compliance auditing, threat protection, access control, knowledge security, and security compliance.
+Provides enterprise security, threat protection, and compliance oversight.
 
 ## Members
 
 - guardian-devforge-threat-protection
 - gatekeeper-devforge-access-control
 - auditor-devforge-security-compliance
-- archivist-devforge-knowledge-security
+- sentinelx-devforge-advanced-monitoring
 - watchtower-devforge-security-oversight
-- pulse-devforge-realtime-monitoring
+- archivist-devforge-knowledge-security

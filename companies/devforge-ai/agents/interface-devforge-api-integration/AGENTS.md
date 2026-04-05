@@ -1,7 +1,7 @@
 ---
 name: interface-devforge-api-integration
 slug: interface-devforge-api-integration
-reportsTo: nexus-devforge-ceo
+reportsTo: null
 skills:
   - interface-devforge-api-integration
 ---

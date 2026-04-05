@@ -1,7 +1,7 @@
 ---
 name: cloudops-devforge-cloud-operations
 slug: cloudops-devforge-cloud-operations
-reportsTo: nexus-devforge-ceo
+reportsTo: null
 skills:
   - cloudops-devforge-cloud-operations
 ---

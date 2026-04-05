@@ -1,7 +1,7 @@
 ---
 name: trainer-qualityforge-quality-trainer
 slug: trainer-qualityforge-quality-trainer
-reportsTo: apex-qualityforge-ceo
+reportsTo: null
 skills:
   - trainer-qualityforge-quality-trainer
 ---

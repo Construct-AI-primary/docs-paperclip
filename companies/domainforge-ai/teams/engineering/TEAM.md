@@ -1,24 +1,30 @@
 ---
 name: Engineering
-description: Multi-discipline engineering expertise — civil, structural, geotechnical, transportation, and construction
+description: Multi-discipline engineering team covering civil, structural, geotechnical, transportation, and construction engineering
 slug: engineering
-manager: ../../agents/orion-domainforge-ceo/AGENTS.md
+manager: ../agents/orion-domainforge-ceo/AGENTS.md
 tags:
   - team
   - engineering
-  - multi-discipline
 ---
 
 # Engineering Team
 
-Multi-discipline engineering capabilities covering civil, structural, geotechnical, transportation, and construction engineering domains.
+Multi-discipline engineering team responsible for comprehensive engineering expertise across civil engineering disciplines.
 
-## Members
+## Divisions
 
+### Civil Engineering
 - civil-domainforge-civil-engineering
-- construction-domainforge-construction-engineering
+
+### Structural Engineering
 - structural-domainforge-structural-engineering
+
+### Geotechnical Engineering
 - geotechnical-domainforge-geotechnical-engineering
+
+### Transportation Engineering
 - transportation-domainforge-transportation-engineering
-- mobile-testing-domainforge-mobile-testing
-- mobile-workflow-designer-domainforge-mobile-workflow
+
+### Construction Engineering
+- construction-domainforge-construction-engineering

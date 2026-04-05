@@ -1,7 +1,7 @@
 ---
 name: enhancer-promptforge-advanced-innovation
 slug: enhancer-promptforge-advanced-innovation
-reportsTo: sage-promptforge-chief-architect
+reportsTo: null
 skills:
   - enhancer-promptforge-advanced-innovation
 ---

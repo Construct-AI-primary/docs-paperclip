@@ -1,7 +1,7 @@
 ---
 name: procurement-strategy-domainforge-procurement-strategy
 slug: procurement-strategy-domainforge-procurement-strategy
-reportsTo: orion-domainforge-ceo
+reportsTo: null
 skills:
   - procurement-strategy-domainforge-procurement-strategy
 ---

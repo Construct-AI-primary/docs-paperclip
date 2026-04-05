@@ -1,7 +1,7 @@
 ---
 name: automation-qualityforge-test-automation
 slug: automation-qualityforge-test-automation
-reportsTo: apex-qualityforge-ceo
+reportsTo: null
 skills:
   - automation-qualityforge-test-automation
 ---

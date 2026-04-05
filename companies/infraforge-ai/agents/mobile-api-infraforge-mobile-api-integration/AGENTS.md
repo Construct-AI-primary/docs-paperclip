@@ -1,7 +1,7 @@
 ---
 name: mobile-api-infraforge-mobile-api-integration
 slug: mobile-api-infraforge-mobile-api-integration
-reportsTo: orchestrator-infraforge-ceo
+reportsTo: null
 skills:
   - mobile-api-infraforge-mobile-api-integration
 ---

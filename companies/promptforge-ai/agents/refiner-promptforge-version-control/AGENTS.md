@@ -1,7 +1,7 @@
 ---
 name: refiner-promptforge-version-control
 slug: refiner-promptforge-version-control
-reportsTo: sage-promptforge-chief-architect
+reportsTo: null
 skills:
   - refiner-promptforge-version-control
 ---

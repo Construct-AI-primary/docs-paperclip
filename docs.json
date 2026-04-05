@@ -10,8 +10,8 @@
   },
   "favicon": "/favicon.svg",
   "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
+    "dark": "/images/logo-dark.svg",
+    "light": "/images/logo-light.svg"
   },
   "topbarLinks": [
     {
@@ -46,9 +46,12 @@
               "guides/board-operator/managing-agents",
               "guides/board-operator/org-structure",
               "guides/board-operator/managing-tasks",
+              "guides/board-operator/execution-workspaces-and-runtime-services",
+              "guides/board-operator/delegation",
               "guides/board-operator/approvals",
               "guides/board-operator/costs-and-budgets",
-              "guides/board-operator/activity-log"
+              "guides/board-operator/activity-log",
+              "guides/board-operator/importing-and-exporting"
             ]
           },
           {
@@ -73,6 +76,7 @@
             "pages": [
               "deploy/overview",
               "deploy/local-development",
+              "deploy/tailscale-private-access",
               "deploy/docker",
               "deploy/deployment-modes",
               "deploy/database",
@@ -92,7 +96,6 @@
               "adapters/overview",
               "adapters/claude-local",
               "adapters/codex-local",
-              "adapters/gemini-local",
               "adapters/process",
               "adapters/http",
               "adapters/creating-an-adapter"

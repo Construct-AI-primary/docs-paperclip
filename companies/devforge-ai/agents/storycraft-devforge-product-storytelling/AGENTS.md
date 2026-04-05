@@ -1,7 +1,7 @@
 ---
 name: storycraft-devforge-product-storytelling
 slug: storycraft-devforge-product-storytelling
-reportsTo: nexus-devforge-ceo
+reportsTo: null
 skills:
   - storycraft-devforge-product-storytelling
 ---

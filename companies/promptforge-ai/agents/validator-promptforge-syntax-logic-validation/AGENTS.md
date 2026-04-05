@@ -1,7 +1,7 @@
 ---
 name: validator-promptforge-syntax-logic-validation
 slug: validator-promptforge-syntax-logic-validation
-reportsTo: sage-promptforge-chief-architect
+reportsTo: null
 skills:
   - validator-promptforge-syntax-logic-validation
 ---

@@ -1,7 +1,7 @@
 ---
 name: orion-devforge-orchestrator
 slug: orion-devforge-orchestrator
-reportsTo: nexus-devforge-ceo
+reportsTo: null
 skills:
   - orion-devforge-orchestrator
 ---

@@ -1,7 +1,7 @@
 ---
 name: specialist-promptforge-domain-adaptation
 slug: specialist-promptforge-domain-adaptation
-reportsTo: sage-promptforge-chief-architect
+reportsTo: null
 skills:
   - specialist-promptforge-domain-adaptation
 ---

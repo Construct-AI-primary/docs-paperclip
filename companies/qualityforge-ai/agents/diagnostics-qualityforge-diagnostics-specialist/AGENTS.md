@@ -1,7 +1,7 @@
 ---
 name: diagnostics-qualityforge-diagnostics-specialist
 slug: diagnostics-qualityforge-diagnostics-specialist
-reportsTo: apex-qualityforge-ceo
+reportsTo: null
 skills:
   - diagnostics-qualityforge-diagnostics-specialist
 ---

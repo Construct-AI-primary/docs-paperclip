@@ -1,7 +1,7 @@
 ---
 name: financial-compliance-domainforge-financial-compliance
 slug: financial-compliance-domainforge-financial-compliance
-reportsTo: orion-domainforge-ceo
+reportsTo: null
 skills:
   - financial-compliance-domainforge-financial-compliance
 ---

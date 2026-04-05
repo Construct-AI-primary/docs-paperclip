@@ -1,7 +1,7 @@
 ---
 name: construction-domainforge-construction-engineering
 slug: construction-domainforge-construction-engineering
-reportsTo: orion-domainforge-ceo
+reportsTo: null
 skills:
   - construction-domainforge-construction-engineering
 ---

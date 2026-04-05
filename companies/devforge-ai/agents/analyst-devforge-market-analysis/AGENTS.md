@@ -1,7 +1,7 @@
 ---
 name: analyst-devforge-market-analysis
 slug: analyst-devforge-market-analysis
-reportsTo: nexus-devforge-ceo
+reportsTo: null
 skills:
   - analyst-devforge-market-analysis
 ---

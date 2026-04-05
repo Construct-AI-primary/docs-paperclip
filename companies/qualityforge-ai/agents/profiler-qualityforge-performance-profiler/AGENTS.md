@@ -1,7 +1,7 @@
 ---
 name: profiler-qualityforge-performance-profiler
 slug: profiler-qualityforge-performance-profiler
-reportsTo: apex-qualityforge-ceo
+reportsTo: null
 skills:
   - profiler-qualityforge-performance-profiler
 ---

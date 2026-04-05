@@ -1,7 +1,7 @@
 ---
 name: brandforge-devforge-brand-development
 slug: brandforge-devforge-brand-development
-reportsTo: nexus-devforge-ceo
+reportsTo: null
 skills:
   - brandforge-devforge-brand-development
 ---

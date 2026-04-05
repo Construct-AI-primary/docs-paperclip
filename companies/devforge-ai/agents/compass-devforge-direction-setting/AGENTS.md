@@ -1,7 +1,7 @@
 ---
 name: compass-devforge-direction-setting
 slug: compass-devforge-direction-setting
-reportsTo: nexus-devforge-ceo
+reportsTo: null
 skills:
   - compass-devforge-direction-setting
 ---

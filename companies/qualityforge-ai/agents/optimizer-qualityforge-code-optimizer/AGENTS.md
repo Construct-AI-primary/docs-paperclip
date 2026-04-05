@@ -1,7 +1,7 @@
 ---
 name: optimizer-qualityforge-code-optimizer
 slug: optimizer-qualityforge-code-optimizer
-reportsTo: apex-qualityforge-ceo
+reportsTo: null
 skills:
   - optimizer-qualityforge-code-optimizer
 ---

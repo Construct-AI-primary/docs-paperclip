@@ -1,7 +1,7 @@
 ---
 name: catalyst-devforge-product-innovation
 slug: catalyst-devforge-product-innovation
-reportsTo: nexus-devforge-ceo
+reportsTo: null
 skills:
   - catalyst-devforge-product-innovation
 ---

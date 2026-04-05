@@ -1,7 +1,7 @@
 ---
 name: archivist-devforge-knowledge-security
 slug: archivist-devforge-knowledge-security
-reportsTo: nexus-devforge-ceo
+reportsTo: null
 skills:
   - archivist-devforge-knowledge-security
 ---

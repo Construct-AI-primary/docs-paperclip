@@ -1,7 +1,7 @@
 ---
 name: experimenter-promptforge-hypothesis-testing
 slug: experimenter-promptforge-hypothesis-testing
-reportsTo: sage-promptforge-chief-architect
+reportsTo: null
 skills:
   - experimenter-promptforge-hypothesis-testing
 ---
