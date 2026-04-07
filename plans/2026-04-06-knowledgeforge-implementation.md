@@ -149,7 +149,7 @@ agents:
     adapter:
       type: hermes_local
       config:
-        model: openrouter/anthropic/claude-sonnet-4.5
+        model: openrouter/qwen/qwen3.6-pro
         maxIterations: 50
     inputs:
       env:
@@ -160,7 +160,7 @@ agents:
     adapter:
       type: hermes_local
       config:
-        model: openrouter/anthropic/claude-sonnet-4.5
+        model: openrouter/qwen/qwen3.6-pro
         maxIterations: 50
     inputs:
       env:
@@ -172,7 +172,7 @@ agents:
 
 Key settings shared across all agents:
 - `persistSession: true` — all agents learn from the same shared knowledge base.
-- `model: openrouter/qwen/qwen-3-6-plus` — free model via OpenRouter.
+- `model: openrouter/qwen/qwen3.6-pro` — free model via OpenRouter.
 - `enabled_toolsets: ["file_tools", "terminal_tools", "code_execution"]` — coding-focused agents get full tool access.
 
 ## Knowledge Source Mapping
@@ -363,7 +363,7 @@ pnpm build
 
 ## Open Questions
 
-1. **Model choice**: All agents use `openrouter/qwen/qwen-3-6-plus` (free). Upgrade only if quality is insufficient.
+1. **Model choice**: All agents use `openrouter/qwen/qwen3.6-pro` (free). Upgrade only if quality is insufficient.
 
 2. **Knowledge base freshness**: Should KnowledgeForge re-export docs-construct-ai on every import, or on a schedule?  
    Recommendation: Export on import for freshness; add a cron job for periodic sync if the company is long-running.

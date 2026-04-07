@@ -31,7 +31,7 @@ This procedure documents the setup, deployment, and ongoing maintenance of the K
 3. Knowledge index built and up to date (`docs-construct-ai/KNOWLEDGE-INDEX.json`)
 4. Database with `companies`, `agents`, and `goals` tables (Drizzle schema)
 5. Hermes agent runtime available (`hermes_local` adapter type)
-6. OpenRouter API key configured for `openrouter/qwen/qwen-3-6-plus`
+6. OpenRouter API key configured for `openrouter/qwen/qwen3.6-pro`
 
 ## Phase 1 Procedure: 11 Core Agents
 
@@ -118,7 +118,7 @@ All 11 Phase 1 agents use the same adapter configuration:
 {
   "adapter_type": "hermes_local",
   "adapter_config": {
-    "model": "openrouter/qwen/qwen-3-6-plus",
+    "model": "openrouter/qwen/qwen3.6-pro",
     "maxIterations": 50,
     "persistSession": true
   },
@@ -221,4 +221,4 @@ psql $DATABASE_URL < tmp/knowledgeforge-import.sql
 | `docs-construct-ai/disciplines/` | 50+ discipline knowledge directories |
 | `docs-construct-ai/disciplines-non/` | Non-discipline directories |
 | `tmp/knowledgeforge-import.sql` | KnowledgeForge company import (11 core + specialists) |
-| `tmp/update-all-agents-to-hermes-local.sql` | **Universal migration: all agents → hermes_local + qwen-3-6-plus** |
+| `tmp/update-all-agents-to-hermes-local.sql` | **Universal migration: all agents → hermes_local + qwen/qwen3.6-pro** |

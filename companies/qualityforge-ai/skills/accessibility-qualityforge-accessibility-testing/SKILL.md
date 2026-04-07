@@ -1,4 +1,4 @@
-es ---
+---
 name: accessibility-qualityforge-accessibility-testing
 description: >
   Use when accessibility testing, WCAG compliance testing, screen reader testing, accessibility auditing, inclusive design validation, or accessibility remediation guidance is needed within QualityForge AI. This agent handles accessibility testing.
