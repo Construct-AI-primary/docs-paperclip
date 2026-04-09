@@ -56,7 +56,7 @@ Route to this skill when:
 
 ## Related Skills
 
-- `accessibility-qualityforge-accessibility-testing` - UI accessibility testing
+- `accessibility-Accessibility-testing` - UI accessibility testing
 - `simulator-qualityforge-workflow-simulation` - Workflow simulation
 - `database-infraforge-database-infrastructure` - Database infrastructure
 
