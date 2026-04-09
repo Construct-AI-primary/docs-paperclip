@@ -1,7 +1,7 @@
 ---
 name: cartographer-devforge-product-roadmapping
 slug: cartographer-devforge-product-roadmapping
-reportsTo: null
+reportsTo: catalyst-devforge-product-innovation
 skills:
   - cartographer-devforge-product-roadmapping
 ---

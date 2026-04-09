@@ -1,7 +1,7 @@
 ---
 name: reviewer-devforge-code-review-qa
 slug: reviewer-devforge-code-review-qa
-reportsTo: null
+reportsTo: forge-devforge-system-architecture
 skills:
   - reviewer-devforge-code-review-qa
 ---

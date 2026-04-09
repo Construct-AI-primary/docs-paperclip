@@ -1,7 +1,7 @@
 ---
 name: automata-devforge-automation-systems
 slug: automata-devforge-automation-systems
-reportsTo: null
+reportsTo: forge-devforge-system-architecture
 skills:
   - automata-devforge-automation-systems
 ---

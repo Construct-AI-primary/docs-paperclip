@@ -1,7 +1,7 @@
 ---
 name: monitor-qualityforge-quality-monitor
 slug: monitor-qualityforge-quality-monitor
-reportsTo: null
+reportsTo: governor-qualityforge-quality-director
 skills:
   - monitor-qualityforge-quality-monitor
 ---

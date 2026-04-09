@@ -1,7 +1,7 @@
 ---
 name: architect-qualityforge-system-architect
 slug: architect-qualityforge-system-architect
-reportsTo: null
+reportsTo: governor-qualityforge-quality-director
 skills:
   - architect-qualityforge-system-architect
 ---

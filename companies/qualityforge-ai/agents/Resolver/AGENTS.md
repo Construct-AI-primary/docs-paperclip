@@ -1,7 +1,7 @@
 ---
 name: resolver-qualityforge-issue-resolver
 slug: resolver-qualityforge-issue-resolver
-reportsTo: null
+reportsTo: governor-qualityforge-quality-director
 skills:
   - resolver-qualityforge-issue-resolver
 ---

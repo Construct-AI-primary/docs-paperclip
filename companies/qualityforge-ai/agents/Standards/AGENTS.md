@@ -1,7 +1,7 @@
 ---
 name: standards-Standards-enforcer
 slug: standards-Standards-enforcer
-reportsTo: null
+reportsTo: governor-qualityforge-quality-director
 skills:
   - standards-Standards-enforcer
 ---

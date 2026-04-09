@@ -1,7 +1,7 @@
 ---
 name: nova-devforge-product-launches
 slug: nova-devforge-product-launches
-reportsTo: null
+reportsTo: atlas-devforge-product-mapping
 skills:
   - nova-devforge-product-launches
 ---

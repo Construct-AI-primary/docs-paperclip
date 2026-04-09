@@ -1,7 +1,7 @@
 ---
 name: gatekeeper-devforge-access-control
 slug: gatekeeper-devforge-access-control
-reportsTo: null
+reportsTo: guardian-devforge-threat-protection
 skills:
   - gatekeeper-devforge-access-control
 ---

@@ -1,7 +1,7 @@
 ---
 name: scout-devforge-competitive-intelligence
 slug: scout-devforge-competitive-intelligence
-reportsTo: null
+reportsTo: analyst-devforge-market-analysis
 skills:
   - scout-devforge-competitive-intelligence
 ---

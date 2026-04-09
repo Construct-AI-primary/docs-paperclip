@@ -1,7 +1,7 @@
 ---
 name: diagnostics-Diagnostics-specialist
 slug: diagnostics-Diagnostics-specialist
-reportsTo: null
+reportsTo: governor-qualityforge-quality-director
 skills:
   - diagnostics-Diagnostics-specialist
 ---

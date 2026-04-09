@@ -1,7 +1,7 @@
 ---
 name: simulator-qualityforge-workflow-simulation
 slug: simulator-qualityforge-workflow-simulation
-reportsTo: null
+reportsTo: governor-qualityforge-quality-director
 skills:
   - simulator-qualityforge-workflow-simulation
 ---

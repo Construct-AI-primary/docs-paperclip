@@ -1,7 +1,7 @@
 ---
 name: refactor-Refactoring-specialist
 slug: refactor-Refactoring-specialist
-reportsTo: null
+reportsTo: governor-qualityforge-quality-director
 skills:
   - refactor-Refactoring-specialist
 ---

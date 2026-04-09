@@ -1,7 +1,7 @@
 ---
 name: compass-devforge-direction-setting
 slug: compass-devforge-direction-setting
-reportsTo: null
+reportsTo: council-devforge-strategic-decision-making
 skills:
   - compass-devforge-direction-setting
 ---

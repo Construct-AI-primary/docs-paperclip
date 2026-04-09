@@ -1,7 +1,7 @@
 ---
 name: synth-Synthetic-data
 slug: synth-Synthetic-data
-reportsTo: null
+reportsTo: dataforge-devforge-data-transformation
 skills:
   - synth-Synthetic-data
 ---

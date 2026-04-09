@@ -1,7 +1,7 @@
 ---
 name: analyst-devforge-market-analysis
 slug: analyst-devforge-market-analysis
-reportsTo: null
+reportsTo: voyager-devforge-market-exploration
 skills:
   - analyst-devforge-market-analysis
 ---

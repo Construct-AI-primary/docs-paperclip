@@ -1,7 +1,7 @@
 ---
 name: loadtester-qualityforge-scalability-testing
 slug: loadtester-qualityforge-scalability-testing
-reportsTo: null
+reportsTo: governor-qualityforge-quality-director
 skills:
   - loadtester-qualityforge-scalability-testing
 ---

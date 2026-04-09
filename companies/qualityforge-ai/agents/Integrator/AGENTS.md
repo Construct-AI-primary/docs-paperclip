@@ -1,7 +1,7 @@
 ---
 name: integrator-Integration-specialist
 slug: integrator-Integration-specialist
-reportsTo: null
+reportsTo: governor-qualityforge-quality-director
 skills:
   - integrator-Integration-specialist
 ---

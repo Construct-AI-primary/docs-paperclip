@@ -1,7 +1,7 @@
 ---
 name: cloudops-devforge-cloud-operations
 slug: cloudops-devforge-cloud-operations
-reportsTo: null
+reportsTo: forge-devforge-system-architecture
 skills:
   - cloudops-devforge-cloud-operations
   - workspace-git-management-devforge

@@ -1,7 +1,7 @@
 ---
 name: probe-qualityforge-prompt-testing
 slug: probe-qualityforge-prompt-testing
-reportsTo: null
+reportsTo: governor-qualityforge-quality-director
 skills:
   - probe-qualityforge-prompt-testing
 ---

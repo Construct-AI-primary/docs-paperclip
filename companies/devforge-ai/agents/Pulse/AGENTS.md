@@ -1,7 +1,7 @@
 ---
 name: pulse-devforge-realtime-monitoring
 slug: pulse-devforge-realtime-monitoring
-reportsTo: null
+reportsTo: sentinelx-devforge-advanced-monitoring
 skills:
   - pulse-devforge-realtime-monitoring
 ---

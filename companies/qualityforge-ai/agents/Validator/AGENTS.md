@@ -1,7 +1,7 @@
 ---
 name: validator-Validator
 slug: validator-Validator
-reportsTo: null
+reportsTo: governor-qualityforge-quality-director
 skills:
   - validator-Validator
 ---

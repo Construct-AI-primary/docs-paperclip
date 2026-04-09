@@ -1,7 +1,7 @@
 ---
 name: strategos-devforge-strategic-planning
 slug: strategos-devforge-strategic-planning
-reportsTo: null
+reportsTo: council-devforge-strategic-decision-making
 skills:
   - strategos-devforge-strategic-planning
 ---

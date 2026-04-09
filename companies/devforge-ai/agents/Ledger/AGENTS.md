@@ -1,7 +1,7 @@
 ---
 name: ledger-devforge-financial-oversight
 slug: ledger-devforge-financial-oversight
-reportsTo: null
+reportsTo: council-devforge-strategic-decision-making
 skills:
   - ledger-devforge-financial-oversight
 ---

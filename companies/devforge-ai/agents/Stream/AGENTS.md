@@ -1,7 +1,7 @@
 ---
 name: stream-devforge-data-streaming
 slug: stream-devforge-data-streaming
-reportsTo: null
+reportsTo: dataforge-devforge-data-transformation
 skills:
   - stream-devforge-data-streaming
 ---

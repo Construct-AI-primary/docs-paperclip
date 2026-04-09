@@ -1,7 +1,7 @@
 ---
 name: debugger-Debugger-specialist
 slug: debugger-Debugger-specialist
-reportsTo: null
+reportsTo: governor-qualityforge-quality-director
 skills:
   - debugger-Debugger-specialist
 ---

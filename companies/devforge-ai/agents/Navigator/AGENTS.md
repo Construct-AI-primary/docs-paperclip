@@ -1,7 +1,7 @@
 ---
 name: navigator-devforge-data-discovery
 slug: navigator-devforge-data-discovery
-reportsTo: null
+reportsTo: n/a
 skills:
   - navigator-devforge-data-discovery
 ---

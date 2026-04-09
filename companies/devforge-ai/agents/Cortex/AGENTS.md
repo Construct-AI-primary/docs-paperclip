@@ -1,7 +1,7 @@
 ---
 name: cortex-devforge-ai-reasoning
 slug: cortex-devforge-ai-reasoning
-reportsTo: null
+reportsTo: nexus-devforge-ceo
 skills:
   - cortex-devforge-ai-reasoning
 ---

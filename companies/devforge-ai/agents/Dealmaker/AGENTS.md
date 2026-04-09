@@ -1,7 +1,7 @@
 ---
 name: dealmaker-devforge-sales-negotiation
 slug: dealmaker-devforge-sales-negotiation
-reportsTo: null
+reportsTo: amplifier-devforge-marketing-promotion
 skills:
   - dealmaker-devforge-sales-negotiation
 ---

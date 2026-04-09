@@ -1,7 +1,7 @@
 ---
 name: guardian-qualityforge-quality-guardian
 slug: guardian-qualityforge-quality-guardian
-reportsTo: null
+reportsTo: governor-qualityforge-quality-director
 skills:
   - guardian-qualityforge-quality-guardian
 ---

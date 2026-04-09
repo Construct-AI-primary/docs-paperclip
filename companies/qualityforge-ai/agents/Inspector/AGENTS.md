@@ -1,7 +1,7 @@
 ---
 name: inspector-qualityforge-code-inspector
 slug: inspector-qualityforge-code-inspector
-reportsTo: null
+reportsTo: governor-qualityforge-quality-director
 skills:
   - inspector-qualityforge-code-inspector
 ---

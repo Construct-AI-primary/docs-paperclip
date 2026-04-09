@@ -1,7 +1,7 @@
 ---
 name: watchtower-devforge-security-oversight
 slug: watchtower-devforge-security-oversight
-reportsTo: null
+reportsTo: guardian-devforge-threat-protection
 skills:
   - watchtower-devforge-security-oversight
 ---

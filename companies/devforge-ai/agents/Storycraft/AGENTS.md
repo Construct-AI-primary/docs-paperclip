@@ -1,7 +1,7 @@
 ---
 name: storycraft-devforge-product-storytelling
 slug: storycraft-devforge-product-storytelling
-reportsTo: null
+reportsTo: atlas-devforge-product-mapping
 skills:
   - storycraft-devforge-product-storytelling
 ---

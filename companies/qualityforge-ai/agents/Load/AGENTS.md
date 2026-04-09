@@ -1,7 +1,7 @@
 ---
 name: load-Load-testing
 slug: load-Load-testing
-reportsTo: null
+reportsTo: governor-qualityforge-quality-director
 skills:
   - load-Load-testing
 ---

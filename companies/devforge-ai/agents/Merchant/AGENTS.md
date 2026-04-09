@@ -1,7 +1,7 @@
 ---
 name: merchant-devforge-commerce-operations
 slug: merchant-devforge-commerce-operations
-reportsTo: null
+reportsTo: amplifier-devforge-marketing-promotion
 skills:
   - merchant-devforge-commerce-operations
 ---

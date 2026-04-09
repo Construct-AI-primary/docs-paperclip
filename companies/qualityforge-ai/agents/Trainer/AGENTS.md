@@ -1,7 +1,7 @@
 ---
 name: trainer-qualityforge-quality-trainer
 slug: trainer-qualityforge-quality-trainer
-reportsTo: null
+reportsTo: governor-qualityforge-quality-director
 skills:
   - trainer-qualityforge-quality-trainer
 ---

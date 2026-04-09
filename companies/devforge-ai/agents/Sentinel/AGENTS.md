@@ -1,7 +1,7 @@
 ---
 name: sentinel-devforge-data-quality-monitoring
 slug: sentinel-devforge-data-quality-monitoring
-reportsTo: null
+reportsTo: dataforge-devforge-data-transformation
 skills:
   - sentinel-devforge-data-quality-monitoring
 ---

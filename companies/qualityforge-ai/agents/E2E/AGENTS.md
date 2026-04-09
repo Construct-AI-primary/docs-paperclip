@@ -1,7 +1,7 @@
 ---
 name: e2e-qualityforge-end-to-end-testing
 slug: e2e-qualityforge-end-to-end-testing
-reportsTo: null
+reportsTo: governor-qualityforge-quality-director
 skills:
   - e2e-qualityforge-end-to-end-testing
 ---

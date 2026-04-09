@@ -1,7 +1,7 @@
 ---
 name: documenter-qualityforge-documentation-specialist
 slug: documenter-qualityforge-documentation-specialist
-reportsTo: null
+reportsTo: governor-qualityforge-quality-director
 skills:
   - documenter-qualityforge-documentation-specialist
 ---

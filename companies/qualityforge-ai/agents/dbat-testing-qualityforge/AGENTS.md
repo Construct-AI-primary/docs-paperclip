@@ -1,7 +1,7 @@
 ---
 name: dbat-testing-qualityforge
 slug: dbat-testing-qualityforge
-reportsTo: guardian-qualityforge
+reportsTo: governor-qualityforge-quality-director
 skills:
   - database-integration-testing-qualityforge
 ---

@@ -1,7 +1,7 @@
 ---
 name: optimizer-qualityforge-code-optimizer
 slug: optimizer-qualityforge-code-optimizer
-reportsTo: null
+reportsTo: governor-qualityforge-quality-director
 skills:
   - optimizer-qualityforge-code-optimizer
 ---

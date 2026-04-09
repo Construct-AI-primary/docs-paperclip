@@ -1,7 +1,7 @@
 ---
 name: auditor-devforge-security-compliance
 slug: auditor-devforge-security-compliance
-reportsTo: null
+reportsTo: guardian-devforge-threat-protection
 skills:
   - auditor-devforge-security-compliance
 ---

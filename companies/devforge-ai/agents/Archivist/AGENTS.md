@@ -1,7 +1,7 @@
 ---
 name: archivist-devforge-knowledge-security
 slug: archivist-devforge-knowledge-security
-reportsTo: null
+reportsTo: guardian-devforge-threat-protection
 skills:
   - archivist-devforge-knowledge-security
 ---

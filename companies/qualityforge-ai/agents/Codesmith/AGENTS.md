@@ -1,7 +1,7 @@
 ---
 name: codesmith-qualityforge-code-architect
 slug: codesmith-qualityforge-code-architect
-reportsTo: null
+reportsTo: governor-qualityforge-quality-director
 skills:
   - codesmith-qualityforge-code-architect
 ---

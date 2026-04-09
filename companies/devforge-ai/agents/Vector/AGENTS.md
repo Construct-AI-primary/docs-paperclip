@@ -1,7 +1,7 @@
 ---
 name: vector-Vector-processing
 slug: vector-Vector-processing
-reportsTo: null
+reportsTo: dataforge-devforge-data-transformation
 skills:
   - vector-Vector-processing
 ---

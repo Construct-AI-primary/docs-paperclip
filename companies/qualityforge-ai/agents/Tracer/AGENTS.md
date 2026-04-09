@@ -1,7 +1,7 @@
 ---
 name: tracer-qualityforge-execution-tracer
 slug: tracer-qualityforge-execution-tracer
-reportsTo: null
+reportsTo: governor-qualityforge-quality-director
 skills:
   - tracer-qualityforge-execution-tracer
 ---

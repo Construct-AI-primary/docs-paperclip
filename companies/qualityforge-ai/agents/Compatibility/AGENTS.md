@@ -1,7 +1,7 @@
 ---
 name: compatibility-Compatibility-testing
 slug: compatibility-Compatibility-testing
-reportsTo: null
+reportsTo: governor-qualityforge-quality-director
 skills:
   - compatibility-Compatibility-testing
 ---

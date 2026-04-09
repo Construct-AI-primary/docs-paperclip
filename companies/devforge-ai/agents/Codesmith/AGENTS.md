@@ -1,7 +1,7 @@
 ---
 name: codesmith-devforge-backend-engineer
 slug: codesmith-devforge-backend-engineer
-reportsTo: null
+reportsTo: forge-devforge-system-architecture
 skills:
   - codesmith-devforge-backend-engineer
   - adapter-development-devforge

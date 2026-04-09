@@ -1,7 +1,7 @@
 ---
 name: automation-qualityforge-test-automation
 slug: automation-qualityforge-test-automation
-reportsTo: null
+reportsTo: governor-qualityforge-quality-director
 skills:
   - automation-qualityforge-test-automation
 ---

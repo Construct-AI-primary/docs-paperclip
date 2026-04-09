@@ -1,7 +1,7 @@
 ---
 name: pathfinder-devforge-opportunity-identification
 slug: pathfinder-devforge-opportunity-identification
-reportsTo: null
+reportsTo: strategos-devforge-strategic-planning
 skills:
   - pathfinder-devforge-opportunity-identification
 ---

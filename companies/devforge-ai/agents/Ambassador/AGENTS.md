@@ -1,7 +1,7 @@
 ---
 name: ambassador-devforge-brand-representation
 slug: ambassador-devforge-brand-representation
-reportsTo: null
+reportsTo: nexus-devforge-ceo
 skills:
   - ambassador-devforge-brand-representation
 ---

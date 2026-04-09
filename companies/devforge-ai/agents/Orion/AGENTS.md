@@ -1,7 +1,7 @@
 ---
 name: orion-devforge-orchestrator
 slug: orion-devforge-orchestrator
-reportsTo: null
+reportsTo: council-devforge-strategic-decision-making
 skills:
   - orion-devforge-orchestrator
 ---

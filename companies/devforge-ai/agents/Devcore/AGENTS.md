@@ -1,7 +1,7 @@
 ---
 name: devcore-devforge-core-development
 slug: devcore-devforge-core-development
-reportsTo: null
+reportsTo: forge-devforge-system-architecture
 skills:
   - devcore-devforge-core-development
   - esm-module-resolution-devforge
