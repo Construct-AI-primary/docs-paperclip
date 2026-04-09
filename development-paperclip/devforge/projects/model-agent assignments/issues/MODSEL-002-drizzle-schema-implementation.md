@@ -6,6 +6,7 @@ priority: critical
 assignee: forge-devforge
 company: devforge-ai
 team: engineering
+parent: DEVFORGE-GOAL-001
 created_date: 2026-04-08
 due_date: 2026-04-12
 estimated_hours: 24

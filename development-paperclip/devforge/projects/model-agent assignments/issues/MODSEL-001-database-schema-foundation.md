@@ -6,6 +6,7 @@ priority: critical
 assignee: database-infraforge
 company: infraforge-ai
 team: infrastructure
+parent: DEVFORGE-GOAL-001
 created_date: 2026-04-08
 due_date: 2026-04-15
 estimated_hours: 40

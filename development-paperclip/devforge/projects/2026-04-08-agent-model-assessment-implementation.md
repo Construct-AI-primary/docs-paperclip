@@ -4,9 +4,10 @@ project_id: MODSEL-PROJ-001
 status: planning
 priority: critical
 ceo: nexus-devforge-ceo
+goalIds: ["DEVFORGE-GOAL-001"]
 start_date: 2026-04-08
-end_date: 2026-05-27
-budget_allocated: 200000
+end_date: 2026-06-10
+budget_allocated: 250000
 budget_spent: 0
 ---
 
@@ -73,18 +74,20 @@ The Agent Model Assessment and Selection System (`@paperclipai/model-selector`) 
 - Integration with task assignment workflow
 
 ### Phase 3: Model Selection Logic (Weeks 5-6, April 30-May 7)
-**Focus**: Intelligent model recommendation and selection algorithms
+**Focus**: Intelligent model recommendation, selection algorithms, and model group configuration
 
 | Issue ID | Title | Assignee | Company | Team | Est. Hours | Due Date |
 |----------|-------|----------|---------|------|------------|----------|
 | MODSEL-007 | Model Performance Database | dataforge-devforge | devforge-ai | data | 40 | 2026-05-03 |
-| MODSEL-008 | Selection Scoring Algorithm | cortex-devforge | devforge-ai | engineering | 64 | 2026-05-05 |
-| MODSEL-009 | Recommendation Engine | cortex-devforge | devforge-ai | engineering | 48 | 2026-05-07 |
+| MODSEL-008 | Model Group Configuration | cortex-devforge | devforge-ai | engineering | 32 | 2026-05-04 |
+| MODSEL-009 | Selection Scoring Algorithm | cortex-devforge | devforge-ai | engineering | 64 | 2026-05-05 |
+| MODSEL-010 | Recommendation Engine | cortex-devforge | devforge-ai | engineering | 48 | 2026-05-07 |
 
 **Milestones:**
 - Model performance data populated
+- Model groups configured (Performance, Cost, Origin, Capability, Compliance, Use Case)
 - Selection algorithms implemented and tested
-- Recommendation engine operational
+- Recommendation engine operational with group-based selection
 
 ### Phase 4: Integration and Testing (Weeks 7-8, May 8-21)
 **Focus**: System integration, agent runtime integration, and comprehensive testing
@@ -114,6 +117,24 @@ The Agent Model Assessment and Selection System (`@paperclipai/model-selector`) 
 - Performance benchmarks met
 - Documentation complete
 - Gradual rollout to production
+
+### Phase 6: UI Integration and Data Validation (Weeks 11-12, May 28-June 10)
+**Focus**: User interface implementation and comprehensive data validation
+
+| Issue ID | Title | Assignee | Company | Team | Est. Hours | Due Date |
+|----------|-------|----------|---------|------|------------|----------|
+| MODSEL-017 | Agent Configuration Interface | interface-devforge | devforge-ai | engineering | 40 | 2026-06-02 |
+| MODSEL-018 | Task Assessment Dashboard | interface-devforge | devforge-ai | engineering | 48 | 2026-06-04 |
+| MODSEL-019 | Model Performance Dashboard | dataforge-devforge | devforge-ai | data | 40 | 2026-06-06 |
+| MODSEL-020 | Administrative Model Management | forge-devforge | devforge-ai | engineering | 32 | 2026-06-08 |
+| MODSEL-021 | Data Validation Framework | validator-qualityforge | qualityforge-ai | quality | 56 | 2026-06-10 |
+
+**Milestones:**
+- Complete UI integration with Paperclip interface
+- Model performance monitoring dashboard operational
+- Administrative model management interface complete
+- Data validation framework with multi-source validation
+- All UI components responsive and accessible
 
 ## Team Assignments and Responsibilities
 
@@ -199,12 +220,12 @@ The Agent Model Assessment and Selection System (`@paperclipai/model-selector`) 
 
 | Category | Allocated | Spent | Remaining |
 |----------|-----------|-------|-----------|
-| Development Labor | $120,000 | $0 | $120,000 |
+| Development Labor | $150,000 | $0 | $150,000 |
 | Infrastructure | $30,000 | $0 | $30,000 |
-| Testing & QA | $25,000 | $0 | $25,000 |
+| Testing & QA | $35,000 | $0 | $35,000 |
 | Documentation | $10,000 | $0 | $10,000 |
-| Contingency | $15,000 | $0 | $15,000 |
-| **Total** | **$200,000** | **$0** | **$200,000** |
+| Contingency | $25,000 | $0 | $25,000 |
+| **Total** | **$250,000** | **$0** | **$250,000** |
 
 ## Communication Plan
 
