@@ -74,6 +74,25 @@ The procedure document defines six critical model group types that provide struc
 - **Data-Analysis**: Structured data processing and analysis
 - **Content-Moderation**: Safety and content filtering models
 
+#### 7. Task Category Groups (Enhanced)
+- **Very-Simple-Tasks**: Basic queries, calculations (<160 chars, <28 words)
+- **Simple-Coding**: Basic functions, scripts (20-100 lines)
+- **General-Conversation**: Chat, analysis, writing
+- **Medium-Coding**: APIs, integration (100-500 lines)
+- **Complex-Coding**: Architecture, debugging (500+ lines)
+- **Expert-Coding**: System design, optimization
+- **Creative-Writing**: Marketing, stories, content generation
+- **Data-Analysis**: SQL, charts, insights processing
+- **Research-Learning**: Explanations, tutorials, education
+- **Chinese-Language**: Translation, cultural content, multilingual
+
+#### 8. Free Model Groups (Flexible Options)
+- **OpenRouter-Free**: Completely free models via OpenRouter (Llama-3.2-3B, Mistral-7B, Gemma-7B, WizardLM-2-8x22B)
+- **Free-Tier-Limited**: Rate-limited free tiers (Claude-3-Haiku free tier via OpenRouter, GPT-3.5-Turbo free access)
+- **Self-Hosted-Free**: Local models (Ollama, LM Studio, GPT4All with downloaded models) - completely free
+- **API-Free-Tier**: Free API access (Hugging Face Inference API, Replicate free tiers)
+- **GLM-Free-Options**: GLM models with potential free tiers or promotional access
+
 ### Configuration Schema
 
 ```typescript
@@ -100,13 +119,16 @@ interface ModelGroupCriteria {
 
 ## Acceptance Criteria
 
-- [ ] All 6 model group types implemented with complete configurations
-- [ ] Model assignment logic working for all group types
-- [ ] Group selection API endpoints functional
-- [ ] Configuration validation and error handling
+- [ ] All 8 model group types implemented (original 6 + task categories + free models)
+- [ ] 10 task category groups configured with appropriate model mappings
+- [ ] 4 free model groups implemented with OpenRouter discovery
+- [ ] Model assignment logic working for all group types including categories
+- [ ] Group selection API endpoints functional with category support
+- [ ] Free model discovery and validation working
+- [ ] Configuration validation and error handling for all group types
 - [ ] Integration with existing model selection algorithms
-- [ ] Performance testing for group-based selection
-- [ ] Documentation for group configuration and usage
+- [ ] Performance testing for group-based and category-based selection
+- [ ] Documentation for group configuration, categories, and free models
 
 ## Dependencies
 

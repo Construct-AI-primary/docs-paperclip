@@ -1,4 +1,4 @@
----
+ ---
 name: ally-devforge-partnership-management
 slug: ally-devforge-partnership-management
 reportsTo: amplifier-devforge-marketing-promotion
