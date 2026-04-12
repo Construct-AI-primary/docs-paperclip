@@ -11,6 +11,38 @@ Agent naming in Paperclip follows a hierarchical structure that balances human r
 - **System integration**: Names that work with databases, APIs, and automation systems
 - **Scalability**: Names that support hundreds of agents across multiple companies
 
+## Dual Naming Convention
+
+Paperclip uses a dual naming approach to balance filesystem compatibility with UI display:
+
+### Filesystem Names (Documentation)
+- **Format**: `{company-slug}-{role}` (lowercase, hyphenated)
+- **Purpose**: File paths, directories, git-tracked documentation
+- **Example**: `knowledgeforge-ai/administrator/`, `devforge-ai/codesmith/`
+
+### Database/UI Names (Paperclip Display)
+- **Format**: `{CompanyName AI}-{role}` (proper capitalization)
+- **Purpose**: Database records, UI display, API responses
+- **Example**: `KnowledgeForge AI-administrator`, `DevForge AI-codesmith`
+
+### Company Display Names
+| Slug | Display Name |
+|------|--------------|
+| knowledgeforge-ai | KnowledgeForge AI |
+| domainforge-ai | DomainForge AI |
+| devforge-ai | DevForge AI |
+| qualityforge-ai | QualityForge AI |
+| infraforge-ai | InfraForge AI |
+| promptforge-ai | PromptForge AI |
+| contentforge-ai | ContentForge AI |
+| execforge-ai | ExecForge AI |
+| mobileforge-ai | MobileForge AI |
+| voiceforge-ai | VoiceForge AI |
+| saasforge-ai | SaaSForge AI |
+| learningforge-ai | LearningForge AI |
+| paperclipforge-ai | PaperclipForge AI |
+| loopy-ai | Loopy AI |
+
 ## Core Naming Principles
 
 ### 1. Human-First Design
@@ -556,10 +588,12 @@ WHERE company_id = 'target-company';
 
 ---
 
-**Version:** 1.0
-**Last Updated:** 2026-04-09
+**Version:** 1.1
+**Last Updated:** 2026-04-12
 **Applies To:** All Paperclip Companies and Agents
 **Review Cycle:** Quarterly
 **Related Documents:**
 - `docs-paperclip/procedures/adding-companies-and-agents.md`
 - `docs-paperclip/procedures/editing-database-tables.md`
+- `scripts/database/update_company_display_names.sql`
+- `scripts/database/sync_agent_names.sql`
