@@ -30,6 +30,16 @@ The workflow docs indicate that template variations are selected during order cr
 - **Agent:** Devcore (devcore-devforge-core-development)
 - **Supporting:** DomainForge AI (procurement-domainforge-procurement-contracts)
 
+## Working Directory & Repository
+
+- **Local Repository:** `/Users/_Hermes/paperclip-render`
+- **Working Directory:** `/Users/_Hermes/paperclip-render`
+- **Target Files:**
+  - `docs-construct-ai/disciplines/01900_procurement/templates/`
+  - `ui/src/pages/01900-procurement/components/CreateOrderModal.jsx`
+  - `server/src/services/sowGenerationService.js`
+  - Document ordering management integration files
+
 ## Required Skills
 
 - `systematic-debugging` (DevForge)

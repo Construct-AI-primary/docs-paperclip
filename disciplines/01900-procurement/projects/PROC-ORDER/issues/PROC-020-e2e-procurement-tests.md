@@ -34,6 +34,17 @@ From the procurement-testing skill:
 - **Agent:** e2e-qualityforge-end-to-end-testing
 - **Supporting:** DomainForge AI (procurement-domainforge-procurement-contracts)
 
+## Working Directory & Repository
+
+- **Local Repository:** `/Users/_Hermes/paperclip-render`
+- **Working Directory:** `/Users/_Hermes/paperclip-render`
+- **Target Files:**
+  - `docs-construct-ai/disciplines/01900_procurement/testing/`
+  - `ui/src/pages/01900-procurement/components/`
+  - `server/src/routes/procurement-routes.js`
+  - `server/src/services/procurementOrderService.js`
+  - Test data and configuration files
+
 ## Required Skills
 
 - `procurement-testing` (shared)

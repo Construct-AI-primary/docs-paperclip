@@ -169,8 +169,9 @@ WHERE a.is_active = true;
 
 ```json
 {
-  "team": "Learning Forge AI",
-  "division": "learning-curriculum",
-  "source": "documentation"
+  "team": "Issue Orchestration",
+  "division": "issue-orchestration",
+  "skills": ["issue-batch-importer"],
+  "specialization": "bulk-processing"
 }
 ```

@@ -75,3 +75,24 @@ UPDATE agent_api_keys SET last_used_at = NOW() WHERE key_hash = 'pk_hash...';
 - Keys are hashed using SHA-256 before storage
 - Only the hash prefix (first 8 chars) is shown in UI
 - Revoked keys can be permanently deleted after audit period
+- Agent-specific keys follow naming convention: `pk_{company}_{agent}_{year}`
+
+## Agent Key Examples
+
+### Issue Batch Importer (PaperclipForge AI)
+```sql
+-- API key for bulk issue processing agent
+INSERT INTO agent_api_keys (agent_id, company_id, name, key_hash)
+VALUES (
+  '550e8400-e29b-41d4-a716-446655440014', -- Issue Batch Importer
+  '550e8400-e29b-41d4-a716-446655440013', -- PaperclipForge AI
+  'Production Key',
+  encode(sha256('pk_paperclipforge_issue_batch_importer_2026'::bytea), 'hex')
+);
+```
+
+### Key Hash Generation
+```sql
+-- Generate SHA-256 hash for API key
+SELECT encode(sha256('your-plaintext-key'::bytea), 'hex') as key_hash;
+```

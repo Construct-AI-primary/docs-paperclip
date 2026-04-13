@@ -41,6 +41,16 @@ The modal implementation exists with test data injection capability. Testing gui
 - **Supporting:** QualityForge AI (e2e-qualityforge-end-to-end-testing) — E2E test execution
 - **Supporting:** DomainForge AI (procurement-domainforge-procurement-contracts) — Domain validation
 
+## Working Directory & Repository
+
+- **Local Repository:** `/Users/_Hermes/paperclip-render`
+- **Working Directory:** `/Users/_Hermes/paperclip-render`
+- **Target Files:**
+  - `ui/src/pages/01900-procurement/components/CreateOrderModal.jsx`
+  - `ui/src/pages/01900-procurement/components/01900-procurement-page.js`
+  - `server/src/routes/procurement-routes.js`
+  - `server/src/services/procurementOrderService.js`
+
 ## Required Skills
 
 - `systematic-debugging` (DevForge)

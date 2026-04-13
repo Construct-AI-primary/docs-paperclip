@@ -34,6 +34,17 @@ Audit the backend code for procurement input collection (API endpoints, service 
 - **Agent:** Devcore (devcore-devforge-core-development)
 - **Supporting:** DomainForge AI (procurement-domainforge-procurement-contracts)
 
+## Working Directory & Repository
+
+- **Local Repository:** `/Users/_Hermes/paperclip-render`
+- **Working Directory:** `/Users/_Hermes/paperclip-render`
+- **Target Files:**
+  - `server/src/routes/procurement-routes.js`
+  - `server/src/services/procurementOrderService.js`
+  - `server/src/services/sowGenerationService.js`
+  - `packages/db/src/schema/procurement.ts`
+  - `packages/shared/src/types/procurement.ts`
+
 ## Required Skills
 
 - `systematic-debugging` (DevForge)
