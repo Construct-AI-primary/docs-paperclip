@@ -11,16 +11,65 @@ status: active
 
 ## Overview
 
-This document consolidates all identified civil engineering workflows for the 00850 discipline, based on analysis of the domain knowledge and existing implementation files. Workflows are categorized by implementation status and prioritized by business criticality.
+This document focuses on **universal workflow implementation** for civil engineering specification development workflows. Additional civil engineering workflows (site analysis, structural design, transportation, utilities, and construction support) will be implemented in future phases following the successful deployment of universal specification templates.
 
-**Total Workflows Identified:** 5
-**Currently Implemented:** 0
-**Partially Implemented:** 0
-**Not Yet Implemented:** 5
+**Current Focus:** 2 Universal Template Ready Workflows
+**Future Implementation:** 5 Additional Civil Engineering Workflows
+**Implementation Priority:** Specification Development (Phase 1)
 
 ---
 
-## Section 1: Not Yet Implemented Workflows
+## Section 1: Universal Workflow Implementation - Specification Development
+
+### 1. Civil Engineering Specification Development Workflow (CIVIL-SPEC-DEV)
+**Status:** ⏳ Ready for Universal Template Integration
+**Source:** Universal Workflow Plan Phase 1 - Specification Development
+**Universal Template Alignment:** UNIV-WORKFLOW Phase 1 (85-90% reusability)
+
+**Description:** Core workflow for developing comprehensive civil engineering specifications and documentation using universal specification development templates. Focuses on site development, grading, drainage, and utility coordination specifications.
+
+**Key Activities:**
+- Site development requirements analysis and documentation
+- Grading and earthwork specification development
+- Stormwater management and erosion control specifications
+- Utility coordination and conflict resolution documentation
+- Construction staking and layout specifications
+- Quality assurance and document control
+
+**Business Criticality:** Critical - Primary universal workflow target
+**Expected Impact:** 35-45% time savings on civil specifications
+**Implementation Timeline:** Ready post-UNIV-WORKFLOW Phase 1 completion
+
+### 2. Civil Infrastructure Specification Workflow (CIVIL-INFRA-SPEC)
+**Status:** ⏳ Ready for Universal Template Integration
+**Source:** Universal Workflow Plan Phase 1 - Infrastructure specifications component
+**Universal Template Alignment:** UNIV-WORKFLOW Phase 1 (80-85% reusability)
+
+**Description:** Specialized workflow for developing detailed civil infrastructure specifications including roads, parking, sidewalks, and site amenities.
+
+**Key Activities:**
+- Infrastructure requirements analysis and performance criteria
+- Technical specification development and standardization
+- Material and construction method specifications
+- Quality control and testing requirements
+- Installation and construction specifications
+- Maintenance and warranty requirements
+
+**Business Criticality:** High - Infrastructure development foundation
+**Expected Impact:** 40% reduction in infrastructure specification development time
+
+## Section 2: Future Implementation - Additional Civil Engineering Workflows
+
+**Note:** The following civil engineering workflows will be implemented in future phases after successful deployment of universal specification templates:
+
+### Planned for Phase 2+ Implementation:
+1. **Site Analysis and Infrastructure Planning Workflow** - Foundation analysis and planning
+2. **Structural Design and Analysis Workflow** - Structural calculations and design
+3. **Transportation and Circulation Workflow** - Traffic and circulation design
+4. **Utilities and Infrastructure Systems Workflow** - Utility system design and coordination
+5. **Construction Support and Quality Assurance Workflow** - Construction administration and QA
+
+**Implementation Timeline:** Following successful universal template deployment and validation
 
 ### 1. Site Analysis and Infrastructure Planning Workflow (CIVIL-SITE)
 **Status:** ❌ Not Implemented

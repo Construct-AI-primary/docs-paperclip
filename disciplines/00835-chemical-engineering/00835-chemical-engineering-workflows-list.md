@@ -11,16 +11,65 @@ status: active
 
 ## Overview
 
-This document consolidates all identified chemical engineering workflows for the 00835 discipline, based on analysis of the domain knowledge and existing implementation files. Workflows are categorized by implementation status and prioritized by business criticality.
+This document focuses on **universal workflow implementation** for chemical engineering specification development workflows. Additional chemical engineering workflows (process design, safety management, equipment procurement, commissioning, and operations) will be implemented in future phases following the successful deployment of universal specification templates.
 
-**Total Workflows Identified:** 5
-**Currently Implemented:** 0
-**Partially Implemented:** 0
-**Not Yet Implemented:** 5
+**Current Focus:** 2 Universal Template Ready Workflows
+**Future Implementation:** 5 Additional Chemical Engineering Workflows
+**Implementation Priority:** Specification Development (Phase 1)
 
 ---
 
-## Section 1: Not Yet Implemented Workflows
+## Section 1: Universal Workflow Implementation - Specification Development
+
+### 1. Chemical Engineering Specification Development Workflow (CHEM-SPEC-DEV)
+**Status:** ⏳ Ready for Universal Template Integration
+**Source:** Universal Workflow Plan Phase 1 - Specification Development
+**Universal Template Alignment:** UNIV-WORKFLOW Phase 1 (75-80% reusability)
+
+**Description:** Core workflow for developing comprehensive chemical engineering specifications and documentation using universal specification development templates. Focuses on process systems, equipment specifications, and regulatory compliance documentation.
+
+**Key Activities:**
+- Process system requirements analysis and documentation
+- Equipment specification development and vendor coordination
+- Technical specification writing and standardization
+- Regulatory compliance integration (EPA, OSHA, local regulations)
+- Safety system requirements and PHA/HAZOP coordination
+- Quality assurance and document control
+
+**Business Criticality:** Critical - Primary universal workflow target
+**Expected Impact:** 30-35% time savings on chemical specifications
+**Implementation Timeline:** Ready post-UNIV-WORKFLOW Phase 1 completion
+
+### 2. Chemical Process Equipment Specification Workflow (CHEM-EQUIP-SPEC)
+**Status:** ⏳ Ready for Universal Template Integration
+**Source:** Universal Workflow Plan Phase 1 - Equipment specifications component
+**Universal Template Alignment:** UNIV-WORKFLOW Phase 1 (70-75% reusability)
+
+**Description:** Specialized workflow for developing detailed chemical process equipment specifications including reactors, distillation columns, heat exchangers, and pressure vessels.
+
+**Key Activities:**
+- Equipment requirements analysis and performance criteria
+- Technical specification development and standardization
+- Vendor qualification and bid evaluation criteria
+- Quality assurance and testing requirements
+- Installation and commissioning specifications
+- Maintenance and inspection requirements
+
+**Business Criticality:** High - Process equipment foundation
+**Expected Impact:** 35% reduction in equipment specification development time
+
+## Section 2: Future Implementation - Additional Chemical Engineering Workflows
+
+**Note:** The following chemical engineering workflows will be implemented in future phases after successful deployment of universal specification templates:
+
+### Planned for Phase 2+ Implementation:
+1. **Process Design and Engineering Workflow** - Process flow diagrams and P&IDs
+2. **Process Safety Management Workflow** - HAZOP and safety systems
+3. **Equipment Procurement and Testing Workflow** - Procurement and FAT
+4. **Commissioning and Start-up Workflow** - Commissioning and performance testing
+5. **Operations and Maintenance Documentation Workflow** - O&M manuals and procedures
+
+**Implementation Timeline:** Following successful universal template deployment and validation
 
 ### 1. Process Design and Engineering Workflow (CHEM-PROCESS)
 **Status:** ❌ Not Implemented

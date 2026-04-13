@@ -1,345 +1,259 @@
----
-memory_layer: durable_knowledge
-para_section: pages/codebase/procedures/paperclip
-gigabrain_tags: procedures, paperclip, architectural-workflows, workflow-implementation, schema-alignment
-openstinger_context: architectural-workflow-procedures, paperclip-implementation
-last_updated: 2026-04-08
-related_docs:
-  - docs_construct_ai/disciplines/00825-architectural/agent-data/domain-knowledge/00825_DOMAIN-KNOWLEDGE.MD
-  - docs_construct_ai/codebase/schema/paperclip/total_schema.csv
-  - docs_construct_ai/codebase/agents/paperclip-teams/Paperclip_Teams_Cross_Reference.md
-  - .clinerules/guide/project-implementation-workflow-guide.md
----
+# Architectural Workflow Conversion Procedure
 
-# Architectural Workflow Implementation Preparation Procedure
+Status: **Ready for Universal Workflow Integration** 🏗️
+Owner: DomainForge AI (architectural-domainforge)
+Date: 2026-04-13
+Last Updated: 2026-04-13
 
-## Overview
+## Summary
 
-This procedure outlines how to create project implementation workflow guides for each missing architectural workflow, ensuring alignment with the existing Supabase table structure and leveraging the full capabilities of the Paperclip agent ecosystem.
+This document outlines the procedure for converting existing architectural workflows to leverage the universal workflow templates from the UNIV-WORKFLOW project. The 00825 Architectural discipline is identified as a high-priority target for specification development workflow implementation with 90-95% template reusability.
 
-### Purpose
-- Standardize architectural workflow implementation across the Paperclip ecosystem
-- Ensure schema alignment with existing architectural-related Supabase tables
-- Provide consistent team assignments and phase definitions
-- Maintain audit trails and compliance requirements for architectural operations
+**Universal Workflow Alignment**: Specification Development (Phase 1)
+**Target Reusability**: 90-95%
+**Priority Level**: High (Pilot Discipline #1)
 
-### Scope
-- 5 missing architectural workflows requiring implementation guides
-- Schema alignment with existing architectural-related Supabase tables
-- Integration with 9 Paperclip agent companies and their capabilities
-- 5-phase implementation process per workflow
+## Current State Analysis
 
----
+### ✅ Existing Architectural Workflows
 
-## Step 1: Schema Alignment Requirements
+| Workflow Type | Status | Complexity | Current Format |
+|---------------|--------|------------|----------------|
+| Building Specifications | Manual | High | Word/Excel documents |
+| Construction Documents | Semi-automated | High | CAD + Manual review |
+| Code Compliance | Manual | Medium | Regulatory checklists |
+| Design Development | Manual | High | Iterative design process |
+| Permit Documentation | Manual | Medium | Municipality-specific |
 
-### Critical Architectural Tables to Align With
+### 🎯 Universal Workflow Opportunities
 
-| Table | Purpose | Key Fields | Workflow Integration |
-|-------|---------|------------|---------------------|
-| **projects** | Core project management | id, organization_id, name, status, start_date, end_date | All architectural workflows must reference project context |
-| **architectural_deliverables** | Deliverable tracking | id, project_id, deliverable_type, status, due_date, revision | Design development and documentation workflows |
-| **building_codes** | Code compliance tracking | id, project_id, code_type, status, compliance_date, authority | Regulatory compliance workflows |
-| **inspections** | Inspection management | id, project_id, inspection_type, status, inspector, date | Construction administration workflows |
-| **bim_models** | BIM model management | id, project_id, model_type, version, status, last_updated | BIM and model management workflows |
-| **as_built_documents** | As-built tracking | id, project_id, document_type, status, final_date, location | Handover and documentation workflows |
-| **permits_approvals** | Permit tracking | id, project_id, permit_type, status, authority, approval_date | Regulatory compliance workflows |
+**Primary Candidate**: Specification Development Workflow
+- **Fit**: 90-95% reusable template components
+- **Impact**: 40-50% time savings on spec development
+- **Scope**: Complete building specification lifecycle
 
-### Schema-Aware Workflow Design Requirements
+**Secondary Candidates**:
+- Regulatory Compliance (85-90% reusable)
+- Construction Administration (80-85% reusable)
 
-#### Database Integration Points
-- **Primary Table**: Identify which table serves as the workflow's primary data store
-- **Related Tables**: Map all foreign key relationships and dependent tables
-- **Status Fields**: Align workflow states with table status enums
-- **Audit Trail**: Ensure all changes are logged via existing audit mechanisms
+## Conversion Procedure
 
-#### RLS (Row Level Security) Compliance
-- **Organization Scoping**: All queries must respect organization_id filtering
-- **User Permissions**: Implement proper role-based access controls
-- **Data Isolation**: Ensure multi-tenant data separation
+### Phase 1: Assessment & Planning (Week 1)
 
-#### API Integration Requirements
-- **REST Endpoints**: Use existing architectural API endpoints
-- **Real-time Updates**: Implement Supabase real-time subscriptions where needed
-- **Error Handling**: Follow established error response patterns
+#### Step 1.1: Workflow Inventory
+**Objective**: Catalog all current architectural workflows and identify universal template candidates.
 
----
+**Tasks**:
+- [ ] Document existing workflow types and frequencies
+- [ ] Map workflows to universal template categories
+- [ ] Identify customization requirements per workflow
+- [ ] Prioritize workflows by impact and reusability
 
-## Step 2: Workflow Prioritization & Assignment
+**Deliverables**:
+- Architectural workflow inventory matrix
+- Universal template mapping document
+- Customization requirements analysis
 
-### Priority Order (based on architectural criticality)
-1. **Design Development and Documentation Workflow (ARCH-DESIGN)** - Core architectural design process
-2. **Regulatory Compliance and Code Management Workflow (ARCH-CODE)** - Legal and regulatory compliance
-3. **Construction Administration and Inspection Workflow (ARCH-CONSTRUCTION)** - Construction quality assurance
-4. **Handover and As-Built Documentation Workflow (ARCH-HANDOVER)** - Project completion and handover
-5. **BIM and Model Management Workflow (ARCH-BIM)** - Digital design coordination
+#### Step 1.2: Template Gap Analysis
+**Objective**: Identify gaps between universal templates and architectural requirements.
 
----
+**Tasks**:
+- [ ] Compare universal specification template with architectural needs
+- [ ] Document discipline-specific requirements (building codes, design standards)
+- [ ] Identify required customizations and extensions
+- [ ] Validate template adaptability for architectural workflows
 
-## Step 3: Directory Structure Setup
+**Deliverables**:
+- Template gap analysis report
+- Customization specification document
+- Architectural requirements traceability matrix
 
-For each workflow, create a dedicated folder structure:
+### Phase 2: Template Adaptation (Weeks 2-3)
 
-```
-docs-paperclip/disciplines/00825-architectural/
-├── design-development-workflow/     # ARCH-DESIGN
-│   ├── project/
-│   ├── issues/
-│   └── README.md
-├── regulatory-compliance-workflow/  # ARCH-CODE
-│   ├── project/
-│   ├── issues/
-│   └── README.md
-├── construction-administration-workflow/ # ARCH-CONSTRUCTION
-│   ├── project/
-│   ├── issues/
-│   └── README.md
-├── bim-management-workflow/         # ARCH-BIM
-│   ├── project/
-│   ├── issues/
-│   └── README.md
-└── handover-documentation-workflow/ # ARCH-HANDOVER
-    ├── project/
-    ├── issues/
-    └── README.md
-```
+#### Step 2.1: Base Template Implementation
+**Objective**: Deploy universal specification development template for architectural use.
 
----
+**Tasks**:
+- [ ] Configure universal template for architectural discipline
+- [ ] Implement building-specific document types and sections
+- [ ] Set up architectural approval workflows and routing
+- [ ] Integrate with existing CAD and specification tools
 
-## Step 4: Template Adaptation for Each Workflow
+**Deliverables**:
+- Architectural-adapted specification template
+- Document type configuration
+- Tool integration specifications
 
-**Base Template**: Use `.clinerules/guide/project-implementation-workflow-guide.md`
+#### Step 2.2: Discipline Customization
+**Objective**: Add architectural-specific customizations while maintaining template reusability.
 
-**For Each Workflow, customize these variables:**
+**Tasks**:
+- [ ] Implement building code integration (IBC, local codes)
+- [ ] Add architectural design phase workflows
+- [ ] Configure permit documentation automation
+- [ ] Set up construction document coordination
 
-### Core Project Variables
-```
-{PLAN_DOCUMENT_PATH} = docs-paperclip/disciplines/00825-architectural/[workflow-name]/project/2026-04-XX-[workflow-slug]-plan.md
-{PROJECT_DOCUMENT_PATH} = docs-paperclip/disciplines/00825-architectural/[workflow-name]/project/2026-04-XX-[workflow-slug]-implementation.md
-{CEO_AGENT} = nexus-devforge-ceo
-{ISSUE_PREFIX} = ARCH-[CODE]
-```
+**Deliverables**:
+- Architectural customization module
+- Code integration specifications
+- Design phase workflow templates
 
-### Company and Team Assignments
-```
-{PRIMARY_COMPANY} = DevForge AI
-{PRIMARY_TEAM} = Engineering
-{PRIMARY_AGENTS} = interface-devforge, codesmith-devforge, devcore-devforge
-{PRIMARY_SKILLS} = Architectural Workflow Development, Design Management, Building Codes
+### Phase 3: Testing & Validation (Weeks 4-5)
 
-{INFRA_COMPANY} = InfraForge AI
-{INFRA_TEAM} = Infrastructure
-{INFRA_AGENTS} = database-infraforge
-{INFRA_SKILLS} = Database Administration, System Integration
+#### Step 3.1: Pilot Testing
+**Objective**: Test adapted templates with real architectural projects.
 
-{QUALITY_COMPANY} = QualityForge AI
-{QUALITY_TEAM} = Quality
-{QUALITY_AGENTS} = guardian-qualityforge, validator-qualityforge
-{QUALITY_SKILLS} = Testing, Validation, Quality Assurance
+**Tasks**:
+- [ ] Execute specification development for 2-3 pilot projects
+- [ ] Validate template performance and usability
+- [ ] Collect feedback from architectural team
+- [ ] Measure time savings and quality improvements
 
-{KNOWLEDGE_COMPANY} = KnowledgeForge AI
-{KNOWLEDGE_TEAM} = Documentation
-{KNOWLEDGE_AGENTS} = doc-analyzer-knowledgeforge
-{KNOWLEDGE_SKILLS} = Documentation, Knowledge Management
+**Deliverables**:
+- Pilot testing results report
+- User feedback analysis
+- Performance metrics baseline
 
-{DOMAIN_COMPANY} = DomainForge AI
-{DOMAIN_TEAM} = Architectural
-{DOMAIN_AGENTS} = architectural-domainforge
-{DOMAIN_SKILLS} = Architectural Design, BIM Management
-```
+#### Step 3.2: Quality Assurance
+**Objective**: Ensure template quality meets architectural standards.
 
-### Enhanced Template Variables for Schema Alignment
-```
-{PRIMARY_TABLE} = Main Supabase table for this workflow (e.g., architectural_deliverables, building_codes, inspections)
-{RELATED_TABLES} = Comma-separated list of dependent tables
-{SCHEMA_INTEGRATION_POINTS} = Key integration points with existing schema
-{DATA_VALIDATION_RULES} = Schema-based validation requirements
-{RLS_COMPLIANCE_REQUIREMENTS} = Row-level security implementation needs
-{AUDIT_TRAIL_REQUIREMENTS} = Audit logging requirements for compliance
-```
+**Tasks**:
+- [ ] Validate compliance with architectural standards
+- [ ] Test integration with existing workflows
+- [ ] Verify document quality and completeness
+- [ ] Confirm regulatory compliance capabilities
 
----
+**Deliverables**:
+- Quality assurance report
+- Compliance validation results
+- Integration testing summary
 
-## Step 5: Schema-Aware Phase Definitions
+### Phase 4: Rollout & Training (Weeks 6-7)
 
-**Standard 5-Phase Structure for Architectural Workflows:**
+#### Step 4.1: Full Discipline Deployment
+**Objective**: Deploy adapted templates across all architectural projects.
 
-```
-{PHASE_1_NAME} = Phase 1: Schema Analysis & Architectural Data Modeling (Weeks 1-2)
-{PHASE_1_ISSUE_1} = Analyze existing architectural table relationships and constraints
-{PHASE_1_AGENT_1} = database-infraforge
-{PHASE_1_ISSUE_2} = Design workflow data flow aligned with architectural schema
-{PHASE_1_AGENT_2} = codesmith-devforge
-{PHASE_1_ISSUE_3} = Implement RLS policies for new architectural workflow components
-{PHASE_1_AGENT_3} = database-infraforge
+**Tasks**:
+- [ ] Roll out templates to all active projects
+- [ ] Migrate existing projects to new templates
+- [ ] Monitor adoption and usage patterns
+- [ ] Provide ongoing support and troubleshooting
 
-{PHASE_2_NAME} = Phase 2: API Integration & Backend Development (Weeks 3-4)
-{PHASE_2_ISSUE_1} = Build CRUD operations for primary architectural workflow table
-{PHASE_2_AGENT_1} = devcore-devforge
-{PHASE_2_ISSUE_2} = Implement workflow state management with schema alignment
-{PHASE_2_AGENT_2} = codesmith-devforge
-{PHASE_2_ISSUE_3} = Integrate with existing architectural APIs and external providers
-{PHASE_2_AGENT_3} = interface-devforge
+**Deliverables**:
+- Deployment completion report
+- Migration status tracking
+- Support ticket analysis
 
-{PHASE_3_NAME} = Phase 3: Integration & Testing (Weeks 5-6)
-{PHASE_3_ISSUE_1} = Implement real-time architectural tracking and alert systems
-{PHASE_3_AGENT_1} = devcore-devforge
-{PHASE_3_ISSUE_2} = Create comprehensive test suite with architectural scenarios
-{PHASE_3_AGENT_2} = validator-qualityforge
-{PHASE_3_ISSUE_3} = Performance optimization and security review
-{PHASE_3_AGENT_3} = guardian-qualityforge
+#### Step 4.2: Training & Documentation
+**Objective**: Train architectural team on new workflow templates.
 
-{PHASE_4_NAME} = Phase 4: Documentation & Training (Weeks 7-8)
-{PHASE_4_ISSUE_1} = Create user documentation and architectural operational guides
-{PHASE_4_AGENT_1} = doc-analyzer-knowledgeforge
-{PHASE_4_ISSUE_2} = Develop training materials for architectural workflows
-{PHASE_4_AGENT_2} = doc-analyzer-knowledgeforge
-{PHASE_4_ISSUE_3} = Knowledge base integration and cross-referencing
-{PHASE_4_AGENT_3} = doc-analyzer-knowledgeforge
+**Tasks**:
+- [ ] Develop training materials for template usage
+- [ ] Conduct training sessions for architectural staff
+- [ ] Create user guides and best practices documentation
+- [ ] Establish support channels for template questions
 
-{PHASE_5_NAME} = Phase 5: Deployment & Go-Live (Weeks 9-10)
-{PHASE_5_ISSUE_1} = Production deployment and architectural data migration
-{PHASE_5_AGENT_1} = database-infraforge
-{PHASE_5_ISSUE_2} = User acceptance testing and architectural team training
-{PHASE_5_AGENT_2} = validator-qualityforge
-{PHASE_5_ISSUE_3} = Go-live support and architectural performance monitoring
-{PHASE_5_AGENT_3} = guardian-qualityforge
-```
+**Deliverables**:
+- Training materials package
+- User guides and documentation
+- Training completion tracking
 
----
+## Success Metrics
 
-## Step 6: Schema-Specific Success Criteria
+### Technical Metrics
+- [ ] Template deployment successful (>95% projects migrated)
+- [ ] System integration operational (CAD, specification tools)
+- [ ] Performance meets requirements (<2 second response times)
 
-**Database Integration Success Criteria:**
-```
-{FUNCTIONAL_SUCCESS_CRITERIA_1} = All architectural workflow data properly stored in aligned Supabase architectural tables
-{FUNCTIONAL_SUCCESS_CRITERIA_2} = RLS policies correctly implemented for architectural data security
-{FUNCTIONAL_SUCCESS_CRITERIA_3} = Foreign key relationships maintained across architectural operations
-{FUNCTIONAL_SUCCESS_CRITERIA_4} = Audit trails capture all architectural state changes and formal communications
-{FUNCTIONAL_SUCCESS_CRITERIA_5} = Real-time updates work with existing architectural subscription patterns
-```
+### Process Metrics
+- [ ] Time savings achieved (40-50% target)
+- [ ] Error reduction measured (>30% target)
+- [ ] User adoption rate (>80% target)
 
-**Schema Compliance Validation:**
-```
-{TECHNICAL_RISK_1} = Schema changes may break existing architectural functionality
-{TECHNICAL_RISK_1_MITIGATION} = Comprehensive testing against existing workflows before deployment
+### Quality Metrics
+- [ ] Document completeness maintained (>98%)
+- [ ] Regulatory compliance preserved (100%)
+- [ ] Stakeholder satisfaction (>4.5/5 rating)
 
-{TECHNICAL_RISK_2} = RLS policy conflicts may prevent legitimate architectural data access
-{TECHNICAL_RISK_2_MITIGATION} = Thorough testing of permission scenarios with existing roles
+## Risk Mitigation
 
-{TECHNICAL_RISK_3} = Performance impact on existing architectural queries and reporting
-{TECHNICAL_RISK_3_MITIGATION} = Database query optimization and indexing strategy for architectural data
-```
+### Technical Risks
+| Risk | Impact | Mitigation |
+|------|--------|------------|
+| Template customization complexity | High | Start with minimal customizations, iterate |
+| Tool integration challenges | Medium | Phase integration testing, fallback procedures |
+| Performance degradation | Medium | Monitor metrics, optimize as needed |
 
----
+### Process Risks
+| Risk | Impact | Mitigation |
+|------|--------|------------|
+| User resistance to change | Medium | Comprehensive training, demonstrate benefits |
+| Workflow disruption | High | Parallel operation during transition |
+| Quality degradation | High | Rigorous testing before full deployment |
 
-## Step 7: Workflow-Specific Schema Mapping
+## Dependencies
 
-### Priority Workflow Schema Alignments
+### Internal Dependencies
+- [ ] UNIV-WORKFLOW Phase 1 completion (universal specification template)
+- [ ] DomainForge AI architectural agent availability
+- [ ] QualityForge AI validation agent assignment
 
-#### 1. Design Development and Documentation Workflow (ARCH-DESIGN)
-- **Primary Table**: `architectural_deliverables`
-- **Related Tables**: `projects`, `bim_models`, `building_codes`
-- **Key Integration**: Design deliverable tracking and documentation management
-- **Audit Requirements**: Design development and documentation tracking
+### External Dependencies
+- [ ] CAD software API availability
+- [ ] Specification tool integration capabilities
+- [ ] Building code database access
 
-#### 2. Regulatory Compliance and Code Management Workflow (ARCH-CODE)
-- **Primary Table**: `building_codes`
-- **Related Tables**: `projects`, `permits_approvals`, `inspections`
-- **Key Integration**: Code compliance tracking and permit management
-- **Audit Requirements**: Regulatory compliance and approval tracking
+## Resource Requirements
 
-#### 3. Construction Administration and Inspection Workflow (ARCH-CONSTRUCTION)
-- **Primary Table**: `inspections`
-- **Related Tables**: `projects`, `architectural_deliverables`, `building_codes`
-- **Key Integration**: Inspection coordination and construction quality tracking
-- **Audit Requirements**: Inspection and quality control tracking
+### Team Resources
+- **Architectural Domain Expert**: 20 hours/week (Weeks 1-7)
+- **Technical Integration Specialist**: 15 hours/week (Weeks 2-4)
+- **Quality Assurance Specialist**: 10 hours/week (Weeks 4-5)
+- **Training Coordinator**: 10 hours/week (Weeks 6-7)
 
-#### 4. BIM and Model Management Workflow (ARCH-BIM)
-- **Primary Table**: `bim_models`
-- **Related Tables**: `projects`, `architectural_deliverables`, `building_codes`
-- **Key Integration**: BIM model management and coordination tracking
-- **Audit Requirements**: Model development and coordination tracking
+### System Resources
+- **Development Environment**: Access to template development platform
+- **Testing Environment**: Isolated testing environment for pilot projects
+- **Training Environment**: Platform for training materials and sessions
 
-#### 5. Handover and As-Built Documentation Workflow (ARCH-HANDOVER)
-- **Primary Table**: `as_built_documents`
-- **Related Tables**: `projects`, `architectural_deliverables`, `inspections`
-- **Key Integration**: As-built documentation and handover management
-- **Audit Requirements**: Handover completion and documentation tracking
+## Timeline & Milestones
+
+| Phase | Duration | Key Milestones |
+|-------|----------|----------------|
+| Assessment & Planning | Week 1 | Workflow inventory complete, gap analysis delivered |
+| Template Adaptation | Weeks 2-3 | Base template implemented, customizations complete |
+| Testing & Validation | Weeks 4-5 | Pilot testing complete, QA passed |
+| Rollout & Training | Weeks 6-7 | Full deployment complete, training delivered |
+
+## Communication Plan
+
+### Internal Communications
+- **Weekly Status Updates**: Project team and stakeholders
+- **Phase Completion Reviews**: Key milestone reviews with feedback
+- **Issue Resolution Updates**: Blockers and resolution status
+
+### Training Communications
+- **Training Schedule Announcements**: 2 weeks prior to sessions
+- **Training Materials Distribution**: 1 week prior to sessions
+- **Post-Training Support**: Ongoing support channels
+
+## Change Management
+
+### Transition Strategy
+1. **Parallel Operation**: Run old and new workflows simultaneously during transition
+2. **Gradual Migration**: Migrate projects in phases based on complexity
+3. **Rollback Plan**: Ability to revert to old workflows if issues arise
+
+### User Support
+- **Help Desk**: Dedicated support for template-related questions
+- **User Guides**: Comprehensive documentation for all template features
+- **Office Hours**: Regular sessions for questions and feedback
 
 ---
 
-## Step 8: Implementation Execution
-
-**For Each Workflow:**
-
-1. **Create Project Folder Structure**
-   ```bash
-   mkdir -p docs-paperclip/disciplines/00825-architectural/[workflow-name]/project
-   mkdir -p docs-paperclip/disciplines/00825-architectural/[workflow-name]/issues
-   ```
-
-2. **Copy and Customize Template**
-   ```bash
-   cp .clinerules/guide/project-implementation-workflow-guide.md \
-      docs-paperclip/disciplines/00825-architectural/[workflow-name]/project/2026-04-XX-[workflow-slug]-implementation-guide.md
-   ```
-
-3. **Replace Variables** using systematic find-and-replace for all template variables
-
-4. **Create Supporting Documents**
-   - Project plan document
-   - Issue templates for each phase
-   - README.md with workflow overview
-
-5. **Team Assignment** based on cross-reference:
-   - **DevForge AI**: Core development (nexus-devforge-ceo, interface-devforge, codesmith-devforge, devcore-devforge)
-   - **InfraForge AI**: Database and infrastructure (database-infraforge)
-   - **QualityForge AI**: Testing and QA (guardian-qualityforge, validator-qualityforge)
-   - **KnowledgeForge AI**: Documentation (doc-analyzer-knowledgeforge)
-   - **DomainForge AI**: Architectural domain expertise (architectural-domainforge)
-
----
-
-## Step 9: Quality Assurance
-
-### Schema Compliance Checklist
-- [ ] All new tables follow existing naming conventions
-- [ ] Foreign key relationships properly defined
-- [ ] RLS policies implemented for multi-tenant security
-- [ ] Indexes created for performance-critical architectural queries
-- [ ] Audit triggers configured for compliance tables
-- [ ] Migration scripts tested against production data
-- [ ] API endpoints documented with OpenAPI specs
-- [ ] Database constraints validated for data integrity
-
-### Integration Testing Requirements
-- [ ] End-to-end workflow testing with real architectural schema data
-- [ ] Performance testing against existing architectural query patterns
-- [ ] Security testing for RLS policy effectiveness
-- [ ] External API integration testing (BIM systems, code databases)
-- [ ] Real-time architectural tracking and alert system validation
-- [ ] Rollback procedures documented and tested
-
----
-
-## Step 10: Success Metrics & Monitoring
-
-### Implementation Success Metrics
-- **Schema Alignment**: 100% of workflows integrate with existing architectural tables
-- **RLS Compliance**: Zero security violations in production
-- **Performance**: No degradation of existing architectural queries and reporting
-- **Data Integrity**: 100% foreign key relationship maintenance
-- **Audit Compliance**: Complete audit trails for all architectural actions
-- **External Integration**: Successful API connectivity and data flow
-
-### Continuous Improvement
-- **Schema Evolution**: Regular review of architectural table utilization and optimization opportunities
-- **Performance Monitoring**: Ongoing monitoring of architectural query performance and reporting systems
-- **Security Audits**: Regular RLS policy reviews and updates for architectural data
-- **API Reliability**: Monitoring of external architectural API performance and failover procedures
-- **User Feedback**: Incorporation of architectural team feedback into workflow improvements
-
----
-
-This procedure ensures that all architectural workflow implementations are fully aligned with the existing Supabase schema architecture, maintaining data integrity, security, and performance while extending the architectural capabilities systematically.
+**Document Control**
+- **Version**: 1.0
+- **Date**: 2026-04-13
+- **Author**: DomainForge AI (architectural-domainforge)
+- **Review Cycle**: Bi-weekly during implementation
+- **Next Review**: 2026-04-27

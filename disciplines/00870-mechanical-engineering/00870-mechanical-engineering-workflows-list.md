@@ -11,16 +11,65 @@ status: active
 
 ## Overview
 
-This document consolidates all identified mechanical engineering workflows for the 00870 discipline, based on analysis of the domain knowledge and existing implementation files. Workflows are categorized by implementation status and prioritized by business criticality.
+This document focuses on **universal workflow implementation** for mechanical engineering specification development workflows. Additional mechanical engineering workflows (rotating equipment, piping systems, HVAC design, static equipment, and commissioning) will be implemented in future phases following the successful deployment of universal specification templates.
 
-**Total Workflows Identified:** 5
-**Currently Implemented:** 0
-**Partially Implemented:** 0
-**Not Yet Implemented:** 5
+**Current Focus:** 2 Universal Template Ready Workflows
+**Future Implementation:** 5 Additional Mechanical Engineering Workflows
+**Implementation Priority:** Specification Development (Phase 1)
 
 ---
 
-## Section 1: Not Yet Implemented Workflows
+## Section 1: Universal Workflow Implementation - Specification Development
+
+### 1. Mechanical Engineering Specification Development Workflow (MECH-SPEC-DEV)
+**Status:** ⏳ Ready for Universal Template Integration
+**Source:** Universal Workflow Plan Phase 1 - Specification Development
+**Universal Template Alignment:** UNIV-WORKFLOW Phase 1 (80-85% reusability)
+
+**Description:** Core workflow for developing comprehensive mechanical engineering specifications and documentation using universal specification development templates. Focuses on HVAC systems, plumbing, fire protection, and building mechanical systems.
+
+**Key Activities:**
+- Mechanical system requirements analysis and documentation
+- Equipment specification development and vendor coordination
+- Technical specification writing and standardization
+- Code compliance integration (ASME, NFPA, local codes)
+- Quality assurance and document control
+- Stakeholder review and approval coordination
+
+**Business Criticality:** Critical - Primary universal workflow target
+**Expected Impact:** 35-40% time savings on mechanical specifications
+**Implementation Timeline:** Ready post-UNIV-WORKFLOW Phase 1 completion
+
+### 2. Mechanical Equipment Specification Workflow (MECH-EQUIP-SPEC)
+**Status:** ⏳ Ready for Universal Template Integration
+**Source:** Universal Workflow Plan Phase 1 - Equipment specifications component
+**Universal Template Alignment:** UNIV-WORKFLOW Phase 1 (75-80% reusability)
+
+**Description:** Specialized workflow for developing detailed mechanical equipment specifications including HVAC units, pumps, boilers, and control systems.
+
+**Key Activities:**
+- Equipment requirements analysis and performance criteria
+- Technical specification development and standardization
+- Vendor qualification and bid evaluation criteria
+- Quality assurance and testing requirements
+- Installation and commissioning specifications
+- Maintenance and warranty requirements
+
+**Business Criticality:** High - Equipment procurement foundation
+**Expected Impact:** 40% reduction in equipment specification development time
+
+## Section 2: Future Implementation - Additional Mechanical Engineering Workflows
+
+**Note:** The following mechanical engineering workflows will be implemented in future phases after successful deployment of universal specification templates:
+
+### Planned for Phase 2+ Implementation:
+1. **Rotating Equipment Design and Specification Workflow** - Pumps, compressors, and turbines
+2. **Piping Systems Design and Engineering Workflow** - Piping design and stress analysis
+3. **HVAC Systems Design and Specification Workflow** - Heating, ventilation, and air conditioning
+4. **Static Equipment and Vessels Design Workflow** - Pressure vessels and heat exchangers
+5. **Mechanical Systems Commissioning and Testing Workflow** - Commissioning and start-up
+
+**Implementation Timeline:** Following successful universal template deployment and validation
 
 ### 1. Rotating Equipment Design and Specification Workflow (MECH-ROTATING)
 **Status:** ❌ Not Implemented
