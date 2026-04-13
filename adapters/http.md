@@ -1,4 +1,4 @@
----
+what adapter ---
 title: HTTP Adapter
 summary: HTTP webhook adapter
 ---
