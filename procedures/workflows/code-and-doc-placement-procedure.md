@@ -73,6 +73,9 @@ docs-paperclip/disciplines/{discipline-code}/
 │       │   └── {ISSUE-ID}.md
 │       │
 │       ├── desktop/             ← Desktop platform
+│       │   ├── trigger/         ← Desktop-specific triggers
+│       │   │   ├── README.md
+│       │   │   └── {PROJECT}-000-project-automation.md
 │       │   ├── issues/
 │       │   │   ├── {ISSUE-ID}.md
 │       │   │   └── ISSUE-GENERATION-STATUS.md
@@ -80,6 +83,9 @@ docs-paperclip/disciplines/{discipline-code}/
 │       │   └── orchestration/
 │       │
 │       ├── mobile/              ← Mobile platform
+│       │   ├── trigger/         ← Mobile-specific triggers
+│       │   │   ├── README.md
+│       │   │   └── {PROJECT}-000-project-automation.md
 │       │   ├── issues/
 │       │   │   ├── {ISSUE-ID}.md
 │       │   │   └── ISSUE-GENERATION-STATUS.md
@@ -87,7 +93,12 @@ docs-paperclip/disciplines/{discipline-code}/
 │       │   └── orchestration/
 │       │
 │       ├── web/                 ← Web platform
+│       │   ├── trigger/         ← Web-specific triggers
+│       │   │   ├── README.md
+│       │   │   └── {PROJECT}-000-project-automation.md
 │       │   ├── issues/
+│       │   │   ├── {ISSUE-ID}.md
+│       │   │   └── ISSUE-GENERATION-STATUS.md
 │       │   ├── learning/
 │       │   └── orchestration/
 │       │
@@ -211,7 +222,12 @@ Every generated issue MUST include a **"Working Directory & Repository"** sectio
 ### Desktop Platform
 ```
 projects/{PROJECT}/desktop/
+├── trigger/         ← Desktop-specific triggers
+│   ├── README.md
+│   └── {PROJECT}-000-project-automation.md
 ├── issues/          ← Desktop-specific issues
+│   ├── {ISSUE-ID}.md
+│   └── ISSUE-GENERATION-STATUS.md
 ├── learning/        ← Desktop learning tracker
 └── orchestration/   ← Desktop execution tracking
 ```
@@ -219,7 +235,12 @@ projects/{PROJECT}/desktop/
 ### Mobile Platform
 ```
 projects/{PROJECT}/mobile/
+├── trigger/         ← Mobile-specific triggers
+│   ├── README.md
+│   └── {PROJECT}-000-project-automation.md
 ├── issues/          ← Mobile-specific issues
+│   ├── {ISSUE-ID}.md
+│   └── ISSUE-GENERATION-STATUS.md
 ├── learning/        ← Mobile learning tracker
 └── orchestration/   ← Mobile execution tracking
 ```
@@ -227,7 +248,12 @@ projects/{PROJECT}/mobile/
 ### Web Platform
 ```
 projects/{PROJECT}/web/
+├── trigger/         ← Web-specific triggers
+│   ├── README.md
+│   └── {PROJECT}-000-project-automation.md
 ├── issues/          ← Web-specific issues
+│   ├── {ISSUE-ID}.md
+│   └── ISSUE-GENERATION-STATUS.md
 ├── learning/        ← Web learning tracker
 └── orchestration/   ← Web execution tracking
 ```
@@ -237,7 +263,7 @@ projects/{PROJECT}/web/
 projects/{PROJECT}/shared/
 ├── api/             ← API contracts (OpenAPI/Swagger specs)
 ├── business-logic/  ← Business logic documentation
-├── data-models/      ← Data model definitions
+├── data-models/     ← Data model definitions
 └── AUTH.md          ← Authentication implementation details
 ```
 
