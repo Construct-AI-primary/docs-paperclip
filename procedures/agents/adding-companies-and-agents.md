@@ -47,7 +47,7 @@ CREATE TABLE companies (
 
 ### Agents Table
 
-The `agents` table has the following key fields:
+The `agents` table has the following complete schema (based on `populate_agents_supabase.sql`):
 
 ```sql
 CREATE TABLE agents (
@@ -59,18 +59,40 @@ CREATE TABLE agents (
   capabilities TEXT,
   status TEXT NOT NULL DEFAULT 'idle',
   reports_to UUID REFERENCES agents(id),
-  metadata JSONB,
-  permissions JSONB NOT NULL DEFAULT '{}',
+  adapter_type TEXT,  -- 'http', 'claude', 'openai', etc.
+  adapter_config JSONB,  -- Webhook URLs, API keys, model configs
+  budget_monthly_cents INTEGER NOT NULL DEFAULT 0,
+  spent_monthly_cents INTEGER NOT NULL DEFAULT 0,
+  last_heartbeat_at TIMESTAMP WITH TIME ZONE,
+  metadata JSONB,  -- team, specialization, skills, reports_to_details
   created_at TIMESTAMP WITH TIME ZONE NOT NULL DEFAULT NOW(),
-  updated_at TIMESTAMP WITH TIME ZONE NOT NULL DEFAULT NOW()
+  updated_at TIMESTAMP WITH TIME ZONE NOT NULL DEFAULT NOW(),
+  runtime_config JSONB,  -- persistSession, etc.
+  permissions JSONB NOT NULL DEFAULT '{}',
+  icon TEXT,
+  pause_reason TEXT,
+  paused_at TIMESTAMP WITH TIME ZONE,
+  model_config JSONB,  -- Primary model, fallbacks, temperature
+  device_config JSONB,  -- Device priority, device_id
+  deleted_at TIMESTAMP WITH TIME ZONE,
+  is_active BOOLEAN NOT NULL DEFAULT true
 );
 ```
+
+**Critical Fields for New Agents:**
+- **`adapter_type`**: Communication protocol ('http' for webhooks, 'claude' for Anthropic, etc.)
+- **`adapter_config`**: JSON with webhook URLs, API keys, model settings, provider configs
+- **`metadata`**: Include `reports_to_details` with manager name, title, and company
+- **`model_config`**: Primary model configuration with fallback models
+- **`device_config`**: Device priority and assignment settings
+- **`is_active`**: Must be `true` for active agents
 
 **Important Notes:**
 - `company_id` must reference an existing company
 - `reports_to` creates hierarchical relationships between agents
 - `permissions` is a JSONB column (no separate permissions table)
-- Common roles: `ceo`, `engineer`, `general`, `pm`, `devops`
+- Common roles: `ceo`, `engineer`, `general`, `pm`, `devops`, `specialist`
+- Always include `ON CONFLICT (id) DO UPDATE SET` for safe re-execution
 
 ## Procedure Steps
 

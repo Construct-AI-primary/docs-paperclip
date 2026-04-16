@@ -182,9 +182,10 @@ Agents are referenced by 30+ tables. The deletion order must be:
 **Level 4**: Agent configuration
 - agent_wakeup_requests
 - agent_runtime_state
+- agent_skill_assignments (MUST be deleted before agents table)
 - agent_config_revisions (both agent_id and created_by_agent_id)
 - agent_api_keys
-- agent_skill_assignments
+- agent_models
 
 **Level 5**: Records created/owned by agent
 - company_secret_versions (created_by_agent_id)
@@ -390,15 +391,45 @@ ls -lh backup_before_agent_deletion_${TIMESTAMP}.sql
 
 ### Step 4: Execute Deletion Script
 
+**Option A: Using SQL Script (PostgreSQL)**
 ```bash
 # Run the cleanup script
 PGPASSWORD='your_password' psql -h db.host.supabase.co -U postgres -d postgres \
   -f scripts/database/cleanup_terminated_agents.sql
 ```
 
+**Option B: Using Supabase Client (Node.js)**
+```javascript
+const { createClient } = require('@supabase/supabase-js');
+require('dotenv').config();
+
+const supabase = createClient(
+  process.env.SUPABASE_URL,
+  process.env.SUPABASE_SERVICE_ROLE_KEY
+);
+
+const agentIds = ['agent-id-1', 'agent-id-2'];
+
+async function deleteAgents() {
+  // CRITICAL: Delete in this exact order to respect FK constraints
+  
+  // 1. Delete agent_skill_assignments FIRST (blocks agent deletion)
+  await supabase.from('agent_skill_assignments').delete().in('agent_id', agentIds);
+  
+  // 2. Delete agent_models
+  await supabase.from('agent_models').delete().in('agent_id', agentIds);
+  
+  // 3. Delete agent_api_keys
+  await supabase.from('agent_api_keys').delete().in('agent_id', agentIds);
+  
+  // 4. Delete agents
+  await supabase.from('agents').delete().in('id', agentIds);
+}
+```
+
 **The script will**:
 1. Display agents to be deleted
-2. Delete all dependencies in correct order
+2. Delete all dependencies in correct order (agent_skill_assignments MUST be first)
 3. Update nullable FK references to NULL
 4. Delete the agents
 5. Show remaining agent distribution
@@ -661,6 +692,7 @@ DROP TABLE IF EXISTS agents_to_delete;
 
 | Version | Date | Changes | Author |
 |---------|------|---------|--------|
+| 1.1 | 2026-04-15 | Added agent_skill_assignments as critical FK dependency; Added Supabase client deletion example | Database Admin |
 | 1.0 | 2026-04-12 | Initial version based on successful cleanup operations | Database Admin |
 
 ---

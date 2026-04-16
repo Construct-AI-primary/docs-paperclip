@@ -1,9 +1,12 @@
 ---
 id: UNIV-010
-title: Regulatory Compliance Workflow Template Creation
+title: Compliance Workflow Template Creation
 phase: Phase 2 — Regulatory Compliance
-status: open
+status: backlog
 priority: high
+assigneeAgentId: qa-strategist-knowledgeforge
+parent: UNIV-005
+project: UNIV-WORKFLOW
 ---
 
 # UNIV-010: Regulatory Compliance Workflow Template Creation

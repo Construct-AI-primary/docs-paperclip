@@ -331,6 +331,12 @@ priority: {critical|high|medium|low}
 
 - **Local Repository:** `/Users/_Hermes/paperclip-render`
 - **Working Directory:** `/Users/_Hermes/paperclip-render`
+- **GitHub Repositories:** [GITHUB_EDIT: true]
+  - **Primary Repository:** `https://github.com/Construct-AI-primary/construct_ai.git`
+  - **Mobile Repository:** `https://github.com/Construct-AI-primary/construct_ai-mobile.git`
+  - **Documentation Repository:** `https://github.com/Construct-AI-primary/docs-paperclip.git`
+  - **Construct AI Docs Repository:** `https://github.com/Construct-AI-primary/construct_ai_docs.git`
+- **Clear Repository Guidance**: Agents now know exactly which GitHub repositories to use for coding work
 - **Target Files:**
   - `{path/to/primary/file.ext}`
   - `{path/to/related/file.ext}`

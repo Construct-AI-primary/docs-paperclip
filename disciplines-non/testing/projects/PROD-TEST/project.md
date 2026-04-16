@@ -94,6 +94,13 @@ discipline: testing
 - **InfraForge AI**: Infrastructure and database support
 - **Hermes Agent**: Automated testing execution
 
+## Development Repositories
+**GitHub Repositories**: [GITHUB_EDIT: true]
+- **Primary Repository**: `https://github.com/Construct-AI-primary/construct_ai.git`
+- **Mobile Repository**: `https://github.com/Construct-AI-primary/construct_ai-mobile.git`
+- **Documentation Repository**: `https://github.com/Construct-AI-primary/docs-paperclip.git`
+- **Construct AI Docs Repository**: `https://github.com/Construct-AI-primary/construct_ai_docs.git`
+
 ## Risk Assessment
 
 ### Technical Risks

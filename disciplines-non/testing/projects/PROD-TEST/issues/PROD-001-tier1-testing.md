@@ -2,8 +2,11 @@
 id: PROD-001
 title: Execute Tier 1 Testing - Foundation Validation
 phase: 1 — Foundation Testing
-status: open
-priority: Critical
+status: backlog
+priority: critical
+assigneeAgentId: validator-qualityforge
+parent: PROD-000
+project: PROD-TEST
 ---
 
 # PROD-001: Execute Tier 1 Testing - Foundation Validation

@@ -2,8 +2,11 @@
 id: UNIV-001
 title: Base Specification Development Template Creation
 phase: Phase 1 — Specification Development
-status: open
+status: backlog
 priority: critical
+assigneeAgentId: interface-devforge
+parent: UNIV-000
+project: UNIV-WORKFLOW
 ---
 
 # UNIV-001: Base Specification Development Template Creation

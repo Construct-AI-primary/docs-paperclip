@@ -15,15 +15,31 @@ Agent naming in Paperclip follows a hierarchical structure that balances human r
 
 Paperclip uses a dual naming approach to balance filesystem compatibility with UI display:
 
-### Filesystem Names (Documentation)
-- **Format**: `{company-slug}-{role}` (lowercase, hyphenated)
-- **Purpose**: File paths, directories, git-tracked documentation
-- **Example**: `knowledgeforge-ai/administrator/`, `devforge-ai/codesmith/`
+### 📁 Filesystem Names (Documentation Structure)
+- **Format**: `{personal-name}-{company-slug}-{role}` (lowercase, hyphenated)
+- **Purpose**: File paths, directories, git-tracked documentation, internal references
+- **When Used**: In AGENTS.md files, directory names, skill routing
+- **Example**: `maya-loopy-ai-content-strategist/`, `alex-devforge-ai-codesmith/`
+- **Key Rule**: These are NEVER displayed to users - they're internal identifiers
 
-### Database/UI Names (Paperclip Display)
-- **Format**: `{CompanyName AI}-{role}` (proper capitalization)
-- **Purpose**: Database records, UI display, API responses
-- **Example**: `KnowledgeForge AI-administrator`, `DevForge AI-codesmith`
+### 🖥️ Dashboard Display Names (Human-Readable)
+- **Format**: `{Personal Name}` (human-readable, often with unusual/funky twist)
+- **Purpose**: Database records, UI display, API responses, dashboard, user interactions
+- **When Used**: Everywhere users see agent names in the Paperclip interface
+- **Example**: `Maya`, `Alex`, `Orion`, `Nimbus`, `Quasar`, `Zephyr`
+- **Key Rule**: These should be memorable, human-like names that users will interact with
+
+**Critical Distinction:**
+- **Filesystem Name**: `nimbus-infraforge-supabase-specialist` (for files/directories)
+- **Dashboard Name**: `Nimbus` (what users see and interact with)
+- **Database Storage**: Dashboard name goes in `agents.name` field
+- **File Structure**: Filesystem name creates the directory structure
+
+**Key Rules:**
+- **Consistency within company**: Choose creative, memorable dashboard names
+- **Complete metadata**: All agents need title, team, and specialization in metadata
+- **No null metadata**: Agents must not have null titles, teams, or specializations
+- **Funky twist encouraged**: Dashboard names should be unusual and memorable
 
 ### Company Display Names
 | Slug | Display Name |
@@ -129,40 +145,39 @@ Human-readable descriptive title:
 
 ### Executive Agents
 
-**Pattern:** `[Company] [Role]` or `[Functional Name]`
+**Pattern:** `[Personal Name]` (preferred for dashboard display)
 
 **Examples:**
 ```
-✅ Nexus (DevForge CEO)
-✅ Orion (DomainForge CEO)
-✅ Apex (QualityForge CEO)
+✅ Maya (Loopy AI Content Strategist)
+✅ Alex (DevForge AI Codesmith)
+✅ Jordan (KnowledgeForge AI Administrator)
 ❌ CEO 2 (avoid generic numbers)
 ❌ Big Boss (avoid informal terms)
 ```
 
 ### Functional Agents
 
-**Pattern:** `[Descriptive Noun]` or `[Action Verb]er`
+**Pattern:** `[Personal Name]` or `[Personal Name]-[Functional Descriptor]`
 
 **Examples:**
 ```
-✅ Navigator (Data exploration)
-✅ Guardian (Quality protection)
-✅ Catalyst (Innovation driver)
-✅ Architect (System design)
-✅ Sentinel (Monitoring and alerts)
+✅ Sam (Data Navigator)
+✅ Dev (Code Guardian)
+✅ Observer (System Monitor)
+✅ maya-loopy-content-strategist (Personal-Functional Hybrid)
 ```
 
 ### Specialized Agents
 
-**Pattern:** `[Domain] [Function]` or `[Function] [Domain]`
+**Pattern:** `[Personal Name]` with functional context in filesystem
 
 **Examples:**
 ```
-✅ Data Sentinel (Data monitoring)
-✅ Code Guardian (Code quality)
-✅ Security Oracle (Security intelligence)
-✅ Product Catalyst (Product innovation)
+✅ Vision (Strategic Planning)
+✅ Alex (Data Analytics)
+✅ Jordan (Quality Assurance)
+Filesystem: alex-devforge-ai-data-analyst/
 ```
 
 ## Naming Procedure
@@ -459,6 +474,136 @@ END;
 $$ LANGUAGE plpgsql;
 ```
 
+## Data Quality and Cleanup
+
+### Agent Metadata Requirements
+
+All agents MUST have complete metadata to ensure proper functioning:
+
+**Required Metadata Fields:**
+- **title**: Descriptive title (e.g., "Safety Research Agent", "Chief Learning Officer (CEO)")
+- **team**: Team assignment (e.g., "safety-research", "executive", "learning-curriculum")
+- **specialization**: Area of expertise (e.g., "Safety Standards Research", "Learning Strategy")
+- **reports_to**: Reporting relationship (null for CEOs, otherwise valid agent name)
+
+**Validation Rules:**
+1. **No null metadata**: title, team, and specialization must not be null
+2. **Valid team names**: Must match company team structure
+3. **Valid specializations**: Should use standardized specialization terms
+4. **Valid reporting**: reports_to must reference an existing agent or be null for CEOs
+
+### Cleanup Procedure for Agents with Missing Metadata
+
+**Step 1: Identify Agents with Missing Metadata**
+```sql
+-- Find agents with null or empty metadata
+SELECT 
+    c.name as company_name,
+    a.name as agent_name,
+    a.role,
+    CASE WHEN a.title IS NULL OR a.title = '' THEN '❌' ELSE '✅' END as title_status,
+    CASE WHEN a.metadata->>'team' IS NULL OR a.metadata->>'team' = '' THEN '❌' ELSE '✅' END as team_status,
+    CASE WHEN a.metadata->>'specialization' IS NULL OR a.metadata->>'specialization' = '' THEN '❌' ELSE '✅' END as specialization_status
+FROM agents a
+JOIN companies c ON a.company_id = c.id
+WHERE a.title IS NULL OR a.title = '' 
+   OR a.metadata->>'team' IS NULL OR a.metadata->>'team' = ''
+   OR a.metadata->>'specialization' IS NULL OR a.metadata->>'specialization' = ''
+ORDER BY c.name, a.name;
+```
+
+**Step 2: Determine Correct Metadata**
+
+#### For Functional-Named Agents (e.g., "learningforge-ai-safety-research-agent")
+1. **Extract title from name pattern**: Convert hyphenated names to readable titles
+   - `learningforge-ai-safety-research-agent` → "Safety Research Agent"
+   - `learningforge-ai-mobile-patterns-agent` → "Mobile Patterns Agent"
+   
+2. **Assign appropriate team**: Based on company documentation and naming pattern
+   - Pattern `*-research-*` → "safety-research" team
+   - Pattern `*-ceo` → "executive" team
+   
+3. **Determine specialization**: From agent's documented responsibilities
+   - Check agent's AGENTS.md documentation
+   - Use documented specialization or infer from name/role
+
+#### For Personal-Named Agents (e.g., "Amara", "Avery", "Beckett")
+1. **Research agent's purpose**: Check if agent has documentation or known function
+   - Look for agent directories in company documentation
+   - Check if agent appears in project plans or team assignments
+   
+2. **Assign descriptive title**: Based on discovered function
+   - If unknown function: "General Agent - [Personal Name]"
+   - Example: "Amara" → "General Agent - Amara"
+   
+3. **Place in appropriate team**: 
+   - If team unknown: "unassigned" or create logical team
+   - Example: all unknown personal agents → "general-agents" team
+   
+4. **Define clear specialization**:
+   - If unknown: "General Operations"
+   - Example: "General Agent Operations"
+
+#### For Agents with Generic Names (e.g., "Agent 1", "Manager 2")
+1. **Rename the agent** using proper naming conventions
+2. **Choose new name** following either Pattern 1 (Personal) or Pattern 2 (Functional)
+3. **Update all references** to the old name
+4. **Complete all metadata** for the new name
+
+**Step 3: Update Metadata**
+```sql
+-- Example update for LearningForge AI safety research agents
+UPDATE agents 
+SET 
+    title = CASE 
+        WHEN name = 'learningforge-ai-ceo' THEN 'Chief Learning Officer (CEO)'
+        WHEN name = 'learningforge-ai-safety-research-agent' THEN 'Safety Research Agent'
+        WHEN name = 'learningforge-ai-mobile-patterns-agent' THEN 'Mobile Patterns Agent'
+        WHEN name = 'learningforge-ai-domain-knowledge-agent' THEN 'Domain Knowledge Agent'
+        WHEN name = 'learningforge-ai-learning-integration-agent' THEN 'Learning Integration Agent'
+        WHEN name = 'learningforge-ai-research-coordinator' THEN 'Research Coordinator - Safety Research Team Lead'
+        ELSE title 
+    END,
+    metadata = jsonb_set(
+        jsonb_set(
+            COALESCE(metadata, '{}'::jsonb),
+            '{team}',
+            CASE 
+                WHEN name = 'learningforge-ai-ceo' THEN '"executive"'
+                WHEN name LIKE 'learningforge-ai-%research%' THEN '"safety-research"'
+                ELSE COALESCE(metadata->'team', '"unknown-team"'::jsonb)
+            END
+        ),
+        '{specialization}',
+        CASE 
+            WHEN name = 'learningforge-ai-ceo' THEN '"Learning Strategy"'
+            WHEN name = 'learningforge-ai-safety-research-agent' THEN '"Safety Standards Research"'
+            WHEN name = 'learningforge-ai-mobile-patterns-agent' THEN '"Mobile UX Research"'
+            WHEN name = 'learningforge-ai-domain-knowledge-agent' THEN '"Construction Domain Knowledge"'
+            WHEN name = 'learningforge-ai-learning-integration-agent' THEN '"Learning Integration"'
+            WHEN name = 'learningforge-ai-research-coordinator' THEN '"Research Coordination"'
+            ELSE COALESCE(metadata->'specialization', '"unknown-specialization"'::jsonb)
+        END
+    ),
+    updated_at = NOW()
+WHERE company_id = (SELECT id FROM companies WHERE name = 'Learning Forge AI')
+  AND (title IS NULL OR title = '' 
+       OR metadata->>'team' IS NULL OR metadata->>'team' = ''
+       OR metadata->>'specialization' IS NULL OR metadata->>'specialization' = '');
+```
+
+**Step 4: Verification**
+```sql
+-- Verify all agents have complete metadata
+SELECT 
+    COUNT(*) as total_agents,
+    SUM(CASE WHEN title IS NULL OR title = '' THEN 1 ELSE 0 END) as missing_titles,
+    SUM(CASE WHEN metadata->>'team' IS NULL OR metadata->>'team' = '' THEN 1 ELSE 0 END) as missing_teams,
+    SUM(CASE WHEN metadata->>'specialization' IS NULL OR metadata->>'specialization' = '' THEN 1 ELSE 0 END) as missing_specializations
+FROM agents
+WHERE company_id = (SELECT id FROM companies WHERE name = 'Learning Forge AI');
+```
+
 ## Quality Assurance
 
 ### Naming Review Checklist
@@ -471,6 +616,8 @@ $$ LANGUAGE plpgsql;
 - [ ] Name avoids generic terms and numbers
 - [ ] Role classification is accurate
 - [ ] Title provides clear description
+- [ ] Team assignment is specified
+- [ ] Specialization is defined
 - [ ] Documentation includes naming rationale
 
 **After Agent Creation:**
@@ -478,6 +625,7 @@ $$ LANGUAGE plpgsql;
 - [ ] Name works in API endpoints and queries
 - [ ] Name is included in relevant documentation
 - [ ] Name follows company naming patterns
+- [ ] All metadata fields are populated (title, team, specialization)
 - [ ] Related systems updated with new name
 
 ### Periodic Audits
