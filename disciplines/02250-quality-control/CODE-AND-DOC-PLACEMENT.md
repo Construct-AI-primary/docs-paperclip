@@ -1,24 +1,24 @@
-# Code and Documentation Placement Guide - 02500 Security
+# Code and Documentation Placement Guide - 02250 Quality Control
 
-This document defines the standard structure and placement for all code and documentation within the Security discipline.
+This document defines the standard structure and placement for all code and documentation within the Quality Control discipline.
 
 ## Directory Structure
 
 ```
-02500-security/
+02250-quality-control/
 ├── README.md                    # Discipline overview (this file's parent)
 ├── CODE-AND-DOC-PLACEMENT.md    # This guide
-├── procedures/                  # Security procedures
-│   ├── physical-security.md
-│   ├── cybersecurity.md
-│   ├── access-control.md
-│   └── incident-management.md
-├── plans/                       # Security plans
-│   └── security-management-plan.md
+├── procedures/                  # QC procedures
+│   ├── material-testing.md
+│   ├── quality-testing.md
+│   ├── defect-management.md
+│   └── hold-points.md
+├── plans/                       # QC plans
+│   └── quality-control-plan.md
 ├── trigger/                     # Discipline-level automation triggers
-│   └── SEC-AUTO/             # Automated security workflows
+│   └── QC-AUTO/              # Automated QC workflows
 │       └── issues/
-│           └── SEC-AUTO-000-security-automation.md
+│           └── QC-AUTO-000-quality-control-automation.md
 ├── knowledge/                   # Knowledge base
 │   └── PAGE-KNOWLEDGE.md
 └── projects/                    # Project implementations
@@ -33,35 +33,35 @@ This document defines the standard structure and placement for all code and docu
 ## Trigger Placement
 
 ### Discipline-Level Triggers
-Location: `trigger/SEC-AUTO/issues/`
-- Covers automation for security processes
-- Includes threat detection, access alerts, and incident workflows
+Location: `trigger/QC-AUTO/issues/`
+- Covers automation for QC processes
+- Includes test scheduling, defect tracking, and hold point management
 
 ### Project-Level Triggers
 Location: `projects/PROC-001/trigger/`
-- Covers project-specific security automation needs
+- Covers project-specific QC automation needs
 - Links to discipline-level triggers
 
 ## Content Guidelines
 
 ### procedures/
-Security procedures:
-- `physical-security.md` - Physical protection
-- `cybersecurity.md` - Cyber protection
-- `access-control.md` - Access management
-- `incident-management.md` - Incident handling
+QC procedures:
+- `material-testing.md` - Material verification
+- `quality-testing.md` - Quality testing
+- `defect-management.md` - Defect handling
+- `hold-points.md` - Hold point management
 
 ### plans/
-Security planning documents:
-- `security-management-plan.md` - Overall security strategy
+QC planning documents:
+- `quality-control-plan.md` - QC strategy
 
 ### knowledge/
-Security knowledge:
-- `PAGE-KNOWLEDGE.md` - PARA index for security knowledge
+Quality control knowledge:
+- `PAGE-KNOWLEDGE.md` - PARA index for QC knowledge
 
 ### projects/PROC-001/
-Security for procurement:
-- `trigger/` - Project security triggers
+QC for procurement:
+- `trigger/` - Project QC triggers
 - `desktop/` - Desktop-specific implementations
 - `mobile/` - Mobile-specific implementations
 - `web/` - Web-specific implementations

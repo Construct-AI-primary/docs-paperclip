@@ -1,24 +1,24 @@
-# Code and Documentation Placement Guide - 02500 Security
+# Code and Documentation Placement Guide - 01850 Other Parties
 
-This document defines the standard structure and placement for all code and documentation within the Security discipline.
+This document defines the standard structure and placement for all code and documentation within the Other Parties discipline.
 
 ## Directory Structure
 
 ```
-02500-security/
+01850-other-parties/
 ├── README.md                    # Discipline overview (this file's parent)
 ├── CODE-AND-DOC-PLACEMENT.md    # This guide
-├── procedures/                  # Security procedures
-│   ├── physical-security.md
-│   ├── cybersecurity.md
-│   ├── access-control.md
-│   └── incident-management.md
-├── plans/                       # Security plans
-│   └── security-management-plan.md
+├── procedures/                  # Stakeholder procedures
+│   ├── stakeholder-mapping.md
+│   ├── third-party-management.md
+│   ├── jv-coordination.md
+│   └── partnership-governance.md
+├── plans/                       # Stakeholder plans
+│   └── stakeholder-engagement-plan.md
 ├── trigger/                     # Discipline-level automation triggers
-│   └── SEC-AUTO/             # Automated security workflows
+│   └── PARTY-AUTO/            # Automated stakeholder workflows
 │       └── issues/
-│           └── SEC-AUTO-000-security-automation.md
+│           └── PARTY-AUTO-000-stakeholder-automation.md
 ├── knowledge/                   # Knowledge base
 │   └── PAGE-KNOWLEDGE.md
 └── projects/                    # Project implementations
@@ -33,35 +33,35 @@ This document defines the standard structure and placement for all code and docu
 ## Trigger Placement
 
 ### Discipline-Level Triggers
-Location: `trigger/SEC-AUTO/issues/`
-- Covers automation for security processes
-- Includes threat detection, access alerts, and incident workflows
+Location: `trigger/PARTY-AUTO/issues/`
+- Covers automation for stakeholder management
+- Includes engagement tracking, communication scheduling, and reporting
 
 ### Project-Level Triggers
 Location: `projects/PROC-001/trigger/`
-- Covers project-specific security automation needs
+- Covers project-specific stakeholder automation needs
 - Links to discipline-level triggers
 
 ## Content Guidelines
 
 ### procedures/
-Security procedures:
-- `physical-security.md` - Physical protection
-- `cybersecurity.md` - Cyber protection
-- `access-control.md` - Access management
-- `incident-management.md` - Incident handling
+Stakeholder procedures:
+- `stakeholder-mapping.md` - Stakeholder identification
+- `third-party-management.md` - Third-party oversight
+- `jv-coordination.md` - Joint venture coordination
+- `partnership-governance.md` - Partnership management
 
 ### plans/
-Security planning documents:
-- `security-management-plan.md` - Overall security strategy
+Stakeholder planning documents:
+- `stakeholder-engagement-plan.md` - Engagement strategy
 
 ### knowledge/
-Security knowledge:
-- `PAGE-KNOWLEDGE.md` - PARA index for security knowledge
+Stakeholder knowledge:
+- `PAGE-KNOWLEDGE.md` - PARA index for stakeholder knowledge
 
 ### projects/PROC-001/
-Security for procurement:
-- `trigger/` - Project security triggers
+Stakeholder management for procurement:
+- `trigger/` - Project stakeholder triggers
 - `desktop/` - Desktop-specific implementations
 - `mobile/` - Mobile-specific implementations
 - `web/` - Web-specific implementations

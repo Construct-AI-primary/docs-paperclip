@@ -1,24 +1,24 @@
-# Code and Documentation Placement Guide - 02500 Security
+# Code and Documentation Placement Guide - 02000 Project Controls
 
-This document defines the standard structure and placement for all code and documentation within the Security discipline.
+This document defines the standard structure and placement for all code and documentation within the Project Controls discipline.
 
 ## Directory Structure
 
 ```
-02500-security/
+02000-project-controls/
 ├── README.md                    # Discipline overview (this file's parent)
 ├── CODE-AND-DOC-PLACEMENT.md    # This guide
-├── procedures/                  # Security procedures
-│   ├── physical-security.md
-│   ├── cybersecurity.md
-│   ├── access-control.md
-│   └── incident-management.md
-├── plans/                       # Security plans
-│   └── security-management-plan.md
+├── procedures/                  # Project controls procedures
+│   ├── scheduling.md
+│   ├── cost-control.md
+│   ├── progress-measurement.md
+│   └── evm.md
+├── plans/                       # Project controls plans
+│   └── project-controls-plan.md
 ├── trigger/                     # Discipline-level automation triggers
-│   └── SEC-AUTO/             # Automated security workflows
+│   └── PC-AUTO/               # Automated project controls workflows
 │       └── issues/
-│           └── SEC-AUTO-000-security-automation.md
+│           └── PC-AUTO-000-project-controls-automation.md
 ├── knowledge/                   # Knowledge base
 │   └── PAGE-KNOWLEDGE.md
 └── projects/                    # Project implementations
@@ -33,35 +33,35 @@ This document defines the standard structure and placement for all code and docu
 ## Trigger Placement
 
 ### Discipline-Level Triggers
-Location: `trigger/SEC-AUTO/issues/`
-- Covers automation for security processes
-- Includes threat detection, access alerts, and incident workflows
+Location: `trigger/PC-AUTO/issues/`
+- Covers automation for project controls
+- Includes status updates, cost tracking, and reporting
 
 ### Project-Level Triggers
 Location: `projects/PROC-001/trigger/`
-- Covers project-specific security automation needs
+- Covers project-specific controls automation needs
 - Links to discipline-level triggers
 
 ## Content Guidelines
 
 ### procedures/
-Security procedures:
-- `physical-security.md` - Physical protection
-- `cybersecurity.md` - Cyber protection
-- `access-control.md` - Access management
-- `incident-management.md` - Incident handling
+Project controls procedures:
+- `scheduling.md` - Schedule management
+- `cost-control.md` - Cost control methods
+- `progress-measurement.md` - Progress tracking
+- `evm.md` - Earned value management
 
 ### plans/
-Security planning documents:
-- `security-management-plan.md` - Overall security strategy
+Project controls planning documents:
+- `project-controls-plan.md` - Controls strategy
 
 ### knowledge/
-Security knowledge:
-- `PAGE-KNOWLEDGE.md` - PARA index for security knowledge
+Project controls knowledge:
+- `PAGE-KNOWLEDGE.md` - PARA index for project controls knowledge
 
 ### projects/PROC-001/
-Security for procurement:
-- `trigger/` - Project security triggers
+Project controls for procurement:
+- `trigger/` - Project controls triggers
 - `desktop/` - Desktop-specific implementations
 - `mobile/` - Mobile-specific implementations
 - `web/` - Web-specific implementations

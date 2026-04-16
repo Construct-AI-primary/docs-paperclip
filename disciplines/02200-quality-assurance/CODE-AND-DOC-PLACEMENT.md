@@ -1,24 +1,24 @@
-# Code and Documentation Placement Guide - 02500 Security
+# Code and Documentation Placement Guide - 02200 Quality Assurance
 
-This document defines the standard structure and placement for all code and documentation within the Security discipline.
+This document defines the standard structure and placement for all code and documentation within the Quality Assurance discipline.
 
 ## Directory Structure
 
 ```
-02500-security/
+02200-quality-assurance/
 ├── README.md                    # Discipline overview (this file's parent)
 ├── CODE-AND-DOC-PLACEMENT.md    # This guide
-├── procedures/                  # Security procedures
-│   ├── physical-security.md
-│   ├── cybersecurity.md
-│   ├── access-control.md
-│   └── incident-management.md
-├── plans/                       # Security plans
-│   └── security-management-plan.md
+├── procedures/                  # QA procedures
+│   ├── qms-development.md
+│   ├── process-assurance.md
+│   ├── audit-management.md
+│   └── capa-management.md
+├── plans/                       # Quality plans
+│   └── quality-assurance-plan.md
 ├── trigger/                     # Discipline-level automation triggers
-│   └── SEC-AUTO/             # Automated security workflows
+│   └── QA-AUTO/              # Automated QA workflows
 │       └── issues/
-│           └── SEC-AUTO-000-security-automation.md
+│           └── QA-AUTO-000-quality-assurance-automation.md
 ├── knowledge/                   # Knowledge base
 │   └── PAGE-KNOWLEDGE.md
 └── projects/                    # Project implementations
@@ -33,35 +33,35 @@ This document defines the standard structure and placement for all code and docu
 ## Trigger Placement
 
 ### Discipline-Level Triggers
-Location: `trigger/SEC-AUTO/issues/`
-- Covers automation for security processes
-- Includes threat detection, access alerts, and incident workflows
+Location: `trigger/QA-AUTO/issues/`
+- Covers automation for QA processes
+- Includes audit scheduling, CAPA tracking, and metric reporting
 
 ### Project-Level Triggers
 Location: `projects/PROC-001/trigger/`
-- Covers project-specific security automation needs
+- Covers project-specific QA automation needs
 - Links to discipline-level triggers
 
 ## Content Guidelines
 
 ### procedures/
-Security procedures:
-- `physical-security.md` - Physical protection
-- `cybersecurity.md` - Cyber protection
-- `access-control.md` - Access management
-- `incident-management.md` - Incident handling
+QA procedures:
+- `qms-development.md` - QMS development
+- `process-assurance.md` - Process quality
+- `audit-management.md` - Audit execution
+- `capa-management.md` - CAPA handling
 
 ### plans/
-Security planning documents:
-- `security-management-plan.md` - Overall security strategy
+Quality planning documents:
+- `quality-assurance-plan.md` - Quality strategy
 
 ### knowledge/
-Security knowledge:
-- `PAGE-KNOWLEDGE.md` - PARA index for security knowledge
+Quality assurance knowledge:
+- `PAGE-KNOWLEDGE.md` - PARA index for QA knowledge
 
 ### projects/PROC-001/
-Security for procurement:
-- `trigger/` - Project security triggers
+QA for procurement:
+- `trigger/` - Project QA triggers
 - `desktop/` - Desktop-specific implementations
 - `mobile/` - Mobile-specific implementations
 - `web/` - Web-specific implementations

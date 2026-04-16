@@ -1,24 +1,24 @@
-# Code and Documentation Placement Guide - 02500 Security
+# Code and Documentation Placement Guide - 01600 Local Content
 
-This document defines the standard structure and placement for all code and documentation within the Security discipline.
+This document defines the standard structure and placement for all code and documentation within the Local Content discipline.
 
 ## Directory Structure
 
 ```
-02500-security/
+01600-local-content/
 ├── README.md                    # Discipline overview (this file's parent)
 ├── CODE-AND-DOC-PLACEMENT.md    # This guide
-├── procedures/                  # Security procedures
-│   ├── physical-security.md
-│   ├── cybersecurity.md
-│   ├── access-control.md
-│   └── incident-management.md
-├── plans/                       # Security plans
-│   └── security-management-plan.md
+├── procedures/                  # Local content procedures
+│   ├── local-sourcing.md
+│   ├── indigenous-participation.md
+│   ├── community-benefits.md
+│   └── supplier-development.md
+├── plans/                       # Local content plans
+│   └── local-content-strategy.md
 ├── trigger/                     # Discipline-level automation triggers
-│   └── SEC-AUTO/             # Automated security workflows
+│   └── LC-AUTO/                # Automated local content workflows
 │       └── issues/
-│           └── SEC-AUTO-000-security-automation.md
+│           └── LC-AUTO-000-local-content-automation.md
 ├── knowledge/                   # Knowledge base
 │   └── PAGE-KNOWLEDGE.md
 └── projects/                    # Project implementations
@@ -33,35 +33,35 @@ This document defines the standard structure and placement for all code and docu
 ## Trigger Placement
 
 ### Discipline-Level Triggers
-Location: `trigger/SEC-AUTO/issues/`
-- Covers automation for security processes
-- Includes threat detection, access alerts, and incident workflows
+Location: `trigger/LC-AUTO/issues/`
+- Covers automation for local content management
+- Includes sourcing tracking, compliance reporting, and benefit monitoring
 
 ### Project-Level Triggers
 Location: `projects/PROC-001/trigger/`
-- Covers project-specific security automation needs
+- Covers project-specific local content automation needs
 - Links to discipline-level triggers
 
 ## Content Guidelines
 
 ### procedures/
-Security procedures:
-- `physical-security.md` - Physical protection
-- `cybersecurity.md` - Cyber protection
-- `access-control.md` - Access management
-- `incident-management.md` - Incident handling
+Local content procedures:
+- `local-sourcing.md` - Local procurement
+- `indigenous-participation.md` - Indigenous engagement
+- `community-benefits.md` - Community programs
+- `supplier-development.md` - Local supplier growth
 
 ### plans/
-Security planning documents:
-- `security-management-plan.md` - Overall security strategy
+Local content planning documents:
+- `local-content-strategy.md` - Overall local content strategy
 
 ### knowledge/
-Security knowledge:
-- `PAGE-KNOWLEDGE.md` - PARA index for security knowledge
+Local content knowledge:
+- `PAGE-KNOWLEDGE.md` - PARA index for local content knowledge
 
 ### projects/PROC-001/
-Security for procurement:
-- `trigger/` - Project security triggers
+Local content for procurement:
+- `trigger/` - Project local content triggers
 - `desktop/` - Desktop-specific implementations
 - `mobile/` - Mobile-specific implementations
 - `web/` - Web-specific implementations

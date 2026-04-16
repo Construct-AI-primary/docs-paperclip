@@ -1,24 +1,24 @@
-# Code and Documentation Placement Guide - 02500 Security
+# Code and Documentation Placement Guide - 02025 Quantity Surveying
 
-This document defines the standard structure and placement for all code and documentation within the Security discipline.
+This document defines the standard structure and placement for all code and documentation within the Quantity Surveying discipline.
 
 ## Directory Structure
 
 ```
-02500-security/
+02025-quantity-surveying/
 ├── README.md                    # Discipline overview (this file's parent)
 ├── CODE-AND-DOC-PLACEMENT.md    # This guide
-├── procedures/                  # Security procedures
-│   ├── physical-security.md
-│   ├── cybersecurity.md
-│   ├── access-control.md
-│   └── incident-management.md
-├── plans/                       # Security plans
-│   └── security-management-plan.md
+├── procedures/                  # Quantity surveying procedures
+│   ├── measurement.md
+│   ├── cost-planning.md
+│   ├── valuations.md
+│   └── final-accounts.md
+├── plans/                       # Cost planning plans
+│   └── qs-operations-plan.md
 ├── trigger/                     # Discipline-level automation triggers
-│   └── SEC-AUTO/             # Automated security workflows
+│   └── QS-AUTO/               # Automated quantity surveying workflows
 │       └── issues/
-│           └── SEC-AUTO-000-security-automation.md
+│           └── QS-AUTO-000-quantity-surveying-automation.md
 ├── knowledge/                   # Knowledge base
 │   └── PAGE-KNOWLEDGE.md
 └── projects/                    # Project implementations
@@ -33,35 +33,35 @@ This document defines the standard structure and placement for all code and docu
 ## Trigger Placement
 
 ### Discipline-Level Triggers
-Location: `trigger/SEC-AUTO/issues/`
-- Covers automation for security processes
-- Includes threat detection, access alerts, and incident workflows
+Location: `trigger/QS-AUTO/issues/`
+- Covers automation for quantity surveying
+- Includes measurement, valuation, and payment workflows
 
 ### Project-Level Triggers
 Location: `projects/PROC-001/trigger/`
-- Covers project-specific security automation needs
+- Covers project-specific QS automation needs
 - Links to discipline-level triggers
 
 ## Content Guidelines
 
 ### procedures/
-Security procedures:
-- `physical-security.md` - Physical protection
-- `cybersecurity.md` - Cyber protection
-- `access-control.md` - Access management
-- `incident-management.md` - Incident handling
+Quantity surveying procedures:
+- `measurement.md` - Measurement standards
+- `cost-planning.md` - Cost planning methods
+- `valuations.md` - Interim valuations
+- `final-accounts.md` - Final account preparation
 
 ### plans/
-Security planning documents:
-- `security-management-plan.md` - Overall security strategy
+Cost planning documents:
+- `qs-operations-plan.md` - QS operations strategy
 
 ### knowledge/
-Security knowledge:
-- `PAGE-KNOWLEDGE.md` - PARA index for security knowledge
+Quantity surveying knowledge:
+- `PAGE-KNOWLEDGE.md` - PARA index for QS knowledge
 
 ### projects/PROC-001/
-Security for procurement:
-- `trigger/` - Project security triggers
+Quantity surveying for procurement:
+- `trigger/` - Project QS triggers
 - `desktop/` - Desktop-specific implementations
 - `mobile/` - Mobile-specific implementations
 - `web/` - Web-specific implementations

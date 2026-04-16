@@ -1,24 +1,24 @@
-# Code and Documentation Placement Guide - 02500 Security
+# Code and Documentation Placement Guide - 02050 Information Technology
 
-This document defines the standard structure and placement for all code and documentation within the Security discipline.
+This document defines the standard structure and placement for all code and documentation within the Information Technology discipline.
 
 ## Directory Structure
 
 ```
-02500-security/
+02050-information-technology/
 ├── README.md                    # Discipline overview (this file's parent)
 ├── CODE-AND-DOC-PLACEMENT.md    # This guide
-├── procedures/                  # Security procedures
-│   ├── physical-security.md
+├── procedures/                  # IT procedures
+│   ├── infrastructure.md
+│   ├── software-development.md
 │   ├── cybersecurity.md
-│   ├── access-control.md
-│   └── incident-management.md
-├── plans/                       # Security plans
-│   └── security-management-plan.md
+│   └── service-management.md
+├── plans/                       # IT strategic plans
+│   └── it-strategic-plan.md
 ├── trigger/                     # Discipline-level automation triggers
-│   └── SEC-AUTO/             # Automated security workflows
+│   └── IT-AUTO/               # Automated IT workflows
 │       └── issues/
-│           └── SEC-AUTO-000-security-automation.md
+│           └── IT-AUTO-000-it-automation.md
 ├── knowledge/                   # Knowledge base
 │   └── PAGE-KNOWLEDGE.md
 └── projects/                    # Project implementations
@@ -33,35 +33,35 @@ This document defines the standard structure and placement for all code and docu
 ## Trigger Placement
 
 ### Discipline-Level Triggers
-Location: `trigger/SEC-AUTO/issues/`
-- Covers automation for security processes
-- Includes threat detection, access alerts, and incident workflows
+Location: `trigger/IT-AUTO/issues/`
+- Covers automation for IT processes
+- Includes system monitoring, security alerts, and deployment automation
 
 ### Project-Level Triggers
 Location: `projects/PROC-001/trigger/`
-- Covers project-specific security automation needs
+- Covers project-specific IT automation needs
 - Links to discipline-level triggers
 
 ## Content Guidelines
 
 ### procedures/
-Security procedures:
-- `physical-security.md` - Physical protection
-- `cybersecurity.md` - Cyber protection
-- `access-control.md` - Access management
-- `incident-management.md` - Incident handling
+IT procedures:
+- `infrastructure.md` - Infrastructure management
+- `software-development.md` - Development lifecycle
+- `cybersecurity.md` - Security practices
+- `service-management.md` - ITSM processes
 
 ### plans/
-Security planning documents:
-- `security-management-plan.md` - Overall security strategy
+IT planning documents:
+- `it-strategic-plan.md` - IT strategy
 
 ### knowledge/
-Security knowledge:
-- `PAGE-KNOWLEDGE.md` - PARA index for security knowledge
+IT knowledge:
+- `PAGE-KNOWLEDGE.md` - PARA index for IT knowledge
 
 ### projects/PROC-001/
-Security for procurement:
-- `trigger/` - Project security triggers
+IT for procurement:
+- `trigger/` - Project IT triggers
 - `desktop/` - Desktop-specific implementations
 - `mobile/` - Mobile-specific implementations
 - `web/` - Web-specific implementations
