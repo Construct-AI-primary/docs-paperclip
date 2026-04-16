@@ -54,7 +54,7 @@ To revolutionize customer onboarding and SaaS operations through intelligent aut
 - **DevOps Engineer**: CI/CD, deployment, and infrastructure automation
 - **Security Specialist**: Platform security and compliance management
 
-### Total Agents: 12 (1 CEO + 11 specialists)
+### Total Agents: 16 (1 CEO + 15 specialists)
 
 ## Technology Stack
 
