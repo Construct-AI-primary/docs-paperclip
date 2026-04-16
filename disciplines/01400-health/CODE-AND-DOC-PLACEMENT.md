@@ -1,24 +1,24 @@
-# Code and Documentation Placement Guide - 02500 Security
+# Code and Documentation Placement Guide - 01400 Health
 
-This document defines the standard structure and placement for all code and documentation within the Security discipline.
+This document defines the standard structure and placement for all code and documentation within the Health discipline.
 
 ## Directory Structure
 
 ```
-02500-security/
+01400-health/
 ├── README.md                    # Discipline overview (this file's parent)
 ├── CODE-AND-DOC-PLACEMENT.md    # This guide
-├── procedures/                  # Security procedures
-│   ├── physical-security.md
-│   ├── cybersecurity.md
-│   ├── access-control.md
-│   └── incident-management.md
-├── plans/                       # Security plans
-│   └── security-management-plan.md
+├── procedures/                  # Health management procedures
+│   ├── occupational-health.md
+│   ├── health-surveillance.md
+│   ├── wellness-programs.md
+│   └── medical-assessments.md
+├── plans/                       # Health management plans
+│   └── health-management-plan.md
 ├── trigger/                     # Discipline-level automation triggers
-│   └── SEC-AUTO/             # Automated security workflows
+│   └── HEALTH-AUTO/           # Automated health workflows
 │       └── issues/
-│           └── SEC-AUTO-000-security-automation.md
+│           └── HEALTH-AUTO-000-health-automation.md
 ├── knowledge/                   # Knowledge base
 │   └── PAGE-KNOWLEDGE.md
 └── projects/                    # Project implementations
@@ -33,35 +33,35 @@ This document defines the standard structure and placement for all code and docu
 ## Trigger Placement
 
 ### Discipline-Level Triggers
-Location: `trigger/SEC-AUTO/issues/`
-- Covers automation for security processes
-- Includes threat detection, access alerts, and incident workflows
+Location: `trigger/HEALTH-AUTO/issues/`
+- Covers automation for health management
+- Includes surveillance scheduling, wellness tracking, and reporting
 
 ### Project-Level Triggers
 Location: `projects/PROC-001/trigger/`
-- Covers project-specific security automation needs
+- Covers project-specific health automation needs
 - Links to discipline-level triggers
 
 ## Content Guidelines
 
 ### procedures/
-Security procedures:
-- `physical-security.md` - Physical protection
-- `cybersecurity.md` - Cyber protection
-- `access-control.md` - Access management
-- `incident-management.md` - Incident handling
+Health management procedures:
+- `occupational-health.md` - OH standards
+- `health-surveillance.md` - Surveillance programs
+- `wellness-programs.md` - Employee wellness
+- `medical-assessments.md` - Fitness assessments
 
 ### plans/
-Security planning documents:
-- `security-management-plan.md` - Overall security strategy
+Health management planning documents:
+- `health-management-plan.md` - Overall health strategy
 
 ### knowledge/
-Security knowledge:
-- `PAGE-KNOWLEDGE.md` - PARA index for security knowledge
+Health knowledge:
+- `PAGE-KNOWLEDGE.md` - PARA index for health knowledge
 
 ### projects/PROC-001/
-Security for procurement:
-- `trigger/` - Project security triggers
+Health management for procurement:
+- `trigger/` - Project health triggers
 - `desktop/` - Desktop-specific implementations
 - `mobile/` - Mobile-specific implementations
 - `web/` - Web-specific implementations

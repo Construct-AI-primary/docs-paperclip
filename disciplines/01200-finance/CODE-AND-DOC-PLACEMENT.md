@@ -1,24 +1,24 @@
-# Code and Documentation Placement Guide - 02500 Security
+# Code and Documentation Placement Guide - 01200 Finance
 
-This document defines the standard structure and placement for all code and documentation within the Security discipline.
+This document defines the standard structure and placement for all code and documentation within the Finance discipline.
 
 ## Directory Structure
 
 ```
-02500-security/
+01200-finance/
 ├── README.md                    # Discipline overview (this file's parent)
 ├── CODE-AND-DOC-PLACEMENT.md    # This guide
-├── procedures/                  # Security procedures
-│   ├── physical-security.md
-│   ├── cybersecurity.md
-│   ├── access-control.md
-│   └── incident-management.md
-├── plans/                       # Security plans
-│   └── security-management-plan.md
+├── procedures/                  # Financial operation procedures
+│   ├── accounts-payable.md
+│   ├── accounts-receivable.md
+│   ├── invoice-processing.md
+│   └── payroll.md
+├── plans/                       # Financial operation plans
+│   └── financial-operations-plan.md
 ├── trigger/                     # Discipline-level automation triggers
-│   └── SEC-AUTO/             # Automated security workflows
+│   └── FINOPS-AUTO/           # Automated finance workflows
 │       └── issues/
-│           └── SEC-AUTO-000-security-automation.md
+│           └── FINOPS-AUTO-000-finance-operations-automation.md
 ├── knowledge/                   # Knowledge base
 │   └── PAGE-KNOWLEDGE.md
 └── projects/                    # Project implementations
@@ -33,35 +33,35 @@ This document defines the standard structure and placement for all code and docu
 ## Trigger Placement
 
 ### Discipline-Level Triggers
-Location: `trigger/SEC-AUTO/issues/`
-- Covers automation for security processes
-- Includes threat detection, access alerts, and incident workflows
+Location: `trigger/FINOPS-AUTO/issues/`
+- Covers automation for all finance operations
+- Includes invoice processing, payment scheduling, and reconciliation
 
 ### Project-Level Triggers
 Location: `projects/PROC-001/trigger/`
-- Covers project-specific security automation needs
+- Covers project-specific finance automation needs
 - Links to discipline-level triggers
 
 ## Content Guidelines
 
 ### procedures/
-Security procedures:
-- `physical-security.md` - Physical protection
-- `cybersecurity.md` - Cyber protection
-- `access-control.md` - Access management
-- `incident-management.md` - Incident handling
+Financial operation procedures:
+- `accounts-payable.md` - AP processes
+- `accounts-receivable.md` - AR management
+- `invoice-processing.md` - Invoice handling
+- `payroll.md` - Payroll procedures
 
 ### plans/
-Security planning documents:
-- `security-management-plan.md` - Overall security strategy
+Financial operation plans:
+- `financial-operations-plan.md` - Operations strategy
 
 ### knowledge/
-Security knowledge:
-- `PAGE-KNOWLEDGE.md` - PARA index for security knowledge
+Finance knowledge:
+- `PAGE-KNOWLEDGE.md` - PARA index for finance knowledge
 
 ### projects/PROC-001/
-Security for procurement:
-- `trigger/` - Project security triggers
+Finance operations for procurement:
+- `trigger/` - Project finance triggers
 - `desktop/` - Desktop-specific implementations
 - `mobile/` - Mobile-specific implementations
 - `web/` - Web-specific implementations

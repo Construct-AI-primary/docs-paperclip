@@ -1,24 +1,24 @@
-# Code and Documentation Placement Guide - 02500 Security
+# Code and Documentation Placement Guide - 02075 Inspection
 
-This document defines the standard structure and placement for all code and documentation within the Security discipline.
+This document defines the standard structure and placement for all code and documentation within the Inspection discipline.
 
 ## Directory Structure
 
 ```
-02500-security/
+02075-inspection/
 ├── README.md                    # Discipline overview (this file's parent)
 ├── CODE-AND-DOC-PLACEMENT.md    # This guide
-├── procedures/                  # Security procedures
-│   ├── physical-security.md
-│   ├── cybersecurity.md
-│   ├── access-control.md
-│   └── incident-management.md
-├── plans/                       # Security plans
-│   └── security-management-plan.md
+├── procedures/                  # Inspection procedures
+│   ├── inspection-planning.md
+│   ├── quality-inspection.md
+│   ├── testing-sampling.md
+│   └── ncr-management.md
+├── plans/                       # Inspection plans
+│   └── inspection-operations-plan.md
 ├── trigger/                     # Discipline-level automation triggers
-│   └── SEC-AUTO/             # Automated security workflows
+│   └── INSP-AUTO/            # Automated inspection workflows
 │       └── issues/
-│           └── SEC-AUTO-000-security-automation.md
+│           └── INSP-AUTO-000-inspection-automation.md
 ├── knowledge/                   # Knowledge base
 │   └── PAGE-KNOWLEDGE.md
 └── projects/                    # Project implementations
@@ -33,35 +33,35 @@ This document defines the standard structure and placement for all code and docu
 ## Trigger Placement
 
 ### Discipline-Level Triggers
-Location: `trigger/SEC-AUTO/issues/`
-- Covers automation for security processes
-- Includes threat detection, access alerts, and incident workflows
+Location: `trigger/INSP-AUTO/issues/`
+- Covers automation for inspection processes
+- Includes scheduling, NCR tracking, and certification workflows
 
 ### Project-Level Triggers
 Location: `projects/PROC-001/trigger/`
-- Covers project-specific security automation needs
+- Covers project-specific inspection automation needs
 - Links to discipline-level triggers
 
 ## Content Guidelines
 
 ### procedures/
-Security procedures:
-- `physical-security.md` - Physical protection
-- `cybersecurity.md` - Cyber protection
-- `access-control.md` - Access management
-- `incident-management.md` - Incident handling
+Inspection procedures:
+- `inspection-planning.md` - Inspection scheduling
+- `quality-inspection.md` - Inspection execution
+- `testing-sampling.md` - Testing protocols
+- `ncr-management.md` - NCR handling
 
 ### plans/
-Security planning documents:
-- `security-management-plan.md` - Overall security strategy
+Inspection planning documents:
+- `inspection-operations-plan.md` - Inspection strategy
 
 ### knowledge/
-Security knowledge:
-- `PAGE-KNOWLEDGE.md` - PARA index for security knowledge
+Inspection knowledge:
+- `PAGE-KNOWLEDGE.md` - PARA index for inspection knowledge
 
 ### projects/PROC-001/
-Security for procurement:
-- `trigger/` - Project security triggers
+Inspection for procurement:
+- `trigger/` - Project inspection triggers
 - `desktop/` - Desktop-specific implementations
 - `mobile/` - Mobile-specific implementations
 - `web/` - Web-specific implementations

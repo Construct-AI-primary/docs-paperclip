@@ -1,24 +1,24 @@
-# Code and Documentation Placement Guide - 02500 Security
+# Code and Documentation Placement Guide - 00900 Document Control
 
-This document defines the standard structure and placement for all code and documentation within the Security discipline.
+This document defines the standard structure and placement for all code and documentation within the Document Control discipline.
 
 ## Directory Structure
 
 ```
-02500-security/
+00900-document-control/
 ├── README.md                    # Discipline overview (this file's parent)
 ├── CODE-AND-DOC-PLACEMENT.md    # This guide
-├── procedures/                  # Security procedures
-│   ├── physical-security.md
-│   ├── cybersecurity.md
-│   ├── access-control.md
-│   └── incident-management.md
-├── plans/                       # Security plans
-│   └── security-management-plan.md
+├── procedures/                  # Document control procedures
+│   ├── document-creation.md
+│   ├── version-control.md
+│   ├── document-distribution.md
+│   └── records-management.md
+├── plans/                       # Document management plans
+│   └── document-governance-plan.md
 ├── trigger/                     # Discipline-level automation triggers
-│   └── SEC-AUTO/             # Automated security workflows
+│   └── DOC-AUTO/               # Automated document workflows
 │       └── issues/
-│           └── SEC-AUTO-000-security-automation.md
+│           └── DOC-AUTO-000-document-control-automation.md
 ├── knowledge/                   # Knowledge base
 │   └── PAGE-KNOWLEDGE.md
 └── projects/                    # Project implementations
@@ -33,35 +33,35 @@ This document defines the standard structure and placement for all code and docu
 ## Trigger Placement
 
 ### Discipline-Level Triggers
-Location: `trigger/SEC-AUTO/issues/`
-- Covers automation for security processes
-- Includes threat detection, access alerts, and incident workflows
+Location: `trigger/DOC-AUTO/issues/`
+- Covers automation for all document workflows
+- Includes version tracking, distribution, and archiving
 
 ### Project-Level Triggers
 Location: `projects/PROC-001/trigger/`
-- Covers project-specific security automation needs
+- Covers project-specific document automation needs
 - Links to discipline-level triggers
 
 ## Content Guidelines
 
 ### procedures/
-Security procedures:
-- `physical-security.md` - Physical protection
-- `cybersecurity.md` - Cyber protection
-- `access-control.md` - Access management
-- `incident-management.md` - Incident handling
+Document control procedures:
+- `document-creation.md` - Document creation standards
+- `version-control.md` - Revision management
+- `document-distribution.md` - Distribution protocols
+- `records-management.md` - Archive and retention
 
 ### plans/
-Security planning documents:
-- `security-management-plan.md` - Overall security strategy
+Document management plans:
+- `document-governance-plan.md` - Overall document strategy
 
 ### knowledge/
-Security knowledge:
-- `PAGE-KNOWLEDGE.md` - PARA index for security knowledge
+Document control knowledge:
+- `PAGE-KNOWLEDGE.md` - PARA index for document knowledge
 
 ### projects/PROC-001/
-Security for procurement:
-- `trigger/` - Project security triggers
+Document management for procurement:
+- `trigger/` - Project document triggers
 - `desktop/` - Desktop-specific implementations
 - `mobile/` - Mobile-specific implementations
 - `web/` - Web-specific implementations

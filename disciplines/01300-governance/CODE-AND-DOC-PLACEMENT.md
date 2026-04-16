@@ -1,24 +1,24 @@
-# Code and Documentation Placement Guide - 02500 Security
+# Code and Documentation Placement Guide - 01300 Governance
 
-This document defines the standard structure and placement for all code and documentation within the Security discipline.
+This document defines the standard structure and placement for all code and documentation within the Governance discipline.
 
 ## Directory Structure
 
 ```
-02500-security/
+01300-governance/
 ├── README.md                    # Discipline overview (this file's parent)
 ├── CODE-AND-DOC-PLACEMENT.md    # This guide
-├── procedures/                  # Security procedures
-│   ├── physical-security.md
-│   ├── cybersecurity.md
-│   ├── access-control.md
-│   └── incident-management.md
-├── plans/                       # Security plans
-│   └── security-management-plan.md
+├── procedures/                  # Governance procedures
+│   ├── governance-framework.md
+│   ├── policy-management.md
+│   ├── compliance-monitoring.md
+│   └── board-support.md
+├── plans/                       # Governance plans
+│   └── governance-annual-plan.md
 ├── trigger/                     # Discipline-level automation triggers
-│   └── SEC-AUTO/             # Automated security workflows
+│   └── GOV-AUTO/               # Automated governance workflows
 │       └── issues/
-│           └── SEC-AUTO-000-security-automation.md
+│           └── GOV-AUTO-000-governance-automation.md
 ├── knowledge/                   # Knowledge base
 │   └── PAGE-KNOWLEDGE.md
 └── projects/                    # Project implementations
@@ -33,35 +33,35 @@ This document defines the standard structure and placement for all code and docu
 ## Trigger Placement
 
 ### Discipline-Level Triggers
-Location: `trigger/SEC-AUTO/issues/`
-- Covers automation for security processes
-- Includes threat detection, access alerts, and incident workflows
+Location: `trigger/GOV-AUTO/issues/`
+- Covers automation for governance processes
+- Includes compliance tracking, policy updates, and reporting
 
 ### Project-Level Triggers
 Location: `projects/PROC-001/trigger/`
-- Covers project-specific security automation needs
+- Covers project-specific governance automation needs
 - Links to discipline-level triggers
 
 ## Content Guidelines
 
 ### procedures/
-Security procedures:
-- `physical-security.md` - Physical protection
-- `cybersecurity.md` - Cyber protection
-- `access-control.md` - Access management
-- `incident-management.md` - Incident handling
+Governance procedures:
+- `governance-framework.md` - Framework development
+- `policy-management.md` - Policy lifecycle
+- `compliance-monitoring.md` - Compliance tracking
+- `board-support.md` - Board coordination
 
 ### plans/
-Security planning documents:
-- `security-management-plan.md` - Overall security strategy
+Governance planning documents:
+- `governance-annual-plan.md` - Yearly governance strategy
 
 ### knowledge/
-Security knowledge:
-- `PAGE-KNOWLEDGE.md` - PARA index for security knowledge
+Governance knowledge:
+- `PAGE-KNOWLEDGE.md` - PARA index for governance knowledge
 
 ### projects/PROC-001/
-Security for procurement:
-- `trigger/` - Project security triggers
+Governance for procurement:
+- `trigger/` - Project governance triggers
 - `desktop/` - Desktop-specific implementations
 - `mobile/` - Mobile-specific implementations
 - `web/` - Web-specific implementations

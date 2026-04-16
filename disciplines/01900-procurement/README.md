@@ -1,105 +1,49 @@
-# Procurement Discipline
+# 01900 - Procurement
+
+The Procurement discipline covers purchasing, supplier management, tendering, and procurement operations for construction and engineering projects.
 
 ## Overview
 
-This directory contains all documentation, plans, and issues for the Procurement discipline within the Paperclip ecosystem.
+This discipline ensures materials and services are procured efficiently, suppliers are managed effectively, tendering processes are fair and transparent, and procurement policies are followed.
 
-## Repository Mapping
+## Key Responsibilities
 
-| Repository | Purpose |
-|------------|---------|
-| **docs-paperclip** | All procurement documentation, plans, and issues |
-| **paperclip-render** | All procurement implementation code (APIs, services, UI components) |
+- Procurement strategy development
+- Supplier identification and evaluation
+- Tendering and quotation management
+- Purchase order processing
+- Contract award recommendations
+- Supplier performance monitoring
+- Procurement compliance
+- Cost optimization
 
-## Directory Structure
+## Projects
+
+- [PROC-001 - Standard Procurement Workflow](./projects/PROC-001/)
+
+## Discipline Structure
 
 ```
-docs-paperclip/disciplines/01900-procurement/
-├── CODE-AND-DOC-PLACEMENT.md    ← Placement standards for this discipline
-├── README.md                     ← This file
-│
-├── knowledge/                   ← Cross-project domain knowledge
-│   └── PAGE-KNOWLEDGE.md        ← Master knowledge base
-│
-├── projects/                    ← All procurement projects
-│   └── {PROJECT-CODE}/
-│       ├── README.md            ← Project overview
-│       ├── plan.md              ← Project plan
-│       ├── AGENTS.md            ← Project-specific agent instructions
-│       │
-│       ├── issues/              ← Non-platform-specific issues
-│       │   └── {ISSUE-ID}.md
-│       │
-│       ├── desktop/             ← Desktop platform
-│       │   ├── issues/
-│       │   ├── learning/
-│       │   └── orchestration/
-│       │
-│       ├── mobile/              ← Mobile platform
-│       │   ├── issues/
-│       │   ├── learning/
-│       │   └── orchestration/
-│       │
-│       ├── web/                 ← Web platform
-│       │   ├── issues/
-│       │   ├── learning/
-│       │   └── orchestration/
-│       │
-│       ├── shared/              ← Shared across platforms
-│       │   ├── api/
-│       │   ├── business-logic/
-│       │   └── data-models/
-│       │
-│       └── knowledge/           ← Project-specific knowledge
-│           └── PAGE-KNOWLEDGE.md
-│
-├── trigger/                     ← Automation triggers
-│   └── {AUTO-PROJECT}/
+01900-procurement/
+├── procedures/           # Procurement procedures
+├── plans/               # Procurement plans
+├── trigger/             # Discipline-level automation triggers
+│   └── PROC-AUTO/       # Automated procurement workflows
 │       └── issues/
-│           └── {AUTO-PROJECT}-000-discipline-automation.md
-│
-├── procedures/                  ← Discipline-specific procedures
-│
-└── plans/                       ← Automation plans
+├── knowledge/           # Procurement knowledge base
+├── projects/            # Project-specific implementations
+│   └── PROC-001/        # Standard Procurement Workflow project
+│       ├── trigger/     # Project-level automation triggers
+│       ├── desktop/     # Desktop platform implementation
+│       ├── mobile/      # Mobile platform implementation
+│       ├── web/         # Web platform implementation
+│       └── shared/      # Shared resources
+└── CODE-AND-DOC-PLACEMENT.md
 ```
 
-## Key Files
+## Integration
 
-- **CODE-AND-DOC-PLACEMENT.md**: Discipline-specific placement standards
-- **README.md**: This overview document
-- **knowledge/PAGE-KNOWLEDGE.md**: Master knowledge base for the discipline
-- **projects/**: All procurement projects organized by platform
-
-## Project Organization
-
-Each project under `projects/` follows the standard structure:
-
-```
-projects/{PROJECT-CODE}/
-├── README.md
-├── plan.md
-├── AGENTS.md
-├── issues/
-├── desktop/
-├── mobile/
-├── web/
-├── shared/
-└── knowledge/
-```
-
-## Issue Reference Format
-
-All issues must reference both repositories:
-
-```markdown
-## Working Directory & Repository
-
-- **Local Repository:** `/Users/_Hermes/paperclip-render`
-- **Working Directory:** `/Users/_Hermes/paperclip-render`
-
-### Documentation (docs-paperclip)
-- `docs-paperclip/disciplines/01900-procurement/projects/PROC-ORDER/desktop/issues/PROC-XXX.md`
-
-### Code Implementation (paperclip-render)
-- `paperclip-render/server/src/services/procurement-service.ts`
-- `paperclip-render/ui/src/components/procurement/ProcurementForm.tsx`
+- Works with Procurement Director for strategic procurement
+- Coordinates with Finance for budget alignment
+- Partners with Engineering for technical specifications
+- Interfaces with Contracts for agreement finalization

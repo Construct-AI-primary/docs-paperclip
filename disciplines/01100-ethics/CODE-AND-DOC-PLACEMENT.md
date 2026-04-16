@@ -1,24 +1,24 @@
-# Code and Documentation Placement Guide - 02500 Security
+# Code and Documentation Placement Guide - 01100 Ethics
 
-This document defines the standard structure and placement for all code and documentation within the Security discipline.
+This document defines the standard structure and placement for all code and documentation within the Ethics discipline.
 
 ## Directory Structure
 
 ```
-02500-security/
+01100-ethics/
 ├── README.md                    # Discipline overview (this file's parent)
 ├── CODE-AND-DOC-PLACEMENT.md    # This guide
-├── procedures/                  # Security procedures
-│   ├── physical-security.md
-│   ├── cybersecurity.md
-│   ├── access-control.md
-│   └── incident-management.md
-├── plans/                       # Security plans
-│   └── security-management-plan.md
+├── procedures/                  # Ethics management procedures
+│   ├── business-ethics.md
+│   ├── anti-corruption.md
+│   ├── conflict-of-interest.md
+│   └── whistleblower.md
+├── plans/                       # Ethics and compliance plans
+│   └── ethics-management-plan.md
 ├── trigger/                     # Discipline-level automation triggers
-│   └── SEC-AUTO/             # Automated security workflows
+│   └── ETH-AUTO/               # Automated ethics workflows
 │       └── issues/
-│           └── SEC-AUTO-000-security-automation.md
+│           └── ETH-AUTO-000-ethics-automation.md
 ├── knowledge/                   # Knowledge base
 │   └── PAGE-KNOWLEDGE.md
 └── projects/                    # Project implementations
@@ -33,35 +33,35 @@ This document defines the standard structure and placement for all code and docu
 ## Trigger Placement
 
 ### Discipline-Level Triggers
-Location: `trigger/SEC-AUTO/issues/`
-- Covers automation for security processes
-- Includes threat detection, access alerts, and incident workflows
+Location: `trigger/ETH-AUTO/issues/`
+- Covers automation for ethics management
+- Includes compliance tracking, training, and reporting
 
 ### Project-Level Triggers
 Location: `projects/PROC-001/trigger/`
-- Covers project-specific security automation needs
+- Covers project-specific ethics automation needs
 - Links to discipline-level triggers
 
 ## Content Guidelines
 
 ### procedures/
-Security procedures:
-- `physical-security.md` - Physical protection
-- `cybersecurity.md` - Cyber protection
-- `access-control.md` - Access management
-- `incident-management.md` - Incident handling
+Ethics management procedures:
+- `business-ethics.md` - Code of ethics implementation
+- `anti-corruption.md` - Anti-bribery procedures
+- `conflict-of-interest.md` - COI management
+- `whistleblower.md` - Whistleblower protection
 
 ### plans/
-Security planning documents:
-- `security-management-plan.md` - Overall security strategy
+Ethics planning documents:
+- `ethics-management-plan.md` - Overall ethics strategy
 
 ### knowledge/
-Security knowledge:
-- `PAGE-KNOWLEDGE.md` - PARA index for security knowledge
+Ethics knowledge:
+- `PAGE-KNOWLEDGE.md` - PARA index for ethics knowledge
 
 ### projects/PROC-001/
-Security for procurement:
-- `trigger/` - Project security triggers
+Ethics integration for procurement:
+- `trigger/` - Project ethics triggers
 - `desktop/` - Desktop-specific implementations
 - `mobile/` - Mobile-specific implementations
 - `web/` - Web-specific implementations

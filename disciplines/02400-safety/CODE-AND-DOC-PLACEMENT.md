@@ -1,24 +1,24 @@
-# Code and Documentation Placement Guide - 02500 Security
+# Code and Documentation Placement Guide - 02400 Safety
 
-This document defines the standard structure and placement for all code and documentation within the Security discipline.
+This document defines the standard structure and placement for all code and documentation within the Safety discipline.
 
 ## Directory Structure
 
 ```
-02500-security/
+02400-safety/
 ├── README.md                    # Discipline overview (this file's parent)
 ├── CODE-AND-DOC-PLACEMENT.md    # This guide
-├── procedures/                  # Security procedures
-│   ├── physical-security.md
-│   ├── cybersecurity.md
-│   ├── access-control.md
-│   └── incident-management.md
-├── plans/                       # Security plans
-│   └── security-management-plan.md
+├── procedures/                  # Safety procedures
+│   ├── risk-assessment.md
+│   ├── hazard-control.md
+│   ├── incident-investigation.md
+│   └── emergency-response.md
+├── plans/                       # Safety plans
+│   └── safety-management-plan.md
 ├── trigger/                     # Discipline-level automation triggers
-│   └── SEC-AUTO/             # Automated security workflows
+│   └── SAFE-AUTO/            # Automated safety workflows
 │       └── issues/
-│           └── SEC-AUTO-000-security-automation.md
+│           └── SAFE-AUTO-000-safety-automation.md
 ├── knowledge/                   # Knowledge base
 │   └── PAGE-KNOWLEDGE.md
 └── projects/                    # Project implementations
@@ -33,35 +33,35 @@ This document defines the standard structure and placement for all code and docu
 ## Trigger Placement
 
 ### Discipline-Level Triggers
-Location: `trigger/SEC-AUTO/issues/`
-- Covers automation for security processes
-- Includes threat detection, access alerts, and incident workflows
+Location: `trigger/SAFE-AUTO/issues/`
+- Covers automation for safety processes
+- Includes incident alerts, permit workflows, and compliance tracking
 
 ### Project-Level Triggers
 Location: `projects/PROC-001/trigger/`
-- Covers project-specific security automation needs
+- Covers project-specific safety automation needs
 - Links to discipline-level triggers
 
 ## Content Guidelines
 
 ### procedures/
-Security procedures:
-- `physical-security.md` - Physical protection
-- `cybersecurity.md` - Cyber protection
-- `access-control.md` - Access management
-- `incident-management.md` - Incident handling
+Safety procedures:
+- `risk-assessment.md` - Risk assessment processes
+- `hazard-control.md` - Hazard control measures
+- `incident-investigation.md` - Incident handling
+- `emergency-response.md` - Emergency procedures
 
 ### plans/
-Security planning documents:
-- `security-management-plan.md` - Overall security strategy
+Safety planning documents:
+- `safety-management-plan.md` - Overall safety strategy
 
 ### knowledge/
-Security knowledge:
-- `PAGE-KNOWLEDGE.md` - PARA index for security knowledge
+Safety knowledge:
+- `PAGE-KNOWLEDGE.md` - PARA index for safety knowledge
 
 ### projects/PROC-001/
-Security for procurement:
-- `trigger/` - Project security triggers
+Safety for procurement:
+- `trigger/` - Project safety triggers
 - `desktop/` - Desktop-specific implementations
 - `mobile/` - Mobile-specific implementations
 - `web/` - Web-specific implementations
