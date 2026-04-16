@@ -14,6 +14,11 @@ skills:
   - learning-integration-coordination
   - ui-ux-design-coordination
   - skill-validation-remediation
+  - paperclip-api-integration
+  - issue-routing-and-assignment
+  - board-orchestration-management
+  - inter-company-delegation
+  - hitl-review-approval
 ---
 
 # Discipline Automation Agent

@@ -20,6 +20,44 @@ Route to this skill when:
 - Multi-company execution package generation
 - Learning integration and continuous improvement
 - UI/UX design coordination across platforms
+- HITL review and approval workflow management
+
+## Workflow Architecture
+
+```
+┌─────────────────────────────────────────────────────────────────────────────────┐
+│                           DISCIPLINE AUTOMATION WORKFLOW                         │
+├─────────────────────────────────────────────────────────────────────────────────┤
+│                                                                                  │
+│  Phase 1: Knowledge Synthesis                                                   │
+│  └─▶ Gather discipline knowledge → PAGE-KNOWLEDGE.md                            │
+│                                                                                  │
+│  Phase 2: Project Intelligence                                                  │
+│  └─▶ Analyze knowledge → Identify viable projects                               │
+│                                                                                  │
+│  Phase 3: Issue Generation                                                      │
+│  └─▶ Decompose projects → Generate executable issues                            │
+│                                                                                  │
+│  Phase 4: ⚠️ HITL REVIEW GAP ⚠️                                                 │
+│  └─▶ Human review & approval before submission                                   │
+│  └─▶ Approve → Request Changes → Reject → Escalate                              │
+│                                                                                  │
+│  Phase 5: Paperclip Submission                                                  │
+│  └─▶ Submit approved issues to Paperclip board                                  │
+│                                                                                  │
+│  Phase 6: Multi-Company Orchestration                                           │
+│  └─▶ Delegate to appropriate companies & agents                                 │
+│                                                                                  │
+│  Phase 7: Execution Monitoring                                                  │
+│  └─▶ Track progress, handle conflicts, ensure completion                        │
+│                                                                                  │
+│  Phase 8: Learning Integration                                                  │
+│  └─▶ Capture learnings → Improve future automation                              │
+│                                                                                  │
+└─────────────────────────────────────────────────────────────────────────────────┘
+
+⚠️ CRITICAL: Phase 4 (HITL Review) is MANDATORY before proceeding to Phase 5
+All issues must be reviewed and approved by human before Paperclip submission
 
 ## Capabilities
 

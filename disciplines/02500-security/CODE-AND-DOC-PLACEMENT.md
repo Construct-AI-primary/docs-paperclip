@@ -1,4 +1,4 @@
----
+via an agent---
 title: 02500 Security Discipline - Code and Documentation Placement Standards
 author: Discipline Automation Agent
 date: 2026-04-15
@@ -44,27 +44,41 @@ The Paperclip ecosystem uses **two repositories**:
 │       ├── plan.md              ← Project plan
 │       ├── AGENTS.md            ← Project-specific agent instructions
 │       │
+│       ├── trigger/             ← Project automation triggers
+│       │   ├── README.md
+│       │   └── {PROJECT}-000-project-automation.md
+│       │
+│       ├── {PROJECT}-workflows-list.md       ← Workflows catalog
+│       ├── {PROJECT}-implementation.md       ← Implementation plan
+│       ├── discipline_workflow_conversion_procedure.md
+│       │
+│       ├── research/            ← Research enhancement plans
+│       │   └── {PROJECT}-research-enhancement-plan.md
+│       │
+│       ├── scripts/             ← Generator scripts
+│       │   └── generate-issues.py
+│       │
 │       ├── issues/              ← Issues (non-platform specific)
 │       │   └── {ISSUE-ID}.md
 │       │
 │       ├── desktop/             ← Desktop-specific work
 │       │   ├── issues/
-│       │   │   └── {ISSUE-ID}.md
+│       │   │   ├── {ISSUE-ID}.md
+│       │   │   └── ISSUE-GENERATION-STATUS.md
 │       │   ├── learning/
-│       │   ├── orchestration/
-│       │   └── CODE-PLACEMENT.md
+│       │   └── orchestration/
 │       │
 │       ├── mobile/              ← Mobile-specific work
 │       │   ├── issues/
-│       │   │   └── {ISSUE-ID}.md
+│       │   │   ├── {ISSUE-ID}.md
+│       │   │   └── ISSUE-GENERATION-STATUS.md
 │       │   ├── learning/
-│       │   ├── orchestration/
-│       │   └── CODE-PLACEMENT.md
+│       │   └── orchestration/
 │       │
 │       ├── web/                ← Web-specific work
 │       │   ├── issues/
 │       │   ├── learning/
-│       │   └── CODE-PLACEMENT.md
+│       │   └── orchestration/
 │       │
 │       ├── shared/              ← Code shared across platforms
 │       │   ├── api/
@@ -75,7 +89,7 @@ The Paperclip ecosystem uses **two repositories**:
 │       └── knowledge/           ← Project-specific knowledge
 │           └── PAGE-KNOWLEDGE.md
 │
-├── trigger/                     ← Automation triggers
+├── trigger/                     ← Discipline automation triggers
 │   ├── README.md
 │   └── {AUTO-PROJECT}/
 │       └── issues/
@@ -258,6 +272,32 @@ Before completing any work, verify:
 2. **❌ Don't put docs in paperclip-render** → Docs go to docs-paperclip
 3. **❌ Don't mix platforms** → Use desktop/, mobile/, web/ folders
 4. **❌ Don't forget shared/** → Document shared components separately
+
+---
+
+## ⚠️ HITL Review Gate (MANDATORY)
+
+All issues MUST pass Human-in-the-Loop review before Paperclip submission:
+
+```
+Generate Issues (Knowledge → Project → Issues)
+         ↓
+⚠️ HITL REVIEW ⚠️ ← MANDATORY GATE
+         ↓
+Submit to Paperclip (only if approved)
+         ↓
+Execute & Learn
+```
+
+**Review Actions:** Approve | Request Changes | Reject | Escalate
+
+**SLA Targets:**
+| Priority | Review SLA | Escalation |
+|----------|------------|------------|
+| Critical | 1 hour | 30 min |
+| High | 4 hours | 120 min |
+| Medium | 24 hours | 480 min |
+| Low | 72 hours | 1440 min |
 
 ---
 

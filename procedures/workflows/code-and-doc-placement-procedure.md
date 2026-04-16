@@ -55,16 +55,34 @@ docs-paperclip/disciplines/{discipline-code}/
 │       ├── plan.md              ← Project plan
 │       ├── AGENTS.md            ← Project-specific agent instructions
 │       │
+│       ├── trigger/             ← Project automation triggers
+│       │   ├── README.md
+│       │   └── {PROJECT}-000-project-automation.md
+│       │
+│       ├── {PROJECT}-workflows-list.md       ← Workflows catalog
+│       ├── {PROJECT}-implementation.md       ← Implementation plan
+│       ├── discipline_workflow_conversion_procedure.md
+│       │
+│       ├── research/            ← Research enhancement plans
+│       │   └── {PROJECT}-research-enhancement-plan.md
+│       │
+│       ├── scripts/             ← Generator scripts
+│       │   └── generate-issues.py
+│       │
 │       ├── issues/              ← Non-platform-specific issues
 │       │   └── {ISSUE-ID}.md
 │       │
 │       ├── desktop/             ← Desktop platform
 │       │   ├── issues/
+│       │   │   ├── {ISSUE-ID}.md
+│       │   │   └── ISSUE-GENERATION-STATUS.md
 │       │   ├── learning/
 │       │   └── orchestration/
 │       │
 │       ├── mobile/              ← Mobile platform
 │       │   ├── issues/
+│       │   │   ├── {ISSUE-ID}.md
+│       │   │   └── ISSUE-GENERATION-STATUS.md
 │       │   ├── learning/
 │       │   └── orchestration/
 │       │
@@ -81,7 +99,8 @@ docs-paperclip/disciplines/{discipline-code}/
 │       └── knowledge/           ← Project-specific knowledge
 │           └── PAGE-KNOWLEDGE.md
 │
-├── trigger/                     ← Automation triggers
+├── trigger/                     ← Discipline automation triggers
+│   ├── README.md
 │   └── {AUTO-PROJECT}/
 │       └── issues/
 │           └── {AUTO-PROJECT}-000-discipline-automation.md
@@ -260,6 +279,39 @@ All paths include the discipline code:
 ### Step 4: Create Issue Reference
 Every code change should have an associated issue in:
 `disciplines/{CODE}/projects/{PROJECT}/{platform}/issues/{ISSUE-ID}.md`
+
+### Step 5: HITL Review (MANDATORY)
+⚠️ **CRITICAL**: Before submitting issues to Paperclip board, all issues MUST pass Human-in-the-Loop (HITL) review:
+
+**Review Criteria:**
+- Completeness: Title, description, assignee, priority, platform, discipline code
+- Quality: Clarity, actionability, dependencies, estimates, acceptance criteria
+- Alignment: Project fit, company strategy, resource availability, timeline feasibility
+
+**Review Actions:**
+| Action | Result |
+|--------|--------|
+| Approve | Submit to Paperclip |
+| Request Changes | Return for modification |
+| Reject | Out of scope (provide alternatives) |
+| Escalate | Leadership decision required |
+
+**SLA Targets:**
+| Priority | Review SLA | Escalation Threshold |
+|----------|------------|---------------------|
+| Critical | 1 hour | 30 min |
+| High | 4 hours | 120 min |
+| Medium | 24 hours | 480 min |
+| Low | 72 hours | 1440 min |
+
+### Step 6: Paperclip Submission
+Only after HITL approval, submit to Paperclip board via API.
+
+### Step 7: Execution & Monitoring
+Track progress, handle conflicts, ensure completion through Paperclip.
+
+### Step 8: Learning Integration
+Capture learnings and improve future automation runs.
 
 ---
 

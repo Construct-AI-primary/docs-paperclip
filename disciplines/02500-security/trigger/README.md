@@ -46,13 +46,26 @@ Examine `SECURITY-AUTO/issues/SECURITY-AUTO-000-discipline-automation.md` to und
 - Expected outcomes and project generation scope
 - Required skills and agent assignments
 
-### Step 2: Upload to Paperclip
+### ⚠️ Step 2: HITL Review (MANDATORY)
+Before submitting to Paperclip, ALL issues MUST pass Human-in-the-Loop review:
+
+**Review Actions:** Approve | Request Changes | Reject | Escalate
+
+**SLA Targets:**
+| Priority | Review SLA | Escalation |
+|----------|------------|------------|
+| Critical | 1 hour | 30 min |
+| High | 4 hours | 120 min |
+| Medium | 24 hours | 480 min |
+| Low | 72 hours | 1440 min |
+
+### Step 3: Upload to Paperclip
 Submit the trigger issue to the Paperclip control plane:
 1. Navigate to the Paperclip board interface
 2. Upload the issue file: `SECURITY-AUTO-000-discipline-automation.md`
 3. The Discipline Automation Agent will automatically detect and process it
 
-### Step 3: Monitor Execution
+### Step 4: Monitor Execution
 Track the automation progress:
 1. Monitor agent execution through Paperclip board
 2. Validate generation of PAGE-KNOWLEDGE.md
@@ -68,20 +81,31 @@ docs-paperclip/disciplines/02500-security/
 ├── knowledge/
 │   └── PAGE-KNOWLEDGE.md                    # Construction security knowledge base
 ├── projects/
-│   ├── SITE-SURVEILLANCE/                  # AI theft detection project
-│   ├── ACCESS-CONTROL/                     # Biometric access project
-│   ├── INCIDENT-RESPONSE/                  # Automated incident management
-│   ├── ASSET-TRACKING/                     # Equipment security monitoring
-│   └── EMERGENCY-COORDINATION/             # Construction hazard response
+│   └── SECURITY-ASSET/                      # Asset Protection & Tracking System
+│       ├── plan.md                          # Project plan
+│       ├── SECURITY-ASSET-workflows-list.md # Workflows catalog
+│       ├── SECURITY-ASSET-implementation.md # Implementation plan
+│       ├── discipline_workflow_conversion_procedure.md
+│       ├── research/
+│       │   └── SECURITY-ASSET-research-enhancement-plan.md
+│       ├── scripts/
+│       │   └── generate-issues.py           # Issue generator script
+│       ├── desktop/
+│       │   ├── issues/                      # 8 desktop issues
+│       │   └── ISSUE-GENERATION-STATUS.md
+│       └── mobile/
+│           ├── issues/                      # 8 mobile issues
+│           └── ISSUE-GENERATION-STATUS.md
 └── trigger/                                # This trigger folder
 ```
 
-### Project Details
-Each generated project will contain:
-- **Project charter** with construction-specific objectives
-- **Implementation plan** with phased approach
-- **75+ issues** across foundation, development, testing, and deployment phases
-- **Multi-company assignments** optimized for construction security expertise
+### SECURITY-ASSET Project Details
+- **Total Issues**: 16 (8 desktop + 8 mobile)
+- **Total Estimated Hours**: 312 hours
+- **Platforms**: Desktop and Mobile
+- **Companies**: DevForge AI (interface-devforge, codesmith-devforge, devcore-devforge)
+- **Workflows**: 10 identified (1 existing, 9 to implement)
+- **Implementation Timeline**: 90 weeks
 
 ## Construction-Specific Optimizations
 
