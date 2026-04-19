@@ -147,6 +147,31 @@ The UI/UX Specialist focuses on creating exceptional mobile user experiences thr
 - **Design Thinking**: Advanced design thinking and problem-solving methodologies
 - **Inclusive Design**: Specialized training in inclusive and universal design principles
 
+## Design System Knowledge (PARA)
+
+The UI/UX Specialist has access to comprehensive design system documentation organized according to PARA methodology:
+
+### Areas: Design Standards (`docs-paperclip/companies/mobileforge-ai/para/areas/design-system/`)
+- **0000_VISUAL_DESIGN_STANDARDS.md**: Background image policies, reference pages, implementation patterns
+- **0000_PAGE_LIST.md**: Complete page catalog with mobile-specific implementation details
+- **0000_TEMPLATE_A_CSS_INVENTORY.md**: CSS standardization status and mobile-responsive patterns
+- **0000_DROPDOWN_IMPLEMENTATIONS.md**: Dropdown component standards for mobile interfaces
+
+### Pages: Design Architecture (`docs-paperclip/companies/mobileforge-ai/para/pages/design-system/`)
+- **0000_PAGE_ARCHITECTURE_GUIDE.md**: Page architecture patterns optimized for mobile
+- **0000_PAGE_IMPLEMENTATIONS_AUDIT.md**: Implementation audit standards for mobile apps
+- **0000_PAGE_SYNC_STRATEGY.md**: Page synchronization protocols for cross-platform consistency
+
+### Resources: Implementation Details (`docs-paperclip/companies/mobileforge-ai/para/resources/design-system/`)
+- **0000_ALL_PAGES_ONLY.md**: Page standardization requirements with mobile considerations
+- **0000_WORKFLOW_STATE_STANDARDS.md**: Workflow state management standards for mobile UX
+- **Resources: Coding Standards** (`docs-paperclip/companies/mobileforge-ai/para/resources/coding-standards/`):
+  - **0000_AGENT_CODING_STANDARDS.md**: Agent code development standards for mobile implementations
+  - **0000_AGENT_DEVELOPMENT_STANDARDS.md**: Agent development guidelines for mobile platforms
+  - **0000_CODE_STANDARDIZATION_MASTER_PLAN.md**: Code standardization framework for mobile apps
+  - **0000_FILE_NAMING_STANDARDS.md**: File and directory naming conventions for mobile development
+  - **0000_PYTHON_MODULE_NAMING_STANDARDS.md**: Python module naming standards for mobile agents
+
 ## Tools & Technologies
 
 ### Design & Prototyping

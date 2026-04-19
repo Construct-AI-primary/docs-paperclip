@@ -1,11 +1,16 @@
-# [Desktop] Geofence Management System
+---
+id: DESKTOP-SEC-002
+title: Geofence Management System
+status: todo
+priority: high
+assignee: codesmith-devforge
+company: devforge-ai
+created_date: 2026-04-16
+due_date: 2026-05-16
+estimated_hours: 20
+---
 
-**Issue ID:** DESKTOP-SEC-002-geofence-management
-**Priority:** High
-**Estimated Hours:** 20
-**Assigned Company:** devforge-ai
-**Assigned Agent:** codesmith-devforge
-**Generated:** 2026-04-16T10:24:00.000000+00:00
+# DESKTOP-SEC-002: Geofence Management System
 
 ## Description
 

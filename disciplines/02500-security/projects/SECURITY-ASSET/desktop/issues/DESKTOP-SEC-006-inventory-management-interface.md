@@ -1,11 +1,16 @@
-# [Desktop] Inventory Management Interface
+---
+id: DESKTOP-SEC-006
+title: Inventory Management Interface
+status: todo
+priority: high
+assignee: devcore-devforge
+company: devforge-ai
+created_date: 2026-04-16
+due_date: 2026-05-16
+estimated_hours: 24
+---
 
-**Issue ID:** DESKTOP-SEC-006-inventory-management-interface
-**Priority:** High
-**Estimated Hours:** 24
-**Assigned Company:** devforge-ai
-**Assigned Agent:** devcore-devforge
-**Generated:** 2026-04-16T10:24:00.000000+00:00
+# DESKTOP-SEC-006: Inventory Management Interface
 
 ## Description
 

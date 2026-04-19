@@ -1,75 +1,85 @@
-# Code and Documentation Placement Guide - 02500 Security
+---
+title: 02500 Security - Code and Documentation Placement
+---
 
-This document defines the standard structure and placement for all code and documentation within the Security discipline.
+# 02500 Security - Code and Documentation Placement
 
-## Directory Structure
+## Discipline Overview
+
+This document defines the standardized location for all code and documentation within the 02500 Security discipline.
+
+## Standard Structure
+
 
 ```
 02500-security/
-├── README.md                    # Discipline overview (this file's parent)
-├── CODE-AND-DOC-PLACEMENT.md    # This guide
-├── procedures/                  # Security procedures
-│   ├── physical-security.md
-│   ├── cybersecurity.md
-│   ├── access-control.md
-│   └── incident-management.md
-├── plans/                       # Security plans
-│   └── security-management-plan.md
-├── trigger/                     # Discipline-level automation triggers
-│   └── SEC-AUTO/             # Automated security workflows
-│       └── issues/
-│           └── SEC-AUTO-000-security-automation.md
-├── knowledge/                   # Knowledge base
+├── CODE-AND-DOC-PLACEMENT.md    ← This file
+├── README.md                     ← Discipline overview
+├── knowledge/                   ← Cross-project domain knowledge
 │   └── PAGE-KNOWLEDGE.md
-└── projects/                    # Project implementations
-    └── PROC-001/               # Standard Procurement Workflow
-        ├── trigger/            # Project-level triggers
-        ├── desktop/            # Desktop platform
-        ├── mobile/             # Mobile platform
-        ├── web/                # Web platform
-        └── shared/             # Shared resources
+├── projects/                    ← All discipline projects
+│   └── {PROJECT-CODE}/
+│       ├── README.md            ← Project overview
+│       ├── plan.md              ← Project plan
+│       ├── AGENTS.md            ← Project-specific agent instructions
+│       ├── trigger/             ← Project automation triggers
+│       │   ├── README.md
+│       │   └── {PROJECT}-000-project-automation.md
+│       ├── {PROJECT}-workflows-list.md       ← Workflows catalog
+│       ├── {PROJECT}-implementation.md       ← Implementation plan
+│       ├── discipline_workflow_conversion_procedure.md
+│       ├── research/            ← Research enhancement plans
+│       │   └── {PROJECT}-research-enhancement-plan.md
+│       ├── scripts/             ← Generator scripts
+│       │   └── generate-issues.py
+│       ├── desktop/             ← Desktop platform
+│       │   ├── trigger/         ← Desktop-specific triggers
+│       │   │   ├── README.md
+│       │   │   └── {PROJECT}-000-project-automation.md
+│       │   ├── issues/
+│       │   │   ├── {ISSUE-ID}.md
+│       │   │   └── ISSUE-GENERATION-STATUS.md
+│       │   ├── learning/
+│       │   └── orchestration/
+│       ├── mobile/              ← Mobile platform
+│       │   ├── trigger/         ← Mobile-specific triggers
+│       │   │   ├── README.md
+│       │   │   └── {PROJECT}-000-project-automation.md
+│       │   ├── issues/
+│       │   │   ├── {ISSUE-ID}.md
+│       │   │   └── ISSUE-GENERATION-STATUS.md
+│       │   ├── learning/
+│       │   └── orchestration/
+│       ├── web/                 ← Web platform
+│       │   ├── trigger/         ← Web-specific triggers
+│       │   │   ├── README.md
+│       │   │   └── {PROJECT}-000-project-automation.md
+│       │   ├── issues/
+│       │   │   ├── {ISSUE-ID}.md
+│       │   │   └── ISSUE-GENERATION-STATUS.md
+│       │   ├── learning/
+│       │   └── orchestration/
+│       ├── shared/              ← Shared across platforms
+│       │   ├── api/             ← API contracts
+│       │   ├── business-logic/  ← Business logic docs
+│       │   └── data-models/     ← Data model docs
+│       └── knowledge/           ← Project-specific knowledge
+│           └── PAGE-KNOWLEDGE.md
+├── trigger/                     ← Discipline automation triggers
+│   ├── README.md
+│   └── {AUTO-PROJECT}/
+│       └── issues/
+│           └── {AUTO-PROJECT}-000-discipline-automation.md
+├── procedures/
+└── plans/
 ```
 
-## Trigger Placement
 
-### Discipline-Level Triggers
-Location: `trigger/SEC-AUTO/issues/`
-- Covers automation for security processes
-- Includes threat detection, access alerts, and incident workflows
+## Discipline-Specific Notes
 
-### Project-Level Triggers
-Location: `projects/PROC-001/trigger/`
-- Covers project-specific security automation needs
-- Links to discipline-level triggers
+- Security discipline for construction and engineering projects
+- Desktop, mobile, and web platform support
 
-## Content Guidelines
+## Related Documents
 
-### procedures/
-Security procedures:
-- `physical-security.md` - Physical protection
-- `cybersecurity.md` - Cyber protection
-- `access-control.md` - Access management
-- `incident-management.md` - Incident handling
-
-### plans/
-Security planning documents:
-- `security-management-plan.md` - Overall security strategy
-
-### knowledge/
-Security knowledge:
-- `PAGE-KNOWLEDGE.md` - PARA index for security knowledge
-
-### projects/PROC-001/
-Security for procurement:
-- `trigger/` - Project security triggers
-- `desktop/` - Desktop-specific implementations
-- `mobile/` - Mobile-specific implementations
-- `web/` - Web-specific implementations
-- `shared/` - Cross-platform shared resources
-
-## File Naming Conventions
-
-- Procedures: `kebab-case.md`
-- Plans: `YYYY-MM-DD-descriptive-name.md`
-- Triggers: `{PREFIX}-{NUMBER}-{slug}.md`
-- Knowledge: `PAGE-KNOWLEDGE.md`
+- [Code and Documentation Placement Procedure](../../procedures/workflows/code-and-doc-placement-procedure.md)

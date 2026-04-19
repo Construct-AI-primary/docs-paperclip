@@ -1,11 +1,16 @@
-# [Desktop] GPS Tracking Dashboard
+---
+id: DESKTOP-SEC-001
+title: GPS Tracking Dashboard
+status: todo
+priority: high
+assignee: interface-devforge
+company: devforge-ai
+created_date: 2026-04-16
+due_date: 2026-05-16
+estimated_hours: 24
+---
 
-**Issue ID:** DESKTOP-SEC-001-gps-tracking-dashboard
-**Priority:** High
-**Estimated Hours:** 24
-**Assigned Company:** devforge-ai
-**Assigned Agent:** interface-devforge
-**Generated:** 2026-04-16T10:24:00.000000+00:00
+# DESKTOP-SEC-001: GPS Tracking Dashboard
 
 ## Description
 

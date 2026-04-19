@@ -1,75 +1,85 @@
-# Code and Documentation Placement Guide - 01200 Finance
+---
+title: 01200 Finance - Code and Documentation Placement
+---
 
-This document defines the standard structure and placement for all code and documentation within the Finance discipline.
+# 01200 Finance - Code and Documentation Placement
 
-## Directory Structure
+## Discipline Overview
+
+This document defines the standardized location for all code and documentation within the 01200 Finance discipline.
+
+## Standard Structure
+
 
 ```
 01200-finance/
-├── README.md                    # Discipline overview (this file's parent)
-├── CODE-AND-DOC-PLACEMENT.md    # This guide
-├── procedures/                  # Financial operation procedures
-│   ├── accounts-payable.md
-│   ├── accounts-receivable.md
-│   ├── invoice-processing.md
-│   └── payroll.md
-├── plans/                       # Financial operation plans
-│   └── financial-operations-plan.md
-├── trigger/                     # Discipline-level automation triggers
-│   └── FINOPS-AUTO/           # Automated finance workflows
-│       └── issues/
-│           └── FINOPS-AUTO-000-finance-operations-automation.md
-├── knowledge/                   # Knowledge base
+├── CODE-AND-DOC-PLACEMENT.md    ← This file
+├── README.md                     ← Discipline overview
+├── knowledge/                   ← Cross-project domain knowledge
 │   └── PAGE-KNOWLEDGE.md
-└── projects/                    # Project implementations
-    └── PROC-001/               # Standard Procurement Workflow
-        ├── trigger/            # Project-level triggers
-        ├── desktop/            # Desktop platform
-        ├── mobile/             # Mobile platform
-        ├── web/                # Web platform
-        └── shared/             # Shared resources
+├── projects/                    ← All discipline projects
+│   └── {PROJECT-CODE}/
+│       ├── README.md            ← Project overview
+│       ├── plan.md              ← Project plan
+│       ├── AGENTS.md            ← Project-specific agent instructions
+│       ├── trigger/             ← Project automation triggers
+│       │   ├── README.md
+│       │   └── {PROJECT}-000-project-automation.md
+│       ├── {PROJECT}-workflows-list.md       ← Workflows catalog
+│       ├── {PROJECT}-implementation.md       ← Implementation plan
+│       ├── discipline_workflow_conversion_procedure.md
+│       ├── research/            ← Research enhancement plans
+│       │   └── {PROJECT}-research-enhancement-plan.md
+│       ├── scripts/             ← Generator scripts
+│       │   └── generate-issues.py
+│       ├── desktop/             ← Desktop platform
+│       │   ├── trigger/         ← Desktop-specific triggers
+│       │   │   ├── README.md
+│       │   │   └── {PROJECT}-000-project-automation.md
+│       │   ├── issues/
+│       │   │   ├── {ISSUE-ID}.md
+│       │   │   └── ISSUE-GENERATION-STATUS.md
+│       │   ├── learning/
+│       │   └── orchestration/
+│       ├── mobile/              ← Mobile platform
+│       │   ├── trigger/         ← Mobile-specific triggers
+│       │   │   ├── README.md
+│       │   │   └── {PROJECT}-000-project-automation.md
+│       │   ├── issues/
+│       │   │   ├── {ISSUE-ID}.md
+│       │   │   └── ISSUE-GENERATION-STATUS.md
+│       │   ├── learning/
+│       │   └── orchestration/
+│       ├── web/                 ← Web platform
+│       │   ├── trigger/         ← Web-specific triggers
+│       │   │   ├── README.md
+│       │   │   └── {PROJECT}-000-project-automation.md
+│       │   ├── issues/
+│       │   │   ├── {ISSUE-ID}.md
+│       │   │   └── ISSUE-GENERATION-STATUS.md
+│       │   ├── learning/
+│       │   └── orchestration/
+│       ├── shared/              ← Shared across platforms
+│       │   ├── api/             ← API contracts
+│       │   ├── business-logic/  ← Business logic docs
+│       │   └── data-models/     ← Data model docs
+│       └── knowledge/           ← Project-specific knowledge
+│           └── PAGE-KNOWLEDGE.md
+├── trigger/                     ← Discipline automation triggers
+│   ├── README.md
+│   └── {AUTO-PROJECT}/
+│       └── issues/
+│           └── {AUTO-PROJECT}-000-discipline-automation.md
+├── procedures/
+└── plans/
 ```
 
-## Trigger Placement
 
-### Discipline-Level Triggers
-Location: `trigger/FINOPS-AUTO/issues/`
-- Covers automation for all finance operations
-- Includes invoice processing, payment scheduling, and reconciliation
+## Discipline-Specific Notes
 
-### Project-Level Triggers
-Location: `projects/PROC-001/trigger/`
-- Covers project-specific finance automation needs
-- Links to discipline-level triggers
+- Finance discipline for construction and engineering projects
+- Desktop, mobile, and web platform support
 
-## Content Guidelines
+## Related Documents
 
-### procedures/
-Financial operation procedures:
-- `accounts-payable.md` - AP processes
-- `accounts-receivable.md` - AR management
-- `invoice-processing.md` - Invoice handling
-- `payroll.md` - Payroll procedures
-
-### plans/
-Financial operation plans:
-- `financial-operations-plan.md` - Operations strategy
-
-### knowledge/
-Finance knowledge:
-- `PAGE-KNOWLEDGE.md` - PARA index for finance knowledge
-
-### projects/PROC-001/
-Finance operations for procurement:
-- `trigger/` - Project finance triggers
-- `desktop/` - Desktop-specific implementations
-- `mobile/` - Mobile-specific implementations
-- `web/` - Web-specific implementations
-- `shared/` - Cross-platform shared resources
-
-## File Naming Conventions
-
-- Procedures: `kebab-case.md`
-- Plans: `YYYY-MM-DD-descriptive-name.md`
-- Triggers: `{PREFIX}-{NUMBER}-{slug}.md`
-- Knowledge: `PAGE-KNOWLEDGE.md`
+- [Code and Documentation Placement Procedure](../../procedures/workflows/code-and-doc-placement-procedure.md)

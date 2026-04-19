@@ -1,11 +1,16 @@
-# [Desktop] Equipment Immobilization Controls
+---
+id: DESKTOP-SEC-004
+title: Equipment Immobilization Controls
+status: todo
+priority: high
+assignee: codesmith-devforge
+company: devforge-ai
+created_date: 2026-04-16
+due_date: 2026-05-16
+estimated_hours: 28
+---
 
-**Issue ID:** DESKTOP-SEC-004-equipment-immobilization-controls
-**Priority:** High
-**Estimated Hours:** 28
-**Assigned Company:** devforge-ai
-**Assigned Agent:** codesmith-devforge
-**Generated:** 2026-04-16T10:24:00.000000+00:00
+# DESKTOP-SEC-004: Equipment Immobilization Controls
 
 ## Description
 

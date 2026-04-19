@@ -1,11 +1,16 @@
-# [Desktop] Security Analytics Dashboard
+---
+id: DESKTOP-SEC-008
+title: Security Analytics Dashboard
+status: todo
+priority: medium
+assignee: devcore-devforge
+company: devforge-ai
+created_date: 2026-04-16
+due_date: 2026-05-16
+estimated_hours: 24
+---
 
-**Issue ID:** DESKTOP-SEC-008-security-analytics-dashboard
-**Priority:** Medium
-**Estimated Hours:** 24
-**Assigned Company:** devforge-ai
-**Assigned Agent:** devcore-devforge
-**Generated:** 2026-04-16T10:24:00.000000+00:00
+# DESKTOP-SEC-008: Security Analytics Dashboard
 
 ## Description
 

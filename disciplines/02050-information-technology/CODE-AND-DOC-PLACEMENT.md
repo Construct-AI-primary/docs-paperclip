@@ -1,75 +1,85 @@
-# Code and Documentation Placement Guide - 02050 Information Technology
+---
+title: 02050 Information Technology - Code and Documentation Placement
+---
 
-This document defines the standard structure and placement for all code and documentation within the Information Technology discipline.
+# 02050 Information Technology - Code and Documentation Placement
 
-## Directory Structure
+## Discipline Overview
+
+This document defines the standardized location for all code and documentation within the 02050 Information Technology discipline.
+
+## Standard Structure
+
 
 ```
 02050-information-technology/
-├── README.md                    # Discipline overview (this file's parent)
-├── CODE-AND-DOC-PLACEMENT.md    # This guide
-├── procedures/                  # IT procedures
-│   ├── infrastructure.md
-│   ├── software-development.md
-│   ├── cybersecurity.md
-│   └── service-management.md
-├── plans/                       # IT strategic plans
-│   └── it-strategic-plan.md
-├── trigger/                     # Discipline-level automation triggers
-│   └── IT-AUTO/               # Automated IT workflows
-│       └── issues/
-│           └── IT-AUTO-000-it-automation.md
-├── knowledge/                   # Knowledge base
+├── CODE-AND-DOC-PLACEMENT.md    ← This file
+├── README.md                     ← Discipline overview
+├── knowledge/                   ← Cross-project domain knowledge
 │   └── PAGE-KNOWLEDGE.md
-└── projects/                    # Project implementations
-    └── PROC-001/               # Standard Procurement Workflow
-        ├── trigger/            # Project-level triggers
-        ├── desktop/            # Desktop platform
-        ├── mobile/             # Mobile platform
-        ├── web/                # Web platform
-        └── shared/             # Shared resources
+├── projects/                    ← All discipline projects
+│   └── {PROJECT-CODE}/
+│       ├── README.md            ← Project overview
+│       ├── plan.md              ← Project plan
+│       ├── AGENTS.md            ← Project-specific agent instructions
+│       ├── trigger/             ← Project automation triggers
+│       │   ├── README.md
+│       │   └── {PROJECT}-000-project-automation.md
+│       ├── {PROJECT}-workflows-list.md       ← Workflows catalog
+│       ├── {PROJECT}-implementation.md       ← Implementation plan
+│       ├── discipline_workflow_conversion_procedure.md
+│       ├── research/            ← Research enhancement plans
+│       │   └── {PROJECT}-research-enhancement-plan.md
+│       ├── scripts/             ← Generator scripts
+│       │   └── generate-issues.py
+│       ├── desktop/             ← Desktop platform
+│       │   ├── trigger/         ← Desktop-specific triggers
+│       │   │   ├── README.md
+│       │   │   └── {PROJECT}-000-project-automation.md
+│       │   ├── issues/
+│       │   │   ├── {ISSUE-ID}.md
+│       │   │   └── ISSUE-GENERATION-STATUS.md
+│       │   ├── learning/
+│       │   └── orchestration/
+│       ├── mobile/              ← Mobile platform
+│       │   ├── trigger/         ← Mobile-specific triggers
+│       │   │   ├── README.md
+│       │   │   └── {PROJECT}-000-project-automation.md
+│       │   ├── issues/
+│       │   │   ├── {ISSUE-ID}.md
+│       │   │   └── ISSUE-GENERATION-STATUS.md
+│       │   ├── learning/
+│       │   └── orchestration/
+│       ├── web/                 ← Web platform
+│       │   ├── trigger/         ← Web-specific triggers
+│       │   │   ├── README.md
+│       │   │   └── {PROJECT}-000-project-automation.md
+│       │   ├── issues/
+│       │   │   ├── {ISSUE-ID}.md
+│       │   │   └── ISSUE-GENERATION-STATUS.md
+│       │   ├── learning/
+│       │   └── orchestration/
+│       ├── shared/              ← Shared across platforms
+│       │   ├── api/             ← API contracts
+│       │   ├── business-logic/  ← Business logic docs
+│       │   └── data-models/     ← Data model docs
+│       └── knowledge/           ← Project-specific knowledge
+│           └── PAGE-KNOWLEDGE.md
+├── trigger/                     ← Discipline automation triggers
+│   ├── README.md
+│   └── {AUTO-PROJECT}/
+│       └── issues/
+│           └── {AUTO-PROJECT}-000-discipline-automation.md
+├── procedures/
+└── plans/
 ```
 
-## Trigger Placement
 
-### Discipline-Level Triggers
-Location: `trigger/IT-AUTO/issues/`
-- Covers automation for IT processes
-- Includes system monitoring, security alerts, and deployment automation
+## Discipline-Specific Notes
 
-### Project-Level Triggers
-Location: `projects/PROC-001/trigger/`
-- Covers project-specific IT automation needs
-- Links to discipline-level triggers
+- Information Technology discipline for construction and engineering projects
+- Desktop, mobile, and web platform support
 
-## Content Guidelines
+## Related Documents
 
-### procedures/
-IT procedures:
-- `infrastructure.md` - Infrastructure management
-- `software-development.md` - Development lifecycle
-- `cybersecurity.md` - Security practices
-- `service-management.md` - ITSM processes
-
-### plans/
-IT planning documents:
-- `it-strategic-plan.md` - IT strategy
-
-### knowledge/
-IT knowledge:
-- `PAGE-KNOWLEDGE.md` - PARA index for IT knowledge
-
-### projects/PROC-001/
-IT for procurement:
-- `trigger/` - Project IT triggers
-- `desktop/` - Desktop-specific implementations
-- `mobile/` - Mobile-specific implementations
-- `web/` - Web-specific implementations
-- `shared/` - Cross-platform shared resources
-
-## File Naming Conventions
-
-- Procedures: `kebab-case.md`
-- Plans: `YYYY-MM-DD-descriptive-name.md`
-- Triggers: `{PREFIX}-{NUMBER}-{slug}.md`
-- Knowledge: `PAGE-KNOWLEDGE.md`
+- [Code and Documentation Placement Procedure](../../procedures/workflows/code-and-doc-placement-procedure.md)

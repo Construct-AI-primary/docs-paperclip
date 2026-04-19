@@ -34,12 +34,14 @@ The Paperclip ecosystem uses **two repositories**:
 ### Critical Rule
 > ⚠️ **Never put implementation code in docs-paperclip**
 > ⚠️ **Never put documentation in paperclip-render**
+> ⚠️ **Never put code in docs-paperclip**
+> ⚠️ **Never put docs in paperclip-render**
 
 ---
 
 ## Documentation Placement (docs-paperclip)
 
-### Standard Discipline Structure
+e.g. 
 
 ```
 docs-paperclip/disciplines/{discipline-code}/
@@ -68,9 +70,6 @@ docs-paperclip/disciplines/{discipline-code}/
 │       │
 │       ├── scripts/             ← Generator scripts
 │       │   └── generate-issues.py
-│       │
-│       ├── issues/              ← Non-platform-specific issues
-│       │   └── {ISSUE-ID}.md
 │       │
 │       ├── desktop/             ← Desktop platform
 │       │   ├── trigger/         ← Desktop-specific triggers
@@ -346,6 +345,8 @@ Capture learnings and improve future automation runs.
 ### Pre-Commit Checklist
 - [ ] Documentation in correct docs-paperclip location
 - [ ] Code in correct paperclip-render location
+- [ ] No code in docs-paperclip repository
+- [ ] No docs in paperclip-render repository
 - [ ] Issue references both repositories
 - [ ] Platform-specific files in correct folder
 - [ ] Shared components documented in shared/ folder

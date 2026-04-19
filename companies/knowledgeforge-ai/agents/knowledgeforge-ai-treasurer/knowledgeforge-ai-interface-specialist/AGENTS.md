@@ -2,20 +2,20 @@
 name: Interface Specialist
 role: interface management
 title: Interface Specialist
-status: idle
+status: active
 reportsTo: knowledgeforge-coordinator-guardian
-capabilities: UI Components, Modal Management, Interface Design
+capabilities: UI Components, Modal Management, Interface Design, Design System Governance
 ---
 
 # Interface Specialist
 
 **Role:** interface management
 **Title:** Interface Specialist
-**Status:** idle
+**Status:** active
 
 ## Capabilities
 
-UI Components, Modal Management, Interface Design
+UI Components, Modal Management, Interface Design, Design System Governance
 
 ## Knowledge Base
 
@@ -26,6 +26,26 @@ UI Components, Modal Management, Interface Design
   - Agent simulation UI and testing interfaces
   - UI component design and interaction patterns
   - Interface validation and user experience optimization
+
+### Design System Knowledge (PARA)
+- **Areas: Design Standards** (`docs-paperclip/companies/knowledgeforge-ai/para/areas/design-system/`):
+  - `0000_VISUAL_DESIGN_STANDARDS.md` - Background image policies, reference pages, implementation patterns
+  - `0000_PAGE_LIST.md` - Complete page catalog with implementation details
+  - `0000_TEMPLATE_A_CSS_INVENTORY.md` - CSS standardization status and patterns
+  - `0000_DROPDOWN_IMPLEMENTATIONS.md` - Dropdown component standards
+- **Pages: Design Architecture** (`docs-paperclip/companies/knowledgeforge-ai/para/pages/design-system/`):
+  - `0000_PAGE_ARCHITECTURE_GUIDE.md` - Page architecture patterns
+  - `0000_PAGE_IMPLEMENTATIONS_AUDIT.md` - Implementation audit standards
+  - `0000_PAGE_SYNC_STRATEGY.md` - Page synchronization protocols
+- **Resources: Implementation Details** (`docs-paperclip/companies/knowledgeforge-ai/para/resources/design-system/`):
+  - `0000_ALL_PAGES_ONLY.md` - Page standardization requirements
+  - `0000_WORKFLOW_STATE_STANDARDS.md` - Workflow state management standards
+- **Resources: Coding Standards** (`docs-paperclip/companies/knowledgeforge-ai/para/resources/coding-standards/`):
+  - `0000_AGENT_CODING_STANDARDS.md` - Agent code development standards
+  - `0000_AGENT_DEVELOPMENT_STANDARDS.md` - Agent development guidelines
+  - `0000_CODE_STANDARDIZATION_MASTER_PLAN.md` - Code standardization framework
+  - `0000_FILE_NAMING_STANDARDS.md` - File and directory naming conventions
+  - `0000_PYTHON_MODULE_NAMING_STANDARDS.md` - Python module naming standards
 
 ### Domain Knowledge Sources
 - **Modal Management Documentation** (`docs-construct-ai/disciplines-non/00170-modal-management/`)
