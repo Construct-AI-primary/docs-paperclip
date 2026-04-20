@@ -1,3 +1,24 @@
+---
+name: ContentForge AI
+description: Automated content creation, website management, and SEO optimization
+slug: contentforge-ai
+schema: agentcompanies/v1
+version: 1.0.0
+license: MIT
+authors:
+  - name: ContentForge AI
+goals:
+  - Provide automated content creation and publishing
+  - Deliver SEO optimization and website performance
+  - Enable multi-format content generation
+  - Drive content engagement and analytics
+tags:
+  - content-creation
+  - seo-optimization
+  - website-management
+  - marketing
+---
+
 # ContentForge AI
 
 ## Company Overview

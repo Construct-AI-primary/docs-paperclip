@@ -1,3 +1,25 @@
+---
+name: MobileForge AI
+description: Mobile device ecosystem management, optimization, and development
+slug: mobileforge-ai
+schema: agentcompanies/v1
+version: 1.0.0
+license: MIT
+authors:
+  - name: MobileForge AI
+goals:
+  - Orchestrate mobile device lifecycle management
+  - Enable cross-platform mobile development
+  - Provide mobile security and compliance frameworks
+  - Optimize mobile performance and user experience
+tags:
+  - mobile-development
+  - device-management
+  - ios
+  - android
+  - cross-platform
+---
+
 # MobileForge AI
 
 ## Company Overview

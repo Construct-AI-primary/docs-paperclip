@@ -1,3 +1,24 @@
+---
+name: ExecForge AI
+description: Executive productivity and personal assistance automation
+slug: execforge-ai
+schema: agentcompanies/v1
+version: 1.0.0
+license: MIT
+authors:
+  - name: ExecForge AI
+goals:
+  - Enhance executive productivity through AI-powered assistance
+  - Automate communication and scheduling management
+  - Provide decision support and strategic intelligence
+  - Enable seamless Paperclip ecosystem integration
+tags:
+  - executive-productivity
+  - personal-assistance
+  - automation
+  - decision-support
+---
+
 # ExecForge AI
 
 ## Company Overview

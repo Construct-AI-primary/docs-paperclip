@@ -1,3 +1,24 @@
+---
+name: VoiceForge AI
+description: Voice interaction, speech processing, and multimodal AI
+slug: voiceforge-ai
+schema: agentcompanies/v1
+version: 1.0.0
+license: MIT
+authors:
+  - name: VoiceForge AI
+goals:
+  - Provide enterprise-grade speech processing
+  - Enable natural language understanding and generation
+  - Deliver multimodal AI interactions
+  - Support voice synthesis and audio enhancement
+tags:
+  - voice-ai
+  - speech-processing
+  - multimodal
+  - text-to-speech
+---
+
 # VoiceForge AI
 
 ## Company Overview

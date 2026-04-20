@@ -1,11 +1,23 @@
 ---
 name: IntegrateForge AI
+description: Third-party tool integrations for engineering and construction ecosystem
 slug: integrateforge-ai
-status: active
-founded: 2026
-ceo: integration-orchestrator
-headquarters: Global
-industry: AI-Powered Software Integration
+schema: agentcompanies/v1
+version: 1.0.0
+license: MIT
+authors:
+  - name: IntegrateForge AI
+goals:
+  - Provide seamless connectivity between Construct-AI and external engineering software
+  - Enable AI-powered workflows across construction technology ecosystem
+  - Build 18+ engineering platform connectors
+  - Deliver enterprise-grade integration security and compliance
+tags:
+  - integration
+  - engineering-software
+  - api-connectivity
+  - bim
+  - construction-technology
 ---
 
 # IntegrateForge AI

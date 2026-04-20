@@ -1,3 +1,24 @@
+---
+name: SaaSForge AI
+description: Customer onboarding automation, multi-tenant SaaS operations, and customer lifecycle management
+slug: saasforge-ai
+schema: agentcompanies/v1
+version: 1.0.0
+license: MIT
+authors:
+  - name: SaaSForge AI
+goals:
+  - Automate customer onboarding and tenant provisioning
+  - Manage multi-tenant infrastructure and isolation
+  - Enable customer lifecycle management
+  - Provide scalable SaaS operations
+tags:
+  - saas-operations
+  - customer-onboarding
+  - multi-tenant
+  - automation
+---
+
 # SaaSForge AI
 
 ## Company Overview
