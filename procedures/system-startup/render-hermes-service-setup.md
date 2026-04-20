@@ -1,301 +1,317 @@
 ---
-title: Render Hermes Service Setup and Deployment
-summary: Complete guide for deploying Hermes agent as a standalone service on Render
-date: 2026-04-19
-version: 1.0
+title: Hermes Adapter Configuration - Built-in Integration
+summary: Guide for using the built-in hermes_local adapter in Paperclip
+date: 2026-04-20
+version: 2.0
 status: active
 ---
 
-# Render Hermes Service Setup and Deployment
+# Hermes Adapter Configuration - Built-in Integration
 
 ## Overview
 
-This document provides step-by-step instructions for deploying the Hermes agent as a standalone service on Render. The Hermes service will run the gateway server, providing an HTTP API endpoint that Paperclip agents can communicate with.
+**IMPORTANT**: Paperclip has a **built-in Hermes adapter** (`hermes_local`) that does NOT require an external Hermes service or the `hermes_agent` submodule. This document explains the correct configuration approach.
 
-## Problem Context
+## Design Summary
 
-Based on the task description, the current issue is:
-- Agents are configured with HTTP adapters pointing to a hermes service
-- The hermes service build is failing with "cd: hermes_agent: No such file or directory"
-- The repository is cloned as `hermes-agent` (with hyphen), not `hermes_agent` (with underscore)
+### What is hermes_local?
 
-## Solution: Render Service Configuration
+The `hermes_local` adapter is a **built-in adapter** in Paperclip that integrates Hermes Agent functionality directly into the Paperclip server through the `hermes-paperclip-adapter` npm package (version 0.2.0).
 
-### Step 1: Create Render Service
+**Key Points**:
+- ✅ Built into the Paperclip server (no external service needed)
+- ✅ Installed via npm dependency: `"hermes-paperclip-adapter": "^0.2.0"`
+- ✅ Registered in `server/src/adapters/registry.ts` as `hermesLocalAdapter`
+- ✅ Requires Hermes CLI installed on the server (`pip install hermes-agent`)
+- ✅ Uses the `hermes` command from the system PATH by default
+- ❌ Does NOT require the `hermes_agent` git submodule
+- ❌ Does NOT require `hermes_agent/run.sh` script
+- ❌ Does NOT require a separate Hermes service deployment
 
-1. **Navigate to Render Dashboard**: https://dashboard.render.com
-2. **Create New Web Service**
-3. **Connect Repository**: `https://github.com/NousResearch/hermes-agent`
-4. **Service Name**: `hermes-service` (or your preferred name)
-5. **Region**: Same as Paperclip service for low latency
+## Problem Context (Historical)
 
-### Step 2: Configure Build Settings
+**Previous Incorrect Approaches**:
+1. ❌ Deploying Hermes as a separate service on Render
+2. ❌ Using `hermesCommand: "/opt/render/project/src/hermes_agent/run.sh"` in adapter_config
+3. ❌ Using the `process` adapter type with hermes_agent/run.sh
+4. ❌ Trying to initialize the hermes_agent git submodule
 
-**Build Command**:
-```bash
-cd hermes-agent && pip install -e .
-```
+**Why These Failed**:
+- The `hermes_agent` directory is a git submodule with `/venv/` gitignored
+- The venv doesn't exist on Render, causing `run.sh` to fail
+- The build script explicitly skips hermes_agent: "hermes_local adapter is built into the server"
 
-**Start Command**:
-```bash
-cd hermes-agent && python -m gateway.run
-```
+## Correct Configuration Approach
 
-**Note**: The repository clones as `hermes-agent` (hyphen), not `hermes_agent` (underscore).
+### Step 1: Ensure Hermes CLI is Installed on Render
 
-### Step 3: Environment Variables
+The `hermes_local` adapter requires the `hermes` CLI command to be available on the Paperclip server.
 
-Set the following environment variables in Render dashboard:
-
-#### Required Variables
-
-```bash
-# LLM Provider
-OPENROUTER_API_KEY=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
-
-# Terminal Configuration
-TERMINAL_BACKEND=local
-TERMINAL_TIMEOUT=60
-TERMINAL_LIFETIME_SECONDS=300
-
-# Gateway Configuration (if needed for HTTP API)
-HOST=0.0.0.0
-PORT=3100
-
-# Working Directory for Messaging
-MESSAGING_CWD=/opt/render/project/src/hermes-agent
-```
-
-#### Optional Variables
+**Add to `scripts/render-build.sh`** (after line 31):
 
 ```bash
-# GitHub Integration (if agents need to create PRs)
-# GITHUB_TOKEN=your_github_personal_access_token_here
-
-# Additional Tool API Keys (as needed)
-# EXA_API_KEY=
-# PARALLEL_API_KEY=
-# FIRECRAWL_API_KEY=
+echo "=== [BUILD-STEP-5.5] Installing Hermes Agent ==="
+pip install hermes-agent
 ```
 
-### Step 4: Health Check Configuration
-
-**Health Check Path**: `/health` (if gateway provides one)
-**Health Check Interval**: 30 seconds
-
-If gateway doesn't provide a health endpoint, disable health checks or create a simple wrapper script.
-
-### Step 5: Verify Deployment
-
-After deployment, verify the service is running:
-
+**Verify installation**:
 ```bash
-# Check service logs in Render dashboard
-# Look for:
-# - "Gateway started successfully"
-# - "Listening on port 3100"
-# - No import errors or missing dependencies
+hermes --version
 ```
 
-## Hermes Gateway Architecture
+### Step 2: Configure Agents with hermes_local Adapter
 
-### Gateway vs CLI Mode
+Agents should use the `hermes_local` adapter type with **minimal or empty** `adapter_config`:
 
-Hermes has two operational modes:
-
-1. **CLI Mode** (`hermes`): Interactive terminal interface
-2. **Gateway Mode** (`hermes gateway` or `python -m gateway.run`): Messaging platform integration
-
-For Paperclip integration, we need **Gateway Mode** running as a service.
-
-### Gateway Capabilities
-
-The gateway provides:
-- **Messaging Platform Integration**: Telegram, Discord, Slack, WhatsApp, Signal
-- **HTTP API** (if configured): RESTful endpoints for agent communication
-- **Session Management**: Persistent conversation state
-- **Tool Execution**: All Hermes tools available via API
-
-### Current Limitation
-
-**Important**: The current Hermes gateway (`gateway/run.py`) is designed for messaging platforms (Telegram, Discord, etc.), **not** as an HTTP API server for Paperclip agents.
-
-## Alternative Approaches
-
-### Option 1: Create HTTP API Wrapper (Recommended)
-
-Create a FastAPI wrapper around Hermes agent for HTTP communication:
-
-```python
-# hermes_api_server.py
-from fastapi import FastAPI, HTTPException
-from pydantic import BaseModel
-from run_agent import AIAgent
-import os
-
-app = FastAPI()
-
-class ExecuteRequest(BaseModel):
-    prompt: str
-    agent_id: str
-    session_id: str = None
-
-class ExecuteResponse(BaseModel):
-    response: str
-    status: str
-
-@app.post("/api/execute")
-async def execute_task(request: ExecuteRequest):
-    try:
-        agent = AIAgent(
-            model=os.getenv("LLM_MODEL", "anthropic/claude-opus-4.6"),
-            platform="api",
-            session_id=request.session_id or request.agent_id
-        )
-        
-        response = agent.chat(request.prompt)
-        
-        return ExecuteResponse(
-            response=response,
-            status="success"
-        )
-    except Exception as e:
-        raise HTTPException(status_code=500, detail=str(e))
-
-@app.get("/health")
-async def health_check():
-    return {"status": "healthy"}
-
-if __name__ == "__main__":
-    import uvicorn
-    uvicorn.run(app, host="0.0.0.0", port=int(os.getenv("PORT", 3100)))
+**Correct Configuration**:
+```json
+{
+  "adapter_type": "hermes_local",
+  "adapter_config": {}
+}
 ```
 
-**Build Command**:
-```bash
-cd hermes-agent && pip install -e . && pip install fastapi uvicorn
+**Optional Configuration** (if needed):
+```json
+{
+  "adapter_type": "hermes_local",
+  "adapter_config": {
+    "model": "anthropic/claude-opus-4.6",
+    "timeoutSec": 300,
+    "persistSession": true
+  }
+}
 ```
 
-**Start Command**:
-```bash
-cd hermes-agent && python hermes_api_server.py
+**DO NOT include `hermesCommand` field** - the adapter uses the system `hermes` command by default.
+
+### Step 3: Automatic Migration
+
+The Paperclip server includes automatic migration code in `server/src/index.ts` (lines 476-491) that converts old `process` adapter configurations to `hermes_local`:
+
+```typescript
+// Data migration: switch agents from process adapter (hermes_agent/run.sh) to hermes_local
+const hermesMigrationResult = await db.execute(
+  `UPDATE agents SET adapter_type = 'hermes_local', adapter_config = '{}' 
+   WHERE adapter_type = 'process' AND adapter_config::text LIKE '%hermes_agent%'`
+);
 ```
 
-### Option 2: Use Hermes ACP Adapter
+This migration runs automatically on server startup.
 
-Hermes includes an ACP (Agent Communication Protocol) adapter for IDE integration. This could potentially be adapted for Paperclip communication.
+### Step 4: Remove hermesCommand from Existing Agents
 
-**Location**: `hermes-agent/acp_adapter/`
+If agents already have `hermesCommand` in their `adapter_config`, remove it:
 
-**Investigation Needed**: Review ACP adapter to see if it provides HTTP endpoints suitable for Paperclip.
-
-### Option 3: Direct Process Execution (Not Recommended for Render)
-
-Instead of HTTP communication, agents could execute Hermes as a subprocess. However, this requires:
-- Hermes installed in the Paperclip service environment
-- Proper PATH configuration
-- Shared filesystem access
-
-This approach is **not recommended** for cloud deployments due to complexity and resource overhead.
-
-## Recommended Implementation Path
-
-### Phase 1: Create HTTP API Wrapper
-
-1. **Create `hermes_api_server.py`** in the hermes-agent repository
-2. **Add FastAPI dependencies** to requirements
-3. **Deploy to Render** with updated build/start commands
-4. **Test endpoint** with curl/Postman
-
-### Phase 2: Update Paperclip Agent Configuration
-
-Update agent adapter configurations to point to the new HTTP API:
-
+**SQL to clean up**:
 ```sql
-UPDATE agents
-SET adapter_config = jsonb_set(
-    adapter_config,
-    '{url}',
-    '"https://hermes-service.onrender.com/api/execute"'
-)
-WHERE adapter_config->>'type' = 'http'
-AND adapter_config->>'url' LIKE '%hermes%';
+UPDATE agents 
+SET adapter_config = adapter_config - 'hermesCommand'
+WHERE adapter_type = 'hermes_local' 
+  AND adapter_config::text LIKE '%hermesCommand%';
 ```
 
-### Phase 3: Test Integration
+### Step 5: Verify Configuration
 
-1. **Assign test issue** to an agent
-2. **Trigger heartbeat** to invoke agent
-3. **Monitor logs** in both Paperclip and Hermes services
-4. **Verify response** is returned to Paperclip
+**Check agent configuration**:
+```sql
+SELECT
+    id,
+    name,
+    adapter_type,
+    adapter_config
+FROM agents
+WHERE adapter_type = 'hermes_local';
+```
+
+**Expected result**:
+- `adapter_type`: `hermes_local`
+- `adapter_config`: `{}` or minimal config without `hermesCommand`
+
+## How hermes_local Works
+
+### Architecture
+
+```
+Paperclip Server
+  └─> server/src/adapters/registry.ts
+       └─> hermesLocalAdapter (registered)
+            └─> hermes-paperclip-adapter (npm package)
+                 └─> execute() function
+                      └─> spawns `hermes` CLI process
+                           └─> Hermes Agent executes task
+```
+
+### Execution Flow
+
+1. **Heartbeat triggers** agent execution
+2. **Paperclip server** calls `hermesLocalAdapter.execute()`
+3. **Adapter spawns** `hermes` CLI process with task prompt
+4. **Hermes Agent** executes task using its tools
+5. **Result returned** to Paperclip via stdout
+6. **Paperclip stores** result and updates issue status
+
+### Configuration Options
+
+The `hermes-paperclip-adapter` supports these `adapter_config` fields:
+
+| Field | Type | Default | Description |
+|-------|------|---------|-------------|
+| model | string | (Hermes default) | LLM model in provider/model format |
+| provider | string | auto | API provider (auto-detected from model) |
+| timeoutSec | number | 300 | Execution timeout in seconds |
+| graceSec | number | 10 | Grace period after SIGTERM |
+| toolsets | string | (all) | Comma-separated toolsets to enable |
+| persistSession | boolean | true | Resume sessions across heartbeats |
+| worktreeMode | boolean | false | Use git worktree for isolated changes |
+| checkpoints | boolean | false | Enable filesystem checkpoints |
+| verbose | boolean | false | Enable verbose output |
+| extraArgs | string[] | [] | Additional CLI arguments |
+| env | object | {} | Extra environment variables |
+
+**DO NOT use `hermesCommand`** - it's only for custom Hermes installations in non-standard locations.
+
+## Environment Variables
+
+The Hermes CLI requires API keys to be configured. These should be set in the Render environment:
+
+**Required**:
+```bash
+OPENROUTER_API_KEY=sk-or-v1-...
+```
+
+**Optional** (depending on tools used):
+```bash
+GITHUB_TOKEN=ghp_...
+EXA_API_KEY=...
+PARALLEL_API_KEY=...
+FIRECRAWL_API_KEY=...
+```
+
+Hermes reads these from `~/.hermes/.env` or system environment variables.
 
 ## Troubleshooting
 
-### Build Failures
+### Error: "hermes: command not found"
 
-**Error**: `cd: hermes_agent: No such file or directory`
-**Solution**: Use `hermes-agent` (hyphen) instead of `hermes_agent` (underscore)
+**Cause**: Hermes CLI not installed on the server
+**Solution**: Add `pip install hermes-agent` to `scripts/render-build.sh`
 
-**Error**: `pip install -e . failed`
-**Solution**: Check Python version (requires 3.11+), verify pyproject.toml exists
+### Error: "venv/bin/activate: No such file or directory"
 
-### Runtime Failures
+**Cause**: Agent has old `hermesCommand` configuration pointing to `hermes_agent/run.sh`
+**Solution**: Run the SQL cleanup command to remove `hermesCommand` field
 
-**Error**: `ModuleNotFoundError: No module named 'gateway'`
-**Solution**: Ensure working directory is `hermes-agent` before running Python
+### Error: "OPENROUTER_API_KEY not set"
 
-**Error**: `OPENROUTER_API_KEY not set`
-**Solution**: Verify environment variable is set in Render dashboard
+**Cause**: Hermes requires an LLM API key
+**Solution**: Set `OPENROUTER_API_KEY` in Render environment variables
 
-### Connection Failures
+### Agent execution times out
 
-**Error**: Paperclip agents cannot reach Hermes service
-**Solution**: 
-- Verify Hermes service is running (check Render logs)
-- Check service URL in agent configuration
-- Ensure PORT environment variable matches start command
-- Verify no firewall/network restrictions
+**Cause**: Default timeout may be too short for complex tasks
+**Solution**: Increase `timeoutSec` in `adapter_config`:
+```json
+{
+  "adapter_type": "hermes_local",
+  "adapter_config": {
+    "timeoutSec": 600
+  }
+}
+```
 
-## Monitoring and Maintenance
+## Migration from Old Configurations
 
-### Health Checks
+### From process adapter
 
-Monitor service health:
-- **Render Dashboard**: Service status, logs, metrics
-- **HTTP Endpoint**: `GET /health` should return 200 OK
-- **Log Analysis**: Check for errors, warnings, performance issues
+**Old configuration**:
+```json
+{
+  "adapter_type": "process",
+  "adapter_config": {
+    "command": "/opt/render/project/src/hermes_agent/run.sh",
+    "args": ["{{prompt}}"]
+  }
+}
+```
 
-### Performance Optimization
+**New configuration**:
+```json
+{
+  "adapter_type": "hermes_local",
+  "adapter_config": {}
+}
+```
 
-- **Resource Allocation**: Adjust Render instance size based on load
-- **Caching**: Implement response caching for repeated queries
-- **Rate Limiting**: Prevent abuse and manage API costs
-- **Timeout Configuration**: Adjust based on typical task duration
+**Migration**: Automatic on server startup (see Step 3)
 
-### Security Considerations
+### From http adapter (external Hermes service)
 
-- **API Authentication**: Add authentication to HTTP endpoints
-- **Rate Limiting**: Implement per-agent rate limits
-- **Input Validation**: Sanitize all incoming requests
-- **Audit Logging**: Log all agent interactions for compliance
+**Old configuration**:
+```json
+{
+  "adapter_type": "http",
+  "adapter_config": {
+    "url": "https://hermes-service.onrender.com/api/execute"
+  }
+}
+```
 
-## Next Steps
+**New configuration**:
+```json
+{
+  "adapter_type": "hermes_local",
+  "adapter_config": {}
+}
+```
 
-1. **Immediate**: Fix build command to use `hermes-agent` directory
-2. **Short-term**: Create HTTP API wrapper for Paperclip communication
-3. **Medium-term**: Implement authentication and rate limiting
-4. **Long-term**: Consider dedicated Hermes adapter in Paperclip codebase
+**Migration**: Manual SQL update required:
+```sql
+UPDATE agents
+SET adapter_type = 'hermes_local', adapter_config = '{}'
+WHERE adapter_type = 'http'
+  AND adapter_config->>'url' LIKE '%hermes%';
+```
+
+## Benefits of Built-in Adapter
+
+✅ **Simpler deployment** - No separate Hermes service needed
+✅ **Lower latency** - Direct process execution, no HTTP overhead
+✅ **Better resource usage** - Hermes processes only run when needed
+✅ **Easier maintenance** - Single deployment to manage
+✅ **Automatic updates** - Hermes version controlled via npm package
+✅ **Session persistence** - Built-in session management
+✅ **Full tool access** - All 30+ Hermes tools available
+
+## When to Use External Hermes Service
+
+You might still want a separate Hermes service if:
+
+- ❌ You need Hermes for non-Paperclip use cases (Telegram bots, Discord, etc.)
+- ❌ You want to isolate Hermes resource usage from Paperclip
+- ❌ You need different Hermes versions for different agents
+- ❌ You have custom Hermes modifications not in the npm package
+
+For most Paperclip deployments, the **built-in `hermes_local` adapter is the recommended approach**.
 
 ## Related Documents
 
-- [Paperclip + Hermes Integration Architecture](../../plans/system design/paperclip-hermes-github-integration-architecture.md)
-- [Render Deployment - Hermes Adapter Fix](./render-deployment-hermes-adapter-fix.md)
-- [Agent Adapter URL Migration](../adapters/adapter-url-migration-procedure.md)
-- [Hermes Agent Documentation](../../../hermes_agent/README.md)
+- [Paperclip Adapter System](../../doc/SPEC-implementation.md#adapters)
+- [Agent Configuration](../agents/hermes-agent-setup-procedure.md)
+- [Render Build Script](../../../scripts/render-build.sh)
+- [Server Adapter Registry](../../../server/src/adapters/registry.ts)
+
+## Summary
+
+**DO NOT deploy Hermes as a separate service**. Use the built-in `hermes_local` adapter with:
+1. Hermes CLI installed on the Paperclip server (`pip install hermes-agent`)
+2. Agent `adapter_type` set to `hermes_local`
+3. Empty or minimal `adapter_config` (no `hermesCommand` field)
+4. Required API keys in environment variables
 
 ---
 
-**Document Version**: 1.0
-**Last Updated**: 2026-04-19
+**Document Version**: 2.0
+**Last Updated**: 2026-04-20
 **Author**: Cline AI Assistant
 **Review Cycle**: As needed
