@@ -1,3 +1,8 @@
+---
+name: ux-designer
+role: User Experience Designer
+---
+
 # UX Designer
 
 ## Agent Profile
@@ -207,7 +212,7 @@ The UX Designer specializes in creating exceptional user experiences within Cont
 
 ---
 
-**Agent ID**: ux-designer
+**Agent ID**: ff1c9528-d385-4f73-914f-42d39f29232e
 **Company**: ContentForge AI
 **Role**: User Experience Designer
 **Tenure**: 2026 - Present

@@ -207,7 +207,7 @@ The Research Assistant specializes in executive research and information gatheri
 
 ---
 
-**Agent ID**: research-assistant
+**Agent ID**: 3cadd297-04ed-4299-825c-6e50a4d7a048
 **Company**: ExecForge AI
 **Role**: Executive Research & Information Specialist
 **Tenure**: 2026 - Present

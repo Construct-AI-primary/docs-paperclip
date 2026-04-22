@@ -1,3 +1,8 @@
+---
+name: reporting-specialist
+role: Analytics Reporting & Dashboard Expert
+---
+
 # Reporting Specialist
 
 ## Agent Profile
@@ -207,7 +212,7 @@ The Reporting Specialist specializes in automated reporting and dashboard creati
 
 ---
 
-**Agent ID**: reporting-specialist
+**Agent ID**: 550e8400-e29b-41d4-a716-446655440011
 **Company**: ContentForge AI
 **Role**: Analytics Reporting & Dashboard Expert
 **Tenure**: 2026 - Present

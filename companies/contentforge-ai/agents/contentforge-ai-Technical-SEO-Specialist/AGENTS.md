@@ -1,3 +1,8 @@
+---
+name: technical-seo-specialist
+role: Technical SEO Implementation Expert
+---
+
 # Technical SEO Specialist
 
 ## Agent Profile

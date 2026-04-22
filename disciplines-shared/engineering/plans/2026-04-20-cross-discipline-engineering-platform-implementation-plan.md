@@ -46,6 +46,36 @@ Create a unified engineering platform that:
 - **CAD/BIM Integration**: Multi-system support through DevForge AI agents
 - **Knowledge Integration**: AI-powered engineering assistance and validation
 
+## Implementation Strategy Update
+
+### Architectural Pilot as Foundation (ENG-AUTO-010)
+The architectural engineering discipline (00825) has been selected as the **pilot discipline** for cross-discipline platform implementation. This pilot will establish:
+
+- **UI/UX Standards** applicable across all 10 engineering disciplines
+- **Component Architecture** patterns for shared engineering features
+- **Integration Patterns** for existing pages and workflows
+- **Agent Skill Requirements** for advanced document generation and analysis
+
+**Pilot Issue**: ENG-AUTO-010 - Architectural Discipline Pilot Implementation
+**Timeline**: 5 weeks (Weeks 5-9, 2026)
+**Assignee**: DevForge AI (Workflow Complexity Analyzer)
+
+### Cross-Discipline Standards Establishment
+The pilot will establish standards that apply to all engineering disciplines:
+
+**All 10 Engineering Disciplines:**
+- Civil Engineering (00850), Electrical Engineering (00860), Mechanical Engineering (00870)
+- Structural Engineering (00872), **Architectural Engineering (00825)** ← Pilot
+- Chemical Engineering (00835), Geotechnical Engineering (00855)
+- Process Engineering (00871), Environmental Engineering (01000)
+- Landscaping Engineering (03000)
+
+**Standards References:**
+- Page Implementation: `docs-construct-ai/codebase/procedures/documentation/0000_PAGE_IMPLEMENTATION_PROCEDURE.md`
+- Visual Design: `docs-construct-ai/pages-design/0000_VISUAL_DESIGN_STANDARDS.md`
+- Page Architecture: `docs-construct-ai/pages-design/0000_PAGE_ARCHITECTURE_GUIDE.md`
+- Dropdown Standards: `docs-construct-ai/standards/0000_DROPDOWN_IMPLEMENTATIONS.md`
+
 ## Implementation Phases
 
 ### Phase 1: Platform Architecture Foundation (Weeks 1-2)
@@ -317,8 +347,8 @@ const ENGINEERING_SECTIONS = [
     title: 'Civil Engineering',
     links: [
       { title: 'Civil Engineering Platform', url: '/engineering?discipline=00850' },
-      { title: 'Scope of Work - Civil', url: '/disciplines/00850/scope-of-work' },
-      { title: 'Technical Specifications - Civil', url: '/disciplines/00850/technical-specifications' },
+      { title: 'Scope of Work', url: '/scope-of-work?discipline=00850' },
+      { title: 'Technical Documents', url: '/technical-drawings?discipline=00850' },
       { title: 'Structural Analysis', url: '/engineering/structural' },
       { title: 'Infrastructure Design', url: '/engineering/infrastructure' }
     ]
@@ -328,8 +358,8 @@ const ENGINEERING_SECTIONS = [
     title: 'Electrical Engineering',
     links: [
       { title: 'Electrical Engineering Platform', url: '/engineering?discipline=00860' },
-      { title: 'Scope of Work - Electrical', url: '/disciplines/00860/scope-of-work' },
-      { title: 'Technical Specifications - Electrical', url: '/disciplines/00860/technical-specifications' },
+      { title: 'Scope of Work', url: '/scope-of-work?discipline=00860' },
+      { title: 'Technical Documents', url: '/technical-drawings?discipline=00860' },
       { title: 'Power Systems', url: '/engineering/power' },
       { title: 'Control Systems', url: '/engineering/controls' }
     ]
@@ -339,8 +369,8 @@ const ENGINEERING_SECTIONS = [
     title: 'Mechanical Engineering',
     links: [
       { title: 'Mechanical Engineering Platform', url: '/engineering?discipline=00870' },
-      { title: 'Scope of Work - Mechanical', url: '/disciplines/00870/scope-of-work' },
-      { title: 'Technical Specifications - Mechanical', url: '/disciplines/00870/technical-specifications' },
+      { title: 'Scope of Work', url: '/scope-of-work?discipline=00870' },
+      { title: 'Technical Documents', url: '/technical-drawings?discipline=00870' },
       { title: 'HVAC Systems', url: '/engineering/hvac' },
       { title: 'Plumbing Systems', url: '/engineering/plumbing' }
     ]
@@ -350,8 +380,8 @@ const ENGINEERING_SECTIONS = [
     title: 'Structural Engineering',
     links: [
       { title: 'Structural Engineering Platform', url: '/engineering?discipline=00872' },
-      { title: 'Scope of Work - Structural', url: '/disciplines/00872/scope-of-work' },
-      { title: 'Technical Specifications - Structural', url: '/disciplines/00872/technical-specifications' },
+      { title: 'Scope of Work', url: '/scope-of-work?discipline=00872' },
+      { title: 'Technical Documents', url: '/technical-drawings?discipline=00872' },
       { title: 'Steel Design', url: '/engineering/steel' },
       { title: 'Concrete Design', url: '/engineering/concrete' }
     ]
@@ -361,8 +391,8 @@ const ENGINEERING_SECTIONS = [
     title: 'Architectural Engineering',
     links: [
       { title: 'Architectural Engineering Platform', url: '/engineering?discipline=00825' },
-      { title: 'Scope of Work - Architectural', url: '/disciplines/00825/scope-of-work' },
-      { title: 'Technical Specifications - Architectural', url: '/disciplines/00825/technical-specifications' },
+      { title: 'Scope of Work', url: '/scope-of-work?discipline=00825' },
+      { title: 'Technical Documents', url: '/technical-drawings?discipline=00825' },
       { title: 'Building Design', url: '/engineering/architectural' },
       { title: 'Space Planning', url: '/engineering/spaces' }
     ]
@@ -372,8 +402,8 @@ const ENGINEERING_SECTIONS = [
     title: 'Chemical Engineering',
     links: [
       { title: 'Chemical Engineering Platform', url: '/engineering?discipline=00835' },
-      { title: 'Scope of Work - Chemical', url: '/disciplines/00835/scope-of-work' },
-      { title: 'Technical Specifications - Chemical', url: '/disciplines/00835/technical-specifications' },
+      { title: 'Scope of Work', url: '/scope-of-work?discipline=00835' },
+      { title: 'Technical Documents', url: '/technical-drawings?discipline=00835' },
       { title: 'Process Design', url: '/engineering/chemical' },
       { title: 'Safety Systems', url: '/engineering/safety' }
     ]
@@ -383,8 +413,8 @@ const ENGINEERING_SECTIONS = [
     title: 'Geotechnical Engineering',
     links: [
       { title: 'Geotechnical Engineering Platform', url: '/engineering?discipline=00855' },
-      { title: 'Scope of Work - Geotechnical', url: '/disciplines/00855/scope-of-work' },
-      { title: 'Technical Specifications - Geotechnical', url: '/disciplines/00855/technical-specifications' },
+      { title: 'Scope of Work', url: '/scope-of-work?discipline=00855' },
+      { title: 'Technical Documents', url: '/technical-drawings?discipline=00855' },
       { title: 'Soil Analysis', url: '/engineering/geotechnical' },
       { title: 'Foundation Design', url: '/engineering/foundations' }
     ]
@@ -394,8 +424,8 @@ const ENGINEERING_SECTIONS = [
     title: 'Process Engineering',
     links: [
       { title: 'Process Engineering Platform', url: '/engineering?discipline=00871' },
-      { title: 'Scope of Work - Process', url: '/disciplines/00871/scope-of-work' },
-      { title: 'Technical Specifications - Process', url: '/disciplines/00871/technical-specifications' },
+      { title: 'Scope of Work', url: '/scope-of-work?discipline=00871' },
+      { title: 'Technical Documents', url: '/technical-drawings?discipline=00871' },
       { title: 'Process Flow', url: '/engineering/process' },
       { title: 'Equipment Sizing', url: '/engineering/sizing' }
     ]
@@ -405,8 +435,8 @@ const ENGINEERING_SECTIONS = [
     title: 'Environmental Engineering',
     links: [
       { title: 'Environmental Engineering Platform', url: '/engineering?discipline=01000' },
-      { title: 'Scope of Work - Environmental', url: '/disciplines/01000/scope-of-work' },
-      { title: 'Technical Specifications - Environmental', url: '/disciplines/01000/technical-specifications' },
+      { title: 'Scope of Work', url: '/scope-of-work?discipline=01000' },
+      { title: 'Technical Documents', url: '/technical-drawings?discipline=01000' },
       { title: 'Impact Assessment', url: '/engineering/environmental' },
       { title: 'Compliance Monitoring', url: '/engineering/compliance' }
     ]
@@ -416,8 +446,8 @@ const ENGINEERING_SECTIONS = [
     title: 'Landscaping Engineering',
     links: [
       { title: 'Landscaping Engineering Platform', url: '/engineering?discipline=03000' },
-      { title: 'Scope of Work - Landscaping', url: '/disciplines/03000/scope-of-work' },
-      { title: 'Technical Specifications - Landscaping', url: '/disciplines/03000/technical-specifications' },
+      { title: 'Scope of Work', url: '/scope-of-work?discipline=03000' },
+      { title: 'Technical Documents', url: '/technical-drawings?discipline=03000' },
       { title: 'Landscape Design', url: '/engineering/landscaping' },
       { title: 'Irrigation Systems', url: '/engineering/irrigation' }
     ]

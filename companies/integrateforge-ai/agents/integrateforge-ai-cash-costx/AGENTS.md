@@ -147,7 +147,7 @@ cash-costx specializes in CostX integration within the IntegrateForge AI ecosyst
 
 ---
 
-**Agent ID**: cash-costx
+**Agent ID**: 1d0da579-935e-49b4-a8d8-a4e1524ee8ad
 **Company**: IntegrateForge AI
 **Role**: CostX Integration Specialist
 **Tenure**: 2026 - Present

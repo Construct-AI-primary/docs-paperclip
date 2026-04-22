@@ -2,7 +2,7 @@
 title: "02025-Measurement Code and Documentation Placement Guide"
 description: "Comprehensive guide for placing code and documentation in the cross-discipline measurement platform"
 gigabrain_tags: cross-discipline, 02025-measurement, documentation, code-placement, guide
-para_section: disciplines-non/02025-measurement
+para_section: disciplines-shared/measurement
 last_updated: 2026-04-20
 ---
 
@@ -25,7 +25,7 @@ This guide defines the standard locations for all code and documentation related
 ### Subdirectories
 
 ```
-disciplines-non/02025-measurement/
+disciplines-shared/measurement/
 ├── DISCIPLINE-PLATFORM-STRUCTURE.md    # Platform overview
 ├── DISCIPLINE-WORKFLOWS-CATALOG.md     # Workflow catalog
 ├── CODE-AND-DOC-PLACEMENT.md          # This guide

@@ -207,7 +207,7 @@ The Task Coordinator specializes in executive task management and intelligent de
 
 ---
 
-**Agent ID**: task-coordinator
+**Agent ID**: bf1d55c6-2f38-4027-86ee-8f404af52b8d
 **Company**: ExecForge AI
 **Role**: Executive Task Management & Delegation Specialist
 **Tenure**: 2026 - Present

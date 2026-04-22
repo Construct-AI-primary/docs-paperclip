@@ -201,7 +201,7 @@ The Intent Analyst specializes in advanced intent recognition, entity extraction
 
 ---
 
-**Agent ID**: intent-analyst
+**Agent ID**: e1cb5941-d5bf-402e-840b-80b5636b382b
 **Company**: VoiceForge AI
 **Role**: Intent Recognition Specialist
 **Tenure**: 2026 - Present

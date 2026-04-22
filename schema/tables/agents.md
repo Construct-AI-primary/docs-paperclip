@@ -1,237 +1,241 @@
 # Agents Table Schema
 
 ## Overview
-The `agents` table stores information about all AI agents in the Paperclip ecosystem, including their configuration, capabilities, and operational status.
 
-## Table Structure
+The `agents` table stores all agent records across all companies in the Paperclip system. Each agent is associated with a company and can optionally report to another agent (creating a hierarchical structure).
 
-### Core Identification Fields
+## Table Definition
+
 ```sql
-id UUID PRIMARY KEY DEFAULT gen_random_uuid()
-company_id UUID NOT NULL REFERENCES companies(id)
-name TEXT NOT NULL
-role TEXT NOT NULL DEFAULT 'general'
-title TEXT
-icon TEXT
+create table public.agents (
+  id uuid not null default gen_random_uuid (),
+  company_id uuid not null,
+  name text not null,
+  role text not null default 'general'::text,
+  title text null,
+  status text not null default 'idle'::text,
+  reports_to uuid null,
+  capabilities text null,
+  adapter_type text not null default 'process'::text,
+  adapter_config jsonb not null default '{}'::jsonb,
+  budget_monthly_cents integer not null default 0,
+  spent_monthly_cents integer not null default 0,
+  last_heartbeat_at timestamp with time zone null,
+  metadata jsonb null,
+  created_at timestamp with time zone not null default now(),
+  updated_at timestamp with time zone not null default now(),
+  runtime_config jsonb not null default '{}'::jsonb,
+  permissions jsonb not null default '{}'::jsonb,
+  icon text null,
+  pause_reason text null,
+  paused_at timestamp with time zone null,
+  model_config jsonb null,
+  device_config jsonb null,
+  deleted_at timestamp without time zone null,
+  is_active boolean null default true,
+  constraint agents_pkey primary key (id),
+  constraint agents_company_id_companies_id_fk foreign key (company_id) references companies (id),
+  constraint agents_reports_to_agents_id_fk foreign key (reports_to) references agents (id)
+) TABLESPACE pg_default;
 ```
 
-### Status and Lifecycle
-```sql
-status TEXT NOT NULL DEFAULT 'idle'  -- 'idle', 'active', 'paused', 'error'
-reports_to UUID REFERENCES agents(id)  -- Hierarchical reporting structure
-capabilities TEXT  -- Human-readable description of agent capabilities
-```
+## Column Reference
 
-### Adapter Configuration
-```sql
-adapter_type TEXT NOT NULL DEFAULT 'process'  -- 'process', 'api', 'webhook', etc.
-adapter_config JSONB NOT NULL DEFAULT '{}'     -- Adapter-specific configuration
-runtime_config JSONB NOT NULL DEFAULT '{}'     -- Runtime behavior settings
-```
-
-### Budget and Resource Management
-```sql
-budget_monthly_cents INTEGER NOT NULL DEFAULT 0
-spent_monthly_cents INTEGER NOT NULL DEFAULT 0
-pause_reason TEXT
-paused_at TIMESTAMP WITH TIME ZONE
-```
-
-### Permissions and Security
-```sql
-permissions JSONB NOT NULL DEFAULT '{}'
-```
-
-### Operational Monitoring
-```sql
-last_heartbeat_at TIMESTAMP WITH TIME ZONE
-metadata JSONB  -- Additional operational data
-```
-
-### Audit Fields
-```sql
-created_at TIMESTAMP WITH TIME ZONE NOT NULL DEFAULT NOW()
-updated_at TIMESTAMP WITH TIME ZONE NOT NULL DEFAULT NOW()
-```
+| Column | Type | Default | Constraints | Description |
+|--------|------|---------|------------|-------------|
+| id | uuid | gen_random_uuid() | PRIMARY KEY | Unique identifier for the agent |
+| company_id | uuid | - | NOT NULL, FK → companies | The company this agent belongs to |
+| name | text | - | NOT NULL | Agent's display name |
+| role | text | 'general' | NOT NULL | Agent's functional role (e.g., 'ceo', 'engineering', 'specialist') |
+| title | text | NULL | - | Human-readable job title |
+| status | text | 'idle' | NOT NULL | Current status (e.g., 'idle', 'running', 'paused') |
+| reports_to | uuid | NULL | FK → agents | Manager/parent agent ID |
+| capabilities | text | NULL | - | Text description of agent capabilities |
+| adapter_type | text | 'process' | NOT NULL | Type of adapter (e.g., 'http', 'process', 'hermes_local') |
+| adapter_config | jsonb | '{}' | NOT NULL | Adapter-specific configuration |
+| budget_monthly_cents | integer | 0 | NOT NULL | Monthly budget in cents |
+| spent_monthly_cents | integer | 0 | NOT NULL | Monthly spend in cents |
+| last_heartbeat_at | timestamptz | NULL | - | Last heartbeat timestamp |
+| metadata | jsonb | NULL | - | Additional metadata |
+| created_at | timestamptz | now() | NOT NULL | Creation timestamp |
+| updated_at | timestamptz | now() | NOT NULL | Last update timestamp |
+| runtime_config | jsonb | '{}' | NOT NULL | Runtime configuration |
+| permissions | jsonb | '{}' | NOT NULL | Agent permissions |
+| icon | text | NULL | - | Agent icon/emoji |
+| pause_reason | text | NULL | - | Reason for pause |
+| paused_at | timestamptz | NULL | - | When agent was paused |
+| model_config | jsonb | NULL | - | AI model configuration |
+| device_config | jsonb | NULL | - | Device configuration |
+| deleted_at | timestamp | NULL | - | Soft delete timestamp |
+| is_active | boolean | true | - | Active flag |
 
 ## Indexes
 
-### Performance Indexes
 ```sql
--- Company + Status queries
-CREATE INDEX agents_company_status_idx ON agents(company_id, status);
+-- Composite index for company + status queries
+create index agents_company_status_idx on public.agents using btree (company_id, status);
 
--- Hierarchical reporting queries
-CREATE INDEX agents_company_reports_to_idx ON agents(company_id, reports_to);
+-- Composite index for reporting hierarchy queries
+create index agents_company_reports_to_idx on public.agents using btree (company_id, reports_to);
+
+-- Index for model provider queries
+create index idx_agents_model_provider on public.agents using btree (((model_config ->> 'provider')));
+
+-- Index for device ID queries
+create index idx_agents_device_id on public.agents using btree (((device_config ->> 'device_id')));
+
+-- Index for soft-delete filtering
+create index idx_agents_deleted_at on public.agents using btree (deleted_at);
+
+-- Index for active status filtering
+create index idx_agents_is_active on public.agents using btree (is_active);
 ```
 
-## Foreign Key Relationships
+## Relationships
 
-### Outbound References
-- `company_id` → `companies.id` (CASCADE on delete)
-- `reports_to` → `agents.id` (SET NULL on delete - allows hierarchical deletion)
+- **Many-to-One**: Each agent belongs to exactly one company (`companies.id`)
+- **Self-Referencing**: Agents can report to other agents (`agents.id`)
+- **Soft Delete**: Agents are soft-deleted via `deleted_at` timestamp
 
-### Inbound References
-- `activity_log.agent_id` → `agents.id`
-- `agent_api_keys.agent_id` → `agents.id`
-- `agent_models.agent_id` → `agents.name` (references name, not id)
-- `agents.reports_to` → `agents.id` (self-reference for hierarchy)
+## Query Examples
 
-## Common Query Patterns
+### All Agents with Company Details
 
-### Find Active Agents by Company
 ```sql
-SELECT id, name, role, title, status
-FROM agents
-WHERE company_id = ? AND status = 'active'
-ORDER BY name;
+SELECT 
+    a.id AS agent_id,
+    a.name AS agent_name,
+    a.role,
+    a.title,
+    a.status,
+    a.adapter_type,
+    a.budget_monthly_cents,
+    a.spent_monthly_cents,
+    a.last_heartbeat_at,
+    a.is_active,
+    a.pause_reason,
+    a.paused_at,
+    a.deleted_at,
+    a.created_at,
+    a.updated_at,
+    a.capabilities,
+    a.icon,
+    a.model_config,
+    a.device_config,
+    a.adapter_config,
+    a.runtime_config,
+    a.permissions,
+    a.metadata,
+    c.id AS company_id,
+    c.name AS company_name,
+    c.status AS company_status,
+    r.name AS reports_to_name,
+    r.role AS reports_to_role,
+    mc.name AS manager_company_name
+FROM 
+    public.agents a
+LEFT JOIN 
+    public.companies c ON a.company_id = c.id
+LEFT JOIN 
+    public.agents r ON a.reports_to = r.id
+LEFT JOIN 
+    public.companies mc ON r.company_id = mc.id
+WHERE 
+    a.deleted_at IS NULL
+ORDER BY 
+    c.name, a.name;
 ```
 
-### Get Agent Hierarchy
+### Active Agents by Company
+
 ```sql
-WITH RECURSIVE agent_tree AS (
-  -- Base case: top-level agents
-  SELECT id, name, reports_to, 0 as level
-  FROM agents
-  WHERE reports_to IS NULL AND company_id = ?
-
-  UNION ALL
-
-  -- Recursive case: subordinates
-  SELECT a.id, a.name, a.reports_to, at.level + 1
-  FROM agents a
-  JOIN agent_tree at ON a.reports_to = at.id
-)
-SELECT * FROM agent_tree ORDER BY level, name;
+SELECT 
+    c.name AS company_name,
+    COUNT(a.id) AS agent_count
+FROM 
+    companies c
+LEFT JOIN 
+    agents a ON c.id = a.company_id 
+        AND a.deleted_at IS NULL 
+        AND a.is_active = true
+GROUP BY 
+    c.name
+ORDER BY 
+    agent_count DESC;
 ```
 
-### Budget Monitoring
+### Agents by Status
+
 ```sql
-SELECT
-  id, name, role,
-  budget_monthly_cents,
-  spent_monthly_cents,
-  (budget_monthly_cents - spent_monthly_cents) as remaining_budget
-FROM agents
-WHERE company_id = ?
-  AND budget_monthly_cents > 0
-ORDER BY remaining_budget ASC;
+SELECT 
+    status,
+    COUNT(*) AS count
+FROM 
+    agents
+WHERE 
+    deleted_at IS NULL
+GROUP BY 
+    status
+ORDER BY 
+    count DESC;
 ```
 
-## Data Validation Rules
+### Reporting Hierarchy (Top-Level Agents)
 
-### Status Values
-- `idle`: Agent is available but not currently processing
-- `active`: Agent is currently processing tasks
-- `paused`: Agent is temporarily suspended
-- `error`: Agent has encountered an error and needs attention
-
-### Adapter Types
-- `process`: Local process execution
-- `api`: External API integration
-- `webhook`: Event-driven webhook responses
-- `stream`: Real-time streaming responses
-
-### JSONB Schema Validation
-
-#### adapter_config
-```json
-{
-  "model": "string",           // AI model identifier
-  "temperature": "number",     // 0.0 - 2.0
-  "max_tokens": "number",      // Maximum response length
-  "skills": ["string"],        // Array of skill identifiers
-  "endpoints": {               // API endpoint configuration
-    "primary": "string",
-    "fallback": "string"
-  }
-}
-```
-
-#### runtime_config
-```json
-{
-  "max_concurrent_tasks": "number",
-  "timeout_seconds": "number",
-  "retry_attempts": "number",
-  "rate_limiting": {
-    "requests_per_minute": "number",
-    "burst_limit": "number"
-  },
-  "error_handling": {
-    "auto_retry": "boolean",
-    "escalation_enabled": "boolean"
-  }
-}
-```
-
-#### permissions
-```json
-{
-  "execute": {
-    "automation_engine": "string",
-    "allowed_domains": ["string"]
-  },
-  "orchestrate": {
-    "company_projects": ["string"],
-    "max_parallel_workflows": "number"
-  },
-  "access": {
-    "read_company_data": "boolean",
-    "write_company_data": "boolean",
-    "admin_functions": "boolean"
-  }
-}
-```
-
-## Migration Considerations
-
-### Adding New Fields
-- Use JSONB fields for flexible configuration (adapter_config, runtime_config, permissions)
-- Add database defaults for backward compatibility
-- Update indexes if new query patterns are introduced
-
-### Schema Evolution
-- Version control schema changes
-- Test migrations on staging environment first
-- Document breaking changes and migration paths
-- Update application code to handle new fields gracefully
-
-## Performance Considerations
-
-### Index Strategy
-- Primary key on `id` for fast lookups
-- Compound indexes for common query patterns
-- Partial indexes for status-based queries
-- Consider covering indexes for metadata queries
-
-### Partitioning Strategy (Future)
-- Consider partitioning by `company_id` for large deployments
-- Time-based partitioning for audit fields if retention is required
-- Hash partitioning for even distribution of agent records
-
-### Monitoring Queries
 ```sql
--- Agent health check
-SELECT
-  status,
-  COUNT(*) as count,
-  AVG(EXTRACT(EPOCH FROM (NOW() - last_heartbeat_at))) as avg_seconds_since_heartbeat
-FROM agents
-WHERE company_id = ?
-GROUP BY status;
-
--- Budget utilization
-SELECT
-  SUM(budget_monthly_cents) as total_budget,
-  SUM(spent_monthly_cents) as total_spent,
-  ROUND(SUM(spent_monthly_cents)::numeric / NULLIF(SUM(budget_monthly_cents), 0) * 100, 2) as utilization_percent
-FROM agents
-WHERE company_id = ? AND budget_monthly_cents > 0;
+SELECT 
+    a.name AS agent_name,
+    a.role,
+    c.name AS company_name
+FROM 
+    agents a
+JOIN 
+    companies c ON a.company_id = c.id
+WHERE 
+    a.reports_to IS NULL
+    AND a.deleted_at IS NULL
+ORDER BY 
+    c.name, a.name;
 ```
 
----
+## Common Roles
 
-**Schema Version**: 1.0
-**Last Updated**: 2026-04-15
-**Related Tables**: companies, agent_api_keys, agent_models, activity_log
+| Role | Description |
+|------|-------------|
+| `ceo` | Chief Executive Officer / Company Head |
+| `executive` | Executive-level management |
+| `general` | General purpose agents |
+| `specialist` | Specialized domain agents |
+| `engineering` | Engineering-focused agents |
+| `security` | Security-focused agents |
+| `data` | Data-focused agents |
+| `growth` | Growth/marketing agents |
+| `strategy` | Strategic planning agents |
+| `product` | Product-focused agents |
+| `administration` | Administrative agents |
+
+## Common Status Values
+
+| Status | Description |
+|--------|-------------|
+| `idle` | Agent is available |
+| `running` | Agent is actively processing |
+| `paused` | Agent is paused |
+| `error` | Agent encountered an error |
+
+## Common Adapter Types
+
+| Adapter Type | Description |
+|--------------|-------------|
+| `http` | HTTP-based remote agent |
+| `process` | Local process-based agent |
+| `hermes_local` | Hermes local adapter |
+
+## Notes
+
+- Agents use UUID primary keys generated via `gen_random_uuid()`
+- Soft deletion via `deleted_at` timestamp (NULL = not deleted)
+- JSONB columns (`adapter_config`, `model_config`, `device_config`, etc.) store structured configuration
+- Monthly budget/spend tracking in cents for precision
+- Self-referential FK allows unlimited hierarchy depth
+- Company-scoped queries should always filter by `company_id`

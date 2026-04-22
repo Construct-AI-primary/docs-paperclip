@@ -1,3 +1,8 @@
+---
+name: email-composer
+role: Email Marketing Content Specialist
+---
+
 # Email Composer
 
 ## Agent Profile
@@ -207,7 +212,7 @@ The Email Composer specializes in creating compelling email marketing content an
 
 ---
 
-**Agent ID**: email-composer
+**Agent ID**: 550e8400-e29b-41d4-a716-446655440006
 **Company**: ContentForge AI
 **Role**: Email Marketing Content Specialist
 **Tenure**: 2026 - Present

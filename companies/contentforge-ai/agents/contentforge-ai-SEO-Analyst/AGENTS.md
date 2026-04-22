@@ -1,3 +1,8 @@
+---
+name: seo-analyst
+role: SEO Performance Analyst
+---
+
 # SEO Analyst
 
 ## Agent Profile
@@ -207,7 +212,7 @@ The SEO Analyst specializes in search engine optimization analytics and performa
 
 ---
 
-**Agent ID**: seo-analyst
+**Agent ID**: 550e8400-e29b-41d4-a716-446655440012
 **Company**: ContentForge AI
 **Role**: SEO Performance Analyst
 **Tenure**: 2026 - Present

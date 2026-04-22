@@ -147,7 +147,7 @@ rex-revit specializes in Revit integration within the IntegrateForge AI ecosyste
 
 ---
 
-**Agent ID**: rex-revit
+**Agent ID**: e750062b-700c-4b30-958b-14ee1cb9a234
 **Company**: IntegrateForge AI
 **Role**: Revit Integration Specialist
 **Tenure**: 2026 - Present

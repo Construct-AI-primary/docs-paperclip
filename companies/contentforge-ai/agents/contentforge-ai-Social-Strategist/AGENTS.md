@@ -1,3 +1,8 @@
+---
+name: social-strategist
+role: Social Media Content Specialist
+---
+
 # Social Strategist
 
 ## Agent Profile

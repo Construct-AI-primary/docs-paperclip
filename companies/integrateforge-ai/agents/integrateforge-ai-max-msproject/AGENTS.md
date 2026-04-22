@@ -147,7 +147,7 @@ max-msproject specializes in Microsoft Project integration within the IntegrateF
 
 ---
 
-**Agent ID**: max-msproject
+**Agent ID**: ffd8ddb0-b80f-402c-8a63-5232c81146a5
 **Company**: IntegrateForge AI
 **Role**: MS Project Integration Specialist
 **Tenure**: 2026 - Present

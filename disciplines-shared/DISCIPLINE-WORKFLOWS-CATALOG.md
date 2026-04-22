@@ -1,16 +1,16 @@
 ---
-title: Non-Discipline Features Catalog
-description: Comprehensive catalog of non-discipline features including user management, administration, and system workflows
+title: Shared Discipline Features Catalog
+description: Comprehensive catalog of shared discipline features including cross-discipline platforms, user management, administration, and system workflows
 author: Paperclip Workflow System
 version: 1.0
 date: 2026-04-17
 ---
 
-# Non-Discipline Features Catalog
+# Shared Discipline Features Catalog
 
 ## Overview
 
-This document catalogs all non-discipline features. These are system-level, administrative, and user-facing features that are not specific to any engineering discipline but are essential for system operation.
+This document catalogs all shared discipline features. These are cross-discipline platforms and system-level features that serve multiple engineering disciplines, providing essential capabilities that are shared across all disciplines rather than being discipline-specific.
 
 ## Categories
 

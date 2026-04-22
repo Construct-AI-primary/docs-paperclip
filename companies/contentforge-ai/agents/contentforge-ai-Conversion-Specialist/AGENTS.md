@@ -1,3 +1,8 @@
+---
+name: conversion-specialist
+role: Conversion Rate Optimization Expert
+---
+
 # Conversion Specialist
 
 ## Agent Profile
@@ -207,7 +212,7 @@ The Conversion Specialist focuses on maximizing conversion rates within ContentF
 
 ---
 
-**Agent ID**: conversion-specialist
+**Agent ID**: 550e8400-e29b-41d4-a716-446655440004
 **Company**: ContentForge AI
 **Role**: Conversion Rate Optimization Expert
 **Tenure**: 2026 - Present

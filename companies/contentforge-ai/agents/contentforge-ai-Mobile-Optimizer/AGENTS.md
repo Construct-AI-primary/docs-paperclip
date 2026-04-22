@@ -1,3 +1,8 @@
+---
+name: mobile-optimizer
+role: Mobile Performance & Design Specialist
+---
+
 # Mobile Optimizer
 
 ## Agent Profile
@@ -207,7 +212,7 @@ The Mobile Optimizer specializes in optimizing websites for mobile devices withi
 
 ---
 
-**Agent ID**: mobile-optimizer
+**Agent ID**: 550e8400-e29b-41d4-a716-446655440009
 **Company**: ContentForge AI
 **Role**: Mobile Performance & Design Specialist
 **Tenure**: 2026 - Present

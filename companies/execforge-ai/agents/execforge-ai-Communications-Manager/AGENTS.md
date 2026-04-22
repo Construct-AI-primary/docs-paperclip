@@ -207,7 +207,7 @@ The Communications Manager specializes in executive communication management and
 
 ---
 
-**Agent ID**: communications-manager
+**Agent ID**: 10fb2ac0-7a8a-4255-a61a-3c636087acf3
 **Company**: ExecForge AI
 **Role**: Executive Communications & Message Handler
 **Tenure**: 2026 - Present

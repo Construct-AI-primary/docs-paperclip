@@ -1,3 +1,8 @@
+---
+name: local-seo-expert
+role: Local Search Optimization Specialist
+---
+
 # Local SEO Expert
 
 ## Agent Profile
@@ -207,7 +212,7 @@ The Local SEO Expert specializes in optimizing businesses for local search visib
 
 ---
 
-**Agent ID**: local-seo-expert
+**Agent ID**: 550e8400-e29b-41d4-a716-446655440008
 **Company**: ContentForge AI
 **Role**: Local Search Optimization Specialist
 **Tenure**: 2026 - Present

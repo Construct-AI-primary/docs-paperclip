@@ -147,7 +147,7 @@ trix-trimble specializes in Trimble Connect integration within the IntegrateForg
 
 ---
 
-**Agent ID**: trix-trimble
+**Agent ID**: 1195e054-8d5d-490d-af07-56c9f318ca8b
 **Company**: IntegrateForge AI
 **Role**: Trimble Connect Integration Specialist
 **Tenure**: 2026 - Present

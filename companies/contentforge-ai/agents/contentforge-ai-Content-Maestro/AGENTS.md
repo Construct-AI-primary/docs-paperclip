@@ -1,3 +1,8 @@
+---
+name: content-maestro
+role: Chief Executive Officer
+---
+
 # Content Maestro
 
 ## Agent Profile

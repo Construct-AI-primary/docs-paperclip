@@ -1,14 +1,14 @@
 ---
-title: Non-Discipline Features Platform Structure
-description: Define how to organize non-discipline feature projects for desktop vs mobile platforms
+title: Shared Discipline Features Platform Structure
+description: Define how to organize shared discipline feature projects for desktop vs mobile platforms
 date: 2026-04-17
 ---
 
-# Non-Discipline Features Platform Structure
+# Shared Discipline Features Platform Structure
 
 ## Overview
 
-Non-discipline features are system-level, administrative, and user-facing features that are not specific to any engineering discipline. They provide essential capabilities for system operation.
+Shared discipline features are cross-discipline platforms and system-level features that serve multiple engineering disciplines. They provide essential capabilities that are shared across all disciplines rather than being discipline-specific.
 
 ## Categories
 

@@ -1,3 +1,8 @@
+---
+name: blog-architect
+role: Content Creation Team Lead & Blog Specialist
+---
+
 # Blog Architect
 
 ## Agent Profile

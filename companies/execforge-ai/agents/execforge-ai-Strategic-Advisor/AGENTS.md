@@ -207,7 +207,7 @@ The Strategic Advisor leads the Strategic Support Team at ExecForge AI, providin
 
 ---
 
-**Agent ID**: strategic-advisor
+**Agent ID**: 97878995-3c95-4dc9-b6e6-29659b6a11c6
 **Company**: ExecForge AI
 **Role**: Strategic Support Team Lead & Executive Strategy Consultant
 **Tenure**: 2026 - Present

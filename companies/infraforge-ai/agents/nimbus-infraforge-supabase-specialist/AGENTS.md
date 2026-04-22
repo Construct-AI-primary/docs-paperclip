@@ -1,5 +1,5 @@
 ---
-name: nimbus-infraforge-supabase-specialist
+name: Nimbus
 description: >
   Supabase Database Specialist - Expert in Supabase API, PostgreSQL operations,
   authentication troubleshooting, schema management, and SQL development/testing

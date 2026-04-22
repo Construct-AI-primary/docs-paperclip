@@ -2,7 +2,7 @@
 title: "02025-Measurement Cross-Discipline Workflows Catalog"
 description: "Complete catalog of measurement workflows across all engineering disciplines"
 gigabrain_tags: cross-discipline, 02025-measurement, workflows, catalog, dwg-measurement
-para_section: disciplines-non/02025-measurement
+para_section: disciplines-shared/measurement
 last_updated: 2026-04-20
 ---
 

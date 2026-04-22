@@ -23,7 +23,45 @@ This implementation plan defines the phased approach for developing Architectura
 | Primary Company | ArchCraft AI |
 | Supporting Companies | DesignForge AI, DevForge AI |
 
+## Dependencies & Integration
+
+### Platform Foundation (ENG-AUTO-010)
+This project depends on the completion of ENG-AUTO-010 Architectural Discipline Pilot, which establishes:
+
+- **UI/UX Standards** applicable to all 10 engineering disciplines
+- **Shared Component Architecture** for engineering workflows
+- **Agent Skill Enhancements** for document generation and analysis
+- **Integration Patterns** for existing pages and workflows
+
+**ENG-AUTO-010 Deliverables Required:**
+- [ ] Shared engineering component library
+- [ ] UI/UX standards compliance checklist
+- [ ] Agent skill enhancements for page architecture
+- [ ] Integration patterns for existing Scope of Work and Technical Drawings pages
+
+### Integration Points
+- **Scope of Work Page**: Enhanced via ENG-AUTO-010 SOW Creation Wizard adaptation
+- **Technical Drawings Page**: Fixed and enhanced via ENG-AUTO-010 critical fixes
+- **Workflow Templates**: Leverage ENG-AUTO-010 template selection and adaptation framework
+- **Cross-Discipline Standards**: All ARCH workflows must comply with ENG-AUTO-010 established standards
+
+### Timeline Alignment
+```
+ENG-AUTO-010 Pilot (Weeks 5-9)
+├── Phase 1: Critical Fixes (Week 5) - Prerequisites for ARCH Phase 1
+├── Phase 2: SOW Wizard Enhancement (Weeks 6-7) - Prerequisites for ARCH Phase 2
+├── Phase 3: Advanced Features (Week 8) - Prerequisites for ARCH Phase 3
+└── Phase 4: Optimization (Week 9) - Ongoing support
+
+ARCH-WORKFLOW (Weeks 1-14, parallel with ENG-AUTO-010)
+├── Phase 1: Foundation (Weeks 1-5) - Independent, but enhanced by ENG-AUTO-010 fixes
+├── Phase 2: Development (Weeks 6-10) - Leverages ENG-AUTO-010 SOW wizard
+└── Phase 3: Handover (Weeks 11-14) - Uses ENG-AUTO-010 advanced features
+```
+
 ---
+
+## Implementation Overview
 
 ## Phase 1: Foundation (Weeks 1-5)
 
@@ -66,6 +104,10 @@ This implementation plan defines the phased approach for developing Architectura
    - Fire safety workflow procedure
 
 ### Phase 1 Dependencies
+- **ENG-AUTO-010 Platform Foundation**: Requires completion of ENG-AUTO-010 Phase 1 (Critical Fixes) for:
+  - Fixed Scope of Work page (`https://construct-ai.onrender.com/#/scope-of-work`)
+  - Fixed Technical Drawings page (`https://construct-ai.onrender.com/#/technical-drawings`)
+  - Basic error handling and user feedback systems
 - None (foundation phase)
 - Establishes base for Phase 2 workflows
 

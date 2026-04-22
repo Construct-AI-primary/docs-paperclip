@@ -207,7 +207,7 @@ The Knowledge Curator specializes in executive knowledge management and retrieva
 
 ---
 
-**Agent ID**: knowledge-curator
+**Agent ID**: 2dca9954-6c2f-42c8-b345-a244f8cb2210
 **Company**: ExecForge AI
 **Role**: Executive Knowledge Management & Retrieval Specialist
 **Tenure**: 2026 - Present

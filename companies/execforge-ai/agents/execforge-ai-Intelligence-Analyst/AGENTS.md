@@ -207,7 +207,7 @@ The Intelligence Analyst specializes in market intelligence and competitive anal
 
 ---
 
-**Agent ID**: intelligence-analyst
+**Agent ID**: f898cd37-e3d7-4c72-befa-5fa59b3cbe5c
 **Company**: ExecForge AI
 **Role**: Market Intelligence & Competitive Analysis Specialist
 **Tenure**: 2026 - Present

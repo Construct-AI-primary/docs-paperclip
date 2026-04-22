@@ -1,3 +1,8 @@
+---
+name: performance-optimizer
+role: Website Performance Team Lead & Core Web Vitals Specialist
+---
+
 # Performance Optimizer
 
 ## Agent Profile
@@ -207,7 +212,7 @@ The Performance Optimizer leads the Website Performance Team at ContentForge AI,
 
 ---
 
-**Agent ID**: performance-optimizer
+**Agent ID**: 550e8400-e29b-41d4-a716-446655440010
 **Company**: ContentForge AI
 **Role**: Website Performance Team Lead & Core Web Vitals Specialist
 **Tenure**: 2026 - Present

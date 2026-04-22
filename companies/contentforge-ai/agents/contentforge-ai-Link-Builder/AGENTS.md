@@ -1,3 +1,8 @@
+---
+name: link-builder
+role: Link Building & Authority Specialist
+---
+
 # Link Builder
 
 ## Agent Profile
@@ -207,7 +212,7 @@ The Link Builder specializes in acquiring high-quality backlinks and building do
 
 ---
 
-**Agent ID**: link-builder
+**Agent ID**: 550e8400-e29b-41d4-a716-446655440007
 **Company**: ContentForge AI
 **Role**: Link Building & Authority Specialist
 **Tenure**: 2026 - Present

@@ -147,7 +147,7 @@ coco-candy specializes in Candy integration within the IntegrateForge AI ecosyst
 
 ---
 
-**Agent ID**: coco-candy
+**Agent ID**: 76e5c870-94a2-4191-8845-94e266405b8c
 **Company**: IntegrateForge AI
 **Role**: Candy Integration Specialist
 **Tenure**: 2026 - Present

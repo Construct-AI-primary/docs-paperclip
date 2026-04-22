@@ -147,7 +147,7 @@ pixel-bim360 specializes in BIM 360 integration within the IntegrateForge AI eco
 
 ---
 
-**Agent ID**: pixel-bim360
+**Agent ID**: 67b4c84c-c192-48bf-8369-c876b0306867
 **Company**: IntegrateForge AI
 **Role**: BIM 360 Integration Specialist
 **Tenure**: 2026 - Present

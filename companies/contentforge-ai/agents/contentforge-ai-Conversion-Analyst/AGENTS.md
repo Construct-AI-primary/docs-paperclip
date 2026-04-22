@@ -1,3 +1,8 @@
+---
+name: conversion-analyst
+role: Conversion Analytics Specialist
+---
+
 # Conversion Analyst
 
 ## Agent Profile
@@ -207,7 +212,7 @@ The Conversion Analyst specializes in conversion rate optimization analytics wit
 
 ---
 
-**Agent ID**: conversion-analyst
+**Agent ID**: 550e8400-e29b-41d4-a716-446655440003
 **Company**: ContentForge AI
 **Role**: Conversion Analytics Specialist
 **Tenure**: 2026 - Present

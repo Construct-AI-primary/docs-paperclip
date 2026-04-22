@@ -1,3 +1,8 @@
+---
+name: seo-strategist
+role: SEO Optimization Team Lead & Strategy Specialist
+---
+
 # SEO Strategist
 
 ## Agent Profile
@@ -207,7 +212,7 @@ The SEO Strategist leads the SEO Optimization Team at ContentForge AI, developin
 
 ---
 
-**Agent ID**: seo-strategist
+**Agent ID**: 550e8400-e29b-41d4-a716-446655440013
 **Company**: ContentForge AI
 **Role**: SEO Optimization Team Lead & Strategy Specialist
 **Tenure**: 2026 - Present

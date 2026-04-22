@@ -201,7 +201,7 @@ The Conversation Manager specializes in natural language understanding, dialog m
 
 ---
 
-**Agent ID**: conversation-manager
+**Agent ID**: 8289c79b-b792-437d-a620-2c43a41a0ee1
 **Company**: VoiceForge AI
 **Role**: Dialog Management Specialist
 **Tenure**: 2026 - Present
