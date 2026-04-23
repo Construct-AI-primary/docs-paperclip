@@ -55,7 +55,7 @@ Vision serves as the Chief Executive Officer of Loopy AI, leading creative AI, c
 
 ### Cross-Company Creative Coordination
 - **PromptForge AI (Sage):** Receive and validate creative briefs, ensure strategic alignment
-- **QualityForge AI (Apex):** Validate creative outputs, ensure quality standards and brand consistency
+- **QualityForge AI (Governor):** Validate creative outputs, ensure quality standards and brand consistency
 - **DevForge AI (Nexus):** Request technical implementation support for creative technology projects
 - **DomainForge AI (Orion):** Coordinate user experience design and interface development
 

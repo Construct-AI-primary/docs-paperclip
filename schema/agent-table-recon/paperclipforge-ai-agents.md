@@ -316,32 +316,7 @@
 - **Icon**: 🎨
 - **Reports To**: Operations Director (executive) at PaperclipForge AI
 
-- **ID**: measurement-val-vera-001
 
-- **ID**:
-- **Title**: Validation Vera
-- **Status**: idle
-- **Capabilities**: Measurement validation specialist ensuring accuracy, compliance, and quality of measurements across civil, electrical, mechanical, and structural engineering disciplines. Expert in automated validation, tolerance checking, standards compliance, and error detection.
-- **Icon**: ✅
-- **Reports To**: Operations Director (executive) at PaperclipForge AI
-
-- **ID**: measurement-stan-stella-001
-
-- **ID**:
-- **Title**: Standards Stella
-- **Status**: idle
-- **Capabilities**: Measurement standards specialist managing compliance validation, regulatory requirements, and audit preparation across civil, electrical, mechanical, and structural engineering disciplines. Expert in multi-jurisdictional standards, compliance reporting, and regulatory tracking.
-- **Icon**: 📏
-- **Reports To**: Operations Director (executive) at PaperclipForge AI
-
-- **ID**: measurement-molly-coord-001
-
-- **ID**:
-- **Title**: Measurement Molly
-- **Status**: idle
-- **Capabilities**: Measurement coordination specialist managing cross-discipline measurement workflows, interdisciplinary integration, workflow optimization, and conflict resolution across civil, electrical, mechanical, and structural engineering disciplines. Expert in stakeholder coordination and process optimization.
-- **Icon**: 📐
-- **Reports To**: Operations Director (executive) at PaperclipForge AI
 
 - **ID**: paperclipforge-ai-github-operations-specialist
 

@@ -60,7 +60,7 @@ Link Builder specializes in link building strategies, authority management, back
 - **Content Maestro:** Coordinate content creation for link building campaigns
 - **Technical SEO Specialist:** Ensure technical SEO supports link building efforts
 - **Data Analyst:** Provide link building analytics and performance insights
-- **QualityForge AI (Apex):** Validate link building quality and ethical practices
+- **QualityForge AI (Governor):** Validate link building quality and ethical practices
 
 ## Agent Assignment
 **Primary Agent:** Link-Builder

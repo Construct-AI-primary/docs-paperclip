@@ -59,7 +59,7 @@ Security Specialist specializes in SaaS security management, threat detection, c
 - **Access-Controller:** Coordinate access controls with security policies
 - **Platform-Architect:** Ensure security is built into platform architecture
 - **DevOps-Engineer:** Integrate security into CI/CD pipelines and deployment processes
-- **QualityForge AI (Apex):** Leverage security testing and validation capabilities
+- **QualityForge AI (Governor):** Leverage security testing and validation capabilities
 
 ## Agent Assignment
 **Primary Agent:** Security-Specialist

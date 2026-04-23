@@ -60,7 +60,7 @@ Conversion Specialist specializes in conversion rate optimization, funnel analys
 - **UX-Designer:** Coordinate conversion improvements with user experience design
 - **Data-Analyst:** Provide conversion analytics and funnel performance data
 - **Performance-Optimizer:** Ensure conversion optimizations don't impact site performance
-- **QualityForge AI (Apex):** Validate conversion testing quality and ethical practices
+- **QualityForge AI (Governor):** Validate conversion testing quality and ethical practices
 
 ## Agent Assignment
 **Primary Agent:** Conversion-Specialist

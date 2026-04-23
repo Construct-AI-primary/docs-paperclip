@@ -64,7 +64,7 @@ Content Maestro serves as the Chief Executive Officer of ContentForge AI, leadin
 
 ### Cross-Company Content Coordination
 - **PromptForge AI (Sage):** Receive and validate content strategy requirements
-- **QualityForge AI (Apex):** Validate content outputs and ensure quality standards
+- **QualityForge AI (Governor):** Validate content outputs and ensure quality standards
 - **DevForge AI (Nexus):** Coordinate technical implementation for content platforms
 - **DomainForge AI (Orion):** Support domain-specific content requirements
 - **KnowledgeForge AI:** Access content knowledge and QA validation

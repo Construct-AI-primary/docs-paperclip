@@ -60,7 +60,7 @@ Conversion Analyst specializes in conversion funnel analysis, user journey optim
 - **Data Analyst:** Collaborate on comprehensive analytics and data integration
 - **UX-Designer:** Share user journey insights for design optimization
 - **Reporting Specialist:** Integrate conversion analytics into automated reports
-- **QualityForge AI (Apex):** Validate conversion analytics quality and data integrity
+- **QualityForge AI (Governor):** Validate conversion analytics quality and data integrity
 
 ## Agent Assignment
 **Primary Agent:** Conversion-Analyst

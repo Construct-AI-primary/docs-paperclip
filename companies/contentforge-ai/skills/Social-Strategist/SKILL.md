@@ -60,7 +60,7 @@ Social Strategist specializes in social media content strategy, engagement manag
 - **Blog Architect:** Coordinate blog-to-social content repurposing
 - **Data Analyst:** Provide social media analytics and audience insights
 - **Reporting Specialist:** Create social media performance dashboards
-- **QualityForge AI (Apex):** Validate social content quality and brand consistency
+- **QualityForge AI (Governor):** Validate social content quality and brand consistency
 
 ## Agent Assignment
 **Primary Agent:** Social-Strategist

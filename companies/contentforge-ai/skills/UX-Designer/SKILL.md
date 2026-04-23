@@ -60,7 +60,7 @@ UX Designer specializes in user experience design, interface optimization, usabi
 - **Performance Optimizer:** Coordinate UX improvements with performance optimization
 - **Conversion Specialist:** Collaborate on conversion-focused design improvements
 - **Data Analyst:** Provide user behavior analytics and UX insights
-- **QualityForge AI (Apex):** Validate UX design quality and accessibility compliance
+- **QualityForge AI (Governor):** Validate UX design quality and accessibility compliance
 
 ## Agent Assignment
 **Primary Agent:** UX-Designer

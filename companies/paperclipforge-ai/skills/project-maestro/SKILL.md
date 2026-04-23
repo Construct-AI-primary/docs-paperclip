@@ -68,7 +68,7 @@ Project Maestro serves as the Chief Executive Officer of PaperclipForge AI, lead
 
 ### Cross-Company Operational Coordination
 - **PromptForge AI (Sage):** Receive and validate operational requirements, ensure strategic alignment
-- **QualityForge AI (Apex):** Validate operational outputs, ensure quality standards and compliance
+- **QualityForge AI (Governor):** Validate operational outputs, ensure quality standards and compliance
 - **DevForge AI (Nexus):** Coordinate technical implementation and system integration
 - **DomainForge AI (Orion):** Support domain-specific operational requirements
 - **KnowledgeForge AI (Coordinator Guardian):** Access institutional knowledge and QA validation

@@ -61,7 +61,7 @@ Progress Tracker specializes in real-time monitoring, bottleneck identification,
 - **Assignment Specialist:** Monitor progress of assigned issues and agent performance
 - **Dependency Manager:** Track dependency resolution progress and critical path status
 - **Operations Director:** Receive comprehensive progress analytics and bottleneck reports
-- **QualityForge AI (Apex):** Monitor quality-related progress and validation status
+- **QualityForge AI (Governor):** Monitor quality-related progress and validation status
 
 ## Agent Assignment
 **Primary Agent:** progress-tracker

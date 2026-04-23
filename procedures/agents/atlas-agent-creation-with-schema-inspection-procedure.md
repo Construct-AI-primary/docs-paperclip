@@ -17,7 +17,8 @@ This procedure applies to:
 ### Required Skills
 - `database-schema-inspection` - For schema analysis and SQL generation
 - `agent-creation-management` - For agent specification and configuration
-- `nimbus-infraforge-supabase-specialist` - For database execution
+- `nimbus-infraforge-supabase-specialist` - For database execution and validation
+- `cross-agent-coordination` - For inter-agent collaboration
 
 ### Required Access
 - Database read access for schema inspection
@@ -244,6 +245,12 @@ WHERE routine_schema = 'public'
 - Execute EXPLAIN on generated queries
 - Test with sample data (without committing)
 - Validate foreign key relationships
+
+#### Step 4.5: Delegate to Nimbus for Validation
+- **Atlas → Nimbus**: Send generated SQL for validation and execution
+- **Nimbus Validation**: Use `sql-generation-testing` skill to validate SQL syntax and schema compliance
+- **Live Schema Inspection**: Query actual database to confirm column constraints and relationships
+- **Execution Coordination**: Nimbus executes SQL with proper error handling and rollback capabilities
 
 ### Phase 5: Execution & Verification
 

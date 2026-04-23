@@ -57,7 +57,7 @@ DevOps Engineer specializes in SaaS deployment, CI/CD pipelines, infrastructure 
 ### Cross-Company DevOps Integration
 - **Platform-Architect:** Receive platform architecture guidance and deployment requirements
 - **InfraForge AI (Orchestrator):** Leverage infrastructure management and automation tools
-- **QualityForge AI (Apex):** Integrate automated testing and quality gates into pipelines
+- **QualityForge AI (Governor):** Integrate automated testing and quality gates into pipelines
 - **Security-Specialist:** Implement security automation and compliance checks
 - **Analytics-Specialist:** Provide deployment and performance analytics
 

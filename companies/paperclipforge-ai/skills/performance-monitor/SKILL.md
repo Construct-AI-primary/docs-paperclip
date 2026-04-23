@@ -61,7 +61,7 @@ Performance Monitor specializes in comprehensive performance analytics, KPI trac
 - **Project Coordinator:** Monitor project-specific performance metrics
 - **DevForge AI (Nexus):** Monitor technical performance and system optimization
 - **InfraForge AI (Orchestrator):** Track infrastructure performance and scalability
-- **QualityForge AI (Apex):** Monitor quality performance and compliance metrics
+- **QualityForge AI (Governor):** Monitor quality performance and compliance metrics
 
 ## Agent Assignment
 **Primary Agent:** performance-monitor

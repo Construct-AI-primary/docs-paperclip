@@ -57,7 +57,7 @@ Platform Architect specializes in SaaS platform architecture, multi-tenant desig
 ### Cross-Company Platform Leadership Integration
 - **DevForge AI (Nexus):** Receive technical architecture guidance and development standards
 - **InfraForge AI (Orchestrator):** Coordinate infrastructure requirements for SaaS platform
-- **QualityForge AI (Apex):** Ensure platform meets quality and security standards
+- **QualityForge AI (Governor):** Ensure platform meets quality and security standards
 - **Security-Specialist:** Collaborate on platform security and tenant isolation
 - **Tenant-Manager:** Work with tenant management and customer success teams
 

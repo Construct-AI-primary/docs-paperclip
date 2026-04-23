@@ -60,7 +60,7 @@ Testing Coordinator specializes in mobile app testing coordination, quality assu
 - **Mobile-Developer:** Collaborate on testability and code quality for testing
 - **UI-UX-Specialist:** Coordinate usability testing and user experience validation
 - **Performance-Optimizer:** Integrate performance testing and monitoring
-- **QualityForge AI (Apex):** Leverage automated testing tools and quality validation
+- **QualityForge AI (Governor):** Leverage automated testing tools and quality validation
 
 ## Agent Assignment
 **Primary Agent:** Testing-Coordinator

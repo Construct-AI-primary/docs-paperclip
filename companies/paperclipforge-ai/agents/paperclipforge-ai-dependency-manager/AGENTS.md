@@ -3,6 +3,12 @@ name: dependency-manager
 description: >
   Dependency Tracking & Resolution specialist. Manages issue dependencies,
   identifies blocking relationships, and orchestrates parallel and sequential workflows.
+skills:
+  - issue-dependency-tracking
+  - workflow-orchestration
+  - critical-path-analysis
+  - blocking-issue-resolution
+  - foreign-key-dependency-management
 ---
 
 # Dependency Manager - Dependency Tracking & Resolution

@@ -1,4 +1,4 @@
-pro# Adding Companies and Agents to Paperclip
+# Adding Companies and Agents to Paperclip
 
 This procedure documents the process for adding new companies and agents to a Paperclip instance using SQL scripts for direct database population.
 
@@ -16,6 +16,8 @@ When you need to populate a Paperclip database with companies and agents, you ca
 - Access to the Paperclip database (Supabase SQL Editor or direct PostgreSQL connection)
 - Understanding of the Paperclip database schema
 - Company and agent data prepared
+- **CRITICAL**: Review `unique-constraints.md` - agents table has NO unique constraint on `name` column
+- **CRITICAL**: Check for schema drift - `agent_skill_assignments` table may exist in production but not in schema
 
 ## Database Schema
 
@@ -414,8 +416,30 @@ WHERE a.reports_to IS NOT NULL
 **Important**: Every agent must have model assignments for proper AI model routing and performance tracking.
 
 **See**: [Agent Model Assignment Procedure](agent-model-assignment-procedure.md) for complete model selection guidelines, assignment SQL, and validation queries.
-+++++++ REPLACE</parameter>
-+++++++ REPLACE</parameter>
+
+### 8. Agent Name Registry
+
+**Important**: All agent names must be globally unique across ALL companies. Before assigning a new agent name:
+
+1. **Check the name registry**: See [Agent Name Registry](../schema/agent-name-registry.md)
+2. **Follow the naming pattern**: `{human-name}-{company-slug}` (e.g., `maya-paperclipforge`, `reggie-measureforge`)
+3. **Verify uniqueness**: No two agents across any company can share the same name
+4. **Register the name**: Add the new name to the registry upon registration
+
+**Naming Convention Examples:**
+- ✅ `maya-paperclipforge` (COO, PaperclipForge AI)
+- ✅ `reggie-measureforge` (Standards Director, MeasureForge AI)
+- ❌ `operations-director` (not human-readable)
+- ❌ `paperclipforge-ai-operations-director` (not human-readable)
+
+**Duplicate Prevention:**
+All registration scripts MUST use `WHERE NOT EXISTS` pattern to prevent duplicate registrations:
+
+```sql
+INSERT INTO agents (id, company_id, name, ...)
+SELECT gen_random_uuid(), (SELECT id FROM companies WHERE name = 'Company Name'), 'agent-name', ...
+WHERE NOT EXISTS (SELECT 1 FROM agents WHERE name = 'agent-name');
+```
 
 ## Troubleshooting
 
@@ -497,10 +521,11 @@ See `scripts/database/populate_agents_supabase.sql` for a complete working examp
 - [Database Schema](../DATABASE.md) - Complete database schema documentation
 - [Paperclip API](../api/) - API endpoints for company and agent management
 - [Agent Companies Spec](../../doc/AGENTCOMPANIES_SPEC_INVENTORY.md) - Agent company specifications
+- [Agent Name Registry](../schema/agent-name-registry.md) - Global agent name registry
 
 ## Maintenance
 
 - **Review Frequency**: Update when schema changes occur
-- **Version**: 1.0
-- **Last Updated**: 2026-03-30
+- **Version**: 1.1
+- **Last Updated**: 2026-04-22
 - **Author**: Paperclip Team

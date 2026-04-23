@@ -60,7 +60,7 @@ Local SEO Expert specializes in local search optimization, geo-targeting, Google
 - **Link Builder:** Coordinate local citation building and link acquisition
 - **Technical SEO Specialist:** Ensure technical SEO supports local search optimization
 - **Data Analyst:** Provide local SEO analytics and performance insights
-- **QualityForge AI (Apex):** Validate local SEO implementations and citation quality
+- **QualityForge AI (Governor):** Validate local SEO implementations and citation quality
 
 ## Agent Assignment
 **Primary Agent:** Local-SEO-Expert

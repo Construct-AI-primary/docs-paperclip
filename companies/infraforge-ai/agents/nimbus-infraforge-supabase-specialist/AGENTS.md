@@ -14,6 +14,7 @@ skills:
   - sql-generation-testing
   - backup-restore-operations
   - integration-support
+  - foreign-key-dependency-management
 ---
 
 # Nimbus - Supabase Database Specialist

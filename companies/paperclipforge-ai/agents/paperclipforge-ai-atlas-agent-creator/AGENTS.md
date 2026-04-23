@@ -28,6 +28,8 @@ skills:
   - secure-credential-handling
   - github-commit-management
   - github-branch-management
+  - nimbus-collaboration
+  - cross-agent-coordination
   - github-pr-lifecycle
   - github-repository-maintenance
   - github-api-integration
@@ -41,6 +43,10 @@ skills:
   - skills-directory-management
   - teams-organization-setup
   - tasks-roadmap-development
+  - agent-models-table-management
+  - model-assignment-sql-generation
+  - agent-model-priority-configuration
+  - foreign-key-dependency-management
 ---
 
 # Atlas - Agent Creator and Manager

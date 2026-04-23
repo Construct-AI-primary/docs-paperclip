@@ -60,7 +60,7 @@ Reporting Specialist specializes in automated reporting creation, performance da
 - **Data Analyst:** Integrate analytical insights into automated reports
 - **SEO Analyst:** Include SEO performance data in comprehensive reports
 - **Conversion Analyst:** Integrate conversion analytics into reporting dashboards
-- **QualityForge AI (Apex):** Validate reporting quality and data accuracy
+- **QualityForge AI (Governor):** Validate reporting quality and data accuracy
 
 ## Agent Assignment
 **Primary Agent:** Reporting-Specialist

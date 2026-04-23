@@ -57,7 +57,7 @@ Orion specializes in domain expertise strategy, construction industry leadership
 ### Cross-Company Domain Leadership Integration
 - **KnowledgeForge AI:** Collaborate on knowledge management and documentation
 - **DevForge AI (Nexus):** Work on technical implementation of domain systems
-- **QualityForge AI (Apex):** Ensure quality standards in domain expertise
+- **QualityForge AI (Governor):** Ensure quality standards in domain expertise
 - **PaperclipForge AI:** Coordinate project management with domain expertise
 - **All Companies:** Provide domain expertise and industry knowledge
 

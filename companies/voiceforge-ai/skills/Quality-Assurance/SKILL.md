@@ -55,7 +55,7 @@ Quality Assurance specializes in voice AI quality testing, conversational qualit
 - **Quality Standards Enforcement:** Standards development, compliance monitoring, quality gates, audit preparation
 
 ### Cross-Company Quality Assurance Integration
-- **QualityForge AI (Apex):** Collaborate on comprehensive testing frameworks and methodologies
+- **QualityForge AI (Governor):** Collaborate on comprehensive testing frameworks and methodologies
 - **Voice-Maestro:** Provide quality requirements and standards for voice AI platform
 - **DevForge AI (Nexus):** Integrate quality testing into development pipelines
 - **Analytics-Specialist:** Leverage analytics for quality metrics and performance insights

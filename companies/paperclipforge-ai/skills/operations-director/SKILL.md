@@ -59,7 +59,7 @@ Operations Director serves as the Chief Operations Officer of PaperclipForge AI,
 - **Project Maestro:** Receive strategic direction and provide operational updates
 - **Integration Architect:** Coordinate technical integration and system architecture
 - **DevForge AI (Nexus):** Coordinate technical resource allocation and capacity planning
-- **QualityForge AI (Apex):** Ensure operational quality standards and validation
+- **QualityForge AI (Governor):** Ensure operational quality standards and validation
 - **KnowledgeForge AI:** Access operational knowledge and best practices
 
 ## Agent Assignment

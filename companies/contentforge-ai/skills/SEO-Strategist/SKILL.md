@@ -62,7 +62,7 @@ SEO Strategist specializes in comprehensive SEO strategy development, keyword re
 - **Technical SEO Specialist:** Implement technical SEO recommendations
 - **Link Builder:** Execute link building strategies from SEO analysis
 - **SEO Analyst:** Provide detailed SEO performance analytics
-- **QualityForge AI (Apex):** Validate SEO strategy effectiveness
+- **QualityForge AI (Governor):** Validate SEO strategy effectiveness
 
 ## Agent Assignment
 **Primary Agent:** SEO-Strategist

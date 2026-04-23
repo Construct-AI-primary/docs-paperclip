@@ -60,7 +60,7 @@ Email Composer specializes in email marketing content creation, automated email 
 - **Blog Architect:** Coordinate blog-to-email content repurposing
 - **Data Analyst:** Provide subscriber analytics and segmentation insights
 - **Conversion Analyst:** Analyze email conversion funnels and optimization opportunities
-- **QualityForge AI (Apex):** Validate email content quality and compliance
+- **QualityForge AI (Governor):** Validate email content quality and compliance
 
 ## Agent Assignment
 **Primary Agent:** Email-Composer

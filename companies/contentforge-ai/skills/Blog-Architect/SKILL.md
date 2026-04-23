@@ -62,7 +62,7 @@ Blog Architect specializes in automated blog content creation, SEO-optimized art
 - **SEO Strategist:** Coordinate keyword research and SEO optimization strategies
 - **Data Analyst:** Provide content performance analytics and audience insights
 - **Technical SEO Specialist:** Ensure technical SEO implementation for blog content
-- **QualityForge AI (Apex):** Validate content quality and SEO optimization
+- **QualityForge AI (Governor):** Validate content quality and SEO optimization
 - **PromptForge AI (Sage):** Receive content prompts and topic suggestions
 
 ## Agent Assignment

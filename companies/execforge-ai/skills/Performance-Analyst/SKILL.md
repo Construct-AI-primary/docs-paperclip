@@ -59,7 +59,7 @@ Performance Analyst specializes in performance analysis, KPI tracking, metrics d
 - **Chief-of-Staff:** Support operational performance monitoring and improvement
 - **Strategic-Advisor:** Provide performance data for strategic decision making
 - **All Company Performance:** Provide performance analysis support across all companies
-- **QualityForge AI (Apex):** Leverage quality metrics and performance validation
+- **QualityForge AI (Governor):** Leverage quality metrics and performance validation
 
 ## Agent Assignment
 **Primary Agent:** Performance-Analyst

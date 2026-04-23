@@ -58,7 +58,7 @@ Mobile Maestro specializes in mobile application strategy, cross-platform develo
 ### Cross-Company Mobile Leadership Integration
 - **DevForge AI (Nexus):** Receive technical architecture guidance and development standards
 - **InfraForge AI (Orchestrator):** Coordinate infrastructure requirements for mobile applications
-- **QualityForge AI (Apex):** Ensure mobile applications meet quality and security standards
+- **QualityForge AI (Governor):** Ensure mobile applications meet quality and security standards
 - **PromptForge AI (Sage):** Leverage AI prompts for mobile development and user experience design
 - **KnowledgeForge AI:** Access mobile development knowledge and best practices
 

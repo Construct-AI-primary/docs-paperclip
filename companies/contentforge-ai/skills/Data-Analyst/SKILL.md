@@ -61,7 +61,7 @@ Data Analyst specializes in content analytics, website performance data analysis
 - **SEO Strategist:** Collaborate on SEO performance analytics and keyword insights
 - **Performance Optimizer:** Share website performance data and user experience metrics
 - **Reporting Specialist:** Coordinate automated reporting and dashboard integration
-- **QualityForge AI (Apex):** Validate analytics quality and data integrity
+- **QualityForge AI (Governor):** Validate analytics quality and data integrity
 
 ## Agent Assignment
 **Primary Agent:** Data-Analyst

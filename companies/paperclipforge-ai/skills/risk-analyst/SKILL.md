@@ -60,7 +60,7 @@ Risk Analyst specializes in proactive risk identification, mitigation strategy d
 - **Project Coordinator:** Receive project-specific risk assessments and mitigation plans
 - **Operations Director:** Coordinate enterprise-wide risk management strategy
 - **DevForge AI (Nexus):** Assess technical and security risks
-- **QualityForge AI (Apex):** Evaluate quality and compliance risks
+- **QualityForge AI (Governor):** Evaluate quality and compliance risks
 - **KnowledgeForge AI:** Access risk management knowledge and best practices
 
 ## Agent Assignment

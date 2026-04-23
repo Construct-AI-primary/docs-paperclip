@@ -60,7 +60,7 @@ SEO Analyst specializes in search performance analysis, competitive intelligence
 - **Technical SEO Specialist:** Share technical SEO performance data and insights
 - **Link Builder:** Provide link building performance analytics and ROI measurement
 - **Data Analyst:** Collaborate on comprehensive analytics integration
-- **QualityForge AI (Apex):** Validate SEO analytics quality and data integrity
+- **QualityForge AI (Governor):** Validate SEO analytics quality and data integrity
 
 ## Agent Assignment
 **Primary Agent:** SEO-Analyst

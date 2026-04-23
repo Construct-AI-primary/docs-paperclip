@@ -47,6 +47,22 @@ Pre-built cleanup scripts are available:
 - Companies: `scripts/database/cleanup_archived_companies.sql`
 - Agents: `scripts/database/cleanup_terminated_agents.sql`
 
+### CRITICAL SCHEMA WARNINGS
+**⚠️ BEFORE PROCEEDING: Check for Schema Drift**
+
+1. **agent_skill_assignments table**: This table exists in production but may NOT be in your schema
+   - Check: `SELECT table_name FROM information_schema.tables WHERE table_name = 'agent_skill_assignments';`
+   - If missing from schema: Add to `packages/db/src/schema/index.ts` before proceeding
+   - Impact: Deletion will fail with FK constraint violations if this table exists but isn't handled
+
+2. **Verify FK Dependencies**: Always check `FK-DEPENDENCY-LEVELS.md` for the latest dependency mapping
+   - Current critical gap: `agent_skill_assignments` table missing from deletion procedures
+   - Use corrected procedures from `fk-deletion-procedure.md` (updated 2026-04-22)
+
+3. **Type Casting**: Use `::TEXT` for all UUID comparisons in WHERE clauses
+   - Correct: `WHERE agent_id::TEXT IN (SELECT id FROM to_delete)`
+   - Incorrect: `WHERE agent_id IN (SELECT id FROM to_delete)` ← Causes "operator does not exist" errors
+
 ---
 
 ## Important Considerations

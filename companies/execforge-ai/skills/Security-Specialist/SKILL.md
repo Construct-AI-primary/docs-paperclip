@@ -59,7 +59,7 @@ Security Specialist specializes in information security, risk assessment, compli
 - **Security-Guardian:** Coordinate mobile and application security efforts
 - **vision-loopy-ceo:** Provide security briefings and risk assessments to executive leadership
 - **All Company Security:** Provide security management support across all companies
-- **QualityForge AI (Apex):** Leverage security testing and validation capabilities
+- **QualityForge AI (Governor):** Leverage security testing and validation capabilities
 
 ## Agent Assignment
 **Primary Agent:** Security-Specialist

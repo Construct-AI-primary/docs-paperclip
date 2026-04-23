@@ -60,7 +60,7 @@ Integration Architect serves as the Chief Technology Officer of PaperclipForge A
 - **Operations Director:** Coordinate operational integration requirements
 - **DevForge AI (Nexus):** Lead technical implementation and system development
 - **InfraForge AI (Orchestrator):** Manage infrastructure integration and deployment
-- **QualityForge AI (Apex):** Validate technical integration quality and compliance
+- **QualityForge AI (Governor):** Validate technical integration quality and compliance
 
 ## Agent Assignment
 **Primary Agent:** integration-architect

@@ -60,7 +60,7 @@ Security Guardian specializes in mobile security implementation, data protection
 - **Cloud-Connector:** Coordinate cloud security and mobile-cloud data protection
 - **API-Specialist:** Ensure API security and secure mobile-backend communication
 - **Testing-Coordinator:** Integrate security testing into quality assurance processes
-- **QualityForge AI (Apex):** Leverage security scanning and compliance validation tools
+- **QualityForge AI (Governor):** Leverage security scanning and compliance validation tools
 
 ## Agent Assignment
 **Primary Agent:** Security-Guardian

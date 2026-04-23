@@ -60,7 +60,7 @@ Technical SEO Specialist specializes in technical SEO implementation, site archi
 - **Performance Optimizer:** Coordinate technical performance optimizations
 - **Technical SEO Specialist:** Ensure technical SEO aligns with performance goals
 - **DevForge AI (Nexus):** Implement technical SEO changes and optimizations
-- **QualityForge AI (Apex):** Validate technical SEO implementations
+- **QualityForge AI (Governor):** Validate technical SEO implementations
 
 ## Agent Assignment
 **Primary Agent:** Technical-SEO-Specialist

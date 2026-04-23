@@ -60,7 +60,7 @@ Quality Controller specializes in quality assurance, validation processes, and c
 - **Integration Architect:** Ensure quality in integration and automation projects
 - **Workflow Automator:** Validate quality of automated processes
 - **Data Integrator:** Ensure data quality and integrity
-- **QualityForge AI (Apex):** Lead enterprise quality assurance and validation
+- **QualityForge AI (Governor):** Lead enterprise quality assurance and validation
 - **KnowledgeForge AI:** Access quality standards and best practices
 
 ## Agent Assignment
