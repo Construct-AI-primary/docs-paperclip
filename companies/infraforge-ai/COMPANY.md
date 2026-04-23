@@ -46,3 +46,13 @@ Infrastructure and systems integration company.
 - skills/database-infraforge-database-infrastructure/SKILL.md
 - skills/mobile-api-infraforge-mobile-api-integration/SKILL.md
 - skills/supply-chain-integration-infraforge-supply-chain/SKILL.md
+- skills/render-environment-integration/SKILL.md
+- skills/environment-variable-access/SKILL.md
+- skills/configuration-file-parsing/SKILL.md
+- skills/hermes-communication-setup/SKILL.md
+- skills/cloud-deployment-automation/SKILL.md
+- skills/network-tunneling-configuration/SKILL.md
+- skills/desktop-dashboard-connectivity/SKILL.md
+- skills/secure-api-key-management/SKILL.md
+- skills/infrastructure-monitoring-setup/SKILL.md
+- skills/deployment-verification-testing/SKILL.md
