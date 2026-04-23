@@ -222,6 +222,93 @@ Error: Missing required environment variable
 Solution: Check Render environment variable configuration
 ```
 
+## Agent Execution Troubleshooting
+
+### Agents Not Cloning Repositories
+**Symptoms:** Agent runs but outputs "nice" instead of cloning and testing
+**Root Causes:**
+- WORKSPACE_DIR not set, agents have no place to clone repos
+- GIT_TERMINAL_PROMPT not disabled, git hangs on authentication
+- GITHUB_TOKEN not passed to agent environment
+
+**Fix (render.yaml):**
+```yaml
+envVars:
+  - key: WORKSPACE_DIR
+    value: /opt/data/workspace
+  - key: GIT_TERMINAL_PROMPT
+    value: "0"
+```
+
+### Agents Not Writing Files or Running Tests
+**Symptoms:** Agent completes without creating files or test results
+**Root Causes:**
+- No persistent workspace directory
+- Code execution tool not available
+- Test environment not accessible
+
+**Fix (Dockerfile):**
+```dockerfile
+RUN mkdir -p /opt/data/workspace && chmod 777 /opt/data/workspace
+```
+
+### Tool Availability Failures
+**Symptoms:** "Unknown tool" errors even though tool exists
+**Root Causes:**
+- TERMINAL_ENV not set, terminal tool fails availability check
+- File tools depend on terminal tool availability
+
+**Fix (render.yaml):**
+```yaml
+envVars:
+  - key: TERMINAL_ENV
+    value: local
+```
+
+### Comprehensive Testing Tasks Timing Out
+**Symptoms:** Tier 1 testing tasks fail or produce minimal output
+**Root Causes:**
+- Default HERMES_TIMEOUT too short (60s)
+- Agent needs more time for multi-step testing
+
+**Fix (render.yaml):**
+```yaml
+envVars:
+  - key: HERMES_TIMEOUT
+    value: "600"  # 10 minutes
+```
+
+### Task Delegation Failures
+**Symptoms:** Agent runs but doesn't delegate to supporting agents
+**Root Causes:**
+- delegate_task tool not in hermes-api-server toolset
+- Inter-agent communication not configured
+- Supporting agents not registered/running
+
+**Fix:** Verify toolsets.py includes "delegate_task" in hermes-api-server toolset
+
+### Debugging Agent Execution
+
+**Step 1: Check Environment Variables**
+```bash
+env | grep -E 'TERMINAL|WORKSPACE|GIT_TERMINAL|HERMES_TIMEOUT'
+```
+
+**Step 2: Verify Workspace Directory**
+```bash
+ls -la /opt/data/workspace
+```
+
+**Step 3: Test Git Access**
+```bash
+cd /opt/data/workspace && git clone <repo_url>
+```
+
+**Step 4: Check Tool Availability**
+- Verify TERMINAL_ENV=local is set
+- Verify terminal tool passes availability check
+- Check toolsets.py for hermes-api-server
+
 ## Scaling Considerations
 
 ### Horizontal Scaling

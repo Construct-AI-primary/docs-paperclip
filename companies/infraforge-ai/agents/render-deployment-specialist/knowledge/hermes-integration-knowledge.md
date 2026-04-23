@@ -346,6 +346,68 @@ Error: Tool execution timeout
 Solution: Adjust HERMES_TIMEOUT settings and check tool implementation
 ```
 
+### Agent Execution Issues
+
+**Agents Not Cloning Repositories:**
+Symptoms: Agent runs but outputs "nice" instead of performing tasks
+Causes:
+- WORKSPACE_DIR not set, agents have no place to clone repos
+- GIT_TERMINAL_PROMPT not disabled, git hangs on authentication
+- GITHUB_TOKEN not accessible to agent environment
+
+Fix (in render.yaml):
+```yaml
+envVars:
+  - key: WORKSPACE_DIR
+    value: /opt/data/workspace
+  - key: GIT_TERMINAL_PROMPT
+    value: "0"
+  - key: HERMES_TIMEOUT
+    value: "600"  # 10 minutes for complex tasks
+```
+
+**Agents Not Delegating Tasks:**
+Symptoms: Agent runs simple commands but doesn't delegate to supporting agents
+Causes:
+- delegate_task tool may not be in hermes-api-server toolset
+- Inter-agent communication not configured
+- Supporting agents not registered/running
+
+Fix: Verify toolsets.py includes "delegate_task" in hermes-api-server toolset
+
+**Agents Not Writing Files or Running Tests:**
+Symptoms: Agent completes without creating files or test results
+Causes:
+- No persistent workspace directory
+- Code execution tool (execute_code) not available
+- Test environment not accessible
+
+Fix (in Dockerfile):
+```dockerfile
+RUN mkdir -p /opt/data/workspace && chmod 777 /opt/data/workspace
+```
+
+**Tool Availability Check Failures:**
+Symptoms: "Unknown tool" errors even though tool exists
+Causes:
+- TERMINAL_ENV not set, terminal tool fails availability check
+- File tools depend on terminal tool availability
+
+Fix (in render.yaml):
+```yaml
+envVars:
+  - key: TERMINAL_ENV
+    value: local
+```
+
+**Comprehensive Testing Tasks Timing Out:**
+Symptoms: Tier 1 testing tasks fail or produce minimal output
+Causes:
+- Default HERMES_TIMEOUT too short (60s)
+- Agent needs more time for multi-step testing
+
+Fix: Set HERMES_TIMEOUT=600 for 10-minute agent execution windows
+
 ## Best Practices
 
 ### Security

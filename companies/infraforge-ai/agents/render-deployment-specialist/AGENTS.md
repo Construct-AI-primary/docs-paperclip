@@ -155,6 +155,102 @@ When the API server process starts but crashes immediately with no `[API]` logs:
    - Ensure background processes are properly daemonized
    - Verify `wait` commands keep the container alive
 
+### Agent Execution Failures
+
+Agents should be able to clone repositories, write files, run code, and delegate tasks to other agents. If agents are running but not performing these tasks:
+
+**Symptoms:**
+- Agent outputs "nice" instead of cloning and testing
+- No files created or tests run
+- No delegation to supporting agents
+
+**Diagnosis Steps:**
+
+1. **Check TERMINAL_ENV is set**
+   ```bash
+   env | grep TERMINAL_ENV
+   # Should return: TERMINAL_ENV=local
+   ```
+   Without this, the terminal tool fails availability checks, causing "Unknown tool" errors.
+
+2. **Verify WORKSPACE_DIR exists**
+   ```bash
+   ls -la /opt/data/workspace
+   ```
+   Agents need a workspace directory to clone repos and write files.
+
+3. **Check GIT_TERMINAL_PROMPT**
+   ```bash
+   env | grep GIT_TERMINAL_PROMPT
+   # Should return: GIT_TERMINAL_PROMPT=0
+   ```
+   Without this, git commands may hang waiting for authentication input.
+
+4. **Verify HERMES_TIMEOUT**
+   ```bash
+   env | grep HERMES_TIMEOUT
+   # Should return: HERMES_TIMEOUT=600 (10 minutes)
+   ```
+   Comprehensive testing tasks need extended timeouts.
+
+**Required render.yaml Configuration:**
+```yaml
+envVars:
+  - key: TERMINAL_ENV
+    value: local
+  - key: WORKSPACE_DIR
+    value: /opt/data/workspace
+  - key: GIT_TERMINAL_PROMPT
+    value: "0"
+  - key: HERMES_TIMEOUT
+    value: "600"
+```
+
+**Required Dockerfile Configuration:**
+```dockerfile
+# Create workspace for agent operations
+RUN mkdir -p /opt/data/workspace && chmod 777 /opt/data/workspace
+```
+
+### Tool Availability Failures
+
+When agents report "Unknown tool" errors:
+
+1. **Terminal Tool Failure**
+   - Terminal tool is the foundation for file operations
+   - Check: `TERMINAL_ENV=local` in environment
+   - Without this, all tools that depend on terminal fail
+
+2. **File Tools Not Available**
+   - `search_files`, `read_file`, `write_file` all require terminal
+   - These are registered with `check_fn=_check_file_reqs`
+   - `_check_file_reqs` calls `check_terminal_requirements()`
+
+3. **Code Execution Issues**
+   - `execute_code` tool may have sandbox restrictions in Docker
+   - Verify code execution environment is properly configured
+   - Check for timeout issues with long-running code
+
+### Delegation Issues
+
+When agents don't delegate tasks to supporting agents:
+
+1. **Verify delegate_task in Toolset**
+   ```python
+   # Check toolsets.py for hermes-api-server toolset
+   "delegate_task" should be in the tools list
+   ```
+
+2. **Inter-Agent Communication**
+   - Supporting agents must be registered and accessible
+   - Check agent registry in Supabase
+   - Verify agent capabilities are properly configured
+
+3. **Delegation Protocol**
+   - Agent must have `delegate_task` tool available
+   - Supporting agents must be online and responsive
+   - Network connectivity between agents must work
+
 ## Success Metrics
 
 ### Deployment Quality
