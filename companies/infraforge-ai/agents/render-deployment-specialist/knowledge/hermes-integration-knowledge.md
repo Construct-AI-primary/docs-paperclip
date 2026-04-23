@@ -481,3 +481,132 @@ def manage_paperclip_service(service_id: str, action: str, **kwargs) -> str:
 ```
 
 This knowledge base provides the foundation for integrating Hermes with Paperclip deployments, enabling secure and efficient desktop communication and remote management capabilities.
+
+## Paperclip Heartbeat Troubleshooting Guide
+
+### Common Heartbeat Problems on Startup
+
+Heartbeat problems often stem from auth, context loading, or API blocks right after `agent_wakeup_requests` fires but before full execution, causing 3-second agent exits.
+
+### Auth & API Key Failures
+
+**PAPERCLIP_API_KEY missing/invalid:**
+- Agents wake but can't query control-plane (e.g., fetch tasks)
+- Check Render logs for "control-plane query failed"
+- Generate key from dashboard > Settings, add to env vars
+
+**Model provider auth:**
+- No HEARTBEAT_MODEL or bad OpenRouter/Anthropic keys lead to silent LLM timeouts post-wakeup
+
+### Context & Instruction Issues
+
+**Empty/missing context packet:**
+- Heartbeat fires but no tasks/instructions load
+- Check VISION.md, CEO_BOOTSTRAP.md, or agent role files
+- Agents exit immediately without tasks
+
+**Overloaded context window:**
+- Startup compresses recent activity poorly, hitting LLM limits
+- Simplify agent instructions first
+
+### DB & Supabase Blocks
+
+**RLS/permission denials:**
+- `agent_wakeup_requests` inserts succeed, but UPDATE/SELECT fails on status transitions
+- Query Supabase logs for 4xx errors
+
+**Schema drift:**
+- Tables exist but columns mismatch (e.g., missing error field)
+- Run `paperclip db migrate` locally, push schema
+
+**Timer conflicts:**
+- Supabase pg_cron overlaps with Render sleep, causing duplicate/missed beats
+
+### Render-Specific Issues
+
+**Cold starts:**
+- Free tier spins down, heartbeat wakes container but API times out before fully ready
+
+**Resource exhaustion:**
+- Low-memory tier hits OOM during context build
+- Upgrade to Starter ($7/mo) for persistent API responsiveness
+
+### Diagnostic Logging Setup
+
+**Render Service Logs:**
+Enable by adding to Render environment variables:
+```bash
+LOG_LEVEL=debug
+PAPERCLIP_LOG_FORMAT=json
+```
+
+Key patterns to grep:
+- `"control-plane query failed"` - PAPERCLIP_API_KEY issues
+- `"model inference timeout"` - HEARTBEAT_MODEL missing/bad keys
+- `"permission denied"` - Supabase RLS blocks
+- `"context window exceeded"` - Instruction file too large
+
+**Supabase Audit Queries:**
+
+```sql
+-- Recent failures with error details
+SELECT status, error, duration_ms, agent_id 
+FROM agent_wakeup_requests 
+WHERE created_at > NOW() - INTERVAL '15 minutes'
+ORDER BY id DESC;
+
+-- Heartbeat events with failure reasons
+SELECT * FROM heartbeat_run_events 
+WHERE run_status = 'failed' 
+AND event_time > NOW() - INTERVAL '10 minutes';
+```
+
+**Debug Quick Test:**
+1. Deploy debug env vars (`LOG_LEVEL=debug`)
+2. Restart Render service
+3. Trigger manual heartbeat via dashboard
+4. Check logs within 30 seconds for first ERROR timestamp
+
+### HEARTBEAT_MODEL Setup
+
+**Is it critical?**
+Not strictly critical for basic heartbeats (Supabase timers and wakeup logic work without it). However, without it:
+- Falls back to global MODEL or errors if none
+- Causes silent failures post-wakeup during instruction parsing
+
+**Quick Setup:**
+Add to Render env vars:
+```bash
+HEARTBEAT_MODEL=anthropic/claude-3-haiku
+# Or for cost-free testing:
+# HEARTBEAT_MODEL=openrouter/meta-llama/llama-3.2-1b-instruct
+```
+
+Alternative: Set `DEFAULT_MODEL` if no per-agent override.
+
+### Hermes-Paperclip Adapter Integration
+
+Hermes agents integrate with Paperclip via the official hermes-paperclip-adapter:
+
+**Setup:**
+```bash
+npm install hermes-paperclip-adapter
+```
+
+**Configuration:**
+```bash
+PAPERCLIP_URL=https://your-render-app.onrender.com
+PAPERCLIP_API_KEY=your-generated-key
+OPENROUTER_API_KEY=your-key
+```
+
+**Usage:**
+```bash
+hermes --adapter hermes_paperclip \
+  --paperclip-url https://your-render-app.onrender.com \
+  --api-key $PAPERCLIP_API_KEY \
+  --model "anthropic/claude-3.5-sonnet" \
+  "Upload files to Paperclip workspace"
+```
+
+Hermes scans local files, uploads via Paperclip's API, persists context for other agents.
