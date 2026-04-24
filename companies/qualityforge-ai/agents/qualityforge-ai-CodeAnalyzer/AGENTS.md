@@ -1,11 +1,11 @@
 ---
-name: compatibility
-slug: compatibility
+name: code-analyzer
+slug: code-analyzer
 reportsTo: governor-qualityforge-quality-director
 skills:
-  - compatibility
+  - code-analyzer
 ---
 
-# compatibility
+# code-analyzer
 
 Agent for qualityforge-ai.

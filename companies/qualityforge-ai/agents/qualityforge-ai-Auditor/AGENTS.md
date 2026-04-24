@@ -1,11 +1,11 @@
 ---
-name: auditor-qualityforge-quality-auditor
-slug: auditor-qualityforge-quality-auditor
+name: auditor
+slug: auditor
 reportsTo: governor-qualityforge-quality-director
 skills:
-  - auditor-qualityforge-quality-auditor
+  - auditor
 ---
 
-# auditor-qualityforge-quality-auditor
+# auditor
 
 Agent for qualityforge-ai.

@@ -1,5 +1,5 @@
 ---
-name: assessment-criteria-manager
+name: assessmentCriteriaManager
 description: >
   Assessment Criteria Manager - Specialized in defining, maintaining, and evolving quality
   assessment criteria, scoring rubrics, and evaluation frameworks across the QualityForge AI

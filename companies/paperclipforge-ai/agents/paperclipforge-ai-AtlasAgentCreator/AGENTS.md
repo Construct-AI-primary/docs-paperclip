@@ -47,6 +47,10 @@ skills:
   - model-assignment-sql-generation
   - agent-model-priority-configuration
   - foreign-key-dependency-management
+  - agent-reconciliation
+  - filesystem-database-audit
+  - naming-convention-validation
+  - funky-human-name-verification
 ---
 
 # Atlas - Agent Creator and Manager
