@@ -1,5 +1,5 @@
 ---
-name: probe-qualityforge-prompt-testing
+name: Probe
 slug: probe-qualityforge-prompt-testing
 reportsTo: governor-qualityforge-quality-director
 skills:

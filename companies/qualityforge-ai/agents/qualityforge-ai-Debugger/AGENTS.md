@@ -1,6 +1,6 @@
 ---
-name: debugger-Debugger-specialist
-slug: debugger-Debugger-specialist
+name: Debugger
+slug: debugger-qualityforge-debugger-specialist
 reportsTo: governor-qualityforge-quality-director
 skills:
   - debugger-Debugger-specialist

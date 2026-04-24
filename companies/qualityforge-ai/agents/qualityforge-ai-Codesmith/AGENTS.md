@@ -1,5 +1,5 @@
 ---
-name: codesmith-qualityforge-code-architect
+name: Codesmith
 slug: codesmith-qualityforge-code-architect
 reportsTo: governor-qualityforge-quality-director
 skills:

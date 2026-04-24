@@ -1,5 +1,5 @@
 ---
-name: migrator-qualityforge-migration-specialist
+name: Migrator
 slug: migrator-qualityforge-migration-specialist
 reportsTo: governor-qualityforge-quality-director
 skills:

@@ -1,5 +1,5 @@
 ---
-name: monitor-qualityforge-quality-monitor
+name: Monitor
 slug: monitor-qualityforge-quality-monitor
 reportsTo: governor-qualityforge-quality-director
 skills:

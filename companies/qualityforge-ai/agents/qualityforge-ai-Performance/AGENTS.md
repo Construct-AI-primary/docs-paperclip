@@ -1,6 +1,6 @@
 ---
-name: performance-Performance-testing
-slug: performance-Performance-testing
+name: Performance
+slug: performance-qualityforge-performance-testing
 reportsTo: governor-qualityforge-quality-director
 skills:
   - performance-Performance-testing

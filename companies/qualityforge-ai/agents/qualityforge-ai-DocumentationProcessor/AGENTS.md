@@ -1,5 +1,6 @@
 ---
-name: documentation-processor
+name: Documentation Processor
+slug: documentation-processor-qualityforge
 description: >
   Documentation Processor - Specialized in processing, analyzing, transforming, and
   validating quality documentation across the QualityForge AI ecosystem. Handles document

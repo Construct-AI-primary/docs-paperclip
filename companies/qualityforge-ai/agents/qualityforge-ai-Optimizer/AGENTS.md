@@ -1,5 +1,5 @@
 ---
-name: optimizer-qualityforge-code-optimizer
+name: Optimizer
 slug: optimizer-qualityforge-code-optimizer
 reportsTo: governor-qualityforge-quality-director
 skills:

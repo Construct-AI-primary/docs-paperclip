@@ -1,6 +1,6 @@
 ---
-name: integration-Integration-testing
-slug: integration-Integration-testing
+name: Integration
+slug: integration-qualityforge-integration-testing
 reportsTo: governor-qualityforge-quality-director
 skills:
   - integration-Integration-testing

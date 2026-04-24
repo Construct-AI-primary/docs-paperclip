@@ -1,5 +1,5 @@
 ---
-name: tracer-qualityforge-execution-tracer
+name: Tracer
 slug: tracer-qualityforge-execution-tracer
 reportsTo: governor-qualityforge-quality-director
 skills:

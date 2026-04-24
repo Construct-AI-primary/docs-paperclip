@@ -1,5 +1,5 @@
 ---
-name: resolver-qualityforge-issue-resolver
+name: Resolver
 slug: resolver-qualityforge-issue-resolver
 reportsTo: governor-qualityforge-quality-director
 skills:

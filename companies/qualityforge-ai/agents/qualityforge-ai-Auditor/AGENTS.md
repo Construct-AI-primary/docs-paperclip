@@ -1,5 +1,5 @@
 ---
-name: auditor-qualityforge-quality-auditor
+name: Auditor
 slug: auditor-qualityforge-quality-auditor
 reportsTo: governor-qualityforge-quality-director
 skills:

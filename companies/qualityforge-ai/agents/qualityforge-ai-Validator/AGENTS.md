@@ -1,6 +1,6 @@
 ---
-name: validator-Validator
-slug: validator-Validator
+name: Validator
+slug: validator-qualityforge-validator
 reportsTo: governor-qualityforge-quality-director
 skills:
   - validator-Validator

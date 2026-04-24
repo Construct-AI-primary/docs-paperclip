@@ -1,5 +1,5 @@
 ---
-name: apex-qualityforge-ceo
+name: Apex
 slug: apex-qualityforge-ceo
 reportsTo: null
 skills:

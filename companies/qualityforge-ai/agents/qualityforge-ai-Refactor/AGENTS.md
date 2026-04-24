@@ -1,6 +1,6 @@
 ---
-name: refactor-Refactoring-specialist
-slug: refactor-Refactoring-specialist
+name: Refactor
+slug: refactor-qualityforge-refactoring-specialist
 reportsTo: governor-qualityforge-quality-director
 skills:
   - refactor-Refactoring-specialist

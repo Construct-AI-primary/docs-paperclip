@@ -1,5 +1,5 @@
 ---
-name: trainer-qualityforge-quality-trainer
+name: Trainer
 slug: trainer-qualityforge-quality-trainer
 reportsTo: governor-qualityforge-quality-director
 skills:

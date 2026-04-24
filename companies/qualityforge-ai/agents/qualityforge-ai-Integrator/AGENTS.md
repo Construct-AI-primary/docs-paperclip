@@ -1,6 +1,6 @@
 ---
-name: integrator-Integration-specialist
-slug: integrator-Integration-specialist
+name: Integrator
+slug: integrator-qualityforge-integration-specialist
 reportsTo: governor-qualityforge-quality-director
 skills:
   - integrator-Integration-specialist

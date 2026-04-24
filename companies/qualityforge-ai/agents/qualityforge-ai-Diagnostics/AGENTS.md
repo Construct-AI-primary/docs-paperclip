@@ -1,6 +1,6 @@
 ---
-name: diagnostics-Diagnostics-specialist
-slug: diagnostics-Diagnostics-specialist
+name: Diagnostics
+slug: diagnostics-qualityforge-diagnostics-specialist
 reportsTo: governor-qualityforge-quality-director
 skills:
   - diagnostics-Diagnostics-specialist

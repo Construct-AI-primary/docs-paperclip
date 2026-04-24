@@ -1,6 +1,6 @@
 ---
-name: compatibility-Compatibility-testing
-slug: compatibility-Compatibility-testing
+name: Compatibility
+slug: compatibility-qualityforge-compatibility-testing
 reportsTo: governor-qualityforge-quality-director
 skills:
   - compatibility-Compatibility-testing

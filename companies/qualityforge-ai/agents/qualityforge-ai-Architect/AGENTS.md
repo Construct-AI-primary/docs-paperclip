@@ -1,5 +1,5 @@
 ---
-name: architect-qualityforge-system-architect
+name: Architect
 slug: architect-qualityforge-system-architect
 reportsTo: governor-qualityforge-quality-director
 skills:

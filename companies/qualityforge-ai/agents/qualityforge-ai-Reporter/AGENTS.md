@@ -1,5 +1,5 @@
 ---
-name: reporter-qualityforge-quality-reporter
+name: Reporter
 slug: reporter-qualityforge-quality-reporter
 reportsTo: governor-qualityforge-quality-director
 skills:

@@ -1,5 +1,5 @@
 ---
-name: automation-qualityforge-test-automation
+name: Automation
 slug: automation-qualityforge-test-automation
 reportsTo: governor-qualityforge-quality-director
 skills:

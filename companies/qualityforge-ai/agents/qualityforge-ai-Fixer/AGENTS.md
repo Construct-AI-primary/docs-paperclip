@@ -1,5 +1,5 @@
 ---
-name: fixer-qualityforge-bug-fixing-specialist
+name: Fixer
 slug: fixer-qualityforge-bug-fixing-specialist
 reportsTo: governor-qualityforge-quality-director
 skills:

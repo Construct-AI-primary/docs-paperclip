@@ -1,6 +1,6 @@
 ---
-name: profiler-Performance-profiler
-slug: profiler-Performance-profiler
+name: Profiler
+slug: profiler-qualityforge-performance-profiler
 reportsTo: governor-qualityforge-quality-director
 skills:
   - profiler-Performance-profiler

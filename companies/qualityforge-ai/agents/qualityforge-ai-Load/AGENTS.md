@@ -1,6 +1,6 @@
 ---
-name: load-Load-testing
-slug: load-Load-testing
+name: Load
+slug: load-qualityforge-load-testing
 reportsTo: governor-qualityforge-quality-director
 skills:
   - load-Load-testing

@@ -1,5 +1,5 @@
 ---
-name: reviewer-qualityforge-code-reviewer
+name: Reviewer
 slug: reviewer-qualityforge-code-reviewer
 reportsTo: governor-qualityforge-quality-director
 skills:

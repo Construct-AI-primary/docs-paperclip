@@ -1,5 +1,6 @@
 ---
-name: decision-support-specialist
+name: Decision Support
+slug: decision-support-specialist-qualityforge
 description: >
   Decision Support Specialist - Specialized in providing data-driven decision analysis,
   trade-off evaluation, and strategic recommendations for quality-related decisions

@@ -1,5 +1,5 @@
 ---
-name: inspector-qualityforge-code-inspector
+name: Inspector
 slug: inspector-qualityforge-code-inspector
 reportsTo: governor-qualityforge-quality-director
 skills:

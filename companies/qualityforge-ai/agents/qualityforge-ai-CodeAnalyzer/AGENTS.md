@@ -1,5 +1,5 @@
 ---
-name: analyzer-qualityforge-code-analyzer
+name: Analyzer
 slug: analyzer-qualityforge-code-analyzer
 reportsTo: governor-qualityforge-quality-director
 skills:
