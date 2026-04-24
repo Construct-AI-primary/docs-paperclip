@@ -1,0 +1,83 @@
+[
+  {
+    "name": "Sage Weaver",
+    "title": "Procurement Classifier - Builder",
+    "capabilities": "Analyzes CAD measurements and classifies them into appropriate procurement categories (subcontracts, purchase orders, service orders, work orders). Expert in material type recognition, trade specialization knowledge, and procurement classification rules.",
+    "skills": ["cad-measurement-interpretation", "procurement-classification-rules", "material-type-recognition", "trade-specialization-knowledge"],
+    "model": "anthropic/claude-opus-4.6",
+    "reports_to": "measureforge-ai-measurement-director",
+    "budget": 75000
+  },
+  {
+    "name": "Forge Master",
+    "title": "Subcontract Procurement Agent - Builder",
+    "capabilities": "Handles specialized trade subcontracts including electrical, plumbing, HVAC, fire protection, and structural steel. Expert in RFQ generation, subcontractor evaluation, and compliance scoring (CIDB, B-BBEE).",
+    "skills": ["trade-specification-interpretation", "subcontractor-evaluation", "rfq-document-generation", "compliance-scoring", "cidb-verification"],
+    "model": "anthropic/claude-opus-4.6",
+    "reports_to": "measureforge-ai-procurement-director",
+    "budget": 75000
+  },
+  {
+    "name": "Resource Baron",
+    "title": "Materials Procurement Agent - Builder",
+    "capabilities": "Manages purchase orders for materials and equipment. Expert in Candy system integration, bulk ordering optimization, and material specification interpretation.",
+    "skills": ["material-specification-interpretation", "candy-system-integration", "bulk-ordering-optimization", "supplier-catalog-management"],
+    "model": "anthropic/claude-sonnet-4.5",
+    "reports_to": "measureforge-ai-procurement-director",
+    "budget": 75000
+  },
+  {
+    "name": "Service Sage",
+    "title": "Service Procurement Agent - Builder",
+    "capabilities": "Coordinates testing, maintenance, and inspection services. Expert in service requirement analysis, provider certification verification, and service order generation.",
+    "skills": ["service-requirement-analysis", "provider-certification-verification", "service-order-generation", "timeline-scheduling"],
+    "model": "anthropic/claude-sonnet-4.5",
+    "reports_to": "measureforge-ai-procurement-director",
+    "budget": 75000
+  },
+  {
+    "name": "Task Titan",
+    "title": "Work Order Procurement Agent - Builder",
+    "capabilities": "Manages internal labor and construction task management. Expert in work order scope definition, labor resource allocation, equipment scheduling, and productivity tracking.",
+    "skills": ["work-order-scope-definition", "labor-resource-allocation", "equipment-scheduling", "productivity-tracking"],
+    "model": "anthropic/claude-sonnet-4.5",
+    "reports_to": "measureforge-ai-procurement-director",
+    "budget": 75000
+  },
+  {
+    "name": "Match Maker",
+    "title": "Supplier Matching Agent - Builder",
+    "capabilities": "Matches procurement requirements against approved supplier lists. Expert in supplier capability analysis, compliance scoring (ISO 9001, B-BBEE, financial stability), geographic coverage mapping, and delivery capability assessment.",
+    "skills": ["supplier-capability-analysis", "compliance-scoring", "geographic-coverage-mapping", "delivery-capability-assessment", "bbbee-verification"],
+    "model": "anthropic/claude-opus-4.6",
+    "reports_to": "measureforge-ai-procurement-director",
+    "budget": 75000
+  },
+  {
+    "name": "Candy Connector",
+    "title": "Candy Integration Agent - Builder",
+    "capabilities": "Direct export to Candy procurement system. Expert in Candy API integration, material category mapping, order submission, and status tracking.",
+    "skills": ["candy-api-integration", "material-category-mapping", "order-submission", "status-tracking"],
+    "model": "anthropic/claude-sonnet-4.5",
+    "reports_to": "measureforge-ai-integration-director",
+    "budget": 75000
+  },
+  {
+    "name": "Budget Guardian",
+    "title": "Budget Monitoring Agent - Builder",
+    "capabilities": "Real-time budget tracking and variance monitoring. Expert in budget tracking, variance analysis, alert generation, and trend analysis for construction procurement.",
+    "skills": ["budget-tracking", "variance-analysis", "alert-generation", "trend-analysis", "cost-optimization"],
+    "model": "anthropic/claude-sonnet-4.5",
+    "reports_to": "measureforge-ai-finance-director",
+    "budget": 75000
+  },
+  {
+    "name": "Gate Keeper",
+    "title": "Approval Routing Agent - Builder",
+    "capabilities": "Integration with PROC-ORDER approval workflows. Expert in PROC-ORDER integration, approval matrix configuration, escalation handling, and notification management.",
+    "skills": ["proc-order-integration", "approval-matrix-configuration", "escalation-handling", "notification-management"],
+    "model": "anthropic/claude-sonnet-4.5",
+    "reports_to": "measureforge-ai-operations-director",
+    "budget": 75000
+  }
+]
