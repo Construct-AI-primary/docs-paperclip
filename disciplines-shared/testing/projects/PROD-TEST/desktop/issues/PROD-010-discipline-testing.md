@@ -1,9 +1,16 @@
 ---
 id: PROD-010
-title: Execute discipline testing Testing
+title: Execute Discipline Testing
+description: Execute comprehensive discipline-specific testing to validate engineering discipline pages and workflows
+labels: ["testing", "production", "discipline", "engineering", "domain-testing"]
+blocked_by: []
+depends_on: ["PROD-001", "PROD-007", "PROD-009"]
+para_section: disciplines-shared/testing/projects/PROD-TEST/desktop/issues
 phase: 2 — Core Feature Testing
-status: open
+status: backlog
 priority: High
+story_points: 8
+due_date: "2026-05-25"
 ---
 
 # PROD-010: Execute discipline testing Testing

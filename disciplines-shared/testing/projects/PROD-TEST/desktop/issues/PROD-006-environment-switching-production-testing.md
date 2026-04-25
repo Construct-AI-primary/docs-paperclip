@@ -1,9 +1,16 @@
 ---
 id: PROD-006
-title: Execute environment switching production testing Testing
+title: Execute Environment Switching Production Testing
+description: Execute comprehensive environment switching testing to validate multi-environment support and configuration
+labels: ["testing", "production", "environment", "configuration", "deployment"]
+blocked_by: []
+depends_on: ["PROD-001"]
+para_section: disciplines-shared/testing/projects/PROD-TEST/desktop/issues
 phase: 1 — Foundation Testing
-status: open
+status: backlog
 priority: High
+story_points: 3
+due_date: "2026-05-12"
 ---
 
 # PROD-006: Execute environment switching production testing Testing

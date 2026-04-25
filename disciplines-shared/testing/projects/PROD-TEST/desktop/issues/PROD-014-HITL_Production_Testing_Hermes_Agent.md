@@ -1,9 +1,16 @@
 ---
 id: PROD-014
-title: Execute HITL_Production_Testing_Hermes_Agent Testing
+title: Execute HITL Production Testing with Hermes Agent
+description: Execute comprehensive HITL production testing using Hermes Agent for edge cases and advanced scenarios
+labels: ["testing", "production", "hitl", "hermes", "ai-agent"]
+blocked_by: []
+depends_on: ["PROD-013"]
+para_section: disciplines-shared/testing/projects/PROD-TEST/desktop/issues
 phase: 5 — Polish & Edge Cases
-status: open
+status: backlog
 priority: High
+story_points: 13
+due_date: "2026-06-15"
 ---
 
 # PROD-014: Execute HITL_Production_Testing_Hermes_Agent Testing

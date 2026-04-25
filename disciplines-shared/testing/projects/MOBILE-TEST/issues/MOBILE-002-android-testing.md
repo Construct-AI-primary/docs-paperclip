@@ -1,9 +1,16 @@
 ---
 id: MOBILE-002
 title: Execute Android App Testing
+description: Execute comprehensive Android app testing to validate functionality, performance, and compliance with Google Play Store requirements
+labels: ["testing", "mobile", "android", "google"]
+blocked_by: []
+depends_on: ["MOBILE-001"]
+para_section: disciplines-shared/testing/projects/MOBILE-TEST/issues
 phase: 2 — Android Platform Testing
-status: open
+status: backlog
 priority: High
+story_points: 8
+due_date: "2026-05-12"
 ---
 
 # MOBILE-002: Execute Android App Testing

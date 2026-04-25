@@ -1,9 +1,16 @@
 ---
 id: PROD-005
-title: Execute accordion production testing Testing
+title: Execute Accordion Production Testing
+description: Execute comprehensive accordion component production testing to validate navigation and UI functionality
+labels: ["testing", "production", "accordion", "ui-components", "navigation"]
+blocked_by: []
+depends_on: ["PROD-001", "PROD-002", "PROD-003"]
+para_section: disciplines-shared/testing/projects/PROD-TEST/desktop/issues
 phase: 1 — Foundation Testing
-status: open
-priority: Critical
+status: backlog
+priority: High
+story_points: 3
+due_date: "2026-05-10"
 ---
 
 # PROD-005: Execute accordion production testing Testing

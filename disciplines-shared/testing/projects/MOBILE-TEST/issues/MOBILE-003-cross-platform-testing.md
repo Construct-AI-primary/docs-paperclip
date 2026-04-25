@@ -1,9 +1,16 @@
 ---
 id: MOBILE-003
 title: Execute Cross-Platform Framework Testing
+description: Execute comprehensive testing of cross-platform frameworks (React Native, Flutter) to ensure consistent behavior across iOS and Android platforms
+labels: ["testing", "mobile", "cross-platform", "react-native", "flutter"]
+blocked_by: []
+depends_on: ["MOBILE-001", "MOBILE-002"]
+para_section: disciplines-shared/testing/projects/MOBILE-TEST/issues
 phase: 3 — Framework Compatibility Testing
-status: open
+status: backlog
 priority: High
+story_points: 13
+due_date: "2026-05-15"
 ---
 
 # MOBILE-003: Execute Cross-Platform Framework Testing

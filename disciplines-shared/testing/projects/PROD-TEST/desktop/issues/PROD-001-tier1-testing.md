@@ -1,16 +1,18 @@
 ---
 id: PROD-001
 title: Execute Tier 1 Testing - Foundation Validation
+description: Execute comprehensive Tier 1 testing to establish core system stability and essential functionality
+labels: ["testing", "production", "tier1", "foundation", "critical"]
+blocked_by: []
+depends_on: []
+para_section: disciplines-shared/testing/projects/PROD-TEST/desktop/issues
 phase: 1 — Foundation Testing
 status: backlog
-priority: critical
+priority: Critical
+story_points: 5
+due_date: "2026-05-01"
 assignee: validator-qualityforge
 company: qualityforge-ai
-created_date: 2026-04-17
-due_date: 2026-05-17
-estimated_hours: 12
-parent: PROD-000
-project: PROD-TEST
 ---
 
 # PROD-001: Execute Tier 1 Testing - Foundation Validation

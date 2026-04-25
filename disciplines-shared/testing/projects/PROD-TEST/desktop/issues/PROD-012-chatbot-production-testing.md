@@ -1,9 +1,16 @@
 ---
 id: PROD-012
-title: Execute chatbot production testing Testing
+title: Execute Chatbot Production Testing
+description: Execute comprehensive chatbot testing to validate AI assistant integration and conversational workflows
+labels: ["testing", "production", "chatbot", "ai", "conversation"]
+blocked_by: []
+depends_on: ["PROD-001", "PROD-011"]
+para_section: disciplines-shared/testing/projects/PROD-TEST/desktop/issues
 phase: 3 — Integration Testing
-status: open
+status: backlog
 priority: High
+story_points: 8
+due_date: "2026-06-05"
 ---
 
 # PROD-012: Execute chatbot production testing Testing

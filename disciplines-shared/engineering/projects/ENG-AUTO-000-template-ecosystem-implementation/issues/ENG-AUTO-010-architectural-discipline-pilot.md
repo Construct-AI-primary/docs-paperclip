@@ -1,17 +1,16 @@
 ---
 title: "Architectural Discipline Pilot Implementation"
 description: "Deploy AI workflow templates to architectural engineering discipline with discipline-specific adaptations"
-author: "PaperclipForge AI"
-date: "2026-04-21"
-version: "1.0"
-status: "active"
-issue_code: "ENG-AUTO-010"
-priority: "high"
-assignee: "DevForge AI (Workflow Complexity Analyzer)"
-labels: ["pilot", "architectural", "template-deployment", "discipline-adaptation"]
-epic: "ENG-AUTO-000"
-sprint: "Pilot Phase"
-story_points: "13"
+labels: ["engineering", "pilot", "architectural", "template-deployment", "discipline-adaptation"]
+blocked_by: []
+depends_on: []
+para_section: disciplines-shared/engineering/projects/ENG-AUTO-000-template-ecosystem-implementation/issues
+status: active
+priority: High
+story_points: 13
+due_date: "2026-05-23"
+assignee: DevForge AI (Workflow Complexity Analyzer)
+company: devforge-ai
 ---
 
 # Architectural Engineering Platform Integration (ENG-PLATFORM-017)
