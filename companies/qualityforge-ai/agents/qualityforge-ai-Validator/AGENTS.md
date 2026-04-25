@@ -1,5 +1,7 @@
 ---
-name: validator-Validator
+name: 
+human_name: Validator
+validator-Validator
 slug: validator-Validator
 reportsTo: governor-qualityforge-quality-director
 skills:

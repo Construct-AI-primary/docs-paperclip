@@ -1,5 +1,7 @@
 ---
-name: Director Projects
+name: 
+human_name: Director Projects
+Director Projects
 role: projects-director
 title: Director Projects
 status: idle

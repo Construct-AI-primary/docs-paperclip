@@ -1,5 +1,7 @@
 ---
-name: sql-query-devforge
+name: 
+human_name: Sql Query Devforge
+sql-query-devforge
 slug: sql-query-devforge
 reportsTo: dataforge-devforge-data-transformation
 skills:

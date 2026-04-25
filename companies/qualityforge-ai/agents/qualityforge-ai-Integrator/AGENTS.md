@@ -1,5 +1,7 @@
 ---
-name: integrator-Integration-specialist
+name: 
+human_name: Integrator
+integrator-Integration-specialist
 slug: integrator-Integration-specialist
 reportsTo: governor-qualityforge-quality-director
 skills:

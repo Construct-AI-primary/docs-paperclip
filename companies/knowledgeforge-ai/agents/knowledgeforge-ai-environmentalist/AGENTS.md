@@ -1,5 +1,7 @@
 ---
-name: Environmentalist
+name: 
+human_name: Environmentalist
+Environmentalist
 role: environmental
 title: Environmentalist
 status: idle

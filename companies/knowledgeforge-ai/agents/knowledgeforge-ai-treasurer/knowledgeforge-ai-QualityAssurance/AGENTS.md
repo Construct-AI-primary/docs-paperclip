@@ -1,5 +1,7 @@
 ---
-name: Quality Assurance
+name: 
+human_name: Quality Assurance
+Quality Assurance
 role: quality assurance
 title: Quality Assurance Specialist
 status: idle

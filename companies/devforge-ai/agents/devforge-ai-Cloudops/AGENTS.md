@@ -1,5 +1,7 @@
 ---
-name: cloudops-devforge-cloud-operations
+name: 
+human_name: Cloudops
+cloudops-devforge-cloud-operations
 slug: cloudops-devforge-cloud-operations
 reportsTo: forge-devforge-system-architecture
 skills:

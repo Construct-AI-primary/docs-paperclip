@@ -1,5 +1,7 @@
 ---
-name: performance-monitor
+name: 
+human_name: Performance Monitor
+performance-monitor
 description: >
   Performance Tracking & Analytics specialist. Monitors project and system performance,
   analyzes metrics, generates insights, and drives performance improvements.

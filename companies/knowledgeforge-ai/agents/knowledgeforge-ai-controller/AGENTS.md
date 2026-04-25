@@ -1,5 +1,7 @@
 ---
-name: Co-ordinator
+name: 
+human_name: Controller
+Co-ordinator
 role: other-parties
 title: Co-ordinator
 status: idle

@@ -1,5 +1,7 @@
 ---
-name: stream-devforge-data-streaming
+name: 
+human_name: Stream
+stream-devforge-data-streaming
 slug: stream-devforge-data-streaming
 reportsTo: dataforge-devforge-data-transformation
 skills:

@@ -1,5 +1,7 @@
 ---
-name: oracle-devforge-predictive-analytics
+name: 
+human_name: Oracle
+oracle-devforge-predictive-analytics
 slug: oracle-devforge-predictive-analytics
 reportsTo: nexus-devforge-ceo
 skills:

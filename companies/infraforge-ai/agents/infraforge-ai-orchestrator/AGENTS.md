@@ -1,5 +1,7 @@
 ---
-name: orchestrator-infraforge-ceo
+name: 
+human_name: Orchestrator
+orchestrator-infraforge-ceo
 slug: orchestrator-infraforge-ceo
 reportsTo: null
 skills:

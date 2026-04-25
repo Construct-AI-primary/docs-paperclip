@@ -1,5 +1,7 @@
 ---
-name: predictive-modeler
+name: 
+human_name: Predictive Modeler
+predictive-modeler
 description: >
   Predictive Analytics specialist. Develops predictive models, forecasting algorithms,
   and data-driven predictions to support decision-making across the Paperclip ecosystem.

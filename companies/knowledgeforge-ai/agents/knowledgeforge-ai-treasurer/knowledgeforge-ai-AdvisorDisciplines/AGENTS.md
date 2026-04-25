@@ -1,5 +1,7 @@
 ---
-name: Advisor Disciplines
+name: 
+human_name: Advisor Disciplines
+Advisor Disciplines
 role: discipline-strategist
 title: Advisor Disciplines
 status: idle

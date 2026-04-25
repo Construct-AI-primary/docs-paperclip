@@ -1,5 +1,7 @@
 ---
-name: Buyer
+name: 
+human_name: Buyer
+Buyer
 role: procurement
 title: Buyer
 status: idle

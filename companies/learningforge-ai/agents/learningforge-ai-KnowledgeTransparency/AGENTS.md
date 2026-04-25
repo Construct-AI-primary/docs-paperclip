@@ -1,5 +1,7 @@
 ---
-name: Knowledge Transparency Agent
+name: 
+human_name: Knowledge Transparency
+Knowledge Transparency Agent
 title: Knowledge Trail Display Specialist
 slug: learningforge-ai-knowledge-transparency
 role: specialist

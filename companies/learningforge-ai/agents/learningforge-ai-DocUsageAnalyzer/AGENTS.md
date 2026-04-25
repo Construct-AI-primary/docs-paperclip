@@ -1,5 +1,7 @@
 ---
-name: Doc Usage Analyzer
+name: 
+human_name: Doc Usage Analyzer
+Doc Usage Analyzer
 title: Usage Analytics Specialist
 slug: learningforge-ai-doc-usage-analyzer
 role: specialist

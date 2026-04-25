@@ -1,5 +1,7 @@
 ---
-name: resource-manager
+name: 
+human_name: Resource Manager
+resource-manager
 description: >
   Resource Allocation & Optimization specialist. Manages resource planning,
   allocation, utilization tracking, and optimization across projects and teams.

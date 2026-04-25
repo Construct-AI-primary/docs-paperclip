@@ -1,5 +1,7 @@
 ---
-name: Workflow Coach
+name: 
+human_name: Workflow Coach
+Workflow Coach
 title: Workflow Enforcement Specialist
 slug: learningforge-ai-workflow-coach
 role: specialist

@@ -1,5 +1,7 @@
 ---
-name: processor-devforge-transaction-processing
+name: 
+human_name: Transaction Processor
+processor-devforge-transaction-processing
 description: >
   Transaction Processor - Specialized in handling, validating, and processing business
   transactions within the DevForge AI ecosystem. Manages order processing, payment

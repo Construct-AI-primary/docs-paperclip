@@ -1,5 +1,7 @@
 ---
-name: data-integrator
+name: 
+human_name: Data Integrator
+data-integrator
 description: >
   Data Flow Management specialist. Manages data integration, flow orchestration,
   data synchronization, and cross-system data consistency across the Paperclip ecosystem.

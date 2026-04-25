@@ -1,5 +1,7 @@
 ---
-name: strategos-devforge-strategic-planning
+name: 
+human_name: Strategos
+strategos-devforge-strategic-planning
 slug: strategos-devforge-strategic-planning
 reportsTo: council-devforge-strategic-decision-making
 skills:

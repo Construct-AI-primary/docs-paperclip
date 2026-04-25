@@ -1,5 +1,7 @@
 ---
-name: cascade-promptforge-workflow-designer
+name: 
+human_name: Cascade
+cascade-promptforge-workflow-designer
 slug: cascade-promptforge-workflow-designer
 reportsTo: sage-promptforge-chief-architect
 skills:

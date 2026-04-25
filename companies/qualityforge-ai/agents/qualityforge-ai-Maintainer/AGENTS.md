@@ -1,5 +1,7 @@
 ---
-name: maintainer-qualityforge-code-maintainer
+name: 
+human_name: Maintainer
+maintainer-qualityforge-code-maintainer
 slug: maintainer-qualityforge-code-maintainer
 reportsTo: governor-qualityforge-quality-director
 skills:

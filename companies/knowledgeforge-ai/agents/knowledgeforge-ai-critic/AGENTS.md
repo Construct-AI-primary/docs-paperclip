@@ -1,5 +1,7 @@
 ---
-name: Critic
+name: 
+human_name: Critic
+Critic
 role: doc-analyzer
 title: Critic
 status: error

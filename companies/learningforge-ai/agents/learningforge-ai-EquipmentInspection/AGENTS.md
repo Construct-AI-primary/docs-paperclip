@@ -1,5 +1,7 @@
 ---
-name: Equipment Inspection Agent
+name: 
+human_name: Equipment Inspection
+Equipment Inspection Agent
 title: Equipment Monitoring Specialist
 slug: learningforge-ai-equipment-inspection
 role: specialist

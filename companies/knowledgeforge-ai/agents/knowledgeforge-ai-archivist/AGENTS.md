@@ -1,5 +1,7 @@
 ---
-name: Archivist
+name: 
+human_name: Archivist
+Archivist
 role: document-control
 title: Archivist
 status: idle

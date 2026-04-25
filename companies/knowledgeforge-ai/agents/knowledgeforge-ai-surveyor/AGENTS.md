@@ -1,5 +1,7 @@
 ---
-name: Surveyor
+name: 
+human_name: Surveyor
+Surveyor
 role: quantity-surveying
 title: Surveyor
 status: idle

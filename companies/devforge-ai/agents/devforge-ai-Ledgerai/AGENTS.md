@@ -1,5 +1,7 @@
 ---
-name: ledgerai-devforge-financial-data
+name: 
+human_name: Ledgerai
+ledgerai-devforge-financial-data
 slug: ledgerai-devforge-financial-data
 reportsTo: nexus-devforge-ceo
 skills:

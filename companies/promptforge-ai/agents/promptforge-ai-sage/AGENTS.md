@@ -1,5 +1,7 @@
 ---
-name: sage-promptforge-chief-architect
+name: 
+human_name: Sage
+sage-promptforge-chief-architect
 slug: sage-promptforge-chief-architect
 reportsTo: null
 skills:

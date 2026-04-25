@@ -1,5 +1,7 @@
 ---
-name: guardian-devforge-threat-protection
+name: 
+human_name: Guardian
+guardian-devforge-threat-protection
 slug: guardian-devforge-threat-protection
 reportsTo: nexus-devforge-ceo
 skills:

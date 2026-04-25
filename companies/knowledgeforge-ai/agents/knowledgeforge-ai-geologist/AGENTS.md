@@ -1,5 +1,7 @@
 ---
-name: Geologist
+name: 
+human_name: Geologist
+Geologist
 role: geotechnical-engineer
 title: Geologist
 status: idle

@@ -1,5 +1,7 @@
 ---
-name: Chairman
+name: 
+human_name: Chairman
+Chairman
 role: board-of-directors
 title: Chairman
 status: idle

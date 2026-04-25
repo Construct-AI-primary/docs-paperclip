@@ -1,5 +1,7 @@
 ---
-name: civil-domainforge-civil-engineering
+name: 
+human_name: civil
+civil-domainforge-civil-engineering
 slug: civil-domainforge-civil-engineering
 reportsTo: orion-domainforge-ceo
 skills:

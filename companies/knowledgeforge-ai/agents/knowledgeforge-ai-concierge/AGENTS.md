@@ -1,5 +1,7 @@
 ---
-name: Concierge
+name: 
+human_name: Concierge
+Concierge
 role: home-login
 title: Concierge
 status: idle

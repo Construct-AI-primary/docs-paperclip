@@ -1,5 +1,7 @@
 ---
-name: concierge-devforge-customer-experience
+name: 
+human_name: Concierge
+concierge-devforge-customer-experience
 slug: concierge-devforge-customer-experience
 reportsTo: atlas-devforge-product-mapping
 skills:

@@ -1,5 +1,7 @@
 ---
-name: Guardian
+name: 
+human_name: Guardian
+Guardian
 role: safety
 title: Guardian
 status: idle

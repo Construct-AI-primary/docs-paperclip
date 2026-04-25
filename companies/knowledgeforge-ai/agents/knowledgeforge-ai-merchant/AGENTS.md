@@ -1,5 +1,7 @@
 ---
-name: Merchant
+name: 
+human_name: Merchant
+Merchant
 role: commercial
 title: Merchant
 status: idle

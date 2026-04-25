@@ -1,5 +1,7 @@
 ---
-name: refactor-Refactoring-specialist
+name: 
+human_name: Refactor
+refactor-Refactoring-specialist
 slug: refactor-Refactoring-specialist
 reportsTo: governor-qualityforge-quality-director
 skills:

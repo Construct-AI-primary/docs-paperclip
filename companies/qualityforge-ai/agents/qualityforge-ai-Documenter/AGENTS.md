@@ -1,5 +1,7 @@
 ---
-name: documenter-qualityforge-documentation-specialist
+name: 
+human_name: Documenter
+documenter-qualityforge-documentation-specialist
 slug: documenter-qualityforge-documentation-specialist
 reportsTo: governor-qualityforge-quality-director
 skills:

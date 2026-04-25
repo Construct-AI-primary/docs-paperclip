@@ -1,5 +1,7 @@
 ---
-name: codesmith-devforge-backend-engineer
+name: 
+human_name: Codesmith
+codesmith-devforge-backend-engineer
 slug: codesmith-devforge-backend-engineer
 reportsTo: forge-devforge-system-architecture
 skills:

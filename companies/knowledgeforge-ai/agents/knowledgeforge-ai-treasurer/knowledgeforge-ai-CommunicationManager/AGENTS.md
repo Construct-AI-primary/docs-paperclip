@@ -1,5 +1,7 @@
 ---
-name: Communication Manager
+name: 
+human_name: Communication Manager
+Communication Manager
 role: communication management
 title: Communication Manager
 status: idle

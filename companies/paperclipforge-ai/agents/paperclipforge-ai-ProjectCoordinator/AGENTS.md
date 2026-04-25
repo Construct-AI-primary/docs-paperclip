@@ -1,5 +1,7 @@
 ---
-name: project-coordinator
+name: 
+human_name: Project Coordinator
+project-coordinator
 description: >
   Project Lifecycle Management specialist. Manages project planning, execution,
   monitoring, and delivery coordination across the Paperclip ecosystem.

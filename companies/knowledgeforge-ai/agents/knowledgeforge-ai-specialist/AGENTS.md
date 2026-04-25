@@ -1,5 +1,7 @@
 ---
-name: Specialist
+name: 
+human_name: Specialist
+Specialist
 role: local-content
 title: Specialist
 status: idle

@@ -1,5 +1,7 @@
 ---
-name: Optimizer
+name: 
+human_name: Optimizer
+Optimizer
 role: process-engineer
 title: Optimizer
 status: idle

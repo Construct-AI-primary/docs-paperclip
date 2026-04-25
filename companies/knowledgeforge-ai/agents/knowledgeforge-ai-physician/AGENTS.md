@@ -1,5 +1,7 @@
 ---
-name: Physician
+name: 
+human_name: Physician
+Physician
 role: health
 title: Physician
 status: idle

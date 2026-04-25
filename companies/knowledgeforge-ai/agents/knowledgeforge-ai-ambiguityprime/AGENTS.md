@@ -1,5 +1,7 @@
 ---
-name: AmbiguityPrime
+name: 
+human_name: Ambiguityprime
+AmbiguityPrime
 role: ceo
 title: Chief Executive Officer
 status: idle

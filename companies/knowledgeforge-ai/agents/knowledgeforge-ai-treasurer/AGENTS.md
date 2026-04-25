@@ -1,5 +1,7 @@
 ---
-name: Treasurer
+name: 
+human_name: Treasurer
+Treasurer
 role: finance
 title: Treasurer
 status: idle

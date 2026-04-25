@@ -1,5 +1,7 @@
 ---
-name: navigator-devforge-data-discovery
+name: 
+human_name: Navigator
+navigator-devforge-data-discovery
 slug: navigator-devforge-data-discovery
 reportsTo: n/a
 skills:

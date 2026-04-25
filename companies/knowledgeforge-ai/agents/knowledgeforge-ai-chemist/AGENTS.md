@@ -1,5 +1,7 @@
 ---
-name: Chemist
+name: 
+human_name: Chemist
+Chemist
 role: chemical-engineer
 title: Chemist
 status: idle

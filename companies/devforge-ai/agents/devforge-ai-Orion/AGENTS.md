@@ -1,5 +1,7 @@
 ---
-name: orion-devforge-orchestrator
+name: 
+human_name: Orion
+orion-devforge-orchestrator
 slug: orion-devforge-orchestrator
 reportsTo: council-devforge-strategic-decision-making
 skills:

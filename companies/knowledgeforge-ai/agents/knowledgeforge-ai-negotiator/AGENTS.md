@@ -1,5 +1,7 @@
 ---
-name: Negotiator
+name: 
+human_name: Negotiator
+Negotiator
 role: contracts
 title: Negotiator
 status: idle

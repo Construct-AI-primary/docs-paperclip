@@ -1,5 +1,7 @@
 ---
-name: harmonic-promptforge-orchestration-strategy
+name: 
+human_name: Harmonic
+harmonic-promptforge-orchestration-strategy
 slug: harmonic-promptforge-orchestration-strategy
 reportsTo: sage-promptforge-chief-architect
 skills:

@@ -1,5 +1,7 @@
 ---
-name: watchtower-devforge-security-oversight
+name: 
+human_name: Watchtower
+watchtower-devforge-security-oversight
 slug: watchtower-devforge-security-oversight
 reportsTo: guardian-devforge-threat-protection
 skills:

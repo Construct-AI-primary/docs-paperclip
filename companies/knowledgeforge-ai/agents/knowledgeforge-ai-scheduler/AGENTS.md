@@ -1,5 +1,7 @@
 ---
-name: Scheduler
+name: 
+human_name: Scheduler
+Scheduler
 role: scheduling
 title: Scheduler
 status: idle

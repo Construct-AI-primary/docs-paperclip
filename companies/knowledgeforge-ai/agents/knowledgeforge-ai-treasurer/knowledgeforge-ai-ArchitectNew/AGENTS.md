@@ -1,5 +1,7 @@
 ---
-name: Architect
+name: 
+human_name: Architect New
+Architect
 reportsTo: knowledgeforge-coordinator-guardian
 role: architectural
 title: 

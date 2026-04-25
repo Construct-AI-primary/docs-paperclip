@@ -1,5 +1,7 @@
 ---
-name: mobile-patterns-agent
+name: 
+human_name: Mobile Patterns Agent
+mobile-patterns-agent
 description: >
   Mobile Patterns Agent - Specialized research on construction industry mobile UX patterns,
   glove-friendly interfaces, and outdoor optimization for field operations

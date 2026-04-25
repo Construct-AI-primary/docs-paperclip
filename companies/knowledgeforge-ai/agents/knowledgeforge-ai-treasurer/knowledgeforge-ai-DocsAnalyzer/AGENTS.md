@@ -1,5 +1,7 @@
 ---
-name: Docs Analyzer 
+name: 
+human_name: Docs Analyzer
+Docs Analyzer 
 role: doc-analyzer
 title: Document Analysis & Knowledge Extraction Specialist
 status: active

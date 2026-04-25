@@ -1,5 +1,7 @@
 ---
-name: Ethicist
+name: 
+human_name: Ethicist
+Ethicist
 role: ethics
 title: Ethicist
 status: idle

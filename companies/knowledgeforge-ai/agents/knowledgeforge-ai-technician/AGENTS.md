@@ -1,5 +1,7 @@
 ---
-name: Technician
+name: 
+human_name: Technician
+Technician
 role: information-technology
 title: Technician
 status: idle

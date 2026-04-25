@@ -1,5 +1,7 @@
 ---
-name: knowledge-integrator
+name: 
+human_name: Knowledge Integrator
+knowledge-integrator
 description: >
   Knowledge Integration specialist. Manages knowledge integration, cross-system
   knowledge sharing, and unified knowledge repositories across the Paperclip ecosystem.

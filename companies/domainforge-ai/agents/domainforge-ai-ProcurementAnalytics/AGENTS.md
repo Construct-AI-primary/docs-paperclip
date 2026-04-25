@@ -1,5 +1,7 @@
 ---
-name: procurement-analytics-domainforge-procurement-analytics
+name: 
+human_name: Procurement Analytics
+procurement-analytics-domainforge-procurement-analytics
 slug: procurement-analytics-domainforge-procurement-analytics
 reportsTo: orion-domainforge-ceo
 skills:

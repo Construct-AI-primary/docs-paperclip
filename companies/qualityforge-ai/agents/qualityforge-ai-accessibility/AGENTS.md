@@ -1,5 +1,7 @@
 ---
-name: accessibility-Accessibility-testing
+name: 
+human_name: Accessibility
+accessibility-Accessibility-testing
 slug: accessibility-Accessibility-testing
 reportsTo: governor-qualityforge-quality-director
 skills:

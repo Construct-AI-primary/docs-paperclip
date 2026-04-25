@@ -1,5 +1,7 @@
 ---
-name: Director Project
+name: 
+human_name: Director Project
+Director Project
 reportsTo: knowledgeforge-coordinator-guardian
 role: director-project
 title: 

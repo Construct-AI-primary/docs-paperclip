@@ -1,5 +1,7 @@
 ---
-name: Investigator
+name: 
+human_name: Investigator New
+Investigator
 reportsTo: knowledgeforge-coordinator-guardian
 role: failure-learner
 title: 

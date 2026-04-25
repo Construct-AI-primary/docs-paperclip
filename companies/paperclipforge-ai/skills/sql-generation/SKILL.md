@@ -27,6 +27,34 @@ Route to this skill when:
 - **Schema Documentation**: `/docs-paperclip/schema/` for all table and column references
 - **Database Backup Procedures**: `/docs-paperclip/procedures/database/database-backup-recovery-procedure.md`
 
+## SQL Templates (Required for Agent Operations)
+
+**For agent-related SQL, use pre-validated templates from `docs-paperclip/schema/templates/`:**
+
+| Template | Purpose | When to Use |
+|---------|--------|-------------|
+| `CHECK-column-existence.sql` | Schema validation | **Run FIRST** before any SQL |
+| `VALIDATE-agent-exists.sql` | Agent verification | Before UPDATE/DELETE |
+| `REGISTER-agent.sql` | Create new agents | Agent registration |
+| `UPDATE-agent-title.sql` | Fix human names | Name corrections |
+| `ADD-agent-api-keys.sql` | Add API keys | Key management |
+| `DELETE-agent.sql` | Safe deletion | Agent removal |
+
+**⚠️ CRITICAL SCHEMA WARNING**:
+The `agents` table has TWO name fields:
+- `name` = agent identifier (e.g., "infraforge-ai-supabase-specialist")
+- `title` = human-readable name (e.g., "Supabase DB Specialist")
+
+**Never use `slug`** - this column does NOT exist in the schema!
+
+```sql
+-- ✅ CORRECT:
+UPDATE agents SET title = 'New Name' WHERE name = 'infraforge-ai-agent';
+
+-- ❌ WRONG:
+UPDATE agents SET slug = 'New Name' WHERE ...  -- 'slug' does NOT exist!
+```
+
 ## Compliance Requirements
 
 ### Pre-Generation Checklist
@@ -49,6 +77,47 @@ Route to this skill when:
 - [ ] Logic testing performed on development environment
 - [ ] Performance implications assessed
 - [ ] Rollback procedures documented
+
+### Error Logging for LearningForge Integration
+
+**IMPORTANT**: All SQL generation errors MUST be logged to activity_log for LearningForge AI error pattern monitoring.
+
+When any of these errors occur, log to activity_log with proper error categorization:
+
+```sql
+-- Log SQL generation errors
+INSERT INTO activity_log (
+  id, company_id, actor_type, actor_id, action, entity_type, entity_id, details, created_at
+) VALUES (
+  gen_random_uuid(),
+  (SELECT id FROM companies WHERE name = 'PaperclipForge AI'),
+  'agent',
+  'paperclipforge-ai-sql-generation',
+  'error',
+  'agent',
+  NULL,
+  '{
+    "error_type": "sql_column_mismatch",
+    "error_message": "Column X does not exist",
+    "context": "SQL generation for [operation]",
+    "remediation": "Use CHECK-column-existence.sql template"
+  }'::jsonb,
+  NOW()
+);
+```
+
+### Error Categories for Logging
+
+| Error Type | details->>'error_type' | Threshold |
+|------------|------------------------|-----------|
+| Column name mismatch | `sql_column_mismatch` | 3+ |
+| FK constraint violation | `fk_violation` | 2+ |
+| Naming violation | `naming_violation` | 5+ |
+| Template bypass | `workflow_bypass` | 2+ |
+
+### Integration with LearningForge AI
+
+The `learningforge-ai-error-pattern-monitor` agent monitors activity_log for these error patterns and creates alerts when thresholds are exceeded.
 
 ## Capabilities
 

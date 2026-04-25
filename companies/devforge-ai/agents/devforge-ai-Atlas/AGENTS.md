@@ -1,5 +1,7 @@
 ---
-name: atlas-devforge-product-mapping
+name: 
+human_name: Atlas
+atlas-devforge-product-mapping
 slug: atlas-devforge-product-mapping
 reportsTo: catalyst-devforge-product-innovation
 skills:

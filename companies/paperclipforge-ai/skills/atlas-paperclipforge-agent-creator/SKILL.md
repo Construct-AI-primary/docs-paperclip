@@ -49,12 +49,31 @@ Route to this skill when:
 
 ## Examples
 
-### Agent Creation Workflow
+## SQL Templates
+
+**Use pre-validated templates from `docs-paperclip/schema/templates/`:**
+
+| Operation | Template |
+|-----------|---------|
+| Create agent | `REGISTER-agent.sql` |
+| Add API key | `ADD-agent-api-keys.sql` |
+| Delete agent | `DELETE-agent.sql` |
+| Validate schema | `CHECK-column-existence.sql` |
+
+**⚠️ CRITICAL**: The `agents` table has TWO name fields:
+- `name` = agent identifier (e.g., "infraforge-ai-supabase-specialist")
+- `title` = human-readable name (e.g., "Supabase DB Specialist")
+
+**Never use `slug`** - this column does NOT exist in the schema.
+
+### Agent Creation Workflow (Template-Derived)
 ```sql
--- Complete agent creation with all metadata
+-- Use REGISTER-agent.sql template from docs-paperclip/schema/templates/
+BEGIN;
+
 INSERT INTO agents (
   id, company_id, name, role, title, capabilities,
-  reports_to, status, metadata, permissions, created_at
+  reports_to, status, metadata, permissions, created_at, updated_at
 ) VALUES (
   gen_random_uuid(),
   (SELECT id FROM companies WHERE name = 'InfraForge AI'),
@@ -66,8 +85,11 @@ INSERT INTO agents (
   'active',
   '{"team": "infrastructure", "specialization": "Supabase Database Operations"}'::jsonb,
   '{"can_access_supabase": true, "database_admin": true}'::jsonb,
+  NOW(),
   NOW()
 );
+
+COMMIT;
 ```
 
 ### Skill Definition Process

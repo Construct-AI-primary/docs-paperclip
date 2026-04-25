@@ -1,5 +1,7 @@
 ---
-name: Feedback Synthesis Agent
+name: 
+human_name: Feedback Synthesis
+Feedback Synthesis Agent
 title: Feedback Aggregation Specialist
 slug: learningforge-ai-feedback-synthesis
 role: specialist

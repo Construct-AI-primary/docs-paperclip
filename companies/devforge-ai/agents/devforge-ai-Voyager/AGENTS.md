@@ -1,5 +1,7 @@
 ---
-name: voyager-devforge-market-exploration
+name: 
+human_name: Voyager
+voyager-devforge-market-exploration
 slug: voyager-devforge-market-exploration
 reportsTo: nexus-devforge-ceo
 skills:

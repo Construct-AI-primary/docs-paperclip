@@ -1,5 +1,7 @@
 ---
-name: Developer
+name: 
+human_name: Developer
+Developer
 role: developer
 title: Developer
 status: idle

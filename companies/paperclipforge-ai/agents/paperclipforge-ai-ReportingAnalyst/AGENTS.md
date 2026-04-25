@@ -1,5 +1,7 @@
 ---
-name: reporting-analyst
+name: 
+human_name: Reporting Analyst
+reporting-analyst
 description: >
   Analytics & Reporting specialist. Provides comprehensive analytics, reporting,
   and business intelligence insights across the Paperclip ecosystem operations.

@@ -1,5 +1,7 @@
 ---
-name: schema-devforge-data-schema-management
+name: 
+human_name: Schema
+schema-devforge-data-schema-management
 slug: schema-devforge-data-schema-management
 reportsTo: dataforge-devforge-data-transformation
 skills:

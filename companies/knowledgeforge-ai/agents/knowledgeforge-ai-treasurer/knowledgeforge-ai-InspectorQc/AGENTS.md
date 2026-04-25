@@ -1,5 +1,7 @@
 ---
-name: Inspector QC
+name: 
+human_name: Inspector Qc
+Inspector QC
 reportsTo: knowledgeforge-coordinator-guardian
 role: quality-control
 title: 

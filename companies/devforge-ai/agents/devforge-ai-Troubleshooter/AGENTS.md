@@ -1,5 +1,7 @@
 ---
-name: fixer-devforge-bug-fixing
+name: 
+human_name: Troubleshooter
+fixer-devforge-bug-fixing
 slug: fixer-devforge-bug-fixing
 reportsTo: forge-devforge-system-architecture
 skills:

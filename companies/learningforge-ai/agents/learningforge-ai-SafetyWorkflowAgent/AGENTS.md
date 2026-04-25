@@ -1,5 +1,7 @@
 ---
-name: Safety Workflow Agent
+name: 
+human_name: Safety Workflow Agent
+Safety Workflow Agent
 title: Safety Management Learning Specialist
 slug: learningforge-ai-safety-workflow-agent
 role: specialist

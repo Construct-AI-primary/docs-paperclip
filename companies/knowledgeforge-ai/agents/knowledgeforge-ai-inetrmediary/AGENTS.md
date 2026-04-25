@@ -1,5 +1,7 @@
 ---
-name: Inetrmediary
+name: 
+human_name: Inetrmediary
+Inetrmediary
 role: cross-discipline-guardian
 title: Inetrmediary
 status: idle

@@ -1,5 +1,7 @@
 ---
-name: synth-Synthetic-data
+name: 
+human_name: Synth
+synth-Synthetic-data
 slug: synth-Synthetic-data
 reportsTo: dataforge-devforge-data-transformation
 skills:

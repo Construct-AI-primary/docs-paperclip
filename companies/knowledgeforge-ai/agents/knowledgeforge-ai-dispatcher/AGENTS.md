@@ -1,5 +1,7 @@
 ---
-name: Dispatcher
+name: 
+human_name: Dispatcher
+Dispatcher
 role: logistics
 title: Dispatcher
 status: idle

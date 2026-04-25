@@ -1,5 +1,7 @@
 ---
-name: predictor-promptforge-outcome-prediction
+name: 
+human_name: Predictor
+predictor-promptforge-outcome-prediction
 slug: predictor-promptforge-outcome-prediction
 reportsTo: sage-promptforge-chief-architect
 skills:

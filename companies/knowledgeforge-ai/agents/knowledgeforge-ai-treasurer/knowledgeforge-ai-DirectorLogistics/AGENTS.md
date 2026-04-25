@@ -1,5 +1,7 @@
 ---
-name: Director Logistics
+name: 
+human_name: Director Logistics
+Director Logistics
 reportsTo: knowledgeforge-coordinator-guardian
 role: logistics-director
 title: 

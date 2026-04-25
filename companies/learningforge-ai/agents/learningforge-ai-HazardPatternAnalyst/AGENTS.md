@@ -1,5 +1,7 @@
 ---
-name: Hazard Pattern Analyst
+name: 
+human_name: Hazard Pattern Analyst
+Hazard Pattern Analyst
 title: Safety Pattern Recognition Specialist
 slug: learningforge-ai-hazard-pattern-analyst
 role: specialist

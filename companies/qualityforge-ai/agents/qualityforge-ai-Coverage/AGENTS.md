@@ -1,5 +1,7 @@
 ---
-name: coverage-qualityforge-test-coverage-analyst
+name: 
+human_name: Coverage
+coverage-qualityforge-test-coverage-analyst
 slug: coverage-qualityforge-test-coverage-analyst
 reportsTo: governor-qualityforge-quality-director
 skills:

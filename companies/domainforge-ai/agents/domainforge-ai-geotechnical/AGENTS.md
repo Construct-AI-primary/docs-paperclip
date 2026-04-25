@@ -1,5 +1,7 @@
 ---
-name: geotechnical-domainforge-geotechnical-engineering
+name: 
+human_name: geotechnical
+geotechnical-domainforge-geotechnical-engineering
 slug: geotechnical-domainforge-geotechnical-engineering
 reportsTo: orion-domainforge-ceo
 skills:

@@ -1,5 +1,7 @@
 ---
-name: Leader
+name: 
+human_name: Leader
+Leader
 role: sector-qa-lead
 title: Leader
 status: idle

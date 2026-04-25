@@ -1,5 +1,7 @@
 ---
-name: pathfinder-devforge-opportunity-identification
+name: 
+human_name: Pathfinder
+pathfinder-devforge-opportunity-identification
 slug: pathfinder-devforge-opportunity-identification
 reportsTo: strategos-devforge-strategic-planning
 skills:

@@ -1,5 +1,7 @@
 ---
-name: VFS Watcher Agent
+name: 
+human_name: Vfs Watcher
+VFS Watcher Agent
 title: Virtual File System Change Monitor
 slug: learningforge-ai-vfs-watcher
 role: specialist

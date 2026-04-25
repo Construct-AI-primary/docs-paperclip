@@ -1,5 +1,7 @@
 ---
-name: Goal Alignment & Budget Agent
+name: 
+human_name: Goal Alignment Budget
+Goal Alignment & Budget Agent
 title: Strategic Alignment & Resource Governance
 slug: learningforge-ai-goal-alignment-budget
 role: specialist

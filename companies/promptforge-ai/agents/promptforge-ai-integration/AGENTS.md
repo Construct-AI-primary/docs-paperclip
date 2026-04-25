@@ -1,5 +1,7 @@
 ---
-name: integration-promptforge-cross-agent-compatibility
+name: 
+human_name: Integration
+integration-promptforge-cross-agent-compatibility
 slug: integration-promptforge-cross-agent-compatibility
 reportsTo: sage-promptforge-chief-architect
 skills:

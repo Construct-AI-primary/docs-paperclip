@@ -1,5 +1,7 @@
 ---
-name: Learning Strategy Agent
+name: 
+human_name: Ceo
+Learning Strategy Agent
 title: Chief Learning Officer (CEO)
 slug: learningforge-ai-ceo
 role: executive

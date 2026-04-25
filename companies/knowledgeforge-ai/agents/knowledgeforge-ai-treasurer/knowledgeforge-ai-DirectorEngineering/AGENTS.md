@@ -1,5 +1,7 @@
 ---
-name: Director Engineering
+name: 
+human_name: Director Engineering
+Director Engineering
 reportsTo: knowledgeforge-coordinator-guardian
 role: engineering-director
 title: 

@@ -1,5 +1,7 @@
 ---
-name: dbat-testing-qualityforge
+name: 
+human_name: Dbat Testing
+dbat-testing-qualityforge
 slug: dbat-testing-qualityforge
 reportsTo: governor-qualityforge-quality-director
 skills:

@@ -1,5 +1,7 @@
 ---
-name: experimenter-promptforge-hypothesis-testing
+name: 
+human_name: Experimenter
+experimenter-promptforge-hypothesis-testing
 slug: experimenter-promptforge-hypothesis-testing
 reportsTo: sage-promptforge-chief-architect
 skills:

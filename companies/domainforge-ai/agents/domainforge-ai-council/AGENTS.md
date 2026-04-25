@@ -1,5 +1,7 @@
 ---
-name: council-domainforge-governance-standards
+name: 
+human_name: council
+council-domainforge-governance-standards
 slug: council-domainforge-governance-standards
 reportsTo: orion-domainforge-ceo
 skills:

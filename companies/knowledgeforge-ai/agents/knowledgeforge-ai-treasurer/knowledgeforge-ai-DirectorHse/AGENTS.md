@@ -1,5 +1,7 @@
 ---
-name: Director HSE
+name: 
+human_name: Director Hse
+Director HSE
 role: hse-director
 title: Director HSE
 status: idle

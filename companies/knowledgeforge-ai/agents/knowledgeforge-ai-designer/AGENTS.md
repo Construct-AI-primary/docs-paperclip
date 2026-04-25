@@ -1,5 +1,7 @@
 ---
-name: Designer
+name: 
+human_name: Designer
+Designer
 role: design
 title: Designer
 status: idle

@@ -1,5 +1,7 @@
 ---
-name: Landscaper
+name: 
+human_name: Landscaper
+Landscaper
 role: landscaping
 title: Landscaper
 status: idle

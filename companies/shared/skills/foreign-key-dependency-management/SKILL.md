@@ -48,20 +48,19 @@ Based on `packages/db/src/schema/index.ts`:
 
 **Critical**: Always delete from highest level (children) to lowest level (parents).
 
-#### Agent Deletion Order (12 steps)
+#### Agent Deletion Order (10 steps)
 
 1. `heartbeat_run_events` → `run_id → heartbeat_runs.id` (chained)
 2. `heartbeat_runs` → `agent_id → agents.id`
-3. `execution_workspaces` → `agent_id → agents.id`
-4. `agent_task_sessions` → `agent_id → agents.id`
-5. `agent_runtime_state` → `agent_id → agents.id`
-6. `agent_wakeup_requests` → `agent_id → agents.id`
-7. `agent_config_revisions` → `agent_id → agents.id`, `created_by_agent_id → agents.id`
-8. `agent_api_keys` → `agent_id → agents.id`
-9. `issues.assignee_id` → SET NULL (nullable FK)
-10. `agents.reports_to` → SET NULL (nullable FK, self-ref)
-11. `activity_log.actor_id` → SET NULL (nullable FK)
-12. `agents` → `company_id → companies.id`
+3. `agent_task_sessions` → `agent_id → agents.id`
+4. `agent_runtime_state` → `agent_id → agents.id`
+5. `agent_wakeup_requests` → `agent_id → agents.id`
+6. `agent_config_revisions` → `agent_id → agents.id`, `created_by_agent_id → agents.id`
+7. `agent_api_keys` → `agent_id → agents.id`
+8. `agents.reports_to` → SET NULL (nullable FK, self-ref) - if column exists
+9. `agents` → `company_id → companies.id`
+
+**NOTE**: `issues.assignee_id` and `activity_log.actor_id` may NOT exist in production schema. Always wrap in DO $$ block for safety.
 
 ### Type Casting Requirement
 
@@ -96,34 +95,32 @@ WHERE run_id IN (
 -- 2. Delete heartbeat runs
 DELETE FROM heartbeat_runs WHERE agent_id::TEXT IN (SELECT id FROM to_delete);
 
--- 3. Delete execution workspaces
-DELETE FROM execution_workspaces WHERE agent_id::TEXT IN (SELECT id FROM to_delete);
-
--- 4. Delete agent task sessions
+-- 3. Delete agent task sessions
 DELETE FROM agent_task_sessions WHERE agent_id::TEXT IN (SELECT id FROM to_delete);
 
--- 5. Delete agent runtime state
+-- 4. Delete agent runtime state
 DELETE FROM agent_runtime_state WHERE agent_id::TEXT IN (SELECT id FROM to_delete);
 
--- 6. Delete agent wakeup requests
+-- 5. Delete agent wakeup requests
 DELETE FROM agent_wakeup_requests WHERE agent_id::TEXT IN (SELECT id FROM to_delete);
 
--- 7. Delete agent config revisions (both FKs)
+-- 6. Delete agent config revisions (both FKs)
 DELETE FROM agent_config_revisions 
 WHERE agent_id::TEXT IN (SELECT id FROM to_delete)
    OR created_by_agent_id::TEXT IN (SELECT id FROM to_delete);
 
--- 8. Delete agent API keys
+-- 7. Delete agent API keys
 DELETE FROM agent_api_keys WHERE agent_id::TEXT IN (SELECT id FROM to_delete);
 
--- 9. Clear nullable FKs (set to NULL before deleting parent)
-UPDATE issues SET assignee_id = NULL WHERE assignee_id::TEXT IN (SELECT id FROM to_delete);
-UPDATE agents SET reports_to = NULL WHERE reports_to::TEXT IN (SELECT id FROM to_delete);
+-- 8. Clear self-referential nullable FK (agents.reports_to)
+-- NOTE: issues.assignee_id and activity_log.actor_id may NOT exist - use safe DO block
+DO $$ BEGIN
+    UPDATE agents SET reports_to = NULL WHERE reports_to::TEXT IN (SELECT id FROM to_delete);
+EXCEPTION WHEN undefined_column THEN
+    RAISE NOTICE 'Column reports_to does not exist, skipping';
+END $$;
 
--- 10. Delete activity log entries
-DELETE FROM activity_log WHERE actor_id::TEXT IN (SELECT id FROM to_delete);
-
--- 11. Delete the agents
+-- 9. Delete the agents
 DELETE FROM agents WHERE id::TEXT IN (SELECT id FROM to_delete);
 
 -- Cleanup

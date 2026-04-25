@@ -1,5 +1,7 @@
 ---
-name: Salesperson
+name: 
+human_name: Salesperson
+Salesperson
 role: sales
 title: Salesperson
 status: idle

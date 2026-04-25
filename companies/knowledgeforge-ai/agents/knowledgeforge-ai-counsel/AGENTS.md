@@ -1,5 +1,7 @@
 ---
-name: Counsel
+name: 
+human_name: Counsel
+Counsel
 role: legal
 title: Counsel
 status: idle

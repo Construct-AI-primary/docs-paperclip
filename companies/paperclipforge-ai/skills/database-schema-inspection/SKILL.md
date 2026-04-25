@@ -49,6 +49,21 @@ Route to this skill when:
 - **Transaction Safety**: Generate transaction-safe SQL operations
 - **Error Handling**: Include proper error handling for database operations
 
+## Template Reference
+
+For SQL generation tasks, use validated templates from `docs-paperclip/schema/templates/`:
+
+| Template | Purpose |
+|---------|---------|
+| `CHECK-column-existence.sql` | **Use this first** - validates table columns |
+| `VALIDATE-agent-exists.sql` | Verify agents before modification |
+| `REGISTER-agent.sql` | Create new agents |
+| `UPDATE-agent-title.sql` | Fix agent human names |
+| `ADD-agent-api-keys.sql` | Add API keys |
+| `DELETE-agent.sql` | Safe deletion with FK cascade |
+
+**⚠️ CRITICAL**: Always run `CHECK-column-existence.sql` before generating SQL to verify columns exist.
+
 ## Related Skills
 
 - `agent-creation-management` - Agent creation with database integration

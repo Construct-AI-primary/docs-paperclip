@@ -1,5 +1,7 @@
 ---
-name: Contracts Agent
+name: 
+human_name: Contracts Agent
+Contracts Agent
 title: Construction Contracts Learning Specialist
 slug: learningforge-ai-contracts-agent
 role: specialist

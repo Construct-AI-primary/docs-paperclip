@@ -1,5 +1,7 @@
 ---
-name: Logistics Agent
+name: 
+human_name: Logistics Agent
+Logistics Agent
 title: Logistics & Operations Learning Specialist
 slug: learningforge-ai-logistics-agent
 role: specialist

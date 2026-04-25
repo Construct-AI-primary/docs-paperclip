@@ -1,5 +1,7 @@
 ---
-name: Director Procurement
+name: 
+human_name: Director Procurement
+Director Procurement
 role: procurement-director
 title: Director Procurement
 status: idle

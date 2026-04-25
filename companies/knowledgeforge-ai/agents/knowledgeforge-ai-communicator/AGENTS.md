@@ -1,5 +1,7 @@
 ---
-name: Communicator
+name: 
+human_name: Communicator
+Communicator
 role: public-relations
 title: Communicator
 status: idle

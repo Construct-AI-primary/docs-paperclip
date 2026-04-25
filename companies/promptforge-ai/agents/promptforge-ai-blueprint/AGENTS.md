@@ -1,5 +1,7 @@
 ---
-name: blueprint-promptforge-template-designer
+name: 
+human_name: Blueprint
+blueprint-promptforge-template-designer
 slug: blueprint-promptforge-template-designer
 reportsTo: sage-promptforge-chief-architect
 skills:

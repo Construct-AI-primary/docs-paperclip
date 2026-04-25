@@ -1,5 +1,7 @@
 ---
-name: Inspector
+name: 
+human_name: Inspector
+Inspector
 role: inspection
 title: Inspector
 status: idle

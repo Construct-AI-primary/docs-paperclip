@@ -1,5 +1,7 @@
 ---
-name: trainer-qualityforge-quality-trainer
+name: 
+human_name: Trainer
+trainer-qualityforge-quality-trainer
 slug: trainer-qualityforge-quality-trainer
 reportsTo: governor-qualityforge-quality-director
 skills:

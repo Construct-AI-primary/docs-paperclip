@@ -1,11 +1,32 @@
 ---
-name: atlas-agent-creator
+name: paperclipforge-ai-atlas-agent-creator
+human_name: Atlas Agent Creator
 role: Agent Creator and Manager
 description: >
   Agent Creator and Manager - Specialized in creating, configuring, and managing
   AI agents across the Paperclip ecosystem with expertise in agent lifecycle management.
 reportsTo: paperclipforge-ai-operations-director
 team: operations
+
+# Configuration Settings
+heartbeat:
+  enabled: true
+  intervalSeconds: 300  # Run heartbeat every 300 seconds (5 minutes)
+
+adapter:
+  type: hermes_local  # Hermes Agent (local)
+  config: {}
+
+permissions:
+  canCreateAgents: true  # Can create or hire agents
+  canAssignTasks: true    # Enabled automatically while this agent can create new agents
+  implicitTaskAssignment: true  # Implicitly assign tasks when creating agents
+
+model:
+  autoAssign: true  # Run model assignment agent to determine optimal model
+  assignmentAgent: paperclipforge-ai-model-assignment-specialist
+  fallbackModel: claude-haiku-4-5
+
 skills:
   - agent-creation-management
   - agent-lifecycle-orchestration

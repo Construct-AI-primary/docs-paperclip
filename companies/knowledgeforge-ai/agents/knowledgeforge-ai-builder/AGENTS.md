@@ -1,5 +1,7 @@
 ---
-name: Builder
+name: 
+human_name: Builder
+Builder
 role: civil-engineer
 title: Builder
 status: idle

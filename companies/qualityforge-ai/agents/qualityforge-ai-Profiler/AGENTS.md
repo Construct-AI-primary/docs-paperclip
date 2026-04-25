@@ -1,5 +1,7 @@
 ---
-name: profiler-Performance-profiler
+name: 
+human_name: Profiler
+profiler-Performance-profiler
 slug: profiler-Performance-profiler
 reportsTo: governor-qualityforge-quality-director
 skills:

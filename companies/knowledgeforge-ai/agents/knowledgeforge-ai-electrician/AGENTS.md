@@ -1,5 +1,7 @@
 ---
-name: Electrician
+name: 
+human_name: Electrician
+Electrician
 role: electrical-engineer
 title: Electrician
 status: idle

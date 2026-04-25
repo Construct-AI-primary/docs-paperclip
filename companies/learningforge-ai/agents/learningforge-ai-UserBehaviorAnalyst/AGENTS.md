@@ -1,5 +1,7 @@
 ---
-name: User Behavior Analyst
+name: 
+human_name: User Behavior Analyst
+User Behavior Analyst
 title: Learning Gap Detection Specialist
 slug: learningforge-ai-user-behavior-analyst
 role: specialist

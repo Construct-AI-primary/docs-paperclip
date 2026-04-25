@@ -1,5 +1,7 @@
 ---
-name: archivist-devforge-knowledge-security
+name: 
+human_name: Archivist
+archivist-devforge-knowledge-security
 slug: archivist-devforge-knowledge-security
 reportsTo: guardian-devforge-threat-protection
 skills:

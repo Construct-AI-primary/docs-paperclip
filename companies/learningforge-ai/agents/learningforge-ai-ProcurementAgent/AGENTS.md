@@ -1,5 +1,7 @@
 ---
-name: Procurement Agent
+name: 
+human_name: Procurement Agent
+Procurement Agent
 title: Procurement & Supply Chain Learning Specialist
 slug: learningforge-ai-procurement-agent
 role: specialist

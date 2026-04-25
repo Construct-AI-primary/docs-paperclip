@@ -1,5 +1,7 @@
 ---
-name: Examiner
+name: 
+human_name: Examiner
+Examiner
 role: quality-assurance
 title: Examiner
 status: idle

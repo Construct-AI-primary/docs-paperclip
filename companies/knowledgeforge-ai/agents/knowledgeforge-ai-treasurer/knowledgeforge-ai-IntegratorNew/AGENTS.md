@@ -1,5 +1,7 @@
 ---
-name: Integrator
+name: 
+human_name: Integrator New
+Integrator
 reportsTo: knowledgeforge-coordinator-guardian
 role: clinet-integrator
 title: 

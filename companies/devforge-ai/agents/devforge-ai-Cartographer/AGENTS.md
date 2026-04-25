@@ -1,5 +1,7 @@
 ---
-name: cartographer-devforge-product-roadmapping
+name: 
+human_name: Cartographer
+cartographer-devforge-product-roadmapping
 slug: cartographer-devforge-product-roadmapping
 reportsTo: catalyst-devforge-product-innovation
 skills:

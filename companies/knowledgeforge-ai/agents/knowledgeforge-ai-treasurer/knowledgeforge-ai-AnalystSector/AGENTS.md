@@ -1,5 +1,7 @@
 ---
-name: Analyst Sector
+name: 
+human_name: Analyst Sector
+Analyst Sector
 role: sector-analyst
 title: Analyst Sector
 status: idle

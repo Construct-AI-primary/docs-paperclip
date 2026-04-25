@@ -1,5 +1,7 @@
 ---
-name: Co-ordinator
+name: 
+human_name: Co Ordinator
+Co-ordinator
 reportsTo: knowledgeforge-coordinator-guardian
 role: other-parties
 title: 

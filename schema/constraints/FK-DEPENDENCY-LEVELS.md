@@ -100,10 +100,8 @@ When deleting an agent, follow this order to avoid FK constraint violations:
 | 6 | `agent_wakeup_requests` | `agent_id → agents.id` |
 | 7 | `agent_config_revisions` | `agent_id → agents.id`, `created_by_agent_id → agents.id` |
 | 8 | `agent_api_keys` | `agent_id → agents.id` |
-| 9 | `issues.assignee_id` | SET NULL (nullable) |
-| 10 | `agents.reports_to` | SET NULL (nullable, self-ref) |
-| 11 | `activity_log.actor_id` | SET NULL (nullable) |
-| 12 | `agents` | `company_id → companies.id` |
+| 9 | `agents.reports_to` | SET NULL (nullable, self-ref) - if column exists |
+| 10 | `agents` | `company_id → companies.id` |
 
 ## SQL Deletion Template
 
@@ -124,34 +122,32 @@ WHERE run_id IN (
 -- 2. Delete heartbeat runs
 DELETE FROM heartbeat_runs WHERE agent_id::TEXT IN (SELECT id FROM to_delete);
 
--- 3. Delete execution workspaces
-DELETE FROM execution_workspaces WHERE agent_id::TEXT IN (SELECT id FROM to_delete);
-
--- 4. Delete agent task sessions
+-- 3. Delete agent task sessions
 DELETE FROM agent_task_sessions WHERE agent_id::TEXT IN (SELECT id FROM to_delete);
 
--- 5. Delete agent runtime state
+-- 4. Delete agent runtime state
 DELETE FROM agent_runtime_state WHERE agent_id::TEXT IN (SELECT id FROM to_delete);
 
--- 6. Delete agent wakeup requests
+-- 5. Delete agent wakeup requests
 DELETE FROM agent_wakeup_requests WHERE agent_id::TEXT IN (SELECT id FROM to_delete);
 
--- 7. Delete agent config revisions (both FKs)
+-- 6. Delete agent config revisions (both FKs)
 DELETE FROM agent_config_revisions 
 WHERE agent_id::TEXT IN (SELECT id FROM to_delete)
    OR created_by_agent_id::TEXT IN (SELECT id FROM to_delete);
 
--- 8. Delete agent API keys
+-- 7. Delete agent API keys
 DELETE FROM agent_api_keys WHERE agent_id::TEXT IN (SELECT id FROM to_delete);
 
--- 9. Clear nullable FKs (set to NULL before deleting parent)
-UPDATE issues SET assignee_id = NULL WHERE assignee_id::TEXT IN (SELECT id FROM to_delete);
-UPDATE agents SET reports_to = NULL WHERE reports_to::TEXT IN (SELECT id FROM to_delete);
+-- 8. Clear self-referential nullable FK (agents.reports_to)
+-- NOTE: issues.assignee_id and activity_log.actor_id may not exist - skip them
+DO $$ BEGIN
+    UPDATE agents SET reports_to = NULL WHERE reports_to::TEXT IN (SELECT id FROM to_delete);
+EXCEPTION WHEN undefined_column THEN
+    RAISE NOTICE 'Column reports_to does not exist, skipping';
+END $$;
 
--- 10. Delete activity log entries
-DELETE FROM activity_log WHERE actor_id::TEXT IN (SELECT id FROM to_delete);
-
--- 11. Delete the agents
+-- 9. Delete the agents
 DELETE FROM agents WHERE id::TEXT IN (SELECT id FROM to_delete);
 
 -- Cleanup
@@ -170,14 +166,23 @@ When inserting records, follow this reverse order:
 
 ## Type Casting Notes
 
-PostgreSQL does not allow direct comparison between UUID and VARCHAR types. When filtering across tables with mixed ID column types, always cast to TEXT:
+**Critical**: PostgreSQL does not allow direct comparison between UUID and TEXT/VARCHAR types. When filtering across tables with mixed ID column types, **always cast to TEXT**:
 
 ```sql
 -- Correct: Cast to TEXT for comparison
-WHERE agent_id::TEXT IN (SELECT id FROM to_delete)
+WHERE agent_id::TEXT IN (SELECT id::TEXT FROM agents)
 
--- Incorrect: Will cause "operator does not exist" error
-WHERE agent_id IN (SELECT id FROM to_delete)
+-- Incorrect: Will cause "operator does not exist: uuid = text" error
+WHERE agent_id IN (SELECT id FROM agents)
+
+-- Also incorrect: Even with subquery casting
+-- ERROR: operator does not exist: text = uuid
+WHERE actor_id IN (SELECT id FROM agents)  -- if actor_id is TEXT and agents.id is UUID
+```
+
+**Always cast BOTH sides of the comparison to TEXT:**
+```sql
+WHERE agent_id::TEXT IN (SELECT id::TEXT FROM agents)
 ```
 
 ## Cascade Delete Configuration

@@ -1,5 +1,7 @@
 ---
-name: Director Construction
+name: 
+human_name: Director Construction
+Director Construction
 role: construction-director
 title: Director Construction
 status: idle

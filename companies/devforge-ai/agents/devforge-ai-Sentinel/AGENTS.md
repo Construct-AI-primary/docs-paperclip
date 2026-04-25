@@ -1,5 +1,7 @@
 ---
-name: sentinel-devforge-data-quality-monitoring
+name: 
+human_name: Sentinel
+sentinel-devforge-data-quality-monitoring
 slug: sentinel-devforge-data-quality-monitoring
 reportsTo: dataforge-devforge-data-transformation
 skills:

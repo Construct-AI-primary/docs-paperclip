@@ -1,5 +1,7 @@
 ---
-name: Greeter
+name: 
+human_name: Greeter
+Greeter
 role: user-signup
 title: Greeter
 status: idle

@@ -1,5 +1,7 @@
 ---
-name: Development Manager
+name: 
+human_name: Development Manager
+Development Manager
 role: development management
 title: Development Manager
 status: idle

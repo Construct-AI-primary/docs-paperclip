@@ -1,5 +1,7 @@
 ---
-name: database-druid
+name: 
+human_name: Database Druid
+database-druid
 description: >
   Database Management and Optimization specialist. Expert in query optimization,
   database configuration, replication management, data integrity, and foreign key

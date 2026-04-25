@@ -1,5 +1,7 @@
 ---
-name: Governor
+name: 
+human_name: Governor
+Governor
 role: governance
 title: Governor
 status: idle

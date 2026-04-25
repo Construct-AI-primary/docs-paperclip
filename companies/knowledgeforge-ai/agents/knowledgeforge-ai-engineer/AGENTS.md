@@ -1,5 +1,7 @@
 ---
-name: Engineer
+name: 
+human_name: Engineer
+Engineer
 role: mechanical-engineer
 title: Engineer
 status: idle

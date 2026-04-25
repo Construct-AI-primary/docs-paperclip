@@ -1,5 +1,7 @@
 ---
-name: reporter-qualityforge-quality-reporter
+name: 
+human_name: Reporter
+reporter-qualityforge-quality-reporter
 slug: reporter-qualityforge-quality-reporter
 reportsTo: governor-qualityforge-quality-director
 skills:

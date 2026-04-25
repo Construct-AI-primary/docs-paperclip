@@ -1,5 +1,7 @@
 ---
-name: workflow-automator
+name: 
+human_name: Workflow Automator
+workflow-automator
 description: >
   Workflow Design & Automation specialist. Designs automated workflows,
   implements process automation, and optimizes workflow efficiency across the ecosystem.

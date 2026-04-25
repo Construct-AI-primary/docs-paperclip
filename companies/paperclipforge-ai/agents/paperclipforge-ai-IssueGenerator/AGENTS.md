@@ -1,5 +1,7 @@
 ---
-name: issue-generator
+name: 
+human_name: Issue Generator
+issue-generator
 description: >
   AI-Powered Issue Creation specialist. Uses AI to identify, analyze, and create
   structured issues from project requirements, problems, and improvement opportunities.

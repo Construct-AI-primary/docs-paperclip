@@ -1,5 +1,7 @@
 ---
-name: standards-Standards-enforcer
+name: 
+human_name: Standards
+standards-Standards-enforcer
 slug: standards-Standards-enforcer
 reportsTo: governor-qualityforge-quality-director
 skills:

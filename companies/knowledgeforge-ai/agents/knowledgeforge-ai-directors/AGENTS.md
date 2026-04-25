@@ -1,5 +1,7 @@
 ---
-name: Directors
+name: 
+human_name: Directors
+Directors
 role: directors
 title: Directors
 status: idle

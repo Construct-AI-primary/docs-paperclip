@@ -1,5 +1,7 @@
 ---
-name: Architect - refactor
+name: 
+human_name: Architect Refactor
+Architect - refactor
 role: arch-refactorer
 title: Architect - refactor
 status: idle

@@ -1,5 +1,7 @@
 ---
-name: api-manager
+name: 
+human_name: Api Manager
+api-manager
 description: >
   API Ecosystem Management specialist. Manages the API ecosystem, API design,
   documentation, versioning, and integration across the Paperclip platform.

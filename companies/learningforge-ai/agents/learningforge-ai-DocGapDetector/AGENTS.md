@@ -1,5 +1,7 @@
 ---
-name: Doc Gap Detector
+name: 
+human_name: Doc Gap Detector
+Doc Gap Detector
 title: Gap Identification Specialist
 slug: learningforge-ai-doc-gap-detector
 role: specialist

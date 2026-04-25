@@ -1,5 +1,7 @@
 ---
-name: nexus-devforge-ceo
+name: 
+human_name: Nexus
+nexus-devforge-ceo
 slug: nexus-devforge-ceo
 reportsTo: null
 skills:

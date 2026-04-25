@@ -1,5 +1,6 @@
 ---
-name: recon
+name: 
+human_name: Agent Reconciler
 slug: paperclipforge-ai-agent-reconciler
 role: Agent Reconciliation Specialist
 description: >
@@ -11,6 +12,7 @@ reportsTo: paperclipforge-ai-operations-director
 team: operations
 skills:
   - agent-reconciliation
+  - foreign-key-dependency-management
   - filesystem-database-audit
   - naming-convention-validation
   - funky-human-name-verification

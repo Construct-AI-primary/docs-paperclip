@@ -1,5 +1,7 @@
 ---
-name: safety-research-agent
+name: 
+human_name: Safety Research Agent
+safety-research-agent
 description: >
   Safety Research Agent - Specialized research on OSHA standards, HSE regulations,
   and construction safety compliance for the MOBILE-SAFETY-INSPECTION project

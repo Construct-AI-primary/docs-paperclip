@@ -1,5 +1,7 @@
 ---
-name: assignment-specialist
+name: 
+human_name: Assignment Specialist
+assignment-specialist
 description: >
   Intelligent Issue Routing specialist. Uses AI algorithms to match issues with
   optimal agents, considering skills, availability, workload, and project requirements.

@@ -1,5 +1,7 @@
 ---
-name: diagnostics-Diagnostics-specialist
+name: 
+human_name: Diagnostics
+diagnostics-Diagnostics-specialist
 slug: diagnostics-Diagnostics-specialist
 reportsTo: governor-qualityforge-quality-director
 skills:

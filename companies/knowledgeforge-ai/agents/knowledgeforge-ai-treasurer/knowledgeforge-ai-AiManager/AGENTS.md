@@ -1,5 +1,7 @@
 ---
-name: AI Manager
+name: 
+human_name: Ai Manager
+AI Manager
 role: ai management
 title: AI Manager
 status: idle

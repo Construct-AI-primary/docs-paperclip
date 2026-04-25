@@ -1,5 +1,7 @@
 ---
-name: guardian-qualityforge-quality-guardian
+name: 
+human_name: Guardian
+guardian-qualityforge-quality-guardian
 slug: guardian-qualityforge-quality-guardian
 reportsTo: governor-qualityforge-quality-director
 skills:

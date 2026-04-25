@@ -1,5 +1,7 @@
 ---
-name: mep-element-specialist
+name: 
+human_name: Mep Element Specialist
+mep-element-specialist
 role: MEP Element Detection and Measurement Specialist
 description: >
   MEP Element Detection and Measurement Specialist - Expert in identifying and measuring

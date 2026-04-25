@@ -1,5 +1,7 @@
 ---
-name: Administrator - pre-award
+name: 
+human_name: Administrator
+Administrator - pre-award
 role: contracts-post-award
 title: Administrator - pre-award
 status: idle

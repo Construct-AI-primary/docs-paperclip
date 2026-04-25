@@ -1,5 +1,7 @@
 ---
-name: dealmaker-devforge-sales-negotiation
+name: 
+human_name: Dealmaker
+dealmaker-devforge-sales-negotiation
 slug: dealmaker-devforge-sales-negotiation
 reportsTo: amplifier-devforge-marketing-promotion
 skills:

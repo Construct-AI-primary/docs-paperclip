@@ -1,5 +1,7 @@
 ---
-name: Generalist
+name: 
+human_name: Generalist
+Generalist
 role: sundry
 title: Generalist
 status: idle

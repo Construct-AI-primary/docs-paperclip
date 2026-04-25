@@ -1,5 +1,7 @@
 ---
-name: Knowledge Flow Agent
+name: 
+human_name: Knowledge Flow Agent
+Knowledge Flow Agent
 title: Knowledge Graph & Flow Mapping Specialist
 slug: learningforge-ai-knowledge-flow-agent
 role: specialist

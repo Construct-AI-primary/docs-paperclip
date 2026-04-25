@@ -1,5 +1,7 @@
 ---
-name: Interface Specialist
+name: 
+human_name: Interface Specialist
+Interface Specialist
 role: interface management
 title: Interface Specialist
 status: active

@@ -1,5 +1,7 @@
 ---
-name: Field Safety Inspector
+name: 
+human_name: Field Safety Inspector
+Field Safety Inspector
 title: Hazard Detection Specialist
 slug: learningforge-ai-field-safety-inspector
 role: specialist

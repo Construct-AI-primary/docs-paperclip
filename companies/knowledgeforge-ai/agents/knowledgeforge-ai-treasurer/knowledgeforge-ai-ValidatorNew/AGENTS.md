@@ -1,5 +1,7 @@
 ---
-name: Validator
+name: 
+human_name: Validator New
+Validator
 reportsTo: knowledgeforge-coordinator-guardian
 role: qa-strategist
 title: 

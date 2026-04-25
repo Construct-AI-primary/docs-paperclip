@@ -1,5 +1,7 @@
 ---
-name: KnowledgeForge Workflow Guardian
+name: 
+human_name: Coordinator Guardian
+KnowledgeForge Workflow Guardian
 title: Workflow Integrity Guardian
 reportsTo: null
 skills:

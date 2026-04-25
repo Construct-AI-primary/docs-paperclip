@@ -1,5 +1,7 @@
 ---
-name: User Manager
+name: 
+human_name: User Manager
+User Manager
 role: user management
 title: User Manager
 status: idle

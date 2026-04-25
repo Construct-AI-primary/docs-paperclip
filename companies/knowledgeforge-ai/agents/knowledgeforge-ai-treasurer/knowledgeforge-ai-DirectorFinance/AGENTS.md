@@ -1,5 +1,7 @@
 ---
-name: Director Logistics
+name: 
+human_name: Director Finance
+Director Logistics
 role: logistics-director
 title: Director Logistics
 status: idle

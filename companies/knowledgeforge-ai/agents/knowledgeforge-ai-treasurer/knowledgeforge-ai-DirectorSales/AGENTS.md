@@ -1,5 +1,7 @@
 ---
-name: Director Sales
+name: 
+human_name: Director Sales
+Director Sales
 role: sales-director
 title: Director Sales
 status: idle

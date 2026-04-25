@@ -1,5 +1,7 @@
 ---
-name: Research Scheduler Agent
+name: 
+human_name: Research Scheduler
+Research Scheduler Agent
 title: Research Cycle Orchestration Specialist
 slug: learningforge-ai-research-scheduler
 role: specialist

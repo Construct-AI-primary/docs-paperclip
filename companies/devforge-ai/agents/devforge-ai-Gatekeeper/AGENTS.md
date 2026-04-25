@@ -1,5 +1,7 @@
 ---
-name: gatekeeper-devforge-access-control
+name: 
+human_name: Gatekeeper
+gatekeeper-devforge-access-control
 slug: gatekeeper-devforge-access-control
 reportsTo: guardian-devforge-threat-protection
 skills:

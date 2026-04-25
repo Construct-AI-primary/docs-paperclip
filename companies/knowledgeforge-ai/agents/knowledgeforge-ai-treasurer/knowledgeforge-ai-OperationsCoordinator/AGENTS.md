@@ -1,5 +1,7 @@
 ---
-name: Operations Coordinator
+name: 
+human_name: Operations Coordinator
+Operations Coordinator
 role: operations coordination
 title: Operations Coordinator
 status: idle

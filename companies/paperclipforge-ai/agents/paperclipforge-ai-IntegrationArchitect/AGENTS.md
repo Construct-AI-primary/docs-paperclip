@@ -1,5 +1,7 @@
 ---
-name: integration-architect
+name: 
+human_name: Integration Architect
+integration-architect
 description: >
   Chief Technology Officer of PaperclipForge AI. Leads technology integration,
   API management, workflow automation, and system interoperability across the ecosystem.

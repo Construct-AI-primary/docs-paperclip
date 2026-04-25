@@ -1,5 +1,7 @@
 ---
-name: Gatekeeper
+name: 
+human_name: Gatekeeper
+Gatekeeper
 role: auth-flow
 title: Gatekeeper
 status: idle

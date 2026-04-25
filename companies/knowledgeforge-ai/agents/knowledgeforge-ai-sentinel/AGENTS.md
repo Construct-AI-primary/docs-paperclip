@@ -1,5 +1,7 @@
 ---
-name: Sentinel
+name: 
+human_name: Sentinel
+Sentinel
 role: security
 title: Sentinel
 status: idle
