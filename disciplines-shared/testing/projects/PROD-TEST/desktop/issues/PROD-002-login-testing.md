@@ -1,9 +1,16 @@
 ---
 id: PROD-002
 title: Execute Login Testing - Authentication Flow Validation
+description: Execute comprehensive login testing to validate all authentication flows, user access patterns, and session management
+labels: ["testing", "production", "authentication", "login", "session"]
+blocked_by: []
+depends_on: ["PROD-001"]
+para_section: disciplines-shared/testing/projects/PROD-TEST/desktop/issues
 phase: 1 — Foundation Testing
-status: open
+status: backlog
 priority: High
+story_points: 5
+due_date: "2026-05-03"
 ---
 
 # PROD-002: Execute Login Testing - Authentication Flow Validation

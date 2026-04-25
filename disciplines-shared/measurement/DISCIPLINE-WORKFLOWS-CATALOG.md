@@ -1,9 +1,9 @@
 ---
 title: 02025-Measurement Cross-Discipline Workflows Catalog
-description: Complete catalog of measurement workflows across all engineering disciplines with builder procurement segregation
-gigabrain_tags: cross-discipline, 02025-measurement, workflows, catalog, dwg-measurement, builder-procurement, procurement-segregation
+description: Complete catalog of measurement workflows across all engineering disciplines with builder procurement segregation and post-tender subcontract tendering
+gigabrain_tags: cross-discipline, 02025-measurement, workflows, catalog, dwg-measurement, builder-procurement, procurement-segregation, post-tender-subcontract-tendering, boq-disaggregation, trade-packages
 para_section: disciplines-shared/measurement
-last_updated: 2026-04-24
+last_updated: 2026-04-25
 ---
 
 # 02025-Measurement Cross-Discipline Workflows Catalog
@@ -45,6 +45,16 @@ This catalog documents all measurement workflows available through the Integrate
 | BUILDER-MEAS-006 | Candy Integration | Direct export to Candy procurement system |
 | BUILDER-MEAS-007 | Budget Variance Monitoring | Real-time budget tracking and alerts |
 | BUILDER-MEAS-008 | Procurement Approval Routing | Integration with PROC-ORDER approval workflows |
+
+### 2.2 Post-Tender Subcontract Tendering Workflows
+
+| Workflow ID | Name | Description |
+|------------|------|-------------|
+| BUILDER-MEAS-009 | BOQ Extraction & Disaggregation | Extract QS-discipline-prepared BOQ and disaggregate by trade/specialty |
+| BUILDER-MEAS-010 | Trade Package Formulation | Create tender packages for electrical, plumbing, HVAC, structural steel, fire protection |
+| BUILDER-MEAS-011 | Subcontract Tender Document Generation | Generate RFQs, tender packages, and scope of works for sub-vendors |
+| BUILDER-MEAS-012 | Sub-vendor Quotation Collection | Collect, compare, and evaluate quotations from specialty contractors |
+| BUILDER-MEAS-013 | Subcontract Award Processing | Evaluate bids, award subcontracts, and generate subcontract agreements |
 
 ### 3. Civil Engineering Workflows
 
@@ -91,6 +101,15 @@ CAD Drawings -> Builder Measurement -> Direct Extraction -> Procurement Segregat
      |               |                      |                     |                     |                   |                    |
  MeasureForge    Quantity Extraction    Candy Integration    Subcontract/PO/SO/WO       PROC-ORDER          Site Delivery        Installation
  AI Platform     & Cost Estimation      & Budget Control    Classification             Integration         & Quality Control     & Progress
+```
+
+### Builder Post-Tender Subcontract Tendering Path
+
+```
+Tender Won -> Extract QS BOQ -> BOQ Disaggregation -> Trade Package Formulation -> Subcontract RFQ -> Quotation Collection -> Award -> Subcontract Agreement
+     |              |                  |                    |                       |                  |                    |                    |
+  Builder      QS Discipline       Material Qtys by      Electrical/Plumbing/    RFQ per Trade      Compare Quotations    Best Value          Subcontractor
+  Entry        Prepared BOQ        Trade/Specialty        HVAC/Structural/Fire                      Evaluation           Selection           Onboarding
 ```
 
 ## Workflow Diagrams
@@ -202,6 +221,73 @@ flowchart TD
         L --> M[PROC-ORDER Workflow]
         M --> N[Approval Routing]
         N --> O[Candy Procurement Export]
+    end
+```
+
+### Post-Tender Subcontract Tendering Flow
+
+```mermaid
+flowchart TD
+    subgraph Tender[Post-Tender Entry Point]
+        A[Tender Won by Builder] --> B[Extract QS BOQ]
+        B --> C[BOQ Disaggregation Engine]
+    end
+
+    subgraph Disaggregate[BOQ Disaggregation]
+        C --> D[Trade/Specialty Identification]
+        C --> E[Material Quantity Extraction]
+        C --> F[Labour & Plant Allocation]
+        D --> G[Electrical Package]
+        D --> H[Plumbing Package]
+        D --> I[HVAC Package]
+        D --> J[Structural Steel Package]
+        D --> K[Fire Protection Package]
+        D --> L[Civil Works Package]
+    end
+
+    subgraph Formulate[Trade Package Formulation]
+        E --> G
+        E --> H
+        E --> I
+        E --> J
+        E --> K
+        E --> L
+        F --> G
+        F --> H
+        F --> I
+        F --> J
+        F --> K
+        F --> L
+        G --> M[Tender Document Generation]
+        H --> M
+        I --> M
+        J --> M
+        K --> M
+        L --> M
+    end
+
+    subgraph TenderDocs[Tender Documents]
+        M --> N[RFQ Package per Trade]
+        M --> O[Scope of Works]
+        M --> P[Specification Documents]
+        M --> Q[Drawings & Details]
+        N --> R[Sub-vendor Invitation]
+    end
+
+    subgraph Collect[Quotation Collection]
+        R --> S[Quotation Receipt]
+        S --> T[Quotation Comparison Matrix]
+        T --> U[Compliance Check]
+        U --> V[Technical Evaluation]
+        V --> W[Commercial Evaluation]
+    end
+
+    subgraph Award[Subcontract Award]
+        W --> X[Best Value Recommendation]
+        X --> Y[Client/Management Approval]
+        Y --> Z[Subcontract Agreement Generation]
+        Z --> AA[Award Notification]
+        AA --> AB[Subcontractor Onboarding]
     end
 ```
 
@@ -387,6 +473,157 @@ MeasureForge AI -> Material Schedules -> Candy API -> Purchase Orders -> Supplie
 - Email notification triggers
 - Approval status tracking
 
+## Post-Tender Subcontract Tendering Workflows
+
+### BUILDER-MEAS-009: BOQ Extraction & Disaggregation
+
+**Purpose**: Extract the QS-discipline-prepared Bill of Quantities and disaggregate by trade/specialty for subcontract tendering
+
+**Process Steps**:
+1. Import QS-discipline BOQ from tender documentation
+2. Parse BOQ line items by element classification
+3. Identify trade/specialty assignments for each line item
+4. Extract material quantities by trade category
+5. Allocate labour and plant requirements per trade
+6. Generate disaggregated trade schedules
+
+**Trade Categories**:
+- Electrical (power, lighting, data, fire alarm)
+- Plumbing (water supply, drainage, fire suppression)
+- HVAC (ventilation, air conditioning, refrigeration)
+- Structural Steel (fabrication, erection, connections)
+- Fire Protection (sprinklers, suppression systems)
+- Civil Works (earthworks, stormwater, roads)
+
+**Integration Points**:
+- QS measurement system (QS-MEAS series workflows)
+- BOQ import from CostX, Excel, or PDF
+- Trade classification database
+- Material schedule generation
+
+### BUILDER-MEAS-010: Trade Package Formulation
+
+**Purpose**: Create structured tender packages for each trade/specialty based on disaggregated BOQ data
+
+**Package Components**:
+- Scope of works per trade
+- Material specifications and quantities
+- Labour and plant schedule
+- Programme and milestone requirements
+- Technical specifications
+- Drawings and detail references
+- Preliminaries allocation
+
+**Trade Package Types**:
+- Electrical installation package
+- Plumbing and drainage package
+- HVAC installation package
+- Structural steel package
+- Fire protection package
+- Civil works package
+- Specialist packages (acoustic, specialist glazing)
+
+**Integration Points**:
+- BOQ disaggregation output (BUILDER-MEAS-009)
+- Specification templates per trade
+- Programme scheduling system
+- Drawing management system
+
+### BUILDER-MEAS-011: Subcontract Tender Document Generation
+
+**Purpose**: Generate complete RFQ packages, tender documents, and scope of works for sub-vendor invitation
+
+**Document Generation**:
+- Request for Quotation (RFQ) per trade package
+- Invitation to Tender (ITT) letters
+- Scope of Works (SOW) documents
+- Technical specifications
+- Drawings and detail packages
+- Preliminaries and general conditions
+- Tender return instructions and deadline
+
+**Document Templates**:
+- CIDB-compliant tender documents
+- FIDIC subcontract templates
+- NEC4 subcontract templates
+- Custom builder templates
+
+**Integration Points**:
+- Trade package formulation (BUILDER-MEAS-010)
+- Document template library
+- Email/portal invitation system
+- Tender tracking system
+
+### BUILDER-MEAS-012: Sub-vendor Quotation Collection
+
+**Purpose**: Collect, compare, and evaluate subcontract quotations from invited specialty contractors
+
+**Collection Process**:
+1. Track tender submissions from sub-vendors
+2. Receive and log quotations
+3. Generate quotation comparison matrix
+4. Validate compliance with tender requirements
+5. Conduct technical evaluation
+6. Conduct commercial evaluation
+7. Generate evaluation report
+
+**Comparison Matrix Fields**:
+- Subcontractor name and registration
+- Quoted price (R) and currency
+- Validity period
+- Programme commitment
+- B-BBEE level
+- CIDB grading
+- Technical compliance score
+- Commercial compliance score
+
+**Evaluation Criteria**:
+- Price competitiveness
+- Technical capability
+- Programme suitability
+- B-BBEE contribution
+- Safety record
+- References and experience
+
+**Integration Points**:
+- Tender document generation (BUILDER-MEAS-011)
+- Supplier database (VFS)
+- Compliance verification system
+- Evaluation scoring engine
+
+### BUILDER-MEAS-013: Subcontract Award Processing
+
+**Purpose**: Evaluate bids, recommend best-value subcontractor, obtain approval, and generate subcontract agreements
+
+**Award Process**:
+1. Compile best-value recommendation report
+2. Submit for management/client approval
+3. Issue award notification to successful subcontractor
+4. Generate subcontract agreement
+5. Process onboarding documentation
+6. Issue subcontractor welcome pack
+
+**Agreement Types**:
+- Lump sum subcontract
+- Schedule of rates subcontract
+- Cost-plus subcontract
+- Labour-only subcontract
+
+**Compliance Requirements**:
+- CIDB contractor registration verification
+- Insurance certificate collection
+- B-BBEE certificate verification
+- Safety induction documentation
+- Tax clearance certificate
+- Payment guarantee/bonding
+
+**Integration Points**:
+- Quotation collection (BUILDER-MEAS-012)
+- PROC-ORDER approval workflows
+- Contract template library
+- Subcontractor onboarding system
+- Insurance verification system
+
 ## Agent Pool Architecture
 
 ### 2000+ Measurement Agents
@@ -531,8 +768,8 @@ MeasureForge AI -> Material Schedules -> Candy API -> Purchase Orders -> Supplie
 
 ---
 
-**Document Version**: 1.1
-**Last Updated**: 2026-04-24
-**Workflow Count**: 30+ core workflows (including 8 new builder procurement workflows)
+**Document Version**: 1.2
+**Last Updated**: 2026-04-25
+**Workflow Count**: 35+ core workflows (including 8 builder procurement + 5 post-tender subcontract tendering workflows)
 **Agent Pool**: 2000+ measurement agents + 35-40 builder procurement agents
 **Accuracy Target**: 100% for all measurement and procurement classification workflows

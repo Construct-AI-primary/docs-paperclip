@@ -1,9 +1,16 @@
 ---
 id: PROD-008
-title: Execute ui settings testing Testing
+title: Execute UI Settings Testing
+description: Execute comprehensive UI settings testing to validate user preferences and application configuration
+labels: ["testing", "production", "ui-settings", "configuration", "user-preferences"]
+blocked_by: []
+depends_on: ["PROD-001", "PROD-007"]
+para_section: disciplines-shared/testing/projects/PROD-TEST/desktop/issues
 phase: 2 — Core Feature Testing
-status: open
+status: backlog
 priority: Medium
+story_points: 3
+due_date: "2026-05-18"
 ---
 
 # PROD-008: Execute ui settings testing Testing

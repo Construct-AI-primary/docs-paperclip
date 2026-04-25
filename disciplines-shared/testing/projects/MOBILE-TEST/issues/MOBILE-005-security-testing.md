@@ -1,9 +1,16 @@
 ---
 id: MOBILE-005
 title: Execute Mobile Security Testing
+description: Execute comprehensive mobile security testing to validate app permissions, data protection, encryption, and platform security compliance
+labels: ["testing", "mobile", "security", "encryption", "compliance"]
+blocked_by: []
+depends_on: ["MOBILE-001", "MOBILE-002"]
+para_section: disciplines-shared/testing/projects/MOBILE-TEST/issues
 phase: 4 — Security & Compliance Testing
-status: open
+status: backlog
 priority: High
+story_points: 13
+due_date: "2026-05-20"
 ---
 
 # MOBILE-005: Execute Mobile Security Testing

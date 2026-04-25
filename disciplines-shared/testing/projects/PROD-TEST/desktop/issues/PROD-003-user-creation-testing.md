@@ -1,9 +1,16 @@
 ---
 id: PROD-003
-title: Execute User Creation Testing - Profile Management Validation
+title: Execute User Creation Testing
+description: Execute comprehensive user creation and management testing to validate user onboarding workflows
+labels: ["testing", "production", "user-management", "onboarding"]
+blocked_by: []
+depends_on: ["PROD-002"]
+para_section: disciplines-shared/testing/projects/PROD-TEST/desktop/issues
 phase: 1 — Foundation Testing
-status: open
+status: backlog
 priority: High
+story_points: 5
+due_date: "2026-05-05"
 ---
 
 # PROD-003: Execute User Creation Testing - Profile Management Validation

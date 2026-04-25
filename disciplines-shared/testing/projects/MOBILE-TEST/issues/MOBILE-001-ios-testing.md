@@ -1,9 +1,16 @@
 ---
 id: MOBILE-001
 title: Execute iOS App Testing
+description: Execute comprehensive iOS app testing to validate functionality, performance, and compliance with Apple App Store requirements
+labels: ["testing", "mobile", "ios", "apple"]
+blocked_by: []
+depends_on: []
+para_section: disciplines-shared/testing/projects/MOBILE-TEST/issues
 phase: 1 — iOS Platform Testing
-status: open
+status: backlog
 priority: High
+story_points: 8
+due_date: "2026-05-10"
 ---
 
 # MOBILE-001: Execute iOS App Testing

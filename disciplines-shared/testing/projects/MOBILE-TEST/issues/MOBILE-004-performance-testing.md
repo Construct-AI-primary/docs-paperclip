@@ -1,9 +1,16 @@
 ---
 id: MOBILE-004
 title: Execute Mobile Performance Testing
+description: Execute comprehensive mobile performance testing to validate battery usage, memory consumption, network efficiency, and app responsiveness
+labels: ["testing", "mobile", "performance", "optimization", "battery", "memory"]
+blocked_by: []
+depends_on: ["MOBILE-001", "MOBILE-002"]
+para_section: disciplines-shared/testing/projects/MOBILE-TEST/issues
 phase: 4 — Performance & Optimization Testing
-status: open
+status: backlog
 priority: High
+story_points: 8
+due_date: "2026-05-18"
 ---
 
 # MOBILE-004: Execute Mobile Performance Testing

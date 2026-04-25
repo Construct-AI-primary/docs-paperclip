@@ -1,9 +1,16 @@
 ---
 id: MOBILE-006
 title: Execute Mobile UI/UX Testing
+description: Execute comprehensive mobile UI/UX testing to validate accessibility, usability, gesture interactions, and user experience
+labels: ["testing", "mobile", "ui-ux", "accessibility", "wcag"]
+blocked_by: []
+depends_on: ["MOBILE-001", "MOBILE-002", "MOBILE-003", "MOBILE-004", "MOBILE-005"]
+para_section: disciplines-shared/testing/projects/MOBILE-TEST/issues
 phase: 5 — Final Validation & Accessibility Testing
-status: open
+status: backlog
 priority: High
+story_points: 8
+due_date: "2026-05-25"
 ---
 
 # MOBILE-006: Execute Mobile UI/UX Testing

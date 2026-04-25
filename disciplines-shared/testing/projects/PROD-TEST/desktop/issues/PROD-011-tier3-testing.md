@@ -1,9 +1,16 @@
 ---
 id: PROD-011
-title: Execute tier3 testing Testing
+title: Execute Tier 3 Testing - System Integration
+description: Execute comprehensive Tier 3 testing for system integration and cross-component validation
+labels: ["testing", "production", "tier3", "integration", "system"]
+blocked_by: []
+depends_on: ["PROD-001", "PROD-007", "PROD-010"]
+para_section: disciplines-shared/testing/projects/PROD-TEST/desktop/issues
 phase: 3 — Integration Testing
-status: open
+status: backlog
 priority: Medium
+story_points: 8
+due_date: "2026-06-01"
 ---
 
 # PROD-011: Execute tier3 testing Testing
