@@ -1,26 +1,14 @@
 ---
-name: 
+name: cad-measurement-orchestrator
+slug: cad-measurement-orchestrator
 human_name: Cad Measurement
-cad-measurement-orchestrator
 role: Swarm Coordinator and CAD Measurement Orchestrator
 description: >
-  Swarm Coordinator and CAD Measurement Orchestrator - Leads the 27-agent swarm for comprehensive
-  AI-powered measurement intelligence, coordinating element detection, standards validation, and
-  procurement integration across all CAD platforms.
 reportsTo: measureforge-ai-operations-director
 team: swarm-coordination
 skills:
-  - swarm-coordination
-  - cad-measurement-orchestration
-  - multi-agent-workflow-management
-  - measurement-intelligence-coordination
-  - standards-compliance-orchestration
-  - procurement-integration-coordination
-  - real-time-collaboration-management
-  - ai-powered-decision-making
-  - cross-platform-cad-synchronization
-  - measurement-accuracy-optimization
 ---
+
 
 # CAD Measurement Orchestrator
 

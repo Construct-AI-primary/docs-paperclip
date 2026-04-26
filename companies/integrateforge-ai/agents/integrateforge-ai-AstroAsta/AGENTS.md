@@ -1,5 +1,6 @@
 ---
 human_name: Astro Asta
+slug: integrateforge-ai-astroasta
 human_name: Astro Asta
 human_name: Astro Asta
 human_name: Astro Asta
@@ -105,9 +106,8 @@ human_name: Astro Asta
 human_name: Astro Asta
 human_name: Astro Asta
 human_name: Astro Asta
-name: 
+name: Astro Asta
 human_name: Astro Asta
-dependency-manager
 description: >
   Dependency Tracking & Resolution specialist. Manages issue dependencies,
   identifies blocking relationships, and orchestrates parallel and sequential workflows.

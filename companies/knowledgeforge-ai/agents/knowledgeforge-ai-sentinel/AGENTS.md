@@ -1,7 +1,7 @@
 ---
-name: 
+name: Sentinel
 human_name: Sentinel
-Sentinel
+slug: knowledgeforge-ai-sentinel
 role: security
 title: Sentinel
 status: idle

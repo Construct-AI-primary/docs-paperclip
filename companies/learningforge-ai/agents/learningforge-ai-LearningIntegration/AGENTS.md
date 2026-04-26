@@ -1,7 +1,7 @@
 ---
-name: 
+name: Learning Integration
 human_name: Learning Integration
-learning-integration-agent
+slug: learningforge-ai-learningintegration
 description: >
   Learning Integration Agent - Specialized research on user feedback analysis,
   continuous learning, and performance optimization for safety research integration

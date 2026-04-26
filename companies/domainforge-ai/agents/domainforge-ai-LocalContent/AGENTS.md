@@ -1,14 +1,14 @@
 ---
 human_name: Local Content
+slug: domainforge-ai-localcontent
 human_name: Local Content
 human_name: Local Content
 human_name: Local Content
 human_name: Local Content
 human_name: Local Content
 human_name: Local Content
-name: 
+name: Local Content
 human_name: Local Content
-dependency-manager
 description: >
   Dependency Tracking & Resolution specialist. Manages issue dependencies,
   identifies blocking relationships, and orchestrates parallel and sequential workflows.

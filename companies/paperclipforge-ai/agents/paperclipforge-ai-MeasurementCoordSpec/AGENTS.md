@@ -1,7 +1,7 @@
 ---
-name: 
+name: Measurement Coord Spec
 human_name: Measurement Coord Spec
-measurement-coordination-specialist
+slug: paperclipforge-ai-measurementcoordspec
 description: >
   Measurement Coordination Specialist - Expert in coordinating measurement workflows
   across engineering disciplines, managing interdisciplinary integration, workflow optimization,

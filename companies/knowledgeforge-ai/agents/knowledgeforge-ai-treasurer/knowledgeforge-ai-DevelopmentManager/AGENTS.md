@@ -1,13 +1,14 @@
 ---
-name: 
+name: Development Manager
+slug: Development Manager
 human_name: Development Manager
-Development Manager
 role: development management
 title: Development Manager
 status: idle
 reportsTo: knowledgeforge-coordinator-guardian
 capabilities: Development Tools, Templates, Code Management
 ---
+
 
 # Development Manager
 

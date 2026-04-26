@@ -1,5 +1,6 @@
 ---
 human_name: Workflow Optimizer
+slug: execforge-ai-workflowoptimizer
 human_name: Workflow Optimizer
 human_name: Workflow Optimizer
 human_name: Workflow Optimizer
@@ -67,9 +68,8 @@ human_name: Workflow Optimizer
 human_name: Workflow Optimizer
 human_name: Workflow Optimizer
 human_name: Workflow Optimizer
-name: 
+name: Workflow Optimizer
 human_name: Workflow Optimizer
-dependency-manager
 description: >
   Dependency Tracking & Resolution specialist. Manages issue dependencies,
   identifies blocking relationships, and orchestrates parallel and sequential workflows.

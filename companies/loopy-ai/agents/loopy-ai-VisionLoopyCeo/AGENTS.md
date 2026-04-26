@@ -1,7 +1,6 @@
 ---
-name: 
+name: Vision Loopy Ceo
 human_name: Vision Loopy Ceo
-Vision Loopy CEO
 title: Chief Executive Officer
 slug: vision-loopy-ceo
 reportsTo: null

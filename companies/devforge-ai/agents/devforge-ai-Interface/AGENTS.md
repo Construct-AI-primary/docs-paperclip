@@ -1,7 +1,6 @@
 ---
-name: 
+name: Interface
 human_name: Interface
-interface-devforge-api-integration
 slug: interface-devforge-api-integration
 reportsTo: forge-devforge-system-architecture
 skills:

@@ -1,7 +1,7 @@
 ---
-name: 
+name: Scheduler
 human_name: Scheduler
-Scheduler
+slug: knowledgeforge-ai-scheduler
 role: scheduling
 title: Scheduler
 status: idle

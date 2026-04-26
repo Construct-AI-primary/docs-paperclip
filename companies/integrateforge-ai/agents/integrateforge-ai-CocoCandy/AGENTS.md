@@ -1,5 +1,6 @@
 ---
 human_name: Coco Candy
+slug: integrateforge-ai-cococandy
 human_name: Coco Candy
 human_name: Coco Candy
 human_name: Coco Candy
@@ -103,9 +104,8 @@ human_name: Coco Candy
 human_name: Coco Candy
 human_name: Coco Candy
 human_name: Coco Candy
-name: 
+name: Coco Candy
 human_name: Coco Candy
-dependency-manager
 description: >
   Dependency Tracking & Resolution specialist. Manages issue dependencies,
   identifies blocking relationships, and orchestrates parallel and sequential workflows.

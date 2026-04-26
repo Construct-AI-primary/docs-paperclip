@@ -1,7 +1,7 @@
 ---
-name: 
+name: Director Logistics
+slug: Director Logistics
 human_name: Director Logistics
-Director Logistics
 reportsTo: knowledgeforge-coordinator-guardian
 role: logistics-director
 title: 
@@ -9,6 +9,7 @@ status: idle
 capabilities: 
 company: knowledgeforge-ai
 ---
+
 
 # Director Logistics
 

@@ -1,7 +1,6 @@
 ---
-name: 
+name: E 2 E
 human_name: E 2 E
-e2e-qualityforge-end-to-end-testing
 slug: e2e-qualityforge-end-to-end-testing
 reportsTo: governor-qualityforge-quality-director
 skills:

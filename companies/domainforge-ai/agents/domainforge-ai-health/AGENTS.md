@@ -1,5 +1,6 @@
 ---
 human_name: Health
+slug: domainforge-ai-health
 human_name: Health
 human_name: Health
 human_name: Health
@@ -18,9 +19,8 @@ human_name: Health
 human_name: Health
 human_name: Health
 human_name: Health
-name: 
+name: Health
 human_name: Health
-dependency-manager
 description: >
   Dependency Tracking & Resolution specialist. Manages issue dependencies,
   identifies blocking relationships, and orchestrates parallel and sequential workflows.

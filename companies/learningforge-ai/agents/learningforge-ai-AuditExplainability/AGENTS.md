@@ -1,7 +1,6 @@
 ---
-name: 
+name: Audit Explainability
 human_name: Audit Explainability
-Audit & Explainability Agent
 title: Activity Logging & Explainability Specialist
 slug: learningforge-ai-audit-explainability
 role: specialist

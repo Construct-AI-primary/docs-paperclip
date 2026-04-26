@@ -1,5 +1,6 @@
 ---
 human_name: Dispatcher Specialist
+slug: domainforge-ai-dispatcherspecialist
 human_name: Dispatcher Specialist
 human_name: Dispatcher Specialist
 human_name: Dispatcher Specialist
@@ -37,9 +38,8 @@ human_name: Dispatcher Specialist
 human_name: Dispatcher Specialist
 human_name: Dispatcher Specialist
 human_name: Dispatcher Specialist
-name: 
+name: Dispatcher Specialist
 human_name: Dispatcher Specialist
-dependency-manager
 description: >
   Dependency Tracking & Resolution specialist. Manages issue dependencies,
   identifies blocking relationships, and orchestrates parallel and sequential workflows.

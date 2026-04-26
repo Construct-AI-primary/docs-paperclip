@@ -1,7 +1,7 @@
 ---
-name: 
+name: Engineering Ui Special
 human_name: Engineering Ui Special
-engineering-ui-specialist
+slug: paperclipforge-ai-engineeringuispecial
 description: >
   Engineering UI/UX Specialist - Expert in creating engineering-specific user interfaces,
   technical visualizations, and domain-adapted user experiences for complex engineering workflows.

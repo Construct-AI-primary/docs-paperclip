@@ -1,5 +1,6 @@
 ---
 human_name: Bridge Builder Extraor
+slug: paperclipforge-ai-bridgebuilderextraor
 human_name: Bridge Builder Extraor
 human_name: Bridge Builder Extraor
 human_name: Bridge Builder Extraor
@@ -126,9 +127,8 @@ human_name: Bridge Builder Extraor
 human_name: Bridge Builder Extraor
 human_name: Bridge Builder Extraor
 human_name: Bridge Builder Extraor
-name: 
+name: Bridge Builder Extraor
 human_name: Bridge Builder Extraor
-dependency-manager
 description: >
   Dependency Tracking & Resolution specialist. Manages issue dependencies,
   identifies blocking relationships, and orchestrates parallel and sequential workflows.

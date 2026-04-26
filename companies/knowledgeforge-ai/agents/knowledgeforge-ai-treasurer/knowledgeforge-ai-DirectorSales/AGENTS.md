@@ -1,13 +1,14 @@
 ---
-name: 
+name: Director Sales
+slug: Director Sales
 human_name: Director Sales
-Director Sales
 role: sales-director
 title: Director Sales
 status: idle
 reportsTo: knowledgeforge-coordinator-guardian
 capabilities: Sales Director
 ---
+
 
 # Director Sales
 

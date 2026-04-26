@@ -1,7 +1,7 @@
 ---
-name: 
+name: Link Builder
 human_name: Link Builder
-link-builder
+slug: contentforge-ai-linkbuilder
 role: Link Building & Authority Specialist
 ---
 

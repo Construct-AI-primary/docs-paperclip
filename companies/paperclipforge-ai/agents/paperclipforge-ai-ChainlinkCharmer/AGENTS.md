@@ -1,5 +1,6 @@
 ---
 human_name: Chainlink Charmer
+slug: paperclipforge-ai-chainlinkcharmer
 human_name: Chainlink Charmer
 human_name: Chainlink Charmer
 human_name: Chainlink Charmer
@@ -141,9 +142,8 @@ human_name: Chainlink Charmer
 human_name: Chainlink Charmer
 human_name: Chainlink Charmer
 human_name: Chainlink Charmer
-name: 
+name: Chainlink Charmer
 human_name: Chainlink Charmer
-dependency-manager
 description: >
   Dependency Tracking & Resolution specialist. Manages issue dependencies,
   identifies blocking relationships, and orchestrates parallel and sequential workflows.

@@ -1,7 +1,7 @@
 ---
-name: 
+name: Measurement Standards
 human_name: Measurement Standards 
-measurement-standards-specialist
+slug: paperclipforge-ai-measurementstandards
 description: >
   Measurement Standards Specialist - Expert in measurement standards management,
   compliance validation, regulatory requirements, and audit preparation for cross-discipline

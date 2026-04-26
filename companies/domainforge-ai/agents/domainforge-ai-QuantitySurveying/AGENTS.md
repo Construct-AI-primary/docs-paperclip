@@ -1,5 +1,6 @@
 ---
 human_name: Quantity Surveying
+slug: domainforge-ai-quantitysurveying
 human_name: Quantity Surveying
 human_name: Quantity Surveying
 human_name: Quantity Surveying
@@ -46,9 +47,8 @@ human_name: Quantity Surveying
 human_name: Quantity Surveying
 human_name: Quantity Surveying
 human_name: Quantity Surveying
-name: 
+name: Quantity Surveying
 human_name: Quantity Surveying
-dependency-manager
 description: >
   Dependency Tracking & Resolution specialist. Manages issue dependencies,
   identifies blocking relationships, and orchestrates parallel and sequential workflows.

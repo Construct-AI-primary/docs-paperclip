@@ -1,5 +1,6 @@
 ---
 human_name: Max Msproject
+slug: integrateforge-ai-maxmsproject
 human_name: Max Msproject
 human_name: Max Msproject
 human_name: Max Msproject
@@ -123,9 +124,8 @@ human_name: Max Msproject
 human_name: Max Msproject
 human_name: Max Msproject
 human_name: Max Msproject
-name: 
+name: Max Msproject
 human_name: Max Msproject
-dependency-manager
 description: >
   Dependency Tracking & Resolution specialist. Manages issue dependencies,
   identifies blocking relationships, and orchestrates parallel and sequential workflows.

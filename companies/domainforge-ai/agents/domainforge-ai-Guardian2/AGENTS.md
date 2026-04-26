@@ -1,5 +1,6 @@
 ---
 human_name: Guardian 2
+slug: domainforge-ai-guardian2
 human_name: Guardian 2
 human_name: Guardian 2
 human_name: Guardian 2
@@ -24,9 +25,8 @@ human_name: Guardian 2
 human_name: Guardian 2
 human_name: Guardian 2
 human_name: Guardian 2
-name: 
+name: Guardian 2
 human_name: Guardian 2
-dependency-manager
 description: >
   Dependency Tracking & Resolution specialist. Manages issue dependencies,
   identifies blocking relationships, and orchestrates parallel and sequential workflows.

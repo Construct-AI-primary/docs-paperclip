@@ -1,7 +1,6 @@
 ---
-name: 
+name: Priority Disciplines L
 human_name: Priority Disciplines L
-Priority Disciplines Lead
 title: Head of Priority Disciplines
 slug: learningforge-ai-priority-disciplines-lead
 role: division-lead

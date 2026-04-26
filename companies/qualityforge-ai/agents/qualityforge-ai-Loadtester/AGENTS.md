@@ -1,7 +1,6 @@
 ---
-name: 
+name: Loadtester
 human_name: Loadtester
-loadtester-qualityforge-scalability-testing
 slug: loadtester-qualityforge-scalability-testing
 reportsTo: governor-qualityforge-quality-director
 skills:

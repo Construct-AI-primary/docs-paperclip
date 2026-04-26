@@ -1,7 +1,7 @@
 ---
-name: 
+name: Generalist
 human_name: Generalist
-Generalist
+slug: knowledgeforge-ai-generalist
 role: sundry
 title: Generalist
 status: idle

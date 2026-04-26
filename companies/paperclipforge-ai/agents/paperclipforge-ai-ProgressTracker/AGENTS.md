@@ -1,7 +1,7 @@
 ---
-name: 
+name: Progress Tracker
 human_name: Progress Tracker
-progress-tracker
+slug: paperclipforge-ai-progresstracker
 description: >
   Real-Time Monitoring specialist. Provides real-time progress tracking,
   status monitoring, bottleneck identification, and progress reporting across issues.

@@ -1,5 +1,6 @@
 ---
 human_name: Ace Aconex
+slug: integrateforge-ai-aceaconex
 human_name: Ace Aconex
 human_name: Ace Aconex
 human_name: Ace Aconex
@@ -107,9 +108,8 @@ human_name: Ace Aconex
 human_name: Ace Aconex
 human_name: Ace Aconex
 human_name: Ace Aconex
-name: 
+name: Ace Aconex
 human_name: Ace Aconex
-dependency-manager
 description: >
   Dependency Tracking & Resolution specialist. Manages issue dependencies,
   identifies blocking relationships, and orchestrates parallel and sequential workflows.

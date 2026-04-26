@@ -1,5 +1,6 @@
 ---
 human_name: Onboard Master
+slug: saasforge-ai-onboardmaster
 human_name: Onboard Master
 human_name: Onboard Master
 human_name: Onboard Master
@@ -60,9 +61,8 @@ human_name: Onboard Master
 human_name: Onboard Master
 human_name: Onboard Master
 human_name: Onboard Master
-name: 
+name: Onboard Master
 human_name: Onboard Master
-dependency-manager
 description: >
   Dependency Tracking & Resolution specialist. Manages issue dependencies,
   identifies blocking relationships, and orchestrates parallel and sequential workflows.

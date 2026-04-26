@@ -1,5 +1,6 @@
 ---
 human_name: Systems Integrator
+slug: execforge-ai-systemsintegrator
 human_name: Systems Integrator
 human_name: Systems Integrator
 human_name: Systems Integrator
@@ -69,9 +70,8 @@ human_name: Systems Integrator
 human_name: Systems Integrator
 human_name: Systems Integrator
 human_name: Systems Integrator
-name: 
+name: Systems Integrator
 human_name: Systems Integrator
-dependency-manager
 description: >
   Dependency Tracking & Resolution specialist. Manages issue dependencies,
   identifies blocking relationships, and orchestrates parallel and sequential workflows.

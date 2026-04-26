@@ -1,7 +1,6 @@
 ---
-name: 
+name: Insight
 human_name: Insight
-insight-devforge-business-intelligence
 slug: insight-devforge-business-intelligence
 reportsTo: nexus-devforge-ceo
 skills:

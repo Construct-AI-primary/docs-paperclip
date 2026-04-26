@@ -1,7 +1,7 @@
 ---
-name: 
+name: Environmentalist
 human_name: Environmentalist
-Environmentalist
+slug: knowledgeforge-ai-environmentalist
 role: environmental
 title: Environmentalist
 status: idle

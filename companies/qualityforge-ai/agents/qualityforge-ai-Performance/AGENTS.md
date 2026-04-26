@@ -1,7 +1,6 @@
 ---
-name: 
+name: Performance
 human_name: Performance
-performance-Performance-testing
 slug: performance-Performance-testing
 reportsTo: governor-qualityforge-quality-director
 skills:

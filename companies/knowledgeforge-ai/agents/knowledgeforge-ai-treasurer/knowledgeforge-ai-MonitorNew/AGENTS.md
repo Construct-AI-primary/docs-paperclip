@@ -1,7 +1,7 @@
 ---
-name: 
+name: Monitor
+slug: Monitor
 human_name: Monitor New
-Monitor
 reportsTo: knowledgeforge-coordinator-guardian
 role: app-guardian
 title: 
@@ -9,6 +9,7 @@ status: idle
 capabilities: 
 company: knowledgeforge-ai
 ---
+
 
 # Monitor
 

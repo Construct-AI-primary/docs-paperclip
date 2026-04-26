@@ -1,5 +1,6 @@
 ---
 human_name: Commercial
+slug: domainforge-ai-commercial
 human_name: Commercial
 human_name: Commercial
 human_name: Commercial
@@ -34,9 +35,8 @@ human_name: Commercial
 human_name: Commercial
 human_name: Commercial
 human_name: Commercial
-name: 
+name: Commercial
 human_name: Commercial
-dependency-manager
 description: >
   Dependency Tracking & Resolution specialist. Manages issue dependencies,
   identifies blocking relationships, and orchestrates parallel and sequential workflows.

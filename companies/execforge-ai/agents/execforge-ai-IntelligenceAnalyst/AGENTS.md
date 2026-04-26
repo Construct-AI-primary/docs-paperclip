@@ -1,5 +1,6 @@
 ---
 human_name: Intelligence Analyst
+slug: execforge-ai-intelligenceanalyst
 human_name: Intelligence Analyst
 human_name: Intelligence Analyst
 human_name: Intelligence Analyst
@@ -78,9 +79,8 @@ human_name: Intelligence Analyst
 human_name: Intelligence Analyst
 human_name: Intelligence Analyst
 human_name: Intelligence Analyst
-name: 
+name: Intelligence Analyst
 human_name: Intelligence Analyst
-dependency-manager
 description: >
   Dependency Tracking & Resolution specialist. Manages issue dependencies,
   identifies blocking relationships, and orchestrates parallel and sequential workflows.

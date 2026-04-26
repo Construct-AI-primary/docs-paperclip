@@ -1,5 +1,6 @@
 ---
 human_name: Procurement Director
+slug: domainforge-ai-procurementdirector
 human_name: Procurement Director
 human_name: Procurement Director
 human_name: Procurement Director
@@ -48,9 +49,8 @@ human_name: Procurement Director
 human_name: Procurement Director
 human_name: Procurement Director
 human_name: Procurement Director
-name: 
+name: Procurement Director
 human_name: Procurement Director
-dependency-manager
 description: >
   Dependency Tracking & Resolution specialist. Manages issue dependencies,
   identifies blocking relationships, and orchestrates parallel and sequential workflows.

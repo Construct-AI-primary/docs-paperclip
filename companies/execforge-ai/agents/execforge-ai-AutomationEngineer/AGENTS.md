@@ -1,5 +1,6 @@
 ---
 human_name: Automation Engineer
+slug: execforge-ai-automationengineer
 human_name: Automation Engineer
 human_name: Automation Engineer
 human_name: Automation Engineer
@@ -72,9 +73,8 @@ human_name: Automation Engineer
 human_name: Automation Engineer
 human_name: Automation Engineer
 human_name: Automation Engineer
-name: 
+name: Automation Engineer
 human_name: Automation Engineer
-dependency-manager
 description: >
   Dependency Tracking & Resolution specialist. Manages issue dependencies,
   identifies blocking relationships, and orchestrates parallel and sequential workflows.

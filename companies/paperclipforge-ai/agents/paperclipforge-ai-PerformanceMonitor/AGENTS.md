@@ -1,7 +1,7 @@
 ---
-name: 
+name: Performance Monitor
 human_name: Performance Monitor
-performance-monitor
+slug: paperclipforge-ai-performancemonitor
 description: >
   Performance Tracking & Analytics specialist. Monitors project and system performance,
   analyzes metrics, generates insights, and drives performance improvements.

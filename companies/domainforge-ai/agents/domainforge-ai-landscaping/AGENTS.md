@@ -1,5 +1,6 @@
 ---
 human_name: Landscaping
+slug: domainforge-ai-landscaping
 human_name: Landscaping
 human_name: Landscaping
 human_name: Landscaping
@@ -8,9 +9,8 @@ human_name: Landscaping
 human_name: Landscaping
 human_name: Landscaping
 human_name: Landscaping
-name: 
+name: Landscaping
 human_name: Landscaping
-dependency-manager
 description: >
   Dependency Tracking & Resolution specialist. Manages issue dependencies,
   identifies blocking relationships, and orchestrates parallel and sequential workflows.

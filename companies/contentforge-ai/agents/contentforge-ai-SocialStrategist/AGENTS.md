@@ -1,7 +1,7 @@
 ---
-name: 
+name: Social Strategist
 human_name: Social Strategist
-social-strategist
+slug: contentforge-ai-socialstrategist
 role: Social Media Content Specialist
 ---
 

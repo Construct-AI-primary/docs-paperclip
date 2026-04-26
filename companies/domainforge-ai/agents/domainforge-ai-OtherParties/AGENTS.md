@@ -1,5 +1,6 @@
 ---
 human_name: Other Parties
+slug: domainforge-ai-otherparties
 human_name: Other Parties
 human_name: Other Parties
 human_name: Other Parties
@@ -10,9 +11,8 @@ human_name: Other Parties
 human_name: Other Parties
 human_name: Other Parties
 human_name: Other Parties
-name: 
+name: Other Parties
 human_name: Other Parties
-dependency-manager
 description: >
   Dependency Tracking & Resolution specialist. Manages issue dependencies,
   identifies blocking relationships, and orchestrates parallel and sequential workflows.

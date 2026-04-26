@@ -1,13 +1,14 @@
 ---
-name: 
+name: Operations Coordinator
+slug: Operations Coordinator
 human_name: Operations Coordinator
-Operations Coordinator
 role: operations coordination
 title: Operations Coordinator
 status: idle
 reportsTo: knowledgeforge-coordinator-guardian
 capabilities: Business Operations, Workflow Management, Administrative Processes
 ---
+
 
 # Operations Coordinator
 

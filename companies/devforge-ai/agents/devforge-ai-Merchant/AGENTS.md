@@ -1,7 +1,6 @@
 ---
-name: 
+name: Merchant
 human_name: Merchant
-merchant-devforge-commerce-operations
 slug: merchant-devforge-commerce-operations
 reportsTo: amplifier-devforge-marketing-promotion
 skills:

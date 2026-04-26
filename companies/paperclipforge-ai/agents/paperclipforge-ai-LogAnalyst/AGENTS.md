@@ -1,5 +1,6 @@
 ---
 human_name: Log Analyst
+slug: paperclipforge-ai-loganalyst
 human_name: Log Analyst
 human_name: Log Analyst
 human_name: Log Analyst
@@ -136,9 +137,8 @@ human_name: Log Analyst
 human_name: Log Analyst
 human_name: Log Analyst
 human_name: Log Analyst
-name: 
+name: Log Analyst
 human_name: Log Analyst
-dependency-manager
 description: >
   Dependency Tracking & Resolution specialist. Manages issue dependencies,
   identifies blocking relationships, and orchestrates parallel and sequential workflows.

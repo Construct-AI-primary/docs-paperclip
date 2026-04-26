@@ -1,7 +1,7 @@
 ---
-name: 
+name: Treasurer
 human_name: Treasurer
-Treasurer
+slug: knowledgeforge-ai-treasurer
 role: finance
 title: Treasurer
 status: idle

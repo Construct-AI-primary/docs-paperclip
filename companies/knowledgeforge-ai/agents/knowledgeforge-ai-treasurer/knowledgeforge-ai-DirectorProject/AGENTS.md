@@ -1,7 +1,7 @@
 ---
-name: 
+name: Director Project
+slug: Director Project
 human_name: Director Project
-Director Project
 reportsTo: knowledgeforge-coordinator-guardian
 role: director-project
 title: 
@@ -9,6 +9,7 @@ status: idle
 capabilities: 
 company: knowledgeforge-ai
 ---
+
 
 # Director Project
 

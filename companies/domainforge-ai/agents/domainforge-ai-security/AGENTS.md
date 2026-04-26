@@ -1,13 +1,13 @@
 ---
 human_name: Security
+slug: domainforge-ai-security
 human_name: Security
 human_name: Security
 human_name: Security
 human_name: Security
 human_name: Security
-name: 
+name: Security
 human_name: Security
-dependency-manager
 description: >
   Dependency Tracking & Resolution specialist. Manages issue dependencies,
   identifies blocking relationships, and orchestrates parallel and sequential workflows.

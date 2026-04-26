@@ -1,7 +1,7 @@
 ---
-name: 
+name: Architect
+slug: Architect
 human_name: Architect New
-Architect
 reportsTo: knowledgeforge-coordinator-guardian
 role: architectural
 title: 
@@ -9,6 +9,7 @@ status: idle
 capabilities: 
 company: knowledgeforge-ai
 ---
+
 
 # Architect
 

@@ -1,7 +1,7 @@
 ---
-name: 
+name: Inspector QC
+slug: Inspector QC
 human_name: Inspector Qc
-Inspector QC
 reportsTo: knowledgeforge-coordinator-guardian
 role: quality-control
 title: 
@@ -9,6 +9,7 @@ status: idle
 capabilities: 
 company: knowledgeforge-ai
 ---
+
 
 # Inspector QC
 

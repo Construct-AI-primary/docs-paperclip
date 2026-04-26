@@ -1,7 +1,7 @@
 ---
-name: 
+name: Surveyor
 human_name: Surveyor
-Surveyor
+slug: knowledgeforge-ai-surveyor
 role: quantity-surveying
 title: Surveyor
 status: idle

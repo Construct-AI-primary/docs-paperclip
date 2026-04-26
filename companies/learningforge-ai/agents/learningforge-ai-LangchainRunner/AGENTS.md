@@ -1,7 +1,6 @@
 ---
-name: 
+name: Langchain Runner
 human_name: Langchain Runner
-LangChain Runner Agent
 title: Deep Agents Orchestration Specialist
 slug: learningforge-ai-langchain-runner
 role: specialist

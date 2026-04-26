@@ -1,5 +1,6 @@
 ---
 human_name: Project Controls
+slug: domainforge-ai-projectcontrols
 human_name: Project Controls
 human_name: Project Controls
 human_name: Project Controls
@@ -15,9 +16,8 @@ human_name: Project Controls
 human_name: Project Controls
 human_name: Project Controls
 human_name: Project Controls
-name: 
+name: Project Controls
 human_name: Project Controls
-dependency-manager
 description: >
   Dependency Tracking & Resolution specialist. Manages issue dependencies,
   identifies blocking relationships, and orchestrates parallel and sequential workflows.

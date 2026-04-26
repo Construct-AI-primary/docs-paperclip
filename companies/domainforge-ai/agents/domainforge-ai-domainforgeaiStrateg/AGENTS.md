@@ -1,7 +1,6 @@
 ---
-name: 
+name: domainforgeai Strateg
 human_name: domainforgeai Strateg 
-strategos-domainforge-strategic-planning
 slug: strategos-domainforge-strategic-planning
 reportsTo: orion-domainforge-ceo
 skills:

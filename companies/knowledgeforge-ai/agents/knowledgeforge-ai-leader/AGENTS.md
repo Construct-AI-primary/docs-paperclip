@@ -1,7 +1,7 @@
 ---
-name: 
+name: Leader
 human_name: Leader
-Leader
+slug: knowledgeforge-ai-leader
 role: sector-qa-lead
 title: Leader
 status: idle

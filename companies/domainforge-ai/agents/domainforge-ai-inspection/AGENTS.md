@@ -1,5 +1,6 @@
 ---
 human_name: Inspection
+slug: domainforge-ai-inspection
 human_name: Inspection
 human_name: Inspection
 human_name: Inspection
@@ -16,9 +17,8 @@ human_name: Inspection
 human_name: Inspection
 human_name: Inspection
 human_name: Inspection
-name: 
+name: Inspection
 human_name: Inspection
-dependency-manager
 description: >
   Dependency Tracking & Resolution specialist. Manages issue dependencies,
   identifies blocking relationships, and orchestrates parallel and sequential workflows.

@@ -1,5 +1,6 @@
 ---
 human_name: Network Navigator
+slug: paperclipforge-ai-networknavigator
 human_name: Network Navigator
 human_name: Network Navigator
 human_name: Network Navigator
@@ -131,9 +132,8 @@ human_name: Network Navigator
 human_name: Network Navigator
 human_name: Network Navigator
 human_name: Network Navigator
-name: 
+name: Network Navigator
 human_name: Network Navigator
-dependency-manager
 description: >
   Dependency Tracking & Resolution specialist. Manages issue dependencies,
   identifies blocking relationships, and orchestrates parallel and sequential workflows.

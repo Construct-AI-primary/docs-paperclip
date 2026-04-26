@@ -1,13 +1,14 @@
 ---
-name: 
+name: System Administrator
+slug: System Administrator
 human_name: System Administrator
-System Administrator
 role: system administration
 title: System Administrator
 status: idle
 reportsTo: knowledgeforge-coordinator-guardian
 capabilities: System Configuration, Administration, IT Management
 ---
+
 
 # System Administrator
 

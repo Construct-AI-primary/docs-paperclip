@@ -1,5 +1,6 @@
 ---
 human_name: Testing Coordinator
+slug: mobileforge-ai-testingcoordinator
 human_name: Testing Coordinator
 human_name: Testing Coordinator
 human_name: Testing Coordinator
@@ -94,9 +95,8 @@ human_name: Testing Coordinator
 human_name: Testing Coordinator
 human_name: Testing Coordinator
 human_name: Testing Coordinator
-name: 
+name: Testing Coordinator
 human_name: Testing Coordinator
-dependency-manager
 description: >
   Dependency Tracking & Resolution specialist. Manages issue dependencies,
   identifies blocking relationships, and orchestrates parallel and sequential workflows.

@@ -1,7 +1,6 @@
 ---
-name: 
+name: Ambassador
 human_name: Ambassador
-ambassador-devforge-brand-representation
 slug: ambassador-devforge-brand-representation
 reportsTo: nexus-devforge-ceo
 skills:

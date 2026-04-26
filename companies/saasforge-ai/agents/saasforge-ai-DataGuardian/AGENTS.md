@@ -1,5 +1,6 @@
 ---
 human_name: Data Guardian
+slug: saasforge-ai-dataguardian
 human_name: Data Guardian
 human_name: Data Guardian
 human_name: Data Guardian
@@ -57,9 +58,8 @@ human_name: Data Guardian
 human_name: Data Guardian
 human_name: Data Guardian
 human_name: Data Guardian
-name: 
+name: Data Guardian
 human_name: Data Guardian
-dependency-manager
 description: >
   Dependency Tracking & Resolution specialist. Manages issue dependencies,
   identifies blocking relationships, and orchestrates parallel and sequential workflows.

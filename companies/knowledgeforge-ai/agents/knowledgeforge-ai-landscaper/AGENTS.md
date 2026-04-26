@@ -1,7 +1,7 @@
 ---
-name: 
+name: Landscaper
 human_name: Landscaper
-Landscaper
+slug: knowledgeforge-ai-landscaper
 role: landscaping
 title: Landscaper
 status: idle

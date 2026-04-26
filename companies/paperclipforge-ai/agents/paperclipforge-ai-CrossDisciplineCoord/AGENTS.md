@@ -1,7 +1,7 @@
 ---
-name: 
+name: Cross Discipline Coord
 human_name: Cross Discipline Coord
-cross-discipline-coordination
+slug: paperclipforge-ai-crossdisciplinecoord
 description: >
   Cross-Discipline Coordination Specialist - Expert in BIM coordination, clash detection,
   interdisciplinary design integration, and engineering change management for enterprise construction projects.

@@ -1,7 +1,7 @@
 ---
-name: 
+name: Greeter
 human_name: Greeter
-Greeter
+slug: knowledgeforge-ai-greeter
 role: user-signup
 title: Greeter
 status: idle

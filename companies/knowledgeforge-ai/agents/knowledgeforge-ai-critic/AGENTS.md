@@ -1,7 +1,7 @@
 ---
-name: 
+name: Critic
 human_name: Critic
-Critic
+slug: knowledgeforge-ai-critic
 role: doc-analyzer
 title: Critic
 status: error

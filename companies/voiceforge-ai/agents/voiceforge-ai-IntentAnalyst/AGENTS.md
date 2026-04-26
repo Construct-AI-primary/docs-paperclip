@@ -1,5 +1,6 @@
 ---
 human_name: Intent Analyst
+slug: voiceforge-ai-intentanalyst
 human_name: Intent Analyst
 human_name: Intent Analyst
 human_name: Intent Analyst
@@ -85,9 +86,8 @@ human_name: Intent Analyst
 human_name: Intent Analyst
 human_name: Intent Analyst
 human_name: Intent Analyst
-name: 
+name: Intent Analyst
 human_name: Intent Analyst
-dependency-manager
 description: >
   Dependency Tracking & Resolution specialist. Manages issue dependencies,
   identifies blocking relationships, and orchestrates parallel and sequential workflows.

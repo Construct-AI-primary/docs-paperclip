@@ -1,7 +1,7 @@
 ---
-name: 
+name: Local SEO Expert
 human_name: Local SEO Expert
-local-seo-expert
+slug: contentforge-ai-localseoexpert
 role: Local Search Optimization Specialist
 ---
 

@@ -1,5 +1,6 @@
 ---
 human_name: Platform Architect
+slug: saasforge-ai-platformarchitect
 human_name: Platform Architect
 human_name: Platform Architect
 human_name: Platform Architect
@@ -64,9 +65,8 @@ human_name: Platform Architect
 human_name: Platform Architect
 human_name: Platform Architect
 human_name: Platform Architect
-name: 
+name: Platform Architect
 human_name: Platform Architect
-dependency-manager
 description: >
   Dependency Tracking & Resolution specialist. Manages issue dependencies,
   identifies blocking relationships, and orchestrates parallel and sequential workflows.

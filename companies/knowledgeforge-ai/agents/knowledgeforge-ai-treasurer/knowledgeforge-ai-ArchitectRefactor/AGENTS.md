@@ -1,13 +1,14 @@
 ---
-name: 
+name: Architect - refactor
+slug: Architect - refactor
 human_name: Architect Refactor
-Architect - refactor
 role: arch-refactorer
 title: Architect - refactor
 status: idle
 reportsTo: knowledgeforge-coordinator-guardian
 capabilities: Arch Refactorer
 ---
+
 
 # Architect - refactor
 

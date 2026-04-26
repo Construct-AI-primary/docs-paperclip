@@ -1,7 +1,6 @@
 ---
-name: 
+name: Flowdesigner
 human_name: Flowdesigner
-flowdesigner-promptforge-agent-handoff
 slug: flowdesigner-promptforge-agent-handoff
 reportsTo: sage-promptforge-chief-architect
 skills:

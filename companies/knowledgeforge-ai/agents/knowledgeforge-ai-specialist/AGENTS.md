@@ -1,7 +1,7 @@
 ---
-name: 
+name: Specialist
 human_name: Specialist
-Specialist
+slug: knowledgeforge-ai-specialist
 role: local-content
 title: Specialist
 status: idle

@@ -1,7 +1,7 @@
 ---
-name: 
+name: Examiner
 human_name: Examiner
-Examiner
+slug: knowledgeforge-ai-examiner
 role: quality-assurance
 title: Examiner
 status: idle

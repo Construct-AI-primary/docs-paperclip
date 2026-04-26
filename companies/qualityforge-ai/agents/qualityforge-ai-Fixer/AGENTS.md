@@ -1,7 +1,6 @@
 ---
-name: 
+name: Fixer
 human_name: Fixer
-fixer-qualityforge-bug-fixing-specialist
 slug: fixer-qualityforge-bug-fixing-specialist
 reportsTo: governor-qualityforge-quality-director
 skills:

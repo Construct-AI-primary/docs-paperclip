@@ -1,5 +1,6 @@
 ---
 human_name: Tenant Manager
+slug: saasforge-ai-tenantmanager
 human_name: Tenant Manager
 human_name: Tenant Manager
 human_name: Tenant Manager
@@ -58,9 +59,8 @@ human_name: Tenant Manager
 human_name: Tenant Manager
 human_name: Tenant Manager
 human_name: Tenant Manager
-name: 
+name: Tenant Manager
 human_name: Tenant Manager
-dependency-manager
 description: >
   Dependency Tracking & Resolution specialist. Manages issue dependencies,
   identifies blocking relationships, and orchestrates parallel and sequential workflows.

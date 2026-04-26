@@ -1,7 +1,7 @@
 ---
-name: 
+name: Builder
 human_name: Builder
-Builder
+slug: knowledgeforge-ai-builder
 role: civil-engineer
 title: Builder
 status: idle

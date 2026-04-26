@@ -1,7 +1,6 @@
 ---
-name: 
+name: Supply Chain
 human_name: Supply Chain
-supply-chain-integration-infraforge-supply-chain
 slug: supply-chain-integration-infraforge-supply-chain
 reportsTo: orchestrator-infraforge-ceo
 skills:

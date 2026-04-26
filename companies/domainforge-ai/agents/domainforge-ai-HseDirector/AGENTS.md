@@ -1,5 +1,6 @@
 ---
 human_name: Hse Director
+slug: domainforge-ai-hsedirector
 human_name: Hse Director
 human_name: Hse Director
 human_name: Hse Director
@@ -11,9 +12,8 @@ human_name: Hse Director
 human_name: Hse Director
 human_name: Hse Director
 human_name: Hse Director
-name: 
+name: Hse Director
 human_name: Hse Director
-dependency-manager
 description: >
   Dependency Tracking & Resolution specialist. Manages issue dependencies,
   identifies blocking relationships, and orchestrates parallel and sequential workflows.

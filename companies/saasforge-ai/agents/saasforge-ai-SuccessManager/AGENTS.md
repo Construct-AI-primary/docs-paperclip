@@ -1,5 +1,6 @@
 ---
 human_name: Success Manager
+slug: saasforge-ai-successmanager
 human_name: Success Manager
 human_name: Success Manager
 human_name: Success Manager
@@ -53,9 +54,8 @@ human_name: Success Manager
 human_name: Success Manager
 human_name: Success Manager
 human_name: Success Manager
-name: 
+name: Success Manager
 human_name: Success Manager
-dependency-manager
 description: >
   Dependency Tracking & Resolution specialist. Manages issue dependencies,
   identifies blocking relationships, and orchestrates parallel and sequential workflows.

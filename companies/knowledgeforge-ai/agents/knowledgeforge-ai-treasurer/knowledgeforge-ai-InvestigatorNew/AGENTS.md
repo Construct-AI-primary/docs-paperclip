@@ -1,7 +1,7 @@
 ---
-name: 
+name: Investigator
+slug: Investigator
 human_name: Investigator New
-Investigator
 reportsTo: knowledgeforge-coordinator-guardian
 role: failure-learner
 title: 
@@ -9,6 +9,7 @@ status: idle
 capabilities: 
 company: knowledgeforge-ai
 ---
+
 
 # Investigator
 

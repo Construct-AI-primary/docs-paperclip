@@ -1,7 +1,7 @@
 ---
-name: 
+name: Archivist
 human_name: Archivist
-Archivist
+slug: knowledgeforge-ai-archivist
 role: document-control
 title: Archivist
 status: idle

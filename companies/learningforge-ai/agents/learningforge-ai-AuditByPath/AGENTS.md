@@ -1,7 +1,6 @@
 ---
-name: 
+name: Audit By Path
 human_name: Audit By Path
-Audit By Path Agent
 title: Audit Trail Indexing Specialist
 slug: learningforge-ai-audit-by-path
 role: specialist

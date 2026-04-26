@@ -1,5 +1,6 @@
 ---
 human_name: Directors
+slug: domainforge-ai-directors
 human_name: Directors
 human_name: Directors
 human_name: Directors
@@ -31,9 +32,8 @@ human_name: Directors
 human_name: Directors
 human_name: Directors
 human_name: Directors
-name: 
+name: Directors
 human_name: Directors
-dependency-manager
 description: >
   Dependency Tracking & Resolution specialist. Manages issue dependencies,
   identifies blocking relationships, and orchestrates parallel and sequential workflows.

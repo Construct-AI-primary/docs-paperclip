@@ -1,5 +1,6 @@
 ---
 human_name: Finance Director
+slug: domainforge-ai-financedirector
 human_name: Finance Director
 human_name: Finance Director
 human_name: Finance Director
@@ -27,9 +28,8 @@ human_name: Finance Director
 human_name: Finance Director
 human_name: Finance Director
 human_name: Finance Director
-name: 
+name: Finance Director
 human_name: Finance Director
-dependency-manager
 description: >
   Dependency Tracking & Resolution specialist. Manages issue dependencies,
   identifies blocking relationships, and orchestrates parallel and sequential workflows.

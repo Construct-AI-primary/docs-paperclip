@@ -1,7 +1,6 @@
 ---
-name: 
+name: Statemaster
 human_name: Statemaster
-statemaster-promptforge-state-management
 slug: statemaster-promptforge-state-management
 reportsTo: sage-promptforge-chief-architect
 skills:

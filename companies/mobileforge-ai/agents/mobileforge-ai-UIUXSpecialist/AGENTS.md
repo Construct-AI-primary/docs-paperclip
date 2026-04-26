@@ -1,5 +1,6 @@
 ---
 human_name: UI UX Specialist
+slug: mobileforge-ai-uiuxspecialist
 human_name: UI UX Specialist
 human_name: UI UX Specialist
 human_name: UI UX Specialist
@@ -98,9 +99,8 @@ human_name: UI UX Specialist
 human_name: UI UX Specialist
 human_name: UI UX Specialist
 human_name: UI UX Specialist
-name: 
+name: UI UX Specialist
 human_name: UI UX Specialist
-dependency-manager
 description: >
   Dependency Tracking & Resolution specialist. Manages issue dependencies,
   identifies blocking relationships, and orchestrates parallel and sequential workflows.

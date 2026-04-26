@@ -1,7 +1,7 @@
 ---
-name: 
+name: Assignment Specialist
 human_name: Assignment Specialist
-assignment-specialist
+slug: paperclipforge-ai-assignmentspecialist
 description: >
   Intelligent Issue Routing specialist. Uses AI algorithms to match issues with
   optimal agents, considering skills, availability, workload, and project requirements.

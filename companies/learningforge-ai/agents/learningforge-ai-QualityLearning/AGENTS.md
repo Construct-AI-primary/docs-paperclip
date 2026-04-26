@@ -1,7 +1,6 @@
 ---
-name: 
+name: Quality Learning
 human_name: Quality Learning
-Quality Learning Agent
 title: Defect-Based Learning Specialist
 slug: learningforge-ai-quality-learning
 role: specialist

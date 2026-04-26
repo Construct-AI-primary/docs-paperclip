@@ -1,7 +1,6 @@
 ---
-name: 
+name: Knowledge Provenance
 human_name: Knowledge Provenance
-Knowledge Provenance Agent
 title: Trace Graph Building Specialist
 slug: learningforge-ai-knowledge-provenance
 role: specialist

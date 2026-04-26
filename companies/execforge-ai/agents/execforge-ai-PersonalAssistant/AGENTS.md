@@ -1,5 +1,6 @@
 ---
 human_name: Personal Assistant
+slug: execforge-ai-personalassistant
 human_name: Personal Assistant
 human_name: Personal Assistant
 human_name: Personal Assistant
@@ -70,9 +71,8 @@ human_name: Personal Assistant
 human_name: Personal Assistant
 human_name: Personal Assistant
 human_name: Personal Assistant
-name: 
+name: Personal Assistant
 human_name: Personal Assistant
-dependency-manager
 description: >
   Dependency Tracking & Resolution specialist. Manages issue dependencies,
   identifies blocking relationships, and orchestrates parallel and sequential workflows.

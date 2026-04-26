@@ -1,7 +1,6 @@
 ---
-name: 
+name: Postgres
 human_name: Postgres
-postgres-infraforge
 slug: postgres-infraforge
 reportsTo: orchestrator-infraforge-ceo
 skills:

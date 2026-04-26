@@ -1,7 +1,6 @@
 ---
-name: 
+name: Autoresearch Gap Analy
 human_name: Autoresearch Gap Analy
-AutoResearch Gap Analyzer
 title: Knowledge & Skill Gap Analysis Specialist
 slug: learningforge-ai-autoresearch-gap-analyzer
 role: specialist

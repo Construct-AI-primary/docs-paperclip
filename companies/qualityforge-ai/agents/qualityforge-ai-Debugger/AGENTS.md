@@ -1,7 +1,6 @@
 ---
-name: 
+name: Debugger
 human_name: Debugger
-debugger-Debugger-specialist
 slug: debugger-Debugger-specialist
 reportsTo: governor-qualityforge-quality-director
 skills:

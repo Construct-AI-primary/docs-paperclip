@@ -1,7 +1,6 @@
 ---
-name: 
+name: Compatibility
 human_name: Compatibility
-compatibility
 slug: compatibility
 reportsTo: governor-qualityforge-quality-director
 skills:

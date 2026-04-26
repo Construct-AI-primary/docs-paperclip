@@ -1,5 +1,6 @@
 ---
 human_name: Performance Optimizer
+slug: mobileforge-ai-performanceoptimizer
 human_name: Performance Optimizer
 human_name: Performance Optimizer
 human_name: Performance Optimizer
@@ -102,9 +103,8 @@ human_name: Performance Optimizer
 human_name: Performance Optimizer
 human_name: Performance Optimizer
 human_name: Performance Optimizer
-name: 
+name: Performance Optimizer
 human_name: Performance Optimizer
-dependency-manager
 description: >
   Dependency Tracking & Resolution specialist. Manages issue dependencies,
   identifies blocking relationships, and orchestrates parallel and sequential workflows.

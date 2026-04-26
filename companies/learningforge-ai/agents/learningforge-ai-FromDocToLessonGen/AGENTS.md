@@ -1,7 +1,6 @@
 ---
-name: 
+name: From Doc To Lesson Gen
 human_name: From Doc To Lesson Gen
-From Doc To Lesson Generator
 title: Content Transformation Specialist
 slug: learningforge-ai-from-doc-to-lesson-generator
 role: specialist

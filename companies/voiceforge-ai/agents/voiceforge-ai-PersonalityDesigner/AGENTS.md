@@ -1,5 +1,6 @@
 ---
 human_name: Personality Designer
+slug: voiceforge-ai-personalitydesigner
 human_name: Personality Designer
 human_name: Personality Designer
 human_name: Personality Designer
@@ -84,9 +85,8 @@ human_name: Personality Designer
 human_name: Personality Designer
 human_name: Personality Designer
 human_name: Personality Designer
-name: 
+name: Personality Designer
 human_name: Personality Designer
-dependency-manager
 description: >
   Dependency Tracking & Resolution specialist. Manages issue dependencies,
   identifies blocking relationships, and orchestrates parallel and sequential workflows.

@@ -1,7 +1,7 @@
 ---
-name: 
+name: Gatekeeper
 human_name: Gatekeeper
-Gatekeeper
+slug: knowledgeforge-ai-gatekeeper
 role: auth-flow
 title: Gatekeeper
 status: idle

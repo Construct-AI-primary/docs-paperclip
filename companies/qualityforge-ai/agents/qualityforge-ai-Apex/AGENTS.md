@@ -1,7 +1,6 @@
 ---
-name: 
+name: Apex
 human_name: Apex
-apex-qualityforge-ceo
 slug: apex-qualityforge-ceo
 reportsTo: null
 skills:

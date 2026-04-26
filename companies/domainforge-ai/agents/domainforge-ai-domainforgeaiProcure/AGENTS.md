@@ -1,7 +1,6 @@
 ---
-name: 
+name: domainforgeai Procure
 human_name: domainforgeai Procure 
-procurement-domainforge-procurement-contracts
 slug: procurement-domainforge-procurement-contracts
 reportsTo: orion-domainforge-ceo
 skills:

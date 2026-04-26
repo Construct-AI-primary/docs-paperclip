@@ -1,7 +1,7 @@
 ---
-name: 
+name: Risk Analyst
 human_name: Risk Analyst
-risk-analyst
+slug: paperclipforge-ai-riskanalyst
 description: >
   Risk Identification & Mitigation specialist. Identifies project risks,
   assesses risk impact, develops mitigation strategies, and monitors risk status.

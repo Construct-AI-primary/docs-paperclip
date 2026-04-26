@@ -1,5 +1,6 @@
 ---
 human_name: Supplier Management
+slug: domainforge-ai-suppliermanagement
 human_name: Supplier Management
 human_name: Supplier Management
 human_name: Supplier Management
@@ -45,9 +46,8 @@ human_name: Supplier Management
 human_name: Supplier Management
 human_name: Supplier Management
 human_name: Supplier Management
-name: 
+name: Supplier Management
 human_name: Supplier Management
-dependency-manager
 description: >
   Dependency Tracking & Resolution specialist. Manages issue dependencies,
   identifies blocking relationships, and orchestrates parallel and sequential workflows.

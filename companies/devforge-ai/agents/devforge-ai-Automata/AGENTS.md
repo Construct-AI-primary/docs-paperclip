@@ -1,7 +1,6 @@
 ---
-name: 
+name: Automata
 human_name: Automata
-automata-devforge-automation-systems
 slug: automata-devforge-automation-systems
 reportsTo: forge-devforge-system-architecture
 skills:

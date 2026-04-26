@@ -1,7 +1,7 @@
 ---
-name: 
+name: Multi Discipline Coord
 human_name: Multi Discipline Coord
-coordinator-devforge-multi-discipline
+slug: devforge-ai-multidisciplinecoord
 description: >
   Multi-Discipline Coordinator - Specialized in orchestrating cross-functional development
   workflows across engineering, design, QA, and operations disciplines within the DevForge AI

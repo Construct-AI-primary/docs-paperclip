@@ -1,7 +1,6 @@
 ---
-name: 
+name: Auditor
 human_name: Auditor
-auditor-devforge-security-compliance
 slug: auditor-devforge-security-compliance
 reportsTo: guardian-devforge-threat-protection
 skills:

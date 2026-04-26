@@ -1,5 +1,6 @@
 ---
 human_name: Presentation Specialis
+slug: execforge-ai-presentationspecialis
 human_name: Presentation Specialis
 human_name: Presentation Specialis
 human_name: Presentation Specialis
@@ -80,9 +81,8 @@ human_name: Presentation Specialis
 human_name: Presentation Specialis
 human_name: Presentation Specialis
 human_name: Presentation Specialis
-name: 
+name: Presentation Specialis
 human_name: Presentation Specialis
-dependency-manager
 description: >
   Dependency Tracking & Resolution specialist. Manages issue dependencies,
   identifies blocking relationships, and orchestrates parallel and sequential workflows.

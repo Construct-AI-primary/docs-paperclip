@@ -1,7 +1,7 @@
 ---
-name: 
+name: Concierge
 human_name: Concierge
-Concierge
+slug: knowledgeforge-ai-concierge
 role: home-login
 title: Concierge
 status: idle

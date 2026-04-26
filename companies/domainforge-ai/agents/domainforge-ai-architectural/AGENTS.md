@@ -1,5 +1,6 @@
 ---
 human_name: Architectural
+slug: domainforge-ai-architectural
 human_name: Architectural
 human_name: Architectural
 human_name: Architectural
@@ -41,9 +42,8 @@ human_name: Architectural
 human_name: Architectural
 human_name: Architectural
 human_name: Architectural
-name: 
+name: Architectural
 human_name: Architectural
-dependency-manager
 description: >
   Dependency Tracking & Resolution specialist. Manages issue dependencies,
   identifies blocking relationships, and orchestrates parallel and sequential workflows.

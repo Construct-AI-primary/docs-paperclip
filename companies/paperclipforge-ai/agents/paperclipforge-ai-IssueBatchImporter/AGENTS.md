@@ -1,7 +1,6 @@
 ---
-name: 
+name: Issue Batch Importer
 human_name: Issue Batch Importer
-Issue Batch Importer
 title: Bulk Issue Processing Specialist
 slug: issue-batch-importer-paperclipforge
 role: specialist

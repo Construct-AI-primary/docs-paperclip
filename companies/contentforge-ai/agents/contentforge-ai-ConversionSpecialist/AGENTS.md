@@ -1,7 +1,7 @@
 ---
-name: 
+name: Conversion Specialist
 human_name: Conversion Specialist
-conversion-specialist
+slug: contentforge-ai-conversionspecialist
 role: Conversion Rate Optimization Expert
 ---
 

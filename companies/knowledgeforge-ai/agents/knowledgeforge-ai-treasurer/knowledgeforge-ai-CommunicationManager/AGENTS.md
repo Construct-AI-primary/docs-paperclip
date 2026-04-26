@@ -1,13 +1,14 @@
 ---
-name: 
+name: Communication Manager
+slug: Communication Manager
 human_name: Communication Manager
-Communication Manager
 role: communication management
 title: Communication Manager
 status: idle
 reportsTo: knowledgeforge-coordinator-guardian
 capabilities: Email Systems, Notifications, Communication Management
 ---
+
 
 # Communication Manager
 

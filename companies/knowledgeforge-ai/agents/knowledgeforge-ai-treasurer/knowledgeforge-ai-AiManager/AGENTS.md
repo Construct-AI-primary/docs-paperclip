@@ -1,13 +1,14 @@
 ---
-name: 
+name: AI Manager
+slug: AI Manager
 human_name: Ai Manager
-AI Manager
 role: ai management
 title: AI Manager
 status: idle
 reportsTo: knowledgeforge-coordinator-guardian
 capabilities: AI Systems, Agent Management, Machine Learning Operations
 ---
+
 
 # AI Manager
 

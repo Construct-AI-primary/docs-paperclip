@@ -1,5 +1,6 @@
 ---
 human_name: Dev Ops Engineer
+slug: saasforge-ai-devopsengineer
 human_name: Dev Ops Engineer
 human_name: Dev Ops Engineer
 human_name: Dev Ops Engineer
@@ -61,9 +62,8 @@ human_name: Dev Ops Engineer
 human_name: Dev Ops Engineer
 human_name: Dev Ops Engineer
 human_name: Dev Ops Engineer
-name: 
+name: Dev Ops Engineer
 human_name: Dev Ops Engineer
-dependency-manager
 description: >
   Dependency Tracking & Resolution specialist. Manages issue dependencies,
   identifies blocking relationships, and orchestrates parallel and sequential workflows.

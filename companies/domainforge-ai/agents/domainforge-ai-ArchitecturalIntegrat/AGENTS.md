@@ -1,5 +1,6 @@
 ---
 human_name: Architectural Integrat
+slug: domainforge-ai-architecturalintegrat
 human_name: Architectural Integrat
 human_name: Architectural Integrat
 human_name: Architectural Integrat
@@ -30,9 +31,8 @@ human_name: Architectural Integrat
 human_name: Architectural Integrat
 human_name: Architectural Integrat
 human_name: Architectural Integrat
-name: 
+name: Architectural Integrat
 human_name: Architectural Integrat
-dependency-manager
 description: >
   Dependency Tracking & Resolution specialist. Manages issue dependencies,
   identifies blocking relationships, and orchestrates parallel and sequential workflows.

@@ -1,7 +1,6 @@
 ---
-name: 
+name: Autoresearch Literatur
 human_name: Autoresearch Literatur
-AutoResearch Literature Scanner
 title: Academic & Technical Literature Scanner
 slug: learningforge-ai-autoresearch-literature-scanner
 role: specialist

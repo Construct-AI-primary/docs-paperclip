@@ -1,7 +1,7 @@
 ---
-name: 
+name: Data Analyst
 human_name: Data Analyst
-data-analyst
+slug: contentforge-ai-dataanalyst
 role: Analytics & Insights Team Lead & Data Specialist
 ---
 

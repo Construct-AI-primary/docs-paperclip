@@ -1,7 +1,7 @@
 ---
-name: 
+name: Mobile Optimizer
 human_name: Mobile Optimizer
-mobile-optimizer
+slug: contentforge-ai-mobileoptimizer
 role: Mobile Performance & Design Specialist
 ---
 

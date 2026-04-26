@@ -1,5 +1,6 @@
 ---
 human_name: Conversation Manager
+slug: voiceforge-ai-conversationmanager
 human_name: Conversation Manager
 human_name: Conversation Manager
 human_name: Conversation Manager
@@ -81,9 +82,8 @@ human_name: Conversation Manager
 human_name: Conversation Manager
 human_name: Conversation Manager
 human_name: Conversation Manager
-name: 
+name: Conversation Manager
 human_name: Conversation Manager
-dependency-manager
 description: >
   Dependency Tracking & Resolution specialist. Manages issue dependencies,
   identifies blocking relationships, and orchestrates parallel and sequential workflows.

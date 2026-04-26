@@ -1,7 +1,6 @@
 ---
-name: 
+name: Micro Lesson Generator
 human_name: Micro Lesson Generator
-Micro-Lesson Generator
 title: Scenario-Based Exercise Specialist
 slug: learningforge-ai-micro-lesson-generator
 role: specialist

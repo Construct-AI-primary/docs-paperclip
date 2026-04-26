@@ -1,5 +1,6 @@
 ---
 human_name: Context Coordinator
+slug: voiceforge-ai-contextcoordinator
 human_name: Context Coordinator
 human_name: Context Coordinator
 human_name: Context Coordinator
@@ -89,9 +90,8 @@ human_name: Context Coordinator
 human_name: Context Coordinator
 human_name: Context Coordinator
 human_name: Context Coordinator
-name: 
+name: Context Coordinator
 human_name: Context Coordinator
-dependency-manager
 description: >
   Dependency Tracking & Resolution specialist. Manages issue dependencies,
   identifies blocking relationships, and orchestrates parallel and sequential workflows.

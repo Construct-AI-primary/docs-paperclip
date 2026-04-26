@@ -1,7 +1,7 @@
 ---
-name: 
+name: Compliance Validator
 human_name: Compliance Validator
-compliance-validator
+slug: qualityforge-ai-compliancevalidator
 description: >
   Compliance Validator - Specialized in validating regulatory compliance, industry standards
   adherence, and internal policy conformance across the QualityForge AI ecosystem. Performs

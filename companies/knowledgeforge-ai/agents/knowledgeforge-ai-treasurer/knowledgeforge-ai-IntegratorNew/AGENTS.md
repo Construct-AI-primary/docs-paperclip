@@ -1,7 +1,7 @@
 ---
-name: 
+name: Integrator
+slug: Integrator
 human_name: Integrator New
-Integrator
 reportsTo: knowledgeforge-coordinator-guardian
 role: clinet-integrator
 title: 
@@ -9,6 +9,7 @@ status: idle
 capabilities: 
 company: knowledgeforge-ai
 ---
+
 
 # Integrator
 

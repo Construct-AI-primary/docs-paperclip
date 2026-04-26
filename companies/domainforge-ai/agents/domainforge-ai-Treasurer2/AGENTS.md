@@ -1,5 +1,6 @@
 ---
 human_name: Treasurer 2
+slug: domainforge-ai-treasurer2
 human_name: Treasurer 2
 human_name: Treasurer 2
 human_name: Treasurer 2
@@ -35,9 +36,8 @@ human_name: Treasurer 2
 human_name: Treasurer 2
 human_name: Treasurer 2
 human_name: Treasurer 2
-name: 
+name: Treasurer 2
 human_name: Treasurer 2
-dependency-manager
 description: >
   Dependency Tracking & Resolution specialist. Manages issue dependencies,
   identifies blocking relationships, and orchestrates parallel and sequential workflows.

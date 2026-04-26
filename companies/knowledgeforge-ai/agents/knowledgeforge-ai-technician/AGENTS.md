@@ -1,7 +1,7 @@
 ---
-name: 
+name: Technician
 human_name: Technician
-Technician
+slug: knowledgeforge-ai-technician
 role: information-technology
 title: Technician
 status: idle

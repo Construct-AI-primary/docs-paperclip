@@ -1,7 +1,7 @@
 ---
-name: 
+name: Communicator
 human_name: Communicator
-Communicator
+slug: knowledgeforge-ai-communicator
 role: public-relations
 title: Communicator
 status: idle

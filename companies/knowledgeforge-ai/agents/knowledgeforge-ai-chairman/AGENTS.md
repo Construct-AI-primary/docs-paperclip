@@ -1,7 +1,7 @@
 ---
-name: 
+name: Chairman
 human_name: Chairman
-Chairman
+slug: knowledgeforge-ai-chairman
 role: board-of-directors
 title: Chairman
 status: idle

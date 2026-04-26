@@ -1,7 +1,7 @@
 ---
-name: 
+name: Merchant
 human_name: Merchant
-Merchant
+slug: knowledgeforge-ai-merchant
 role: commercial
 title: Merchant
 status: idle

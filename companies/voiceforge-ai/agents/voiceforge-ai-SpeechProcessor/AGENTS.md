@@ -1,5 +1,6 @@
 ---
 human_name: Speech Processor
+slug: voiceforge-ai-speechprocessor
 human_name: Speech Processor
 human_name: Speech Processor
 human_name: Speech Processor
@@ -87,9 +88,8 @@ human_name: Speech Processor
 human_name: Speech Processor
 human_name: Speech Processor
 human_name: Speech Processor
-name: 
+name: Speech Processor
 human_name: Speech Processor
-dependency-manager
 description: >
   Dependency Tracking & Resolution specialist. Manages issue dependencies,
   identifies blocking relationships, and orchestrates parallel and sequential workflows.

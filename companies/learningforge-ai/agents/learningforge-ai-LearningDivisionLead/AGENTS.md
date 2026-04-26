@@ -1,7 +1,6 @@
 ---
-name: 
+name: Learning Division Lead
 human_name: Learning Division Lead
-Learning Division Lead
 title: Head of Learning & Curriculum
 slug: learningforge-ai-learning-division-lead
 role: division-lead

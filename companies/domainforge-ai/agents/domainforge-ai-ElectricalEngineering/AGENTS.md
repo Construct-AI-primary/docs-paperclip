@@ -1,5 +1,6 @@
 ---
 human_name: Electrical Engineering
+slug: domainforge-ai-electricalengineering
 human_name: Electrical Engineering
 human_name: Electrical Engineering
 human_name: Electrical Engineering
@@ -43,9 +44,8 @@ human_name: Electrical Engineering
 human_name: Electrical Engineering
 human_name: Electrical Engineering
 human_name: Electrical Engineering
-name: 
+name: Electrical Engineering
 human_name: Electrical Engineering
-dependency-manager
 description: >
   Dependency Tracking & Resolution specialist. Manages issue dependencies,
   identifies blocking relationships, and orchestrates parallel and sequential workflows.

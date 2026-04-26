@@ -1,26 +1,14 @@
 ---
-name: 
+name: structural-element-specialist
+slug: structural-element-specialist
 human_name: Structural Element
-structural-element-specialist
 role: Structural Element Detection and Measurement Specialist
 description: >
-  Structural Element Detection and Measurement Specialist - Expert in identifying and measuring
-  structural building components including foundations, columns, beams, slabs, and load-bearing walls
-  with precision engineering standards compliance.
 reportsTo: measureforge-ai-cad-measurement-orchestrator
 team: element-specialists
 skills:
-  - structural-element-detection
-  - foundation-measurement
-  - column-beam-analysis
-  - slab-measurement
-  - load-bearing-wall-identification
-  - structural-steel-quantification
-  - concrete-volume-calculation
-  - reinforcement-measurement
-  - structural-standards-compliance
-  - engineering-drawing-analysis
 ---
+
 
 # Structural Element Specialist
 

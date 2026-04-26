@@ -1,7 +1,6 @@
 ---
-name: 
+name: Sentinelx
 human_name: Sentinelx
-sentinelx-devforge-advanced-monitoring
 slug: sentinelx-devforge-advanced-monitoring
 reportsTo: sentinel-devforge-data-quality-monitoring
 skills:

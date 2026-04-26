@@ -1,7 +1,6 @@
 ---
-name: 
+name: domainforgeai Civil
 human_name: domainforgeai Civil
-civil-domainforge-civil-engineering
 slug: civil-domainforge-civil-engineering
 reportsTo: orion-domainforge-ceo
 skills:

@@ -1,5 +1,6 @@
 ---
 human_name: Git Hub Branch Manager
+slug: saasforge-ai-githubbranchmanager
 human_name: Git Hub Branch Manager
 human_name: Git Hub Branch Manager
 human_name: Git Hub Branch Manager
@@ -63,9 +64,8 @@ human_name: Git Hub Branch Manager
 human_name: Git Hub Branch Manager
 human_name: Git Hub Branch Manager
 human_name: Git Hub Branch Manager
-name: 
+name: Git Hub Branch Manager
 human_name: Git Hub Branch Manager
-dependency-manager
 description: >
   Dependency Tracking & Resolution specialist. Manages issue dependencies,
   identifies blocking relationships, and orchestrates parallel and sequential workflows.

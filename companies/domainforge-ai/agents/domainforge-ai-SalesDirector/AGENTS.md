@@ -1,12 +1,12 @@
 ---
 human_name: Sales Director
+slug: domainforge-ai-salesdirector
 human_name: Sales Director
 human_name: Sales Director
 human_name: Sales Director
 human_name: Sales Director
-name: 
+name: Sales Director
 human_name: Sales Director
-dependency-manager
 description: >
   Dependency Tracking & Resolution specialist. Manages issue dependencies,
   identifies blocking relationships, and orchestrates parallel and sequential workflows.

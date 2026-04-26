@@ -1,7 +1,7 @@
 ---
-name: 
+name: Engineer
 human_name: Engineer
-Engineer
+slug: knowledgeforge-ai-engineer
 role: mechanical-engineer
 title: Engineer
 status: idle

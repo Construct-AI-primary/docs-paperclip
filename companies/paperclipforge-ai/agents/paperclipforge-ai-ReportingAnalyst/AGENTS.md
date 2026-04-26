@@ -1,7 +1,7 @@
 ---
-name: 
+name: Reporting Analyst
 human_name: Reporting Analyst
-reporting-analyst
+slug: paperclipforge-ai-reportinganalyst
 description: >
   Analytics & Reporting specialist. Provides comprehensive analytics, reporting,
   and business intelligence insights across the Paperclip ecosystem operations.

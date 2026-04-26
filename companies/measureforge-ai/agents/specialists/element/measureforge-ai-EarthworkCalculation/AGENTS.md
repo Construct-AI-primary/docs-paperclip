@@ -1,24 +1,14 @@
 ---
-name: 
+name: earthwork-calculation-specialist
+slug: earthwork-calculation-specialist
 human_name: Earthwork Calculation 
-earthwork-calculation-specialist
 role: Earthwork Volume and Terrain Analysis Specialist
 description: >
-  Earthwork Volume and Terrain Analysis Specialist - Expert in calculating cut/fill volumes,
-  terrain modeling, contour analysis, and earthwork optimization for civil engineering and
-  construction projects, ensuring accurate earthwork quantities and cost estimates.
 reportsTo: measureforge-ai-cad-measurement-orchestrator
 team: earthwork-agents
 skills:
-  - earthwork-volume-calculations
-  - digital-terrain-modeling
-  - contour-analysis-processing
-  - cut-fill-optimization
-  - terrain-analysis-surveying
-  - earthwork-cost-estimation
-  - volume-balance-analysis
-  - civil-engineering-quantities
 ---
+
 
 # Earthwork Calculation Specialist
 

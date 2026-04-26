@@ -1,7 +1,7 @@
 ---
-name: 
+name: Workflow Learning Coor
 human_name: Workflow Learning Coor
-workflow-learning-coordinator
+slug: devforge-ai-workflowlearningcoor
 description: >
   Continuous learning and pattern optimization specialist - Expert in collecting performance
   metrics, recognizing workflow patterns, and driving automated optimization across the

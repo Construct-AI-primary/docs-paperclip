@@ -1,5 +1,6 @@
 ---
 human_name: Scheduler
+slug: execforge-ai-scheduler
 human_name: Scheduler
 human_name: Scheduler
 human_name: Scheduler
@@ -79,9 +80,8 @@ human_name: Scheduler
 human_name: Scheduler
 human_name: Scheduler
 human_name: Scheduler
-name: 
+name: Scheduler
 human_name: Scheduler
-dependency-manager
 description: >
   Dependency Tracking & Resolution specialist. Manages issue dependencies,
   identifies blocking relationships, and orchestrates parallel and sequential workflows.

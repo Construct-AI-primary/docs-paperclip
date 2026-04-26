@@ -1,7 +1,6 @@
 ---
-name: 
+name: Refiner
 human_name: Refiner
-refiner-promptforge-version-control
 slug: refiner-promptforge-version-control
 reportsTo: sage-promptforge-chief-architect
 skills:

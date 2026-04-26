@@ -1,12 +1,11 @@
 ---
-name: 
+name: legal-domainforge-legal-regulatory-compliance
 human_name: Legal Legal
-legal-domainforge-legal-regulatory-compliance
 slug: legal-domainforge-legal-regulatory-compliance
 reportsTo: orion-domainforge-ceo
 skills:
-  - legal-domainforge-legal-regulatory-compliance
 ---
+
 
 # legal-domainforge-legal-regulatory-compliance
 

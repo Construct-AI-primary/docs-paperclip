@@ -1,5 +1,6 @@
 ---
 human_name: Logistics Director
+slug: domainforge-ai-logisticsdirector
 human_name: Logistics Director
 human_name: Logistics Director
 human_name: Logistics Director
@@ -25,9 +26,8 @@ human_name: Logistics Director
 human_name: Logistics Director
 human_name: Logistics Director
 human_name: Logistics Director
-name: 
+name: Logistics Director
 human_name: Logistics Director
-dependency-manager
 description: >
   Dependency Tracking & Resolution specialist. Manages issue dependencies,
   identifies blocking relationships, and orchestrates parallel and sequential workflows.

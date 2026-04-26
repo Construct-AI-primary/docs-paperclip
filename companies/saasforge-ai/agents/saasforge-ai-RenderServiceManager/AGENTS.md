@@ -1,5 +1,6 @@
 ---
 human_name: Render Service Manager
+slug: saasforge-ai-renderservicemanager
 human_name: Render Service Manager
 human_name: Render Service Manager
 human_name: Render Service Manager
@@ -50,9 +51,8 @@ human_name: Render Service Manager
 human_name: Render Service Manager
 human_name: Render Service Manager
 human_name: Render Service Manager
-name: 
+name: Render Service Manager
 human_name: Render Service Manager
-dependency-manager
 description: >
   Dependency Tracking & Resolution specialist. Manages issue dependencies,
   identifies blocking relationships, and orchestrates parallel and sequential workflows.

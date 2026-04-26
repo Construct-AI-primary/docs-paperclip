@@ -1,5 +1,6 @@
 ---
 human_name: Phoenix P 6
+slug: integrateforge-ai-phoenixp6
 human_name: Phoenix P 6
 human_name: Phoenix P 6
 human_name: Phoenix P 6
@@ -115,9 +116,8 @@ human_name: Phoenix P 6
 human_name: Phoenix P 6
 human_name: Phoenix P 6
 human_name: Phoenix P 6
-name: 
+name: Phoenix P 6
 human_name: Phoenix P 6
-dependency-manager
 description: >
   Dependency Tracking & Resolution specialist. Manages issue dependencies,
   identifies blocking relationships, and orchestrates parallel and sequential workflows.

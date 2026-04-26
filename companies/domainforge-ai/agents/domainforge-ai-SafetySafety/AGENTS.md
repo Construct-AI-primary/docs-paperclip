@@ -1,7 +1,6 @@
 ---
-name: 
+name: Safety Safety
 human_name: Safety Safety
-safety-domainforge-safety-risk-management
 slug: safety-domainforge-safety-risk-management
 reportsTo: orion-domainforge-ceo
 skills:

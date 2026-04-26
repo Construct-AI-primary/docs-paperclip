@@ -1,24 +1,14 @@
 ---
-name: 
+name: autocad-integration-specialist
+slug: autocad-integration-specialist
 human_name: Autocad Integration Sp
-autocad-integration-specialist
 role: AutoCAD Platform Integration Specialist
 description: >
-  AutoCAD Platform Integration Specialist - Expert in AutoCAD-specific integration, DWG/DXF
-  file processing, AutoCAD API utilization, and seamless bidirectional synchronization
-  between AutoCAD and the measurement platform.
 reportsTo: measureforge-ai-cad-measurement-orchestrator
 team: cad-integration-agents
 skills:
-  - autocad-platform-integration
-  - dwg-dxf-file-processing
-  - autocad-api-utilization
-  - bidirectional-synchronization
-  - autocad-object-model
-  - drawing-database-management
-  - autocad-automation-scripts
-  - version-compatibility-management
 ---
+
 
 # AutoCAD Integration Specialist
 

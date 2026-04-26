@@ -1,24 +1,14 @@
 ---
-name: 
+name: order-generation-specialist
+slug: order-generation-specialist
 human_name: Order Generation
-order-generation-specialist
 role: Automated Procurement Order Generation Specialist
 description: >
-  Automated Procurement Order Generation Specialist - Expert in creating procurement orders
-  from measurement data, integrating with Candy materials management system, and ensuring
-  seamless transition from quantity takeoffs to procurement execution.
 reportsTo: measureforge-ai-cad-measurement-orchestrator
 team: procurement-agents
 skills:
-  - procurement-order-generation
-  - candy-integration
-  - materials-management
-  - supplier-coordination
-  - procurement-workflow-automation
-  - cost-estimation-integration
-  - order-tracking-monitoring
-  - procurement-documentation
 ---
+
 
 # Order Generation Specialist
 

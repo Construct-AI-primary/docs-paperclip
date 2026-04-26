@@ -1,7 +1,6 @@
 ---
-name: 
+name: Archivist
 human_name: Archivist
-archivist-promptforge-knowledge-management
 slug: archivist-promptforge-knowledge-management
 reportsTo: sage-promptforge-chief-architect
 skills:

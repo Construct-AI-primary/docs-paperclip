@@ -1,5 +1,6 @@
 ---
 human_name: Code Sage
+slug: paperclipforge-ai-codesage
 human_name: Code Sage
 human_name: Code Sage
 human_name: Code Sage
@@ -135,9 +136,8 @@ human_name: Code Sage
 human_name: Code Sage
 human_name: Code Sage
 human_name: Code Sage
-name: 
+name: Code Sage
 human_name: Code Sage
-dependency-manager
 description: >
   Dependency Tracking & Resolution specialist. Manages issue dependencies,
   identifies blocking relationships, and orchestrates parallel and sequential workflows.

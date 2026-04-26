@@ -1,7 +1,6 @@
 ---
-name: 
+name: Construction Eng
 human_name: Construction Eng
-construction-engineering-domainforge-construction-engineering
 slug: construction-engineering-domainforge-construction-engineering
 reportsTo: orion-domainforge-ceo
 skills:

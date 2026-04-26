@@ -1,5 +1,6 @@
 ---
 human_name: Environmental
+slug: domainforge-ai-environmental
 human_name: Environmental
 human_name: Environmental
 human_name: Environmental
@@ -7,9 +8,8 @@ human_name: Environmental
 human_name: Environmental
 human_name: Environmental
 human_name: Environmental
-name: 
+name: Environmental
 human_name: Environmental
-dependency-manager
 description: >
   Dependency Tracking & Resolution specialist. Manages issue dependencies,
   identifies blocking relationships, and orchestrates parallel and sequential workflows.

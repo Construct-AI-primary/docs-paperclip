@@ -1,5 +1,6 @@
 ---
 human_name: Mobile Workflow Design
+slug: domainforge-ai-mobileworkflowdesign
 human_name: Mobile Workflow Design
 human_name: Mobile Workflow Design
 human_name: Mobile Workflow Design
@@ -38,9 +39,8 @@ human_name: Mobile Workflow Design
 human_name: Mobile Workflow Design
 human_name: Mobile Workflow Design
 human_name: Mobile Workflow Design
-name: 
+name: Mobile Workflow Design
 human_name: Mobile Workflow Design
-dependency-manager
 description: >
   Dependency Tracking & Resolution specialist. Manages issue dependencies,
   identifies blocking relationships, and orchestrates parallel and sequential workflows.

@@ -1,7 +1,7 @@
 ---
-name: 
+name: Discipline Automation
 human_name: Discipline Automation 
-discipline-automation-agent
+slug: promptforge-ai-disciplineautomation
 description: >
   Discipline Automation Agent - Specialized in automating the complete discipline lifecycle
   from knowledge gathering through project generation, issue creation, and multi-company execution coordination.

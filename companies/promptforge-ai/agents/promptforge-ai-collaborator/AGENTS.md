@@ -1,7 +1,6 @@
 ---
-name: 
+name: Collaborator
 human_name: Collaborator
-collaborator-promptforge-cross-company-knowledge-sharing
 slug: collaborator-promptforge-cross-company-knowledge-sharing
 reportsTo: sage-promptforge-chief-architect
 skills:

@@ -1,5 +1,6 @@
 ---
 human_name: Sasha Sharepoint
+slug: integrateforge-ai-sashasharepoint
 human_name: Sasha Sharepoint
 human_name: Sasha Sharepoint
 human_name: Sasha Sharepoint
@@ -114,9 +115,8 @@ human_name: Sasha Sharepoint
 human_name: Sasha Sharepoint
 human_name: Sasha Sharepoint
 human_name: Sasha Sharepoint
-name: 
+name: Sasha Sharepoint
 human_name: Sasha Sharepoint
-dependency-manager
 description: >
   Dependency Tracking & Resolution specialist. Manages issue dependencies,
   identifies blocking relationships, and orchestrates parallel and sequential workflows.

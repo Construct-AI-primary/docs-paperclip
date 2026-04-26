@@ -1,7 +1,6 @@
 ---
-name: 
+name: Curriculum Planner
 human_name: Curriculum Planner
-Curriculum Planner
 title: Learning Path Sequencing Specialist
 slug: learningforge-ai-curriculum-planner
 role: specialist

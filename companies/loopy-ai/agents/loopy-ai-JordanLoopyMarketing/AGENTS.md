@@ -1,7 +1,6 @@
 ---
-name: 
+name: Jordan Loopy Marketing
 human_name: Jordan Loopy Marketing
-jordan-loopy-marketing-specialist
 slug: jordan-loopy-marketing-specialist
 reportsTo: vision-loopy-ceo
 skills:

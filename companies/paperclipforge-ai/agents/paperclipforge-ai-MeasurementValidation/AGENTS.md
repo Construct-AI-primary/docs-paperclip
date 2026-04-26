@@ -1,7 +1,7 @@
 ---
-name: 
+name: Measurement Validation
 human_name: Measurement Validation
-measurement-validation-specialist
+slug: paperclipforge-ai-measurementvalidation
 description: >
   Measurement Validation Specialist - Expert in automated measurement validation,
   tolerance checking, standards compliance, and quality assurance for cross-discipline

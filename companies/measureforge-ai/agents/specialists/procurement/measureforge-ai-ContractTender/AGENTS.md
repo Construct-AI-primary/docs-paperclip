@@ -1,24 +1,14 @@
 ---
-name: 
+name: contract-tender-specialist
+slug: contract-tender-specialist
 human_name: Contract Tender
-contract-tender-specialist
 role: Contract Tender Compilation and Documentation Specialist
 description: >
-  Contract Tender Compilation and Documentation Specialist - Expert in compiling comprehensive
-  tender documents from measurement data, integrating procurement requirements, and ensuring
-  complete contract tender packages for competitive bidding processes.
 reportsTo: measureforge-ai-cad-measurement-orchestrator
 team: procurement-agents
 skills:
-  - contract-tender-compilation
-  - procurement-documentation
-  - tender-package-assembly
-  - bidding-document-preparation
-  - contract-requirements-integration
-  - tender-evaluation-criteria
-  - procurement-schedule-coordination
-  - compliance-documentation-assembly
 ---
+
 
 # Contract Tender Specialist
 

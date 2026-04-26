@@ -1,5 +1,6 @@
 ---
 human_name: Terra Civil 3
+slug: integrateforge-ai-terracivil3d
 human_name: Terra Civil 3
 human_name: Terra Civil 3
 human_name: Terra Civil 3
@@ -108,9 +109,8 @@ human_name: Terra Civil 3
 human_name: Terra Civil 3
 human_name: Terra Civil 3
 human_name: Terra Civil 3
-name: 
+name: Terra Civil 3
 human_name: Terra Civil 3
-dependency-manager
 description: >
   Dependency Tracking & Resolution specialist. Manages issue dependencies,
   identifies blocking relationships, and orchestrates parallel and sequential workflows.

@@ -1,7 +1,7 @@
 ---
-name: 
+name: Quality Controller
 human_name: Quality Controller
-quality-controller
+slug: paperclipforge-ai-qualitycontroller
 description: >
   Quality Assurance specialist. Ensures quality standards are met across
   integrations, automations, and system implementations in the Paperclip ecosystem.

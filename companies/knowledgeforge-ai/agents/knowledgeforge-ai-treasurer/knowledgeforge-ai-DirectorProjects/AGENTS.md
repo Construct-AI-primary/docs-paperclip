@@ -1,13 +1,14 @@
 ---
-name: 
+name: Director Projects
+slug: Director Projects
 human_name: Director Projects
-Director Projects
 role: projects-director
 title: Director Projects
 status: idle
 reportsTo: knowledgeforge-coordinator-guardian
 capabilities: Projects Director
 ---
+
 
 # Director Projects
 

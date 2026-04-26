@@ -1,5 +1,6 @@
 ---
 human_name: Nova Navisworks
+slug: integrateforge-ai-novanavisworks
 human_name: Nova Navisworks
 human_name: Nova Navisworks
 human_name: Nova Navisworks
@@ -109,9 +110,8 @@ human_name: Nova Navisworks
 human_name: Nova Navisworks
 human_name: Nova Navisworks
 human_name: Nova Navisworks
-name: 
+name: Nova Navisworks
 human_name: Nova Navisworks
-dependency-manager
 description: >
   Dependency Tracking & Resolution specialist. Manages issue dependencies,
   identifies blocking relationships, and orchestrates parallel and sequential workflows.

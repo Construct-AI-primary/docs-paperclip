@@ -1,7 +1,7 @@
 ---
-name: 
+name: Electrician
 human_name: Electrician
-Electrician
+slug: knowledgeforge-ai-electrician
 role: electrical-engineer
 title: Electrician
 status: idle

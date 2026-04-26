@@ -1,7 +1,6 @@
 ---
-name: 
+name: Construction Law Resea
 human_name: Construction Law Resea
-Construction Law Research Agent
 title: Legal Precedents & Regulatory Updates Specialist
 slug: learningforge-ai-construction-law-research
 role: specialist

@@ -1,18 +1,15 @@
 ---
-name: 
+name: KnowledgeForge Workflow Guardian
+slug: KnowledgeForge Workflow Guardian
 human_name: Coordinator Guardian
-KnowledgeForge Workflow Guardian
 title: Workflow Integrity Guardian
 reportsTo: null
 skills:
-  - workflow-guard
 metadata:
   paperclip:
     tags:
-      - discipline-operations
-      - workflow-integrity
-      - change-protection
 ---
+
 
 # KnowledgeForge Workflow Guardian
 

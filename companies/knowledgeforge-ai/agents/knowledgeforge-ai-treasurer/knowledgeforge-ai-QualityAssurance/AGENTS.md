@@ -1,13 +1,14 @@
 ---
-name: 
+name: Quality Assurance
+slug: Quality Assurance
 human_name: Quality Assurance
-Quality Assurance
 role: quality assurance
 title: Quality Assurance Specialist
 status: idle
 reportsTo: knowledgeforge-coordinator-guardian
 capabilities: Quality Control, Inspection, Testing Processes
 ---
+
 
 # Quality Assurance
 

@@ -1,5 +1,6 @@
 ---
 human_name: Ziggy Orchestrator
+slug: integrateforge-ai-ziggyorchestrator
 human_name: Ziggy Orchestrator
 human_name: Ziggy Orchestrator
 human_name: Ziggy Orchestrator
@@ -121,9 +122,8 @@ human_name: Ziggy Orchestrator
 human_name: Ziggy Orchestrator
 human_name: Ziggy Orchestrator
 human_name: Ziggy Orchestrator
-name: 
+name: Ziggy Orchestrator
 human_name: Ziggy Orchestrator
-dependency-manager
 description: >
   Dependency Tracking & Resolution specialist. Manages issue dependencies,
   identifies blocking relationships, and orchestrates parallel and sequential workflows.

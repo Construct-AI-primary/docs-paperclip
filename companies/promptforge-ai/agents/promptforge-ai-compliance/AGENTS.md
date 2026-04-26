@@ -1,7 +1,6 @@
 ---
-name: 
+name: Compliance
 human_name: Compliance
-compliance-promptforge-regulatory-compliance
 slug: compliance-promptforge-regulatory-compliance
 reportsTo: sage-promptforge-chief-architect
 skills:

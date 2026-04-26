@@ -1,7 +1,6 @@
 ---
-name: 
+name: Scholar
 human_name: Scholar
-scholar-promptforge-academic-research
 slug: scholar-promptforge-academic-research
 reportsTo: sage-promptforge-chief-architect
 skills:

@@ -1,7 +1,7 @@
 ---
-name: 
+name: Ethicist
 human_name: Ethicist
-Ethicist
+slug: knowledgeforge-ai-ethicist
 role: ethics
 title: Ethicist
 status: idle
