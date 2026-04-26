@@ -1,5 +1,6 @@
 ---
 human_name: Task Tango Dancer
+slug: paperclipforge-ai-tasktangodancer
 human_name: Task Tango Dancer
 human_name: Task Tango Dancer
 human_name: Task Tango Dancer
@@ -133,9 +134,8 @@ human_name: Task Tango Dancer
 human_name: Task Tango Dancer
 human_name: Task Tango Dancer
 human_name: Task Tango Dancer
-name: 
+name: Task Tango Dancer
 human_name: Task Tango Dancer
-dependency-manager
 description: >
   Dependency Tracking & Resolution specialist. Manages issue dependencies,
   identifies blocking relationships, and orchestrates parallel and sequential workflows.

@@ -1,5 +1,6 @@
 ---
 human_name: Sundry
+slug: domainforge-ai-sundry
 human_name: Sundry
 human_name: Sundry
 human_name: Sundry
@@ -17,9 +18,8 @@ human_name: Sundry
 human_name: Sundry
 human_name: Sundry
 human_name: Sundry
-name: 
+name: Sundry
 human_name: Sundry
-dependency-manager
 description: >
   Dependency Tracking & Resolution specialist. Manages issue dependencies,
   identifies blocking relationships, and orchestrates parallel and sequential workflows.

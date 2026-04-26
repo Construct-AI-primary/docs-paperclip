@@ -1,5 +1,6 @@
 ---
 human_name: Voice Synthesizer
+slug: voiceforge-ai-voicesynthesizer
 human_name: Voice Synthesizer
 human_name: Voice Synthesizer
 human_name: Voice Synthesizer
@@ -83,9 +84,8 @@ human_name: Voice Synthesizer
 human_name: Voice Synthesizer
 human_name: Voice Synthesizer
 human_name: Voice Synthesizer
-name: 
+name: Voice Synthesizer
 human_name: Voice Synthesizer
-dependency-manager
 description: >
   Dependency Tracking & Resolution specialist. Manages issue dependencies,
   identifies blocking relationships, and orchestrates parallel and sequential workflows.

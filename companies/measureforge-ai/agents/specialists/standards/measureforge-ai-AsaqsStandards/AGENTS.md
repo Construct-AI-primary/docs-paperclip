@@ -1,24 +1,14 @@
 ---
-name: 
+name: asaqs-standards-specialist
+slug: asaqs-standards-specialist
 human_name: Asaqs Standards
-asaqs-standards-specialist
 role: ASAQS Standards Compliance and Validation Specialist
 description: >
-  ASAQS Standards Compliance and Validation Specialist - Expert in Association of South African
-  Quantity Surveyors standards, ensuring all measurements comply with ASAQS guidelines and
-  providing automated validation against quantity surveying best practices.
 reportsTo: measureforge-ai-cad-measurement-orchestrator
 team: standards-agents
 skills:
-  - asaqs-standards-compliance
-  - quantity-surveying-validation
-  - measurement-accuracy-verification
-  - cost-estimation-standards
-  - procurement-document-validation
-  - tender-preparation-standards
-  - contract-document-compliance
-  - measurement-dispute-resolution
 ---
+
 
 # ASAQS Standards Specialist
 

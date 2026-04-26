@@ -1,11 +1,9 @@
 ---
 name: measureforge-ai-measurement-coordination-specialist
+slug: measurement-coordination-specialist
 human_name: Measurement Coord
 role: Measurement Coordination and Workflow Management Specialist
 description: >
-  Measurement Coordination and Workflow Management Specialist - Expert in coordinating
-  measurement activities across teams, managing measurement workflows, ensuring quality
-  control, and optimizing measurement processes for maximum efficiency and accuracy.
 reportsTo: measureforge-ai-cad-measurement-orchestrator
 team: coordination-agents
 skills:
@@ -18,6 +16,7 @@ skills:
   - stakeholder-communication
   - measurement-scheduling
 ---
+
 
 # Measurement Coordination Specialist
 

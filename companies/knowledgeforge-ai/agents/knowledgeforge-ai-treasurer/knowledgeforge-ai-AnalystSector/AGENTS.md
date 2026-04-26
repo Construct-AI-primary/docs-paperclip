@@ -1,13 +1,14 @@
 ---
-name: 
+name: Analyst Sector
+slug: Analyst Sector
 human_name: Analyst Sector
-Analyst Sector
 role: sector-analyst
 title: Analyst Sector
 status: idle
 reportsTo: knowledgeforge-coordinator-guardian
 capabilities: Sector Analyst
 ---
+
 
 # Analyst Sector
 

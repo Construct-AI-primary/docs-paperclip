@@ -1,5 +1,6 @@
 ---
 name: paperclipforge-ai-atlas-agent-creator
+slug: paperclipforge-ai-atlasagentcreator
 human_name: Atlas Agent Creator
 role: Agent Creator and Manager
 description: >
@@ -8,7 +9,6 @@ description: >
 reportsTo: paperclipforge-ai-operations-director
 team: operations
 
-# Configuration Settings
 heartbeat:
   enabled: true
   intervalSeconds: 300  # Run heartbeat every 300 seconds (5 minutes)

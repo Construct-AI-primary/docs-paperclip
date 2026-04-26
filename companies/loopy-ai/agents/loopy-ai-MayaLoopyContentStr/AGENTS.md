@@ -1,7 +1,6 @@
 ---
-name: 
+name: Maya Loopy Content Str
 human_name: Maya Loopy Content Str
-maya-loopy-content-strategist
 slug: maya-loopy-content-strategist
 reportsTo: vision-loopy-ceo
 skills:

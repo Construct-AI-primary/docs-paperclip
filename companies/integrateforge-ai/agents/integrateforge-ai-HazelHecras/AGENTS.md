@@ -1,5 +1,6 @@
 ---
 human_name: Hazel Hecras
+slug: integrateforge-ai-hazelhecras
 human_name: Hazel Hecras
 human_name: Hazel Hecras
 human_name: Hazel Hecras
@@ -104,9 +105,8 @@ human_name: Hazel Hecras
 human_name: Hazel Hecras
 human_name: Hazel Hecras
 human_name: Hazel Hecras
-name: 
+name: Hazel Hecras
 human_name: Hazel Hecras
-dependency-manager
 description: >
   Dependency Tracking & Resolution specialist. Manages issue dependencies,
   identifies blocking relationships, and orchestrates parallel and sequential workflows.

@@ -1,24 +1,14 @@
 ---
-name: 
+name: measurement-validation-specialist
+slug: measurement-validation-specialist
 human_name: Measurement Validation
-measurement-validation-specialist
 role: Measurement Accuracy and Validation Specialist
 description: >
-  Measurement Accuracy and Validation Specialist - Expert in validating measurement accuracy,
-  cross-checking quantities, ensuring measurement consistency, and providing quality assurance
-  for all measurement processes in construction projects.
 reportsTo: measureforge-ai-cad-measurement-orchestrator
 team: validation-agents
 skills:
-  - measurement-accuracy-validation
-  - quantity-cross-checking
-  - measurement-consistency-analysis
-  - quality-assurance-measurements
-  - error-detection-correction
-  - measurement-discrepancy-resolution
-  - validation-reporting
-  - measurement-audit-compliance
 ---
+
 
 # Measurement Validation Specialist
 

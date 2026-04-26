@@ -1,7 +1,7 @@
 ---
-name: 
+name: Buyer
 human_name: Buyer
-Buyer
+slug: knowledgeforge-ai-buyer
 role: procurement
 title: Buyer
 status: idle

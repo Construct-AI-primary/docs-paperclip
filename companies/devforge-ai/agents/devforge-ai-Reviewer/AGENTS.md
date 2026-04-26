@@ -1,7 +1,6 @@
 ---
-name: 
+name: Reviewer
 human_name: Reviewer
-reviewer-devforge-code-review-qa
 slug: reviewer-devforge-code-review-qa
 reportsTo: forge-devforge-system-architecture
 skills:

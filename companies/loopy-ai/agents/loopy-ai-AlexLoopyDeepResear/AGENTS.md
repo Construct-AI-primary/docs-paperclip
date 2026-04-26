@@ -1,7 +1,6 @@
 ---
-name: 
+name: Alex Loopy Deep Resear
 human_name: Alex Loopy Deep Resear
-alex-loopy-deep-research
 slug: alex-loopy-deep-research
 reportsTo: vision-loopy-ceo
 skills:

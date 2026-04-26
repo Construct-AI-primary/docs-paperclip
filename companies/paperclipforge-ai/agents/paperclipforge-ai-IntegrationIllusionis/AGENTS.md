@@ -1,5 +1,6 @@
 ---
 human_name: Integration Illusionis
+slug: paperclipforge-ai-integrationillusionis
 human_name: Integration Illusionis
 human_name: Integration Illusionis
 human_name: Integration Illusionis
@@ -124,9 +125,8 @@ human_name: Integration Illusionis
 human_name: Integration Illusionis
 human_name: Integration Illusionis
 human_name: Integration Illusionis
-name: 
+name: Integration Illusionis
 human_name: Integration Illusionis
-dependency-manager
 description: >
   Dependency Tracking & Resolution specialist. Manages issue dependencies,
   identifies blocking relationships, and orchestrates parallel and sequential workflows.

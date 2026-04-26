@@ -1,7 +1,7 @@
 ---
-name: 
+name: Advanced Engineering
 human_name: Advanced Engineering
-advanced-engineering-analysis
+slug: paperclipforge-ai-advancedengineering
 description: >
   Advanced Engineering Analysis Specialist - Expert in complex engineering analysis including
   FEA, CFD, thermal analysis, structural analysis, and multi-physics simulations for enterprise engineering solutions.

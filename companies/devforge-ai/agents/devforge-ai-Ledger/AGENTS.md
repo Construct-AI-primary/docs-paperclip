@@ -1,7 +1,6 @@
 ---
-name: 
+name: Ledger
 human_name: Ledger
-ledger-devforge-financial-oversight
 slug: ledger-devforge-financial-oversight
 reportsTo: council-devforge-strategic-decision-making
 skills:

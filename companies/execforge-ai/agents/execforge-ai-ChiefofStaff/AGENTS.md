@@ -1,5 +1,6 @@
 ---
 human_name: Chief of Staff
+slug: execforge-ai-chiefofstaff
 human_name: Chief of Staff
 human_name: Chief of Staff
 human_name: Chief of Staff
@@ -73,9 +74,8 @@ human_name: Chief of Staff
 human_name: Chief of Staff
 human_name: Chief of Staff
 human_name: Chief of Staff
-name: 
+name: Chief of Staff
 human_name: Chief of Staff
-dependency-manager
 description: >
   Dependency Tracking & Resolution specialist. Manages issue dependencies,
   identifies blocking relationships, and orchestrates parallel and sequential workflows.

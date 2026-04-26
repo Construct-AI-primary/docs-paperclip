@@ -1,7 +1,7 @@
 ---
-name: 
+name: Content Maestro
 human_name: Content Maestro
-content-maestro
+slug: contentforge-ai-contentmaestro
 role: Chief Executive Officer
 ---
 

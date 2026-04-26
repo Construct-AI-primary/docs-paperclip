@@ -1,7 +1,7 @@
 ---
-name: 
+name: Dispatcher
 human_name: Dispatcher
-Dispatcher
+slug: knowledgeforge-ai-dispatcher
 role: logistics
 title: Dispatcher
 status: idle

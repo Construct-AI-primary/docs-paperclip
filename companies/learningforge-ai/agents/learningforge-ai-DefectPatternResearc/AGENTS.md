@@ -1,7 +1,6 @@
 ---
-name: 
+name: Defect Pattern Researc
 human_name: Defect Pattern Researc
-Defect Pattern Research Agent
 title: Defect Analysis & Pattern Recognition Specialist
 slug: learningforge-ai-defect-pattern-research
 role: specialist

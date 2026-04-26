@@ -1,7 +1,7 @@
 ---
-name: 
+name: Knowledge Integrator
 human_name: Knowledge Integrator
-knowledge-integrator
+slug: paperclipforge-ai-knowledgeintegrator
 description: >
   Knowledge Integration specialist. Manages knowledge integration, cross-system
   knowledge sharing, and unified knowledge repositories across the Paperclip ecosystem.

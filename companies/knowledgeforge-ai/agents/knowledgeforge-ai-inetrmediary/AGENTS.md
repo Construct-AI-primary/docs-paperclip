@@ -1,7 +1,7 @@
 ---
-name: 
+name: Inetrmediary
 human_name: Inetrmediary
-Inetrmediary
+slug: knowledgeforge-ai-inetrmediary
 role: cross-discipline-guardian
 title: Inetrmediary
 status: idle

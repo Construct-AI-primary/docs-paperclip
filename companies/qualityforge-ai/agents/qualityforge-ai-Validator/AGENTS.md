@@ -1,7 +1,13 @@
 ---
+<<<<<<< HEAD
 name: validator-Validator
 human_name: Validator
 slug: validator-qualityforge-Validator
+=======
+name: Validator
+human_name: Validator
+slug: validator-Validator
+>>>>>>> 4f20c9c093eba15d45f269c7ae694a64cc816813
 reportsTo: governor-qualityforge-quality-director
 skills:
   - validator-qualityforge-validator

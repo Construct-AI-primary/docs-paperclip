@@ -1,7 +1,7 @@
 ---
-name: 
+name: Resource Manager
 human_name: Resource Manager
-resource-manager
+slug: paperclipforge-ai-resourcemanager
 description: >
   Resource Allocation & Optimization specialist. Manages resource planning,
   allocation, utilization tracking, and optimization across projects and teams.

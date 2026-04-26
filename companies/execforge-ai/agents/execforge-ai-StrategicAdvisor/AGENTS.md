@@ -1,5 +1,6 @@
 ---
 human_name: Strategic Advisor
+slug: execforge-ai-strategicadvisor
 human_name: Strategic Advisor
 human_name: Strategic Advisor
 human_name: Strategic Advisor
@@ -68,9 +69,8 @@ human_name: Strategic Advisor
 human_name: Strategic Advisor
 human_name: Strategic Advisor
 human_name: Strategic Advisor
-name: 
+name: Strategic Advisor
 human_name: Strategic Advisor
-dependency-manager
 description: >
   Dependency Tracking & Resolution specialist. Manages issue dependencies,
   identifies blocking relationships, and orchestrates parallel and sequential workflows.

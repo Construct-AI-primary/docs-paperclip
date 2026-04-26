@@ -1,7 +1,7 @@
 ---
-name: 
+name: Document Generation Sp
 human_name: Document Generation Sp
-docgen-devforge-document-generation
+slug: devforge-ai-documentgenerationsp
 description: >
   Document Generation Specialist - Specialized in automated document creation, template
   management, and multi-format document production across the DevForge AI ecosystem. Produces

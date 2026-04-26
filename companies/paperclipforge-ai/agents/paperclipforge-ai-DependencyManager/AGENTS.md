@@ -1,7 +1,7 @@
 ---
-name: 
+name: Dependency Manager
 human_name: Dependency Manager
-dependency-manager
+slug: paperclipforge-ai-dependencymanager
 description: >
   Dependency Tracking & Resolution specialist. Manages issue dependencies,
   identifies blocking relationships, and orchestrates parallel and sequential workflows.

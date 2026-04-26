@@ -1,13 +1,14 @@
 ---
-name: 
+name: Director HSE
+slug: Director HSE
 human_name: Director Hse
-Director HSE
 role: hse-director
 title: Director HSE
 status: idle
 reportsTo: knowledgeforge-coordinator-guardian
 capabilities: Hse Director
 ---
+
 
 # Director HSE
 

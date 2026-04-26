@@ -1,5 +1,6 @@
 ---
 human_name: Access Controller
+slug: saasforge-ai-accesscontroller
 human_name: Access Controller
 human_name: Access Controller
 human_name: Access Controller
@@ -51,9 +52,8 @@ human_name: Access Controller
 human_name: Access Controller
 human_name: Access Controller
 human_name: Access Controller
-name: 
+name: Access Controller
 human_name: Access Controller
-dependency-manager
 description: >
   Dependency Tracking & Resolution specialist. Manages issue dependencies,
   identifies blocking relationships, and orchestrates parallel and sequential workflows.

@@ -1,7 +1,6 @@
 ---
-name: 
+name: Hermes Research
 human_name: Hermes Research
-Hermes Research Agent
 title: General Autonomous Research Specialist
 slug: learningforge-ai-hermes-research
 role: specialist

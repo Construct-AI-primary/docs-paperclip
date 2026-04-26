@@ -1,7 +1,7 @@
 ---
-name: 
+name: Administrator
 human_name: Administrator
-Administrator - pre-award
+slug: knowledgeforge-ai-administrator
 role: contracts-post-award
 title: Administrator - pre-award
 status: idle

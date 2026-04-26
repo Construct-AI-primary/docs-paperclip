@@ -1,7 +1,7 @@
 ---
-name: 
+name: Mobile Patterns Agent
 human_name: Mobile Patterns Agent
-mobile-patterns-agent
+slug: learningforge-ai-mobilepatternsagent
 description: >
   Mobile Patterns Agent - Specialized research on construction industry mobile UX patterns,
   glove-friendly interfaces, and outdoor optimization for field operations

@@ -1,7 +1,6 @@
 ---
-name: 
+name: Research Compliance Di
 human_name: Research Compliance Di
-Research Compliance Division Lead
 title: Head of Research & Compliance
 slug: learningforge-ai-research-compliance-division-lead
 role: division-lead

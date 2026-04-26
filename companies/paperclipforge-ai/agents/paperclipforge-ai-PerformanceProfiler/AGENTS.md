@@ -1,5 +1,6 @@
 ---
 human_name: Performance Profiler
+slug: paperclipforge-ai-performanceprofiler
 human_name: Performance Profiler
 human_name: Performance Profiler
 human_name: Performance Profiler
@@ -137,9 +138,8 @@ human_name: Performance Profiler
 human_name: Performance Profiler
 human_name: Performance Profiler
 human_name: Performance Profiler
-name: 
+name: Performance Profiler
 human_name: Performance Profiler
-dependency-manager
 description: >
   Dependency Tracking & Resolution specialist. Manages issue dependencies,
   identifies blocking relationships, and orchestrates parallel and sequential workflows.

@@ -1,24 +1,14 @@
 ---
-name: 
+name: sans-standards-specialist
+slug: sans-standards-specialist
 human_name: Sans Standards Special
-sans-standards-specialist
 role: SANS Standards Compliance and Validation Specialist
 description: >
-  SANS Standards Compliance and Validation Specialist - Expert in South African National
-  Standards (SANS) for construction and engineering, ensuring all measurements comply with
-  SANS 1200 MJ earthworks standards, SANS 10100 building standards, and related engineering standards.
 reportsTo: measureforge-ai-cad-measurement-orchestrator
 team: standards-agents
 skills:
-  - sans-standards-compliance
-  - earthworks-measurement-standards
-  - building-standards-validation
-  - engineering-standards-compliance
-  - measurement-accuracy-verification
-  - standards-documentation-audit
-  - compliance-reporting-generation
-  - regulatory-requirements-validation
 ---
+
 
 # SANS Standards Specialist
 

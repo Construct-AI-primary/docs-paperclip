@@ -1,7 +1,7 @@
 ---
-name: 
+name: Governor
 human_name: Governor
-Governor
+slug: knowledgeforge-ai-governor
 role: governance
 title: Governor
 status: idle

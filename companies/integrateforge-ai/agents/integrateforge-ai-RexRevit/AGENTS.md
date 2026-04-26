@@ -1,5 +1,6 @@
 ---
 human_name: Rex Revit
+slug: integrateforge-ai-rexrevit
 human_name: Rex Revit
 human_name: Rex Revit
 human_name: Rex Revit
@@ -113,9 +114,8 @@ human_name: Rex Revit
 human_name: Rex Revit
 human_name: Rex Revit
 human_name: Rex Revit
-name: 
+name: Rex Revit
 human_name: Rex Revit
-dependency-manager
 description: >
   Dependency Tracking & Resolution specialist. Manages issue dependencies,
   identifies blocking relationships, and orchestrates parallel and sequential workflows.

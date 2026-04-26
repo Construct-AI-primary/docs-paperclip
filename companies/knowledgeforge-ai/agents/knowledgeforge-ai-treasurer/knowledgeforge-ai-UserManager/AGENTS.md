@@ -1,13 +1,14 @@
 ---
-name: 
+name: User Manager
+slug: User Manager
 human_name: User Manager
-User Manager
 role: user management
 title: User Manager
 status: idle
 reportsTo: knowledgeforge-coordinator-guardian
 capabilities: User Management, Authentication, Account Lifecycle
 ---
+
 
 # User Manager
 

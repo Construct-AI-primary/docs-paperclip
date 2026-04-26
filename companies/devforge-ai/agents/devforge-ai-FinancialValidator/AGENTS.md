@@ -1,7 +1,7 @@
 ---
-name: 
+name: Financial Validator
 human_name: Financial Validator
-validator-devforge-financial-validation
+slug: devforge-ai-financialvalidator
 description: >
   Financial Validator - Specialized in validating financial data, transaction integrity,
   budget compliance, and fiscal policy adherence across the DevForge AI ecosystem. Performs

@@ -1,7 +1,6 @@
 ---
-name: 
+name: orion
 human_name: orion
-orion-domainforge-ceo
 slug: orion-domainforge-ceo
 reportsTo: null
 skills:

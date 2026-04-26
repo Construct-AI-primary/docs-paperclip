@@ -1,7 +1,6 @@
 ---
-name: 
+name: Resolver
 human_name: Resolver
-resolver-qualityforge-issue-resolver
 slug: resolver-qualityforge-issue-resolver
 reportsTo: governor-qualityforge-quality-director
 skills:

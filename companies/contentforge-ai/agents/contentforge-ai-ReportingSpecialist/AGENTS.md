@@ -1,7 +1,7 @@
 ---
-name: 
+name: Reporting Specialist
 human_name: Reporting Specialist
-reporting-specialist
+slug: contentforge-ai-reportingspecialist
 role: Analytics Reporting & Dashboard Expert
 ---
 

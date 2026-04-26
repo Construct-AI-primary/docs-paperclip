@@ -1,5 +1,6 @@
 ---
 human_name: Mobile Maestro
+slug: mobileforge-ai-mobilemaestro
 human_name: Mobile Maestro
 human_name: Mobile Maestro
 human_name: Mobile Maestro
@@ -99,9 +100,8 @@ human_name: Mobile Maestro
 human_name: Mobile Maestro
 human_name: Mobile Maestro
 human_name: Mobile Maestro
-name: 
+name: Mobile Maestro
 human_name: Mobile Maestro
-dependency-manager
 description: >
   Dependency Tracking & Resolution specialist. Manages issue dependencies,
   identifies blocking relationships, and orchestrates parallel and sequential workflows.

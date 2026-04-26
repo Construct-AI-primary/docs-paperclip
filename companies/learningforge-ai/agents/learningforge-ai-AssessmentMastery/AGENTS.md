@@ -1,7 +1,6 @@
 ---
-name: 
+name: Assessment Mastery
 human_name: Assessment Mastery
-Assessment Mastery Agent
 title: Adaptive Assessment Specialist
 slug: learningforge-ai-assessment-mastery
 role: specialist

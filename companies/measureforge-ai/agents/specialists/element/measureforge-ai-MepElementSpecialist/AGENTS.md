@@ -1,24 +1,14 @@
 ---
-name: 
+name: mep-element-specialist
+slug: mep-element-specialist
 human_name: Mep Element Specialist
-mep-element-specialist
 role: MEP Element Detection and Measurement Specialist
 description: >
-  MEP Element Detection and Measurement Specialist - Expert in identifying and measuring
-  mechanical, electrical, and plumbing systems including HVAC ductwork, electrical cabling,
-  plumbing pipes, and building services infrastructure.
 reportsTo: measureforge-ai-cad-measurement-orchestrator
 team: element-specialists
 skills:
-  - mep-element-detection
-  - hvac-system-measurement
-  - electrical-cabling-quantification
-  - plumbing-piping-analysis
-  - building-services-infrastructure
-  - mep-standards-compliance
-  - system-capacity-calculation
-  - equipment-installation-measurement
 ---
+
 
 # MEP Element Specialist
 

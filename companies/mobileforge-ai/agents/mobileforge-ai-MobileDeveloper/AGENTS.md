@@ -1,5 +1,6 @@
 ---
 human_name: Mobile Developer
+slug: mobileforge-ai-mobiledeveloper
 human_name: Mobile Developer
 human_name: Mobile Developer
 human_name: Mobile Developer
@@ -97,9 +98,8 @@ human_name: Mobile Developer
 human_name: Mobile Developer
 human_name: Mobile Developer
 human_name: Mobile Developer
-name: 
+name: Mobile Developer
 human_name: Mobile Developer
-dependency-manager
 description: >
   Dependency Tracking & Resolution specialist. Manages issue dependencies,
   identifies blocking relationships, and orchestrates parallel and sequential workflows.

@@ -1,5 +1,6 @@
 ---
 human_name: Security Specialist
+slug: saasforge-ai-securityspecialist
 human_name: Security Specialist
 human_name: Security Specialist
 human_name: Security Specialist
@@ -59,9 +60,8 @@ human_name: Security Specialist
 human_name: Security Specialist
 human_name: Security Specialist
 human_name: Security Specialist
-name: 
+name: Security Specialist
 human_name: Security Specialist
-dependency-manager
 description: >
   Dependency Tracking & Resolution specialist. Manages issue dependencies,
   identifies blocking relationships, and orchestrates parallel and sequential workflows.

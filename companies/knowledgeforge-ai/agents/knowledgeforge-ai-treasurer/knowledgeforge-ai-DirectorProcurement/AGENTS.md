@@ -1,13 +1,14 @@
 ---
-name: 
+name: Director Procurement
+slug: Director Procurement
 human_name: Director Procurement
-Director Procurement
 role: procurement-director
 title: Director Procurement
 status: idle
 reportsTo: knowledgeforge-coordinator-guardian
 capabilities: Procurement Director
 ---
+
 
 # Director Procurement
 

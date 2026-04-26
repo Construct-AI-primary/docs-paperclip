@@ -1,5 +1,6 @@
 ---
 human_name: Evaluator
+slug: domainforge-ai-evaluator
 human_name: Evaluator
 human_name: Evaluator
 human_name: Evaluator
@@ -20,9 +21,8 @@ human_name: Evaluator
 human_name: Evaluator
 human_name: Evaluator
 human_name: Evaluator
-name: 
+name: Evaluator
 human_name: Evaluator
-dependency-manager
 description: >
   Dependency Tracking & Resolution specialist. Manages issue dependencies,
   identifies blocking relationships, and orchestrates parallel and sequential workflows.

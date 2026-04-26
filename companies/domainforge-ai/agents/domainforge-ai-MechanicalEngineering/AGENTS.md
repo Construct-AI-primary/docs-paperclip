@@ -1,5 +1,6 @@
 ---
 human_name: Mechanical Engineering
+slug: domainforge-ai-mechanicalengineering
 human_name: Mechanical Engineering
 human_name: Mechanical Engineering
 human_name: Mechanical Engineering
@@ -39,9 +40,8 @@ human_name: Mechanical Engineering
 human_name: Mechanical Engineering
 human_name: Mechanical Engineering
 human_name: Mechanical Engineering
-name: 
+name: Mechanical Engineering
 human_name: Mechanical Engineering
-dependency-manager
 description: >
   Dependency Tracking & Resolution specialist. Manages issue dependencies,
   identifies blocking relationships, and orchestrates parallel and sequential workflows.

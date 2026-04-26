@@ -1,7 +1,7 @@
 ---
-name: 
+name: Predictive Modeler
 human_name: Predictive Modeler
-predictive-modeler
+slug: paperclipforge-ai-predictivemodeler
 description: >
   Predictive Analytics specialist. Develops predictive models, forecasting algorithms,
   and data-driven predictions to support decision-making across the Paperclip ecosystem.

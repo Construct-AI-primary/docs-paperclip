@@ -1,7 +1,7 @@
 ---
-name: 
+name: Decision Support
 human_name: Decision Support
-decision-support-specialist
+slug: qualityforge-ai-decisionsupport
 description: >
   Decision Support Specialist - Specialized in providing data-driven decision analysis,
   trade-off evaluation, and strategic recommendations for quality-related decisions

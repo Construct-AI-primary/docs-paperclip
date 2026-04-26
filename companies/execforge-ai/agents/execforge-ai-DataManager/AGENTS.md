@@ -1,5 +1,6 @@
 ---
 human_name: Data Manager
+slug: execforge-ai-datamanager
 human_name: Data Manager
 human_name: Data Manager
 human_name: Data Manager
@@ -74,9 +75,8 @@ human_name: Data Manager
 human_name: Data Manager
 human_name: Data Manager
 human_name: Data Manager
-name: 
+name: Data Manager
 human_name: Data Manager
-dependency-manager
 description: >
   Dependency Tracking & Resolution specialist. Manages issue dependencies,
   identifies blocking relationships, and orchestrates parallel and sequential workflows.

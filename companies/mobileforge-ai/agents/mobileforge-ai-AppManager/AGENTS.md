@@ -1,5 +1,6 @@
 ---
 human_name: App Manager
+slug: mobileforge-ai-appmanager
 human_name: App Manager
 human_name: App Manager
 human_name: App Manager
@@ -96,9 +97,8 @@ human_name: App Manager
 human_name: App Manager
 human_name: App Manager
 human_name: App Manager
-name: 
+name: App Manager
 human_name: App Manager
-dependency-manager
 description: >
   Dependency Tracking & Resolution specialist. Manages issue dependencies,
   identifies blocking relationships, and orchestrates parallel and sequential workflows.

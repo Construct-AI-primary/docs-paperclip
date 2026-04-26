@@ -1,7 +1,6 @@
 ---
-name: 
+name: Vector
 human_name: Vector
-vector-Vector-processing
 slug: vector-Vector-processing
 reportsTo: dataforge-devforge-data-transformation
 skills:

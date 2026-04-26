@@ -1,5 +1,6 @@
 ---
 human_name: Transportation
+slug: domainforge-ai-transportation
 human_name: Transportation
 human_name: Transportation
 human_name: Transportation
@@ -19,9 +20,8 @@ human_name: Transportation
 human_name: Transportation
 human_name: Transportation
 human_name: Transportation
-name: 
+name: Transportation
 human_name: Transportation
-dependency-manager
 description: >
   Dependency Tracking & Resolution specialist. Manages issue dependencies,
   identifies blocking relationships, and orchestrates parallel and sequential workflows.

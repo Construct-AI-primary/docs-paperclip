@@ -1,7 +1,7 @@
 ---
-name: 
+name: Administrator - pre-award
+slug: Administrator - pre-award
 human_name: Administrator Pre Awar
-Administrator - pre-award
 reportsTo: knowledgeforge-coordinator-guardian
 role: contracts-post-award
 title: 
@@ -9,6 +9,7 @@ status: idle
 capabilities: 
 company: knowledgeforge-ai
 ---
+
 
 # Administrator - pre-award
 

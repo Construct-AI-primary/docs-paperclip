@@ -1,7 +1,6 @@
 ---
-name: 
+name: Structural Engineer
 human_name: Structural Engineer
-structural-domainforge-structural-engineering
 slug: structural-domainforge-structural-engineering
 reportsTo: orion-domainforge-ceo
 skills:

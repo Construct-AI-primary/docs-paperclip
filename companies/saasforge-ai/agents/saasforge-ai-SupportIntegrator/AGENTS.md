@@ -1,5 +1,6 @@
 ---
 human_name: Support Integrator
+slug: saasforge-ai-supportintegrator
 human_name: Support Integrator
 human_name: Support Integrator
 human_name: Support Integrator
@@ -54,9 +55,8 @@ human_name: Support Integrator
 human_name: Support Integrator
 human_name: Support Integrator
 human_name: Support Integrator
-name: 
+name: Support Integrator
 human_name: Support Integrator
-dependency-manager
 description: >
   Dependency Tracking & Resolution specialist. Manages issue dependencies,
   identifies blocking relationships, and orchestrates parallel and sequential workflows.

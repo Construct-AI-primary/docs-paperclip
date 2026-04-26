@@ -1,7 +1,6 @@
 ---
-name: 
+name: Interaction Pattern Co
 human_name: Interaction Pattern Co
-Interaction Pattern Coach
 title: Personalized Learning Nudges Specialist
 slug: learningforge-ai-interaction-pattern-coach
 role: specialist

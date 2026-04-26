@@ -1,7 +1,7 @@
 ---
-name: 
+name: Ambiguityprime
 human_name: Ambiguityprime
-AmbiguityPrime
+slug: knowledgeforge-ai-ambiguityprime
 role: ceo
 title: Chief Executive Officer
 status: idle

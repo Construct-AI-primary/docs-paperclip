@@ -1,5 +1,6 @@
 ---
 human_name: Voice Maestro
+slug: voiceforge-ai-voicemaestro
 human_name: Voice Maestro
 human_name: Voice Maestro
 human_name: Voice Maestro
@@ -92,9 +93,8 @@ human_name: Voice Maestro
 human_name: Voice Maestro
 human_name: Voice Maestro
 human_name: Voice Maestro
-name: 
+name: Voice Maestro
 human_name: Voice Maestro
-dependency-manager
 description: >
   Dependency Tracking & Resolution specialist. Manages issue dependencies,
   identifies blocking relationships, and orchestrates parallel and sequential workflows.

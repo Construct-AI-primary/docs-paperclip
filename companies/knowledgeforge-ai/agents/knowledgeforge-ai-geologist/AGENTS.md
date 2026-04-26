@@ -1,7 +1,7 @@
 ---
-name: 
+name: Geologist
 human_name: Geologist
-Geologist
+slug: knowledgeforge-ai-geologist
 role: geotechnical-engineer
 title: Geologist
 status: idle

@@ -1,7 +1,7 @@
 ---
-name: 
+name: User Experience Coordi
 human_name: User Experience Coordi
-user-experience-coordinator
+slug: paperclipforge-ai-userexperiencecoordi
 description: >
   User Interaction Management specialist. Manages user experience, interaction design,
   feedback collection, and user satisfaction optimization across the Paperclip ecosystem.

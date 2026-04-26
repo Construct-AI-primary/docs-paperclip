@@ -1,5 +1,6 @@
 ---
 human_name: Task Coordinator
+slug: execforge-ai-taskcoordinator
 human_name: Task Coordinator
 human_name: Task Coordinator
 human_name: Task Coordinator
@@ -65,9 +66,8 @@ human_name: Task Coordinator
 human_name: Task Coordinator
 human_name: Task Coordinator
 human_name: Task Coordinator
-name: 
+name: Task Coordinator
 human_name: Task Coordinator
-dependency-manager
 description: >
   Dependency Tracking & Resolution specialist. Manages issue dependencies,
   identifies blocking relationships, and orchestrates parallel and sequential workflows.

@@ -1,13 +1,14 @@
 ---
-name: 
+name: Director Logistics
+slug: Director Logistics
 human_name: Director Finance
-Director Logistics
 role: logistics-director
 title: Director Logistics
 status: idle
 reportsTo: knowledgeforge-coordinator-guardian
 capabilities: Logistics Director
 ---
+
 
 # Director Logistics
 

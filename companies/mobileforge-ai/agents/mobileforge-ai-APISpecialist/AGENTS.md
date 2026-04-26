@@ -1,5 +1,6 @@
 ---
 human_name: API Specialist
+slug: mobileforge-ai-apispecialist
 human_name: API Specialist
 human_name: API Specialist
 human_name: API Specialist
@@ -100,9 +101,8 @@ human_name: API Specialist
 human_name: API Specialist
 human_name: API Specialist
 human_name: API Specialist
-name: 
+name: API Specialist
 human_name: API Specialist
-dependency-manager
 description: >
   Dependency Tracking & Resolution specialist. Manages issue dependencies,
   identifies blocking relationships, and orchestrates parallel and sequential workflows.

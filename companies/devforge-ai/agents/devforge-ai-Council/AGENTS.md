@@ -1,7 +1,6 @@
 ---
-name: 
+name: Council
 human_name: Council
-council-devforge-strategic-decision-making
 slug: council-devforge-strategic-decision-making
 reportsTo: nexus-devforge-ceo
 skills:

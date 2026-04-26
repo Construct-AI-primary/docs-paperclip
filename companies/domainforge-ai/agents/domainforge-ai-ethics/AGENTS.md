@@ -1,5 +1,6 @@
 ---
 human_name: Ethics
+slug: domainforge-ai-ethics
 human_name: Ethics
 human_name: Ethics
 human_name: Ethics
@@ -28,9 +29,8 @@ human_name: Ethics
 human_name: Ethics
 human_name: Ethics
 human_name: Ethics
-name: 
+name: Ethics
 human_name: Ethics
-dependency-manager
 description: >
   Dependency Tracking & Resolution specialist. Manages issue dependencies,
   identifies blocking relationships, and orchestrates parallel and sequential workflows.

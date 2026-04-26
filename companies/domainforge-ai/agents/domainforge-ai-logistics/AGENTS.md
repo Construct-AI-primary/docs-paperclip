@@ -1,7 +1,6 @@
 ---
-name: 
+name: logistics
 human_name: logistics
-logistics-domainforge-supply-chain
 slug: logistics-domainforge-supply-chain
 reportsTo: orion-domainforge-ceo
 skills:

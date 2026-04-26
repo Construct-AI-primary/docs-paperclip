@@ -1,5 +1,6 @@
 ---
 human_name: Test Commander
+slug: paperclipforge-ai-testcommander
 human_name: Test Commander
 human_name: Test Commander
 human_name: Test Commander
@@ -134,9 +135,8 @@ human_name: Test Commander
 human_name: Test Commander
 human_name: Test Commander
 human_name: Test Commander
-name: 
+name: Test Commander
 human_name: Test Commander
-dependency-manager
 description: >
   Dependency Tracking & Resolution specialist. Manages issue dependencies,
   identifies blocking relationships, and orchestrates parallel and sequential workflows.

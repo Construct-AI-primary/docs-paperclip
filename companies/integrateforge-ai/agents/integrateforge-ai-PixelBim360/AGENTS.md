@@ -1,5 +1,6 @@
 ---
 human_name: Pixel Bim 360
+slug: integrateforge-ai-pixelbim360
 human_name: Pixel Bim 360
 human_name: Pixel Bim 360
 human_name: Pixel Bim 360
@@ -120,9 +121,8 @@ human_name: Pixel Bim 360
 human_name: Pixel Bim 360
 human_name: Pixel Bim 360
 human_name: Pixel Bim 360
-name: 
+name: Pixel Bim 360
 human_name: Pixel Bim 360
-dependency-manager
 description: >
   Dependency Tracking & Resolution specialist. Manages issue dependencies,
   identifies blocking relationships, and orchestrates parallel and sequential workflows.

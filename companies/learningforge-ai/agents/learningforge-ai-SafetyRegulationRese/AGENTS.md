@@ -1,7 +1,6 @@
 ---
-name: 
+name: Safety Regulation Rese
 human_name: Safety Regulation Rese
-Safety Regulation Research Agent
 title: Safety Standards & Best Practices Researcher
 slug: learningforge-ai-safety-regulation-research
 role: specialist

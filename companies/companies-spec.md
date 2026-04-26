@@ -184,21 +184,57 @@ tags:
 
 `AGENTS.md` defines an agent.
 
-### Example
+### Required Fields
 
 ```yaml
-name: CEO
-title: Chief Executive Officer
-reportsTo: null
+name: Strategy Director
+slug: devforge-ai-strategy-director
+role: Strategic Planning Specialist
+reportsTo: devforge-ai-ceo
 skills:
-  - plan-ceo-review
-  - review
+  - strategic-planning
+  - market-analysis
+  - roadmap-development
 ```
+
+### Name Field
+
+The `name` field serves as both a human-readable label AND a functional descriptor:
+
+| Rule | Detail |
+|------|--------|
+| **Max length** | Must be **less than 23 characters** |
+| **Must be descriptive** | Anyone reading it should understand the agent's primary function |
+| **NOT a slug** | Slugs go in the `slug` field |
+| **NOT an opaque codename** | Names like "Nexus" or "Maya" fail the descriptive test |
+
+**Correct examples:**
+- ✅ "CRUD Commander" (14 chars) — commands CRUD operations
+- ✅ "SEO Strategist" (14 chars) — SEO strategy
+- ✅ "Code Reviewer" (13 chars) — code review
+- ✅ "Content Maestro" (16 chars) — content orchestration
+- ✅ "API Integrator" (14 chars) — API integration
+
+**Incorrect examples:**
+- ❌ "Nexus" (5 chars) — too vague, doesn't describe function
+- ❌ "Maya" (4 chars) — not descriptive
+- ❌ "paperclipforge-ai-model-assignment-specialist" (45 chars) — way too long, this is a slug
+
+### DB Field Mapping
+
+When importing into Paperclip or similar runtimes:
+
+| AGENTS.md Field | DB Column | Constraints |
+|----------------|-----------|-------------|
+| `name` | `agents.name` | <23 chars, descriptive of function |
+| `slug` | `agents.title` | Company-agent identifier, kebab-case |
+| `role` | `agents.role` | Role category (e.g., "specialist", "general") |
 
 ### Semantics
 
 - body content is the canonical default instruction content for the agent
 - `docs` points to sibling markdown docs when present
+- `slug` is the stable, URL-safe identifier for the agent (e.g., `devforge-ai-strategy-director`)
 - `skills` references reusable `SKILL.md` packages by skill shortname or slug
 - a bare skill entry like `review` should resolve to `skills/review/SKILL.md` by convention
 - if a package references external skills, the agent should still refer to the skill by shortname; the skill package itself owns any source refs, pinning, or attribution details

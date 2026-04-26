@@ -1,5 +1,6 @@
 ---
 human_name: Scrutineer
+slug: domainforge-ai-scrutineer
 human_name: Scrutineer
 human_name: Scrutineer
 human_name: Scrutineer
@@ -32,9 +33,8 @@ human_name: Scrutineer
 human_name: Scrutineer
 human_name: Scrutineer
 human_name: Scrutineer
-name: 
+name: Scrutineer
 human_name: Scrutineer
-dependency-manager
 description: >
   Dependency Tracking & Resolution specialist. Manages issue dependencies,
   identifies blocking relationships, and orchestrates parallel and sequential workflows.

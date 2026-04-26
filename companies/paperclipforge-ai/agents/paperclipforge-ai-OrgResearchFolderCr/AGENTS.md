@@ -1,5 +1,6 @@
 ---
 name: org-research-folder-creator
+slug: paperclipforge-ai-orgresearchfoldercr
 description: >
   Scout - AI-Powered Organisation Research & Documentation specialist. Researches companies,
   creates organisation-knowledge documentation, and auto-generates folder structures,

@@ -1,5 +1,6 @@
 ---
 human_name: Device Controller
+slug: mobileforge-ai-devicecontroller
 human_name: Device Controller
 human_name: Device Controller
 human_name: Device Controller
@@ -95,9 +96,8 @@ human_name: Device Controller
 human_name: Device Controller
 human_name: Device Controller
 human_name: Device Controller
-name: 
+name: Device Controller
 human_name: Device Controller
-dependency-manager
 description: >
   Dependency Tracking & Resolution specialist. Manages issue dependencies,
   identifies blocking relationships, and orchestrates parallel and sequential workflows.

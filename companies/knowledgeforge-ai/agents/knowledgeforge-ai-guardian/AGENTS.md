@@ -1,7 +1,7 @@
 ---
-name: 
+name: Guardian
 human_name: Guardian
-Guardian
+slug: knowledgeforge-ai-guardian
 role: safety
 title: Guardian
 status: idle

@@ -1,5 +1,6 @@
 ---
 human_name: Trix Trimble
+slug: integrateforge-ai-trixtrimble
 human_name: Trix Trimble
 human_name: Trix Trimble
 human_name: Trix Trimble
@@ -122,9 +123,8 @@ human_name: Trix Trimble
 human_name: Trix Trimble
 human_name: Trix Trimble
 human_name: Trix Trimble
-name: 
+name: Trix Trimble
 human_name: Trix Trimble
-dependency-manager
 description: >
   Dependency Tracking & Resolution specialist. Manages issue dependencies,
   identifies blocking relationships, and orchestrates parallel and sequential workflows.

@@ -1,7 +1,7 @@
 ---
-name: 
+name: Api Manager
 human_name: Api Manager
-api-manager
+slug: paperclipforge-ai-apimanager
 description: >
   API Ecosystem Management specialist. Manages the API ecosystem, API design,
   documentation, versioning, and integration across the Paperclip platform.

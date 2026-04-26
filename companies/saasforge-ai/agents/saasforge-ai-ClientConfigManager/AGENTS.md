@@ -1,5 +1,6 @@
 ---
 human_name: Client Config Manager
+slug: saasforge-ai-clientconfigmanager
 human_name: Client Config Manager
 human_name: Client Config Manager
 human_name: Client Config Manager
@@ -55,9 +56,8 @@ human_name: Client Config Manager
 human_name: Client Config Manager
 human_name: Client Config Manager
 human_name: Client Config Manager
-name: 
+name: Client Config Manager
 human_name: Client Config Manager
-dependency-manager
 description: >
   Dependency Tracking & Resolution specialist. Manages issue dependencies,
   identifies blocking relationships, and orchestrates parallel and sequential workflows.

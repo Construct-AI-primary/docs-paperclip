@@ -1,7 +1,7 @@
 ---
-name: 
+name: SEO Strategist
 human_name: SEO Strategist
-seo-strategist
+slug: contentforge-ai-seostrategist
 role: SEO Optimization Team Lead & Strategy Specialist
 ---
 

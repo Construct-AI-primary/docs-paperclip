@@ -1,5 +1,6 @@
 ---
 human_name: Stan Staad
+slug: integrateforge-ai-stanstaad
 human_name: Stan Staad
 human_name: Stan Staad
 human_name: Stan Staad
@@ -116,9 +117,8 @@ human_name: Stan Staad
 human_name: Stan Staad
 human_name: Stan Staad
 human_name: Stan Staad
-name: 
+name: Stan Staad
 human_name: Stan Staad
-dependency-manager
 description: >
   Dependency Tracking & Resolution specialist. Manages issue dependencies,
   identifies blocking relationships, and orchestrates parallel and sequential workflows.

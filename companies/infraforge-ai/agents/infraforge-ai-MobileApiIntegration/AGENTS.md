@@ -1,7 +1,6 @@
 ---
-name: 
+name: Mobile Api Integration
 human_name: Mobile Api Integration
-mobile-api-infraforge-mobile-api-integration
 slug: mobile-api-infraforge-mobile-api-integration
 reportsTo: orchestrator-infraforge-ceo
 skills:

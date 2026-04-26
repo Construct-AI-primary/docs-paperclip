@@ -1,5 +1,6 @@
 ---
 human_name: Auth Administrator
+slug: paperclipforge-ai-authadministrator
 human_name: Auth Administrator
 human_name: Auth Administrator
 human_name: Auth Administrator
@@ -143,9 +144,8 @@ human_name: Auth Administrator
 human_name: Auth Administrator
 human_name: Auth Administrator
 human_name: Auth Administrator
-name: 
+name: Auth Administrator
 human_name: Auth Administrator
-dependency-manager
 description: >
   Dependency Tracking & Resolution specialist. Manages issue dependencies,
   identifies blocking relationships, and orchestrates parallel and sequential workflows.

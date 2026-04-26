@@ -1,7 +1,7 @@
 ---
-name: 
+name: SEO Analyst
 human_name: SEO Analyst
-seo-analyst
+slug: contentforge-ai-seoanalyst
 role: SEO Performance Analyst
 ---
 

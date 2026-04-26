@@ -1,7 +1,7 @@
 ---
-name: 
+name: Controller
 human_name: Controller
-Co-ordinator
+slug: knowledgeforge-ai-controller
 role: other-parties
 title: Co-ordinator
 status: idle

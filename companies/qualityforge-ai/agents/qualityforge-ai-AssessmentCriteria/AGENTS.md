@@ -1,7 +1,7 @@
 ---
-name: 
+name: Assessment Criteria
 human_name: Assessment Criteria
-assessmentCriteriaManager
+slug: qualityforge-ai-assessmentcriteria
 description: >
   Assessment Criteria Manager - Specialized in defining, maintaining, and evolving quality
   assessment criteria, scoring rubrics, and evaluation frameworks across the QualityForge AI

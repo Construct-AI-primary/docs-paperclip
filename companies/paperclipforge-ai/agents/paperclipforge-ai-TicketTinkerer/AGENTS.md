@@ -1,5 +1,6 @@
 ---
 human_name: Ticket Tinkerer
+slug: paperclipforge-ai-tickettinkerer
 human_name: Ticket Tinkerer
 human_name: Ticket Tinkerer
 human_name: Ticket Tinkerer
@@ -129,9 +130,8 @@ human_name: Ticket Tinkerer
 human_name: Ticket Tinkerer
 human_name: Ticket Tinkerer
 human_name: Ticket Tinkerer
-name: 
+name: Ticket Tinkerer
 human_name: Ticket Tinkerer
-dependency-manager
 description: >
   Dependency Tracking & Resolution specialist. Manages issue dependencies,
   identifies blocking relationships, and orchestrates parallel and sequential workflows.

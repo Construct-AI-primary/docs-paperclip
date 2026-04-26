@@ -1,7 +1,6 @@
 ---
-name: 
+name: Knowledge Hygiene
 human_name: Knowledge Hygiene
-Knowledge Hygiene Agent
 title: Documentation Maintenance Specialist
 slug: learningforge-ai-knowledge-hygiene
 role: specialist

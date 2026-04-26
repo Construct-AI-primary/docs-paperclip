@@ -1,7 +1,6 @@
 ---
-name: 
+name: Vfs Markdown Tracker
 human_name: Vfs Markdown Tracker
-VFS Markdown Tracker
 title: File Operation Logging Specialist
 slug: learningforge-ai-vfs-markdown-tracker
 role: specialist

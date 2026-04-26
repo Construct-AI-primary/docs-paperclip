@@ -1,7 +1,6 @@
 ---
-name: 
+name: Pulse
 human_name: Pulse
-pulse-devforge-realtime-monitoring
 slug: pulse-devforge-realtime-monitoring
 reportsTo: sentinelx-devforge-advanced-monitoring
 skills:

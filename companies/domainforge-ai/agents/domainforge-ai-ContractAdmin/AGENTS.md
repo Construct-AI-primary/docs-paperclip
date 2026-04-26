@@ -1,7 +1,6 @@
 ---
-name: 
+name: Contract Admin
 human_name: Contract Admin
-contract-administration-domainforge-contract-administration
 slug: contract-administration-domainforge-contract-administration
 reportsTo: orion-domainforge-ceo
 skills:

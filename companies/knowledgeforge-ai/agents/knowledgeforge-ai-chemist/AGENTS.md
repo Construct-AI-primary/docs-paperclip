@@ -1,7 +1,7 @@
 ---
-name: 
+name: Chemist
 human_name: Chemist
-Chemist
+slug: knowledgeforge-ai-chemist
 role: chemical-engineer
 title: Chemist
 status: idle

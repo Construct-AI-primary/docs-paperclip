@@ -1,11 +1,11 @@
 ---
 human_name: Financial Compliance
+slug: domainforge-ai-financialcompliance
 human_name: Financial Compliance
 human_name: Financial Compliance
 human_name: Financial Compliance
-name: 
+name: Financial Compliance
 human_name: Financial Compliance
-dependency-manager
 description: >
   Dependency Tracking & Resolution specialist. Manages issue dependencies,
   identifies blocking relationships, and orchestrates parallel and sequential workflows.

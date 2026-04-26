@@ -1,5 +1,6 @@
 ---
 human_name: Deployment Orchestrato
+slug: saasforge-ai-deploymentorchestrato
 human_name: Deployment Orchestrato
 human_name: Deployment Orchestrato
 human_name: Deployment Orchestrato
@@ -62,9 +63,8 @@ human_name: Deployment Orchestrato
 human_name: Deployment Orchestrato
 human_name: Deployment Orchestrato
 human_name: Deployment Orchestrato
-name: 
+name: Deployment Orchestrato
 human_name: Deployment Orchestrato
-dependency-manager
 description: >
   Dependency Tracking & Resolution specialist. Manages issue dependencies,
   identifies blocking relationships, and orchestrates parallel and sequential workflows.

@@ -1,7 +1,7 @@
 ---
-name: 
+name: Workflow Automator
 human_name: Workflow Automator
-workflow-automator
+slug: paperclipforge-ai-workflowautomator
 description: >
   Workflow Design & Automation specialist. Designs automated workflows,
   implements process automation, and optimizes workflow efficiency across the ecosystem.

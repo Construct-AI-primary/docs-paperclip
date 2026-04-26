@@ -1,7 +1,6 @@
 ---
-name: 
+name: Database Infrastructur
 human_name: Database Infrastructur
-database-infraforge-database-infrastructure
 slug: database-infraforge-database-infrastructure
 reportsTo: orchestrator-infraforge-ceo
 skills:

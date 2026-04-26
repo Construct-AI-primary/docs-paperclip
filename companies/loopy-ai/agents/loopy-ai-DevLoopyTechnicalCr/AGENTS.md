@@ -1,7 +1,6 @@
 ---
-name: 
+name: Dev Loopy Technical Cr
 human_name: Dev Loopy Technical Cr
-dev-loopy-technical-creative
 slug: dev-loopy-technical-creative
 reportsTo: vision-loopy-ceo
 skills:

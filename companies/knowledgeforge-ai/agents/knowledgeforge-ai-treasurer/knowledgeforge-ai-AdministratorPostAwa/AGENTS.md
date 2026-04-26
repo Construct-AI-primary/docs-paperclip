@@ -1,13 +1,14 @@
 ---
-name: 
+name: Administrator
+slug: Administrator
 human_name: Administrator Post Awa
-Administrator
 role: administration
 title: Administrator
 status: idle
 reportsTo: knowledgeforge-coordinator-guardian
 capabilities: Administration
 ---
+
 
 # Administrator
 

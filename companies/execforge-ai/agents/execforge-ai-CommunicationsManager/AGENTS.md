@@ -1,5 +1,6 @@
 ---
 human_name: Communications Manager
+slug: execforge-ai-communicationsmanager
 human_name: Communications Manager
 human_name: Communications Manager
 human_name: Communications Manager
@@ -77,9 +78,8 @@ human_name: Communications Manager
 human_name: Communications Manager
 human_name: Communications Manager
 human_name: Communications Manager
-name: 
+name: Communications Manager
 human_name: Communications Manager
-dependency-manager
 description: >
   Dependency Tracking & Resolution specialist. Manages issue dependencies,
   identifies blocking relationships, and orchestrates parallel and sequential workflows.

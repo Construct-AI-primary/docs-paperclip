@@ -1,7 +1,7 @@
 ---
-name: 
+name: Project Coordinator
 human_name: Project Coordinator
-project-coordinator
+slug: paperclipforge-ai-projectcoordinator
 description: >
   Project Lifecycle Management specialist. Manages project planning, execution,
   monitoring, and delivery coordination across the Paperclip ecosystem.

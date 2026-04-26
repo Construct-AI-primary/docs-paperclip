@@ -1,5 +1,6 @@
 ---
 human_name: Performance Analyst
+slug: execforge-ai-performanceanalyst
 human_name: Performance Analyst
 human_name: Performance Analyst
 human_name: Performance Analyst
@@ -76,9 +77,8 @@ human_name: Performance Analyst
 human_name: Performance Analyst
 human_name: Performance Analyst
 human_name: Performance Analyst
-name: 
+name: Performance Analyst
 human_name: Performance Analyst
-dependency-manager
 description: >
   Dependency Tracking & Resolution specialist. Manages issue dependencies,
   identifies blocking relationships, and orchestrates parallel and sequential workflows.

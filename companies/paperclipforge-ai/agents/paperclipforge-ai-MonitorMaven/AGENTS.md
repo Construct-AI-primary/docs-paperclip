@@ -1,5 +1,6 @@
 ---
 human_name: Monitor Maven
+slug: paperclipforge-ai-monitormaven
 human_name: Monitor Maven
 human_name: Monitor Maven
 human_name: Monitor Maven
@@ -125,9 +126,8 @@ human_name: Monitor Maven
 human_name: Monitor Maven
 human_name: Monitor Maven
 human_name: Monitor Maven
-name: 
+name: Monitor Maven
 human_name: Monitor Maven
-dependency-manager
 description: >
   Dependency Tracking & Resolution specialist. Manages issue dependencies,
   identifies blocking relationships, and orchestrates parallel and sequential workflows.

@@ -1,7 +1,7 @@
 ---
-name: 
+name: Co Ordinator
 human_name: Co Ordinator
-Co-ordinator
+slug: knowledgeforge-ai-coordinator
 reportsTo: knowledgeforge-coordinator-guardian
 role: other-parties
 title: 

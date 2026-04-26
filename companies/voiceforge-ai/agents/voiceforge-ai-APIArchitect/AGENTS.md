@@ -1,5 +1,6 @@
 ---
 human_name: API Architect
+slug: voiceforge-ai-apiarchitect
 human_name: API Architect
 human_name: API Architect
 human_name: API Architect
@@ -86,9 +87,8 @@ human_name: API Architect
 human_name: API Architect
 human_name: API Architect
 human_name: API Architect
-name: 
+name: API Architect
 human_name: API Architect
-dependency-manager
 description: >
   Dependency Tracking & Resolution specialist. Manages issue dependencies,
   identifies blocking relationships, and orchestrates parallel and sequential workflows.

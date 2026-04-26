@@ -1,5 +1,6 @@
 ---
 human_name: Security Guardian
+slug: paperclipforge-ai-securityguardian
 human_name: Security Guardian
 human_name: Security Guardian
 human_name: Security Guardian
@@ -142,9 +143,8 @@ human_name: Security Guardian
 human_name: Security Guardian
 human_name: Security Guardian
 human_name: Security Guardian
-name: 
+name: Security Guardian
 human_name: Security Guardian
-dependency-manager
 description: >
   Dependency Tracking & Resolution specialist. Manages issue dependencies,
   identifies blocking relationships, and orchestrates parallel and sequential workflows.

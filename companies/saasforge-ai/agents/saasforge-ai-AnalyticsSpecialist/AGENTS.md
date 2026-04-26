@@ -1,5 +1,6 @@
 ---
 human_name: Analytics Specialist
+slug: saasforge-ai-analyticsspecialist
 human_name: Analytics Specialist
 human_name: Analytics Specialist
 human_name: Analytics Specialist
@@ -52,9 +53,8 @@ human_name: Analytics Specialist
 human_name: Analytics Specialist
 human_name: Analytics Specialist
 human_name: Analytics Specialist
-name: 
+name: Analytics Specialist
 human_name: Analytics Specialist
-dependency-manager
 description: >
   Dependency Tracking & Resolution specialist. Manages issue dependencies,
   identifies blocking relationships, and orchestrates parallel and sequential workflows.

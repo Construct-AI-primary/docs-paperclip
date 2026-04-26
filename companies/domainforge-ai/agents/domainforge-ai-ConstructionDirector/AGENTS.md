@@ -1,8 +1,8 @@
 ---
 human_name: Construction Director
-name: 
+slug: domainforge-ai-constructiondirector
+name: Construction Director
 human_name: Dependency Manager
-dependency-manager
 description: >
   Dependency Tracking & Resolution specialist. Manages issue dependencies,
   identifies blocking relationships, and orchestrates parallel and sequential workflows.

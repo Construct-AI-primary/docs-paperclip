@@ -1,9 +1,9 @@
 ---
 human_name: Public Relations
+slug: domainforge-ai-publicrelations
 human_name: Public Relations
-name: 
+name: Public Relations
 human_name: Public Relations
-dependency-manager
 description: >
   Dependency Tracking & Resolution specialist. Manages issue dependencies,
   identifies blocking relationships, and orchestrates parallel and sequential workflows.

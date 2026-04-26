@@ -1,5 +1,6 @@
 ---
 human_name: Counsel Specialist
+slug: domainforge-ai-counselspecialist
 human_name: Counsel Specialist
 human_name: Counsel Specialist
 human_name: Counsel Specialist
@@ -9,9 +10,8 @@ human_name: Counsel Specialist
 human_name: Counsel Specialist
 human_name: Counsel Specialist
 human_name: Counsel Specialist
-name: 
+name: Counsel Specialist
 human_name: Counsel Specialist
-dependency-manager
 description: >
   Dependency Tracking & Resolution specialist. Manages issue dependencies,
   identifies blocking relationships, and orchestrates parallel and sequential workflows.

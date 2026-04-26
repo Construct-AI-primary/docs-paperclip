@@ -1,5 +1,6 @@
 ---
 human_name: Process Engineering
+slug: domainforge-ai-processengineering
 human_name: Process Engineering
 human_name: Process Engineering
 human_name: Process Engineering
@@ -26,9 +27,8 @@ human_name: Process Engineering
 human_name: Process Engineering
 human_name: Process Engineering
 human_name: Process Engineering
-name: 
+name: Process Engineering
 human_name: Process Engineering
-dependency-manager
 description: >
   Dependency Tracking & Resolution specialist. Manages issue dependencies,
   identifies blocking relationships, and orchestrates parallel and sequential workflows.

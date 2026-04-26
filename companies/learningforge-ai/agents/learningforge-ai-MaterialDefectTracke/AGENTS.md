@@ -1,7 +1,6 @@
 ---
-name: 
+name: Material Defect Tracke
 human_name: Material Defect Tracke
-Material Defect Tracker
 title: Defect Ledger Specialist
 slug: learningforge-ai-material-defect-tracker
 role: specialist

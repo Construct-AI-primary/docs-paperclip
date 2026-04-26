@@ -1,5 +1,6 @@
 ---
 human_name: Onboarding Coordinator
+slug: saasforge-ai-onboardingcoordinator
 human_name: Onboarding Coordinator
 human_name: Onboarding Coordinator
 human_name: Onboarding Coordinator
@@ -56,9 +57,8 @@ human_name: Onboarding Coordinator
 human_name: Onboarding Coordinator
 human_name: Onboarding Coordinator
 human_name: Onboarding Coordinator
-name: 
+name: Onboarding Coordinator
 human_name: Onboarding Coordinator
-dependency-manager
 description: >
   Dependency Tracking & Resolution specialist. Manages issue dependencies,
   identifies blocking relationships, and orchestrates parallel and sequential workflows.

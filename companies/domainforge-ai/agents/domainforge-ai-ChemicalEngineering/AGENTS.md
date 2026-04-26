@@ -1,5 +1,6 @@
 ---
 human_name: Chemical Engineering
+slug: domainforge-ai-chemicalengineering
 human_name: Chemical Engineering
 human_name: Chemical Engineering
 human_name: Chemical Engineering
@@ -22,9 +23,8 @@ human_name: Chemical Engineering
 human_name: Chemical Engineering
 human_name: Chemical Engineering
 human_name: Chemical Engineering
-name: 
+name: Chemical Engineering
 human_name: Chemical Engineering
-dependency-manager
 description: >
   Dependency Tracking & Resolution specialist. Manages issue dependencies,
   identifies blocking relationships, and orchestrates parallel and sequential workflows.

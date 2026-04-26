@@ -1,7 +1,7 @@
 ---
-name: 
+name: Negotiator
 human_name: Negotiator
-Negotiator
+slug: knowledgeforge-ai-negotiator
 role: contracts
 title: Negotiator
 status: idle

@@ -1,7 +1,7 @@
 ---
-name: 
+name: Communication Orchestr
 human_name: Communication Orchestr
-communication-orchestrator
+slug: contentforge-ai-communicationorchestr
 description: >
   Multi-agent coordination specialist for correspondence workflows - Expert in orchestrating
   parallel agent processing with human validation, managing stakeholder notifications, and

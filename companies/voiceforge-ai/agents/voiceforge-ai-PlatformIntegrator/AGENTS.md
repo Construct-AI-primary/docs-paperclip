@@ -1,5 +1,6 @@
 ---
 human_name: Platform Integrator
+slug: voiceforge-ai-platformintegrator
 human_name: Platform Integrator
 human_name: Platform Integrator
 human_name: Platform Integrator
@@ -88,9 +89,8 @@ human_name: Platform Integrator
 human_name: Platform Integrator
 human_name: Platform Integrator
 human_name: Platform Integrator
-name: 
+name: Platform Integrator
 human_name: Platform Integrator
-dependency-manager
 description: >
   Dependency Tracking & Resolution specialist. Manages issue dependencies,
   identifies blocking relationships, and orchestrates parallel and sequential workflows.

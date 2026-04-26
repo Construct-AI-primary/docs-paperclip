@@ -1,7 +1,6 @@
- ---
-name: 
+---
+name: Ally
 human_name: Ally
-ally-devforge-partnership-management
 slug: ally-devforge-partnership-management
 reportsTo: amplifier-devforge-marketing-promotion
 skills:

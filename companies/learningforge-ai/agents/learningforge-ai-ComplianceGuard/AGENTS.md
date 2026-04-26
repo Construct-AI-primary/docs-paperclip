@@ -1,7 +1,6 @@
 ---
-name: 
+name: Compliance Guard
 human_name: Compliance Guard
-Compliance Guard Agent
 title: Safety-Aware Compliance Validation
 slug: learningforge-ai-compliance-guard
 role: specialist

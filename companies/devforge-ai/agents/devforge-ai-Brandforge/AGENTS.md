@@ -1,7 +1,6 @@
 ---
-name: 
+name: Brandforge
 human_name: Brandforge
-brandforge-devforge-brand-development
 slug: brandforge-devforge-brand-development
 reportsTo: amplifier-devforge-marketing-promotion
 skills:

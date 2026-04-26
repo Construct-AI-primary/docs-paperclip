@@ -1,7 +1,6 @@
 ---
-name: 
+name: Safety Training Compli
 human_name: Safety Training Compli
-Safety Training Compliance Agent
 title: Certification Tracking Specialist
 slug: learningforge-ai-safety-training-compliance
 role: specialist

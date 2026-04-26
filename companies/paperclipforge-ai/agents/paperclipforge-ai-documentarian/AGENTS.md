@@ -1,5 +1,6 @@
 ---
 human_name: Documentarian
+slug: paperclipforge-ai-documentarian
 human_name: Documentarian
 human_name: Documentarian
 human_name: Documentarian
@@ -128,9 +129,8 @@ human_name: Documentarian
 human_name: Documentarian
 human_name: Documentarian
 human_name: Documentarian
-name: 
+name: Documentarian
 human_name: Documentarian
-dependency-manager
 description: >
   Dependency Tracking & Resolution specialist. Manages issue dependencies,
   identifies blocking relationships, and orchestrates parallel and sequential workflows.

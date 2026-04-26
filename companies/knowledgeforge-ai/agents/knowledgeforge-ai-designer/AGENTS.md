@@ -1,7 +1,7 @@
 ---
-name: 
+name: Designer
 human_name: Designer
-Designer
+slug: knowledgeforge-ai-designer
 role: design
 title: Designer
 status: idle

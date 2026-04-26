@@ -1,5 +1,6 @@
 ---
 human_name: Knowledge Curator
+slug: execforge-ai-knowledgecurator
 human_name: Knowledge Curator
 human_name: Knowledge Curator
 human_name: Knowledge Curator
@@ -66,9 +67,8 @@ human_name: Knowledge Curator
 human_name: Knowledge Curator
 human_name: Knowledge Curator
 human_name: Knowledge Curator
-name: 
+name: Knowledge Curator
 human_name: Knowledge Curator
-dependency-manager
 description: >
   Dependency Tracking & Resolution specialist. Manages issue dependencies,
   identifies blocking relationships, and orchestrates parallel and sequential workflows.

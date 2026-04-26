@@ -1,7 +1,7 @@
 ---
-name: 
+name: Physician
 human_name: Physician
-Physician
+slug: knowledgeforge-ai-physician
 role: health
 title: Physician
 status: idle

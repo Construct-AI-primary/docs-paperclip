@@ -1,5 +1,6 @@
 ---
 human_name: Deployer
+slug: paperclipforge-ai-deployer
 human_name: Deployer
 human_name: Deployer
 human_name: Deployer
@@ -140,9 +141,8 @@ human_name: Deployer
 human_name: Deployer
 human_name: Deployer
 human_name: Deployer
-name: 
+name: Deployer
 human_name: Deployer
-dependency-manager
 description: >
   Dependency Tracking & Resolution specialist. Manages issue dependencies,
   identifies blocking relationships, and orchestrates parallel and sequential workflows.

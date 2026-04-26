@@ -1,7 +1,6 @@
 ---
-name: 
+name: domainforgeai Structu
 human_name: domainforgeai Structu 
-structural-domainforge-structural-engineering
 slug: structural-domainforge-structural-engineering
 reportsTo: orion-domainforge-ceo
 skills:

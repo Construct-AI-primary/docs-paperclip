@@ -1,7 +1,6 @@
 ---
-name: 
+name: Load
 human_name: Load
-load-Load-testing
 slug: load-Load-testing
 reportsTo: governor-qualityforge-quality-director
 skills:

@@ -1,5 +1,6 @@
 ---
 human_name: Contracts Post Award
+slug: domainforge-ai-contractspostaward
 human_name: Contracts Post Award
 human_name: Contracts Post Award
 human_name: Contracts Post Award
@@ -33,9 +34,8 @@ human_name: Contracts Post Award
 human_name: Contracts Post Award
 human_name: Contracts Post Award
 human_name: Contracts Post Award
-name: 
+name: Contracts Post Award
 human_name: Contracts Post Award
-dependency-manager
 description: >
   Dependency Tracking & Resolution specialist. Manages issue dependencies,
   identifies blocking relationships, and orchestrates parallel and sequential workflows.

@@ -1,7 +1,6 @@
 ---
-name: 
+name: Nova
 human_name: Nova
-nova-devforge-product-launches
 slug: nova-devforge-product-launches
 reportsTo: atlas-devforge-product-mapping
 skills:

@@ -1,5 +1,6 @@
 ---
 human_name: Eli Etabs
+slug: integrateforge-ai-elietabs
 human_name: Eli Etabs
 human_name: Eli Etabs
 human_name: Eli Etabs
@@ -112,9 +113,8 @@ human_name: Eli Etabs
 human_name: Eli Etabs
 human_name: Eli Etabs
 human_name: Eli Etabs
-name: 
+name: Eli Etabs
 human_name: Eli Etabs
-dependency-manager
 description: >
   Dependency Tracking & Resolution specialist. Manages issue dependencies,
   identifies blocking relationships, and orchestrates parallel and sequential workflows.

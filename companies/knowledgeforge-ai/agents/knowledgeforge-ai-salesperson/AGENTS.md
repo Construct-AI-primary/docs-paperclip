@@ -1,7 +1,7 @@
 ---
-name: 
+name: Salesperson
 human_name: Salesperson
-Salesperson
+slug: knowledgeforge-ai-salesperson
 role: sales
 title: Salesperson
 status: idle

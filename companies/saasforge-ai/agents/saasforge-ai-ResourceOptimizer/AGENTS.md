@@ -1,5 +1,6 @@
 ---
 human_name: Resource Optimizer
+slug: saasforge-ai-resourceoptimizer
 human_name: Resource Optimizer
 human_name: Resource Optimizer
 human_name: Resource Optimizer
@@ -49,9 +50,8 @@ human_name: Resource Optimizer
 human_name: Resource Optimizer
 human_name: Resource Optimizer
 human_name: Resource Optimizer
-name: 
+name: Resource Optimizer
 human_name: Resource Optimizer
-dependency-manager
 description: >
   Dependency Tracking & Resolution specialist. Manages issue dependencies,
   identifies blocking relationships, and orchestrates parallel and sequential workflows.

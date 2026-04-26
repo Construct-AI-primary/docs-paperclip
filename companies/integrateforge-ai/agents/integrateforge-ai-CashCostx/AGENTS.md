@@ -1,5 +1,6 @@
 ---
 human_name: Cash Costx
+slug: integrateforge-ai-cashcostx
 human_name: Cash Costx
 human_name: Cash Costx
 human_name: Cash Costx
@@ -118,9 +119,8 @@ human_name: Cash Costx
 human_name: Cash Costx
 human_name: Cash Costx
 human_name: Cash Costx
-name: 
+name: Cash Costx
 human_name: Cash Costx
-dependency-manager
 description: >
   Dependency Tracking & Resolution specialist. Manages issue dependencies,
   identifies blocking relationships, and orchestrates parallel and sequential workflows.

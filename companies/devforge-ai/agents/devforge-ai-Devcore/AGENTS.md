@@ -1,7 +1,6 @@
 ---
-name: 
+name: Devcore
 human_name: Devcore
-devcore-devforge-core-development
 slug: devcore-devforge-core-development
 reportsTo: forge-devforge-system-architecture
 skills:

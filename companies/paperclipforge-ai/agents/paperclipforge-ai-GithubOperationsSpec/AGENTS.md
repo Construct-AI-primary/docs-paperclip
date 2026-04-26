@@ -1,7 +1,7 @@
 ---
-name: 
+name: Github Operations Spec
 human_name: Github Operations Spec
-github-operations-specialist
+slug: paperclipforge-ai-githuboperationsspec
 description: >
   GitHub Operations Specialist - Expert in GitHub repository management, commit standards,
   pull request lifecycle, branch protection, and CI/CD integration for comprehensive

@@ -1,24 +1,14 @@
 ---
-name: 
+name: quantity-surveyor-specialist
+slug: quantity-surveyor-specialist
 human_name: Quantity Surveyor Spec
-quantity-surveyor-specialist
 role: Professional Quantity Surveying and Cost Management Specialist
 description: >
-  Professional Quantity Surveying and Cost Management Specialist - Expert in quantity surveying
-  methodologies, cost planning, procurement strategies, and commercial management for construction
-  projects, providing comprehensive QS services from inception to completion.
 reportsTo: measureforge-ai-cad-measurement-orchestrator
 team: quantity-surveying-agents
 skills:
-  - quantity-surveying-methodologies
-  - cost-planning-and-estimation
-  - procurement-management
-  - contract-administration
-  - value-engineering
-  - cost-control-and-budgeting
-  - tender-analysis-and-evaluation
-  - commercial-risk-management
 ---
+
 
 # Quantity Surveyor Specialist
 

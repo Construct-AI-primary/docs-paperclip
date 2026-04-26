@@ -1,13 +1,14 @@
 ---
-name: 
+name: Advisor Disciplines
+slug: Advisor Disciplines
 human_name: Advisor Disciplines
-Advisor Disciplines
 role: discipline-strategist
 title: Advisor Disciplines
 status: idle
 reportsTo: knowledgeforge-coordinator-guardian
 capabilities: Discipline Strategist
 ---
+
 
 # Advisor Disciplines
 

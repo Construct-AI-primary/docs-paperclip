@@ -1,7 +1,6 @@
 ---
-name: 
+name: Code Analyzer
 human_name: Code Analyzer
-code-analyzer
 slug: code-analyzer
 reportsTo: governor-qualityforge-quality-director
 skills:

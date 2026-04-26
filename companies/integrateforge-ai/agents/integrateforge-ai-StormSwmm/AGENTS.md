@@ -1,5 +1,6 @@
 ---
 human_name: Storm Swmm
+slug: integrateforge-ai-stormswmm
 human_name: Storm Swmm
 human_name: Storm Swmm
 human_name: Storm Swmm
@@ -110,9 +111,8 @@ human_name: Storm Swmm
 human_name: Storm Swmm
 human_name: Storm Swmm
 human_name: Storm Swmm
-name: 
+name: Storm Swmm
 human_name: Storm Swmm
-dependency-manager
 description: >
   Dependency Tracking & Resolution specialist. Manages issue dependencies,
   identifies blocking relationships, and orchestrates parallel and sequential workflows.

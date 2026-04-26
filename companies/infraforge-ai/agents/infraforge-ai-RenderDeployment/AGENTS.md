@@ -1,7 +1,6 @@
 ---
-name: 
+name: Render Deployment
 human_name: Render Deployment
-render-deployment-specialist
 slug: render-deployment-specialist
 role: Render Deployment and Desktop Communication Specialist
 description: >

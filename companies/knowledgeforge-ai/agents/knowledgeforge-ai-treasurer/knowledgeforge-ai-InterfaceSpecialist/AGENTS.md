@@ -1,13 +1,14 @@
 ---
-name: 
+name: Interface Specialist
+slug: Interface Specialist
 human_name: Interface Specialist
-Interface Specialist
 role: interface management
 title: Interface Specialist
 status: active
 reportsTo: knowledgeforge-coordinator-guardian
 capabilities: UI Components, Modal Management, Interface Design, Design System Governance
 ---
+
 
 # Interface Specialist
 

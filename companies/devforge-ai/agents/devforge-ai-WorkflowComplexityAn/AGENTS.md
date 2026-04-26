@@ -1,7 +1,7 @@
 ---
-name: 
+name: Workflow Complexity An
 human_name: Workflow Complexity An
-workflow-complexity-analyzer
+slug: devforge-ai-workflowcomplexityan
 description: >
   Universal workflow assessment and resource allocation specialist - Expert in analyzing
   workflow metadata, determining complexity levels, and optimizing resource allocation across

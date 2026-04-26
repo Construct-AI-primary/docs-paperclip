@@ -1,7 +1,6 @@
 ---
-name: 
+name: Amplifier
 human_name: Amplifier
-amplifier-devforge-marketing-promotion
 slug: amplifier-devforge-marketing-promotion
 reportsTo: nexus-devforge-ceo
 skills:

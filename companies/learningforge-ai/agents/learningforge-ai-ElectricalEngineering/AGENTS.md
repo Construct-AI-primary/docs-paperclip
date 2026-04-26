@@ -1,7 +1,6 @@
 ---
-name: 
+name: Electrical Engineering
 human_name: Electrical Engineering
-Electrical Engineering Agent
 title: Electrical Engineering Learning Specialist
 slug: learningforge-ai-electrical-engineering-agent
 role: specialist

@@ -1,23 +1,22 @@
 ---
 name: measureforge-ai-cost-estimation-specialist
+slug: cost-estimation-specialist
 human_name: Cost Estimation
 role: Cost Estimation and Pricing Specialist
 description: >
-  Cost Estimation and Pricing Specialist - Expert in developing accurate cost estimates,
-  applying appropriate pricing rates, analyzing cost variances, and providing comprehensive
-  cost analysis for construction projects and quantity surveying services.
 reportsTo: measureforge-ai-cad-measurement-orchestrator
 team: estimation-agents
 skills:
-  - cost-estimation-methodologies
-  - pricing-rate-application
-  - cost-variance-analysis
-  - tender-price-development
-  - cost-database-management
-  - market-rate-analysis
-  - cost-risk-assessment
-  - budget-forecasting
+  - cost-estimation-analysis
+  - quantity-takeoff-pricing
+  - material-cost-forecasting
+  - labor-cost-calculation
+  - equipment-cost-analysis
+  - market-rate-benchmarking
+  - budget-development-planning
+  - value-engineering-assessment
 ---
+
 
 # Cost Estimation Specialist
 

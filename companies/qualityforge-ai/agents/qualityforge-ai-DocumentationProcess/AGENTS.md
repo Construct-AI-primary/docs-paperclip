@@ -1,7 +1,7 @@
 ---
-name: 
+name: Documentation Process
 human_name: Documentation Process
-documentation-processor
+slug: qualityforge-ai-documentationprocess
 description: >
   Documentation Processor - Specialized in processing, analyzing, transforming, and
   validating quality documentation across the QualityForge AI ecosystem. Handles document

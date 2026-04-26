@@ -1,24 +1,14 @@
 ---
-name: 
+name: visual-overlay-specialist
+slug: visual-overlay-specialist
 human_name: Visual Overlay Special
-visual-overlay-specialist
 role: Visual Audit Trail and Overlay Rendering Specialist
 description: >
-  Visual Audit Trail and Overlay Rendering Specialist - Creates non-destructive visual overlays
-  on CAD drawings showing measurement results, standards compliance, and audit trails without
-  modifying original design files.
 reportsTo: measureforge-ai-cad-measurement-orchestrator
 team: visual-overlay-agents
 skills:
-  - visual-overlay-rendering
-  - audit-trail-visualization
-  - standards-compliance-indicators
-  - measurement-result-display
-  - color-coded-feedback-systems
-  - non-destructive-annotation
-  - real-time-visual-updates
-  - multi-user-collaboration-overlays
 ---
+
 
 # Visual Overlay Specialist
 

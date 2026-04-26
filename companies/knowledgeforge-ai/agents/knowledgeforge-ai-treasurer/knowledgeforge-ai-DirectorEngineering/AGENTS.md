@@ -1,7 +1,7 @@
 ---
-name: 
+name: Director Engineering
+slug: Director Engineering
 human_name: Director Engineering
-Director Engineering
 reportsTo: knowledgeforge-coordinator-guardian
 role: engineering-director
 title: 
@@ -9,6 +9,7 @@ status: idle
 capabilities: 
 company: knowledgeforge-ai
 ---
+
 
 # Director Engineering
 

@@ -1,7 +1,7 @@
 ---
-name: 
+name: Developer
 human_name: Developer
-Developer
+slug: knowledgeforge-ai-developer
 role: developer
 title: Developer
 status: idle

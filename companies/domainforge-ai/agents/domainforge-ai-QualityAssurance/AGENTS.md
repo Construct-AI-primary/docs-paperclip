@@ -1,7 +1,6 @@
 ---
-name: 
+name: Quality Assurance
 human_name: Quality Assurance
-quality-assurance-domainforge-quality-assurance
 slug: quality-assurance-domainforge-quality-assurance
 reportsTo: orion-domainforge-ceo
 skills:

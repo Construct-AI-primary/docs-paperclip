@@ -1,7 +1,6 @@
 ---
-name: 
+name: Explorer
 human_name: Explorer
-explorer-promptforge-new-techniques
 slug: explorer-promptforge-new-techniques
 reportsTo: sage-promptforge-chief-architect
 skills:

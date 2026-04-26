@@ -1,7 +1,6 @@
 ---
-name: 
+name: Safety Quality Divisio
 human_name: Safety Quality Divisio
-Safety Quality Division Lead
 title: Head of Safety & Quality
 slug: learningforge-ai-safety-quality-division-lead
 role: division-lead

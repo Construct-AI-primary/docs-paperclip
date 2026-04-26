@@ -1,5 +1,6 @@
 ---
 human_name: Blake Buildsoft
+slug: integrateforge-ai-blakebuildsoft
 human_name: Blake Buildsoft
 human_name: Blake Buildsoft
 human_name: Blake Buildsoft
@@ -111,9 +112,8 @@ human_name: Blake Buildsoft
 human_name: Blake Buildsoft
 human_name: Blake Buildsoft
 human_name: Blake Buildsoft
-name: 
+name: Blake Buildsoft
 human_name: Blake Buildsoft
-dependency-manager
 description: >
   Dependency Tracking & Resolution specialist. Manages issue dependencies,
   identifies blocking relationships, and orchestrates parallel and sequential workflows.

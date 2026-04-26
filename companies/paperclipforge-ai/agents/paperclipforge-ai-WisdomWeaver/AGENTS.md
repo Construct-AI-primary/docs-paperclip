@@ -1,5 +1,6 @@
 ---
 human_name: Wisdom Weaver
+slug: paperclipforge-ai-wisdomweaver
 human_name: Wisdom Weaver
 human_name: Wisdom Weaver
 human_name: Wisdom Weaver
@@ -130,9 +131,8 @@ human_name: Wisdom Weaver
 human_name: Wisdom Weaver
 human_name: Wisdom Weaver
 human_name: Wisdom Weaver
-name: 
+name: Wisdom Weaver
 human_name: Wisdom Weaver
-dependency-manager
 description: >
   Dependency Tracking & Resolution specialist. Manages issue dependencies,
   identifies blocking relationships, and orchestrates parallel and sequential workflows.

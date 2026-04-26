@@ -1,7 +1,7 @@
 ---
-name: 
+name: Conversion Analyst
 human_name: Conversion Analyst
-conversion-analyst
+slug: contentforge-ai-conversionanalyst
 role: Conversion Analytics Specialist
 ---
 

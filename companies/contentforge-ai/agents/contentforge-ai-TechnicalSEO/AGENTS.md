@@ -1,7 +1,7 @@
 ---
-name: 
+name: Technical SEO
 human_name: Technical SEO
-technical-seo-specialist
+slug: contentforge-ai-technicalseo
 role: Technical SEO Implementation Expert
 ---
 

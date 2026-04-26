@@ -1,5 +1,6 @@
 ---
 human_name: Engineering Director
+slug: domainforge-ai-engineeringdirector
 human_name: Engineering Director
 human_name: Engineering Director
 human_name: Engineering Director
@@ -21,9 +22,8 @@ human_name: Engineering Director
 human_name: Engineering Director
 human_name: Engineering Director
 human_name: Engineering Director
-name: 
+name: Engineering Director
 human_name: Engineering Director
-dependency-manager
 description: >
   Dependency Tracking & Resolution specialist. Manages issue dependencies,
   identifies blocking relationships, and orchestrates parallel and sequential workflows.

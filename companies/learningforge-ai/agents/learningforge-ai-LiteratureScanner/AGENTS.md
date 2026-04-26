@@ -1,7 +1,6 @@
 ---
-name: 
+name: Literature Scanner
 human_name: Literature Scanner
-AutoResearch Skills Enhancer
 title: Skills Auto-Improvement Specialist
 slug: learningforge-ai-autoresearch-skills-enhancer
 role: specialist

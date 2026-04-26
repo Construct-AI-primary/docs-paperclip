@@ -1,7 +1,7 @@
 ---
-name: 
+name: Optimizer
 human_name: Optimizer
-Optimizer
+slug: knowledgeforge-ai-optimizer
 role: process-engineer
 title: Optimizer
 status: idle

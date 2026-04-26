@@ -1,7 +1,7 @@
 ---
-name: 
+name: Inspector
 human_name: Inspector
-Inspector
+slug: knowledgeforge-ai-inspector
 role: inspection
 title: Inspector
 status: idle

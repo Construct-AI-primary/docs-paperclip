@@ -1,5 +1,6 @@
 ---
 human_name: Contracts Director
+slug: domainforge-ai-contractsdirector
 human_name: Contracts Director
 human_name: Contracts Director
 human_name: Contracts Director
@@ -14,9 +15,8 @@ human_name: Contracts Director
 human_name: Contracts Director
 human_name: Contracts Director
 human_name: Contracts Director
-name: 
+name: Contracts Director
 human_name: Contracts Director
-dependency-manager
 description: >
   Dependency Tracking & Resolution specialist. Manages issue dependencies,
   identifies blocking relationships, and orchestrates parallel and sequential workflows.

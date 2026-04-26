@@ -1,7 +1,7 @@
 ---
-name: 
+name: Email Composer
 human_name: Email Composer
-email-composer
+slug: contentforge-ai-emailcomposer
 role: Email Marketing Content Specialist
 ---
 

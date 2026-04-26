@@ -1,5 +1,6 @@
 ---
 human_name: Corey Procore
+slug: integrateforge-ai-coreyprocore
 human_name: Corey Procore
 human_name: Corey Procore
 human_name: Corey Procore
@@ -117,9 +118,8 @@ human_name: Corey Procore
 human_name: Corey Procore
 human_name: Corey Procore
 human_name: Corey Procore
-name: 
+name: Corey Procore
 human_name: Corey Procore
-dependency-manager
 description: >
   Dependency Tracking & Resolution specialist. Manages issue dependencies,
   identifies blocking relationships, and orchestrates parallel and sequential workflows.

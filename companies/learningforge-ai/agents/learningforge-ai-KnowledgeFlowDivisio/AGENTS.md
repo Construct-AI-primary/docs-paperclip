@@ -1,7 +1,6 @@
 ---
-name: 
+name: Knowledge Flow Divisio
 human_name: Knowledge Flow Divisio
-Knowledge Flow Division Lead
 title: Head of Knowledge-Flow & Docs
 slug: learningforge-ai-knowledge-flow-division-lead
 role: division-lead

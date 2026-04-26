@@ -1,7 +1,7 @@
 ---
-name: 
+name: Performance Optimizer
 human_name: Performance Optimizer
-performance-optimizer
+slug: contentforge-ai-performanceoptimizer
 role: Website Performance Team Lead & Core Web Vitals Specialist
 ---
 

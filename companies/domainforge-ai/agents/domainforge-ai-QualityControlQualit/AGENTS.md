@@ -1,7 +1,6 @@
 ---
-name: 
+name: Quality Control Qualit
 human_name: Quality Control Qualit
-quality-control-domainforge-quality-control
 slug: quality-control-domainforge-quality-control
 reportsTo: orion-domainforge-ceo
 skills:

@@ -1,7 +1,7 @@
 ---
-name: 
+name: Issue Generator
 human_name: Issue Generator
-issue-generator
+slug: paperclipforge-ai-issuegenerator
 description: >
   AI-Powered Issue Creation specialist. Uses AI to identify, analyze, and create
   structured issues from project requirements, problems, and improvement opportunities.

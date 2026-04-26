@@ -1,5 +1,6 @@
 ---
 human_name: Endpoint Enchantress
+slug: paperclipforge-ai-endpointenchantress
 human_name: Endpoint Enchantress
 human_name: Endpoint Enchantress
 human_name: Endpoint Enchantress
@@ -138,9 +139,8 @@ human_name: Endpoint Enchantress
 human_name: Endpoint Enchantress
 human_name: Endpoint Enchantress
 human_name: Endpoint Enchantress
-name: 
+name: Endpoint Enchantress
 human_name: Endpoint Enchantress
-dependency-manager
 description: >
   Dependency Tracking & Resolution specialist. Manages issue dependencies,
   identifies blocking relationships, and orchestrates parallel and sequential workflows.

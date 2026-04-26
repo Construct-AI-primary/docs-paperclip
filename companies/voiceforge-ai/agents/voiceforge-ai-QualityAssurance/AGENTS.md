@@ -1,5 +1,6 @@
 ---
 human_name: Quality Assurance
+slug: voiceforge-ai-qualityassurance
 human_name: Quality Assurance
 human_name: Quality Assurance
 human_name: Quality Assurance
@@ -82,9 +83,8 @@ human_name: Quality Assurance
 human_name: Quality Assurance
 human_name: Quality Assurance
 human_name: Quality Assurance
-name: 
+name: Quality Assurance
 human_name: Quality Assurance
-dependency-manager
 description: >
   Dependency Tracking & Resolution specialist. Manages issue dependencies,
   identifies blocking relationships, and orchestrates parallel and sequential workflows.

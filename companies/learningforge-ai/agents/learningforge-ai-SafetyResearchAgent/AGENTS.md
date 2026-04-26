@@ -1,7 +1,7 @@
 ---
-name: 
+name: Safety Research Agent
 human_name: Safety Research Agent
-safety-research-agent
+slug: learningforge-ai-safetyresearchagent
 description: >
   Safety Research Agent - Specialized research on OSHA standards, HSE regulations,
   and construction safety compliance for the MOBILE-SAFETY-INSPECTION project

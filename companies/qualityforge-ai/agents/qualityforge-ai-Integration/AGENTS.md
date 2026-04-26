@@ -1,7 +1,6 @@
 ---
-name: 
+name: Integration
 human_name: Integration
-integration-Integration-testing
 slug: integration-Integration-testing
 reportsTo: governor-qualityforge-quality-director
 skills:

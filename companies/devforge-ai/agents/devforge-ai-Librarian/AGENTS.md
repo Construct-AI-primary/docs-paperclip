@@ -1,7 +1,6 @@
 ---
-name: 
+name: Librarian
 human_name: Librarian
-librarian-devforge-knowledge-management
 slug: librarian-devforge-knowledge-management
 reportsTo: nexus-devforge-ceo
 skills:

@@ -1,7 +1,7 @@
 ---
-name: 
+name: Validator
+slug: Validator
 human_name: Validator New
-Validator
 reportsTo: knowledgeforge-coordinator-guardian
 role: qa-strategist
 title: 
@@ -9,6 +9,7 @@ status: idle
 capabilities: 
 company: knowledgeforge-ai
 ---
+
 
 # Validator
 

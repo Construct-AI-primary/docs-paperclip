@@ -1,5 +1,6 @@
 ---
 human_name: Research Assistant
+slug: execforge-ai-researchassistant
 human_name: Research Assistant
 human_name: Research Assistant
 human_name: Research Assistant
@@ -75,9 +76,8 @@ human_name: Research Assistant
 human_name: Research Assistant
 human_name: Research Assistant
 human_name: Research Assistant
-name: 
+name: Research Assistant
 human_name: Research Assistant
-dependency-manager
 description: >
   Dependency Tracking & Resolution specialist. Manages issue dependencies,
   identifies blocking relationships, and orchestrates parallel and sequential workflows.

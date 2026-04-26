@@ -1,10 +1,10 @@
 ---
 human_name: Design
+slug: domainforge-ai-design
 human_name: Design
 human_name: Design
-name: 
+name: Design
 human_name: Design
-dependency-manager
 description: >
   Dependency Tracking & Resolution specialist. Manages issue dependencies,
   identifies blocking relationships, and orchestrates parallel and sequential workflows.

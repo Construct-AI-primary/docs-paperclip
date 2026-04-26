@@ -1,7 +1,7 @@
 ---
-name: 
+name: Counsel
 human_name: Counsel
-Counsel
+slug: knowledgeforge-ai-counsel
 role: legal
 title: Counsel
 status: idle

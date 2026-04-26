@@ -1,5 +1,6 @@
 ---
 human_name: Config Curator
+slug: paperclipforge-ai-configcurator
 human_name: Config Curator
 human_name: Config Curator
 human_name: Config Curator
@@ -127,9 +128,8 @@ human_name: Config Curator
 human_name: Config Curator
 human_name: Config Curator
 human_name: Config Curator
-name: 
+name: Config Curator
 human_name: Config Curator
-dependency-manager
 description: >
   Dependency Tracking & Resolution specialist. Manages issue dependencies,
   identifies blocking relationships, and orchestrates parallel and sequential workflows.

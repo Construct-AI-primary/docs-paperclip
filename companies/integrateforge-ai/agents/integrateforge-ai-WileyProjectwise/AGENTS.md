@@ -1,5 +1,6 @@
 ---
 human_name: Wiley Projectwise
+slug: integrateforge-ai-wileyprojectwise
 human_name: Wiley Projectwise
 human_name: Wiley Projectwise
 human_name: Wiley Projectwise
@@ -106,9 +107,8 @@ human_name: Wiley Projectwise
 human_name: Wiley Projectwise
 human_name: Wiley Projectwise
 human_name: Wiley Projectwise
-name: 
+name: Wiley Projectwise
 human_name: Wiley Projectwise
-dependency-manager
 description: >
   Dependency Tracking & Resolution specialist. Manages issue dependencies,
   identifies blocking relationships, and orchestrates parallel and sequential workflows.

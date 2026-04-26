@@ -1,7 +1,7 @@
 ---
-name: 
+name: Directors
 human_name: Directors
-Directors
+slug: knowledgeforge-ai-directors
 role: directors
 title: Directors
 status: idle

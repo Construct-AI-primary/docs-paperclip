@@ -1,5 +1,6 @@
 ---
 human_name: Information Technology
+slug: domainforge-ai-informationtechnology
 human_name: Information Technology
 human_name: Information Technology
 human_name: Information Technology
@@ -44,9 +45,8 @@ human_name: Information Technology
 human_name: Information Technology
 human_name: Information Technology
 human_name: Information Technology
-name: 
+name: Information Technology
 human_name: Information Technology
-dependency-manager
 description: >
   Dependency Tracking & Resolution specialist. Manages issue dependencies,
   identifies blocking relationships, and orchestrates parallel and sequential workflows.

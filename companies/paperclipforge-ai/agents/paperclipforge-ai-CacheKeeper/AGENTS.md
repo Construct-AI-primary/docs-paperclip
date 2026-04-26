@@ -1,5 +1,6 @@
 ---
 human_name: Cache Keeper
+slug: paperclipforge-ai-cachekeeper
 human_name: Cache Keeper
 human_name: Cache Keeper
 human_name: Cache Keeper
@@ -139,9 +140,8 @@ human_name: Cache Keeper
 human_name: Cache Keeper
 human_name: Cache Keeper
 human_name: Cache Keeper
-name: 
+name: Cache Keeper
 human_name: Cache Keeper
-dependency-manager
 description: >
   Dependency Tracking & Resolution specialist. Manages issue dependencies,
   identifies blocking relationships, and orchestrates parallel and sequential workflows.

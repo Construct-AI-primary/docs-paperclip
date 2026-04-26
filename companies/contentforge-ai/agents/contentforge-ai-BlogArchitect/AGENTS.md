@@ -1,7 +1,7 @@
 ---
-name: 
+name: Blog Architect
 human_name: Blog Architect
-blog-architect
+slug: contentforge-ai-blogarchitect
 role: Content Creation Team Lead & Blog Specialist
 ---
 

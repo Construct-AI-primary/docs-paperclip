@@ -1,5 +1,6 @@
 ---
 human_name: Document Control
+slug: domainforge-ai-documentcontrol
 human_name: Document Control
 human_name: Document Control
 human_name: Document Control
@@ -42,9 +43,8 @@ human_name: Document Control
 human_name: Document Control
 human_name: Document Control
 human_name: Document Control
-name: 
+name: Document Control
 human_name: Document Control
-dependency-manager
 description: >
   Dependency Tracking & Resolution specialist. Manages issue dependencies,
   identifies blocking relationships, and orchestrates parallel and sequential workflows.

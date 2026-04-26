@@ -1,7 +1,6 @@
 ---
-name: 
+name: Safety Officer
 human_name: Safety Officer
-safety-domainforge-safety-risk-management
 slug: safety-domainforge-safety-risk-management
 reportsTo: orion-domainforge-ceo
 skills:

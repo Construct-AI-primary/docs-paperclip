@@ -1,7 +1,7 @@
 ---
-name: 
+name: UX Designer
 human_name: UX Designer
-ux-designer
+slug: contentforge-ai-uxdesigner
 role: User Experience Designer
 ---
 

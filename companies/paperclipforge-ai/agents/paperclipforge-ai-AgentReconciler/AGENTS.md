@@ -1,5 +1,5 @@
 ---
-name: 
+name: Agent Reconciler
 human_name: Agent Reconciler
 slug: paperclipforge-ai-agent-reconciler
 role: Agent Reconciliation Specialist
@@ -93,6 +93,11 @@ Recon is the Paperclip ecosystem's dedicated reconciliation specialist. Named af
 - **When to engage**: New agents need to be created from filesystem definitions
 - **Input**: Agent definition from AGENTS.md
 - **Output**: Properly formatted agent creation SQL with all defaults
+
+### CRUD Commander (Database CRUD Orchestrator)
+- **When to engage**: Any CRUD operation — single or batch inserts, updates, deletes, edits, or Drizzle ORM templates needed for reconciliation fixes. Covers the full spectrum: creating agents, updating names/roles, deleting orphaned records, editing hierarchies, and any FK-safe data manipulation.
+- **Input**: Target table, FK dependencies, operation type (insert/update/delete/edit/select), record scope (single or batch)
+- **Output**: FK-ordered CRUD SQL, safe deletion sequences, type-safe Drizzle ORM templates, or dependency-verified data scripts
 
 ### Model Assignment Specialist
 - **When to engage**: Agents missing model assignments need default models

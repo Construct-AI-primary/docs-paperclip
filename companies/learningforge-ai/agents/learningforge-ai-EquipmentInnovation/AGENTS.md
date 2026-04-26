@@ -1,7 +1,6 @@
 ---
-name: 
+name: Equipment Innovation
 human_name: Equipment Innovation
-Equipment Innovation Research Agent
 title: Materials & Equipment Breakthroughs Specialist
 slug: learningforge-ai-equipment-innovation-research
 role: specialist

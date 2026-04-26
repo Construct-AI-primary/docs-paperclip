@@ -1,5 +1,6 @@
 ---
 human_name: Buyer Specialist
+slug: domainforge-ai-buyerspecialist
 human_name: Buyer Specialist
 human_name: Buyer Specialist
 human_name: Buyer Specialist
@@ -13,9 +14,8 @@ human_name: Buyer Specialist
 human_name: Buyer Specialist
 human_name: Buyer Specialist
 human_name: Buyer Specialist
-name: 
+name: Buyer Specialist
 human_name: Buyer Specialist
-dependency-manager
 description: >
   Dependency Tracking & Resolution specialist. Manages issue dependencies,
   identifies blocking relationships, and orchestrates parallel and sequential workflows.

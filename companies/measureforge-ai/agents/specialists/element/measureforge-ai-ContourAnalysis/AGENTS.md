@@ -1,24 +1,14 @@
 ---
-name: 
+name: contour-analysis-specialist
+slug: contour-analysis-specialist
 human_name: Contour Analysis
-contour-analysis-specialist
 role: Contour Data Processing and Analysis Specialist
 description: >
-  Contour Data Processing and Analysis Specialist - Expert in processing contour data,
-  generating accurate terrain models, validating contour accuracy, and ensuring reliable
-  topographic data for construction and engineering projects.
 reportsTo: measureforge-ai-cad-measurement-orchestrator
 team: contour-agents
 skills:
-  - contour-data-processing
-  - terrain-model-generation
-  - contour-accuracy-validation
-  - topographic-data-analysis
-  - survey-data-interpolation
-  - elevation-model-creation
-  - contour-quality-assurance
-  - geospatial-data-management
 ---
+
 
 # Contour Analysis Specialist
 
