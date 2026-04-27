@@ -1,5 +1,6 @@
 ---
-title: "MEASURE-AI-001: AI Model Assignments"
+id: MEASURE-AI-001
+title: "AI Model Assignments for Measurement Agents"
 description: "Complete AI model assignments for all measurement platform agents"
 gigabrain_tags: issue, measurement, ai-models, model-assignments, anthropic, openai, agent-models
 para_section: disciplines-non/02025-measurement/projects/MEASURE-AI/shared/issues
@@ -10,23 +11,28 @@ priority: Critical
 
 # MEASURE-AI-001: AI Model Assignments
 
-## Overview
+## Executive Summary
+**Objective**: Assign optimal AI models to 7 measurement agents for accuracy, speed, and cost efficiency.
 
-Implement comprehensive AI model assignments for all measurement platform agents, establishing optimal model configurations for accuracy, speed, and cost efficiency.
+**Scope**: Primary/fallback models, performance parameters (temperature/tokens), SQL scripts, validation.
+
+**Success Criteria**: All agents assigned, <99.5% accuracy, <5s response time, validated capabilities.
+
+**Business Impact**: Ensures measurement platform reliability and performance optimization.
 
 ## Requirements
 
-1. Model selection framework for 7 specialized measurement agents
-2. Primary and fallback model configurations
-3. Performance parameter optimization (temperature, tokens, capabilities)
-4. Model assignment SQL scripts for database integration
-5. Cross-platform model compatibility validation
+- Model selection framework for 7 specialized measurement agents
+- Primary and fallback model configurations (Anthropic/OpenAI)
+- Performance parameter optimization (temperature: 0.05-0.6, tokens: 4K-8K)
+- Model assignment SQL scripts for database integration
+- Cross-platform model compatibility validation
 
 ## Acceptance Criteria
 
 - [ ] All 7 measurement agents have primary model assignments
-- [ ] Fallback models configured for reliability
-- [ ] Performance parameters optimized for each agent type
+- [ ] Fallback models configured for 99.9% uptime
+- [ ] Performance parameters optimized per agent type
 - [ ] Model assignment scripts execute successfully
 - [ ] Agent capabilities validated against assigned models
 

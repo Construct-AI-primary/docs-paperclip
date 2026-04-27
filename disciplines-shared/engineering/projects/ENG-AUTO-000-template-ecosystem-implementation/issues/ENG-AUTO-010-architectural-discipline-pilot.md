@@ -1,25 +1,28 @@
 ---
+id: ENG-AUTO-010
 title: "Architectural Discipline Pilot Implementation"
 description: "Deploy AI workflow templates to architectural engineering discipline with discipline-specific adaptations"
 labels: ["engineering", "pilot", "architectural", "template-deployment", "discipline-adaptation"]
 blocked_by: []
-depends_on: []
+depends_on: ["ENG-AUTO-001", "ENG-AUTO-002", "ENG-AUTO-003"]
 para_section: disciplines-shared/engineering/projects/ENG-AUTO-000-template-ecosystem-implementation/issues
+phase: "Pilot Phase (Weeks 5-8)"
 status: active
 priority: High
 story_points: 13
 due_date: "2026-05-23"
-assignee: DevForge AI (Workflow Complexity Analyzer)
-company: devforge-ai
 ---
 
-# Architectural Engineering Platform Integration (ENG-PLATFORM-017)
+# ENG-AUTO-010: Architectural Discipline Pilot
 
-## Issue Summary
+## Executive Summary
+**Objective**: Deploy 5 AI workflow templates to architectural engineering (00825) with <20% customization for Revit/AutoCAD/BIM 360 integration.
 
-Integrate the **Cross-Discipline Engineering Platform** with the **architectural engineering discipline (00825)**. This involves configuring discipline-specific adaptations, setting up CAD/BIM integrations (Revit primary, AutoCAD secondary), implementing jurisdictional standards support, and validating the complete engineering workflow experience.
+**Success Criteria**: >95% template accuracy, 40-50% time reduction, <5% error rate, >90% user adoption.
 
-**Business Value**: Establish architectural engineering as the first discipline fully integrated with the unified platform, demonstrating multi-CAD support and jurisdictional flexibility for international clients.
+**Key Deliverables**: CAD integration, jurisdictional standards (ZA/US/GB), AI agent configuration, pilot validation.
+
+**Business Impact**: First unified platform discipline, enabling cross-CAD collaboration and international compliance.
 
 ## Acceptance Criteria
 
@@ -197,256 +200,34 @@ From Other Disciplines:
 └── All Disciplines → "BIM 360 Collaboration" hub
 ```
 
-### Integration with Existing Pages
+## Assigned Company & Agent
 
-#### Existing Architectural Pages
-The architectural engineering discipline already has established pages accessible via accordion navigation:
+- **Company:** DevForge AI
+- **Agent:** devforge-ai-workflow-complexity-analyzer (Workflow Complexity Analyzer)
+- **Supporting Companies:**
+  - **IntegrateForge AI**: CAD/BIM integration and API connections
+  - **KnowledgeForge AI**: Standards indexing and compliance validation
+  - **DomainForge AI**: Document generation and technical specifications
 
-- **Scope of Work Page**: `/disciplines/00825/scope-of-work`
-- **Technical Specifications Page**: `/disciplines/00825/technical-specifications`
+## Technical Scope
 
-#### Integration Strategy
+### Core Deliverables
+- **Template Deployment**: 5 AI workflow templates with <20% architectural customizations
+- **CAD Integration**: Revit primary, AutoCAD secondary, BIM 360 cloud sync
+- **Standards Support**: ZA (SANS-10400), US (IBC/ADA), GB (Building Regs) compliance
+- **AI Agent Config**: KnowledgeForge, LearningForge, DomainForge integration
 
-##### **1. Scope of Work Integration**
-```
-Current Page: /disciplines/00825/scope-of-work
-├── Status: Existing functional page
-├── Features: Scope document generation, project requirements
-├── Integration Approach: ENHANCE & LINK
-│   ├── Add "Open in Engineering Platform" button
-│   ├── Sync scope data with platform projects
-│   ├── Extend with AI-powered scope analysis
-│   └── Maintain existing URL for backward compatibility
-└── Shared Components: ScopeOfWorkGenerator, RequirementsExtractor
-```
+### Integration Points
+- **Existing Pages**: Enhance scope-of-work and technical-specifications pages
+- **Platform Components**: Shared engineering components and navigation
+- **Cross-Discipline**: MEP/Structural collaboration workflows
+- **Document Generation**: AI-powered construction documents and specs
 
-##### **2. Technical Specifications Integration**
-```
-Current Page: /disciplines/00825/technical-specifications
-├── Status: Existing functional page
-├── Features: Specification templates, standards compliance
-├── Integration Approach: EXTEND & SHARE
-│   ├── Migrate specification templates to platform
-│   ├── Add real-time standards validation
-│   ├── Integrate with AI document generation
-│   └── Keep existing page as simplified interface
-└── Shared Components: SpecificationBuilder, StandardsValidator
-```
+## Implementation References
 
-##### **3. Shared Component Strategy**
-```
-Reusable Components to Extract:
-├── SpecificationGenerator.js     // From technical specs page
-├── ScopeAnalyzer.js             // From scope of work page
-├── StandardsCompliance.js       // Enhanced validation logic
-├── DocumentTemplates.js         // Template management system
-└── ProjectRequirements.js       // Requirements extraction logic
-
-Integration Pattern:
-├── Platform uses shared components
-├── Existing pages remain functional
-├── New features added to both locations
-└── Data synchronization between systems
-```
-
-##### **4. User Experience Flow**
-```
-Enhanced Navigation:
-├── Accordion → "Scope of Work - Architectural" → Existing page + platform features
-├── Accordion → "Technical Specifications - Architectural" → Existing page + platform features
-├── Platform → "Construction Docs" → Enhanced document generation
-└── Platform → "Code Compliance" → Advanced validation tools
-
-Migration Path:
-├── Phase 1: Add platform links to existing pages
-├── Phase 2: Extract shared components
-├── Phase 3: Enhance both systems with new features
-└── Phase 4: Full integration with unified experience
-```
-
-### UI/UX Enhancement Requirements
-
-#### **Cross-Discipline Standards Compliance (ALL Engineering Disciplines)**
-```
-Scope: This pilot establishes UI/UX standards that apply across ALL engineering disciplines:
-├── Civil Engineering (00850)
-├── Electrical Engineering (00860)
-├── Mechanical Engineering (00870)
-├── Structural Engineering (00872)
-├── Architectural Engineering (00825) ← Current Pilot
-├── Chemical Engineering (00835)
-├── Geotechnical Engineering (00855)
-├── Process Engineering (00871)
-├── Environmental Engineering (01000)
-└── Landscaping Engineering (03000)
-
-Standards References:
-├── Page Implementation: docs-construct-ai/codebase/procedures/documentation/0000_PAGE_IMPLEMENTATION_PROCEDURE.md
-├── Visual Design: docs-construct-ai/pages-design/0000_VISUAL_DESIGN_STANDARDS.md
-├── Page Architecture: docs-construct-ai/pages-design/0000_PAGE_ARCHITECTURE_GUIDE.md
-├── Dropdown Standards: docs-construct-ai/standards/0000_DROPDOWN_IMPLEMENTATIONS.md
-└── Modal Design: docs-construct-ai/pages-design/0000_VISUAL_DESIGN_STANDARDS.md
-```
-
-#### **Standards Compliance Checklist (All Pages, Modals, Components)**
-```
-Page-Level Compliance:
-├── [ ] Background Image Policy: Only 2 page types allowed (Landing/Admin)
-├── [ ] Template A Implementation: Card-based layout with proper CSS imports
-├── [ ] Accordion Integration: 3-tier fallback system (Server/Client/Emergency)
-├── [ ] Settings Manager: Proper initialization with error handling
-├── [ ] Logout Button: Standardized positioning and styling
-└── [ ] Responsive Design: Mobile-first approach with proper breakpoints
-
-Modal-Level Compliance:
-├── [ ] Modal Design Standards: Consistent header/body/footer structure
-├── [ ] Dropdown Implementation: Standardized patterns from DROPDOWN_IMPLEMENTATIONS.md
-├── [ ] Form Validation: Real-time validation with user feedback
-├── [ ] Loading States: Proper spinner and progress indicators
-└── [ ] Error Handling: Graceful error states with retry options
-
-Component-Level Compliance:
-├── [ ] CSS Variables: Consistent theming with --primary-color, --text-color
-├── [ ] Accessibility: WCAG compliance with proper ARIA labels
-├── [ ] Performance: Optimized rendering with proper memoization
-├── [ ] State Management: Consistent patterns for loading/error/success states
-└── [ ] Cross-browser: Support for modern browsers with fallbacks
-```
-
-#### Existing Page Improvements Needed
-
-##### **1. Scope of Work Page Enhancement (https://construct-ai.onrender.com/#/scope-of-work)**
-```
-Current Issues:
-├── Basic document generation interface
-├── Limited workflow integration
-├── No AI-powered assistance
-├── Manual template selection
-└── No discipline-specific customizations
-
-Required Improvements:
-├── Integrate SOW Creation Wizard with workflow templates
-├── Add AI-powered scope analysis and suggestions
-├── Implement real-time collaboration features
-├── Enhance template customization options
-├── Add project context awareness
-├── Integrate with platform project data
-└── Implement discipline-specific customizations
-
-SOW Creation Wizard Adaptation:
-├── Map wizard steps to architectural workflow templates
-├── Add discipline-specific scope sections
-├── Integrate CAD model data extraction
-├── Include jurisdictional requirements
-└── Enable multi-user collaborative editing
-
-Discipline-Specific Customizations:
-├── Dynamic modal configurations based on discipline query parameter
-├── Discipline-specific dropdown options and validation rules
-├── Custom action buttons and workflows per discipline
-├── Discipline-tailored template libraries and suggestions
-├── Context-aware form fields and input validation
-└── Discipline-specific approval workflows and routing
-```
-
-##### **2. Technical Drawings Page Fixes (https://construct-ai.onrender.com/#/technical-drawings)**
-```
-Broken Link Issues:
-├── Missing route handlers
-├── Incomplete component implementations
-├── Database connection problems
-├── Missing file upload functionality
-└── No discipline-specific customizations
-
-Required Fixes:
-├── Restore drawing upload capabilities
-├── Implement drawing management system
-├── Add version control for drawings
-├── Integrate with CAD systems
-├── Enable drawing annotation and markup
-└── Implement discipline-specific customizations
-
-Enhanced Features:
-├── AI-powered drawing analysis
-├── Automatic dimension extraction
-├── Standards compliance checking
-├── Drawing set organization
-└── Cloud storage integration
-
-Discipline-Specific Customizations:
-├── Dynamic modal configurations based on discipline query parameter
-├── Discipline-specific drawing templates and standards
-├── Custom upload workflows per engineering domain
-├── Discipline-tailored annotation tools and markup options
-├── Context-aware drawing validation rules
-└── Discipline-specific collaboration and sharing features
-```
-
-#### Agent Skill Enhancements Required
-
-##### **1. Document Generation Agent Skills**
-```
-Enhanced Capabilities Needed:
-├── SOW Creation Wizard Integration
-│   ├── Template mapping algorithms
-│   ├── Dynamic content generation
-│   ├── Multi-discipline scope coordination
-│   └── Real-time validation
-│
-├── Technical Drawing Management
-│   ├── Drawing upload and processing
-│   ├── Metadata extraction and tagging
-│   ├── Version control and history
-│   └── Collaboration features
-│
-├── AI-Powered Content Assistance
-│   ├── Context-aware suggestions
-│   ├── Standards compliance checking
-│   ├── Quality assurance validation
-│   └── Automated proofreading
-│
-└── Cross-Platform Integration
-    ├── Data synchronization
-    ├── User preference learning
-    ├── Performance optimization
-    └── Error recovery
-```
-
-##### **2. UI/UX Enhancement Skills**
-```
-Interface Improvement Capabilities:
-├── User Experience Analysis
-│   ├── Usability testing and feedback
-│   ├── Interface optimization
-│   ├── Accessibility compliance
-│   └── Performance monitoring
-│
-├── Page Architecture Implementation
-│   ├── Page Architecture Guide (docs-construct-ai/pages-design/0000_PAGE_ARCHITECTURE_GUIDE.md)
-│   ├── Complex vs Simple Page Patterns (00435-style vs timesheet-style)
-│   ├── Navigation Positioning (Bottom-fixed for complex pages)
-│   ├── Settings Manager Integration
-│   ├── Accordion System Integration (3-tier fallback)
-│   └── Background Image Policy Compliance
-│
-├── Workflow Integration
-│   ├── Process mapping and optimization
-│   ├── User journey enhancement
-│   ├── Feature prioritization
-│   └── Iterative improvement
-│
-├── Visual Design Enhancement
-│   ├── Modern UI component libraries
-│   ├── Responsive design implementation
-│   ├── Brand consistency
-│   └── Visual hierarchy optimization
-│
-└── Technical Implementation
-    ├── Frontend framework updates
-    ├── API integration improvements
-    ├── Database query optimization
-    └── Caching and performance tuning
-```
+**Technical Details**: See `docs-construct-ai/codebase/architecture/engineering-platform/00825-architectural-integration.md`
+**UI Standards**: Reference `docs-construct-ai/pages-design/0000_PAGE_ARCHITECTURE_GUIDE.md`
+**Agent Skills**: See `docs-construct-ai/codebase/agents/engineering/document-generation-agent.md`
 
 #### Implementation Priorities
 
