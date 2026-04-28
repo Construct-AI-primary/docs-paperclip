@@ -2,6 +2,7 @@
 title: TRAFFIC-009 - Security Systems & Access Control
 description: Security systems design for traffic signal installations including physical security, access control, alarm systems, and cybersecurity
 issue_number: TRAFFIC-009
+sector_ref: 00002-traffic-signals
 priority: medium
 status: open
 assignee: TBD

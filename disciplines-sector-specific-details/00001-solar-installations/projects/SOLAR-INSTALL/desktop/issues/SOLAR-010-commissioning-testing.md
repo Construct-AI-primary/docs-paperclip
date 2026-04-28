@@ -2,6 +2,7 @@
 title: SOLAR-010 - Commissioning & Testing
 description: System commissioning, performance testing, and final acceptance for solar PV installations including electrical testing, performance verification, and documentation
 issue_number: SOLAR-010
+sector_ref: 00001-solar-installations
 priority: high
 status: open
 assignee: TBD

@@ -2,6 +2,7 @@
 title: TRAFFIC-008 - QC Inspection & Testing
 description: Quality control inspection and testing for traffic signal installations including pre-installation verification, in-process inspection, and acceptance testing
 issue_number: TRAFFIC-008
+sector_ref: 00002-traffic-signals
 priority: high
 status: open
 assignee: TBD

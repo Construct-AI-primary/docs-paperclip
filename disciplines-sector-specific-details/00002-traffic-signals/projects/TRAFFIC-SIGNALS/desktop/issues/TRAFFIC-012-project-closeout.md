@@ -2,6 +2,7 @@
 title: TRAFFIC-012 - Project Closeout & Documentation
 description: Project closeout and documentation for traffic signal installations including final documentation, warranty management, and project completion
 issue_number: TRAFFIC-012
+sector_ref: 00002-traffic-signals
 priority: medium
 status: open
 assignee: TBD

@@ -2,6 +2,7 @@
 title: TRAFFIC-004 - ITS Controller Integration & Traffic Management
 description: Comprehensive ITS design for traffic signal installations including controller configuration, detection systems, communication networks, and central management integration
 issue_number: TRAFFIC-004
+sector_ref: 00002-traffic-signals
 priority: high
 status: open
 assignee: TBD

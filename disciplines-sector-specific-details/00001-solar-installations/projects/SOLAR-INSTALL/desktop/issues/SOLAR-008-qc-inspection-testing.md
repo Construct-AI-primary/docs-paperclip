@@ -2,6 +2,7 @@
 title: SOLAR-008 - QC Inspection & Testing
 description: Quality control inspection and testing protocols for solar PV installations including field inspections, performance testing, and compliance verification
 issue_number: SOLAR-008
+sector_ref: 00001-solar-installations
 priority: medium
 status: open
 assignee: TBD

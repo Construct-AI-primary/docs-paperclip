@@ -2,6 +2,7 @@
 title: TRAFFIC-005 - Safety & Compliance Requirements
 description: Comprehensive safety planning for traffic signal installations including work zone traffic control, electrical safety, fall protection, and regulatory compliance
 issue_number: TRAFFIC-005
+sector_ref: 00002-traffic-signals
 priority: high
 status: open
 assignee: TBD

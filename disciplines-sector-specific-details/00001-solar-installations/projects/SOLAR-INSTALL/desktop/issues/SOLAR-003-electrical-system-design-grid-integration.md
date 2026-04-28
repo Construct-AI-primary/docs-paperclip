@@ -2,6 +2,7 @@
 title: SOLAR-003 - Electrical System Design & Grid Integration
 description: Complete electrical system design and grid integration engineering for solar PV installations including PV array configuration, inverter selection, protection systems, and interconnection requirements
 issue_number: SOLAR-003
+sector_ref: 00001-solar-installations
 priority: high
 status: open
 assignee: TBD

@@ -2,6 +2,7 @@
 title: SOLAR-001 - Site Assessment & Feasibility
 description: Comprehensive site assessment and feasibility analysis for solar PV installations including solar resource evaluation, site constraints analysis, grid interconnection feasibility, and preliminary foundation recommendations
 issue_number: SOLAR-001
+sector_ref: 00001-solar-installations
 priority: high
 status: open
 assignee: TBD

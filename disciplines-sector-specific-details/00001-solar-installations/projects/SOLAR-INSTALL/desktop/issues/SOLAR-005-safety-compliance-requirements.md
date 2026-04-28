@@ -2,6 +2,7 @@
 title: SOLAR-005 - Safety & Compliance Requirements
 description: Comprehensive safety planning and compliance requirements for solar PV installations including hazard identification, risk assessment, OSHA/NFPA compliance, and emergency response planning
 issue_number: SOLAR-005
+sector_ref: 00001-solar-installations
 priority: high
 status: open
 assignee: TBD

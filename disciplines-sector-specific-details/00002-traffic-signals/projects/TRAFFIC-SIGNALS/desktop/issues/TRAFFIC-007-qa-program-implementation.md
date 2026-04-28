@@ -2,6 +2,7 @@
 title: TRAFFIC-007 - QA Program Implementation
 description: Quality assurance program implementation for traffic signal installations including QA procedures, inspection protocols, and quality management
 issue_number: TRAFFIC-007
+sector_ref: 00002-traffic-signals
 priority: high
 status: open
 assignee: TBD

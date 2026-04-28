@@ -2,6 +2,7 @@
 title: SOLAR-009 - Security Systems & Access Control
 description: Implementation of physical security, cybersecurity, and access control systems for solar PV installations including perimeter security, monitoring, and theft prevention
 issue_number: SOLAR-009
+sector_ref: 00001-solar-installations
 priority: medium
 status: open
 assignee: TBD

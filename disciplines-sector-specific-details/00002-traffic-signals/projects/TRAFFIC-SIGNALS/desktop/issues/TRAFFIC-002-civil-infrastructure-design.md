@@ -2,6 +2,7 @@
 title: TRAFFIC-002 - Civil Infrastructure Design
 description: Comprehensive civil infrastructure design for traffic signal installations including pole foundations, conduit systems, and ADA-compliant pedestrian facilities
 issue_number: TRAFFIC-002
+sector_ref: 00002-traffic-signals
 priority: high
 status: open
 assignee: TBD

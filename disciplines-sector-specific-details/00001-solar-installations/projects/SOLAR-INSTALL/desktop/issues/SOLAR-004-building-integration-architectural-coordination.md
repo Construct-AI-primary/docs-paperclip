@@ -2,6 +2,7 @@
 title: SOLAR-004 - Building Integration & Architectural Coordination
 description: Architectural coordination and building integration design for solar PV systems including BIPV systems, aesthetic considerations, building code compliance, and structural integration
 issue_number: SOLAR-004
+sector_ref: 00001-solar-installations
 priority: medium
 status: open
 assignee: TBD

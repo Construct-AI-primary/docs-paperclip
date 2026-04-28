@@ -2,6 +2,7 @@
 title: SOLAR-012 - Project Closeout & Documentation
 description: Final project closeout, documentation compilation, and handover for solar PV installations including as-built documentation, training, and warranty management
 issue_number: SOLAR-012
+sector_ref: 00001-solar-installations
 priority: medium
 status: open
 assignee: TBD

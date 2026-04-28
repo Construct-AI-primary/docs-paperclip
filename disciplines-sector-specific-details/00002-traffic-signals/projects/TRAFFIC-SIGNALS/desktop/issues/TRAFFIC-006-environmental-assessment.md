@@ -2,6 +2,7 @@
 title: TRAFFIC-006 - Environmental Impact & Permitting
 description: Environmental impact assessment and permitting for traffic signal installations including NEPA compliance, stormwater management, and regulatory approvals
 issue_number: TRAFFIC-006
+sector_ref: 00002-traffic-signals
 priority: medium
 status: open
 assignee: TBD

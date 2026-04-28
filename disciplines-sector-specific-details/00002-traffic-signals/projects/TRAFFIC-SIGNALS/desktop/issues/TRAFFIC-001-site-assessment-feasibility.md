@@ -2,6 +2,7 @@
 title: TRAFFIC-001 - Site Assessment & Feasibility
 description: Comprehensive site assessment and feasibility analysis for traffic signal installations including traffic volume analysis, intersection capacity evaluation, and signal warrant analysis
 issue_number: TRAFFIC-001
+sector_ref: 00002-traffic-signals
 priority: high
 status: open
 assignee: TBD

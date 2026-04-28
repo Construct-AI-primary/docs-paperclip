@@ -2,6 +2,7 @@
 title: TRAFFIC-003 - Electrical System Design & Power Integration
 description: Comprehensive electrical system design for traffic signal installations including power distribution, signal cabinet wiring, protection systems, and grounding
 issue_number: TRAFFIC-003
+sector_ref: 00002-traffic-signals
 priority: high
 status: open
 assignee: TBD

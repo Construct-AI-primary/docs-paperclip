@@ -2,6 +2,7 @@
 title: SOLAR-007 - QA Program Implementation
 description: Implementation of quality assurance program for solar PV installations including QA planning, supplier qualification, inspection protocols, and quality management systems
 issue_number: SOLAR-007
+sector_ref: 00001-solar-installations
 priority: medium
 status: open
 assignee: TBD

@@ -2,6 +2,7 @@
 title: SOLAR-011 - Operations & Maintenance Planning
 description: Development of comprehensive operations and maintenance plans for solar PV installations including preventive maintenance schedules, monitoring systems, and performance optimization
 issue_number: SOLAR-011
+sector_ref: 00001-solar-installations
 priority: medium
 status: open
 assignee: TBD

@@ -2,6 +2,7 @@
 title: SOLAR-006 - Environmental Impact & Permitting
 description: Environmental impact assessment, permitting coordination, and regulatory compliance for solar PV installations including NEPA/SEPA reviews, wildlife protection, and mitigation planning
 issue_number: SOLAR-006
+sector_ref: 00001-solar-installations
 priority: high
 status: open
 assignee: TBD

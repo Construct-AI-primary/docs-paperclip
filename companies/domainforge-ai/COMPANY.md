@@ -37,9 +37,14 @@ Domain knowledge and technical documentation company specializing in code struct
 
 - tasks/weekly-review/TASK.md
 
+## Knowledge
+
+- knowledge/KNOWLEDGE-REGISTRY.md
+
 ## Agents
 
 - agents/orion-domainforge-ceo/AGENTS.md
+- agents/knowledge-curator-domainforge/AGENTS.md
 - agents/civil-domainforge-civil-engineering/AGENTS.md
 - agents/construction-domainforge-construction-engineering/AGENTS.md
 - agents/structural-domainforge-structural-engineering/AGENTS.md
@@ -94,6 +99,7 @@ Domain knowledge and technical documentation company specializing in code struct
 
 ## Skills
 
+- skills/knowledge-curator-domainforge/SKILL.md
 - skills/civil-domainforge-civil-engineering/SKILL.md
 - skills/construction-domainforge-construction-engineering/SKILL.md
 - skills/structural-domainforge-structural-engineering/SKILL.md

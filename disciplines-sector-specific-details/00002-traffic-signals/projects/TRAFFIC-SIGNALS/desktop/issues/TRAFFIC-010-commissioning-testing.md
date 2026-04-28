@@ -2,6 +2,7 @@
 title: TRAFFIC-010 - Commissioning & Testing
 description: Comprehensive commissioning and testing for traffic signal installations including pre-commissioning, system testing, and performance verification
 issue_number: TRAFFIC-010
+sector_ref: 00002-traffic-signals
 priority: high
 status: open
 assignee: TBD

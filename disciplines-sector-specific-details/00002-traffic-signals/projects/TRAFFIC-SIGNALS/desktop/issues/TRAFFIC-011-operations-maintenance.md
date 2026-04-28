@@ -2,6 +2,7 @@
 title: TRAFFIC-011 - Operations & Maintenance Planning
 description: Operations and maintenance planning for traffic signal installations including O&M manuals, preventive maintenance schedules, and spare parts planning
 issue_number: TRAFFIC-011
+sector_ref: 00002-traffic-signals
 priority: medium
 status: open
 assignee: TBD

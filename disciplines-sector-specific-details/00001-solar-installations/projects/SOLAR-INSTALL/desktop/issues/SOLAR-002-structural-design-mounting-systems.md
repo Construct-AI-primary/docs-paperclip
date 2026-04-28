@@ -2,6 +2,7 @@
 title: SOLAR-002 - Structural Design & Mounting Systems
 description: Complete structural design and mounting system engineering for solar PV arrays including foundation design, mounting structures, wind and seismic analysis, and material specifications
 issue_number: SOLAR-002
+sector_ref: 00001-solar-installations
 priority: high
 status: open
 assignee: TBD
