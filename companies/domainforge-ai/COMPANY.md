@@ -91,6 +91,7 @@ Domain knowledge and technical documentation company specializing in code struct
 - agents/procurement-analytics-domainforge-procurement-analytics/AGENTS.md
 - agents/logistics-domainforge-supply-chain/AGENTS.md
 - agents/contract-administration-domainforge-contract-administration/AGENTS.md
+- agents/transportation-domainforge-transportation-engineering/AGENTS.md
 
 ## Skills
 

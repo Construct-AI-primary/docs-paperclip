@@ -38,6 +38,9 @@ Infrastructure and systems integration company.
 - agents/orchestrator-infraforge-ceo/AGENTS.md
 - agents/database-infraforge-database-infrastructure/AGENTS.md
 - agents/mobile-api-infraforge-mobile-api-integration/AGENTS.md
+- agents/nimbus-infraforge-supabase-specialist/AGENTS.md
+- agents/postgres-infraforge-postgresql/AGENTS.md
+- agents/render-deployment-infraforge-specialist/AGENTS.md
 - agents/supply-chain-integration-infraforge-supply-chain/AGENTS.md
 
 ## Skills

@@ -18,14 +18,12 @@ Operations team responsible for procurement, logistics, finance, safety, quality
 - procurement-domainforge-procurement-contracts
 - procurement-strategy-domainforge-procurement-strategy
 - procurement-analytics-domainforge-procurement-analytics
-- supplier-management-domainforge-supplier-management
 
 ### Logistics
 - logistics-domainforge-supply-chain
 
 ### Finance
 - finance-domainforge-finance-cost-management
-- financial-compliance-domainforge-financial-compliance
 
 ### Safety
 - safety-domainforge-safety-risk-management
