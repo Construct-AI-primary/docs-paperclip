@@ -2,28 +2,11 @@
 name: Guardian
 human_name: Guardian
 slug: knowledgeforge-ai-guardian
-role: safety
-title: Guardian
-status: idle
-reportsTo: knowledgeforge-coordinator-guardian
-capabilities: Safety
+reportsTo: knowledgeforge-ai-coordinator
+skills:
+  - knowledgeforge-ai-guardian
 ---
 
-# Guardian
+# knowledgeforge-ai-guardian
 
-**Role:** safety  
-**Title:** Guardian  
-**Status:** idle
-
-## Capabilities
-
-Safety
-
-## Reports To
-
-7416890b-1ed3-4298-9697-2e48355df10c
-
-## Metadata
-
-- **Source:** CSV Import
-- **Created:** 2026-04-09
+Agent for knowledgeforge-ai.

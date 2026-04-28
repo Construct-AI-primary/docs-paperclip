@@ -2,28 +2,11 @@
 name: Physician
 human_name: Physician
 slug: knowledgeforge-ai-physician
-role: health
-title: Physician
-status: idle
-reportsTo: knowledgeforge-coordinator-guardian
-capabilities: Health
+reportsTo: knowledgeforge-ai-coordinator
+skills:
+  - knowledgeforge-ai-physician
 ---
 
-# Physician
+# knowledgeforge-ai-physician
 
-**Role:** health  
-**Title:** Physician  
-**Status:** idle
-
-## Capabilities
-
-Health
-
-## Reports To
-
-7416890b-1ed3-4298-9697-2e48355df10c
-
-## Metadata
-
-- **Source:** CSV Import
-- **Created:** 2026-04-09
+Agent for knowledgeforge-ai.

@@ -2,28 +2,11 @@
 name: Engineer
 human_name: Engineer
 slug: knowledgeforge-ai-engineer
-role: mechanical-engineer
-title: Engineer
-status: idle
-reportsTo: knowledgeforge-coordinator-guardian
-capabilities: Mechanical Engineer
+reportsTo: knowledgeforge-ai-coordinator
+skills:
+  - knowledgeforge-ai-engineer
 ---
 
-# Engineer
+# knowledgeforge-ai-engineer
 
-**Role:** mechanical-engineer  
-**Title:** Engineer  
-**Status:** idle
-
-## Capabilities
-
-Mechanical Engineer
-
-## Reports To
-
-7416890b-1ed3-4298-9697-2e48355df10c
-
-## Metadata
-
-- **Source:** CSV Import
-- **Created:** 2026-04-09
+Agent for knowledgeforge-ai.

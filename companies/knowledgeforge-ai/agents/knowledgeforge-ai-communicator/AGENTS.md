@@ -2,28 +2,11 @@
 name: Communicator
 human_name: Communicator
 slug: knowledgeforge-ai-communicator
-role: public-relations
-title: Communicator
-status: idle
-reportsTo: knowledgeforge-coordinator-guardian
-capabilities: Public Relations
+reportsTo: knowledgeforge-ai-coordinator
+skills:
+  - knowledgeforge-ai-communicator
 ---
 
-# Communicator
+# knowledgeforge-ai-communicator
 
-**Role:** public-relations  
-**Title:** Communicator  
-**Status:** idle
-
-## Capabilities
-
-Public Relations
-
-## Reports To
-
-7416890b-1ed3-4298-9697-2e48355df10c
-
-## Metadata
-
-- **Source:** CSV Import
-- **Created:** 2026-04-09
+Agent for knowledgeforge-ai.

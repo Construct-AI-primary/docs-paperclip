@@ -2,28 +2,11 @@
 name: Environmentalist
 human_name: Environmentalist
 slug: knowledgeforge-ai-environmentalist
-role: environmental
-title: Environmentalist
-status: idle
-reportsTo: knowledgeforge-coordinator-guardian
-capabilities: Environmental
+reportsTo: knowledgeforge-ai-coordinator
+skills:
+  - knowledgeforge-ai-environmentalist
 ---
 
-# Environmentalist
+# knowledgeforge-ai-environmentalist
 
-**Role:** environmental  
-**Title:** Environmentalist  
-**Status:** idle
-
-## Capabilities
-
-Environmental
-
-## Reports To
-
-7416890b-1ed3-4298-9697-2e48355df10c
-
-## Metadata
-
-- **Source:** CSV Import
-- **Created:** 2026-04-09
+Agent for knowledgeforge-ai.

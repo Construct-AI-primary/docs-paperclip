@@ -2,28 +2,11 @@
 name: Surveyor
 human_name: Surveyor
 slug: knowledgeforge-ai-surveyor
-role: quantity-surveying
-title: Surveyor
-status: idle
-reportsTo: knowledgeforge-coordinator-guardian
-capabilities: Quantity Surveying
+reportsTo: knowledgeforge-ai-coordinator
+skills:
+  - knowledgeforge-ai-surveyor
 ---
 
-# Surveyor
+# knowledgeforge-ai-surveyor
 
-**Role:** quantity-surveying  
-**Title:** Surveyor  
-**Status:** idle
-
-## Capabilities
-
-Quantity Surveying
-
-## Reports To
-
-7416890b-1ed3-4298-9697-2e48355df10c
-
-## Metadata
-
-- **Source:** CSV Import
-- **Created:** 2026-04-09
+Agent for knowledgeforge-ai.

@@ -2,28 +2,11 @@
 name: Builder
 human_name: Builder
 slug: knowledgeforge-ai-builder
-role: civil-engineer
-title: Builder
-status: idle
-reportsTo: knowledgeforge-coordinator-guardian
-capabilities: Civil Engineer
+reportsTo: knowledgeforge-ai-coordinator
+skills:
+  - knowledgeforge-ai-builder
 ---
 
-# Builder
+# knowledgeforge-ai-builder
 
-**Role:** civil-engineer  
-**Title:** Builder  
-**Status:** idle
-
-## Capabilities
-
-Civil Engineer
-
-## Reports To
-
-7416890b-1ed3-4298-9697-2e48355df10c
-
-## Metadata
-
-- **Source:** CSV Import
-- **Created:** 2026-04-09
+Agent for knowledgeforge-ai.

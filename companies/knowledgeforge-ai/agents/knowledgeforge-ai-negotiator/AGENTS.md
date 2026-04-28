@@ -2,28 +2,11 @@
 name: Negotiator
 human_name: Negotiator
 slug: knowledgeforge-ai-negotiator
-role: contracts
-title: Negotiator
-status: idle
-reportsTo: knowledgeforge-coordinator-guardian
-capabilities: Contracts
+reportsTo: knowledgeforge-ai-coordinator
+skills:
+  - knowledgeforge-ai-negotiator
 ---
 
-# Negotiator
+# knowledgeforge-ai-negotiator
 
-**Role:** contracts  
-**Title:** Negotiator  
-**Status:** idle
-
-## Capabilities
-
-Contracts
-
-## Reports To
-
-7416890b-1ed3-4298-9697-2e48355df10c
-
-## Metadata
-
-- **Source:** CSV Import
-- **Created:** 2026-04-09
+Agent for knowledgeforge-ai.

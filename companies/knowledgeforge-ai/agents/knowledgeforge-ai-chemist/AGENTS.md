@@ -2,28 +2,11 @@
 name: Chemist
 human_name: Chemist
 slug: knowledgeforge-ai-chemist
-role: chemical-engineer
-title: Chemist
-status: idle
-reportsTo: knowledgeforge-coordinator-guardian
-capabilities: Chemical Engineer
+reportsTo: knowledgeforge-ai-coordinator
+skills:
+  - knowledgeforge-ai-chemist
 ---
 
-# Chemist
+# knowledgeforge-ai-chemist
 
-**Role:** chemical-engineer  
-**Title:** Chemist  
-**Status:** idle
-
-## Capabilities
-
-Chemical Engineer
-
-## Reports To
-
-7416890b-1ed3-4298-9697-2e48355df10c
-
-## Metadata
-
-- **Source:** CSV Import
-- **Created:** 2026-04-09
+Agent for knowledgeforge-ai.

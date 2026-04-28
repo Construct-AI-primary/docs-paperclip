@@ -2,28 +2,11 @@
 name: Archivist
 human_name: Archivist
 slug: knowledgeforge-ai-archivist
-role: document-control
-title: Archivist
-status: idle
-reportsTo: knowledgeforge-coordinator-guardian
-capabilities: Document Control
+reportsTo: knowledgeforge-ai-coordinator
+skills:
+  - knowledgeforge-ai-archivist
 ---
 
-# Archivist
+# knowledgeforge-ai-archivist
 
-**Role:** document-control  
-**Title:** Archivist  
-**Status:** idle
-
-## Capabilities
-
-Document Control
-
-## Reports To
-
-7416890b-1ed3-4298-9697-2e48355df10c
-
-## Metadata
-
-- **Source:** CSV Import
-- **Created:** 2026-04-09
+Agent for knowledgeforge-ai.

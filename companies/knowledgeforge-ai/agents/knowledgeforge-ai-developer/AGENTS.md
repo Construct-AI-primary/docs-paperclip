@@ -2,28 +2,11 @@
 name: Developer
 human_name: Developer
 slug: knowledgeforge-ai-developer
-role: developer
-title: Developer
-status: idle
-reportsTo: knowledgeforge-coordinator-guardian
-capabilities: Developer
+reportsTo: knowledgeforge-ai-coordinator
+skills:
+  - knowledgeforge-ai-developer
 ---
 
-# Developer
+# knowledgeforge-ai-developer
 
-**Role:** developer  
-**Title:** Developer  
-**Status:** idle
-
-## Capabilities
-
-Developer
-
-## Reports To
-
-7416890b-1ed3-4298-9697-2e48355df10c
-
-## Metadata
-
-- **Source:** CSV Import
-- **Created:** 2026-04-09
+Agent for knowledgeforge-ai.

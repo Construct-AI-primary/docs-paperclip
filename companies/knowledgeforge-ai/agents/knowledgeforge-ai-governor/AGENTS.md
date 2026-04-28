@@ -2,28 +2,11 @@
 name: Governor
 human_name: Governor
 slug: knowledgeforge-ai-governor
-role: governance
-title: Governor
-status: idle
-reportsTo: knowledgeforge-coordinator-guardian
-capabilities: Governance
+reportsTo: knowledgeforge-ai-coordinator
+skills:
+  - knowledgeforge-ai-governor
 ---
 
-# Governor
+# knowledgeforge-ai-governor
 
-**Role:** governance  
-**Title:** Governor  
-**Status:** idle
-
-## Capabilities
-
-Governance
-
-## Reports To
-
-7416890b-1ed3-4298-9697-2e48355df10c
-
-## Metadata
-
-- **Source:** CSV Import
-- **Created:** 2026-04-09
+Agent for knowledgeforge-ai.

@@ -2,28 +2,11 @@
 name: Ethicist
 human_name: Ethicist
 slug: knowledgeforge-ai-ethicist
-role: ethics
-title: Ethicist
-status: idle
-reportsTo: knowledgeforge-coordinator-guardian
-capabilities: Ethics
+reportsTo: knowledgeforge-ai-coordinator
+skills:
+  - knowledgeforge-ai-ethicist
 ---
 
-# Ethicist
+# knowledgeforge-ai-ethicist
 
-**Role:** ethics  
-**Title:** Ethicist  
-**Status:** idle
-
-## Capabilities
-
-Ethics
-
-## Reports To
-
-7416890b-1ed3-4298-9697-2e48355df10c
-
-## Metadata
-
-- **Source:** CSV Import
-- **Created:** 2026-04-09
+Agent for knowledgeforge-ai.

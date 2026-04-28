@@ -2,28 +2,11 @@
 name: Generalist
 human_name: Generalist
 slug: knowledgeforge-ai-generalist
-role: sundry
-title: Generalist
-status: idle
-reportsTo: knowledgeforge-coordinator-guardian
-capabilities: Sundry
+reportsTo: knowledgeforge-ai-coordinator
+skills:
+  - knowledgeforge-ai-generalist
 ---
 
-# Generalist
+# knowledgeforge-ai-generalist
 
-**Role:** sundry  
-**Title:** Generalist  
-**Status:** idle
-
-## Capabilities
-
-Sundry
-
-## Reports To
-
-7416890b-1ed3-4298-9697-2e48355df10c
-
-## Metadata
-
-- **Source:** CSV Import
-- **Created:** 2026-04-09
+Agent for knowledgeforge-ai.

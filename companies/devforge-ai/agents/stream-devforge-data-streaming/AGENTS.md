@@ -1,0 +1,12 @@
+---
+name: Stream
+human_name: Stream
+slug: stream-devforge-data-streaming
+reportsTo: nexus-devforge-ceo
+skills:
+  - stream-devforge-data-streaming
+---
+
+# stream-devforge-data-streaming
+
+Agent for devforge-ai.

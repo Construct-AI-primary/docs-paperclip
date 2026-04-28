@@ -2,28 +2,11 @@
 name: Landscaper
 human_name: Landscaper
 slug: knowledgeforge-ai-landscaper
-role: landscaping
-title: Landscaper
-status: idle
-reportsTo: knowledgeforge-coordinator-guardian
-capabilities: Landscaping
+reportsTo: knowledgeforge-ai-coordinator
+skills:
+  - knowledgeforge-ai-landscaper
 ---
 
-# Landscaper
+# knowledgeforge-ai-landscaper
 
-**Role:** landscaping  
-**Title:** Landscaper  
-**Status:** idle
-
-## Capabilities
-
-Landscaping
-
-## Reports To
-
-7416890b-1ed3-4298-9697-2e48355df10c
-
-## Metadata
-
-- **Source:** CSV Import
-- **Created:** 2026-04-09
+Agent for knowledgeforge-ai.

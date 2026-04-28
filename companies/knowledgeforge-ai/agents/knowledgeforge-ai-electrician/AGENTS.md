@@ -2,28 +2,11 @@
 name: Electrician
 human_name: Electrician
 slug: knowledgeforge-ai-electrician
-role: electrical-engineer
-title: Electrician
-status: idle
-reportsTo: knowledgeforge-coordinator-guardian
-capabilities: Electrical Engineer
+reportsTo: knowledgeforge-ai-coordinator
+skills:
+  - knowledgeforge-ai-electrician
 ---
 
-# Electrician
+# knowledgeforge-ai-electrician
 
-**Role:** electrical-engineer  
-**Title:** Electrician  
-**Status:** idle
-
-## Capabilities
-
-Electrical Engineer
-
-## Reports To
-
-7416890b-1ed3-4298-9697-2e48355df10c
-
-## Metadata
-
-- **Source:** CSV Import
-- **Created:** 2026-04-09
+Agent for knowledgeforge-ai.

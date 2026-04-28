@@ -2,28 +2,11 @@
 name: Inetrmediary
 human_name: Inetrmediary
 slug: knowledgeforge-ai-inetrmediary
-role: cross-discipline-guardian
-title: Inetrmediary
-status: idle
-reportsTo: knowledgeforge-coordinator-guardian
-capabilities: Cross Discipline Guardian
+reportsTo: knowledgeforge-ai-coordinator
+skills:
+  - knowledgeforge-ai-inetrmediary
 ---
 
-# Inetrmediary
+# knowledgeforge-ai-inetrmediary
 
-**Role:** cross-discipline-guardian  
-**Title:** Inetrmediary  
-**Status:** idle
-
-## Capabilities
-
-Cross Discipline Guardian
-
-## Reports To
-
-7416890b-1ed3-4298-9697-2e48355df10c
-
-## Metadata
-
-- **Source:** CSV Import
-- **Created:** 2026-04-09
+Agent for knowledgeforge-ai.

@@ -2,28 +2,11 @@
 name: Salesperson
 human_name: Salesperson
 slug: knowledgeforge-ai-salesperson
-role: sales
-title: Salesperson
-status: idle
-reportsTo: knowledgeforge-coordinator-guardian
-capabilities: Sales
+reportsTo: knowledgeforge-ai-coordinator
+skills:
+  - knowledgeforge-ai-salesperson
 ---
 
-# Salesperson
+# knowledgeforge-ai-salesperson
 
-**Role:** sales  
-**Title:** Salesperson  
-**Status:** idle
-
-## Capabilities
-
-Sales
-
-## Reports To
-
-7416890b-1ed3-4298-9697-2e48355df10c
-
-## Metadata
-
-- **Source:** CSV Import
-- **Created:** 2026-04-09
+Agent for knowledgeforge-ai.

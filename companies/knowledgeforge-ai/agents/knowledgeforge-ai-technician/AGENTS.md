@@ -2,28 +2,11 @@
 name: Technician
 human_name: Technician
 slug: knowledgeforge-ai-technician
-role: information-technology
-title: Technician
-status: idle
-reportsTo: knowledgeforge-coordinator-guardian
-capabilities: Information Technology
+reportsTo: knowledgeforge-ai-coordinator
+skills:
+  - knowledgeforge-ai-technician
 ---
 
-# Technician
+# knowledgeforge-ai-technician
 
-**Role:** information-technology  
-**Title:** Technician  
-**Status:** idle
-
-## Capabilities
-
-Information Technology
-
-## Reports To
-
-7416890b-1ed3-4298-9697-2e48355df10c
-
-## Metadata
-
-- **Source:** CSV Import
-- **Created:** 2026-04-09
+Agent for knowledgeforge-ai.

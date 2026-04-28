@@ -2,28 +2,11 @@
 name: Sentinel
 human_name: Sentinel
 slug: knowledgeforge-ai-sentinel
-role: security
-title: Sentinel
-status: idle
-reportsTo: knowledgeforge-coordinator-guardian
-capabilities: Security
+reportsTo: knowledgeforge-ai-coordinator
+skills:
+  - knowledgeforge-ai-sentinel
 ---
 
-# Sentinel
+# knowledgeforge-ai-sentinel
 
-**Role:** security  
-**Title:** Sentinel  
-**Status:** idle
-
-## Capabilities
-
-Security
-
-## Reports To
-
-7416890b-1ed3-4298-9697-2e48355df10c
-
-## Metadata
-
-- **Source:** CSV Import
-- **Created:** 2026-04-09
+Agent for knowledgeforge-ai.

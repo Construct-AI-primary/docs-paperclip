@@ -1,0 +1,12 @@
+---
+name: Dealmaker
+human_name: Dealmaker
+slug: dealmaker-devforge-sales-negotiation
+reportsTo: nexus-devforge-ceo
+skills:
+  - dealmaker-devforge-sales-negotiation
+---
+
+# dealmaker-devforge-sales-negotiation
+
+Agent for devforge-ai.

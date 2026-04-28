@@ -2,28 +2,11 @@
 name: Directors
 human_name: Directors
 slug: knowledgeforge-ai-directors
-role: directors
-title: Directors
-status: idle
-reportsTo: knowledgeforge-coordinator-guardian
-capabilities: Directors
+reportsTo: knowledgeforge-ai-coordinator
+skills:
+  - knowledgeforge-ai-directors
 ---
 
-# Directors
+# knowledgeforge-ai-directors
 
-**Role:** directors  
-**Title:** Directors  
-**Status:** idle
-
-## Capabilities
-
-Directors
-
-## Reports To
-
-7416890b-1ed3-4298-9697-2e48355df10c
-
-## Metadata
-
-- **Source:** CSV Import
-- **Created:** 2026-04-09
+Agent for knowledgeforge-ai.

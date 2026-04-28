@@ -2,28 +2,11 @@
 name: Geologist
 human_name: Geologist
 slug: knowledgeforge-ai-geologist
-role: geotechnical-engineer
-title: Geologist
-status: idle
-reportsTo: knowledgeforge-coordinator-guardian
-capabilities: Geotechnical Engineer
+reportsTo: knowledgeforge-ai-coordinator
+skills:
+  - knowledgeforge-ai-geologist
 ---
 
-# Geologist
+# knowledgeforge-ai-geologist
 
-**Role:** geotechnical-engineer  
-**Title:** Geologist  
-**Status:** idle
-
-## Capabilities
-
-Geotechnical Engineer
-
-## Reports To
-
-7416890b-1ed3-4298-9697-2e48355df10c
-
-## Metadata
-
-- **Source:** CSV Import
-- **Created:** 2026-04-09
+Agent for knowledgeforge-ai.

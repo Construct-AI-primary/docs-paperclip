@@ -2,28 +2,11 @@
 name: Controller
 human_name: Controller
 slug: knowledgeforge-ai-controller
-role: other-parties
-title: Co-ordinator
-status: idle
-reportsTo: knowledgeforge-coordinator-guardian
-capabilities: Other Parties
+reportsTo: knowledgeforge-ai-coordinator
+skills:
+  - knowledgeforge-ai-controller
 ---
 
-# Co-ordinator
+# knowledgeforge-ai-controller
 
-**Role:** other-parties  
-**Title:** Co-ordinator  
-**Status:** idle
-
-## Capabilities
-
-Other Parties
-
-## Reports To
-
-7416890b-1ed3-4298-9697-2e48355df10c
-
-## Metadata
-
-- **Source:** CSV Import
-- **Created:** 2026-04-09
+Agent for knowledgeforge-ai.

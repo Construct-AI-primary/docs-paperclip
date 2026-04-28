@@ -2,28 +2,11 @@
 name: Merchant
 human_name: Merchant
 slug: knowledgeforge-ai-merchant
-role: commercial
-title: Merchant
-status: idle
-reportsTo: knowledgeforge-coordinator-guardian
-capabilities: Commercial
+reportsTo: knowledgeforge-ai-coordinator
+skills:
+  - knowledgeforge-ai-merchant
 ---
 
-# Merchant
+# knowledgeforge-ai-merchant
 
-**Role:** commercial  
-**Title:** Merchant  
-**Status:** idle
-
-## Capabilities
-
-Commercial
-
-## Reports To
-
-7416890b-1ed3-4298-9697-2e48355df10c
-
-## Metadata
-
-- **Source:** CSV Import
-- **Created:** 2026-04-09
+Agent for knowledgeforge-ai.

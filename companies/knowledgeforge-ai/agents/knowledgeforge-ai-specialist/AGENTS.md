@@ -2,28 +2,11 @@
 name: Specialist
 human_name: Specialist
 slug: knowledgeforge-ai-specialist
-role: local-content
-title: Specialist
-status: idle
-reportsTo: knowledgeforge-coordinator-guardian
-capabilities: Local Content
+reportsTo: knowledgeforge-ai-coordinator
+skills:
+  - knowledgeforge-ai-specialist
 ---
 
-# Specialist
+# knowledgeforge-ai-specialist
 
-**Role:** local-content  
-**Title:** Specialist  
-**Status:** idle
-
-## Capabilities
-
-Local Content
-
-## Reports To
-
-7416890b-1ed3-4298-9697-2e48355df10c
-
-## Metadata
-
-- **Source:** CSV Import
-- **Created:** 2026-04-09
+Agent for knowledgeforge-ai.

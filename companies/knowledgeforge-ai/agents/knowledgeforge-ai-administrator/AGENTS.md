@@ -2,28 +2,11 @@
 name: Administrator
 human_name: Administrator
 slug: knowledgeforge-ai-administrator
-role: contracts-post-award
-title: Administrator - pre-award
-status: idle
-reportsTo: knowledgeforge-coordinator-guardian
-capabilities: Contracts Post Award
+reportsTo: knowledgeforge-ai-coordinator
+skills:
+  - knowledgeforge-ai-administrator
 ---
 
-# Administrator - pre-award
+# knowledgeforge-ai-administrator
 
-**Role:** contracts-post-award  
-**Title:** Administrator - pre-award  
-**Status:** idle
-
-## Capabilities
-
-Contracts Post Award
-
-## Reports To
-
-7416890b-1ed3-4298-9697-2e48355df10c
-
-## Metadata
-
-- **Source:** CSV Import
-- **Created:** 2026-04-09
+Agent for knowledgeforge-ai.
