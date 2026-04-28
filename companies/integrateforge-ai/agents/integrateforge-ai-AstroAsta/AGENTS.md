@@ -1,6 +1,5 @@
 ---
 name: Astroasta
-human_name: Astroasta
 slug: integrateforge-ai-astroasta
 reportsTo: integrateforge-ai-ziggyorchestrator
 skills:

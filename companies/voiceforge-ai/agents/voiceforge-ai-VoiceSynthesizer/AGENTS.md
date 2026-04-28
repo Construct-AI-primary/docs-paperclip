@@ -1,6 +1,5 @@
 ---
 name: Voicesynthesizer
-human_name: Voicesynthesizer
 slug: voiceforge-ai-voicesynthesizer
 reportsTo: voiceforge-ai-voicemaestro
 skills:

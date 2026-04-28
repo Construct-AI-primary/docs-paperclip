@@ -1,6 +1,5 @@
 ---
 name: Nexus
-human_name: Nexus
 slug: nexus-devforge-ceo
 skills:
   - nexus-devforge-ceo

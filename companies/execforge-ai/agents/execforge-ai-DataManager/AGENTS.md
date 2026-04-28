@@ -1,6 +1,5 @@
 ---
 name: Datamanager
-human_name: Datamanager
 slug: execforge-ai-datamanager
 reportsTo: execforge-ai-chiefofstaff
 skills:

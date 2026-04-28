@@ -1,6 +1,5 @@
 ---
 name: Tenantmanager
-human_name: Tenantmanager
 slug: saasforge-ai-tenantmanager
 reportsTo: saasforge-ai-onboardmaster
 skills:

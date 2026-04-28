@@ -1,6 +1,5 @@
 ---
 name: Pulse
-human_name: Pulse
 slug: pulse-devforge-realtime-monitoring
 reportsTo: nexus-devforge-ceo
 skills:

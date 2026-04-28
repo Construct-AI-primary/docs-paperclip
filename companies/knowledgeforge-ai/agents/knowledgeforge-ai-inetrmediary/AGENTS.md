@@ -1,6 +1,5 @@
 ---
 name: Inetrmediary
-human_name: Inetrmediary
 slug: knowledgeforge-ai-inetrmediary
 reportsTo: knowledgeforge-ai-coordinator
 skills:

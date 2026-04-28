@@ -1,6 +1,5 @@
 ---
 name: Dev
-human_name: Dev
 slug: dev-loopy-technical-creative
 reportsTo: vision-loopy-ceo
 skills:

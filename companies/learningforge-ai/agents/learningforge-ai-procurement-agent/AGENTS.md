@@ -1,6 +1,5 @@
 ---
 name: Procurement Agent
-human_name: Procurement Agent
 slug: learningforge-ai-procurement-agent
 reportsTo: ceo
 skills:

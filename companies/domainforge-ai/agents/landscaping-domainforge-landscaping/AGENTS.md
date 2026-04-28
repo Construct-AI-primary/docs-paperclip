@@ -1,6 +1,5 @@
 ---
 name: Landscaping
-human_name: Landscaping
 slug: landscaping-domainforge-landscaping
 reportsTo: orion-domainforge-ceo
 skills:

@@ -1,6 +1,5 @@
 ---
 name: Platformintegrator
-human_name: Platformintegrator
 slug: voiceforge-ai-platformintegrator
 reportsTo: voiceforge-ai-voicemaestro
 skills:

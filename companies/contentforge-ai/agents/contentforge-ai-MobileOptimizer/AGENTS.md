@@ -1,6 +1,5 @@
 ---
 name: Mobileoptimizer
-human_name: Mobileoptimizer
 slug: contentforge-ai-mobileoptimizer
 reportsTo: contentforge-ai-contentmaestro
 skills:

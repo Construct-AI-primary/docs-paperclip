@@ -1,6 +1,5 @@
 ---
 name: Reporting Analyst
-human_name: Reporting Analyst
 slug: paperclipforge-ai-reportinganalyst
 reportsTo: paperclipforge-ai-projectmaestro
 skills:

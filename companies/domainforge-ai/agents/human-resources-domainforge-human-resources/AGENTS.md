@@ -1,6 +1,5 @@
 ---
 name: HR Specialist
-human_name: HR Specialist
 slug: human-resources-domainforge-human-resources
 reportsTo: orion-domainforge-ceo
 skills:

@@ -1,6 +1,5 @@
 ---
 name: Quality Controller
-human_name: Quality Controller
 slug: paperclipforge-ai-qualitycontroller
 reportsTo: paperclipforge-ai-projectmaestro
 skills:

@@ -1,6 +1,5 @@
 ---
 name: Monitor
-human_name: Monitor
 slug: monitor-qualityforge-quality-monitor
 reportsTo: apex-qualityforge-ceo
 skills:

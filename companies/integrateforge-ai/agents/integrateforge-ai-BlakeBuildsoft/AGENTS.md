@@ -1,6 +1,5 @@
 ---
 name: Blakebuildsoft
-human_name: Blakebuildsoft
 slug: integrateforge-ai-blakebuildsoft
 reportsTo: integrateforge-ai-ziggyorchestrator
 skills:

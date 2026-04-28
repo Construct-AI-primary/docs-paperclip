@@ -1,6 +1,5 @@
 ---
 name: UX Coordinator
-human_name: UX Coordinator
 slug: paperclipforge-ai-userexperiencecoordi
 reportsTo: paperclipforge-ai-projectmaestro
 skills:

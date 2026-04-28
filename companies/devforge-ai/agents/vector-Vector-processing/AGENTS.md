@@ -1,6 +1,5 @@
 ---
 name: Vector
-human_name: Vector
 slug: vector-Vector-processing
 reportsTo: nexus-devforge-ceo
 skills:

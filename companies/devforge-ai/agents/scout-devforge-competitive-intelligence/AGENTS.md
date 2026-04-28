@@ -1,6 +1,5 @@
 ---
 name: Scout
-human_name: Scout
 slug: scout-devforge-competitive-intelligence
 reportsTo: nexus-devforge-ceo
 skills:

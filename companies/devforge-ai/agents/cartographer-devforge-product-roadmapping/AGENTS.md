@@ -1,6 +1,5 @@
 ---
 name: Cartographer
-human_name: Cartographer
 slug: cartographer-devforge-product-roadmapping
 reportsTo: nexus-devforge-ceo
 skills:

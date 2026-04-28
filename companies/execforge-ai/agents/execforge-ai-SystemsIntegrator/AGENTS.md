@@ -1,6 +1,5 @@
 ---
 name: Systemsintegrator
-human_name: Systemsintegrator
 slug: execforge-ai-systemsintegrator
 reportsTo: execforge-ai-chiefofstaff
 skills:

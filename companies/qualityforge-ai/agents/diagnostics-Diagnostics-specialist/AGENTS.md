@@ -1,6 +1,5 @@
 ---
 name: Diagnostics
-human_name: Diagnostics
 slug: diagnostics-Diagnostics-specialist
 reportsTo: apex-qualityforge-ceo
 skills:

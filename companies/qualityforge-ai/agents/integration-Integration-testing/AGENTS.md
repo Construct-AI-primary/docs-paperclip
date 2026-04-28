@@ -1,6 +1,5 @@
 ---
 name: Integration
-human_name: Integration
 slug: integration-Integration-testing
 reportsTo: apex-qualityforge-ceo
 skills:

@@ -1,6 +1,5 @@
 ---
 name: Load
-human_name: Load
 slug: load-Load-testing
 reportsTo: apex-qualityforge-ceo
 skills:

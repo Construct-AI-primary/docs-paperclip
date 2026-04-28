@@ -1,6 +1,5 @@
 ---
 name: Terracivil3D
-human_name: Terracivil3D
 slug: integrateforge-ai-terracivil3d
 reportsTo: integrateforge-ai-ziggyorchestrator
 skills:

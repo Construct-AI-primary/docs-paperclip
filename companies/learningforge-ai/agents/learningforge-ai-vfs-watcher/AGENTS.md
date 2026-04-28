@@ -1,6 +1,5 @@
 ---
 name: Vfs Watcher
-human_name: Vfs Watcher
 slug: learningforge-ai-vfs-watcher
 reportsTo: ceo
 skills:

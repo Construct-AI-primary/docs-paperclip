@@ -1,6 +1,5 @@
 ---
 name: Cloudops
-human_name: Cloudops
 slug: cloudops-devforge-cloud-operations
 reportsTo: nexus-devforge-ceo
 skills:

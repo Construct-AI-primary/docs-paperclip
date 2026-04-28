@@ -1,6 +1,5 @@
 ---
 name: Specialist
-human_name: Specialist
 slug: knowledgeforge-ai-specialist
 reportsTo: knowledgeforge-ai-coordinator
 skills:

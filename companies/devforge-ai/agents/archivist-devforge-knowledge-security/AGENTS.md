@@ -1,6 +1,5 @@
 ---
 name: Archivist
-human_name: Archivist
 slug: archivist-devforge-knowledge-security
 reportsTo: nexus-devforge-ceo
 skills:

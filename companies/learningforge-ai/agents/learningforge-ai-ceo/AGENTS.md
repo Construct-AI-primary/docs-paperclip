@@ -1,6 +1,5 @@
 ---
 name: Ceo
-human_name: Ceo
 slug: learningforge-ai-ceo
 reportsTo: ceo
 skills:

@@ -1,6 +1,5 @@
 ---
 name: Architectural
-human_name: Architectural
 slug: architectural-domainforge-architectural
 reportsTo: orion-domainforge-ceo
 skills:

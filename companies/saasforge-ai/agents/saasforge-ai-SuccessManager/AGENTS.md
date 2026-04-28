@@ -1,6 +1,5 @@
 ---
 name: Successmanager
-human_name: Successmanager
 slug: saasforge-ai-successmanager
 reportsTo: saasforge-ai-onboardmaster
 skills:

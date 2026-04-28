@@ -1,6 +1,5 @@
 ---
 name: Orion
-human_name: Orion
 slug: orion-devforge-orchestrator
 reportsTo: nexus-devforge-ceo
 skills:

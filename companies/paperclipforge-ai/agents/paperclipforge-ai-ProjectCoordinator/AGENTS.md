@@ -1,6 +1,5 @@
 ---
 name: Project Coordinator
-human_name: Project Coordinator
 slug: paperclipforge-ai-projectcoordinator
 reportsTo: paperclipforge-ai-projectmaestro
 skills:

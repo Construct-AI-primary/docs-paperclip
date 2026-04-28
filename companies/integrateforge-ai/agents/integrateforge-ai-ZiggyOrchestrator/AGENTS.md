@@ -1,6 +1,5 @@
 ---
 name: Ziggy Orchestrator
-human_name: Ziggy Orchestrator
 slug: integrateforge-ai-ziggyorchestrator
 skills:
   - integrateforge-ai-ziggyorchestrator

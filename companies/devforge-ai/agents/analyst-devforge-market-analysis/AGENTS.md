@@ -1,6 +1,5 @@
 ---
 name: Analyst
-human_name: Analyst
 slug: analyst-devforge-market-analysis
 reportsTo: nexus-devforge-ceo
 skills:

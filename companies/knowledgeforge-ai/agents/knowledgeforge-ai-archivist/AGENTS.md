@@ -1,6 +1,5 @@
 ---
 name: Archivist
-human_name: Archivist
 slug: knowledgeforge-ai-archivist
 reportsTo: knowledgeforge-ai-coordinator
 skills:

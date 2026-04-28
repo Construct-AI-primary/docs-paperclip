@@ -1,6 +1,5 @@
 ---
 name: Chemical Engineering
-human_name: Chemical Engineering
 slug: chemical-engineering-domainforge-chemical-engineering
 reportsTo: orion-domainforge-ceo
 skills:

@@ -1,6 +1,5 @@
 ---
 name: Deployer
-human_name: Deployer
 slug: paperclipforge-ai-deployer
 reportsTo: paperclipforge-ai-projectmaestro
 skills:

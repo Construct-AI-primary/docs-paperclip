@@ -1,6 +1,5 @@
 ---
 name: Oracle
-human_name: Oracle
 slug: oracle-devforge-predictive-analytics
 reportsTo: nexus-devforge-ceo
 skills:

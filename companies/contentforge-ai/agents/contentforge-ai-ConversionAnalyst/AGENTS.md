@@ -1,6 +1,5 @@
 ---
 name: Conversionanalyst
-human_name: Conversionanalyst
 slug: contentforge-ai-conversionanalyst
 reportsTo: contentforge-ai-contentmaestro
 skills:

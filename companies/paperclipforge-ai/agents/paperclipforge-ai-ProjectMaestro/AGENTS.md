@@ -1,6 +1,5 @@
 ---
 name: Project Maestro
-human_name: Project Maestro
 slug: paperclipforge-ai-projectmaestro
 skills:
   - paperclipforge-ai-projectmaestro

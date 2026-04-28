@@ -1,6 +1,5 @@
 ---
 name: Critic
-human_name: Critic
 slug: knowledgeforge-ai-critic
 reportsTo: knowledgeforge-ai-coordinator
 skills:

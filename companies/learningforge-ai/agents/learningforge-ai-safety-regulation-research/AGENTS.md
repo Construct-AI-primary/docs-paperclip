@@ -1,6 +1,5 @@
 ---
 name: Safety Regulation Rese
-human_name: Safety Regulation Rese
 slug: learningforge-ai-safety-regulation-research
 reportsTo: ceo
 skills:

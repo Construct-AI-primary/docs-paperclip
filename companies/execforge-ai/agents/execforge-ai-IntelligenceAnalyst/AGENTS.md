@@ -1,6 +1,5 @@
 ---
 name: Intelligenceanalyst
-human_name: Intelligenceanalyst
 slug: execforge-ai-intelligenceanalyst
 reportsTo: execforge-ai-chiefofstaff
 skills:

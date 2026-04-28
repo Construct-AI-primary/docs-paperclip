@@ -1,6 +1,5 @@
 ---
 name: Performanceanalyst
-human_name: Performanceanalyst
 slug: execforge-ai-performanceanalyst
 reportsTo: execforge-ai-chiefofstaff
 skills:

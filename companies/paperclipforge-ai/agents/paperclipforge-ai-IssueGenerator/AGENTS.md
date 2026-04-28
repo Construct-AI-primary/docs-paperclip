@@ -1,6 +1,5 @@
 ---
 name: Issue Generator
-human_name: Issue Generator
 slug: paperclipforge-ai-issuegenerator
 reportsTo: paperclipforge-ai-projectmaestro
 skills:

@@ -1,6 +1,5 @@
 ---
 name: Curriculum Planner
-human_name: Curriculum Planner
 slug: learningforge-ai-curriculum-planner
 reportsTo: ceo
 skills:

@@ -1,6 +1,5 @@
 ---
 name: Workflowoptimizer
-human_name: Workflowoptimizer
 slug: execforge-ai-workflowoptimizer
 reportsTo: execforge-ai-chiefofstaff
 skills:

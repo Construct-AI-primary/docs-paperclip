@@ -1,6 +1,5 @@
 ---
 name: Coreyprocore
-human_name: Coreyprocore
 slug: integrateforge-ai-coreyprocore
 reportsTo: integrateforge-ai-ziggyorchestrator
 skills:

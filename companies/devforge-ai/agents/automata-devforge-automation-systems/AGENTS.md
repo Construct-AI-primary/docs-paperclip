@@ -1,6 +1,5 @@
 ---
 name: Automata
-human_name: Automata
 slug: automata-devforge-automation-systems
 reportsTo: nexus-devforge-ceo
 skills:

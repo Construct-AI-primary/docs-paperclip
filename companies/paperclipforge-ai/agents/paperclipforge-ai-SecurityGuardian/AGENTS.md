@@ -1,6 +1,5 @@
 ---
 name: Security Guardian
-human_name: Security Guardian
 slug: paperclipforge-ai-securityguardian
 reportsTo: paperclipforge-ai-projectmaestro
 skills:

@@ -1,6 +1,5 @@
 ---
 name: Concierge
-human_name: Concierge
 slug: concierge-devforge-customer-experience
 reportsTo: nexus-devforge-ceo
 skills:

@@ -1,6 +1,5 @@
 ---
 name: Ambiguityprime
-human_name: Ambiguityprime
 slug: knowledgeforge-ai-ambiguityprime
 reportsTo: knowledgeforge-ai-coordinator
 skills:

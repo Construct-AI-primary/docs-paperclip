@@ -1,6 +1,5 @@
 ---
 name: Contracts Agent
-human_name: Contracts Agent
 slug: learningforge-ai-contracts-agent
 reportsTo: ceo
 skills:

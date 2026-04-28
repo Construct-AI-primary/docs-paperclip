@@ -1,6 +1,5 @@
 ---
 name: Adaautocad
-human_name: Adaautocad
 slug: integrateforge-ai-adaautocad
 reportsTo: integrateforge-ai-ziggyorchestrator
 skills:

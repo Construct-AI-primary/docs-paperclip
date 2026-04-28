@@ -1,6 +1,5 @@
 ---
 name: Micro Lesson Generator
-human_name: Micro Lesson Generator
 slug: learningforge-ai-micro-lesson-generator
 reportsTo: ceo
 skills:

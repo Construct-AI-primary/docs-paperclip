@@ -1,6 +1,5 @@
 ---
 name: Troubleshooter
-human_name: Troubleshooter
 slug: fixer-devforge-bug-fixing
 reportsTo: nexus-devforge-ceo
 skills:

@@ -1,6 +1,5 @@
 ---
 name: Integration Illusionis
-human_name: Integration Illusionis
 slug: paperclipforge-ai-integrationillusionis
 reportsTo: paperclipforge-ai-projectmaestro
 skills:

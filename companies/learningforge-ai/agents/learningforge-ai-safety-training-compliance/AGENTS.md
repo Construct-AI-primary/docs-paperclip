@@ -1,6 +1,5 @@
 ---
 name: Safety Training Compli
-human_name: Safety Training Compli
 slug: learningforge-ai-safety-training-compliance
 reportsTo: ceo
 skills:

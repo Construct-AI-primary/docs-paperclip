@@ -1,6 +1,5 @@
 ---
 name: Quality Learning
-human_name: Quality Learning
 slug: learningforge-ai-quality-learning
 reportsTo: ceo
 skills:

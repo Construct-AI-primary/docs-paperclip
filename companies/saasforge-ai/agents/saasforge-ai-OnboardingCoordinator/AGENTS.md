@@ -1,6 +1,5 @@
 ---
 name: Onboardingcoordinator
-human_name: Onboardingcoordinator
 slug: saasforge-ai-onboardingcoordinator
 reportsTo: saasforge-ai-onboardmaster
 skills:

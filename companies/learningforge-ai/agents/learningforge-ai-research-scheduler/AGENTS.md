@@ -1,6 +1,5 @@
 ---
 name: Research Scheduler
-human_name: Research Scheduler
 slug: learningforge-ai-research-scheduler
 reportsTo: ceo
 skills:

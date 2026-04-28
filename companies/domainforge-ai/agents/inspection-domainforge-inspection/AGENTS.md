@@ -1,6 +1,5 @@
 ---
 name: Inspection
-human_name: Inspection
 slug: inspection-domainforge-inspection
 reportsTo: orion-domainforge-ceo
 skills:

@@ -1,6 +1,5 @@
 ---
 name: Other Parties
-human_name: Other Parties
 slug: other-parties-domainforge-other-parties
 reportsTo: orion-domainforge-ceo
 skills:

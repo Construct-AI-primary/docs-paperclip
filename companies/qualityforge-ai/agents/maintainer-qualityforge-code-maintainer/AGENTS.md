@@ -1,6 +1,5 @@
 ---
 name: Maintainer
-human_name: Maintainer
 slug: maintainer-qualityforge-code-maintainer
 reportsTo: apex-qualityforge-ceo
 skills:

@@ -1,6 +1,5 @@
 ---
 name: Data Architect
-human_name: Data Architect
 slug: paperclipforge-ai-dataarchitect
 reportsTo: paperclipforge-ai-projectmaestro
 skills:

@@ -1,6 +1,5 @@
 ---
 name: Tracer
-human_name: Tracer
 slug: tracer-qualityforge-execution-tracer
 reportsTo: apex-qualityforge-ceo
 skills:

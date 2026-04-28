@@ -1,6 +1,5 @@
 ---
 name: Languagespecialist
-human_name: Languagespecialist
 slug: voiceforge-ai-languagespecialist
 reportsTo: voiceforge-ai-voicemaestro
 skills:

@@ -1,6 +1,5 @@
 ---
 name: Technician
-human_name: Technician
 slug: knowledgeforge-ai-technician
 reportsTo: knowledgeforge-ai-coordinator
 skills:

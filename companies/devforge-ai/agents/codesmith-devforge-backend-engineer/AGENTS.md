@@ -1,6 +1,5 @@
 ---
 name: Codesmith
-human_name: Codesmith
 slug: codesmith-devforge-backend-engineer
 reportsTo: nexus-devforge-ceo
 skills:

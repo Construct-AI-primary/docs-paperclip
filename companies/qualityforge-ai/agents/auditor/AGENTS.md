@@ -1,6 +1,5 @@
 ---
 name: Auditor
-human_name: Auditor
 slug: auditor
 reportsTo: apex-qualityforge-ceo
 skills:

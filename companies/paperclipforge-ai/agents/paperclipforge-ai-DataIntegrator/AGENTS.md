@@ -1,6 +1,5 @@
 ---
 name: Data Integrator
-human_name: Data Integrator
 slug: paperclipforge-ai-dataintegrator
 reportsTo: paperclipforge-ai-projectmaestro
 skills:

@@ -1,6 +1,5 @@
 ---
 name: Hazelhecras
-human_name: Hazelhecras
 slug: integrateforge-ai-hazelhecras
 reportsTo: integrateforge-ai-ziggyorchestrator
 skills:

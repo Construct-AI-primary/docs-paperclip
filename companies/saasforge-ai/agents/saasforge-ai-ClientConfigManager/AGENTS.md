@@ -1,6 +1,5 @@
 ---
 name: Clientconfigmanager
-human_name: Clientconfigmanager
 slug: saasforge-ai-clientconfigmanager
 reportsTo: saasforge-ai-onboardmaster
 skills:

@@ -1,6 +1,5 @@
 ---
 name: Code Sage
-human_name: Code Sage
 slug: paperclipforge-ai-codesage
 reportsTo: paperclipforge-ai-projectmaestro
 skills:

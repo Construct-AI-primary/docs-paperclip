@@ -1,6 +1,5 @@
 ---
 name: Performance
-human_name: Performance
 slug: performance-Performance-testing
 reportsTo: apex-qualityforge-ceo
 skills:

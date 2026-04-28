@@ -1,6 +1,5 @@
 ---
 name: Dataguardian
-human_name: Dataguardian
 slug: saasforge-ai-dataguardian
 reportsTo: saasforge-ai-onboardmaster
 skills:

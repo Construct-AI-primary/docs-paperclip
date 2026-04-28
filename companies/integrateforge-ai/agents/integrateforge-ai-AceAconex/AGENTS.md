@@ -1,6 +1,5 @@
 ---
 name: Aceaconex
-human_name: Aceaconex
 slug: integrateforge-ai-aceaconex
 reportsTo: integrateforge-ai-ziggyorchestrator
 skills:

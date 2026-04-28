@@ -1,6 +1,5 @@
 ---
 name: Landscaper
-human_name: Landscaper
 slug: knowledgeforge-ai-landscaper
 reportsTo: knowledgeforge-ai-coordinator
 skills:

@@ -1,6 +1,5 @@
 ---
 name: Mentor
-human_name: Mentor
 slug: mentor-devforge-team-development
 reportsTo: nexus-devforge-ceo
 skills:

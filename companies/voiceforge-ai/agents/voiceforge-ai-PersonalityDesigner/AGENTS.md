@@ -1,6 +1,5 @@
 ---
 name: Personalitydesigner
-human_name: Personalitydesigner
 slug: voiceforge-ai-personalitydesigner
 reportsTo: voiceforge-ai-voicemaestro
 skills:

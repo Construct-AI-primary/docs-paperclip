@@ -1,6 +1,5 @@
 ---
 name: Commercial
-human_name: Commercial
 slug: commercial-domainforge-commercial
 reportsTo: orion-domainforge-ceo
 skills:

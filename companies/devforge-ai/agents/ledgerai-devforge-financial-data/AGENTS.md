@@ -1,6 +1,5 @@
 ---
 name: Ledgerai
-human_name: Ledgerai
 slug: ledgerai-devforge-financial-data
 reportsTo: nexus-devforge-ceo
 skills:

@@ -1,6 +1,5 @@
 ---
 name: Taskcoordinator
-human_name: Taskcoordinator
 slug: execforge-ai-taskcoordinator
 reportsTo: execforge-ai-chiefofstaff
 skills:

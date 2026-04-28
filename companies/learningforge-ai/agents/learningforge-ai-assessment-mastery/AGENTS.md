@@ -1,6 +1,5 @@
 ---
 name: Assessment Mastery
-human_name: Assessment Mastery
 slug: learningforge-ai-assessment-mastery
 reportsTo: ceo
 skills:

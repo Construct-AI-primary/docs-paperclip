@@ -1,6 +1,5 @@
 ---
 name: Resourceoptimizer
-human_name: Resourceoptimizer
 slug: saasforge-ai-resourceoptimizer
 reportsTo: saasforge-ai-onboardmaster
 skills:

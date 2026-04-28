@@ -1,6 +1,5 @@
 ---
 name: Sentinel
-human_name: Sentinel
 slug: sentinel-devforge-data-quality-monitoring
 reportsTo: nexus-devforge-ceo
 skills:

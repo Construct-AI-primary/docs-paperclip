@@ -1,6 +1,5 @@
 ---
 name: Compatibility
-human_name: Compatibility
 slug: compatibility
 reportsTo: apex-qualityforge-ceo
 skills:

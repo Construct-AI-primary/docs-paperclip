@@ -1,6 +1,5 @@
 ---
 name: Procurement Specialist
-human_name: Procurement Specialist
 slug: procurement-domainforge-procurement-contracts
 reportsTo: orion-domainforge-ceo
 skills:

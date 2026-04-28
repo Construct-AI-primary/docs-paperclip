@@ -1,6 +1,5 @@
 ---
 name: Stanstaad
-human_name: Stanstaad
 slug: integrateforge-ai-stanstaad
 reportsTo: integrateforge-ai-ziggyorchestrator
 skills:

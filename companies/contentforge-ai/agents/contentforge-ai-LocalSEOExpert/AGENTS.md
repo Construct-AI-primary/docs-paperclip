@@ -1,6 +1,5 @@
 ---
 name: Localseoexpert
-human_name: Localseoexpert
 slug: contentforge-ai-localseoexpert
 reportsTo: contentforge-ai-contentmaestro
 skills:

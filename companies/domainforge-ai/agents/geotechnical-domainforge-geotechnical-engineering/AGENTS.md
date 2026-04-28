@@ -1,6 +1,5 @@
 ---
 name: Geotechnical Engineer
-human_name: Geotechnical Engineer
 slug: geotechnical-domainforge-geotechnical-engineering
 reportsTo: orion-domainforge-ceo
 skills:

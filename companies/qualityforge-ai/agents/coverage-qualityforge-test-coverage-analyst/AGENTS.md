@@ -1,6 +1,5 @@
 ---
 name: Coverage
-human_name: Coverage
 slug: coverage-qualityforge-test-coverage-analyst
 reportsTo: apex-qualityforge-ceo
 skills:

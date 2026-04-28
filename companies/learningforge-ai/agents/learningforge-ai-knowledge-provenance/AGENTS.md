@@ -1,6 +1,5 @@
 ---
 name: Knowledge Provenance
-human_name: Knowledge Provenance
 slug: learningforge-ai-knowledge-provenance
 reportsTo: ceo
 skills:

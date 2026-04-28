@@ -1,6 +1,5 @@
 ---
 name: Reviewer
-human_name: Reviewer
 slug: reviewer-devforge-code-review-qa
 reportsTo: nexus-devforge-ceo
 skills:

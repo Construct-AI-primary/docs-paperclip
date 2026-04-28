@@ -1,6 +1,5 @@
 ---
 name: Speechprocessor
-human_name: Speechprocessor
 slug: voiceforge-ai-speechprocessor
 reportsTo: voiceforge-ai-voicemaestro
 skills:

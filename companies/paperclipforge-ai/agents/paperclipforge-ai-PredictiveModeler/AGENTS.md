@@ -1,6 +1,5 @@
 ---
 name: Predictive Modeler
-human_name: Predictive Modeler
 slug: paperclipforge-ai-predictivemodeler
 reportsTo: paperclipforge-ai-projectmaestro
 skills:

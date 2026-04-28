@@ -1,6 +1,5 @@
 ---
 name: Forge
-human_name: Forge
 slug: forge-devforge-system-architecture
 reportsTo: nexus-devforge-ceo
 skills:

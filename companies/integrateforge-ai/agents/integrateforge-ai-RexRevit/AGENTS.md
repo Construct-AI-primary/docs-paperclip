@@ -1,6 +1,5 @@
 ---
 name: Rexrevit
-human_name: Rexrevit
 slug: integrateforge-ai-rexrevit
 reportsTo: integrateforge-ai-ziggyorchestrator
 skills:

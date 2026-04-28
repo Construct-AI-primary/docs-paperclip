@@ -1,6 +1,5 @@
 ---
 name: Integrator
-human_name: Integrator
 slug: integrator-Integration-specialist
 reportsTo: apex-qualityforge-ceo
 skills:

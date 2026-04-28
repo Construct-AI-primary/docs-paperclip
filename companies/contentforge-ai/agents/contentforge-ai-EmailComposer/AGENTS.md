@@ -1,6 +1,5 @@
 ---
 name: Emailcomposer
-human_name: Emailcomposer
 slug: contentforge-ai-emailcomposer
 reportsTo: contentforge-ai-contentmaestro
 skills:

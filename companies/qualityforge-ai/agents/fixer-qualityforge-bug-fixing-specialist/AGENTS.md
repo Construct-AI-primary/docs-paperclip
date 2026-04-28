@@ -1,6 +1,5 @@
 ---
 name: Fixer
-human_name: Fixer
 slug: fixer-qualityforge-bug-fixing-specialist
 reportsTo: apex-qualityforge-ceo
 skills:

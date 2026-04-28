@@ -1,6 +1,5 @@
 ---
 name: Validator
-human_name: Validator
 slug: validator-promptforge-syntax-logic-validation
 reportsTo: sage-promptforge-chief-architect
 skills:

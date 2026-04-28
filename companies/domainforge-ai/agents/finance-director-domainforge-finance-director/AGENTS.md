@@ -1,6 +1,5 @@
 ---
 name: Finance Director
-human_name: Finance Director
 slug: finance-director-domainforge-finance-director
 reportsTo: orion-domainforge-ceo
 skills:

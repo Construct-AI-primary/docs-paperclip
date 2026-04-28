@@ -1,6 +1,5 @@
 ---
 name: Nova
-human_name: Nova
 slug: nova-devforge-product-launches
 reportsTo: nexus-devforge-ceo
 skills:

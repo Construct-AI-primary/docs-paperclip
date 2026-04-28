@@ -1,6 +1,5 @@
 ---
 name: Construction Director
-human_name: Construction Director
 slug: construction-director-domainforge-construction-director
 reportsTo: orion-domainforge-ceo
 skills:

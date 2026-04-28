@@ -1,6 +1,5 @@
 ---
 name: Analyticsspecialist
-human_name: Analyticsspecialist
 slug: saasforge-ai-analyticsspecialist
 reportsTo: saasforge-ai-onboardmaster
 skills:

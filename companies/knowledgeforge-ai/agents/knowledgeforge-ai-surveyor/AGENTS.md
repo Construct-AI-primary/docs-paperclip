@@ -1,6 +1,5 @@
 ---
 name: Surveyor
-human_name: Surveyor
 slug: knowledgeforge-ai-surveyor
 reportsTo: knowledgeforge-ai-coordinator
 skills:

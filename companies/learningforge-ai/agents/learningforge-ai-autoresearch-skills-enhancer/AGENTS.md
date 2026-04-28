@@ -1,6 +1,5 @@
 ---
 name: Literature Scanner
-human_name: Literature Scanner
 slug: learningforge-ai-autoresearch-skills-enhancer
 reportsTo: ceo
 skills:

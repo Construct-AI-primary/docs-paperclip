@@ -1,6 +1,5 @@
 ---
 name: Cashcostx
-human_name: Cashcostx
 slug: integrateforge-ai-cashcostx
 reportsTo: integrateforge-ai-ziggyorchestrator
 skills:

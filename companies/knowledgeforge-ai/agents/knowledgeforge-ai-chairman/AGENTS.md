@@ -1,6 +1,5 @@
 ---
 name: Chairman
-human_name: Chairman
 slug: knowledgeforge-ai-chairman
 reportsTo: knowledgeforge-ai-coordinator
 skills:

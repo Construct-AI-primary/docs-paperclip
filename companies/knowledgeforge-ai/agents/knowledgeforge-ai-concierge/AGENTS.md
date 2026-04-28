@@ -1,6 +1,5 @@
 ---
 name: Concierge
-human_name: Concierge
 slug: knowledgeforge-ai-concierge
 reportsTo: knowledgeforge-ai-coordinator
 skills:

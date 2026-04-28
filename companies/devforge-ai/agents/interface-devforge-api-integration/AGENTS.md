@@ -1,6 +1,5 @@
 ---
 name: Interface
-human_name: Interface
 slug: interface-devforge-api-integration
 reportsTo: nexus-devforge-ceo
 skills:

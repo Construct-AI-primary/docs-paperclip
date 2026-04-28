@@ -1,6 +1,5 @@
 ---
 name: Elietabs
-human_name: Elietabs
 slug: integrateforge-ai-elietabs
 reportsTo: integrateforge-ai-ziggyorchestrator
 skills:

@@ -1,6 +1,5 @@
 ---
 name: Merchant
-human_name: Merchant
 slug: knowledgeforge-ai-merchant
 reportsTo: knowledgeforge-ai-coordinator
 skills:

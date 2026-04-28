@@ -1,6 +1,5 @@
 ---
 name: Resource Manager
-human_name: Resource Manager
 slug: paperclipforge-ai-resourcemanager
 reportsTo: paperclipforge-ai-projectmaestro
 skills:

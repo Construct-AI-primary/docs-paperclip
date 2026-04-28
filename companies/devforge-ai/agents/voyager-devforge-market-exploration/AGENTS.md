@@ -1,6 +1,5 @@
 ---
 name: Voyager
-human_name: Voyager
 slug: voyager-devforge-market-exploration
 reportsTo: nexus-devforge-ceo
 skills:

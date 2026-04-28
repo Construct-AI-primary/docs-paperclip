@@ -1,6 +1,5 @@
 ---
 name: Administrator
-human_name: Administrator
 slug: knowledgeforge-ai-administrator
 reportsTo: knowledgeforge-ai-coordinator
 skills:

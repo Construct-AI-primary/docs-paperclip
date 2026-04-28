@@ -1,6 +1,5 @@
 ---
 name: Reportingspecialist
-human_name: Reportingspecialist
 slug: contentforge-ai-reportingspecialist
 reportsTo: contentforge-ai-contentmaestro
 skills:

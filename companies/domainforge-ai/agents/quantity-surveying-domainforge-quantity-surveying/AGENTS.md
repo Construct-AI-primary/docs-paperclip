@@ -1,6 +1,5 @@
 ---
 name: Quantity Surveying
-human_name: Quantity Surveying
 slug: quantity-surveying-domainforge-quantity-surveying
 reportsTo: orion-domainforge-ceo
 skills:

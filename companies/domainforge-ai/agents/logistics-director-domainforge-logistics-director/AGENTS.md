@@ -1,6 +1,5 @@
 ---
 name: Logistics Director
-human_name: Logistics Director
 slug: logistics-director-domainforge-logistics-director
 reportsTo: orion-domainforge-ceo
 skills:

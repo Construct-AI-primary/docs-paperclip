@@ -1,6 +1,5 @@
 ---
 name: Examiner
-human_name: Examiner
 slug: knowledgeforge-ai-examiner
 reportsTo: knowledgeforge-ai-coordinator
 skills:

@@ -1,6 +1,5 @@
 ---
 name: Ethicist
-human_name: Ethicist
 slug: knowledgeforge-ai-ethicist
 reportsTo: knowledgeforge-ai-coordinator
 skills:

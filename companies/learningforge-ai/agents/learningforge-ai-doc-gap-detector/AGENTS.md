@@ -1,6 +1,5 @@
 ---
 name: Doc Gap Detector
-human_name: Doc Gap Detector
 slug: learningforge-ai-doc-gap-detector
 reportsTo: ceo
 skills:

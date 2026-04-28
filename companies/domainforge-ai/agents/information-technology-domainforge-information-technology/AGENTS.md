@@ -1,6 +1,5 @@
 ---
 name: IT Specialist
-human_name: IT Specialist
 slug: information-technology-domainforge-information-technology
 reportsTo: orion-domainforge-ceo
 skills:

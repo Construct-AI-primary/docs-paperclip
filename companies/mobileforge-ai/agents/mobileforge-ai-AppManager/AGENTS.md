@@ -1,6 +1,5 @@
 ---
 name: Appmanager
-human_name: Appmanager
 slug: mobileforge-ai-appmanager
 reportsTo: mobileforge-ai-mobilemaestro
 skills:

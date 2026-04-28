@@ -1,6 +1,5 @@
 ---
 name: PR Specialist
-human_name: PR Specialist
 slug: public-relations-domainforge-public-relations
 reportsTo: orion-domainforge-ceo
 skills:

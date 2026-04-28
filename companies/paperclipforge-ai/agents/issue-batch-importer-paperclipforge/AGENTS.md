@@ -1,6 +1,5 @@
 ---
 name: Issue Batch Importer
-human_name: Issue Batch Importer
 slug: issue-batch-importer-paperclipforge
 reportsTo: paperclipforge-ai-projectmaestro
 skills:

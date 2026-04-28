@@ -1,6 +1,5 @@
 ---
 name: Ally
-human_name: Ally
 slug: ally-devforge-partnership-management
 reportsTo: nexus-devforge-ceo
 skills:

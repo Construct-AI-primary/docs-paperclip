@@ -1,6 +1,5 @@
 ---
 name: Sage
-human_name: Sage
 slug: sage-promptforge-chief-architect
 skills:
   - sage-promptforge-chief-architect

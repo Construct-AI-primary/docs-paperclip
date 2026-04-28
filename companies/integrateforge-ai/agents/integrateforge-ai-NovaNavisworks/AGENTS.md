@@ -1,6 +1,5 @@
 ---
 name: Novanavisworks
-human_name: Novanavisworks
 slug: integrateforge-ai-novanavisworks
 reportsTo: integrateforge-ai-ziggyorchestrator
 skills:

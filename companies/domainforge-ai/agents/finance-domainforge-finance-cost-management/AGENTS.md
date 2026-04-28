@@ -1,6 +1,5 @@
 ---
 name: Finance
-human_name: Finance
 slug: finance-domainforge-finance-cost-management
 reportsTo: orion-domainforge-ceo
 skills:

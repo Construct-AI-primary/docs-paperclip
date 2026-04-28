@@ -1,6 +1,5 @@
 ---
 name: Endpoint Enchantress
-human_name: Endpoint Enchantress
 slug: paperclipforge-ai-endpointenchantress
 reportsTo: paperclipforge-ai-projectmaestro
 skills:

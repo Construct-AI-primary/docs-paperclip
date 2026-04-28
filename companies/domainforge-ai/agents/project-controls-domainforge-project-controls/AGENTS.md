@@ -1,6 +1,5 @@
 ---
 name: Project Controls
-human_name: Project Controls
 slug: project-controls-domainforge-project-controls
 reportsTo: orion-domainforge-ceo
 skills:

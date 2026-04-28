@@ -1,6 +1,5 @@
 ---
 name: Test Commander
-human_name: Test Commander
 slug: paperclipforge-ai-testcommander
 reportsTo: paperclipforge-ai-projectmaestro
 skills:

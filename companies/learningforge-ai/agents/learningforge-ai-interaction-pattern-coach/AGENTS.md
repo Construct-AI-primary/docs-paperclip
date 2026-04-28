@@ -1,6 +1,5 @@
 ---
 name: Interaction Pattern Co
-human_name: Interaction Pattern Co
 slug: learningforge-ai-interaction-pattern-coach
 reportsTo: ceo
 skills:

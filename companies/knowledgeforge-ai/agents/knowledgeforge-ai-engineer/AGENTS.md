@@ -1,6 +1,5 @@
 ---
 name: Engineer
-human_name: Engineer
 slug: knowledgeforge-ai-engineer
 reportsTo: knowledgeforge-ai-coordinator
 skills:

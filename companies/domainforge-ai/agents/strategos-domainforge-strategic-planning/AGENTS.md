@@ -1,6 +1,5 @@
 ---
 name: Strategos
-human_name: Strategos
 slug: strategos-domainforge-strategic-planning
 reportsTo: orion-domainforge-ceo
 skills:

@@ -1,6 +1,5 @@
 ---
 name: Bridge Builder
-human_name: Bridge Builder
 slug: paperclipforge-ai-bridgebuilderextraor
 reportsTo: paperclipforge-ai-projectmaestro
 skills:

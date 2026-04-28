@@ -1,6 +1,5 @@
 ---
 name: Engineering UI Special
-human_name: Engineering UI Special
 slug: paperclipforge-ai-engineeringuispecial
 reportsTo: paperclipforge-ai-projectmaestro
 skills:

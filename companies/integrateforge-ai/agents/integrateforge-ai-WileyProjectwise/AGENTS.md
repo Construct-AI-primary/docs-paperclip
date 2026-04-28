@@ -1,6 +1,5 @@
 ---
 name: Wileyprojectwise
-human_name: Wileyprojectwise
 slug: integrateforge-ai-wileyprojectwise
 reportsTo: integrateforge-ai-ziggyorchestrator
 skills:

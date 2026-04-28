@@ -1,6 +1,5 @@
 ---
 name: CRUD Commander
-human_name: CRUD Commander
 slug: paperclipforge-ai-databasecrudorchestrator
 reportsTo: paperclipforge-ai-projectmaestro
 skills:

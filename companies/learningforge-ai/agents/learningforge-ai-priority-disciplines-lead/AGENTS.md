@@ -1,6 +1,5 @@
 ---
 name: Priority Disciplines L
-human_name: Priority Disciplines L
 slug: learningforge-ai-priority-disciplines-lead
 reportsTo: ceo
 skills:

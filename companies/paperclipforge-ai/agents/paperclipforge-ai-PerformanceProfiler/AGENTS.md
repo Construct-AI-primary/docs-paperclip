@@ -1,6 +1,5 @@
 ---
 name: Performance Profiler
-human_name: Performance Profiler
 slug: paperclipforge-ai-performanceprofiler
 reportsTo: paperclipforge-ai-projectmaestro
 skills:

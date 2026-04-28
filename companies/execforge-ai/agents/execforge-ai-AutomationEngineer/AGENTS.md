@@ -1,6 +1,5 @@
 ---
 name: Automationengineer
-human_name: Automationengineer
 slug: execforge-ai-automationengineer
 reportsTo: execforge-ai-chiefofstaff
 skills:

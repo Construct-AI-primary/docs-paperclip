@@ -1,6 +1,5 @@
 ---
 name: Devicecontroller
-human_name: Devicecontroller
 slug: mobileforge-ai-devicecontroller
 reportsTo: mobileforge-ai-mobilemaestro
 skills:

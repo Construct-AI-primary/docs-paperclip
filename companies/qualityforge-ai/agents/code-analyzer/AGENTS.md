@@ -1,6 +1,5 @@
 ---
 name: Code Analyzer
-human_name: Code Analyzer
 slug: code-analyzer
 reportsTo: apex-qualityforge-ceo
 skills:

@@ -1,6 +1,5 @@
 ---
 name: Mobile API Integrator
-human_name: Mobile API Integrator
 slug: mobile-api-infraforge-mobile-api-integration
 reportsTo: orchestrator-infraforge-ceo
 skills:

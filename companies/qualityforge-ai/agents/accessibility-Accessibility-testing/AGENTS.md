@@ -1,6 +1,5 @@
 ---
 name: Accessibility
-human_name: Accessibility
 slug: accessibility-Accessibility-testing
 reportsTo: apex-qualityforge-ceo
 skills:

@@ -1,6 +1,5 @@
 ---
 name: QC Specialist
-human_name: QC Specialist
 slug: quality-control-domainforge-quality-control
 reportsTo: orion-domainforge-ceo
 skills:

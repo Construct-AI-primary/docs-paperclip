@@ -1,6 +1,5 @@
 ---
 name: Gatekeeper
-human_name: Gatekeeper
 slug: knowledgeforge-ai-gatekeeper
 reportsTo: knowledgeforge-ai-coordinator
 skills:

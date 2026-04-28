@@ -1,6 +1,5 @@
 ---
 name: Brandforge
-human_name: Brandforge
 slug: brandforge-devforge-brand-development
 reportsTo: nexus-devforge-ceo
 skills:

@@ -1,6 +1,5 @@
 ---
 name: Presentationspecialis
-human_name: Presentationspecialis
 slug: execforge-ai-presentationspecialis
 reportsTo: execforge-ai-chiefofstaff
 skills:

@@ -1,6 +1,5 @@
 ---
 name: Scheduler
-human_name: Scheduler
 slug: knowledgeforge-ai-scheduler
 reportsTo: knowledgeforge-ai-coordinator
 skills:

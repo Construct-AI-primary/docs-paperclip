@@ -1,6 +1,5 @@
 ---
 name: Securityspecialist
-human_name: Securityspecialist
 slug: saasforge-ai-securityspecialist
 reportsTo: saasforge-ai-onboardmaster
 skills:

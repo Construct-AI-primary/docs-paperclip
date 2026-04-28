@@ -1,6 +1,5 @@
 ---
 name: Material Defect Tracke
-human_name: Material Defect Tracke
 slug: learningforge-ai-material-defect-tracker
 reportsTo: ceo
 skills:

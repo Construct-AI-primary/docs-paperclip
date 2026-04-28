@@ -1,6 +1,5 @@
 ---
 name: Operations Director
-human_name: Operations Director
 slug: paperclipforge-ai-operationsdirector
 reportsTo: paperclipforge-ai-projectmaestro
 skills:

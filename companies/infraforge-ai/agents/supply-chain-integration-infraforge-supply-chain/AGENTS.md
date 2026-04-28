@@ -1,6 +1,5 @@
 ---
 name: Supply Chain Integrator
-human_name: Supply Chain Integrator
 slug: supply-chain-integration-infraforge-supply-chain
 reportsTo: orchestrator-infraforge-ceo
 skills:

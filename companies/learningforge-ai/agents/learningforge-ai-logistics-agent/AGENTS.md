@@ -1,6 +1,5 @@
 ---
 name: Logistics Agent
-human_name: Logistics Agent
 slug: learningforge-ai-logistics-agent
 reportsTo: ceo
 skills:

@@ -1,6 +1,5 @@
 ---
 name: Contextcoordinator
-human_name: Contextcoordinator
 slug: voiceforge-ai-contextcoordinator
 reportsTo: voiceforge-ai-voicemaestro
 skills:

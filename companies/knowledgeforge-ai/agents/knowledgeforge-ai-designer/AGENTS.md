@@ -1,6 +1,5 @@
 ---
 name: Designer
-human_name: Designer
 slug: knowledgeforge-ai-designer
 reportsTo: knowledgeforge-ai-coordinator
 skills:

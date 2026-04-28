@@ -1,6 +1,5 @@
 ---
 name: Knowledgecurator
-human_name: Knowledgecurator
 slug: execforge-ai-knowledgecurator
 reportsTo: execforge-ai-chiefofstaff
 skills:

@@ -1,6 +1,5 @@
 ---
 name: Inspector
-human_name: Inspector
 slug: knowledgeforge-ai-inspector
 reportsTo: knowledgeforge-ai-coordinator
 skills:

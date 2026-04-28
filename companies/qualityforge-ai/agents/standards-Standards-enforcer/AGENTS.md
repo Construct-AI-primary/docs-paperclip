@@ -1,6 +1,5 @@
 ---
 name: Standards
-human_name: Standards
 slug: standards-Standards-enforcer
 reportsTo: apex-qualityforge-ceo
 skills:

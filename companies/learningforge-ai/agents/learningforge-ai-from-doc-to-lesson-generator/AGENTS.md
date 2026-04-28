@@ -1,6 +1,5 @@
 ---
 name: From Doc To Lesson Gen
-human_name: From Doc To Lesson Gen
 slug: learningforge-ai-from-doc-to-lesson-generator
 reportsTo: ceo
 skills:

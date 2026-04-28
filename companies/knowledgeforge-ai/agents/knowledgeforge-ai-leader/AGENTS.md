@@ -1,6 +1,5 @@
 ---
 name: Leader
-human_name: Leader
 slug: knowledgeforge-ai-leader
 reportsTo: knowledgeforge-ai-coordinator
 skills:

@@ -1,6 +1,5 @@
 ---
 name: Compliance Guard
-human_name: Compliance Guard
 slug: learningforge-ai-compliance-guard
 reportsTo: ceo
 skills:

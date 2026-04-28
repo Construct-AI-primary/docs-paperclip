@@ -1,6 +1,5 @@
 ---
 name: Knowledge Integrator
-human_name: Knowledge Integrator
 slug: paperclipforge-ai-knowledgeintegrator
 reportsTo: paperclipforge-ai-projectmaestro
 skills:

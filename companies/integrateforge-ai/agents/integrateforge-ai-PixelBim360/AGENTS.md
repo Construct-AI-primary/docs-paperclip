@@ -1,6 +1,5 @@
 ---
 name: Pixelbim360
-human_name: Pixelbim360
 slug: integrateforge-ai-pixelbim360
 reportsTo: integrateforge-ai-ziggyorchestrator
 skills:

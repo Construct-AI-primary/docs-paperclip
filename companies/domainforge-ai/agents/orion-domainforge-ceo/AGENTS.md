@@ -1,6 +1,5 @@
 ---
 name: Orion
-human_name: Orion
 slug: orion-domainforge-ceo
 skills:
   - orion-domainforge-ceo

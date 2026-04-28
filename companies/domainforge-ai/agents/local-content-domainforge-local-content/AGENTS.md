@@ -1,6 +1,5 @@
 ---
 name: Local Content
-human_name: Local Content
 slug: local-content-domainforge-local-content
 reportsTo: orion-domainforge-ceo
 skills:

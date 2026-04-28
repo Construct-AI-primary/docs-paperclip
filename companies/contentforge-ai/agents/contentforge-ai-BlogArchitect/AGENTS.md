@@ -1,6 +1,5 @@
 ---
 name: Blog Architect
-human_name: Blog Architect
 slug: contentforge-ai-blogarchitect
 reportsTo: contentforge-ai-contentmaestro
 skills:

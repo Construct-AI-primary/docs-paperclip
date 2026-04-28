@@ -1,6 +1,5 @@
 ---
 name: Geologist
-human_name: Geologist
 slug: knowledgeforge-ai-geologist
 reportsTo: knowledgeforge-ai-coordinator
 skills:

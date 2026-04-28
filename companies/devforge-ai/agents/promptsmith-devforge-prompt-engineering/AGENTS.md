@@ -1,6 +1,5 @@
 ---
 name: Promptsmith
-human_name: Promptsmith
 slug: promptsmith-devforge-prompt-engineering
 reportsTo: nexus-devforge-ceo
 skills:

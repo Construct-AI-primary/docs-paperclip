@@ -1,6 +1,5 @@
 ---
 name: Performanceoptimizer
-human_name: Performanceoptimizer
 slug: mobileforge-ai-performanceoptimizer
 reportsTo: mobileforge-ai-mobilemaestro
 skills:

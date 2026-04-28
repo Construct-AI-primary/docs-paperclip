@@ -1,6 +1,5 @@
 ---
 name: Strategicadvisor
-human_name: Strategicadvisor
 slug: execforge-ai-strategicadvisor
 reportsTo: execforge-ai-chiefofstaff
 skills:

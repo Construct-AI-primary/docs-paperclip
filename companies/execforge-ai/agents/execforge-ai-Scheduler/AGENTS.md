@@ -1,6 +1,5 @@
 ---
 name: Scheduler
-human_name: Scheduler
 slug: execforge-ai-scheduler
 reportsTo: execforge-ai-chiefofstaff
 skills:

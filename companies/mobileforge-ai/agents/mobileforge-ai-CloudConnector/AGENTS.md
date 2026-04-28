@@ -1,6 +1,5 @@
 ---
 name: Cloudconnector
-human_name: Cloudconnector
 slug: mobileforge-ai-cloudconnector
 reportsTo: mobileforge-ai-mobilemaestro
 skills:

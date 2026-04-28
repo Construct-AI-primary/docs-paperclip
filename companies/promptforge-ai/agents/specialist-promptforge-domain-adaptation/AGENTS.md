@@ -1,6 +1,5 @@
 ---
 name: Specialist
-human_name: Specialist
 slug: specialist-promptforge-domain-adaptation
 reportsTo: sage-promptforge-chief-architect
 skills:

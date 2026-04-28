@@ -1,6 +1,5 @@
 ---
 name: Sales
-human_name: Sales
 slug: sales-domainforge-sales
 reportsTo: orion-domainforge-ceo
 skills:

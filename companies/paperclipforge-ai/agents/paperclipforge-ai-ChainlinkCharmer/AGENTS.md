@@ -1,6 +1,5 @@
 ---
 name: Chainlink Charmer
-human_name: Chainlink Charmer
 slug: paperclipforge-ai-chainlinkcharmer
 reportsTo: paperclipforge-ai-projectmaestro
 skills:

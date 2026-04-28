@@ -1,6 +1,5 @@
 ---
 name: Config Curator
-human_name: Config Curator
 slug: paperclipforge-ai-configcurator
 reportsTo: paperclipforge-ai-projectmaestro
 skills:

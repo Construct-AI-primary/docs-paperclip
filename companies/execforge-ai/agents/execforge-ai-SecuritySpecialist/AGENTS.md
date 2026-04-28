@@ -1,6 +1,5 @@
 ---
 name: Securityspecialist
-human_name: Securityspecialist
 slug: execforge-ai-securityspecialist
 reportsTo: execforge-ai-chiefofstaff
 skills:

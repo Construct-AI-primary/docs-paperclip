@@ -1,6 +1,5 @@
 ---
 name: Devopsengineer
-human_name: Devopsengineer
 slug: saasforge-ai-devopsengineer
 reportsTo: saasforge-ai-onboardmaster
 skills:

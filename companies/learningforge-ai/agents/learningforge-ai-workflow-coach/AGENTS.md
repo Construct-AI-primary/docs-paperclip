@@ -1,6 +1,5 @@
 ---
 name: Workflow Coach
-human_name: Workflow Coach
 slug: learningforge-ai-workflow-coach
 reportsTo: ceo
 skills:

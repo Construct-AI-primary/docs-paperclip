@@ -1,6 +1,5 @@
 ---
 name: Content Maestro
-human_name: Content Maestro
 slug: contentforge-ai-contentmaestro
 skills:
   - contentforge-ai-contentmaestro

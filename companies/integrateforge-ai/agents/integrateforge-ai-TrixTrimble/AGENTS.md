@@ -1,6 +1,5 @@
 ---
 name: Trixtrimble
-human_name: Trixtrimble
 slug: integrateforge-ai-trixtrimble
 reportsTo: integrateforge-ai-ziggyorchestrator
 skills:

@@ -1,6 +1,5 @@
 ---
 name: Personalassistant
-human_name: Personalassistant
 slug: execforge-ai-personalassistant
 reportsTo: execforge-ai-chiefofstaff
 skills:

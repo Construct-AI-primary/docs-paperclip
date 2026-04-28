@@ -1,6 +1,5 @@
 ---
 name: Securityguardian
-human_name: Securityguardian
 slug: mobileforge-ai-securityguardian
 reportsTo: mobileforge-ai-mobilemaestro
 skills:

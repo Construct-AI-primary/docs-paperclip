@@ -1,6 +1,5 @@
 ---
 name: Database Ops
-human_name: Database Ops
 slug: database-infraforge-database-infrastructure
 reportsTo: orchestrator-infraforge-ceo
 skills:

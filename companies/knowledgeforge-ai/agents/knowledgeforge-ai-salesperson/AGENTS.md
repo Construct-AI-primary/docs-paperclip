@@ -1,6 +1,5 @@
 ---
 name: Salesperson
-human_name: Salesperson
 slug: knowledgeforge-ai-salesperson
 reportsTo: knowledgeforge-ai-coordinator
 skills:

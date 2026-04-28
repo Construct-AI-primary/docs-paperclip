@@ -1,6 +1,5 @@
 ---
 name: Developer
-human_name: Developer
 slug: knowledgeforge-ai-developer
 reportsTo: knowledgeforge-ai-coordinator
 skills:

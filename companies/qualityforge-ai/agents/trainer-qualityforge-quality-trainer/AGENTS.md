@@ -1,6 +1,5 @@
 ---
 name: Trainer
-human_name: Trainer
 slug: trainer-qualityforge-quality-trainer
 reportsTo: apex-qualityforge-ceo
 skills:

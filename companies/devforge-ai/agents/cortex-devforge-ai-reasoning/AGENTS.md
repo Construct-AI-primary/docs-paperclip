@@ -1,6 +1,5 @@
 ---
 name: Cortex
-human_name: Cortex
 slug: cortex-devforge-ai-reasoning
 reportsTo: nexus-devforge-ceo
 skills:

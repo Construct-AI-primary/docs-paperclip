@@ -1,6 +1,5 @@
 ---
 name: Loadtester
-human_name: Loadtester
 slug: loadtester-qualityforge-scalability-testing
 reportsTo: apex-qualityforge-ceo
 skills:

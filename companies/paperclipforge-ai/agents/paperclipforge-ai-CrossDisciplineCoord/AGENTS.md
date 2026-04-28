@@ -1,6 +1,5 @@
 ---
 name: Cross Discipline Coord
-human_name: Cross Discipline Coord
 slug: paperclipforge-ai-crossdisciplinecoord
 reportsTo: paperclipforge-ai-projectmaestro
 skills:

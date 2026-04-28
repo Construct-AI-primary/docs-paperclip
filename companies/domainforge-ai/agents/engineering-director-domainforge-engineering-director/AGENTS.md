@@ -1,6 +1,5 @@
 ---
 name: Engineering Director
-human_name: Engineering Director
 slug: engineering-director-domainforge-engineering-director
 reportsTo: orion-domainforge-ceo
 skills:

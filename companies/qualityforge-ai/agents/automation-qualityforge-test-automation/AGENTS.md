@@ -1,6 +1,5 @@
 ---
 name: Automation
-human_name: Automation
 slug: automation-qualityforge-test-automation
 reportsTo: apex-qualityforge-ceo
 skills:

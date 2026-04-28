@@ -1,6 +1,5 @@
 ---
 name: Knowledge Flow Agent
-human_name: Knowledge Flow Agent
 slug: learningforge-ai-knowledge-flow-agent
 reportsTo: ceo
 skills:

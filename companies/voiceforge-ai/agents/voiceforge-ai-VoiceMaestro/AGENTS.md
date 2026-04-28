@@ -1,6 +1,5 @@
 ---
 name: Voice Maestro
-human_name: Voice Maestro
 slug: voiceforge-ai-voicemaestro
 skills:
   - voiceforge-ai-voicemaestro

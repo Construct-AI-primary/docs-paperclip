@@ -1,6 +1,5 @@
 ---
 name: Auth Administrator
-human_name: Auth Administrator
 slug: paperclipforge-ai-authadministrator
 reportsTo: paperclipforge-ai-projectmaestro
 skills:

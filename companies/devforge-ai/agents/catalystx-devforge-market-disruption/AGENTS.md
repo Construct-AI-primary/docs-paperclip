@@ -1,6 +1,5 @@
 ---
 name: Catalystx
-human_name: Catalystx
 slug: catalystx-devforge-market-disruption
 reportsTo: nexus-devforge-ceo
 skills:

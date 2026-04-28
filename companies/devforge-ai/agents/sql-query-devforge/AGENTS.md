@@ -1,6 +1,5 @@
 ---
 name: Sql Query Devforge
-human_name: Sql Query Devforge
 slug: sql-query-devforge
 reportsTo: nexus-devforge-ceo
 skills:

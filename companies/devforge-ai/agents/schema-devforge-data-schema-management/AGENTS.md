@@ -1,6 +1,5 @@
 ---
 name: Schema
-human_name: Schema
 slug: schema-devforge-data-schema-management
 reportsTo: nexus-devforge-ceo
 skills:

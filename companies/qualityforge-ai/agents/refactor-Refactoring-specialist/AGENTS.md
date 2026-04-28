@@ -1,6 +1,5 @@
 ---
 name: Refactor
-human_name: Refactor
 slug: refactor-Refactoring-specialist
 reportsTo: apex-qualityforge-ceo
 skills:

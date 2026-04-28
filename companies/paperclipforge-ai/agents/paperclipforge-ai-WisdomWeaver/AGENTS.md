@@ -1,6 +1,5 @@
 ---
 name: Wisdom Weaver
-human_name: Wisdom Weaver
 slug: paperclipforge-ai-wisdomweaver
 reportsTo: paperclipforge-ai-projectmaestro
 skills:

@@ -1,6 +1,5 @@
 ---
 name: Field Safety Inspector
-human_name: Field Safety Inspector
 slug: learningforge-ai-field-safety-inspector
 reportsTo: ceo
 skills:

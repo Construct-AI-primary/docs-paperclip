@@ -1,6 +1,5 @@
 ---
 name: Synth
-human_name: Synth
 slug: synth-Synthetic-data
 reportsTo: nexus-devforge-ceo
 skills:

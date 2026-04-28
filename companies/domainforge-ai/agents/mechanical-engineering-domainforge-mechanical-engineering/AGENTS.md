@@ -1,6 +1,5 @@
 ---
 name: Mechanical Engineering
-human_name: Mechanical Engineering
 slug: mechanical-engineering-domainforge-mechanical-engineering
 reportsTo: orion-domainforge-ceo
 skills:

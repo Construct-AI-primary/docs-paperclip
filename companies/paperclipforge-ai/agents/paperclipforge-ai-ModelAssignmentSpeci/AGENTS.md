@@ -1,6 +1,5 @@
 ---
 name: SparkAssign
-human_name: SparkAssign
 slug: paperclipforge-ai-modelassignmentspeci
 reportsTo: paperclipforge-ai-projectmaestro
 skills:

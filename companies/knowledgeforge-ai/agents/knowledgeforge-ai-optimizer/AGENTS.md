@@ -1,6 +1,5 @@
 ---
 name: Optimizer
-human_name: Optimizer
 slug: knowledgeforge-ai-optimizer
 reportsTo: knowledgeforge-ai-coordinator
 skills:

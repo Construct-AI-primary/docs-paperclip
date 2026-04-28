@@ -1,6 +1,5 @@
 ---
 name: Pathfinder
-human_name: Pathfinder
 slug: pathfinder-devforge-opportunity-identification
 reportsTo: nexus-devforge-ceo
 skills:

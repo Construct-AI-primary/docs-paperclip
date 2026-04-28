@@ -1,6 +1,5 @@
 ---
 name: Code Reviewer
-human_name: Code Reviewer
 slug: reviewer-qualityforge-code-reviewer
 reportsTo: apex-qualityforge-ceo
 skills:

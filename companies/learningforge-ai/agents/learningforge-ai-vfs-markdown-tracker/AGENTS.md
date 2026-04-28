@@ -1,6 +1,5 @@
 ---
 name: Vfs Markdown Tracker
-human_name: Vfs Markdown Tracker
 slug: learningforge-ai-vfs-markdown-tracker
 reportsTo: ceo
 skills:

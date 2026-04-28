@@ -1,6 +1,5 @@
 ---
 name: Transportation Engineer
-human_name: Transportation Engineer
 slug: transportation-domainforge-transportation-engineering
 reportsTo: orion-domainforge-ceo
 skills:

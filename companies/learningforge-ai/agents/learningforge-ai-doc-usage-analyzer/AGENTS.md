@@ -1,6 +1,5 @@
 ---
 name: Doc Usage Analyzer
-human_name: Doc Usage Analyzer
 slug: learningforge-ai-doc-usage-analyzer
 reportsTo: ceo
 skills:

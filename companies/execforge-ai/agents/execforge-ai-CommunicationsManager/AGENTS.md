@@ -1,6 +1,5 @@
 ---
 name: Communicationsmanager
-human_name: Communicationsmanager
 slug: execforge-ai-communicationsmanager
 reportsTo: execforge-ai-chiefofstaff
 skills:

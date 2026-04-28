@@ -1,6 +1,5 @@
 ---
 name: Dealmaker
-human_name: Dealmaker
 slug: dealmaker-devforge-sales-negotiation
 reportsTo: nexus-devforge-ceo
 skills:

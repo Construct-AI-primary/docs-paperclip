@@ -1,6 +1,5 @@
 ---
 name: Hazard Pattern Analyst
-human_name: Hazard Pattern Analyst
 slug: learningforge-ai-hazard-pattern-analyst
 reportsTo: ceo
 skills:

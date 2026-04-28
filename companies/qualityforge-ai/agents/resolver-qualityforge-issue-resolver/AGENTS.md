@@ -1,6 +1,5 @@
 ---
 name: Resolver
-human_name: Resolver
 slug: resolver-qualityforge-issue-resolver
 reportsTo: apex-qualityforge-ceo
 skills:

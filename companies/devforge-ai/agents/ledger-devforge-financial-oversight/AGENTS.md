@@ -1,6 +1,5 @@
 ---
 name: Ledger
-human_name: Ledger
 slug: ledger-devforge-financial-oversight
 reportsTo: nexus-devforge-ceo
 skills:

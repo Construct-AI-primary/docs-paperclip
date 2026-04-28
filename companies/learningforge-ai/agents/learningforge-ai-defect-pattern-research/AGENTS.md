@@ -1,6 +1,5 @@
 ---
 name: Defect Pattern Researc
-human_name: Defect Pattern Researc
 slug: learningforge-ai-defect-pattern-research
 reportsTo: ceo
 skills:

@@ -1,6 +1,5 @@
 ---
 name: Seostrategist
-human_name: Seostrategist
 slug: contentforge-ai-seostrategist
 reportsTo: contentforge-ai-contentmaestro
 skills:

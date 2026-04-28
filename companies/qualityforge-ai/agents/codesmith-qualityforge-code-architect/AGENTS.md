@@ -1,6 +1,5 @@
 ---
 name: Codesmith
-human_name: Codesmith
 slug: codesmith-qualityforge-code-architect
 reportsTo: apex-qualityforge-ceo
 skills:

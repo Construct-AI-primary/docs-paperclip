@@ -1,6 +1,5 @@
 ---
 name: Process Engineering
-human_name: Process Engineering
 slug: process-engineering-domainforge-process-engineering
 reportsTo: orion-domainforge-ceo
 skills:

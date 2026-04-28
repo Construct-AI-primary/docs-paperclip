@@ -1,6 +1,5 @@
 ---
 name: Measurement Standards
-human_name: Measurement Standards
 slug: paperclipforge-ai-measurementstandards
 reportsTo: paperclipforge-ai-projectmaestro
 skills:

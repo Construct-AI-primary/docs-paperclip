@@ -1,6 +1,5 @@
 ---
 name: Linkbuilder
-human_name: Linkbuilder
 slug: contentforge-ai-linkbuilder
 reportsTo: contentforge-ai-contentmaestro
 skills:

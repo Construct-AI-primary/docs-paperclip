@@ -1,6 +1,5 @@
 ---
 name: Migrator
-human_name: Migrator
 slug: migrator-qualityforge-migration-specialist
 reportsTo: apex-qualityforge-ceo
 skills:

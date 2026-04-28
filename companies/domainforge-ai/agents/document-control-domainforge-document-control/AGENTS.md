@@ -1,6 +1,5 @@
 ---
 name: Document Control
-human_name: Document Control
 slug: document-control-domainforge-document-control
 reportsTo: orion-domainforge-ceo
 skills:

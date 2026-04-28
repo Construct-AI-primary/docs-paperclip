@@ -1,6 +1,5 @@
 ---
 name: Log Analyst
-human_name: Log Analyst
 slug: paperclipforge-ai-loganalyst
 reportsTo: paperclipforge-ai-projectmaestro
 skills:

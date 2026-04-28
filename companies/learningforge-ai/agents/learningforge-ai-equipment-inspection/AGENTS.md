@@ -1,6 +1,5 @@
 ---
 name: Equipment Inspection
-human_name: Equipment Inspection
 slug: learningforge-ai-equipment-inspection
 reportsTo: ceo
 skills:

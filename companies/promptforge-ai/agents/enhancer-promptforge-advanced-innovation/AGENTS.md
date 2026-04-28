@@ -1,6 +1,5 @@
 ---
 name: Enhancer
-human_name: Enhancer
 slug: enhancer-promptforge-advanced-innovation
 reportsTo: sage-promptforge-chief-architect
 skills:

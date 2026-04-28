@@ -1,6 +1,5 @@
 ---
 name: Maya
-human_name: Maya
 slug: maya-loopy-content-strategist
 reportsTo: vision-loopy-ceo
 skills:

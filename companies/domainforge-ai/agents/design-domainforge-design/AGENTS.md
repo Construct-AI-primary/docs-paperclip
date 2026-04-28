@@ -1,6 +1,5 @@
 ---
 name: Design
-human_name: Design
 slug: design-domainforge-design
 reportsTo: orion-domainforge-ceo
 skills:

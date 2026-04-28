@@ -1,6 +1,5 @@
 ---
 name: PostgreSQL Admin
-human_name: PostgreSQL Admin
 slug: postgres-infraforge-postgresql
 reportsTo: orchestrator-infraforge-ceo
 skills:

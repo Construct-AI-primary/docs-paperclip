@@ -1,6 +1,5 @@
 ---
 name: Greeter
-human_name: Greeter
 slug: knowledgeforge-ai-greeter
 reportsTo: knowledgeforge-ai-coordinator
 skills:

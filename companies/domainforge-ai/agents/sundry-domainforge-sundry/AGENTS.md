@@ -1,6 +1,5 @@
 ---
 name: Sundry
-human_name: Sundry
 slug: sundry-domainforge-sundry
 reportsTo: orion-domainforge-ceo
 skills:

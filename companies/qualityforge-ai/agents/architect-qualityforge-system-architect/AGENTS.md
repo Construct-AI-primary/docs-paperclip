@@ -1,6 +1,5 @@
 ---
 name: Architect
-human_name: Architect
 slug: architect-qualityforge-system-architect
 reportsTo: apex-qualityforge-ceo
 skills:

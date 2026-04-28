@@ -1,6 +1,5 @@
 ---
 name: Merchant
-human_name: Merchant
 slug: merchant-devforge-commerce-operations
 reportsTo: nexus-devforge-ceo
 skills:

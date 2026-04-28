@@ -1,6 +1,5 @@
 ---
 name: Quantifier
-human_name: Quantifier
 slug: quantifier-promptforge-benchmarking
 reportsTo: sage-promptforge-chief-architect
 skills:

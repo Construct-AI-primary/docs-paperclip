@@ -1,6 +1,5 @@
 ---
 name: Procurement Strategy
-human_name: Procurement Strategy
 slug: procurement-strategy-domainforge-procurement-strategy
 reportsTo: orion-domainforge-ceo
 skills:

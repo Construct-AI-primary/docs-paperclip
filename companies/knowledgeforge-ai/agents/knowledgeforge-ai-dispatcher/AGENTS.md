@@ -1,6 +1,5 @@
 ---
 name: Dispatcher
-human_name: Dispatcher
 slug: knowledgeforge-ai-dispatcher
 reportsTo: knowledgeforge-ai-coordinator
 skills:

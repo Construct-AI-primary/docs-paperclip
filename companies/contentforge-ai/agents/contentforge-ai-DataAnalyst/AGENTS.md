@@ -1,6 +1,5 @@
 ---
 name: Dataanalyst
-human_name: Dataanalyst
 slug: contentforge-ai-dataanalyst
 reportsTo: contentforge-ai-contentmaestro
 skills:

@@ -1,6 +1,5 @@
 ---
 name: Conversationmanager
-human_name: Conversationmanager
 slug: voiceforge-ai-conversationmanager
 reportsTo: voiceforge-ai-voicemaestro
 skills:

@@ -1,6 +1,5 @@
 ---
 name: Communicationorchestr
-human_name: Communicationorchestr
 slug: contentforge-ai-communicationorchestr
 reportsTo: contentforge-ai-contentmaestro
 skills:

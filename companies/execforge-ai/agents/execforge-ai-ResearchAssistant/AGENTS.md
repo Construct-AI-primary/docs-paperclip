@@ -1,6 +1,5 @@
 ---
 name: Researchassistant
-human_name: Researchassistant
 slug: execforge-ai-researchassistant
 reportsTo: execforge-ai-chiefofstaff
 skills:

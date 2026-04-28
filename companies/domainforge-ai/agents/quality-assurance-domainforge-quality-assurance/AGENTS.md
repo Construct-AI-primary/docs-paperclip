@@ -1,6 +1,5 @@
 ---
 name: QA Specialist
-human_name: QA Specialist
 slug: quality-assurance-domainforge-quality-assurance
 reportsTo: orion-domainforge-ceo
 skills:

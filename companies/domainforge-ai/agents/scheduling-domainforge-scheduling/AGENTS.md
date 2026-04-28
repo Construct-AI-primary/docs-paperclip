@@ -1,6 +1,5 @@
 ---
 name: Scheduling
-human_name: Scheduling
 slug: scheduling-domainforge-scheduling
 reportsTo: orion-domainforge-ceo
 skills:

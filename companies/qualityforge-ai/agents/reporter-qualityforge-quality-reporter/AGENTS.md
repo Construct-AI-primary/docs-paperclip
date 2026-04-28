@@ -1,6 +1,5 @@
 ---
 name: Reporter
-human_name: Reporter
 slug: reporter-qualityforge-quality-reporter
 reportsTo: apex-qualityforge-ceo
 skills:

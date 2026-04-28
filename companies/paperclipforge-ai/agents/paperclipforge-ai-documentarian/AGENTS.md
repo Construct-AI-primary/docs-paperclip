@@ -1,6 +1,5 @@
 ---
 name: Documentarian
-human_name: Documentarian
 slug: paperclipforge-ai-documentarian
 reportsTo: paperclipforge-ai-projectmaestro
 skills:

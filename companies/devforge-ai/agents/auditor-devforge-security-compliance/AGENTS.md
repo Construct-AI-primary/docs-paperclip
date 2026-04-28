@@ -1,6 +1,5 @@
 ---
 name: Auditor
-human_name: Auditor
 slug: auditor-devforge-security-compliance
 reportsTo: nexus-devforge-ceo
 skills:

@@ -1,6 +1,5 @@
 ---
 name: Advanced Engineering
-human_name: Advanced Engineering
 slug: paperclipforge-ai-advancedengineering
 reportsTo: paperclipforge-ai-projectmaestro
 skills:

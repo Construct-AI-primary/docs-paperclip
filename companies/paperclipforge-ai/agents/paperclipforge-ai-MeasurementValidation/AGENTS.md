@@ -1,6 +1,5 @@
 ---
 name: Measurement Validation
-human_name: Measurement Validation
 slug: paperclipforge-ai-measurementvalidation
 reportsTo: paperclipforge-ai-projectmaestro
 skills:

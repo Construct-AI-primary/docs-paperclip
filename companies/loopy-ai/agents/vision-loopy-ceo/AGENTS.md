@@ -1,6 +1,5 @@
 ---
 name: Vision
-human_name: Vision
 slug: vision-loopy-ceo
 skills:
   - vision-loopy-ceo

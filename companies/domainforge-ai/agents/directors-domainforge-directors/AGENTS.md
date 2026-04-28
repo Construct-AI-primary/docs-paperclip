@@ -1,6 +1,5 @@
 ---
 name: Directors
-human_name: Directors
 slug: directors-domainforge-directors
 reportsTo: orion-domainforge-ceo
 skills:

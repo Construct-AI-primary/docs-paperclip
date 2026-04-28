@@ -1,6 +1,5 @@
 ---
 name: Generalist
-human_name: Generalist
 slug: knowledgeforge-ai-generalist
 reportsTo: knowledgeforge-ai-coordinator
 skills:

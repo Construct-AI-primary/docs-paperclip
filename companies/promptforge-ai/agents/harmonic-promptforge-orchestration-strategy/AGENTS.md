@@ -1,6 +1,5 @@
 ---
 name: Harmonic
-human_name: Harmonic
 slug: harmonic-promptforge-orchestration-strategy
 reportsTo: sage-promptforge-chief-architect
 skills:

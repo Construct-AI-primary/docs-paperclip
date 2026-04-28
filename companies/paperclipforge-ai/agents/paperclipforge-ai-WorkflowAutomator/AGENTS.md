@@ -1,6 +1,5 @@
 ---
 name: Workflow Automator
-human_name: Workflow Automator
 slug: paperclipforge-ai-workflowautomator
 reportsTo: paperclipforge-ai-projectmaestro
 skills:

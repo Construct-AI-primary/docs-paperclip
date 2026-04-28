@@ -1,6 +1,5 @@
 ---
 name: Physician
-human_name: Physician
 slug: knowledgeforge-ai-physician
 reportsTo: knowledgeforge-ai-coordinator
 skills:

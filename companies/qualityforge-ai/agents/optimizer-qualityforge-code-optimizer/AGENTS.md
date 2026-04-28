@@ -1,6 +1,5 @@
 ---
 name: Optimizer
-human_name: Optimizer
 slug: optimizer-qualityforge-code-optimizer
 reportsTo: apex-qualityforge-ceo
 skills:

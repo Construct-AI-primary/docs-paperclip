@@ -1,6 +1,5 @@
 ---
 name: Network Navigator
-human_name: Network Navigator
 slug: paperclipforge-ai-networknavigator
 reportsTo: paperclipforge-ai-projectmaestro
 skills:

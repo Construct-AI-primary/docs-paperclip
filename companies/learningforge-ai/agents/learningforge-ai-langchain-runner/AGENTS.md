@@ -1,6 +1,5 @@
 ---
 name: Langchain Runner
-human_name: Langchain Runner
 slug: learningforge-ai-langchain-runner
 reportsTo: ceo
 skills:

@@ -1,6 +1,5 @@
 ---
 name: API Manager
-human_name: API Manager
 slug: paperclipforge-ai-apimanager
 reportsTo: paperclipforge-ai-projectmaestro
 skills:

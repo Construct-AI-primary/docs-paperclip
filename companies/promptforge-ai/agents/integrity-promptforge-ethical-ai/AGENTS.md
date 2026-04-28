@@ -1,6 +1,5 @@
 ---
 name: Integrity
-human_name: Integrity
 slug: integrity-promptforge-ethical-ai
 reportsTo: sage-promptforge-chief-architect
 skills:

@@ -1,6 +1,5 @@
 ---
 name: Negotiator
-human_name: Negotiator
 slug: knowledgeforge-ai-negotiator
 reportsTo: knowledgeforge-ai-coordinator
 skills:

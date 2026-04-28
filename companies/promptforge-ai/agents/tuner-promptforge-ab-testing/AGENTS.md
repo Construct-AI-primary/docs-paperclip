@@ -1,6 +1,5 @@
 ---
 name: Tuner
-human_name: Tuner
 slug: tuner-promptforge-ab-testing
 reportsTo: sage-promptforge-chief-architect
 skills:

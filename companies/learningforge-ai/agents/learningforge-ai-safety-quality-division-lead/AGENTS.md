@@ -1,6 +1,5 @@
 ---
 name: Safety Quality Divisio
-human_name: Safety Quality Divisio
 slug: learningforge-ai-safety-quality-division-lead
 reportsTo: ceo
 skills:

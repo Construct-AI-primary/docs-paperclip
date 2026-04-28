@@ -1,6 +1,5 @@
 ---
 name: Buyer
-human_name: Buyer
 slug: knowledgeforge-ai-buyer
 reportsTo: knowledgeforge-ai-coordinator
 skills:

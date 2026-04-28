@@ -1,6 +1,5 @@
 ---
 name: Intentanalyst
-human_name: Intentanalyst
 slug: voiceforge-ai-intentanalyst
 reportsTo: voiceforge-ai-voicemaestro
 skills:

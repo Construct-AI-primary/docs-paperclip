@@ -1,6 +1,5 @@
 ---
 name: Stormswmm
-human_name: Stormswmm
 slug: integrateforge-ai-stormswmm
 reportsTo: integrateforge-ai-ziggyorchestrator
 skills:

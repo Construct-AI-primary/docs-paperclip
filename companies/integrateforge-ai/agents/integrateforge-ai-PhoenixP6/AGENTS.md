@@ -1,6 +1,5 @@
 ---
 name: Phoenixp6
-human_name: Phoenixp6
 slug: integrateforge-ai-phoenixp6
 reportsTo: integrateforge-ai-ziggyorchestrator
 skills:

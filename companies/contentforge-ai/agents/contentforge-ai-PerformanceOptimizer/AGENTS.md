@@ -1,6 +1,5 @@
 ---
 name: Performanceoptimizer
-human_name: Performanceoptimizer
 slug: contentforge-ai-performanceoptimizer
 reportsTo: contentforge-ai-contentmaestro
 skills:

@@ -1,6 +1,5 @@
 ---
 name: Contracts Director
-human_name: Contracts Director
 slug: contracts-director-domainforge-contracts-director
 reportsTo: orion-domainforge-ceo
 skills:

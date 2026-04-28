@@ -1,6 +1,5 @@
 ---
 name: Apispecialist
-human_name: Apispecialist
 slug: mobileforge-ai-apispecialist
 reportsTo: mobileforge-ai-mobilemaestro
 skills:

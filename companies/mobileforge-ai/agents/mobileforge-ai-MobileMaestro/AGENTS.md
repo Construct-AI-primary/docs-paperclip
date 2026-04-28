@@ -1,6 +1,5 @@
 ---
 name: Mobile Maestro
-human_name: Mobile Maestro
 slug: mobileforge-ai-mobilemaestro
 skills:
   - mobileforge-ai-mobilemaestro

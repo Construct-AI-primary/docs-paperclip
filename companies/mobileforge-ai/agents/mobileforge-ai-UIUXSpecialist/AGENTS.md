@@ -1,6 +1,5 @@
 ---
 name: Uiuxspecialist
-human_name: Uiuxspecialist
 slug: mobileforge-ai-uiuxspecialist
 reportsTo: mobileforge-ai-mobilemaestro
 skills:

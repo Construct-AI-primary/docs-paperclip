@@ -1,6 +1,5 @@
 ---
 name: Performance Monitor
-human_name: Performance Monitor
 slug: paperclipforge-ai-performancemonitor
 reportsTo: paperclipforge-ai-projectmaestro
 skills:

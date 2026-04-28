@@ -1,6 +1,5 @@
 ---
 name: Deploymentorchestrato
-human_name: Deploymentorchestrato
 slug: saasforge-ai-deploymentorchestrato
 reportsTo: saasforge-ai-onboardmaster
 skills:

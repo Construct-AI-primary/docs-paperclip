@@ -1,6 +1,5 @@
 ---
 name: Qualityassurance
-human_name: Qualityassurance
 slug: voiceforge-ai-qualityassurance
 reportsTo: voiceforge-ai-voicemaestro
 skills:

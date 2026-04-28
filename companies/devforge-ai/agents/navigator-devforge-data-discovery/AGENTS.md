@@ -1,6 +1,5 @@
 ---
 name: Navigator
-human_name: Navigator
 slug: navigator-devforge-data-discovery
 reportsTo: nexus-devforge-ceo
 skills:

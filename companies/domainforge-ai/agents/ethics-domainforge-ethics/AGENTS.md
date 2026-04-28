@@ -1,6 +1,5 @@
 ---
 name: Ethics
-human_name: Ethics
 slug: ethics-domainforge-ethics
 reportsTo: orion-domainforge-ceo
 skills:

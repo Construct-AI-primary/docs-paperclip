@@ -1,6 +1,5 @@
 ---
 name: Research Compliance Di
-human_name: Research Compliance Di
 slug: learningforge-ai-research-compliance-division-lead
 reportsTo: ceo
 skills:

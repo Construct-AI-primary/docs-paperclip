@@ -1,6 +1,5 @@
 ---
 name: Supportintegrator
-human_name: Supportintegrator
 slug: saasforge-ai-supportintegrator
 reportsTo: saasforge-ai-onboardmaster
 skills:

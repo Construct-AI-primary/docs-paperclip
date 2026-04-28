@@ -1,6 +1,5 @@
 ---
 name: Technicalseo
-human_name: Technicalseo
 slug: contentforge-ai-technicalseo
 reportsTo: contentforge-ai-contentmaestro
 skills:

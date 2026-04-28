@@ -1,6 +1,5 @@
 ---
 name: Onboard Master
-human_name: Onboard Master
 slug: saasforge-ai-onboardmaster
 skills:
   - saasforge-ai-onboardmaster

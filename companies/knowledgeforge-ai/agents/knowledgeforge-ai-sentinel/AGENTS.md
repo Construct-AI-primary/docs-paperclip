@@ -1,6 +1,5 @@
 ---
 name: Sentinel
-human_name: Sentinel
 slug: knowledgeforge-ai-sentinel
 reportsTo: knowledgeforge-ai-coordinator
 skills:

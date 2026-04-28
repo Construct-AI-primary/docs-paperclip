@@ -1,6 +1,5 @@
 ---
 name: Probe
-human_name: Probe
 slug: probe-qualityforge-prompt-testing
 reportsTo: apex-qualityforge-ceo
 skills:

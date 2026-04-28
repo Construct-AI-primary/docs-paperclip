@@ -1,6 +1,5 @@
 ---
 name: Treasurer
-human_name: Treasurer
 slug: knowledgeforge-ai-treasurer
 reportsTo: knowledgeforge-ai-coordinator
 skills:

@@ -1,6 +1,5 @@
 ---
 name: Audio Engineer
-human_name: Audio Engineer
 slug: voiceforge-ai-audioengineer
 reportsTo: voiceforge-ai-voicemaestro
 skills:

@@ -1,6 +1,5 @@
 ---
 name: HSE Director
-human_name: HSE Director
 slug: hse-director-domainforge-hse-director
 reportsTo: orion-domainforge-ceo
 skills:

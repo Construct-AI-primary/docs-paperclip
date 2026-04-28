@@ -1,6 +1,5 @@
 ---
 name: Builder
-human_name: Builder
 slug: knowledgeforge-ai-builder
 reportsTo: knowledgeforge-ai-coordinator
 skills:

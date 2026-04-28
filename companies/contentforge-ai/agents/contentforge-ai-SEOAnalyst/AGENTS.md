@@ -1,6 +1,5 @@
 ---
 name: Seoanalyst
-human_name: Seoanalyst
 slug: contentforge-ai-seoanalyst
 reportsTo: contentforge-ai-contentmaestro
 skills:

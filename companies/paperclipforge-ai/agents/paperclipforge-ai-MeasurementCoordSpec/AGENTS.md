@@ -1,6 +1,5 @@
 ---
 name: Measurement Coord Spec
-human_name: Measurement Coord Spec
 slug: paperclipforge-ai-measurementcoordspec
 reportsTo: paperclipforge-ai-projectmaestro
 skills:

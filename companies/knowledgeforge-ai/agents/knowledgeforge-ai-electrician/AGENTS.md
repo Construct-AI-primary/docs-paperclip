@@ -1,6 +1,5 @@
 ---
 name: Electrician
-human_name: Electrician
 slug: knowledgeforge-ai-electrician
 reportsTo: knowledgeforge-ai-coordinator
 skills:

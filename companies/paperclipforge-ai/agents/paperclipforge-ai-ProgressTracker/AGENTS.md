@@ -1,6 +1,5 @@
 ---
 name: Progress Tracker
-human_name: Progress Tracker
 slug: paperclipforge-ai-progresstracker
 reportsTo: paperclipforge-ai-projectmaestro
 skills:

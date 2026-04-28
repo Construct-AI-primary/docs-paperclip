@@ -1,6 +1,5 @@
 ---
 name: Chemist
-human_name: Chemist
 slug: knowledgeforge-ai-chemist
 reportsTo: knowledgeforge-ai-coordinator
 skills:

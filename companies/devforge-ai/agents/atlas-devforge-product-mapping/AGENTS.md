@@ -1,6 +1,5 @@
 ---
 name: Atlas
-human_name: Atlas
 slug: atlas-devforge-product-mapping
 reportsTo: nexus-devforge-ceo
 skills:

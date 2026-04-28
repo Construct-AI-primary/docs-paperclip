@@ -1,6 +1,5 @@
 ---
 name: Strategos
-human_name: Strategos
 slug: strategos-devforge-strategic-planning
 reportsTo: nexus-devforge-ceo
 skills:

@@ -1,6 +1,5 @@
 ---
 name: Dataforge
-human_name: Dataforge
 slug: dataforge-devforge-data-transformation
 reportsTo: nexus-devforge-ceo
 skills:

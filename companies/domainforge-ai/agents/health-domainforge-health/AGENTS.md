@@ -1,6 +1,5 @@
 ---
 name: Health
-human_name: Health
 slug: health-domainforge-health
 reportsTo: orion-domainforge-ceo
 skills:

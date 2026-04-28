@@ -1,6 +1,5 @@
 ---
 name: Testingcoordinator
-human_name: Testingcoordinator
 slug: mobileforge-ai-testingcoordinator
 reportsTo: mobileforge-ai-mobilemaestro
 skills:

@@ -1,6 +1,5 @@
 ---
 name: Githubbranchmanager
-human_name: Githubbranchmanager
 slug: saasforge-ai-githubbranchmanager
 reportsTo: saasforge-ai-onboardmaster
 skills:

@@ -1,6 +1,5 @@
 ---
 name: Renderservicemanager
-human_name: Renderservicemanager
 slug: saasforge-ai-renderservicemanager
 reportsTo: saasforge-ai-onboardmaster
 skills:

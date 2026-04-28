@@ -1,6 +1,5 @@
 ---
 name: Directors
-human_name: Directors
 slug: knowledgeforge-ai-directors
 reportsTo: knowledgeforge-ai-coordinator
 skills:

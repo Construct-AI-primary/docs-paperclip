@@ -1,6 +1,5 @@
 ---
 name: Storycraft
-human_name: Storycraft
 slug: storycraft-devforge-product-storytelling
 reportsTo: nexus-devforge-ceo
 skills:

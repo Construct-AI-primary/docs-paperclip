@@ -1,6 +1,5 @@
 ---
 name: Uxdesigner
-human_name: Uxdesigner
 slug: contentforge-ai-uxdesigner
 reportsTo: contentforge-ai-contentmaestro
 skills:

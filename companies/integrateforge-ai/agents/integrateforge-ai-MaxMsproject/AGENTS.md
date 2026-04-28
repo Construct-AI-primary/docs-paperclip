@@ -1,6 +1,5 @@
 ---
 name: Maxmsproject
-human_name: Maxmsproject
 slug: integrateforge-ai-maxmsproject
 reportsTo: integrateforge-ai-ziggyorchestrator
 skills:

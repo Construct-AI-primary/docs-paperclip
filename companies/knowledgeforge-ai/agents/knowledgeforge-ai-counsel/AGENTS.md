@@ -1,6 +1,5 @@
 ---
 name: Counsel
-human_name: Counsel
 slug: knowledgeforge-ai-counsel
 reportsTo: knowledgeforge-ai-coordinator
 skills:

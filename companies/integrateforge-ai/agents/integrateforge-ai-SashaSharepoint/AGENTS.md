@@ -1,6 +1,5 @@
 ---
 name: Sashasharepoint
-human_name: Sashasharepoint
 slug: integrateforge-ai-sashasharepoint
 reportsTo: integrateforge-ai-ziggyorchestrator
 skills:

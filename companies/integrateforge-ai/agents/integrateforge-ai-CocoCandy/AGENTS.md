@@ -1,6 +1,5 @@
 ---
 name: Cococandy
-human_name: Cococandy
 slug: integrateforge-ai-cococandy
 reportsTo: integrateforge-ai-ziggyorchestrator
 skills:

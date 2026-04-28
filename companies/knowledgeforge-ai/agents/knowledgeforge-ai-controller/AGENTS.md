@@ -1,6 +1,5 @@
 ---
 name: Controller
-human_name: Controller
 slug: knowledgeforge-ai-controller
 reportsTo: knowledgeforge-ai-coordinator
 skills:

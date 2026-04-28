@@ -1,6 +1,5 @@
 ---
 name: Simulator
-human_name: Simulator
 slug: simulator-qualityforge-workflow-simulation
 reportsTo: apex-qualityforge-ceo
 skills:

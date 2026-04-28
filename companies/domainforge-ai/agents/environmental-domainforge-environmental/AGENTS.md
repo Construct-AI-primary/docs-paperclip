@@ -1,6 +1,5 @@
 ---
 name: Environmental
-human_name: Environmental
 slug: environmental-domainforge-environmental
 reportsTo: orion-domainforge-ceo
 skills:

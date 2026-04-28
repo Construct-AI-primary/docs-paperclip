@@ -1,6 +1,5 @@
 ---
 name: Chief of Staff
-human_name: Chief of Staff
 slug: execforge-ai-chiefofstaff
 skills:
   - execforge-ai-chiefofstaff

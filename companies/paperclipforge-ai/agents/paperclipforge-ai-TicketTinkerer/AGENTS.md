@@ -1,6 +1,5 @@
 ---
 name: Ticket Tinkerer
-human_name: Ticket Tinkerer
 slug: paperclipforge-ai-tickettinkerer
 reportsTo: paperclipforge-ai-projectmaestro
 skills:

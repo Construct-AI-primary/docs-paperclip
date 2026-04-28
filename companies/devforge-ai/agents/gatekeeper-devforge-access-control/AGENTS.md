@@ -1,6 +1,5 @@
 ---
 name: Gatekeeper
-human_name: Gatekeeper
 slug: gatekeeper-devforge-access-control
 reportsTo: nexus-devforge-ceo
 skills:

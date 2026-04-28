@@ -1,6 +1,5 @@
 ---
 name: Catalyst
-human_name: Catalyst
 slug: catalyst-devforge-product-innovation
 reportsTo: nexus-devforge-ceo
 skills:

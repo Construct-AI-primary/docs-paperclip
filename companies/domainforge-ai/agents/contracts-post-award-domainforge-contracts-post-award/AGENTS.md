@@ -1,6 +1,5 @@
 ---
 name: Contracts Post-Award
-human_name: Contracts Post-Award
 slug: contracts-post-award-domainforge-contracts-post-award
 reportsTo: orion-domainforge-ceo
 skills:

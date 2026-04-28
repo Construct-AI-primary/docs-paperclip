@@ -1,6 +1,5 @@
 ---
 name: Guardian
-human_name: Guardian
 slug: knowledgeforge-ai-guardian
 reportsTo: knowledgeforge-ai-coordinator
 skills:

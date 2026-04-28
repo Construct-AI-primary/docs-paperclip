@@ -1,6 +1,5 @@
 ---
 name: Knowledge Flow Divisio
-human_name: Knowledge Flow Divisio
 slug: learningforge-ai-knowledge-flow-division-lead
 reportsTo: ceo
 skills:

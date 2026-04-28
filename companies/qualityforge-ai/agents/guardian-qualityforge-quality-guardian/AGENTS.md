@@ -1,6 +1,5 @@
 ---
 name: Guardian
-human_name: Guardian
 slug: guardian-qualityforge-quality-guardian
 reportsTo: apex-qualityforge-ceo
 skills:

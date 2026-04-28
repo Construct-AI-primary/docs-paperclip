@@ -1,6 +1,5 @@
 ---
 name: Risk Analyst
-human_name: Risk Analyst
 slug: paperclipforge-ai-riskanalyst
 reportsTo: paperclipforge-ai-projectmaestro
 skills:

@@ -1,6 +1,5 @@
 ---
 name: Alex
-human_name: Alex
 slug: alex-loopy-deep-research
 reportsTo: vision-loopy-ceo
 skills:

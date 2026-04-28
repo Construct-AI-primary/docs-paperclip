@@ -1,6 +1,5 @@
 ---
 name: Governor
-human_name: Governor
 slug: knowledgeforge-ai-governor
 reportsTo: knowledgeforge-ai-coordinator
 skills:

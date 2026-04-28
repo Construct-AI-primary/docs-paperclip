@@ -1,6 +1,5 @@
 ---
 name: Environmentalist
-human_name: Environmentalist
 slug: knowledgeforge-ai-environmentalist
 reportsTo: knowledgeforge-ai-coordinator
 skills:

@@ -1,6 +1,5 @@
 ---
 name: Equipment Innovation
-human_name: Equipment Innovation
 slug: learningforge-ai-equipment-innovation-research
 reportsTo: ceo
 skills:

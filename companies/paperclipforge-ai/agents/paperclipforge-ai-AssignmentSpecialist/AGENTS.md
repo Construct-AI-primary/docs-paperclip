@@ -1,6 +1,5 @@
 ---
 name: Assignment Specialist
-human_name: Assignment Specialist
 slug: paperclipforge-ai-assignmentspecialist
 reportsTo: paperclipforge-ai-projectmaestro
 skills:

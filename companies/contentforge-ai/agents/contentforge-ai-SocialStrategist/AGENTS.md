@@ -1,6 +1,5 @@
 ---
 name: Socialstrategist
-human_name: Socialstrategist
 slug: contentforge-ai-socialstrategist
 reportsTo: contentforge-ai-contentmaestro
 skills:
