@@ -7,7 +7,7 @@ blocked_by: []
 depends_on: ["PROCURE-001", "PROCURE-002", "PROCURE-005"]
 para_section: testing/projects/PROCURE-TEST/desktop/issues
 phase: 4 — Advanced Features
-status: backlog
+status: todo
 priority: Medium
 story_points: 5
 due_date: "2026-05-04"

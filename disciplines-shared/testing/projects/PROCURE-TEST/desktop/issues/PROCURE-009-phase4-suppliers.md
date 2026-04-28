@@ -1,13 +1,13 @@
 ---
 id: PROCURE-009
-title: 01900 Suppliers — Directory, Setup & Contact Scraper
-description: Verify supplier directory, supplier setup modal, contact scraper, and all 3 supplier card JSONs (STEELCO, CONCRETECO, ELECTRICO) function correctly
+title: 01900 Suppliers — Directory, Setup Modal, Contact Scraper & Card JSONs
+description: Verify supplier directory pagination, setup modal CRUD, contact scraper extraction, and all 3 supplier card JSONs (STEELCO, CONCRETECO, ELECTRICO) function correctly
 labels: ["testing", "procurement", "4 — Advanced Features"]
 blocked_by: []
 depends_on: ["PROCURE-001", "PROCURE-002"]
 para_section: testing/projects/PROCURE-TEST/desktop/issues
 phase: 4 — Advanced Features
-status: backlog
+status: todo
 priority: Medium
 story_points: 5
 due_date: "2026-05-04"
@@ -24,7 +24,7 @@ goals:
   task_goal: "Execute supplier CRUD, contact scraping, card JSON validation with >85% pass rate"
 ---
 
-# PROCURE-009: 01900 Suppliers — Directory, Setup & Contact Scraper
+# PROCURE-009: 01900 Suppliers — Directory, Setup Modal, Contact Scraper & Card JSONs
 
 ## Executive Summary
 **Objective**: Validate all supplier-related components on the 01900 procurement page — directory pagination, setup modal CRUD, contact scraper extraction, and supplier card JSONs.

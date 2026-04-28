@@ -7,7 +7,7 @@ blocked_by: []
 depends_on: ["PROCURE-001", "PROCURE-005", "MEASURE-TENDER-004"]
 para_section: testing/projects/PROCURE-TEST/desktop/issues
 phase: 5 — Compliance & Sign-off
-status: backlog
+status: todo
 priority: High
 story_points: 8
 due_date: "2026-05-06"

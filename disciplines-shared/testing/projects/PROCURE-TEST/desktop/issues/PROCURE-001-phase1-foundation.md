@@ -7,9 +7,9 @@ blocked_by: []
 depends_on: []
 para_section: testing/projects/PROCURE-TEST/desktop/issues
 phase: 1 — Foundation
-status: backlog
+status: todo
 priority: Critical
-story_points: 5
+story_points: 3
 due_date: "2026-05-01"
 assignee: validator-qualityforge
 company: qualityforge-ai

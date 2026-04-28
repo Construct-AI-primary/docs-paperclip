@@ -99,7 +99,7 @@ RETURNING id;
 **PROCURE-TEST example**:
 - Title: `QC-ROOT-PROCUREMENT-2026 — 01900 Procurement Test Knowledge Bundle`
 - Origin fingerprint: `procure-test-root-issue`
-- Issue ID created: `30745f34-0b6c-45b4-a35e-e3cc87c6c00f`
+- Issue ID created: `14c8e814-caed-47bc-95cb-0f1e77d4e592` (updated 2026-04-28)
 
 ## Step 4: Upload Documents
 
@@ -487,7 +487,7 @@ conn.close()
 | Step | Details |
 |------|---------|
 | **Company** | QualityForge AI (`f535f9bc-00be-4b6d-9f53-c53abfacacef`) |
-| **Issue** | `30745f34-0b6c-45b4-a35e-e3cc87c6c00f` |
+| **Issue** | `14c8e814-caed-47bc-95cb-0f1e77d4e592` |
 | **Total documents uploaded** | 9 (5 knowledge + 4 project-level) |
 | **Database** | `db.gmorarhibiptvcrnvrpi.supabase.co` |
 | **Date** | 2026-04-28 |

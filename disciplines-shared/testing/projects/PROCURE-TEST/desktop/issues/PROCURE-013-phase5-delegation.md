@@ -3,11 +3,11 @@ id: PROCURE-013
 title: 01900 Agent Delegation — CEO→Subordinate Heartbeat Validation
 description: Verify CEO→subordinate delegation flow creates sub-tasks via assigneeAgentId+parentId, heartbeat detects assignments, and status propagates upward
 labels: ["testing", "procurement", "5 — Compliance & Sign-off"]
-blocked_by: []
+blocked_by: ["AGENT-CONTENT-REMEDIATION"]
 depends_on: ["PROCURE-001"]
 para_section: testing/projects/PROCURE-TEST/desktop/issues
 phase: 5 — Compliance & Sign-off
-status: backlog
+status: todo
 priority: High
 story_points: 5
 due_date: "2026-05-05"
