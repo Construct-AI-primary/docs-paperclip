@@ -248,13 +248,41 @@ INSERT INTO agent_skill_assignments (
 ```
 
 Common skill keys for PROCURE-TEST agents:
-- `procurement-domain-knowledge` — DomainForge procurement agents
-- `database-testing` — Database/Verifier agents
-- `browser-ui-testing` — Tester/Validator agents
-- `integration-testing`, `api-testing` — Integration/QA agents
-- `compliance-validation`, `standards-compliance` — Sentinel agents
-- `knowledge-extraction` — KnowledgeForge extraction agents
-- `ai-team-coordination`, `cross-team-coordination` — Director/oversight agents
+- `procurement-domain-knowledge` — DomainForge procurement agents (company_skill)
+- `procurement-testing` — Validate procurement workflows, skills, data extraction, compliance, and integration (shared_skill — assign to ALL agents)
+- `database-testing` — InfraForge Database/Verifier agents (company_skill)
+- `browser-ui-testing` — Tester/Validator agents (company_skill)
+- `integration-testing`, `api-testing` — Integration/QA agents (company_skill)
+- `compliance-validation`, `standards-compliance` — Sentinel agents (company_skill)
+- `knowledge-extraction`, `knowledge-management` — KnowledgeForge agents (company_skill)
+- `ai-team-coordination`, `cross-team-coordination` — Director/oversight agents (company_skill)
+- `output-validation-checklist` — Use before delivering any work product to validate quality (shared_skill)
+- `feedback-integration` — Use when receiving feedback from reviews, testing, QA, or HITL (shared_skill)
+- `edge-case-analysis` — Use to identify and test boundary conditions, unusual inputs, or error paths (shared_skill)
+- `regression-prevention` — Use to ensure changes don't break existing functionality (shared_skill)
+- `risk-assessment` — Use when evaluating potential risks before decisions or initiatives (shared_skill)
+- `audit-trail-management` — Use when maintaining records of actions, decisions, and changes (shared_skill)
+- `documentation-quality-check` — Use before delivering documentation to validate quality (shared_skill)
+- `status-reporting` — Use when reporting progress, status updates, or completion of work (shared_skill)
+- `escalation-management` — Use when encountering blockers, unresolved issues, or out-of-scope problems (shared_skill)
+- `handoff-protocol` — Use when passing work, tasks, or deliverables between agents (shared_skill)
+
+**Note**: Skills marked `(company_skill)` are procured by the company and not in the global `shared_skills` table — they were assigned before this configuration round. Skills marked `(shared_skill)` exist in `shared_skills` and are assigned with `source = 'shared_skills'`.
+
+### Skill Assignment Audit
+
+Before assigning skills, check which skills already exist in `shared_skills` and which are `company_skills`:
+
+```sql
+-- Check if a skill key exists in shared_skills
+SELECT key, name, description FROM shared_skills WHERE key = '<skill-key>';
+
+-- List all skills already assigned to an agent, with their source
+SELECT sa.skill_key, sa.source
+FROM agent_skill_assignments sa
+WHERE sa.agent_id = '<agent-uuid>'
+ORDER BY sa.skill_key;
+```
 
 ### Full Python Configuration Script Template
 
@@ -358,9 +386,15 @@ WHERE a.id IN ('<agent-uuid-1>', '<agent-uuid-2>');
 | metadata.knowledge_bundle | QC issue + doc keys per role | 16 agents across 4 companies |
 | capabilities | Procurement/testing capabilities appended | 16 agents |
 | runtime_config | knowledge_prompt + qc issue ref | 16 agents |
-| agent_skill_assignments | 25 skill rows from shared_skills | 16 agents |
+| agent_skill_assignments | 97 skill rows (25 initial + 48 additional shared_skills + pre-existing company_skills) | 16 agents |
 
-**Script**: `/tmp/configure_procure_agents_v2.py`
+**Final skill distribution per agent**:
+- **QualityForge AI**: Validator (10), Tester (9), Sentinel (6), Integration (9)
+- **DomainForge AI**: Evaluator (5), Hayden (5), Procurement analytics (4), Supplier management (4), Procurement strategy (5), Procurement director domain specialist (8), Contract administration (4)
+- **InfraForge AI**: Database (8), Verifier (6)
+- **KnowledgeForge AI**: Docs analyzer (5), Extractor (3), Director procurement (6)
+
+**Scripts**: `/tmp/configure_procure_agents_v2.py` (initial 25 skills), `/tmp/configure_procure_agents_v3.py` (48 additional shared_skills)
 
 ## Step 6: Verify Upload
 
