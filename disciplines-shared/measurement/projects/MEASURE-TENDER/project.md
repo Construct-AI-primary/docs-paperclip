@@ -3,7 +3,26 @@ title: "MEASURE-TENDER Project"
 description: "Multi-Type Procurement Tender System - Parallel database architecture for builder sub-vendor, materials, services, and work order tendering with gov.za integration pattern"
 gigabrain_tags: project, measurement, tender, subcontract, materials, services, purchase-order, work-order, builder-procurement, integration, parallel-tables
 para_section: disciplines-shared/measurement/projects/MEASURE-TENDER
-last_updated: 2026-04-25
+last_updated: 2026-04-28
+id: MEASURE-TENDER
+status: planning
+project_code: MEASURE-TENDER
+parent_goal: MEASURE-ROOT-2026
+discipline: Measurement — Procurement Tender System
+lead_agents:
+  - database-infraforge (InfraForge)
+  - procurement-domainforge-procurement-contracts (DomainForge)
+  - procurement-strategy-domainforge-procurement-strategy (DomainForge)
+  - loopy-ai (Loopy AI)
+cross_company:
+  - company: infraforge-ai
+    role: Database infrastructure, schema, API routes, RLS policies
+  - company: domainforge-ai
+    role: Integration service, UI domain logic, workflow orchestration, tender strategy
+  - company: loopy-ai
+    role: External portal public pages and admin dashboard execution
+  - company: qualityforge-ai
+    role: Cross-project coordination with PROCURE-TEST for UI component validation
 ---
 
 # MEASURE-TENDER Project
@@ -342,26 +361,32 @@ CREATE POLICY "Users can view quotation comparisons"
 ```
 projects/MEASURE-TENDER/
 ├── project.md                    # This file
+├── MEASURE-TENDER-implementation.md  # Consolidated implementation document
+├── plan.md                       # 4-phase execution plan
+├── knowledge/                    # Knowledge files
+│   ├── AGENT-DELEGATION-MAP.md
+│   ├── CROSS-COMPANY-RACI.md
+│   └── HEARTBEAT-MONITORING-CONFIG.md
 ├── desktop/
-│   └── issues/                   # Desktop platform issues
+│   └── issues/
+│       ├── ISSUE-GENERATION-STATUS.md
+│       └── MEASURE-TENDER-004-ui-dashboard.md
 ├── mobile/
-│   └── issues/                   # Mobile platform issues
+│   └── issues/
 ├── web/
-│   └── issues/                   # Web platform issues
+│   └── issues/
+│       ├── MEASURE-TENDER-006-external-tender-portal.md
+│       ├── MEASURE-TENDER-006a-public-portal.md
+│       └── MEASURE-TENDER-006b-admin-dashboard.md
 ├── trigger/
-│   └── issues/                   # Trigger/workflow issues
+│   └── issues/
 └── shared/
-    └── issues/                   # Cross-platform/shared issues
+    ├── .gitkeep
+    └── issues/
         ├── MEASURE-TENDER-001-database-schema.md
         ├── MEASURE-TENDER-002-integration-service.md
         ├── MEASURE-TENDER-003-api-routes.md
-        ├── MEASURE-TENDER-005-workflow-integration.md
-        ├── desktop/
-        │   └── issues/
-        │       └── MEASURE-TENDER-004-ui-dashboard.md
-        └── web/
-            └── issues/
-                └── MEASURE-TENDER-006-external-tender-portal.md
+        └── MEASURE-TENDER-005-workflow-integration.md
 ```
 
 ### Issue Summary
@@ -373,8 +398,8 @@ projects/MEASURE-TENDER/
 | [MEASURE-TENDER-003](./shared/issues/MEASURE-TENDER-003-api-routes.md) | API Routes & Authentication | Shared | High | 13 | Backlog |
 | [MEASURE-TENDER-004](./desktop/issues/MEASURE-TENDER-004-ui-dashboard.md) | Sub-vendor Portal Manager UI | Desktop | Medium | 13 | Backlog |
 | [MEASURE-TENDER-005](./shared/issues/MEASURE-TENDER-005-workflow-integration.md) | BUILDER-MEAS Workflow Integration | Shared | Critical | 21 | Backlog |
-| [MEASURE-TENDER-006a](./web/issues/MEASURE-TENDER-006a-public-portal.md) | External Portal - Public Pages | Web | High | 13 | Backlog |
-| [MEASURE-TENDER-006b](./web/issues/MEASURE-TENDER-006b-admin-dashboard.md) | External Portal - Admin Dashboard | Web | High | 21 | Backlog |
+| [MEASURE-TENDER-006a](./web/issues/MEASURE-TENDER-006a-public-portal.md) | External Portal — Public Pages | Web | High | 13 | Backlog |
+| [MEASURE-TENDER-006b](./web/issues/MEASURE-TENDER-006b-admin-dashboard.md) | External Portal — Admin Dashboard | Web | High | 21 | Backlog |
 
 **Total Story Points**: 115
 
@@ -419,10 +444,12 @@ projects/MEASURE-TENDER/
 - [ ] Integration with BUILDER-MEAS workflows complete
 - [ ] Security audit passed (no cross-tenant access)
 - [ ] Performance targets met (<5s sync time per source)
+- [ ] Cross-project coordination with PROCURE-TEST completed
+- [ ] Parent goal MEASURE-ROOT-2026 closed successfully
 
 ---
 
-**Document Version**: 1.0
-**Last Updated**: 2026-04-25
-**Project Lead**: IntegrateForge AI / MeasureForge AI
+**Document Version**: 1.1
+**Last Updated**: 2026-04-28
+**Project Lead**: MeasureForge AI / DomainForge AI
 **Status**: Planning

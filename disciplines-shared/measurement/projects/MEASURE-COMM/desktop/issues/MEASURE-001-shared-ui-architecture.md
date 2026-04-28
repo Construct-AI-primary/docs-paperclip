@@ -1,205 +1,71 @@
 ---
-title: "MEASURE-001: Shared UI Architecture"
+id: MEASURE-001
+title: "Shared UI Architecture"
 description: "Design and implement shared UI components for IntegrateForge measurement platform"
-gigabrain_tags: issue, measurement, ui, architecture, shared-components
+labels: [issue, measurement, ui, architecture, shared-components]
+blocked_by: []
+depends_on: []
 para_section: disciplines-non/02025-measurement/projects/MEASURE-COMM/desktop/issues
-last_updated: 2026-04-20
+phase: 1
 status: backlog
-priority: High
+priority: Critical
+story_points: 13
+due_date: 2026-05-15
+assignee: validator-qualityforge
+company: qualityforge-ai
+delegation:
+  parent_goal_id: "MEASURE-ROOT-2026"
+  delegation_prompt: "Decompose into sub-tasks as needed per heartbeat loop. Assign sub-tasks to subordinate agents via assigneeAgentId and parentId in the task API."
+  allowed_sub_assignees:
+    - forge-devforge-system-architecture
+    - interface-devforge-api-integration
+    - engineering-ui-specialist
+    - dev-loopy-technical-creative
+  heartbeat_frequency: "15min"
+goals:
+  company_goal: "Deliver a reusable shared UI component library that standardizes the IntegrateForge measurement platform across all 21+ integrations, reducing per-integration UI development time by 60%."
+  agent_goal: "Implement and validate all shared UI components (IntegrationCard, MeasurementGrid, AccuracyMeter, DisciplineBadge, ConnectionWizard, 4-Panel Layout) with full OAuth flow support and VS Code-style panel architecture."
+  task_goal: "Complete the shared UI component library with AG Grid integration, responsive breakpoints, inter-panel communication protocol, and AI chat interface integration."
 ---
 
 # MEASURE-001: Shared UI Architecture
 
-## Overview
+## Executive Summary
 
-Design and implement shared UI components that work across all IntegrateForge integrations (AutoCAD, Civil 3D, Revit, CostX, etc.)
+Design and implement shared UI components that work across all IntegrateForge integrations (AutoCAD, Civil 3D, Revit, CostX, etc.). The architecture follows a VS Code-style panel layout with an activity bar, primary/secondary sidebars, editor area, bottom panel area, and status bar. This component library will serve as the foundation for all measurement workflows across 21+ design tool integrations.
 
-## Requirements
+## Required Actions
 
-1. IntegrationCard component with OAuth flow
-2. MeasurementGrid with AG Grid spreadsheet
-3. AccuracyMeter with 100% indicator
-4. DisciplineBadge color-coded labels
-5. ConnectionWizard with 4-step OAuth
-6. 4-Panel UI Layout for measurement workflows (including AI chat interface)
+| # | Action | Owner | Status |
+|---|--------|-------|--------|
+| 1 | Design IntegrationCard component with OAuth flow | qualityforge-ai | ⏳ Pending |
+| 2 | Implement MeasurementGrid with AG Grid spreadsheet | qualityforge-ai | ⏳ Pending |
+| 3 | Build AccuracyMeter with 100% indicator | qualityforge-ai | ⏳ Pending |
+| 4 | Create DisciplineBadge color-coded labels | qualityforge-ai | ⏳ Pending |
+| 5 | Develop ConnectionWizard with 4-step OAuth | qualityforge-ai | ⏳ Pending |
+| 6 | Implement 4-Panel UI Layout for measurement workflows | qualityforge-ai | ⏳ Pending |
+| 7 | Integrate AI chat interface with measurement workflow | qualityforge-ai | ⏳ Pending |
+| 8 | Implement inter-panel communication protocol | qualityforge-ai | ⏳ Pending |
+| 9 | Add responsive behavior for tablet and mobile | qualityforge-ai | ⏳ Pending |
 
-## VS Code-Style Panel Architecture
+## Assigned Company & Agent
 
-### Panel Structure (VS Code Inspired)
-```javascript
-// VS Code-style collapsible panel interface
-const VSCodeStyleLayout = {
-  activityBar: {
-    position: 'left',
-    width: '48px',
-    component: 'ActivityBar',
-    icons: [
-      'Explorer',
-      'Measurement',
-      'Templates',
-      'AIAssistant',
-      'Settings'
-    ]
-  },
-  primarySideBar: {
-    position: 'left',
-    width: '300px',
-    collapsible: true,
-    component: 'PrimarySideBar',
-    views: [
-      'ProjectExplorer',
-      'DisciplineSelector',
-      'TemplateLibrary',
-      'StandardsPanel'
-    ]
-  },
-  editorArea: {
-    position: 'center',
-    component: 'EditorArea',
-    content: [
-      'DrawingViewer',
-      'MeasurementCanvas',
-      'AnnotationLayer',
-      'ValidationOverlay'
-    ]
-  },
-  secondarySideBar: {
-    position: 'right',
-    width: '300px',
-    collapsible: true,
-    component: 'SecondarySideBar',
-    views: [
-      'MeasurementGrid',
-      'PropertiesPanel',
-      'AuditTrail',
-      'ExportControls'
-    ]
-  },
-  panelArea: {
-    position: 'bottom',
-    height: '200px',
-    collapsible: true,
-    component: 'PanelArea',
-    tabs: [
-      'AIChat',
-      'Terminal',
-      'Output',
-      'Problems'
-    ]
-  },
-  statusBar: {
-    position: 'bottom',
-    height: '22px',
-    component: 'StatusBar',
-    indicators: [
-      'AccuracyMeter',
-      'ConnectionStatus',
-      'AgentStatus',
-      'ProgressIndicator'
-    ]
-  }
-};
-```
+- **Company:** qualityforge-ai
+- **Primary Agent:** validator-qualityforge
+- **Supporting Agents:**
+  - forge-devforge-system-architecture — Architecture review
+  - interface-devforge-api-integration — UI/API integration
+  - engineering-ui-specialist — Domain-specific UI validation
+  - dev-loopy-technical-creative — Creative design and UX
 
-### Panel Functionality (VS Code Style)
+## Required Skills
 
-#### Activity Bar (Left Edge)
-- **Explorer Icon**: Project tree and file navigation
-- **Measurement Icon**: Measurement tools and workflows
-- **Templates Icon**: Template library access
-- **AI Assistant Icon**: Chat interface toggle
-- **Settings Icon**: Configuration and preferences
-
-#### Primary Side Bar (Left, Collapsible)
-- **Project Explorer**: Hierarchical view of drawings and measurements
-- **Discipline Selector**: Civil, Electrical, Mechanical, Structural filters
-- **Template Library**: Quick access to measurement templates
-- **Standards Panel**: Real-time validation indicators and compliance status
-
-#### Editor Area (Center, Main Workspace)
-- **Drawing Viewer**: CAD drawing display with zoom/pan controls
-- **Measurement Canvas**: Interactive measurement tools and annotation layer
-- **Validation Overlay**: Real-time accuracy feedback and error highlighting
-- **Multi-Document Support**: Tabbed interface for multiple drawings
-
-#### Secondary Side Bar (Right, Collapsible)
-- **Measurement Grid**: Spreadsheet view of all measurements with AG Grid
-- **Properties Panel**: Selected element properties and attributes
-- **Audit Trail**: Change history and user activity log
-- **Export Controls**: CSV, Excel, PDF export options and format selection
-
-#### Panel Area (Bottom, Collapsible)
-- **AI Chat Tab**: Real-time conversation with specialized measurement agents
-- **Terminal Tab**: Command-line interface for advanced operations
-- **Output Tab**: System messages, processing logs, and status updates
-- **Problems Tab**: Validation errors, warnings, and compliance issues
-
-#### Status Bar (Bottom Edge)
-- **Accuracy Meter**: Real-time measurement accuracy percentage
-- **Connection Status**: Integration connection indicators (AutoCAD, Revit, etc.)
-- **Agent Status**: AI assistant availability and current activity
-- **Progress Indicator**: Long-running operation progress bars
-
-### Responsive Behavior (VS Code Style)
-```css
-/* VS Code-style responsive panel behavior */
-@media (max-width: 1400px) {
-  .primary-sidebar, .secondary-sidebar {
-    width: 250px; /* Slightly narrower sidebars */
-  }
-  .panel-area { height: 150px; } /* Shorter bottom panel */
-}
-
-@media (max-width: 1200px) {
-  .primary-sidebar, .secondary-sidebar {
-    width: 200px; /* Narrower for smaller screens */
-  }
-  .panel-area { height: 120px; }
-}
-
-@media (max-width: 900px) {
-  /* Auto-hide sidebars on smaller screens */
-  .primary-sidebar, .secondary-sidebar {
-    position: absolute;
-    z-index: 1000;
-    box-shadow: 0 0 10px rgba(0,0,0,0.3);
-  }
-  .primary-sidebar { left: -200px; } /* Hidden off-screen */
-  .secondary-sidebar { right: -200px; }
-  .panel-area { height: 100px; }
-}
-
-@media (max-width: 600px) {
-  /* Mobile: hide all panels, show only editor area */
-  .primary-sidebar, .secondary-sidebar, .panel-area {
-    display: none;
-  }
-  .activity-bar { width: 40px; } /* Narrower activity bar */
-  .editor-area { width: 100%; }
-  .status-bar { height: 20px; } /* Shorter status bar */
-}
-```
-
-### Panel Communication
-```javascript
-// Inter-panel communication protocol
-const PanelCommunication = {
-  // Left panel → Center panel
-  onTemplateSelected: (template) => {
-    centerPanel.loadTemplate(template);
-  },
-
-  // Center panel → Right panel
-  onMeasurementSelected: (measurement) => {
-    rightPanel.showProperties(measurement);
-  },
-
-  // Right panel → Center panel
-  onMeasurementUpdated: (measurement) => {
-    centerPanel.updateAnnotation(measurement);
-  }
-};
-```
+- `ui-component-development`
+- `react-typescript`
+- `ag-grid-integration`
+- `oauth-flow-implementation`
+- `responsive-design`
+- `cross-application-integration`
 
 ## Acceptance Criteria
 
@@ -213,11 +79,29 @@ const PanelCommunication = {
 - [ ] Panel communication protocol functions properly
 - [ ] Responsive behavior works on tablets and mobile
 
-## Assignee
+## Dependencies
 
-TBD - IntegrateForge UI Team
+- BLOCKED BY: None
+- BLOCKS: MEASURE-003 (Discipline Integration)
+
+## Estimated Duration
+
+4 weeks (160 hours total)
+
+## Risk Level
+
+Medium — Shared UI is foundational but well-understood technology; risk is in scope management across 21 integrations.
+
+## QC Team Checks
+
+- [ ] Code review completed by qualityforge-ai
+- [ ] UI/UX review completed by loopy-ai
+- [ ] Integration tests pass for all 21 integrations
+- [ ] Accessibility audit passed (WCAG 2.1 AA)
+- [ ] Performance benchmarks met (< 2s initial load)
+- [ ] Documentation complete
 
 ## Related Components
 
-- ui/src/components/integrateforge/common/
-- ui/src/components/integrateforge/measurement/
+- `ui/src/components/integrateforge/common/`
+- `ui/src/components/integrateforge/measurement/`

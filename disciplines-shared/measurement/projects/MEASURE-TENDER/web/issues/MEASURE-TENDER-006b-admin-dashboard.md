@@ -1,4 +1,11 @@
 ---
+delegation:
+  parent_goal_id: "MEASURE-ROOT-2026"
+  delegation_prompt: "Decompose into sub-tasks as needed per heartbeat loop. Assign sub-tasks to subordinate agents via assigneeAgentId and parentId in the task API."
+  allowed_sub_assignees: []
+  heartbeat_frequency: "15min"
+goals:
+  company_goal: "Deliver MEASURE-TENDER subcontractor integration system"
 title: "MEASURE-TENDER-006b: External Portal - Admin Dashboard"
 description: "Create internal admin dashboard for contracts pre-award team: tender management, evaluation, and award workflows"
 gigabrain_tags: issue, measurement, tender, external-portal, admin-dashboard, contracts-pre-award, evaluation, awards
@@ -8,171 +15,47 @@ depends_on: ["MEASURE-TENDER-001", "MEASURE-TENDER-003", "MEASURE-TENDER-006a"]
 para_section: disciplines-shared/measurement/projects/MEASURE-TENDER/web/issues
 last_updated: 2026-04-25
 status: backlog
+phase: "4 — Testing & Deployment"
 priority: High
 story_points: 21
-due_date: "2026-05-30"
-assigned_to: loopy-ai
+due_date: "2026-05-15"
+assignee: loopy-ai
 company: loopy-ai
 team: ui
 ---
 
 # MEASURE-TENDER-006b: External Portal - Admin Dashboard
 
-## Overview
+## Executive Summary
 
-Create the **internal admin dashboard** for the contracts pre-award team. This issue focuses on authenticated internal user workflows: tender management, quotation evaluation, and award approvals.
+Create the **internal admin dashboard** for the contracts pre-award team. This issue focuses on authenticated internal user workflows: tender management, quotation evaluation, and award approvals. The dashboard serves contracts pre-award team, procurement officers, QS/measurement team, and management with role-specific capabilities.
 
-## User Groups
+## Required Actions
 
-| Role | Access | Capabilities |
-|------|--------|--------------|
-| Contracts Pre-Award Team | Full tender management | Create, publish, evaluate, award |
-| Procurement Officers | Tender coordination | Manage RFQs, track quotations |
-| QS/Measurement Team | BOQ linkage | Link BOQ to tender packages |
-| Management | Approval workflows | Approve awards, view reports |
+| Action | Details |
+|--------|---------|
+| Tender management | Create/edit/publish tenders from BOQ or manual entry |
+| Contracts pre-award dashboard | Active tenders, pending evaluations, award recommendations |
+| Quotation evaluation | Side-by-side comparison with multi-criteria scoring matrix (technical 40%, commercial 40%, B-BBEE 20%) |
+| Award workflow | Management approval queue, award letter generation, vendor notifications |
+| Vendor management | Registered vendor list, prequalification status, document verification, compliance tracking |
+| SSO integration | Single sign-on with ConstructAI for internal users |
+| Audit trail | Logging for all admin actions |
 
-## Page Structure
+## Assigned Company & Agent
 
-```
-tenders-admin.yourcompany.co.za/
-├── /admin/tenders              # Manage all tenders
-├── /admin/tenders/new          # Create new tender
-├── /admin/tenders/[id]         # Edit/publish tender
-├── /admin/evaluations          # Evaluation dashboard
-├── /admin/quotations           # All quotations
-├── /admin/vendors              # Vendor management
-└── /admin/awards               # Award approvals
-```
+- **Company**: loopy-ai
+- **Assignee**: loopy-ai
+- **Team**: ui
 
-## Core Features
+## Required Skills
 
-### 1. Tender Management
-
-**Pages**: `/admin/tenders/*`
-
-- **List View**: All tenders with status filters
-- **Create**: New tender from BOQ or manual entry
-- **Edit**: Update tender details, documents
-- **Publish**: Publish to external portal
-- **Timeline**: Extend closing dates, add addenda
-
-**Tender Form**:
-```typescript
-interface TenderForm {
-  title: string;
-  description: string;
-  trade_categories: string[];
-  scope_of_works: string;
-  specifications: string;
-  cidb_grading_required: string;
-  estimated_value: number;
-  closing_date: Date;
-  documents: Document[];
-}
-```
-
-### 2. Contracts Pre-Award Dashboard
-
-**Page**: `/admin/evaluations`
-
-Dashboard showing:
-- Active tenders with pending evaluations
-- Recent quotation submissions
-- Award recommendations pending approval
-- Evaluation deadline reminders
-
-**Dashboard Interface**:
-```typescript
-interface ContractsDashboard {
-  active_tenders: Tender[];
-  pending_evaluations: Evaluation[];
-  recent_submissions: Quotation[];
-  award_recommendations: Recommendation[];
-  approval_queue: Approval[];
-}
-```
-
-### 3. Quotation Evaluation
-
-**Page**: `/admin/quotations/[rfqId]`
-
-- Side-by-side quotation comparison
-- Multi-criteria scoring matrix:
-  - Technical compliance (40%)
-  - Commercial competitiveness (40%)
-  - B-BBEE contribution (20%)
-- Scoring visualization (bar charts)
-- Notes and comments per criterion
-- Rank ordering
-- Recommendation selection
-
-**Evaluation Interface**:
-```typescript
-interface EvaluationCriteria {
-  name: string;
-  weight: number;  // percentage
-  max_score: number;
-}
-
-interface QuotationEvaluation {
-  quotation_id: string;
-  criteria: {
-    name: string;
-    score: number;
-    notes: string;
-  }[];
-  total_score: number;
-  rank: number;
-  recommendation: 'award' | 'shortlist' | 'reject';
-}
-```
-
-### 4. Award Workflow
-
-**Page**: `/admin/awards`
-
-- Award recommendations list
-- Management approval queue
-- Award letter generation
-- Notification to winning vendor
-- Rejection notices to non-winning vendors
-
-### 5. Vendor Management
-
-**Page**: `/admin/vendors`
-
-- List of registered vendors
-- Prequalification status management
-- Document verification
-- Compliance tracking (CIDB, B-BBEE, Safety)
-- Performance history
-
-## Technology Stack
-
-- **Framework**: Next.js 14 with App Router
-- **UI**: React + Tailwind CSS
-- **Auth**: NextAuth.js with SSO to ConstructAI
-- **Database**: Shared with ConstructAI (Supabase)
-- **Email**: Integration with 03010 Email system
-
-## Design Requirements
-
-### Branding
-- Professional construction industry aesthetic
-- Match existing ConstructAI branding
-- Mobile-responsive for field access
-
-### UX Considerations
-- Efficient evaluation workflows
-- Clear scoring visualization
-- Quick award actions
-- Audit trail visibility
-
-### Security
-- SSO with ConstructAI for internal users
+- Next.js 14 (App Router)
+- React / TypeScript / Tailwind CSS
+- NextAuth.js with SSO
+- Data visualization (scoring charts)
 - Role-based access control
-- Audit logging for all actions
-- Approval workflow enforcement
+- Document management
 
 ## Acceptance Criteria
 
@@ -194,55 +77,31 @@ interface QuotationEvaluation {
 - NextAuth.js configuration with SSO
 - 03010 Email system integration
 
-## Files to Create
+## Estimated Duration
 
-```
-tender-portal/src/
-├── app/
-│   ├── (admin)/
-│   │   ├── admin/
-│   │   │   └── page.tsx           # Admin dashboard
-│   │   ├── tenders/
-│   │   │   ├── page.tsx           # Tender list
-│   │   │   ├── new/page.tsx       # Create tender
-│   │   │   └── [id]/page.tsx      # Edit tender
-│   │   ├── evaluations/
-│   │   │   └── page.tsx           # Evaluation dashboard
-│   │   ├── quotations/
-│   │   │   └── [rfqId]/page.tsx   # Quotation evaluation
-│   │   ├── vendors/
-│   │   │   └── page.tsx           # Vendor management
-│   │   └── awards/
-│   │       └── page.tsx           # Award approvals
-│   │
-│   └── api/
-│       ├── admin/tenders/route.ts
-│       ├── admin/evaluations/route.ts
-│       └── admin/awards/route.ts
-│
-├── components/
-│   ├── admin/
-│   │   ├── tender-form.tsx
-│   │   ├── tender-list.tsx
-│   │   └── vendor-card.tsx
-│   ├── evaluation/
-│   │   ├── evaluation-matrix.tsx
-│   │   ├── quotation-comparison.tsx
-│   │   └── scoring-panel.tsx
-│   └── awards/
-│       ├── award-list.tsx
-│       └── approval-workflow.tsx
-│
-└── lib/
-    ├── admin-auth.ts
-    └── admin-api.ts
-```
+- **Story Points**: 21
+- **Estimated Hours**: 20–30 hours
+- **Due Date**: 2026-05-15
+
+## Risk Level
+
+Medium — internal tool with procurement data handling; requires RBAC and audit trail enforcement.
+
+## QC Team Checks
+
+- [ ] Admin dashboard loads with correct role-based menus
+- [ ] Tender create/publish flow completes end-to-end
+- [ ] Evaluation matrix scores calculate correctly
+- [ ] Award approval workflow enforces required approvers
+- [ ] SSO login redirects correctly from ConstructAI
+- [ ] Audit logs capture all admin actions
+- [ ] Shared components from MEASURE-TENDER-006a remain functional
 
 ---
 
-**Issue Type**: Frontend Web Application
-**Estimated Hours**: 20-30 hours
-**Agent Assignment**: loopy-ai (Loopy AI)
+**Issue Type**: Frontend Web Application  
+**Estimated Hours**: 20–30 hours  
+**Agent Assignment**: loopy-ai (loopy-ai)  
 
-**Parent**: MEASURE-TENDER-006
+**Parent**: MEASURE-TENDER-006  
 **Sibling**: MEASURE-TENDER-006a (Public Pages)

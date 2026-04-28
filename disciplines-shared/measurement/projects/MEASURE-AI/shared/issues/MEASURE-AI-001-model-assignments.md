@@ -1,5 +1,14 @@
 ---
 id: MEASURE-AI-001
+delegation:
+  parent_goal_id: "MEASURE-ROOT-2026"
+  delegation_prompt: "Decompose into sub-tasks as needed per heartbeat loop. Assign sub-tasks to subordinate agents via assigneeAgentId and parentId in the task API."
+  allowed_sub_assignees: []
+  heartbeat_frequency: "15min"
+goals:
+  company_goal: "Validate measurement AI agent platform readiness"
+  agent_goal: "Execute measurement AI validation"
+  task_goal: "Complete AI validation with >90% pass rate"
 title: "AI Model Assignments for Measurement Agents"
 description: "Complete AI model assignments for all measurement platform agents"
 gigabrain_tags: issue, measurement, ai-models, model-assignments, anthropic, openai, agent-models
@@ -9,6 +18,15 @@ status: backlog
 priority: Critical
 ---
 
+delegation:
+  parent_goal_id: "MEASURE-ROOT-2026"
+  delegation_prompt: "Decompose into sub-tasks as needed per heartbeat loop. Assign sub-tasks to subordinate agents via assigneeAgentId and parentId in the task API."
+  allowed_sub_assignees: []
+  heartbeat_frequency: "15min"
+goals:
+  company_goal: "Validate measurement AI agent platform readiness"
+  agent_goal: "Execute measurement AI validation"
+  task_goal: "Complete AI validation with >90% pass rate"
 # MEASURE-AI-001: AI Model Assignments
 
 ## Executive Summary

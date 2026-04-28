@@ -1,17 +1,24 @@
 ---
+delegation:
+  parent_goal_id: "MEASURE-ROOT-2026"
+  delegation_prompt: "Decompose into sub-tasks as needed per heartbeat loop. Assign sub-tasks to subordinate agents via assigneeAgentId and parentId in the task API."
+  allowed_sub_assignees: []
+  heartbeat_frequency: "15min"
+goals:
+  company_goal: "Deliver MEASURE-TENDER subcontractor integration system"
 title: "MEASURE-TENDER-004: Sub-vendor Portal Manager UI"
 description: "Create React dashboard for managing subcontractor portal sources and RFQ workflows following the integration-management-page pattern"
 gigabrain_tags: issue, measurement, tender, ui-dashboard, react, tender-management, integration-ui
 labels: ["measurement", "tender", "frontend", "desktop"]
 blocked_by: []
-depends_on: ["MEASURE-TENDER-003"]
+depends_on: ["MEASURE-TENDER-003", "PROCURE-001"]
 para_section: disciplines-shared/measurement/projects/MEASURE-TENDER/desktop/issues
 last_updated: 2026-04-25
 status: backlog
 priority: Medium
 story_points: 13
 due_date: "2026-05-15"
-assigned_to: loopy-ai
+assignee: loopy-ai
 company: loopy-ai
 team: ui
 ---
@@ -200,8 +207,21 @@ export const SubcontractRFQService = {
 ## Dependencies
 
 - MEASURE-TENDER-003: API Routes must be complete
+- **PROCURE-001**: 01900 page foundation must be verified (login, nav, state buttons, logout)
+- **PROCURE-012**: CSS compliance pass provides styling constraints for new components
 - Existing React component patterns from ConstructAI
 - CSS styling system from existing pages
+
+## Post-Build Coordination with PROCURE-TEST
+
+After MEASURE-TENDER-004 builds the subcontract-rfq components:
+
+1. **PROCURE-005 regression**: Re-run to verify all 7 existing workspace modals remain functional alongside new subcontract-rfq components
+2. **PROCURE-009 verification**: SubcontractorDirectory.js loads alongside existing supplier cards
+3. **PROCURE-012 re-run**: Verify new components follow `A-01900-*` CSS naming conventions
+4. **PROCURE-015 execution**: Dedicated issue for subcontract-rfq component testing using 8-field metadata + delegation + QC checklist pattern
+
+This ensures the final combined page (existing 01900 components + new subcontract-rfq) is tested as a single unit before production sign-off.
 
 ## Files to Create
 

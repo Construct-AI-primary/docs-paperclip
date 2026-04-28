@@ -1,4 +1,11 @@
 ---
+delegation:
+  parent_goal_id: "MEASURE-ROOT-2026"
+  delegation_prompt: "Decompose into sub-tasks as needed per heartbeat loop. Assign sub-tasks to subordinate agents via assigneeAgentId and parentId in the task API."
+  allowed_sub_assignees: []
+  heartbeat_frequency: "15min"
+goals:
+  company_goal: "Deliver MEASURE-TENDER subcontractor integration system"
 title: "MEASURE-TENDER-003: API Routes & Authentication"
 description: "Create RESTful API routes for subcontractor RFQ management following the proven /api/tender-integration pattern"
 gigabrain_tags: issue, measurement, tender, api-routes, restful, authentication, express
@@ -8,152 +15,49 @@ depends_on: ["MEASURE-TENDER-001", "MEASURE-TENDER-002"]
 para_section: disciplines-shared/measurement/projects/MEASURE-TENDER/shared/issues
 last_updated: 2026-04-25
 status: backlog
+phase: "2 — Core Development"
 priority: High
 story_points: 13
-due_date: "2026-05-10"
-assigned_to: api-devforge
-company: devforge-ai
+due_date: "2026-05-04"
+assignee: procurement-domainforge-procurement-contracts
+company: domainforge-ai
 team: engineering
 ---
 
 # MEASURE-TENDER-003: API Routes & Authentication
 
-## Overview
+## Executive Summary
 
-Create the RESTful API routes for the Subcontract Tender Integration System following the proven pattern from `/api/tender-integration/*`. These routes will enable frontend clients and agents to manage subcontractor portal sources, RFQs, and quotations.
+Create the RESTful API routes for the Subcontract Tender Integration System following the proven pattern from `/api/tender-integration/*`. These routes will enable frontend clients and agents to manage subcontractor portal sources, RFQs, and quotations with Bearer token authentication, organization scoping, and role-based access control.
 
-## Requirements
+## Required Actions
 
-### API Route Structure
+| Action | Details |
+|--------|---------|
+| Implement API route structure | 20+ endpoints under `/api/subcontract-rfq/*` |
+| Bearer token auth | All routes require valid `Authorization: Bearer <token>` |
+| Organization scoping | All queries filtered by `organization_id` from token |
+| Role-based access | `procurement_officer`, `procurement_manager`, `admin` roles |
+| Rate limiting | General: 100 req/min, Sync: 10 req/min, Bulk: 5 req/min |
+| Error handling | Standardized error response format |
+| Request validation | Joi/Zod schemas for all inputs |
+| API documentation | OpenAPI/Swagger spec |
+| Route handler pattern | Consistent try/catch with status codes |
 
-```
-/api/subcontract-rfq/
-├── health                          GET    - System health status
-├── sources                         GET    - List all portal sources
-├── sources                         POST   - Register new source
-├── sources/:sourceId               GET    - Get source details
-├── sources/:sourceId               PUT    - Update source config
-├── sources/:sourceId               DELETE - Remove source
-├── sources/:sourceId/test           POST   - Test connection
-├── sources/:sourceId/sync           POST   - Trigger manual sync
-├── bulk/sync                       POST   - Sync multiple sources
-├── rfqs                            GET    - List RFQs (with filters)
-├── rfqs                            POST   - Create new RFQ
-├── rfqs/:rfqId                     GET    - Get RFQ details
-├── rfqs/:rfqId                     PUT    - Update RFQ
-├── rfqs/:rfqId                     DELETE - Cancel RFQ
-├── rfqs/:rfqId/publish             POST   - Publish to sub-vendors
-├── rfqs/:rfqId/close               POST   - Close bidding
-├── subcontractors                   GET    - List prequalified subs
-├── subcontractors                   POST   - Add subcontractor
-├── subcontractors/:subId           PUT    - Update prequal status
-├── quotations/:rfqId                GET    - Get comparison matrix
-├── quotations/:rfqId                POST   - Submit quotation
-├── quotations/:rfqId/:quoteId      PUT    - Update quotation
-├── quotations/:rfqId/:quoteId/recommend POST - Mark for award
-├── sync-history                    GET    - Get sync history
-├── sync-history/:sourceId           GET    - Get source sync history
-├── errors                          GET    - Get error logs
-└── errors/:errorId/resolve          POST   - Mark error resolved
-```
+## Assigned Company & Agent
 
-### Request/Response Examples
+- **Company**: domainforge-ai
+- **Assignee**: procurement-domainforge-procurement-contracts
+- **Team**: engineering
 
-#### Health Check
-```http
-GET /api/subcontract-rfq/health
-```
-```json
-{
-  "success": true,
-  "health": {
-    "service": "healthy",
-    "database": "healthy",
-    "sources_active": 3,
-    "sources_total": 5,
-    "last_sync": "2026-04-25T08:30:00Z"
-  }
-}
-```
+## Required Skills
 
-#### Create RFQ
-```http
-POST /api/subcontract-rfq/rfqs
-Content-Type: application/json
-
-{
-  "title": "Electrical Installation - Phase 1",
-  "description": "Complete electrical installation for building A",
-  "trade_category": "electrical",
-  "scope_of_works": "Full electrical installation including...",
-  "cidb_grading_required": "3GB",
-  "estimated_value": 2500000,
-  "closing_date": "2026-05-15T12:00:00Z",
-  "boq_reference_id": "uuid-here"
-}
-```
-
-#### Get Quotations Comparison
-```http
-GET /api/subcontract-rfq/quotations/{rfqId}
-```
-```json
-{
-  "success": true,
-  "rfq": {
-    "id": "uuid",
-    "rfq_number": "RFQ-2026-001",
-    "title": "Electrical Installation - Phase 1",
-    "status": "closed"
-  },
-  "quotations": [
-    {
-      "id": "uuid",
-      "subcontractor": {
-        "name": "ABC Electrical",
-        "cidb_grade": "3GB",
-        "bbbee_level": "1"
-      },
-      "quoted_amount": 2350000,
-      "technical_score": 85.5,
-      "commercial_score": 92.0,
-      "overall_score": 89.2,
-      "compliance_status": "compliant",
-      "recommended_for_award": true
-    }
-  ]
-}
-```
-
-### Authentication & Authorization
-
-1. **Bearer Token**: All routes require valid `Authorization: Bearer <token>`
-2. **Organization Scope**: All queries filtered by `organization_id` from token
-3. **Role-Based Access**:
-   - `procurement_officer`: Full CRUD on RFQs and quotations
-   - `procurement_manager`: All + approve awards
-   - `admin`: Full access including source management
-
-### Error Handling
-
-Standard error response format:
-```json
-{
-  "success": false,
-  "error": {
-    "code": "VALIDATION_ERROR",
-    "message": "Closing date must be in the future",
-    "field": "closing_date",
-    "details": {}
-  }
-}
-```
-
-### Rate Limiting
-
-- **General**: 100 requests/minute per organization
-- **Sync Operations**: 10 requests/minute per source
-- **Bulk Operations**: 5 requests/minute
+- Express.js / Node.js
+- RESTful API design
+- JWT / Bearer token authentication
+- Role-based access control (RBAC)
+- Request validation (Joi / Zod)
+- Rate limiting middleware
 
 ## Acceptance Criteria
 
@@ -169,60 +73,33 @@ Standard error response format:
 
 ## Dependencies
 
+- MEASURE-TENDER-001: Database Schema complete
 - MEASURE-TENDER-002: Integration Service must be complete
 - Express.js server infrastructure
 - Authentication middleware
 
-## Files to Create
+## Estimated Duration
 
-```
-server/src/routes/
-├── subcontract-rfq-routes.js          # Main route file
-├── middleware/
-│   ├── auth.js                        # Token verification
-│   ├── rbac.js                        # Role checking
-│   └── rate-limit.js                  # Rate limiting
-├── validators/
-│   ├── source-validators.js
-│   ├── rfq-validators.js
-│   └── quotation-validators.js
-└── tests/
-    └── subcontract-rfq.test.js
-```
+- **Story Points**: 13
+- **Estimated Hours**: 12–16 hours
+- **Due Date**: 2026-05-04
 
-## Route Handler Pattern
+## Risk Level
 
-```javascript
-// Example route handler pattern
-router.post('/rfqs', 
-  authenticateToken,
-  validateRFQInput,
-  async (req, res) => {
-    try {
-      const rfq = await subcontractService.createRFQ({
-        ...req.body,
-        organization_id: req.user.organization_id
-      });
-      
-      res.status(201).json({
-        success: true,
-        data: rfq
-      });
-    } catch (error) {
-      res.status(error.status || 500).json({
-        success: false,
-        error: {
-          code: error.code || 'INTERNAL_ERROR',
-          message: error.message
-        }
-      });
-    }
-  }
-);
-```
+Low — follows established `/api/tender-integration/*` pattern with standard Express.js middleware.
+
+## QC Team Checks
+
+- [ ] All 20+ routes respond correctly
+- [ ] Bearer token rejection verified for unauthenticated requests
+- [ ] Organization scoping tested with multi-tenant data
+- [ ] Role-based access enforced for each role level
+- [ ] Rate limiter triggers at configured thresholds
+- [ ] Error responses match standard format
+- [ ] Swagger/OpenAPI spec is current and accurate
 
 ---
 
-**Issue Type**: Backend API
-**Estimated Hours**: 12-16 hours
-**Agent Assignment**: api-devforge (DevForge AI)
+**Issue Type**: Backend API  
+**Estimated Hours**: 12–16 hours  
+**Agent Assignment**: procurement-domainforge-procurement-contracts (domainforge-ai)

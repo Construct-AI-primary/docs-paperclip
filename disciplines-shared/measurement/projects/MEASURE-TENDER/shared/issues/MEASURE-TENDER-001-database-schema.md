@@ -1,74 +1,71 @@
 ---
-title: "MEASURE-TENDER-001: Database Schema & RLS Policies"
-description: "Create 6 parallel database tables for subcontractor tender integration with clean RLS policies from day 1"
-gigabrain_tags: issue, measurement, tender, database-schema, rls-policies, supabase, security
+id: MEASURE-TENDER-001
+title: Database Schema & RLS Policies
+description: Create 6 parallel database tables for subcontractor tender integration with clean RLS policies from day 1
 labels: ["measurement", "tender", "database", "critical"]
 blocked_by: []
 depends_on: []
 para_section: disciplines-shared/measurement/projects/MEASURE-TENDER/shared/issues
-last_updated: 2026-04-25
+phase: "1 — Foundation"
 status: backlog
 priority: Critical
 story_points: 13
 due_date: "2026-05-01"
-assigned_to: database-infraforge
+assignee: database-infraforge
 company: infraforge-ai
-team: database
+delegation:
+  parent_goal_id: "MEASURE-ROOT-2026"
+  delegation_prompt: "Design and implement 6 parallel database tables for the subcontractor tender integration system with RLS policies, indexes, and migration scripts."
+  allowed_sub_assignees: []
+  heartbeat_frequency: "15min"
+goals:
+  company_goal: "Deliver a secure, isolated database schema for MEASURE-TENDER subcontractor integration"
+  agent_goal: "As database-infraforge, create 6 parallel tables with RLS policies and indexes, ensuring security separation from gov.za integration tables"
+  task_goal: "Execute schema migration with all 6 tables created, RLS enabled, indexes built, and rollback script generated"
 ---
 
 # MEASURE-TENDER-001: Database Schema & RLS Policies
 
-## Overview
+## Executive Summary
 
 Create the 6 parallel database tables for the Subcontract Tender Integration System (Option B architecture). This is a **security-first design** with RLS policies enforced from day 1 to prevent cross-contamination with the existing gov.za tender integration tables.
 
-## Requirements
+## Required Actions
 
-### Tables to Create
+| Step | Action | Expected Result |
+|------|--------|-----------------|
+| 1A | Create subcontract_portal_sources table | Portal/source configuration table created with RLS |
+| 1B | Create subcontract_rfq_sync_history table | Sync audit trail table created with RLS |
+| 1C | Create subcontract_rfq_error_logs table | Error tracking table created with RLS |
+| 1D | Create subcontract_rfqs table | Main RFQ tender data table created with RLS |
+| 1E | Create subcontractor_prequalification table | Subcontractor prequal records table created with RLS |
+| 1F | Create quotation_comparisons table | Bid comparison matrix table created with RLS |
+| 1G | Create indexes for common query patterns | Indexes on org_id, status, trade_category |
+| 1H | Write and test rollback script | Rollback drops all 6 tables cleanly |
 
-1. **`subcontract_portal_sources`** - Portal/source configuration
-2. **`subcontract_rfq_sync_history`** - Sync audit trail
-3. **`subcontract_rfq_error_logs`** - Error tracking
-4. **`subcontract_rfqs`** - Main RFQ tender data
-5. **`subcontractor_prequalification`** - Subcontractor prequal records
-6. **`quotation_comparisons`** - Bid comparison matrix
+## Assigned Company & Agent
 
-### Technical Requirements
+- **Company:** infraforge-ai
+- **Agent:** database-infraforge (Database Administrator)
+- **Sub-agents:** None
 
-1. All tables must have proper `organization_id` foreign key
-2. All tables must have `created_at` and `updated_at` timestamps
-3. All tables must have UUID primary keys using `gen_random_uuid()`
-4. All tables must have RLS enabled and proper policies
-5. All foreign key relationships must be properly defined
-6. Indexes for common query patterns (status, org_id, trade_category)
+## Required Skills
 
-### RLS Policies Required
-
-| Table | SELECT | INSERT | UPDATE | DELETE |
-|-------|--------|--------|--------|--------|
-| subcontract_portal_sources | org | org | org | org |
-| subcontract_rfq_sync_history | org | system | - | - |
-| subcontract_rfq_error_logs | org | system | - | - |
-| subcontract_rfqs | org | org | org | org |
-| subcontractor_prequalification | org | org | org | org |
-| quotation_comparisons | org | org | org | org |
-
-### Security Constraints
-
-1. **No cross-tenant access**: All policies MUST check `organization_id = current_user_org()`
-2. **No admin bypass**: RLS must be enforced even for service role
-3. **Separate credentials**: `credentials_encrypted` field must be isolated per table
-4. **Audit trail**: All sync operations logged with status and duration
+- database-administration
+- sql-migration
+- rls-policy-design
+- supabase-administration
 
 ## Acceptance Criteria
 
-- [ ] All 6 tables created with correct schema
-- [ ] All RLS policies created and tested
-- [ ] Foreign key relationships verified
-- [ ] Indexes created for query performance
+- [ ] All 6 tables created with correct schema (UUID PKs, organization_id FK, timestamps)
+- [ ] All tables have RLS enabled and proper organization-scoped policies
+- [ ] Foreign key relationships verified (subcontract_rfqs → subcontractor_prequalification, etc.)
+- [ ] Indexes created for org_id, status, trade_category query patterns
 - [ ] Test queries confirm no cross-tenant access
 - [ ] Migration script generated and tested
-- [ ] Rollback script generated
+- [ ] Rollback script generated and tested
+- [ ] Separate credential encryption from gov.za integration tables
 
 ## Dependencies
 
@@ -76,24 +73,20 @@ Create the 6 parallel database tables for the Subcontract Tender Integration Sys
 - Requires existing `users(id)` table
 - Must NOT depend on gov.za integration tables
 
-## Files to Create
+## Estimated Duration
 
-```
-sql/
-├── create_subcontract_tables.sql          # Main migration
-├── create_subcontract_indexes.sql          # Performance indexes
-└── rollback_subcontract_tables.sql         # Rollback if needed
-```
+8-12 hours
 
-## Notes
+## Risk Level
 
-- Follow the exact schema defined in the project.md
-- Use `ENABLE ROW LEVEL SECURITY` for all tables
-- Test RLS with different organization contexts
-- Ensure migration can be rolled back cleanly
+Critical — database schema is foundational; all other issues depend on it
 
----
+## QC Team Checks
 
-**Issue Type**: Database Migration
-**Estimated Hours**: 8-12 hours
-**Agent Assignment**: database-infraforge (InfraForge AI)
+- [ ] **subcontract_portal_sources:** Verify credentials_encrypted field + rate_limit_per_minute constraints
+- [ ] **subcontract_rfq_sync_history:** Verify sync_type, records_processed, status fields
+- [ ] **subcontract_rfq_error_logs:** Verify retry_count + resolved_at tracking
+- [ ] **subcontract_rfqs:** Verify all 4 tender_type values accepted, boq_reference_id FK
+- [ ] **subcontractor_prequalification:** Verify trade_categories GIN index, expiry_date constraints
+- [ ] **quotation_comparisons:** Verify recommended_for_award BOOLEAN, overall_score DECIMAL constraints
+- [ ] **RLS isolation:** Confirm organization-scoped policies work for SELECT/INSERT/UPDATE/DELETE

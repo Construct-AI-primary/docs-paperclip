@@ -1,4 +1,11 @@
 ---
+delegation:
+  parent_goal_id: "MEASURE-ROOT-2026"
+  delegation_prompt: "Decompose into sub-tasks as needed per heartbeat loop. Assign sub-tasks to subordinate agents via assigneeAgentId and parentId in the task API."
+  allowed_sub_assignees: []
+  heartbeat_frequency: "15min"
+goals:
+  company_goal: "Deliver MEASURE-TENDER subcontractor integration system"
 title: "MEASURE-TENDER-002: Subcontract Integration Service"
 description: "Implement subcontract-integration-service.js following the proven tender-integration-service.js pattern with parallel architecture"
 gigabrain_tags: issue, measurement, tender, integration-service, nodejs, tender-integration, parallel-pattern
@@ -8,110 +15,47 @@ depends_on: ["MEASURE-TENDER-001"]
 para_section: disciplines-shared/measurement/projects/MEASURE-TENDER/shared/issues
 last_updated: 2026-04-25
 status: backlog
+phase: "2 — Core Development"
 priority: High
 story_points: 21
-due_date: "2026-05-08"
-assigned_to: devcore-devforge
-company: devforge-ai
+due_date: "2026-05-03"
+assignee: procurement-domainforge-procurement-contracts
+company: domainforge-ai
 team: engineering
 ---
 
 # MEASURE-TENDER-002: Subcontract Integration Service
 
-## Overview
+## Executive Summary
 
-Implement `subcontract-integration-service.js` - a parallel integration service for managing subcontractor portal sources and RFQ synchronization. This service follows the **same proven pattern** as `tender-integration-service.js` from the gov.za integration but operates on separate tables to maintain security isolation.
+Implement `subcontract-integration-service.js` — a parallel integration service for managing subcontractor portal sources and RFQ synchronization. This service follows the **same proven pattern** as `tender-integration-service.js` from the gov.za integration but operates on separate tables to maintain security isolation. The service handles four integration types (API, Email, Portal Scraping, Manual Entry) with a robust sync engine, health monitoring, and error recovery.
 
-## Requirements
+## Required Actions
 
-### Service Architecture
+| Action | Details |
+|--------|---------|
+| Implement service class | Create `SubcontractIntegrationService` with full lifecycle management |
+| Source management | Add/update/remove subcontractor portal sources |
+| Health monitoring | Continuous health checks for all configured sources |
+| Sync management | Scheduled and on-demand RFQ synchronization |
+| Error recovery | Retry logic with exponential backoff and circuit breaker |
+| Metrics collection | Track sync performance and success rates |
+| Create connectors | Build 4 connector types: API, Email, Portal Scraping, Manual Entry |
+| Write unit tests | Core functionality coverage |
 
-1. **Source Registration**: Add/update/remove subcontractor portal sources
-2. **Health Monitoring**: Continuous health checks for all configured sources
-3. **Sync Management**: Scheduled and on-demand RFQ synchronization
-4. **Error Recovery**: Retry logic with exponential backoff
-5. **Metrics Collection**: Track sync performance and success rates
+## Assigned Company & Agent
 
-### Core Methods
+- **Company**: domainforge-ai
+- **Assignee**: procurement-domainforge-procurement-contracts
+- **Team**: engineering
 
-```javascript
-class SubcontractIntegrationService {
-  // Initialization
-  initialize(): Promise<void>
-  
-  // Source Management
-  registerSource(config: PortalSourceConfig): Promise<Source>
-  updateSource(sourceId: string, config: Partial<PortalSourceConfig>): Promise<Source>
-  removeSource(sourceId: string): Promise<void>
-  testConnection(sourceId: string): Promise<HealthStatus>
-  
-  // Sync Operations
-  syncSource(sourceId: string, options?: SyncOptions): Promise<SyncResult>
-  syncAll(options?: SyncOptions): Promise<SyncResult[]>
-  
-  // Health & Monitoring
-  getHealthStatus(): Promise<HealthStatus>
-  getSyncHistory(sourceId?: string): Promise<SyncHistory[]>
-  getErrorLogs(sourceId?: string, limit?: number): Promise<ErrorLog[]>
-  
-  // RFQ Management
-  createRFQ(rfq: RFQData): Promise<RFQ>
-  updateRFQ(rfqId: string, data: Partial<RFQData>): Promise<RFQ>
-  getRFQs(filters?: RQFFilters): Promise<RFQ[]>
-  
-  // Prequalification
-  prequalifySubcontractor(data: PrequalData): Promise<Prequalification>
-  validateSubcontractor(subId: string): Promise<ValidationResult>
-}
-```
+## Required Skills
 
-### Integration Types Supported
-
-1. **API Integration**: REST API with OAuth/API key authentication
-2. **Email Integration**: Parse RFQ emails with attachments
-3. **Portal Scraping**: Browser automation for portal logins
-4. **Manual Entry**: CSV/Excel upload for offline data
-
-### Sync Logic
-
-```javascript
-async syncSource(sourceId: string, options?: SyncOptions) {
-  const source = await this.getSource(sourceId);
-  const startTime = Date.now();
-  
-  try {
-    // 1. Fetch data from source
-    const rawData = await this.fetchFromSource(source);
-    
-    // 2. Normalize to standard format
-    const normalized = this.normalizeRFQs(rawData, source);
-    
-    // 3. Upsert to database
-    const result = await this.upsertRFQs(normalized);
-    
-    // 4. Log sync history
-    await this.logSyncHistory(sourceId, {
-      status: 'success',
-      duration: Date.now() - startTime,
-      recordsProcessed: result.total,
-      recordsAdded: result.added,
-      recordsUpdated: result.updated
-    });
-    
-    return result;
-  } catch (error) {
-    // Log error with retry logic
-    await this.handleError(sourceId, error);
-    throw error;
-  }
-}
-```
-
-### Error Recovery
-
-- **Retry Policy**: 3 attempts with exponential backoff (1s, 5s, 30s)
-- **Circuit Breaker**: Disable source after 5 consecutive failures
-- **Dead Letter Queue**: Store failed records for manual review
+- Node.js / JavaScript
+- REST API patterns and OAuth
+- Database operations (PostgreSQL)
+- Error handling and retry strategies
+- Testing (Jest or similar)
 
 ## Acceptance Criteria
 
@@ -130,54 +74,26 @@ async syncSource(sourceId: string, options?: SyncOptions) {
 - References: `tender-integration-service.js` for pattern reference
 - Node.js service (not React component)
 
-## Files to Create
+## Estimated Duration
 
-```
-server/src/services/
-├── subcontract-integration-service.js   # Main service
-├── rfq-normalizer.js                   # Data transformation
-├── portal-connectors/                  # Integration adapters
-│   ├── api-connector.js
-│   ├── email-connector.js
-│   ├── portal-connector.js
-│   └── manual-connector.js
-└── tests/
-    └── subcontract-integration.test.js
-```
+- **Story Points**: 21
+- **Estimated Hours**: 16–20 hours
+- **Due Date**: 2026-05-03
 
-## Reference Architecture
+## Risk Level
 
-The gov.za `tender-integration-service.js` pattern:
+Medium — follows established pattern from `tender-integration-service.js` but requires new connector types and parallel table architecture.
 
-```
-┌─────────────────────────────────────────────────────────┐
-│ TenderIntegrationService                                  │
-│                                                          │
-│  ┌─────────────┐  ┌─────────────┐  ┌─────────────┐    │
-│  │ OCDS API   │  │ eTenders    │  │ CSD         │    │
-│  │ Connector  │  │ Connector   │  │ Connector   │    │
-│  └──────┬─────┘  └──────┬─────┘  └──────┬─────┘    │
-│         │               │               │            │
-│         └───────────────┴───────────────┘            │
-│                         │                             │
-│                    ┌────▼────┐                       │
-│                    │ Sync    │                       │
-│                    │ Engine  │                       │
-│                    └────┬────┘                       │
-│                         │                             │
-│         ┌───────────────┼───────────────┐            │
-│         │               │               │            │
-│    ┌────▼────┐    ┌────▼────┐    ┌────▼────┐       │
-│    │ History │    │ Errors  │    │ Metrics │       │
-│    │ Logger │    │ Handler │    │ Collector│       │
-│    └─────────┘    └─────────┘    └─────────┘       │
-└─────────────────────────────────────────────────────────┘
-```
+## QC Team Checks
 
-Apply the **same architecture** to `subcontract-integration-service.js` with the 4 new connector types.
+- [ ] Code follows project patterns (tender-integration-service.js)
+- [ ] All 4 connector types implemented
+- [ ] Unit tests pass and cover edge cases
+- [ ] Error recovery and circuit breaker verified
+- [ ] No security isolation breaches via shared tables
 
 ---
 
-**Issue Type**: Backend Service
-**Estimated Hours**: 16-20 hours
-**Agent Assignment**: devcore-devforge (DevForge AI)
+**Issue Type**: Backend Service  
+**Estimated Hours**: 16–20 hours  
+**Agent Assignment**: procurement-domainforge-procurement-contracts (domainforge-ai)

@@ -10,6 +10,16 @@ priority: Critical
 assignee: measureforge-ai
 company: measureforge-ai
 ---
+delegation:
+  parent_goal_id: "MEASURE-ROOT-2026"
+  delegation_prompt: "Decompose into sub-tasks as needed per heartbeat loop. Assign sub-tasks to subordinate agents via assigneeAgentId and parentId in the task API."
+  allowed_sub_assignees: []
+  heartbeat_frequency: "15min"
+goals:
+  company_goal: "Validate MeasureForge agent swarm readiness"
+  agent_goal: "Execute agent swarm validation"
+  task_goal: "Complete swarm validation with >90% pass rate"
+
 
 # MEASURE-CAD-001: MeasureForge AI Swarm Implementation
 

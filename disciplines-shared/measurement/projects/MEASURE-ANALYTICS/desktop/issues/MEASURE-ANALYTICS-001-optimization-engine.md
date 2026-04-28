@@ -10,6 +10,16 @@ priority: Critical
 assignee: knowledgeforge-ai
 company: knowledgeforge-ai
 ---
+delegation:
+  parent_goal_id: "MEASURE-ROOT-2026"
+  delegation_prompt: "Decompose into sub-tasks as needed per heartbeat loop. Assign sub-tasks to subordinate agents via assigneeAgentId and parentId in the task API."
+  allowed_sub_assignees: []
+  heartbeat_frequency: "15min"
+goals:
+  company_goal: "Validate measurement analytics platform readiness"
+  agent_goal: "Execute measurement analytics validation"
+  task_goal: "Complete analytics validation with >90% pass rate"
+
 
 # MEASURE-ANALYTICS-001: Measurement Optimization Engine
 

@@ -1,371 +1,122 @@
 ---
-title: BUILDER-MEAS Procurement Agents Implementation
-description: Specialized agents for builder procurement segregation workflows
-author: Paperclip Orchestration System
-date: 2026-04-24
-version: 1.0
+id: BUILDER-MEAS-AGENTS
+title: "Builder Procurement Agents Implementation"
+description: "Specialized agents for builder procurement segregation workflows"
+labels: [issue, measurement, procurement, builder, agents, segregation]
+blocked_by: [MEASURE-003, MEASURE-004]
+depends_on: [MEASURE-003, MEASURE-004]
+para_section: disciplines-non/02025-measurement/projects/MEASURE-COMM/shared/issues
+phase: 4
 status: planning
-project_code: MEASURE-COMM
-discipline: 02025-measurement
+priority: High
+story_points: 34
+due_date: 2026-07-15
+assignee: procurement-strategy-domainforge-procurement-strategy
+company: domainforge-ai
+delegation:
+  parent_goal_id: "MEASURE-ROOT-2026"
+  delegation_prompt: "Decompose into sub-tasks as needed per heartbeat loop. Assign sub-tasks to subordinate agents via assigneeAgentId and parentId in the task API."
+  allowed_sub_assignees:
+    - procurement-classifier-builder
+    - subcontract-procurement-builder
+    - materials-procurement-builder
+    - service-procurement-builder
+    - workorder-procurement-builder
+    - supplier-matching-builder
+    - candy-integration-builder
+    - budget-monitoring-builder
+    - approval-routing-builder
+  heartbeat_frequency: "15min"
+goals:
+  company_goal: "Enable construction builders to extract material quantities from CAD drawings and segregate them into appropriate procurement categories (subcontracts, purchase orders, service orders, work orders) with integration to the PROC-ORDER workflow system."
+  agent_goal: "Implement 9 specialized procurement agents covering classification, subcontracting, materials procurement, service procurement, work orders, supplier matching, Candy integration, budget monitoring, and approval routing."
+  task_goal: "Complete all 9 procurement agents with end-to-end integration testing, PROC-ORDER workflow validation, and performance optimization achieving >95% classification accuracy and <15 minute order creation time."
 ---
 
-# Builder Procurement Segregation Agents Implementation
-
-## Overview
-
-This document outlines the specialized agents required for the builder procurement segregation workflows. These agents enable construction builders to extract material quantities from CAD drawings and segregate them into appropriate procurement categories (subcontracts, purchase orders, service orders, work orders) with integration to the PROC-ORDER workflow system.
-
-## Agent Architecture
-
-### Core Procurement Agents (9 Agents)
-
-| Agent ID | Name | Purpose | Company |
-|----------|------|---------|---------|
-| procurement-classifier-builder | Procurement Classifier | Analyzes measurements and routes to appropriate procurement categories | MeasureForge AI |
-| subcontract-procurement-builder | Subcontract Procurement Agent | Handles specialized trade subcontracts | MeasureForge AI |
-| materials-procurement-builder | Materials Procurement Agent | Manages purchase orders for materials | MeasureForge AI |
-| service-procurement-builder | Service Procurement Agent | Coordinates testing and inspection services | MeasureForge AI |
-| workorder-procurement-builder | Work Order Procurement Agent | Manages internal labor and tasks | MeasureForge AI |
-| supplier-matching-builder | Supplier Matching Agent | Matches requirements against approved supplier lists | MeasureForge AI |
-| candy-integration-builder | Candy Integration Agent | Direct export to Candy procurement system | MeasureForge AI |
-| budget-monitoring-builder | Budget Monitoring Agent | Tracks budget and variances | MeasureForge AI |
-| approval-routing-builder | Approval Routing Agent | Manages PROC-ORDER approvals | MeasureForge AI |
-
-## Agent Specifications
-
-### 1. Procurement Classifier Agent
-
-**Agent ID**: `procurement-classifier-builder`
-**Company**: MeasureForge AI
-**Purpose**: Analyzes CAD measurements and classifies them into appropriate procurement categories
-
-**Input**:
-- CAD measurement data (quantities, material types, specifications)
-- Material classification metadata
-- Project parameters (budget, timeline, complexity)
-
-**Processing**:
-- Analyze measurement data for material types
-- Classify items into procurement categories:
-  - Subcontract (specialized trades)
-  - Purchase Order (materials and equipment)
-  - Service Order (testing, maintenance, inspection)
-  - Work Order (internal labor)
-- Apply classification rules based on:
-  - Material type and specifications
-  - Trade specializations
-  - Service requirements
-  - Labor requirements
-
-**Output**:
-- Procurement type assignment for each measurement item
-- Classification confidence scores
-- Routing recommendations for PROC-ORDER integration
-
-**Skills Required**:
-- CAD measurement interpretation
-- Procurement classification rules
-- Material type recognition
-- Trade specialization knowledge
-
-### 2. Subcontract Procurement Agent
-
-**Agent ID**: `subcontract-procurement-builder`
-**Company**: MeasureForge AI
-**Purpose**: Handles specialized trade subcontracts (electrical, plumbing, HVAC, fire protection, structural steel)
-
-**Input**:
-- Subcontract classification data
-- Trade specifications and requirements
-- Approved subcontractor database
-- Project scope and timeline
-
-**Processing**:
-- Map trade requirements to subcontract categories
-- Match against approved subcontractor capabilities
-- Generate RFQ (Request for Quote) documents
-- Validate trade licensing and certifications
-- Score subcontractor compliance (ISO 9001, B-BBEE, insurance)
-
-**Output**:
-- Subcontract RFQ documents
-- Supplier shortlist with compliance scores
-- Trade specification summaries
-- Timeline and milestone recommendations
-
-**Skills Required**:
-- Trade specification interpretation
-- Subcontractor evaluation
-- RFQ document generation
-- Compliance scoring (CIDB, B-BBEE)
-
-### 3. Materials Procurement Agent
-
-**Agent ID**: `materials-procurement-builder`
-**Company**: MeasureForge AI
-**Purpose**: Manages purchase orders for materials and equipment
-
-**Input**:
-- Material schedules from CAD measurements
-- Quantity and specification data
-- Candy procurement system requirements
-- Supplier catalog data
-
-**Processing**:
-- Map materials to Candy categories
-- Aggregate quantities by supplier
-- Optimize bulk ordering
-- Generate purchase order data
-- Validate material specifications
-
-**Output**:
-- Purchase order data for Candy integration
-- Material specification summaries
-- Supplier assignments
-- Delivery scheduling recommendations
-
-**Skills Required**:
-- Material specification interpretation
-- Candy system integration
-- Bulk ordering optimization
-- Supplier catalog management
-
-### 4. Service Procurement Agent
-
-**Agent ID**: `service-procurement-builder`
-**Company**: MeasureForge AI
-**Purpose**: Coordinates testing, maintenance, and inspection services
-
-**Input**:
-- Service requirements from measurements
-- Testing and inspection specifications
-- Service provider database
-- Certification requirements
-
-**Processing**:
-- Classify service requirements
-- Match against certified service providers
-- Generate service order data
-- Validate provider certifications
-- Schedule service timelines
-
-**Output**:
-- Service order data
-- Provider assignments
-- Certification verification reports
-- Service scheduling recommendations
-
-**Skills Required**:
-- Service requirement analysis
-- Provider certification verification
-- Service order generation
-- Timeline scheduling
-
-### 5. Work Order Procurement Agent
-
-**Agent ID**: `workorder-procurement-builder`
-**Company**: MeasureForge AI
-**Purpose**: Manages internal labor and construction task management
-
-**Input**:
-- Work order requirements
-- Labor skill requirements
-- Equipment allocation needs
-- Project timeline and milestones
-
-**Processing**:
-- Define work order scope
-- Allocate labor resources
-- Schedule work tasks
-- Track productivity metrics
-- Generate work order documentation
-
-**Output**:
-- Work order documents
-- Labor allocation plans
-- Equipment scheduling
-- Productivity tracking metrics
-
-**Skills Required**:
-- Work order scope definition
-- Labor resource allocation
-- Equipment scheduling
-- Productivity tracking
-
-### 6. Supplier Matching Agent
-
-**Agent ID**: `supplier-matching-builder`
-**Company**: MeasureForge AI
-**Purpose**: Matches procurement requirements against approved supplier lists
-
-**Input**:
-- Procurement requirements
-- Supplier capability data
-- Approved supplier database
-- Compliance scoring criteria
-
-**Processing**:
-- Match requirements to supplier capabilities
-- Apply compliance scoring algorithm:
-  ```
-  Compliance Score = 
-    (ISO 9001 Certified ? 0.3 : 0) +
-    (B-BBEE Level 1 ? 0.3 : B-BBEE Level 2 ? 0.25 : B-BBEE Level 3 ? 0.2 : B-BBEE Level 4 ? 0.15 : 0) +
-    (Financial Stability A ? 0.2 : Financial Stability B ? 0.15 : 0)
-  ```
-- Validate geographic coverage
-- Check delivery capabilities
-- Generate supplier shortlist
-
-**Output**:
-- Supplier matches with compliance scores
-- Capability validation reports
-- Geographic coverage analysis
-- Delivery capability assessment
-
-**Skills Required**:
-- Supplier capability analysis
-- Compliance scoring
-- Geographic coverage mapping
-- Delivery capability assessment
-
-### 7. Candy Integration Agent
-
-**Agent ID**: `candy-integration-builder`
-**Company**: MeasureForge AI
-**Purpose**: Direct export to Candy procurement system
-
-**Input**:
-- Material schedules
-- Purchase order data
-- Supplier assignments
-- Delivery requirements
-
-**Processing**:
-- Map materials to Candy categories
-- Format data for Candy API
-- Submit orders to Candy system
-- Track order status
-- Handle order confirmations
-
-**Output**:
-- Candy order confirmations
-- Tracking numbers
-- Order status reports
-- Delivery schedules
-
-**Skills Required**:
-- Candy API integration
-- Material category mapping
-- Order submission
-- Status tracking
-
-### 8. Budget Monitoring Agent
-
-**Agent ID**: `budget-monitoring-builder`
-**Company**: MeasureForge AI
-**Purpose**: Real-time budget tracking and variance monitoring
-
-**Input**:
-- Project budget data
-- Procurement expenditure data
-- Variance threshold configurations
-- Multi-project aggregation settings
-
-**Processing**:
-- Track budget vs. actual expenditure
-- Calculate variance percentages
-- Generate threshold alerts:
-  - Warning: >80% of budget allocated
-  - Critical: >95% of budget allocated
-  - Exceeded: >100% of budget allocated
-- Analyze spending trends
-- Generate optimization recommendations
-
-**Output**:
-- Budget variance reports
-- Alert notifications
-- Trend analysis
-- Cost optimization recommendations
-
-**Skills Required**:
-- Budget tracking
-- Variance analysis
-- Alert generation
-- Trend analysis
-
-### 9. Approval Routing Agent
-
-**Agent ID**: `approval-routing-builder`
-**Company**: MeasureForge AI
-**Purpose**: Integration with PROC-ORDER approval workflows
-
-**Input**:
-- Order data (value, type, supplier)
-- Approval matrix configuration
-- Organization-specific routing rules
-- Escalation thresholds
-
-**Processing**:
-- Determine approval requirements based on order value
-- Route to appropriate approval levels
-- Track approval status
-- Handle escalations for delays
-- Generate approval notifications
-
-**Output**:
-- Approval request notifications
-- Status tracking reports
-- Escalation alerts
-- Completion confirmations
-
-**Skills Required**:
-- PROC-ORDER integration
-- Approval matrix configuration
-- Escalation handling
-- Notification management
-
-## Implementation Phases
-
-### Phase 1: Core Agents (Weeks 1-2)
-- Procurement Classifier Agent
-- Supplier Matching Agent
-- Approval Routing Agent
-
-### Phase 2: Procurement Type Agents (Weeks 3-4)
-- Subcontract Procurement Agent
-- Materials Procurement Agent
-- Service Procurement Agent
-- Work Order Procurement Agent
-
-### Phase 3: Integration Agents (Weeks 5-6)
-- Candy Integration Agent
-- Budget Monitoring Agent
-
-### Phase 4: Testing & Validation (Weeks 7-8)
-- End-to-end integration testing
-- PROC-ORDER workflow validation
-- Performance optimization
-
-## Success Metrics
-
-| Metric | Target |
-|--------|--------|
-| Procurement Classification Accuracy | >95% |
-| Supplier Match Rate | >90% |
-| Order Creation Time | <15 minutes |
-| Budget Variance Detection | 100% |
-| Approval Routing Accuracy | >98% |
+# BUILDER-MEAS-AGENTS: Builder Procurement Segregation Agents Implementation
+
+## Executive Summary
+
+This document outlines the specialized agents required for the builder procurement segregation workflows. These agents enable construction builders to extract material quantities from CAD drawings and segregate them into appropriate procurement categories (subcontracts, purchase orders, service orders, work orders) with integration to the PROC-ORDER workflow system. The agent architecture comprises 9 specialized procurement agents organized across 4 implementation phases.
+
+## Required Actions
+
+| # | Action | Owner | Status |
+|---|--------|-------|--------|
+| 1 | Implement Procurement Classifier Agent | domainforge-ai | ⏳ Pending |
+| 2 | Implement Supplier Matching Agent | domainforge-ai | ⏳ Pending |
+| 3 | Implement Approval Routing Agent | domainforge-ai | ⏳ Pending |
+| 4 | Implement Subcontract Procurement Agent | domainforge-ai | ⏳ Pending |
+| 5 | Implement Materials Procurement Agent | domainforge-ai | ⏳ Pending |
+| 6 | Implement Service Procurement Agent | domainforge-ai | ⏳ Pending |
+| 7 | Implement Work Order Procurement Agent | domainforge-ai | ⏳ Pending |
+| 8 | Implement Candy Integration Agent | domainforge-ai | ⏳ Pending |
+| 9 | Implement Budget Monitoring Agent | domainforge-ai | ⏳ Pending |
+| 10 | End-to-end integration testing and validation | domainforge-ai | ⏳ Pending |
+
+## Assigned Company & Agent
+
+- **Company:** domainforge-ai
+- **Primary Agent:** procurement-strategy-domainforge-procurement-strategy
+- **Subordinate Agents:**
+  - procurement-classifier-builder (MeasureForge AI) — Procurement classification
+  - subcontract-procurement-builder (MeasureForge AI) — Subcontract management
+  - materials-procurement-builder (MeasureForge AI) — Materials procurement
+  - service-procurement-builder (MeasureForge AI) — Service procurement
+  - workorder-procurement-builder (MeasureForge AI) — Work order management
+  - supplier-matching-builder (MeasureForge AI) — Supplier matching
+  - candy-integration-builder (MeasureForge AI) — Candy system integration
+  - budget-monitoring-builder (MeasureForge AI) — Budget tracking
+  - approval-routing-builder (MeasureForge AI) — Approval routing
+
+## Required Skills
+
+- `procurement-classification`
+- `subcontract-management`
+- `materials-procurement`
+- `service-procurement`
+- `work-order-management`
+- `supplier-matching`
+- `candy-system-integration`
+- `budget-monitoring`
+- `approval-routing`
+- `proc-order-integration`
+
+## Acceptance Criteria
+
+- [ ] Procurement Classification Accuracy >95%
+- [ ] Supplier Match Rate >90%
+- [ ] Order Creation Time <15 minutes
+- [ ] Budget Variance Detection 100%
+- [ ] Approval Routing Accuracy >98%
+- [ ] All 9 agents implemented and tested
+- [ ] PROC-ORDER workflow integration validated
+- [ ] End-to-end integration tests pass
+
+## Dependencies
+
+- BLOCKED BY: MEASURE-003 (Discipline Integration), MEASURE-004 (Standards Compliance)
+- BLOCKS: PROC-ORDER integration workflows
+
+## Estimated Duration
+
+8 weeks (320 hours total)
+
+## Risk Level
+
+High — Multi-agent coordination across 9 specialized agents with PROC-ORDER integration requires careful orchestration and testing.
+
+## QC Team Checks
+
+- [ ] Code review completed by domainforge-ai
+- [ ] Each agent unit tested independently
+- [ ] Integration tests for agent-to-agent communication
+- [ ] PROC-ORDER workflow validation
+- [ ] Performance benchmarks met
+- [ ] Documentation complete
 
 ## Related Documentation
 
 - [Workflows Catalog](../DISCIPLINE-WORKFLOWS-CATALOG.md)
 - [PROC-ORDER Project](../../disciplines/01900-procurement/projects/PROC-ORDER/project.md)
 - [Builder Direct Procurement Integration](../../companies/measureforge-ai/business/2026-04-22-builder-direct-procurement-integration.md)
-
----
-
-**Document Version**: 1.0
-**Last Updated**: 2026-04-24
-**Agent Count**: 9 specialized procurement agents
-**Implementation Status**: Planning

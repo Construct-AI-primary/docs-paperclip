@@ -7,6 +7,16 @@ last_updated: 2026-04-24
 status: backlog
 priority: High
 ---
+delegation:
+  parent_goal_id: "MEASURE-ROOT-2026"
+  delegation_prompt: "Decompose into sub-tasks as needed per heartbeat loop. Assign sub-tasks to subordinate agents via assigneeAgentId and parentId in the task API."
+  allowed_sub_assignees: []
+  heartbeat_frequency: "15min"
+goals:
+  company_goal: "Validate template management system readiness"
+  agent_goal: "Execute template management validation"
+  task_goal: "Complete template validation with >90% pass rate"
+
 
 # MEASURE-TEMPLATES-001: Template Management System
 

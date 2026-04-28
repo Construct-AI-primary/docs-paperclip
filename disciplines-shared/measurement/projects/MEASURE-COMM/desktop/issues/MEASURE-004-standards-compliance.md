@@ -1,140 +1,100 @@
 ---
-title: "MEASURE-004: Standards Compliance"
+id: MEASURE-004
+title: "Standards Compliance"
 description: "Implement standards validation and compliance checking across all measurement workflows"
-gigabrain_tags: issue, measurement, standards, compliance, validation, qs-standards
+labels: [issue, measurement, standards, compliance, validation, qs-standards]
+blocked_by: [MEASURE-002, MEASURE-003]
+depends_on: [MEASURE-002, MEASURE-003]
 para_section: disciplines-non/02025-measurement/projects/MEASURE-COMM/desktop/issues
-last_updated: 2026-04-24
+phase: 4
 status: backlog
 priority: High
+story_points: 13
+due_date: 2026-07-01
+assignee: validator-qualityforge
+company: qualityforge-ai
+delegation:
+  parent_goal_id: "MEASURE-ROOT-2026"
+  delegation_prompt: "Decompose into sub-tasks as needed per heartbeat loop. Assign sub-tasks to subordinate agents via assigneeAgentId and parentId in the task API."
+  allowed_sub_assignees:
+    - forge-devforge-system-architecture
+    - interface-devforge-api-integration
+    - engineering-ui-specialist
+  heartbeat_frequency: "15min"
+goals:
+  company_goal: "Deliver a comprehensive standards validation and compliance checking system that ensures all measurement workflows meet SANS 1200, ASAQS, and multi-jurisdictional standards requirements."
+  agent_goal: "Implement the SANS 1200 validation engine, ASAQS compliance framework, multi-jurisdictional standards support, real-time compliance feedback, and automated violation reporting."
+  task_goal: "Complete the standards compliance system with real-time validation, automated violation detection, correction suggestions, and compliance dashboard integration."
 ---
 
 # MEASURE-004: Standards Compliance
 
-## Overview
+## Executive Summary
 
-Implement comprehensive standards validation and compliance checking for Quantity Surveying standards (SANS 1200, ASAQS) and multi-jurisdictional compliance across all measurement workflows.
+Implement comprehensive standards validation and compliance checking for Quantity Surveying standards (SANS 1200, ASAQS) and multi-jurisdictional compliance across all measurement workflows. This system ensures that all measurements meet professional standards requirements for South Africa (ZA), United Kingdom (GB), United States (US), Australia (AU), and European Union (EU) jurisdictions.
 
-## Requirements
+## Required Actions
 
-1. SANS 1200 standards validation engine
-2. ASAQS compliance checking
-3. Multi-jurisdictional standards support
-4. Real-time compliance feedback
-5. Standards violation reporting and correction
+| # | Action | Owner | Status |
+|---|--------|-------|--------|
+| 1 | Implement SANS 1200 standards validation engine | qualityforge-ai | ⏳ Pending |
+| 2 | Build ASAQS compliance checking framework | qualityforge-ai | ⏳ Pending |
+| 3 | Add multi-jurisdictional standards support (UK, US, EU, AU) | qualityforge-ai | ⏳ Pending |
+| 4 | Implement real-time compliance feedback during measurement | qualityforge-ai | ⏳ Pending |
+| 5 | Create standards violation reporting and correction system | qualityforge-ai | ⏳ Pending |
+| 6 | Build compliance dashboard with real-time validation panel | qualityforge-ai | ⏳ Pending |
+| 7 | Integrate with discipline-specific workflows | qualityforge-ai | ⏳ Pending |
+
+## Assigned Company & Agent
+
+- **Company:** qualityforge-ai
+- **Primary Agent:** validator-qualityforge
+- **Supporting Agents:**
+  - forge-devforge-system-architecture — Architecture and validation engine design
+  - interface-devforge-api-integration — API integration and data flow
+  - engineering-ui-specialist — Domain-specific standards validation
+
+## Required Skills
+
+- `standards-validation`
+- `sans-1200`
+- `asaqs-compliance`
+- `multi-jurisdictional-standards`
+- `real-time-validation`
+- `compliance-reporting`
+- `violation-detection`
 
 ## Acceptance Criteria
 
 - [ ] SANS 1200 standards validation passes for all measurement types
 - [ ] ASAQS compliance checking integrated into workflows
-- [ ] Multi-jurisdictional standards (UK, US, EU) supported
+- [ ] Multi-jurisdictional standards (UK, US, EU, AU) supported
 - [ ] Real-time compliance feedback during measurement
 - [ ] Standards violation reports generated automatically
 - [ ] Compliance correction suggestions provided
+- [ ] Compliance dashboard renders correctly
 
-## Standards Implementation
+## Dependencies
 
-### SANS 1200 Validation Engine
-```javascript
-class SANS1200Validator {
-  constructor() {
-    this.standards = {
-      'SANS-1200-A': 'General',
-      'SANS-1200-AB': 'Bill preparation',
-      'SANS-1200-AC': 'Site clearance',
-      'SANS-1200-DA': 'Earthworks',
-      'SANS-1200-DB': 'Concrete work',
-      'SANS-1200-DD': 'Precast concrete',
-      'SANS-1200-DE': 'Masonry'
-    };
-    this.validationRules = new Map();
-  }
+- BLOCKED BY: MEASURE-002 (OpenCV Processing Engine), MEASURE-003 (Discipline Integration)
+- BLOCKS: None (final phase)
 
-  async validateMeasurement(measurement, standard) {
-    const rules = this.validationRules.get(standard);
-    const violations = [];
-    const suggestions = [];
+## Estimated Duration
 
-    for (const rule of rules) {
-      const result = await rule.validate(measurement);
-      if (!result.passed) {
-        violations.push(result.violation);
-        suggestions.push(result.suggestion);
-      }
-    }
+4 weeks (160 hours total)
 
-    return {
-      compliant: violations.length === 0,
-      violations,
-      suggestions,
-      standard
-    };
-  }
-}
-```
+## Risk Level
 
-### ASAQS Compliance Framework
-```javascript
-const asaqsComplianceMatrix = {
-  'Level 1': {
-    description: 'Basic measurement compliance',
-    requirements: [
-      'accurate_quantity_calculation',
-      'proper_unit_application',
-      'standard_format_adherence'
-    ]
-  },
-  'Level 2': {
-    description: 'Intermediate compliance with documentation',
-    requirements: [
-      'measurement_methodology_documentation',
-      'calculation_transparency',
-      'peer_review_capability'
-    ]
-  },
-  'Level 3': {
-    description: 'Advanced compliance with automation',
-    requirements: [
-      'automated_calculation_verification',
-      'digital_measurement_trail',
-      'real_time_compliance_monitoring'
-    ]
-  }
-};
-```
+Medium — Standards definitions are well-documented; implementation complexity is in real-time validation and multi-jurisdictional coverage.
 
-### Multi-Jurisdictional Support
-```javascript
-const jurisdictionalStandards = {
-  'ZA': ['SANS-1200', 'CIDB-BPG', 'ASAQS'],
-  'GB': ['CESMM4', 'NRM', 'RICS'],
-  'US': ['RSMeans', 'MasterFormat', 'Uniformat'],
-  'AU': ['NATSPEC', 'AS-1289', 'AS-3600'],
-  'EU': ['Eurocodes', 'EN-1990', 'EN-1991']
-};
-```
+## QC Team Checks
 
-## Compliance Dashboard
-
-### Real-time Validation Panel
-```javascript
-interface CompliancePanelProps {
-  measurements: MeasurementData[];
-  standards: string[];
-  jurisdiction: string;
-  onViolationFound: (violation: ViolationData) => void;
-  onComplianceAchieved: (standard: string) => void;
-}
-```
-
-### Standards Violation Types
-- **Critical**: Measurement methodology violations
-- **Major**: Unit conversion or calculation errors
-- **Minor**: Formatting or documentation issues
-- **Informational**: Best practice recommendations
-
-## Assignee
-
-TBD - QualityForge AI Team
+- [ ] Code review completed by qualityforge-ai
+- [ ] Standards validation against official SANS 1200 test cases
+- [ ] ASAQS compliance verification
+- [ ] Multi-jurisdictional standards coverage verified
+- [ ] Real-time validation performance benchmarks met
+- [ ] Documentation complete
 
 ## Related Components
 

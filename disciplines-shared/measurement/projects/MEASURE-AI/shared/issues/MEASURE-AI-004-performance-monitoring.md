@@ -1,5 +1,14 @@
 ---
 title: "MEASURE-AI-004: Performance Monitoring"
+delegation:
+  parent_goal_id: "MEASURE-ROOT-2026"
+  delegation_prompt: "Decompose into sub-tasks as needed per heartbeat loop. Assign sub-tasks to subordinate agents via assigneeAgentId and parentId in the task API."
+  allowed_sub_assignees: []
+  heartbeat_frequency: "15min"
+goals:
+  company_goal: "Validate measurement AI agent platform readiness"
+  agent_goal: "Execute measurement AI validation"
+  task_goal: "Complete AI validation with >90% pass rate"
 description: "Implement comprehensive performance monitoring and optimization system for measurement agents"
 gigabrain_tags: issue, measurement, performance-monitoring, optimization, metrics, analytics
 para_section: disciplines-non/02025-measurement/projects/MEASURE-AI/shared/issues
@@ -8,6 +17,15 @@ status: backlog
 priority: Medium
 ---
 
+delegation:
+  parent_goal_id: "MEASURE-ROOT-2026"
+  delegation_prompt: "Decompose into sub-tasks as needed per heartbeat loop. Assign sub-tasks to subordinate agents via assigneeAgentId and parentId in the task API."
+  allowed_sub_assignees: []
+  heartbeat_frequency: "15min"
+goals:
+  company_goal: "Validate measurement AI agent platform readiness"
+  agent_goal: "Execute measurement AI validation"
+  task_goal: "Complete AI validation with >90% pass rate"
 # MEASURE-AI-004: Performance Monitoring
 
 ## Overview

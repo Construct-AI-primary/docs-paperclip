@@ -1,26 +1,68 @@
 ---
-title: "MEASURE-003: Discipline Integration"
+id: MEASURE-003
+title: "Discipline Integration"
 description: "Implement discipline-specific measurement dashboards and workflows"
-gigabrain_tags: issue, measurement, discipline-integration, dashboards, workflows, cross-discipline
+labels: [issue, measurement, discipline-integration, dashboards, workflows, cross-discipline]
+blocked_by: [MEASURE-001, MEASURE-002]
+depends_on: [MEASURE-001, MEASURE-002]
 para_section: disciplines-non/02025-measurement/projects/MEASURE-COMM/desktop/issues
-last_updated: 2026-04-24
+phase: 3
 status: backlog
 priority: High
+story_points: 21
+due_date: 2026-06-15
+assignee: procurement-strategy-domainforge-procurement-strategy
+company: domainforge-ai
+delegation:
+  parent_goal_id: "MEASURE-ROOT-2026"
+  delegation_prompt: "Decompose into sub-tasks as needed per heartbeat loop. Assign sub-tasks to subordinate agents via assigneeAgentId and parentId in the task API."
+  allowed_sub_assignees:
+    - forge-devforge-system-architecture
+    - engineering-ui-specialist
+    - interface-devforge-api-integration
+  heartbeat_frequency: "15min"
+goals:
+  company_goal: "Deliver discipline-specific measurement dashboards and workflows for Civil, Electrical, Mechanical, and Structural engineering that integrate with the shared UI and OpenCV engine."
+  agent_goal: "Implement four discipline-specific dashboard layouts with tailored measurement tools, workflow templates, and standards compliance per discipline."
+  task_goal: "Complete all four discipline dashboards with working measurement tools, template loading, and cross-discipline coordination features."
 ---
 
 # MEASURE-003: Discipline Integration
 
-## Overview
+## Executive Summary
 
-Create discipline-specific measurement dashboards and workflows for Civil Engineering (00850), Electrical Engineering (00860), Mechanical Engineering (00870), and Structural Engineering integration.
+Create discipline-specific measurement dashboards and workflows for Civil Engineering (00850), Electrical Engineering (00860), Mechanical Engineering (00870), and Structural Engineering integration. Each discipline receives tailored measurement tools, workflow templates, and standards compliance configurations that integrate with the shared UI architecture and OpenCV processing engine.
 
-## Requirements
+## Required Actions
 
-1. Discipline-specific dashboard layouts
-2. Workflow templates for each engineering discipline
-3. Measurement tools tailored to discipline needs
-4. Standards compliance per discipline
-5. Cross-discipline measurement coordination
+| # | Action | Owner | Status |
+|---|--------|-------|--------|
+| 1 | Build Civil Engineering dashboard with earthworks and road measurement tools | domainforge-ai | ⏳ Pending |
+| 2 | Build Electrical Engineering dashboard with cable and equipment layouts | domainforge-ai | ⏳ Pending |
+| 3 | Build Mechanical Engineering dashboard with HVAC and piping systems | domainforge-ai | ⏳ Pending |
+| 4 | Build Structural Engineering dashboard with concrete and steel elements | domainforge-ai | ⏳ Pending |
+| 5 | Implement discipline-specific measurement templates | domainforge-ai | ⏳ Pending |
+| 6 | Create cross-discipline coordination features | domainforge-ai | ⏳ Pending |
+| 7 | Integrate discipline dashboards with shared UI components | domainforge-ai | ⏳ Pending |
+
+## Assigned Company & Agent
+
+- **Company:** domainforge-ai
+- **Primary Agent:** procurement-strategy-domainforge-procurement-strategy
+- **Supporting Agents:**
+  - forge-devforge-system-architecture — System architecture and integration
+  - engineering-ui-specialist — Discipline-specific UI validation
+  - interface-devforge-api-integration — API integration and data flow
+
+## Required Skills
+
+- `discipline-specific-ui`
+- `civil-engineering-measurement`
+- `electrical-engineering-measurement`
+- `mechanical-engineering-measurement`
+- `structural-engineering-measurement`
+- `workflow-template-design`
+- `cross-discipline-coordination`
 
 ## Acceptance Criteria
 
@@ -30,75 +72,29 @@ Create discipline-specific measurement dashboards and workflows for Civil Engine
 - [ ] Structural Engineering dashboard with concrete and steel elements
 - [ ] Discipline-specific measurement templates load correctly
 - [ ] Cross-discipline coordination features functional
+- [ ] All dashboards integrate with shared UI components
 
-## Discipline Specifications
+## Dependencies
 
-### Civil Engineering (00850)
-```javascript
-const civilEngineeringConfig = {
-  tools: [
-    'earthworks-calculator',
-    'concrete-volume-analyzer',
-    'road-cross-section-tool',
-    'foundation-layout-assistant',
-    'stormwater-network-analyzer'
-  ],
-  templates: [
-    'cut-fill-analysis',
-    'concrete-schedule',
-    'road-template',
-    'foundation-plan',
-    'earthworks-summary'
-  ],
-  standards: ['SANS-1200', 'CIDB-BPG-CIVIL', 'TMH-11']
-};
-```
+- BLOCKED BY: MEASURE-001 (Shared UI Architecture), MEASURE-002 (OpenCV Processing Engine)
+- BLOCKS: MEASURE-004 (Standards Compliance)
 
-### Electrical Engineering (00860)
-```javascript
-const electricalEngineeringConfig = {
-  tools: [
-    'cable-length-calculator',
-    'equipment-placement-tool',
-    'lighting-layout-optimizer',
-    'distribution-analysis',
-    'load-calculation-engine'
-  ],
-  templates: [
-    'electrical-distribution',
-    'lighting-schedule',
-    'equipment-layout',
-    'cable-routing',
-    'panel-schedules'
-  ],
-  standards: ['SANS-10142', 'IEC-60364', 'NBR-5410']
-};
-```
+## Estimated Duration
 
-### Mechanical Engineering (00870)
-```javascript
-const mechanicalEngineeringConfig = {
-  tools: [
-    'hvac-duct-calculator',
-    'piping-network-analyzer',
-    'equipment-layout-tool',
-    'thermal-analysis-engine',
-    'fluid-flow-calculator'
-  ],
-  templates: [
-    'ductwork-schedule',
-    'piping-layout',
-    'equipment-room-plan',
-    'thermal-calculations',
-    'flow-diagrams'
-  ],
-  standards: ['SMACNA', 'ASHRAE', 'ASME-B31']
-};
-```
+5 weeks (200 hours total)
 
-## Assignee
+## Risk Level
 
-TBD - IntegrateForge UI Team
+Medium — Discipline-specific workflows are well-understood; integration complexity is the primary risk factor.
+
+## QC Team Checks
+
+- [ ] Code review completed by domainforge-ai
+- [ ] Discipline-specific validation by domain experts
+- [ ] Cross-discipline integration tests pass
+- [ ] Template loading and rendering verified
+- [ ] Performance benchmarks met
+- [ ] Documentation complete
 
 ## Related Components
 

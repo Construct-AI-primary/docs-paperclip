@@ -1,5 +1,14 @@
 ---
 title: "MEASURE-AI-002: Agent Activation Procedures"
+delegation:
+  parent_goal_id: "MEASURE-ROOT-2026"
+  delegation_prompt: "Decompose into sub-tasks as needed per heartbeat loop. Assign sub-tasks to subordinate agents via assigneeAgentId and parentId in the task API."
+  allowed_sub_assignees: []
+  heartbeat_frequency: "15min"
+goals:
+  company_goal: "Validate measurement AI agent platform readiness"
+  agent_goal: "Execute measurement AI validation"
+  task_goal: "Complete AI validation with >90% pass rate"
 description: "Implement comprehensive agent activation procedures and operational readiness protocols"
 gigabrain_tags: issue, measurement, agent-activation, operational-readiness, testing-protocols
 para_section: disciplines-non/02025-measurement/projects/MEASURE-AI/shared/issues
@@ -8,6 +17,15 @@ status: backlog
 priority: High
 ---
 
+delegation:
+  parent_goal_id: "MEASURE-ROOT-2026"
+  delegation_prompt: "Decompose into sub-tasks as needed per heartbeat loop. Assign sub-tasks to subordinate agents via assigneeAgentId and parentId in the task API."
+  allowed_sub_assignees: []
+  heartbeat_frequency: "15min"
+goals:
+  company_goal: "Validate measurement AI agent platform readiness"
+  agent_goal: "Execute measurement AI validation"
+  task_goal: "Complete AI validation with >90% pass rate"
 # MEASURE-AI-002: Agent Activation Procedures
 
 ## Overview
