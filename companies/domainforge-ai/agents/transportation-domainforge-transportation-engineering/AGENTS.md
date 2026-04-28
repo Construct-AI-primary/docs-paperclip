@@ -1,0 +1,12 @@
+---
+name: Transportation Engineer
+human_name: Transportation Engineer
+slug: transportation-domainforge-transportation-engineering
+reportsTo: orion-domainforge-ceo
+skills:
+  - transportation-domainforge-transportation-engineering
+---
+
+# transportation-domainforge-transportation-engineering
+
+Agent for domainforge-ai.
