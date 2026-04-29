@@ -30,7 +30,12 @@ Route to this skill when:
 ├─────────────────────────────────────────────────────────────────────────────────┤
 │                                                                                  │
 │  Phase 1: Knowledge Synthesis                                                   │
-│  └─▶ Gather discipline knowledge → PAGE-KNOWLEDGE.md                            │
+│  └─▶ Gather discipline knowledge → PAGE-KNOWLEDGE.md (8-field metadata)         │
+│  └─▶ Compile → METADATA-BUNDLE.md (JSON bundle for root issue upload)           │
+│  └─▶ Generate → UI-UX-SPECIFICATION.md (template, Mermaid diagrams, modals)     │
+│  └─▶ Generate → discipline-adaptations/ (per-discipline config docs)            │
+│  └─▶ Generate → ai-integrations/ (per-company integration docs)                 │
+│  └─▶ Generate → standards-and-compliance/ (standards docs)                      │
 │                                                                                  │
 │  Phase 2: Project Intelligence                                                  │
 │  └─▶ Analyze knowledge → Identify viable projects                               │
