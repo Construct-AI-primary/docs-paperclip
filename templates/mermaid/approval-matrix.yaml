@@ -1,0 +1,54 @@
+name: approval-matrix
+version: "1.0"
+description: "Progressive approval matrix with value-based routing — single, parallel, or sequential approval chains based on order thresholds"
+parameters:
+  - name: discipline
+    type: string
+    default: "01900"
+    description: "Discipline code"
+  - name: thresholds
+    type: string
+    default: "25000,250000"
+    description: "Value thresholds for single/parallel/sequential routing (comma-separated)"
+template: |
+  flowchart TD
+    ORDER[Procurement Order] -->|evaluate| EVAL[Approval Matrix Evaluation]
+    EVAL -->|value under 25K| SINGLE[Single Approver]
+    EVAL -->|value 25K to 250K| PARALLEL[Parallel Approvers]
+    EVAL -->|value over 250K| SEQUENTIAL[Sequential Chain]
+
+    SINGLE -->|procurement officer| LEVEL1[Level 1 Approval]
+    LEVEL1 -->|approve| COMPLETE[Approval Complete]
+    LEVEL1 -->|reject| RETURN[Return to Order]
+
+    PARALLEL -->|officer + manager| LEVEL2A[Procurement Officer]
+    PARALLEL -->|simultaneous| LEVEL2B[Department Head]
+    LEVEL2A -->|both approve| COMPLETE
+    LEVEL2B -->|both approve| COMPLETE
+    LEVEL2A -->|reject| RETURN
+    LEVEL2B -->|reject| RETURN
+
+    SEQUENTIAL -->|level 1| L1[Procurement Officer]
+    L1 -->|approve| L2[Procurement Manager]
+    L1 -->|reject| RETURN
+    L2 -->|approve| L3[Executive Approval]
+    L2 -->|reject| RETURN
+    L3 -->|approve| COMPLETE
+    L3 -->|reject| RETURN
+
+    COMPLETE -->|route| ACTIVATE[Activate Procurement Workflow]
+    RETURN -->|revise| ORDER
+
+    classDef order fill:#e3f2fd,stroke:#1976d2
+    classDef eval fill:#f3e5f5,stroke:#7b1fa2
+    classDef single fill:#e8f5e8,stroke:#388e3c
+    classDef parallel fill:#fff3e0,stroke:#f57c00
+    classDef sequential fill:#ffebee,stroke:#d32f2f
+    classDef final fill:#fce4ec,stroke:#c2185b
+
+    class ORDER order
+    class EVAL eval
+    class SINGLE,LEVEL1 single
+    class PARALLEL,LEVEL2A,LEVEL2B parallel
+    class SEQUENTIAL,L1,L2,L3 sequential
+    class COMPLETE,RETURN,ACTIVATE final

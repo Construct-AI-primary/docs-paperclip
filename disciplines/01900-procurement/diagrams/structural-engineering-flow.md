@@ -1,0 +1,50 @@
+```mermaid
+flowchart TD
+  subgraph Input["Structural Input"]
+      A[Architectural Plans] --> B[Load Requirements]
+      A --> C[Site Conditions]
+      B --> D[Code Standards]
+      C --> E[Geotechnical Data]
+  end
+
+  subgraph Analysis["Structural Analysis"]
+      D --> F[Load Combinations]
+      E --> G[Foundation Design]
+      F --> H[Member Sizing]
+      G --> I[Bearing Capacity]
+      H --> J[Connection Design]
+  end
+
+  subgraph Modeling["3D Modeling"]
+      I --> K[Structural Model]
+      J --> K
+      K --> L[FEA Analysis]
+      L --> M[Deflection Check]
+      M --> N[Stability Analysis]
+  end
+
+  subgraph Documentation["Documentation"]
+      N --> O[Detail Drawings]
+      N --> P[Calculation Reports]
+      N --> Q[Specification Sheets]
+  end
+
+  subgraph Review["Review & Approval"]
+      O --> R[Engineer Review]
+      P --> R
+      Q --> R
+      R --> S[Authority Approval]
+  end
+
+  classDef input fill:#e3f2fd,stroke:#1976d2
+  classDef analysis fill:#fff3e0,stroke:#f57c00
+  classDef model fill:#e8f5e8,stroke:#388e3c
+  classDef docs fill:#fce4ec,stroke:#c2185b
+  classDef review fill:#f3e5f5,stroke:#7b1fa2
+
+  class A,B,C,D,E input
+  class F,G,H,I,J analysis
+  class K,L,M,N model
+  class O,P,Q docs
+  class R,S review
+```

@@ -1,0 +1,58 @@
+```mermaid
+flowchart TD
+  START[Create Order] -->|enter details| FORM[Order Form: PO/SO/WO]
+  FORM -->|select type| TEMPLATE[Template Variation]
+  TEMPLATE -->|auto-detect| INHERIT[Discipline Inheritance]
+  INHERIT -->|load config| DOM[Document Ordering Management]
+  DOM -->|required| REQUIRED[Required Disciplines]
+  DOM -->|recommended| RECOMMENDED[Recommended Disciplines]
+  DOM -->|optional| OPTIONAL[Optional Disciplines]
+  REQUIRED --> VALIDATE[Validate Coverage]
+  RECOMMENDED --> VALIDATE
+  OPTIONAL --> VALIDATE
+  VALIDATE -->|pass| STR[Spec Template Registry]
+  VALIDATE -->|fail| OVERRIDE[Manual Override]
+  OVERRIDE -->|add disciplines| STR
+
+  STR -->|determine required appendices| APP_CHECK{Appendices Needed?}
+  APP_CHECK -->|yes| APP_SEL[Select Spec Templates per Appendix]
+  APP_CHECK -->|no| ASSIGN[User Assignment]
+
+  APP_SEL -->|appendix A| SEL_A[Select: Spec Template]
+  APP_SEL -->|appendix B| SEL_B[Select: Spec Template]
+  APP_SEL -->|appendix C| SEL_C[Select: Spec Template]
+  APP_SEL -->|appendix D-F| SEL_DF[Select: Remaining Templates]
+  
+  SEL_A -->|load from registry| REG_A[Spec Registry]
+  SEL_B -->|load from registry| REG_B[Spec Registry]
+  SEL_C -->|load from registry| REG_C[Spec Registry]
+  SEL_DF -->|load from registry| REG_DF[Spec Registry]
+
+  REG_A --> ASSIGN
+  REG_B --> ASSIGN
+  REG_C --> ASSIGN
+  REG_DF --> ASSIGN
+
+  ASSIGN -->|per discipline| TASKS[Task Generation]
+  TASKS -->|SOW| SOW[SOW Generation Task]
+  TASKS -->|appendices| APP[Appendix Tasks with Templates]
+  TASKS -->|approval| APPROVAL[Approval Workflow]
+  SOW --> ACTIVATE[Activate Workflow]
+  APP --> ACTIVATE
+  APPROVAL --> ACTIVATE
+
+  classDef start fill:#e3f2fd,stroke:#1976d2
+  classDef config fill:#f3e5f5,stroke:#7b1fa2
+  classDef assign fill:#fff3e0,stroke:#f57c00
+  classDef task fill:#e8f5e8,stroke:#388e3c
+  classDef final fill:#fce4ec,stroke:#c2185b
+  classDef registry fill:#e8eaf6,stroke:#3f51b5
+
+  class START,FORM,TEMPLATE start
+  class INHERIT,DOM,REQUIRED,RECOMMENDED,OPTIONAL config
+  class STR,APP_CHECK,APP_SEL,SEL_A,SEL_B,SEL_C,SEL_DF assign
+  class REG_A,REG_B,REG_C,REG_DF registry
+  class VALIDATE,OVERRIDE,ASSIGN assign
+  class TASKS,SOW,APP,APPROVAL task
+  class ACTIVATE final
+```

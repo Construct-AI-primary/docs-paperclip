@@ -31,6 +31,8 @@ discipline: 01900-procurement
 - Invoice processing and payment (covered in PROC-INV project)
 - Supplier qualification and onboarding
 - Inventory management and receiving
+- Service Order post-creation lifecycle (SLA management, delivery monitoring, acceptance workflows, service contract administration — covered by PROC-SERVICE project)
+- Emergency procurement and single-source justification (covered by PROC-EMERG project)
 
 ## Project Objectives
 

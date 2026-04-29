@@ -1,4 +1,4 @@
----
+ ---
 title: "00860 Electrical Engineering — UI/UX Specification"
 description: "Complete UI/UX specification for the 00860 Electrical Engineering discipline page — three-state navigation, power distribution workflows, electrical system design, and AI model backend"
 author: "DomainForge AI — Electrical Engineering Domain"
@@ -139,12 +139,14 @@ The **Agents state** is a **display-only** view showing the AI agents available 
 | Cable Sizing Specialist | Cable routing and sizing | Voltage drop, current capacity, cable tray fill |
 | Earthing Designer | Grounding system design | Earth grid design, step/touch potential, soil resistivity |
 
-**Mermaid Flow**:
+**Mermaid Flow** (generated from `agents-state-flow` template v1.0 — showDetails=false, showRemove=false):
 ```mermaid
 flowchart TD
     AGENTS[Agents State - Display Only] -->|click nav tab| UPSERT[Upsert State]
     AGENTS -->|click nav tab| WORKSPACE[Workspace State]
 ```
+<!-- This diagram is generated from the agents-state-flow template (v1.0) -->
+<!-- To update: node docs-paperclip/scripts/render-mermaid.cjs --template agents-state-flow --discipline 00860 --showDetails false --showRemove false -->
 
 ### 6. State: Upsert
 
@@ -171,7 +173,7 @@ The **Upsert state** is where electrical engineering records are created, edited
 - Management: `EditRecord` — same form, pre-populated, with version history sidebar
 - Workflow: `Import` — file upload with progress indicator, OCR toggle, validation results
 
-**Mermaid Flow**:
+**Mermaid Flow** (generated from `upsert-state-flow` template v1.0):
 ```mermaid
 flowchart TD
     UPSERT[Upsert State] -->|click Create New| MODAL1[CreateNewRecord Modal]
@@ -182,6 +184,8 @@ flowchart TD
     UPSERT -->|click nav tab| AGENTS[Agents State]
     UPSERT -->|click nav tab| WORKSPACE[Workspace State]
 ```
+<!-- This diagram is generated from the upsert-state-flow template (v1.0) -->
+<!-- To update: node docs-paperclip/scripts/render-mermaid.cjs --template upsert-state-flow --discipline 00860 --showBulkImport true -->
 
 ### 7. State: Workspace
 
@@ -198,7 +202,7 @@ The **Workspace state** is the operational dashboard for electrical engineering 
 | **Generate Report** | Always visible | Opens Export modal | `Export` — 98vw, format selection (PDF, CSV, XLSX), standards compliance report |
 | **Comment/Discussion** | Always visible | Toggles chat panel | No modal — inline chat panel toggle |
 
-**HITL Workflow**:
+**HITL Workflow** (generated from `hitl-workflow` template v1.0):
 ```mermaid
 flowchart TD
     AGENT[AI Agent] -->|completes work| QUEUE[HITL Review Queue]
@@ -210,6 +214,8 @@ flowchart TD
     EDIT --> DONE
     AGENT -->|with HITL guidance| QUEUE
 ```
+<!-- This diagram is generated from the hitl-workflow template (v1.0) -->
+<!-- To update: node docs-paperclip/scripts/render-mermaid.cjs --template hitl-workflow --discipline 00860 --showKnowledgeLoop true -->
 
 ### 8. Shared Rules Across States
 
@@ -240,20 +246,54 @@ flowchart TD
 
 ## Part C: Mermaid UI Flow Diagrams
 
-### 9. Page State Flow
+### 9. Page State Flow (generated from `three-state-navigation` template v2.0, with disabled accordion)
 
-Auth is handled by the platform before the page is entered. The user navigates to this discipline page via a bespoke URL from the accordion (e.g., `/#/engineering/00860-electrical-engineering`). The page loads directly into one of the three states.
+> **Parameters**: `discipline: "00860"`, `states: "Agents, Upserts, Workspace"`, `roles: "viewer, editor, engineer, reviewer, admin"`, `showAccordion: false`
+>
+> The page-level accordion (Bidding/Tendering toggle) is disabled for Electrical Engineering as this discipline does not use the Bidding/Tendering split. Role gates are mapped to Electrical Engineering roles:
+> - `viewer` → Router access (+ View Agent Details, View History)
+> - `editor` → Record actions (Create, Import, Edit)
+> - `engineer` → Engineering actions (CAD Viewer, Spec Editor)
+> - `reviewer` → Review actions (Approve, Reject)
+> - `admin` → Full access
 
 ```mermaid
 flowchart TD
-    ACCORDION[Accordion Link] -->|click| PAGE[Bespoke Page URL<br>/#/engineering/00860-electrical-engineering]
-    PAGE -->|default view| AGENTS[Agents State - Display Only]
-    AGENTS -->|nav tab| UPSERT[Upsert State]
-    UPSERT -->|nav tab| WORKSPACE[Workspace State]
-    WORKSPACE -->|nav tab| AGENTS
-    UPSERT -->|open CAD| CAD[CAD Viewer]
-    UPSERT -->|open spec| SPEC[Specification Editor]
-    WORKSPACE -->|review| QUEUE[HITL Review Queue]
+    classDef page fill:#e3f2fd,stroke:#1565C0
+    classDef state fill:#e8eaf6,stroke:#283593
+    classDef gate fill:#ffebee,stroke:#d32f2f
+    classDef action fill:#fff3e0,stroke:#f57c00
+    classDef modal fill:#f3e5f5,stroke:#7b1fa2
+
+    Load[Page Load] --> Rights{Role Check}
+    Rights -->|role >= viewer| Router[State Router]
+    Rights -->|role < viewer| Denied[Access Denied]
+
+    Router --> Agents[Agents State]
+    Router --> Upserts[Upserts State]
+    Router --> Workspace[Workspace State]
+
+    Agents -->|any authenticated| ViewAgent[View Agent Details]
+    Agents -->|any authenticated| ViewHistory[View History]
+
+    Upserts -->|role >= editor| RecordActions[Record Actions]
+    RecordActions --> CreateRecord[Create Record]
+    RecordActions --> ImportData[Import Data]
+    RecordActions --> EditRecord[Edit Record]
+    Upserts -->|role >= engineer| EngineeringActions[Engineering Actions]
+    EngineeringActions --> CAD[CAD Viewer]
+    EngineeringActions --> SPEC[Specification Editor]
+
+    Workspace -->|role >= reviewer| ReviewActions[Review Actions]
+    ReviewActions --> ReviewQueue[Review HITL Queue]
+    ReviewActions --> ApproveAction[Approve Action]
+    ReviewActions --> RejectAction[Reject Action]
+
+    class Load,Denied page
+    class Rights,Agents,Upserts,Workspace state
+    class ViewAgent,ViewHistory,RecordActions,EngineeringActions,ReviewActions gate
+    class CreateRecord,ImportData,EditRecord,CAD,SPEC,ReviewQueue action
+    class ApproveAction,RejectAction modal
 ```
 
 ### 10. Electrical Load Calculation Flow
@@ -272,7 +312,7 @@ flowchart TD
     REPORT -->|review| HITL[HITL Review Queue]
 ```
 
-### 11. HITL Workflow Flow
+### 11. HITL Workflow Flow (generated from `hitl-workflow` template v1.0 — showKnowledgeLoop=true):
 
 ```mermaid
 flowchart TD
@@ -287,6 +327,8 @@ flowchart TD
     DONE -->|indexed| KNOWLEDGE[KnowledgeForge AI]
     KNOWLEDGE -->|retrain| LORA[LoRA Adapter Update]
 ```
+<!-- This diagram is generated from the hitl-workflow template (v1.0) -->
+<!-- To update: node docs-paperclip/scripts/render-mermaid.cjs --template hitl-workflow --discipline 00860 --confidenceThreshold 85 --showKnowledgeLoop true -->
 
 ---
 

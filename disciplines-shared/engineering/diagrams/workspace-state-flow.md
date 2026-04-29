@@ -1,0 +1,23 @@
+```mermaid
+flowchart TD
+  WORKSPACE[Workspace State] -->|click Approve| MODAL1[Approval Modal]
+  WORKSPACE -->|click Reject| MODAL2[Rejection Modal]
+  WORKSPACE -->|click Edit| MODAL3[EditWorkItem Modal]
+  
+  WORKSPACE -->|click Assign| MODAL4[Assign Modal]
+  
+  
+  WORKSPACE -->|click Generate Report| MODAL5[Export Modal]
+  
+  WORKSPACE -->|click Comment| CHAT[Inline Chat Panel]
+  WORKSPACE -->|click nav tab| AGENTS[Agents State]
+  WORKSPACE -->|click nav tab| UPSERT[Upsert State]
+
+  classDef state fill:#e3f2fd,stroke:#1976d2
+  classDef modal fill:#fff3e0,stroke:#f57c00
+  classDef chat fill:#e8f5e8,stroke:#388e3c
+
+  class WORKSPACE,AGENTS,UPSERT state
+  class MODAL1,MODAL2,MODAL3,MODAL4,MODAL5 modal
+  class CHAT chat
+```

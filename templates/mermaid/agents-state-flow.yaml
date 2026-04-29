@@ -1,0 +1,34 @@
+name: agents-state-flow
+version: "1.0"
+description: "Agents state navigation flow showing modal transitions for agent management"
+parameters:
+  - name: discipline
+    type: string
+    default: "00870"
+    description: "Discipline code"
+  - name: showDetails
+    type: boolean
+    default: true
+    description: "Whether to show the View Details modal branch"
+  - name: showRemove
+    type: boolean
+    default: true
+    description: "Whether to show the Remove/Archive branch"
+template: |
+  flowchart TD
+    AGENTS[Agents State] -->|click Add Agent| MODAL1[CreateNewAgent Modal]
+    AGENTS -->|click Edit| MODAL2[AgentConfig Modal]
+    {% if showRemove %}
+    AGENTS -->|click Remove| MODAL3[Confirmation Modal]
+    {% endif %}
+    {% if showDetails %}
+    AGENTS -->|click View| MODAL4[AgentDetails Modal]
+    {% endif %}
+    AGENTS -->|click nav tab| UPSERT[Upsert State]
+    AGENTS -->|click nav tab| WORKSPACE[Workspace State]
+
+    classDef state fill:#e3f2fd,stroke:#1976d2
+    classDef modal fill:#fff3e0,stroke:#f57c00
+
+    class AGENTS,UPSERT,WORKSPACE state
+    class MODAL1,MODAL2,MODAL3,MODAL4 modal

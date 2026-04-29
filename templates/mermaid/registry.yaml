@@ -17,7 +17,7 @@ templates:
   three-state-navigation:
     current: "1.0"
     changelog:
-      "1.0": "Initial three-state navigation flow extracted from 01900 UI/UX spec"
+      "1.0": "Initial three-state navigation flow for discipline UI/UX specs"
     parameters:
       - discipline
       - states
@@ -26,15 +26,15 @@ templates:
   order-creation-flow:
     current: "1.0"
     changelog:
-      "1.0": "Initial order creation flow with template variation selection extracted from 01900 UI/UX spec"
+      "1.0": "Initial order creation with spec template registry selection, discipline inheritance, and task generation"
     parameters:
       - discipline
-      - complexity
+      - showRegistry
 
   sow-generation:
     current: "1.0"
     changelog:
-      "1.0": "Initial SOW generation and appendix routing flow extracted from 01900 UI/UX spec"
+      "1.0": "AI-enhanced SOW generation with spec template selection per appendix and HITL gates"
     parameters:
       - discipline
       - appendices
@@ -42,7 +42,7 @@ templates:
   hitl-review:
     current: "1.0"
     changelog:
-      "1.0": "Initial HITL review workflow extracted from 01900 UI/UX spec"
+      "1.0": "HITL review with AI assessment, reviewer assignment, decision framework, and audit trail"
     parameters:
       - discipline
       - confidenceThreshold
@@ -50,7 +50,7 @@ templates:
   approval-matrix:
     current: "1.0"
     changelog:
-      "1.0": "Initial progressive approval matrix flow extracted from 01900 UI/UX spec"
+      "1.0": "Progressive approval matrix with value-based routing"
     parameters:
       - discipline
       - thresholds
@@ -58,7 +58,7 @@ templates:
   spec-template-registry:
     current: "1.0"
     changelog:
-      "1.0": "Initial spec template registry flow extracted from 01900 UI/UX spec"
+      "1.0": "Spec Template Registry flow with admin, selection, AI generation, and HITL review"
     parameters:
       - discipline
       - appendixLetter
@@ -66,7 +66,7 @@ templates:
   appendix-b-hitl:
     current: "1.0"
     changelog:
-      "1.0": "Initial template-driven appendix HITL flow extracted from 01900 UI/UX spec"
+      "1.0": "Template-driven appendix HITL flow with dynamic schema rendering"
     parameters:
       - discipline
       - templateId
@@ -74,15 +74,106 @@ templates:
   template-complexity-tree:
     current: "1.0"
     changelog:
-      "1.0": "Initial complexity level decision tree extracted from 01900 UI/UX spec"
+      "1.0": "Complexity level decision tree for procurement type"
     parameters:
       - discipline
 
   page-state-flow:
     current: "1.0"
     changelog:
-      "1.0": "Initial page state flow with modal integration extracted from 01900 UI/UX spec"
+      "1.0": "Page state flow with auth, discipline selection, and modal routing"
     parameters:
       - discipline
       - states
       - modals
+
+  agents-state-flow:
+    current: "1.0"
+    changelog:
+      "1.0": "Agents state navigation with modal transitions"
+    parameters:
+      - discipline
+      - showDetails
+      - showRemove
+
+  upsert-state-flow:
+    current: "1.0"
+    changelog:
+      "1.0": "Upsert state navigation with record creation, editing, import"
+    parameters:
+      - discipline
+      - showBulkImport
+
+  workspace-state-flow:
+    current: "1.0"
+    changelog:
+      "1.0": "Workspace state with HITL review, approval, rejection transitions"
+    parameters:
+      - discipline
+      - showAssign
+      - showReport
+
+  hitl-workflow:
+    current: "1.0"
+    changelog:
+      "1.0": "HITL review with AI agent, queue, approval/rejection, and LoRA feedback"
+    parameters:
+      - discipline
+      - confidenceThreshold
+      - showKnowledgeLoop
+
+  cad-viewer-flow:
+    current: "1.0"
+    changelog:
+      "1.0": "CAD viewer flow with loading, parsing, rendering, and validation"
+    parameters:
+      - discipline
+      - showValidation
+      - showExport
+
+  engineering-design-flow:
+    current: "1.0"
+    changelog:
+      "1.0": "Multi-phase engineering design flow"
+    parameters:
+      - discipline
+      - phaseCount
+
+  structural-engineering-flow:
+    current: "1.0"
+    changelog:
+      "1.0": "Structural engineering workflow with FEA"
+    parameters:
+      - discipline
+      - showFEA
+
+  mep-engineering-flow:
+    current: "1.0"
+    changelog:
+      "1.0": "MEP systems engineering flow"
+    parameters:
+      - discipline
+      - showPerformance
+
+  document-generation-flow:
+    current: "1.0"
+    changelog:
+      "1.0": "AI-powered document generation workflow"
+    parameters:
+      - discipline
+      - showValidation
+
+  logistics-lifecycle:
+    current: "1.0"
+    changelog:
+      "1.0": "Logistics lifecycle from need through delivery and HITL review"
+    parameters:
+      - discipline
+      - showCustoms
+
+  logistics-order-creation:
+    current: "1.0"
+    changelog:
+      "1.0": "Logistics order creation with template selection and agent assignment"
+    parameters:
+      - discipline

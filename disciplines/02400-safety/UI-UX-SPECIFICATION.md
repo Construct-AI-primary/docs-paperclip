@@ -227,19 +227,56 @@ flowchart LR
 
 ## Part C: Mermaid UI Flow Diagrams
 
-### 8. Page State Flow
+### 8. Page State Flow (generated from `three-state-navigation` template v2.0, with disabled accordion)
+
+> **Parameters**: `discipline: "02400"`, `states: "Agents, Upserts, Workspace"`, `roles: "viewer, editor, reviewer, coordinator, governance"`, `showAccordion: false`
+>
+> The page-level accordion (Bidding/Tendering toggle) is disabled for Safety as this discipline does not use the Bidding/Tendering split. Role gates are mapped to Safety roles:
+> - `viewer` → Router access (+ View Agent Details)
+> - `editor` → Record actions (Report Incident, Schedule Inspection, Add Contractor, Import, Edit)
+> - `reviewer` → Review actions (Approve, Escalate, Reject)
+> - `coordinator` → Management actions (Assign Investigator, Run Audit, Issue Alert)
+> - `governance` → Full access (including Delete/Remove)
 
 ```mermaid
 flowchart TD
-    LOAD[Page Load] -->|check auth| AUTH{Auth Valid?}
-    AUTH -->|no| LOGIN[Redirect to Login]
-    AUTH -->|yes| INIT[Initialize Safety Platform]
-    INIT -->|load config| DASH[Dashboard - KPIs]
-    DASH --> STATE[State Router]
-    STATE -->|default| AGENTS[Agents State]
-    AGENTS -->|nav| UPSERT[Upsert State]
-    UPSERT -->|nav| WORKSPACE[Workspace State]
-    WORKSPACE -->|nav| AGENTS
+    classDef page fill:#ffebee,stroke:#d32f2f
+    classDef state fill:#e8eaf6,stroke:#283593
+    classDef gate fill:#ffebee,stroke:#d32f2f
+    classDef action fill:#fff3e0,stroke:#f57c00
+    classDef modal fill:#f3e5f5,stroke:#7b1fa2
+
+    Load[Page Load] --> Rights{Role Check}
+    Rights -->|role >= viewer| Router[State Router]
+    Rights -->|role < viewer| Denied[Access Denied]
+
+    Router --> Agents[Agents State]
+    Router --> Upserts[Upserts State]
+    Router --> Workspace[Workspace State]
+
+    Agents -->|any authenticated| ViewAgent[View Agent Details]
+
+    Upserts -->|role >= editor| RecordActions[Record Actions]
+    RecordActions --> ReportIncident[Report Incident]
+    RecordActions --> ScheduleInspection[Schedule Inspection]
+    RecordActions --> AddContractor[Add Contractor Record]
+    RecordActions --> ImportData[Import Safety Docs]
+    RecordActions --> EditRecord[Edit Record]
+
+    Workspace -->|role >= reviewer| ReviewActions[Review Actions]
+    ReviewActions --> ApproveClose[Approve Incident Close]
+    ReviewActions --> EscalateIncident[Escalate Incident]
+    ReviewActions --> RejectAction[Reject with Corrective Actions]
+    Workspace -->|role >= coordinator| ManagementActions[Management Actions]
+    ManagementActions --> AssignInvestigator[Assign Investigator]
+    ManagementActions --> RunAudit[Run Compliance Audit]
+    ManagementActions --> IssueAlert[Issue Safety Alert]
+
+    class Load,Denied page
+    class Rights,Agents,Upserts,Workspace state
+    class ViewAgent,RecordActions,ReviewActions,ManagementActions gate
+    class ReportIncident,ScheduleInspection,AddContractor,ImportData,EditRecord action
+    class ApproveClose,EscalateIncident,RejectAction,AssignInvestigator,RunAudit,IssueAlert modal
 ```
 
 ### 9. Incident Lifecycle Flow

@@ -1,0 +1,42 @@
+name: cad-viewer-flow
+version: "1.0"
+description: "CAD viewer flow showing file loading, parsing, rendering, measurement, annotation, and standards validation"
+parameters:
+  - name: discipline
+    type: string
+    default: "00870"
+    description: "Discipline code"
+  - name: showValidation
+    type: boolean
+    default: true
+    description: "Whether to show the standards validation branch"
+  - name: showExport
+    type: boolean
+    default: true
+    description: "Whether to show the measurement export branch"
+template: |
+  flowchart TD
+    CAD[CAD Viewer] -->|load file| PARSE[Parse CAD File]
+    PARSE -->|success| RENDER[Render in Viewer]
+    PARSE -->|error| ERROR[Show Error Message]
+    RENDER -->|user measures| MEASURE[Measurement Tool]
+    RENDER -->|user annotates| ANNOTATE[Annotation Tool]
+    {% if showValidation %}
+    RENDER -->|user validates| VALIDATE[Standards Validation]
+    VALIDATE -->|pass| PASS[Green Checkmark]
+    VALIDATE -->|fail| FAIL[Red X + Violation List]
+    {% endif %}
+    {% if showExport %}
+    MEASURE -->|export| EXPORT[Export Measurements]
+    {% endif %}
+    ANNOTATE -->|save| SAVE[Save Annotations]
+
+    classDef cad fill:#e3f2fd,stroke:#1976d2
+    classDef parse fill:#fff3e0,stroke:#f57c00
+    classDef tool fill:#e8f5e8,stroke:#388e3c
+    classDef result fill:#fce4ec,stroke:#c2185b
+
+    class CAD,PARSE,RENDER cad
+    class ERROR parse
+    class MEASURE,ANNOTATE,VALIDATE tool
+    class PASS,FAIL,EXPORT,SAVE result

@@ -1,0 +1,31 @@
+name: upsert-state-flow
+version: "1.0"
+description: "Upsert state navigation flow showing record creation, editing, import, and modal transitions"
+parameters:
+  - name: discipline
+    type: string
+    default: "00870"
+    description: "Discipline code"
+  - name: showBulkImport
+    type: boolean
+    default: true
+    description: "Whether to show the Bulk Import branch"
+template: |
+  flowchart TD
+    UPSERT[Upsert State] -->|click Create New| MODAL1[CreateNewRecord Modal]
+    UPSERT -->|click Edit| MODAL2[EditRecord Modal]
+    {% if showBulkImport %}
+    UPSERT -->|click Bulk Import| MODAL3[Import Modal]
+    {% endif %}
+    UPSERT -->|click Delete| MODAL4[Confirmation Modal]
+    UPSERT -->|click Clone| INLINE[Inline Clone]
+    UPSERT -->|click nav tab| AGENTS[Agents State]
+    UPSERT -->|click nav tab| WORKSPACE[Workspace State]
+
+    classDef state fill:#e3f2fd,stroke:#1976d2
+    classDef modal fill:#fff3e0,stroke:#f57c00
+    classDef inline fill:#e8f5e8,stroke:#388e3c
+
+    class UPSERT,AGENTS,WORKSPACE state
+    class MODAL1,MODAL2,MODAL3,MODAL4 modal
+    class INLINE inline

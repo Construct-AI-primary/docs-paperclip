@@ -1,0 +1,92 @@
+name: tendering-rfq-flow
+version: "2.1"
+description: "Tendering RFQ lifecycle — RFQ creation, publication, prospective bidder pre-qualification (with 02400 Safety contractor vetting integration), supplier DB insertion (shared with 01900 Procurement), invitation via 01900 outreach workflow, bid collection, evaluation, award, and contract conversion"
+parameters:
+  - name: discipline
+    type: string
+    default: "BTND"
+    description: "Discipline code (BTND for Bidding & Tendering)"
+  - name: showEvaluation
+    type: boolean
+    default: true
+    description: "Whether to show the detailed evaluation and scoring sub-flow"
+  - name: showPrequal
+    type: boolean
+    default: true
+    description: "Whether to show the pre-qualification pipeline for prospective bidders"
+  - name: showIntegrationPoints
+    type: boolean
+    default: true
+    description: "Whether to show cross-discipline integration points (02400 Safety, 01900 Procurement)"
+template: |
+  flowchart TD
+    CREATE[RFQ Creation] -->|define scope| DRAFT[Draft RFQ]
+    DRAFT -->|approve by manager| PUBLISH[Publish to Vendor Portal]
+    PUBLISH -->|open for expression of interest| PREQUAL[Pre-Qualification Phase]
+
+    subgraph PQ[Pre-Qualification Pipeline]
+        PREQUAL -->|prospective bidders register| EOI[Expression of Interest]
+        EOI -->|submit credentials| VET[Vetting & Screening]
+        VET -->|CIDB check| CIDB[CIDB Verification]
+        VET -->|BBBEE check| BBBEE[BBBEE Level Check]
+        VET -->|financial check| FIN[Financial Capacity Review]
+        VET -->|safety record| SAFETY[Safety & Compliance Review]
+        CIDB -->|score| QUAL{Qualified?}
+        BBBEE -->|score| QUAL
+        FIN -->|score| QUAL
+        SAFETY -->|score| QUAL
+        QUAL -->|pass all thresholds| DB[(Supplier Database)]
+        QUAL -->|fail any threshold| DECLINE[Decline Notification]
+    end
+
+    SAFETY -.->|delegates to| VETTING[[02400 Safety Contractor Vetting]]
+    VETTING -.->|HSSE evaluation template| SAFETY
+
+    DB -.->|shared with| SUPPLIER_DIR[[01900 Procurement Supplier Directory]]
+    DB -.->|supplier cards| SUPPLIER_SEL[[01900 Supplier Selection UI]]
+
+    DB -->|shortlist from database| INVITE[Invite to Participate]
+    DECLINE -->|feedback| CLOSED[Declined - Logged]
+
+    INVITE -.->|via| OUTREACH[[01900 Supplier Outreach Workflow]]
+    OUTREACH -.->|voice call if needed| VOICE[[01900 Voice Call Modal]]
+
+    INVITE -->|vendors submit bids| COLLECT[Bid Collection Period]
+    COLLECT -->|deadline reached| EVAL[Evaluation & Scoring]
+
+    EVAL -->|technical| TECH[Technical Score]
+    EVAL -->|commercial| COMM[Commercial Score]
+    EVAL -->|compliance| COMP[Compliance Check]
+    TECH -->|weighted| TOTAL[Total Score]
+    COMM -->|weighted| TOTAL
+    COMP -->|pass/fail| TOTAL
+
+    TOTAL -->|highest score| AWARD[Award Decision]
+    TOTAL -->|tie| TIE[Committee Review]
+    TIE -->|resolve| AWARD
+
+    AWARD -->|approve| LETTER[Generate Award Letter]
+    AWARD -->|reject| NOTIFY[Notify Unsuccessful Bidders]
+    LETTER -->|CEO sign-off| CONTRACT[Contract Conversion]
+    CONTRACT -->|handover pack| CONTRACTS[Contracts Discipline]
+    NOTIFY -->|debriefing| CLOSE[Close RFQ]
+
+    classDef create fill:#e3f2fd,stroke:#1976d2
+    classDef publish fill:#fff3e0,stroke:#f57c00
+    classDef prequal fill:#f3e5f5,stroke:#7b1fa2
+    classDef db fill:#e8f5e8,stroke:#388e3c
+    classDef collect fill:#f3e5f5,stroke:#7b1fa2
+    classDef eval fill:#ffebee,stroke:#d32f2f
+    classDef award fill:#e8f5e8,stroke:#388e3c
+    classDef final fill:#fce4ec,stroke:#c2185b
+    classDef integration fill:#fff8e1,stroke:#f9a825,stroke-dasharray: 5 5
+
+    class CREATE,DRAFT create
+    class PUBLISH,PREQUAL publish
+    class EOI,VET,CIDB,BBBEE,FIN,SAFETY,QUAL,DECLINE prequal
+    class DB,INVITE db
+    class COLLECT collect
+    class EVAL,TECH,COMM,COMP,TOTAL eval
+    class TIE,AWARD,LETTER award
+    class NOTIFY,CONTRACT,CONTRACTS,CLOSE,CLOSED final
+    class VETTING,SUPPLIER_DIR,SUPPLIER_SEL,OUTREACH,VOICE integration

@@ -375,49 +375,52 @@ flowchart TD
 
 > **⚠️ SOURCE OF TRUTH**: The mermaid diagrams in this section are the **authoritative specification** for all measurement platform flows. Text descriptions in Parts A, B, and E reference these diagrams and must not contradict them. If a discrepancy exists between a text description and a diagram, the diagram takes precedence. When implementing or modifying the platform, start here.
 
-### 8. Page State Flow
+### 8. Page State Flow (generated from `three-state-navigation` template v2.0, with disabled accordion)
 
-Auth is handled by the platform before the page is entered. The user navigates to the measurement platform via a bespoke URL from the accordion (e.g., `/#/drawing-measurements` or `/#/technical-drawings`). The page loads directly into one of the three states.
-
-**Architecture**: The page has **three navigation tabs** at the top level — Agents, Upsert, Workspace. Within each tab, **action buttons** trigger modals or open sub-views. This is _not_ a flat list of peer nodes.
+> **Parameters**: `discipline: "measurement-shared"`, `states: "Agents, Upserts, Workspace"`, `routes: "/#/drawing-measurements, /#/technical-drawings"`, `roles: "viewer, editor, reviewer, manager, admin"`, `showAccordion: false`
+>
+> The page-level accordion (Bidding/Tendering toggle) is disabled for the Measurement Platform as it uses a shared cross-discipline route structure. Role gates are mapped to Measurement roles:
+> - `viewer` → Router access (+ View Agent Details)
+> - `editor` → Record actions (Import CAD, Run Standard, Edit Record)
+> - `reviewer` → Review actions (Approve Takeoff, Reject Takeoff)
+> - `manager` → Management actions (Export, Assign)
 
 ```mermaid
 flowchart TD
-    ACCORDION[Accordion Link] -->|click| PAGE["Bespoke Page URL"]
+    classDef page fill:#fff3e0,stroke:#f57c00
+    classDef state fill:#e8eaf6,stroke:#283593
+    classDef gate fill:#ffebee,stroke:#d32f2f
+    classDef action fill:#fff3e0,stroke:#f57c00
+    classDef modal fill:#f3e5f5,stroke:#7b1fa2
 
-    %% ─── Three Navigation Tabs ───
-    PAGE -->|default active tab| AGENTS[Tab: Agents - Display Only]
-    AGENTS -->|click tab| UPSERT[Tab: Upsert - Create/Edit]
-    UPSERT -->|click tab| WORKSPACE[Tab: Workspace - Review/Approve]
-    WORKSPACE -->|click tab| AGENTS
+    Load[Page Load] --> Rights{Role Check}
+    Rights -->|role >= viewer| Router[State Router]
+    Rights -->|role < viewer| Denied[Access Denied]
 
-    %% ─── Actions inside Upsert tab ───
-    subgraph UPSERT_ACTIONS[Upsert Tab — Action Buttons]
-        direction LR
-        UPSERT_B1[Import CAD] -->|opens modal| MODAL_CAD[CADImport Modal]
-        UPSERT_B2[Run Standards Check] -->|opens modal| MODAL_STD[StandardsCheck Modal]
-    end
-    UPSERT --> UPSERT_B1
-    UPSERT --> UPSERT_B2
+    Router --> Agents[Agents State]
+    Router --> Upserts[Upserts State]
+    Router --> Workspace[Workspace State]
 
-    %% ─── Actions inside Workspace tab ───
-    subgraph WORKSPACE_ACTIONS[Workspace Tab — Action Buttons]
-        direction LR
-        WORK_B1[Approve/Reject] -->|approve| MODAL_APPR[Approval Modal]
-        WORK_B2[Generate BOQ] -->|opens| MODAL_BOQ[BOQComposer]
-        WORK_B3[Send to Tender] -->|opens portal| PORTAL[Sub-Vendor Portal]
-    end
-    WORKSPACE --> WORK_B1
-    WORKSPACE --> WORK_B2
-    WORKSPACE --> WORK_B3
+    Agents -->|any authenticated| ViewAgent[View Agent Details]
 
-    %% ─── Style: tabs vs buttons ───
-    classDef tab fill:#00897B,color:#fff,stroke:#00695C,stroke-width:2px
-    classDef tabAction fill:#e0f2f1,color:#004d40,stroke:#00897B,stroke-width:1px
-    classDef modal fill:#fce4ec,color:#b71c1c,stroke:#e53935,stroke-width:1px
-    class AGENTS,UPSERT,WORKSPACE tab
-    class UPSERT_B1,UPSERT_B2,WORK_B1,WORK_B2,WORK_B3 tabAction
-    class MODAL_CAD,MODAL_STD,MODAL_APPR,MODAL_BOQ,PORTAL modal
+    Upserts -->|role >= editor| RecordActions[Record Actions]
+    RecordActions --> ImportCAD[Import CAD]
+    RecordActions --> RunStandard[Run Standard]
+    RecordActions --> EditRecord[Edit Record]
+
+    Workspace -->|role >= reviewer| ReviewActions[Review Actions]
+    ReviewActions --> ApproveTakeoff[Approve Takeoff]
+    ReviewActions --> RejectTakeoff[Reject Takeoff]
+    Workspace -->|role >= manager| ManagementActions[Management Actions]
+    ManagementActions --> ExportAction[Export Data]
+    ManagementActions --> AssignAction[Assign Action]
+    ManagementActions --> SendTender[Send to Tender]
+
+    class Load,Denied page
+    class Rights,Agents,Upserts,Workspace state
+    class ViewAgent,RecordActions,ReviewActions,ManagementActions gate
+    class ImportCAD,RunStandard,EditRecord,ExportAction action
+    class ApproveTakeoff,RejectTakeoff,AssignAction,SendTender modal
 ```
 
 ### 9. CAD Measurement Extraction Flow

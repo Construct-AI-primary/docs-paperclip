@@ -721,53 +721,53 @@ flowchart LR
     class COMPLIANCE,CO_DISC,CO_APP,CO_APPR,CO_HITL compliance
 ```
 
-### 16. Page State Flow with Modal Integration
+### 16. Page State Flow with Modal Integration (generated from `three-state-navigation` template v2.0, with disabled accordion)
 
-Enhanced page state flow showing three-state navigation with modal interactions, HITL queue sub-states, and Workspace-specific operations.
+> **Parameters**: `discipline: "01900"`, `states: "Agents, Upserts, Workspace"`, `roles: "viewer, editor, reviewer, manager, admin"`, `showAccordion: false`
+>
+> The page-level accordion (Bidding/Tendering toggle) is disabled for Procurement as this discipline uses its own accordion structure. Role gates are mapped to Procurement roles:
+> - `viewer` → Router access (+ View Agent Details)
+> - `editor` → Record actions (Create, Import, Edit)
+> - `reviewer` → Review actions (Approve, Reject)
+> - `manager` → Management actions (Assign, Generate PO)
+> - `admin` → Full access
 
 ```mermaid
 flowchart TD
-    LOAD[Page Load] -->|check auth| AUTH{Auth Valid?}
-    AUTH -->|no| LOGIN[Redirect to Login]
-    AUTH -->|yes| STATE[State Router]
-    STATE -->|default| AGENTS[Agents State]
-    STATE -->|nav| UPSERT[Upserts State]
-    STATE -->|nav| WORKSPACE[Workspace State]
+    classDef page fill:#fff3e0,stroke:#f57c00
+    classDef state fill:#e8eaf6,stroke:#283593
+    classDef gate fill:#ffebee,stroke:#d32f2f
+    classDef action fill:#fff3e0,stroke:#f57c00
+    classDef modal fill:#f3e5f5,stroke:#7b1fa2
 
-    AGENTS -->|view details| AGENT_MODAL[AgentDetails Modal]
-    AGENTS -->|nav tab| UPSERT
-    AGENTS -->|nav tab| WORKSPACE
+    Load[Page Load] --> Rights{Role Check}
+    Rights -->|role >= viewer| Router[State Router]
+    Rights -->|role < viewer| Denied[Access Denied]
 
-    UPSERT -->|create new| CREATE_MODAL[CreateRecord Modal]
-    UPSERT -->|import| IMPORT_MODAL[Import Modal]
-    UPSERT -->|edit| EDIT_MODAL[EditRecord Modal]
-    UPSERT -->|delete| DELETE_MODAL[Confirmation Modal]
-    UPSERT -->|nav tab| AGENTS
-    UPSERT -->|nav tab| WORKSPACE
+    Router --> Agents[Agents State]
+    Router --> Upserts[Upserts State]
+    Router --> Workspace[Workspace State]
 
-    WORKSPACE -->|review queue| HITL_QUEUE[HITL Review Queue]
-    WORKSPACE -->|generate PO| PO_MODAL[GeneratePO Modal]
-    WORKSPACE -->|generate report| EXPORT_MODAL[Export Modal]
-    WORKSPACE -->|nav tab| AGENTS
-    WORKSPACE -->|nav tab| UPSERT
+    Agents -->|any authenticated| ViewAgent[View Agent Details]
 
-    HITL_QUEUE -->|approve| APPROVE_MODAL[Approval Modal]
-    HITL_QUEUE -->|reject| REJECT_MODAL[Rejection Modal]
-    HITL_QUEUE -->|assign| ASSIGN_MODAL[Assign Modal]
+    Upserts -->|role >= editor| RecordActions[Record Actions]
+    RecordActions --> CreateRecord[Create Record]
+    RecordActions --> ImportData[Import Data]
+    RecordActions --> EditRecord[Edit Record]
 
-    classDef auth fill:#e3f2fd,stroke:#1976d2
-    classDef state fill:#f3e5f5,stroke:#7b1fa2
-    classDef agents fill:#e8f5e8,stroke:#388e3c
-    classDef upsert fill:#fff3e0,stroke:#f57c00
-    classDef workspace fill:#ffebee,stroke:#d32f2f
-    classDef modal fill:#fce4ec,stroke:#c2185b
+    Workspace -->|role >= reviewer| ReviewActions[Review Actions]
+    ReviewActions --> ReviewQueue[Review HITL Queue]
+    ReviewActions --> ApproveAction[Approve Action]
+    ReviewActions --> RejectAction[Reject Action]
+    Workspace -->|role >= manager| ManagementActions[Management Actions]
+    ManagementActions --> AssignAction[Assign Action]
+    ManagementActions --> GeneratePO[Generate PO]
 
-    class LOAD,AUTH,LOGIN auth
-    class STATE state
-    class AGENTS,AGENT_MODAL agents
-    class UPSERT,CREATE_MODAL,IMPORT_MODAL,EDIT_MODAL,DELETE_MODAL upsert
-    class WORKSPACE,HITL_QUEUE,PO_MODAL,EXPORT_MODAL workspace
-    class APPROVE_MODAL,REJECT_MODAL,ASSIGN_MODAL modal
+    class Load,Denied page
+    class Rights,Agents,Upserts,Workspace state
+    class ViewAgent,RecordActions,ReviewActions,ManagementActions gate
+    class CreateRecord,ImportData,EditRecord,ReviewQueue action
+    class ApproveAction,RejectAction,AssignAction,GeneratePO modal
 ```
 
 ---

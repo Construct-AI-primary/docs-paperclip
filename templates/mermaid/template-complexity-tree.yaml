@@ -1,0 +1,66 @@
+name: template-complexity-tree
+version: "1.0"
+description: "Decision tree for template complexity selection — determines discipline count, appendix requirements, approval levels, and business rules per complexity level"
+parameters:
+  - name: discipline
+    type: string
+    default: "01900"
+    description: "Discipline code"
+template: |
+  flowchart LR
+    CREATE[Create Template] -->|select| COMPLEXITY{Complexity Level}
+
+    COMPLEXITY -->|simple| SIMPLE[Simple Procurement]
+    COMPLEXITY -->|standard| STANDARD[Standard Procurement]
+    COMPLEXITY -->|complex| COMPLEX[Complex Procurement]
+    COMPLEXITY -->|emergency| EMERGENCY[Emergency Procurement]
+    COMPLEXITY -->|compliance| COMPLIANCE[Compliance Procurement]
+
+    subgraph S[Simple]
+        SIMPLE --> S_DISC["Disciplines: 01900 only"]
+        SIMPLE --> S_APP["Appendices: A, C"]
+        SIMPLE --> S_APPR["Approval: 1 level"]
+        SIMPLE --> S_HITL["HITL: not required"]
+    end
+
+    subgraph STD[Standard]
+        STANDARD --> STD_DISC["Disciplines: 01900, 02400"]
+        STANDARD --> STD_APP["Appendices: A, B, C, E"]
+        STANDARD --> STD_APPR["Approval: 2 levels"]
+        STANDARD --> STD_HITL["HITL: required"]
+    end
+
+    subgraph C[Complex]
+        COMPLEX --> C_DISC["Disciplines: 6-12"]
+        COMPLEX --> C_APP["Appendices: A-F"]
+        COMPLEX --> C_APPR["Approval: 3 levels"]
+        COMPLEX --> C_HITL["HITL: required"]
+    end
+
+    subgraph E[Emergency]
+        EMERGENCY --> E_DISC["Disciplines: 01900, 02400"]
+        EMERGENCY --> E_APP["Appendices: A, B, C"]
+        EMERGENCY --> E_APPR["Approval: 1 level"]
+        EMERGENCY --> E_HITL["HITL: priority"]
+    end
+
+    subgraph CO[Compliance]
+        COMPLIANCE --> CO_DISC["Disciplines: 01900, 01300, 02400"]
+        COMPLIANCE --> CO_APP["Appendices: A, B, C, F"]
+        COMPLIANCE --> CO_APPR["Approval: 3 levels audit"]
+        COMPLIANCE --> CO_HITL["HITL: required audit"]
+    end
+
+    classDef decision fill:#e3f2fd,stroke:#1976d2
+    classDef simple fill:#e8f5e8,stroke:#388e3c
+    classDef standard fill:#fff3e0,stroke:#f57c00
+    classDef complex fill:#ffebee,stroke:#d32f2f
+    classDef emergency fill:#fce4ec,stroke:#c2185b
+    classDef compliance fill:#f3e5f5,stroke:#7b1fa2
+
+    class CREATE,COMPLEXITY decision
+    class SIMPLE,S_DISC,S_APP,S_APPR,S_HITL simple
+    class STANDARD,STD_DISC,STD_APP,STD_APPR,STD_HITL standard
+    class COMPLEX,C_DISC,C_APP,C_APPR,C_HITL complex
+    class EMERGENCY,E_DISC,E_APP,E_APPR,E_HITL emergency
+    class COMPLIANCE,CO_DISC,CO_APP,CO_APPR,CO_HITL compliance

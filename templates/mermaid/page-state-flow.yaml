@@ -1,0 +1,52 @@
+name: page-state-flow
+version: "2.0"
+description: "Page state flow with page-level accordion (Bidding/Tendering toggle), role-based access rights per state, and modal integration"
+parameters:
+  - name: discipline
+    type: string
+    default: "BTND"
+    description: "Discipline code (e.g., BTND, 01900, 00860)"
+  - name: states
+    type: string
+    default: "Agents, Upserts, Workspace"
+    description: "Comma-separated list of state names"
+  - name: modals
+    type: string
+    default: "AgentDetails, CreateRecord, ImportData, EditRecord, DownloadOptions, Evaluation, Rejection, HITLQueue"
+    description: "Comma-separated list of modal names"
+  - name: showAccordion
+    type: boolean
+    default: true
+    description: "Whether to show the page-level Bidding/Tendering accordion toggle"
+template: |
+  flowchart TD
+    Accordion[Page-Level Accordion] -->|Bidding / Tendering| ST[Switch System View]
+
+    Load[Page Load] --> Rights{Role Check}
+    Rights -->|role >= viewer| Router[State Router]
+    Rights -->|role < viewer| Denied[Access Denied Page]
+
+    Router -->|viewer+| S1[State 1: Agents]
+    Router -->|editor+| S2[State 2: Upserts]
+    Router -->|evaluator+| S3[State 3: Workspace]
+
+    S1 -->|any role| M1[Modal: AgentDetails]
+
+    S2 -->|editor+| M2[Modal: CreateRecord]
+    S2 -->|editor+| M3[Modal: ImportData]
+    S2 -->|editor+| M4[Modal: EditRecord]
+    S2 -->|any role| M5[Modal: DownloadOptions]
+
+    S3 -->|evaluator+| M6[Modal: Evaluation]
+    S3 -->|evaluator+| M8[Modal: Rejection]
+    S3 -->|evaluator+| M10[Modal: HITLQueue]
+    S3 -->|manager+| M7[Modal: Award]
+    S3 -->|governance+| M9[Modal: Override]
+
+    classDef page fill:#e3f2fd,stroke:#1976d2
+    classDef state fill:#e8eaf6,stroke:#283593
+    classDef modal fill:#fff3e0,stroke:#e65100
+
+    class Load,Denied,Accordion,ST page
+    class Rights,Router,S1,S2,S3 state
+    class M1,M2,M3,M4,M5,M6,M7,M8,M9,M10 modal

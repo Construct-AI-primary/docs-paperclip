@@ -1,0 +1,42 @@
+name: hitl-workflow
+version: "1.0"
+description: "Human-in-the-Loop review workflow showing AI agent output, review queue, approval/rejection routing, and LoRA feedback loop"
+parameters:
+  - name: discipline
+    type: string
+    default: "00870"
+    description: "Discipline code"
+  - name: confidenceThreshold
+    type: number
+    default: 85
+    description: "Confidence threshold percentage for auto-routing"
+  - name: showKnowledgeLoop
+    type: boolean
+    default: true
+    description: "Whether to show the KnowledgeForge AI indexing and LoRA retraining loop"
+template: |
+  flowchart LR
+    AGENT[AI Agent] -->|completes work| QUEUE[HITL Review Queue]
+    QUEUE -->|human reviews| APPROVE[Approve]
+    QUEUE -->|human reviews| REJECT[Reject with Feedback]
+    QUEUE -->|human edits| EDIT[Direct Edit]
+    APPROVE --> DONE[Done Status]
+    REJECT --> AGENT
+    EDIT --> DONE
+    AGENT -->|with HITL guidance| QUEUE
+    {% if showKnowledgeLoop %}
+    DONE -->|indexed| KNOWLEDGE[KnowledgeForge AI]
+    KNOWLEDGE -->|retrain| LORA[LoRA Adapter Update]
+    {% endif %}
+
+    classDef agent fill:#e3f2fd,stroke:#1976d2
+    classDef queue fill:#fff3e0,stroke:#f57c00
+    classDef action fill:#e8f5e8,stroke:#388e3c
+    classDef done fill:#fce4ec,stroke:#c2185b
+    classDef knowledge fill:#f3e5f5,stroke:#7b1fa2
+
+    class AGENT agent
+    class QUEUE queue
+    class APPROVE,REJECT,EDIT action
+    class DONE done
+    class KNOWLEDGE,LORA knowledge

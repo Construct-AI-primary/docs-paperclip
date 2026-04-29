@@ -1,0 +1,60 @@
+name: three-state-navigation
+version: "2.0"
+description: "Three-state navigation flow with page-level accordion (Bidding/Tendering toggle), role-based access rights, and modal integration for discipline-specific UI/UX specs"
+parameters:
+  - name: discipline
+    type: string
+    default: "BTND"
+    description: "Discipline code (e.g., BTND, 01900, 00860)"
+  - name: states
+    type: string
+    default: "Agents, Upserts, Workspace"
+    description: "Comma-separated list of state names"
+  - name: roles
+    type: string
+    default: "viewer, editor, evaluator, manager, governance"
+    description: "Comma-separated list of role levels for access gating"
+  - name: showAccordion
+    type: boolean
+    default: true
+    description: "Whether to show the page-level Bidding/Tendering accordion toggle"
+template: |
+  flowchart TD
+    Accordion[Page-Level Accordion] -->|Bidding / Tendering| SystemToggle{System Toggle}
+    SystemToggle -->|Bidding| BiddingView[Bidding System View]
+    SystemToggle -->|Tendering| TenderingView[Tendering System View]
+
+    Load[Page Load] --> Rights{Role Check}
+    Rights -->|role >= viewer| Router[State Router]
+    Rights -->|role < viewer| Denied[Access Denied]
+
+    Router --> Agents[Agents State]
+    Router --> Upserts[Upserts State]
+    Router --> Workspace[Workspace State]
+
+    Agents -->|any authenticated| ViewAgent[View Agent Details]
+
+    Upserts -->|role >= editor| RecordActions[Record Actions]
+    RecordActions --> CreateRecord[Create Record]
+    RecordActions --> ImportData[Import Data]
+    RecordActions --> EditRecord[Edit Record]
+
+    Workspace -->|role >= evaluator| EvalActions[Evaluation Actions]
+    EvalActions --> ReviewQueue[Review HITL Queue]
+    EvalActions --> EvaluateBids[Evaluate Bids]
+    Workspace -->|role >= manager| AwardActions[Award Actions]
+    AwardActions --> AwardContract[Award Contract]
+    Workspace -->|role >= governance| OverrideActions[Governance Actions]
+
+    classDef page fill:#e3f2fd,stroke:#1976d2
+    classDef state fill:#e8eaf6,stroke:#283593
+    classDef gate fill:#ffebee,stroke:#d32f2f
+    classDef action fill:#fff3e0,stroke:#e65100
+    classDef modal fill:#f3e5f5,stroke:#7b1fa2
+
+    class Load,Denied page
+    class Accordion,SystemToggle,BiddingView,TenderingView page
+    class Rights,Agents,Upserts,Workspace state
+    class ViewAgent,RecordActions,EvalActions,AwardActions gate
+    class CreateRecord,ImportData,EditRecord,ReviewQueue,EvaluateBids action
+    class AwardContract,OverrideActions modal

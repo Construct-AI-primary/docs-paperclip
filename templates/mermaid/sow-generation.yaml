@@ -1,0 +1,73 @@
+name: sow-generation
+version: "1.0"
+description: "AI-enhanced SOW generation with spec template selection per appendix, discipline routing, HITL gates, and document assembly"
+parameters:
+  - name: discipline
+    type: string
+    default: "01900"
+    description: "Discipline code"
+  - name: appendices
+    type: string
+    default: "A,B,C,D,E,F"
+    description: "Comma-separated list of appendix letters"
+template: |
+  flowchart TD
+    PRESELECT[Pre-selected Template] -->|load| SECTIONS[Auto-populated Sections]
+    SECTIONS -->|AI agent| SOW[SOW Content Generation]
+    SOW -->|validate| VALIDATE[Content Validation]
+    VALIDATE -->|pass| APP_PLAN[Determine Required Appendices]
+    VALIDATE -->|fail| SOW
+
+    APP_PLAN -->|from DOM config| APP_LIST[List Appendices: A-F]
+    APP_LIST -->|per appendix| TEMPLATE_SEL[Select Spec Template from Registry]
+
+    TEMPLATE_SEL -->|configurable schema| APP_A[Appendix A: Product Specs]
+    TEMPLATE_SEL -->|configurable schema| APP_B[Appendix B: Safety Data Sheets]
+    TEMPLATE_SEL -->|configurable schema| APP_C[Appendix C: Delivery Schedule]
+    TEMPLATE_SEL -->|configurable schema| APP_D[Appendix D: Training Materials]
+    TEMPLATE_SEL -->|configurable schema| APP_E[Appendix E: Logistics Docs]
+    TEMPLATE_SEL -->|configurable schema| APP_F[Appendix F: Packing Specs]
+
+    APP_A -->|route| ENG[Engineering Team]
+    APP_B -->|route| SAFETY[Safety Team]
+    APP_C -->|route| PROCURE[Procurement Team]
+    APP_D -->|route| TECH[Technical Team]
+    APP_E -->|route| LOGISTICS[Logistics Team]
+    APP_F -->|route| QUALITY[Quality Team]
+
+    ENG -->|HITL| HITL_A{HITL Approve?}
+    SAFETY -->|HITL| HITL_B{HITL Approve?}
+    PROCURE -->|HITL| HITL_C{HITL Approve?}
+    TECH -->|HITL| HITL_D{HITL Approve?}
+    LOGISTICS -->|HITL| HITL_E{HITL Approve?}
+    QUALITY -->|HITL| HITL_F{HITL Approve?}
+
+    HITL_A -->|yes| ASSEMBLE[Document Assembly]
+    HITL_B -->|yes| ASSEMBLE
+    HITL_C -->|yes| ASSEMBLE
+    HITL_D -->|yes| ASSEMBLE
+    HITL_E -->|yes| ASSEMBLE
+    HITL_F -->|yes| ASSEMBLE
+
+    HITL_A -->|no| APP_A
+    HITL_B -->|no| APP_B
+    HITL_C -->|no| APP_C
+    HITL_D -->|no| APP_D
+    HITL_E -->|no| APP_E
+    HITL_F -->|no| APP_F
+
+    ASSEMBLE -->|finalize| PACKAGE[Final Procurement Package]
+
+    classDef sow fill:#e3f2fd,stroke:#1976d2
+    classDef appendix fill:#f3e5f5,stroke:#7b1fa2
+    classDef route fill:#fff3e0,stroke:#f57c00
+    classDef hitl fill:#ffebee,stroke:#d32f2f
+    classDef final fill:#e8f5e8,stroke:#388e3c
+    classDef template fill:#e8eaf6,stroke:#3f51b5
+
+    class PRESELECT,SECTIONS,SOW,VALIDATE sow
+    class APP_PLAN,APP_LIST,TEMPLATE_SEL template
+    class APP_A,APP_B,APP_C,APP_D,APP_E,APP_F appendix
+    class ENG,SAFETY,PROCURE,TECH,LOGISTICS,QUALITY route
+    class HITL_A,HITL_B,HITL_C,HITL_D,HITL_E,HITL_F hitl
+    class ASSEMBLE,PACKAGE final

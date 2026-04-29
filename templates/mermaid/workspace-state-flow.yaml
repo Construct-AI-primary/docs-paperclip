@@ -1,0 +1,38 @@
+name: workspace-state-flow
+version: "1.0"
+description: "Workspace state navigation flow showing HITL review, approval, rejection, and modal transitions"
+parameters:
+  - name: discipline
+    type: string
+    default: "00870"
+    description: "Discipline code"
+  - name: showAssign
+    type: boolean
+    default: true
+    description: "Whether to show the Assign modal branch"
+  - name: showReport
+    type: boolean
+    default: true
+    description: "Whether to show the Generate Report branch"
+template: |
+  flowchart TD
+    WORKSPACE[Workspace State] -->|click Approve| MODAL1[Approval Modal]
+    WORKSPACE -->|click Reject| MODAL2[Rejection Modal]
+    WORKSPACE -->|click Edit| MODAL3[EditWorkItem Modal]
+    {% if showAssign %}
+    WORKSPACE -->|click Assign| MODAL4[Assign Modal]
+    {% endif %}
+    {% if showReport %}
+    WORKSPACE -->|click Generate Report| MODAL5[Export Modal]
+    {% endif %}
+    WORKSPACE -->|click Comment| CHAT[Inline Chat Panel]
+    WORKSPACE -->|click nav tab| AGENTS[Agents State]
+    WORKSPACE -->|click nav tab| UPSERT[Upsert State]
+
+    classDef state fill:#e3f2fd,stroke:#1976d2
+    classDef modal fill:#fff3e0,stroke:#f57c00
+    classDef chat fill:#e8f5e8,stroke:#388e3c
+
+    class WORKSPACE,AGENTS,UPSERT state
+    class MODAL1,MODAL2,MODAL3,MODAL4,MODAL5 modal
+    class CHAT chat

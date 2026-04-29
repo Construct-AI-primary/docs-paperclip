@@ -1,9 +1,23 @@
 ---
 title: "01700 Logistics — UI/UX Specification"
+<<<<<<< HEAD
 description: "Complete UI/UX specification for the Logistics discipline page, covering Template B (Complex/Three-State) classification, Mermaid flow diagrams, three-state button mechanics, modal inventory, color palette, chatbot configuration, AI model backend, and agent knowledge ownership."
 author: "PromptForge AI — Discipline Automation Agent"
 date: "2026-04-29"
 version: "1.0"
+=======
+description: "Complete UI/UX specification for the Logistics discipline page, covering Template B (Complex/Three-State) classification, Mermaid flow diagrams (generated from parameterized templates), three-state button mechanics, modal inventory, color palette, chatbot configuration, AI model backend, and agent knowledge ownership."
+author: "PromptForge AI — Discipline Automation Agent"
+date: "2026-04-29"
+version: "2.0"
+gigabrain_tags: logistics, ui-ux, specification, template-b, mermaid-templates, logistics-blueprint
+related_docs:
+  - docs-paperclip/procedures/workflows/mermaid-diagram-template-system-procedure.md
+  - docs-paperclip/templates/mermaid/registry.yaml
+  - docs-paperclip/scripts/render-mermaid.cjs
+  - docs-paperclip/templates/mermaid/logistics-lifecycle.yaml
+  - docs-paperclip/templates/mermaid/logistics-order-creation.yaml
+>>>>>>> b9f110a (UI-UX specification updates across disciplines, new mermaid templates, knowledge templates, and project specs)
 ---
 
 # 01700 Logistics — UI/UX Specification
@@ -88,6 +102,7 @@ AI generates logistics recommendations (route plans, customs docs, delivery sche
 
 ## Part C: Mermaid UI Flow Diagrams
 
+<<<<<<< HEAD
 ### Diagram 1: Three-State Navigation Flow
 
 ```mermaid
@@ -150,6 +165,94 @@ flowchart TD
     class HITL,Supervisor review
     class Execute,Log final
     class Feedback,Improve,Adjust process
+=======
+### Diagram 1: Three-State Navigation Flow (generated from `three-state-navigation` template v2.0, with disabled accordion)
+
+> **Parameters**: `discipline: "01700"`, `states: "Agents, Upserts, Workspace"`, `roles: "viewer, editor, reviewer, coordinator, admin"`, `showAccordion: false`
+>
+> The page-level accordion (Bidding/Tendering toggle) is disabled for Logistics as this discipline does not use the Bidding/Tendering split. Role gates are mapped to Logistics roles:
+> - `viewer` → Router access (+ View Agent Details, View History, View Queue, Export Report)
+> - `editor` → Record actions (Create, Import, Generate, Edit)
+> - `reviewer` → Review actions (Approve, Reject)
+> - `coordinator` → Override actions
+> - `admin` → Full access
+
+```mermaid
+flowchart TD
+    classDef page fill:#e3f2fd,stroke:#1565C0
+    classDef state fill:#e8eaf6,stroke:#283593
+    classDef gate fill:#ffebee,stroke:#d32f2f
+    classDef action fill:#fff3e0,stroke:#f57c00
+    classDef modal fill:#f3e5f5,stroke:#7b1fa2
+
+    Load[Page Load] --> Rights{Role Check}
+    Rights -->|role >= viewer| Router[State Router]
+    Rights -->|role < viewer| Denied[Access Denied]
+
+    Router --> Agents[Agents State]
+    Router --> Upserts[Upserts State]
+    Router --> Workspace[Workspace State]
+
+    Agents -->|any authenticated| ViewAgent[View Agent Details]
+    Agents -->|any authenticated| ViewHistory[View History]
+
+    Upserts -->|role >= editor| RecordActions[Record Actions]
+    RecordActions --> CreateRecord[Create Record]
+    RecordActions --> ImportData[Import Data]
+    RecordActions --> GenerateDoc[Generate Document]
+    RecordActions --> EditRecord[Edit Record]
+
+    Workspace -->|role >= reviewer| ReviewActions[Review Actions]
+    ReviewActions --> ReviewQueue[Review HITL Queue]
+    ReviewActions --> ApproveAction[Approve Action]
+    ReviewActions --> RejectAction[Reject Action]
+    Workspace -->|role >= coordinator| OverrideAction[Override Action]
+
+    class Load,Denied page
+    class Rights,Agents,Upserts,Workspace state
+    class ViewAgent,ViewHistory,RecordActions,ReviewActions gate
+    class CreateRecord,ImportData,GenerateDoc,EditRecord,ReviewQueue action
+    class ApproveAction,RejectAction,OverrideAction modal
+```
+
+### Diagram 2: HITL Review Workflow (generated from `hitl-workflow` template v1.0, with enhanced routing)
+
+> **Parameters**: `discipline: "01700"`, `confidenceThreshold: 85`, `showKnowledgeLoop: true`
+>
+> Logistics extends the base HITL template with:
+> - A **Supervisor escalation** path for contentious reviews
+> - An explicit **Chatbot Refinement** loop (rejected items return to AI with feedback)
+> - The KnowledgeForge AI indexing + LoRA retraining loop active (`showKnowledgeLoop: true`)
+
+```mermaid
+flowchart LR
+    classDef agent fill:#e3f2fd,stroke:#1565C0
+    classDef queue fill:#fff3e0,stroke:#f57c00
+    classDef action fill:#e8f5e8,stroke:#388e3c
+    classDef done fill:#fce4ec,stroke:#c2185b
+    classDef knowledge fill:#f3e5f5,stroke:#7b1fa2
+
+    AGENT[AI Agent] -->|completes work| QUEUE[HITL Review Queue]
+    QUEUE -->|human approves| APPROVE[Approve]
+    QUEUE -->|human rejects| REJECT[Reject with Feedback]
+    QUEUE -->|human edits| EDIT[Direct Edit]
+    QUEUE -->|escalates| SUPERVISOR[Supervisor Review]
+    APPROVE --> DONE[Done Status]
+    REJECT --> AGENT
+    EDIT --> DONE
+    SUPERVISOR -->|approves| DONE
+    SUPERVISOR -->|rejects| AGENT
+    AGENT -->|with HITL guidance| QUEUE
+    DONE -->|indexed| KNOWLEDGE[KnowledgeForge AI]
+    KNOWLEDGE -->|retrain| LORA[LoRA Adapter Update]
+
+    class AGENT agent
+    class QUEUE queue
+    class APPROVE,REJECT,EDIT action
+    class DONE done
+    class SUPERVISOR knowledge
+    class KNOWLEDGE,LORA knowledge
+>>>>>>> b9f110a (UI-UX specification updates across disciplines, new mermaid templates, knowledge templates, and project specs)
 ```
 
 ### Diagram 3: Logistics Lifecycle Flow

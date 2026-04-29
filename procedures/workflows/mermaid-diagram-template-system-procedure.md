@@ -12,7 +12,7 @@ related_docs:
   - docs-paperclip/companies/domainforge-ai/skills/discipline-ui-ux-spec-generation/SKILL.md
   - docs-paperclip/companies/qualityforge-ai/skills/diagram-code-conformance/SKILL.md
   - docs-paperclip/templates/mermaid/registry.yaml
-  - docs-paperclip/scripts/render-mermaid.js
+  - docs-paperclip/scripts/render-mermaid.cjs
   - docs-construct-ai/codebase/guides/developer/1500_MERMAID_MASTER_GUIDE.md
 ---
 
@@ -34,7 +34,7 @@ This procedure defines how to create, render, version, and maintain **parameteri
 ```
 Template YAML (parameterized)
     │
-    ├── render-mermaid.js ──► Rendered Mermaid Diagram (in spec docs)
+    ├── render-mermaid.cjs ──► Rendered Mermaid Diagram (in spec docs)
     │
     └── code-generator.js ──► React Component (state routers, modals, buttons)
                               │
@@ -47,7 +47,7 @@ Template YAML (parameterized)
 |-------|------|
 | Template Registry | `docs-paperclip/templates/mermaid/registry.yaml` |
 | Template Definitions | `docs-paperclip/templates/mermaid/{name}.yaml` |
-| Renderer CLI | `docs-paperclip/scripts/render-mermaid.js` |
+   | Renderer CLI | `docs-paperclip/scripts/render-mermaid.cjs` |
 | Shared Skill | `docs-paperclip/companies/paperclipforge-ai/skills/mermaid-diagram-templates/SKILL.md` |
 | DevForge Skill | `docs-paperclip/companies/devforge-ai/skills/diagram-driven-code-generation/SKILL.md` |
 | DomainForge Skill | `docs-paperclip/companies/domainforge-ai/skills/discipline-ui-ux-spec-generation/SKILL.md` |
@@ -107,7 +107,7 @@ my-new-template:
 5. **Test the template** by rendering it:
 
 ```bash
-node docs-paperclip/scripts/render-mermaid.js \
+node docs-paperclip/scripts/render-mermaid.cjs \
   --template my-new-template \
   --discipline 01900 \
   --showFeature true
@@ -132,14 +132,14 @@ node docs-paperclip/scripts/render-mermaid.js \
 
 ```markdown
 <!-- This diagram is generated from the procurement-lifecycle template -->
-<!-- To update: node render-mermaid.js --template procurement-lifecycle --discipline 01900 -->
+<!-- To update: node render-mermaid.cjs --template procurement-lifecycle --discipline 01900 -->
 ![Procurement Lifecycle](diagrams/procurement-lifecycle.md)
 ```
 
 6. **Render the template** to produce the initial diagram file:
 
 ```bash
-node docs-paperclip/scripts/render-mermaid.js \
+node docs-paperclip/scripts/render-mermaid.cjs \
   --template procurement-lifecycle \
   --discipline 01900 \
   --output docs-paperclip/disciplines/01900-procurement/diagrams/procurement-lifecycle.md
@@ -167,7 +167,7 @@ my-new-template:
 
 ```bash
 # Re-render all diagrams for a specific discipline
-node docs-paperclip/scripts/render-mermaid.js \
+node docs-paperclip/scripts/render-mermaid.cjs \
   --discipline 01900 \
   --output-dir docs-paperclip/disciplines/01900-procurement/diagrams/
 ```
@@ -189,7 +189,7 @@ node docs-paperclip/scripts/render-mermaid.js \
 #### List Available Templates
 
 ```bash
-node docs-paperclip/scripts/render-mermaid.js --list-templates
+node docs-paperclip/scripts/render-mermaid.cjs --list-templates
 ```
 
 Output:
@@ -208,7 +208,7 @@ Available Mermaid Diagram Templates:
 #### Show Template Details
 
 ```bash
-node docs-paperclip/scripts/render-mermaid.js --template-info procurement-lifecycle
+node docs-paperclip/scripts/render-mermaid.cjs --template-info procurement-lifecycle
 ```
 
 Output:
@@ -231,7 +231,7 @@ Parameters:
 #### Render a Single Template
 
 ```bash
-node docs-paperclip/scripts/render-mermaid.js \
+node docs-paperclip/scripts/render-mermaid.cjs \
   --template procurement-lifecycle \
   --discipline 00860 \
   --complexity complex \
@@ -243,7 +243,7 @@ node docs-paperclip/scripts/render-mermaid.js \
 #### Render All Templates for a Discipline
 
 ```bash
-node docs-paperclip/scripts/render-mermaid.js \
+node docs-paperclip/scripts/render-mermaid.cjs \
   --discipline 01900 \
   --output-dir docs-paperclip/disciplines/01900-procurement/diagrams/
 ```
@@ -253,7 +253,7 @@ This renders all 10 templates with the discipline parameter set to `01900` and a
 #### Render to stdout (for quick testing)
 
 ```bash
-node docs-paperclip/scripts/render-mermaid.js \
+node docs-paperclip/scripts/render-mermaid.cjs \
   --template procurement-lifecycle \
   --discipline 02400 \
   --complexity compliance
@@ -374,7 +374,7 @@ When a template refinement is needed:
 Before committing a template change, verify:
 
 - [ ] Template YAML parses without errors (`node -e "require('js-yaml').load(require('fs').readFileSync('template.yaml','utf8'))"`)
-- [ ] Template renders without errors (`node render-mermaid.js --template <name>`)
+- [ ] Template renders without errors (`node render-mermaid.cjs --template <name>`)
 - [ ] Rendered output parses in Mermaid Live Editor
 - [ ] All parameters have descriptions
 - [ ] Registry version is bumped

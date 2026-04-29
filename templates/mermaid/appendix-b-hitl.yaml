@@ -1,0 +1,46 @@
+name: appendix-b-hitl
+version: "1.0"
+description: "Template-driven appendix HITL flow with dynamic schema rendering from Spec Template Registry, chatbot collaboration, and iterative refinement"
+parameters:
+  - name: discipline
+    type: string
+    default: "01900"
+    description: "Discipline code"
+  - name: templateId
+    type: string
+    default: "sds-template-default"
+    description: "Template ID from Spec Template Registry"
+template: |
+  flowchart TD
+    PHASE1[Phase 1: Load Template from Registry] -->|fetch schema| TEMPLATE[[Selected Template Schema]]
+    TEMPLATE -->|AI Agent processes| GEN[Generate Content per Template Fields]
+    GEN -->|flag low confidence| FLAG[Flag Sections for Human Review]
+    FLAG -->|create task| PHASE2[Phase 2: HITL Task Creation]
+    PHASE2 -->|assign to safety officer| ASSIGN[Task in MyTasksDashboard]
+    ASSIGN -->|open review| PHASE3[Phase 3: Human-AI Review]
+    PHASE3 -->|dynamic sections from template| INTERFACE[Dynamic Review Interface]
+    INTERFACE -->|section from template| S1[Section 1: [Title] - 95%]
+    INTERFACE -->|section from template| S2[Section 2: [Title] - 78%]
+    INTERFACE -->|section from template| S8[Section 8: [Title] - needs review]
+
+    S2 -->|chatbot| CHAT[Chatbot Collaboration]
+    S8 -->|chatbot| CHAT
+    CHAT -->|request revision| PHASE4[Phase 4: Iterative Refinement]
+    PHASE4 -->|AI regenerates| UPDATE[Updated Content per Schema]
+    UPDATE -->|re-review| INTERFACE
+    UPDATE -->|approve| PHASE5[Phase 5: Final Approval]
+    PHASE5 -->|mark complete| INTEGRATE[Integrate into Procurement Package]
+
+    classDef phase1 fill:#e3f2fd,stroke:#1976d2
+    classDef phase1b fill:#e8eaf6,stroke:#3f51b5
+    classDef phase2 fill:#f3e5f5,stroke:#7b1fa2
+    classDef phase3 fill:#fff3e0,stroke:#f57c00
+    classDef phase4 fill:#e8f5e8,stroke:#388e3c
+    classDef phase5 fill:#fce4ec,stroke:#c2185b
+
+    class PHASE1,TEMPLATE phase1
+    class GEN,FLAG phase1b
+    class PHASE2,ASSIGN phase2
+    class PHASE3,INTERFACE,S1,S2,S8,CHAT phase3
+    class PHASE4,UPDATE phase4
+    class PHASE5,INTEGRATE phase5
