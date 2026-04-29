@@ -103,7 +103,7 @@ The 01900 Procurement page occupies a unique dual role:
 
 The **Agents state** shows procurement AI agents for supplier management, tender evaluation, and contract administration.
 
-**Buttons**:
+**Buttons** (all buttons are pre-configured by the dev team — users cannot add, edit, or delete buttons):
 
 | Button | Visibility Gate | Action | Modal |
 |--------|----------------|--------|-------|
@@ -121,7 +121,7 @@ flowchart TD
 
 The **Upserts state** is where procurement records are created, edited, and imported.
 
-**Buttons**:
+**Buttons** (all buttons are pre-configured by the dev team — users cannot add, edit, or delete buttons):
 
 | Button | Visibility Gate | Action | Modal |
 |--------|----------------|--------|-------|
@@ -146,7 +146,7 @@ flowchart TD
 
 The **Workspace state** is the procurement operations dashboard.
 
-**Buttons**:
+**Buttons** (all buttons are pre-configured by the dev team — users cannot add, edit, or delete buttons):
 
 | Button | Visibility Gate | Action | Modal |
 |--------|----------------|--------|-------|
@@ -217,9 +217,9 @@ flowchart TD
     class APPROVAL,ASSEMBLY,LOGISTICS,PAYMENT final
 ```
 
-### 9. Order Creation with Discipline Inheritance Flow
+### 9. Order Creation with Spec Template Selection Flow
 
-Detailed flow showing how template variation selection triggers automatic discipline inheritance from Document Ordering Management configuration, followed by user assignment and task generation.
+Detailed flow showing how template variation selection triggers automatic discipline inheritance from Document Ordering Management, followed by **Spec Template Registry** selection for each required appendix, user assignment, and task generation.
 
 ```mermaid
 flowchart TD
@@ -233,12 +233,32 @@ flowchart TD
     REQUIRED --> VALIDATE[Validate Coverage]
     RECOMMENDED --> VALIDATE
     OPTIONAL --> VALIDATE
-    VALIDATE -->|pass| ASSIGN[User Assignment]
+    VALIDATE -->|pass| STR[Spec Template Registry]
     VALIDATE -->|fail| OVERRIDE[Manual Override]
-    OVERRIDE -->|add disciplines| ASSIGN
+    OVERRIDE -->|add disciplines| STR
+
+    STR -->|determine required appendices| APP_CHECK{Appendices Needed?}
+    APP_CHECK -->|yes| APP_SEL[Select Spec Templates per Appendix]
+    APP_CHECK -->|no| ASSIGN[User Assignment]
+
+    APP_SEL -->|appendix A| SEL_A[Select: Product Spec Template]
+    APP_SEL -->|appendix B| SEL_B[Select: Safety Data Sheet Template]
+    APP_SEL -->|appendix C| SEL_C[Select: Delivery Schedule Template]
+    APP_SEL -->|appendix D-F| SEL_DF[Select: Remaining Templates]
+    
+    SEL_A -->|load from registry| REG_A[Spec Registry: Product Specs]
+    SEL_B -->|load from registry| REG_B[Spec Registry: SDS Templates]
+    SEL_C -->|load from registry| REG_C[Spec Registry: Schedules]
+    SEL_DF -->|load from registry| REG_DF[Spec Registry: Others]
+
+    REG_A --> ASSIGN
+    REG_B --> ASSIGN
+    REG_C --> ASSIGN
+    REG_DF --> ASSIGN
+
     ASSIGN -->|per discipline| TASKS[Task Generation]
     TASKS -->|SOW| SOW[SOW Generation Task]
-    TASKS -->|appendices| APP[Appendix Tasks A-F]
+    TASKS -->|appendices| APP[Appendix Tasks with Templates]
     TASKS -->|approval| APPROVAL[Approval Workflow]
     SOW --> ACTIVATE[Activate Workflow]
     APP --> ACTIVATE
@@ -249,32 +269,38 @@ flowchart TD
     classDef assign fill:#fff3e0,stroke:#f57c00
     classDef task fill:#e8f5e8,stroke:#388e3c
     classDef final fill:#fce4ec,stroke:#c2185b
+    classDef registry fill:#e8eaf6,stroke:#3f51b5
 
     class START,FORM,TEMPLATE start
     class INHERIT,DOM,REQUIRED,RECOMMENDED,OPTIONAL config
+    class STR,APP_CHECK,APP_SEL,SEL_A,SEL_B,SEL_C,SEL_DF assign
+    class REG_A,REG_B,REG_C,REG_DF registry
     class VALIDATE,OVERRIDE,ASSIGN assign
     class TASKS,SOW,APP,APPROVAL task
     class ACTIVATE final
 ```
 
-### 10. SOW Generation and Appendix Routing Flow
+### 10. SOW Generation and Appendix Routing with Dynamic Spec Templates
 
-AI-enhanced SOW creation with appendix generation, discipline-specific routing, and HITL review gates for each appendix type.
+AI-enhanced SOW creation with **configurable spec template selection** for each appendix, discipline-specific routing, and HITL review gates. No appendix content is hardcoded — all sections are defined in the Spec Template Registry.
 
 ```mermaid
 flowchart TD
     PRESELECT[Pre-selected Template] -->|load| SECTIONS[Auto-populated Sections]
     SECTIONS -->|AI agent| SOW[SOW Content Generation]
     SOW -->|validate| VALIDATE[Content Validation]
-    VALIDATE -->|pass| APP_GEN[Appendix Generation]
+    VALIDATE -->|pass| APP_PLAN[Determine Required Appendices]
     VALIDATE -->|fail| SOW
 
-    APP_GEN --> APP_A[Appendix A: Product Specs]
-    APP_GEN --> APP_B[Appendix B: Safety Data Sheets]
-    APP_GEN --> APP_C[Appendix C: Delivery Schedule]
-    APP_GEN --> APP_D[Appendix D: Training Materials]
-    APP_GEN --> APP_E[Appendix E: Logistics Docs]
-    APP_GEN --> APP_F[Appendix F: Packing Specs]
+    APP_PLAN -->|from DOM config| APP_LIST[List Appendices: A-F]
+    APP_LIST -->|per appendix| TEMPLATE_SEL[Select Spec Template from Registry]
+
+    TEMPLATE_SEL -->|configurable schema| APP_A[Appendix A: Product Specs]
+    TEMPLATE_SEL -->|configurable schema| APP_B[Appendix B: Safety Data Sheets]
+    TEMPLATE_SEL -->|configurable schema| APP_C[Appendix C: Delivery Schedule]
+    TEMPLATE_SEL -->|configurable schema| APP_D[Appendix D: Training Materials]
+    TEMPLATE_SEL -->|configurable schema| APP_E[Appendix E: Logistics Docs]
+    TEMPLATE_SEL -->|configurable schema| APP_F[Appendix F: Packing Specs]
 
     APP_A -->|route| ENG[Engineering Team]
     APP_B -->|route| SAFETY[Safety Team]
@@ -311,8 +337,10 @@ flowchart TD
     classDef route fill:#fff3e0,stroke:#f57c00
     classDef hitl fill:#ffebee,stroke:#d32f2f
     classDef final fill:#e8f5e8,stroke:#388e3c
+    classDef template fill:#e8eaf6,stroke:#3f51b5
 
     class PRESELECT,SECTIONS,SOW,VALIDATE sow
+    class APP_PLAN,APP_LIST,TEMPLATE_SEL template
     class APP_A,APP_B,APP_C,APP_D,APP_E,APP_F appendix
     class ENG,SAFETY,PROCURE,TECH,LOGISTICS,QUALITY route
     class HITL_A,HITL_B,HITL_C,HITL_D,HITL_E,HITL_F hitl
@@ -413,80 +441,270 @@ flowchart TD
     class COMPLETE,RETURN,ACTIVATE final
 ```
 
-### 13. Appendix B Safety Data Sheets HITL Detail Flow
+### 13. Spec Template Registry — Configurable Appendix Content Schemas
 
-Detailed HITL workflow for Appendix B showing the 5-phase AI-to-human collaborative review process with chatbot-driven iterative refinement.
+**Problem Addressed**: Hardcoded appendix structures (e.g., "16-section SDS") do not scale across industries, regulatory regimes, or procurement types. Different customers require different schemas for the same appendix letter.
+
+**Solution**: The **Spec Template Registry** stores configurable content schemas per appendix type. Each schema is a first-class entity that defines:
+- Section names and descriptions
+- Field types (text, select, number, date, file upload)
+- Validation rules (required, regex, range)
+- AI confidence targets per section
+- Regulatory variant (GHS, OSHA, REACH, etc.)
+- Version history with rollback support
+
+#### Admin Configuration Interface
+
+```
+┌─ Admin: Spec Template Registry ──────────────────────────────────┐
+│                                                                    │
+│  Appendix: B — Safety Data Sheets                                 │
+│  ┌──────────────────────────────────────────────────────────────┐  │
+│  │  Active Templates:                                            │  │
+│  │  ┌────────────────────────────────────────────────────────┐  │  │
+│  │  │ ● [Active Template Name] vX.X (Region)   [Active]     │  │  │
+│  │  │ ○ [Inactive Template A] vX.X (Region)    [Inactive]   │  │  │
+│  │  │ ○ [Inactive Template B] vX.X (Region)    [Inactive]   │  │  │
+│  │  │ ○ [Inactive Template C] vX.X (Region)    [Inactive]   │  │  │
+│  │  │ [+ Create New Template]  [+ Import from Library]        │  │  │
+│  │  └────────────────────────────────────────────────────────┘  │  │
+│  └──────────────────────────────────────────────────────────────┘  │
+│                                                                    │
+│  ┌─ Template Editor: [Active Template Name] ───────────────────┐  │
+│  │  Section 1: [Section Title]                                  │  │
+│  │  ├─ [Field Label A]              [String] [Required]         │  │
+│  │  ├─ [Field Label B]              [String] [Required]         │  │
+│  │  ├─ [Field Label C]              [Phone]  [Required]         │  │
+│  │  └─ [Field Label D]              [String] [Optional]         │  │
+│  │                                                               │  │
+│  │  Section 2: [Section Title]                                  │  │
+│  │  ├─ [Field Label E]              [Select] [Required]         │  │
+│  │  ├─ [Field Label F]              [Select] [Required]         │  │
+│  │  ├─ [Field Label G]              [Array]  [Required]         │  │
+│  │  └─ [Field Label H]              [Array]  [Required]         │  │
+│  │                                                               │  │
+│  │  [+ Add Section]  [Save Template]  [Test Generation]         │  │
+│  └──────────────────────────────────────────────────────────────┘  │
+└────────────────────────────────────────────────────────────────────┘
+```
+
+#### Template Selection at Order Creation
+
+When the CreateOrderModal determines (via Document Ordering Management) that appendices are needed, it presents a **spec template selector** step between discipline validation and user assignment:
+
+```
+┌─ Select Spec Templates ───────────────────────────────────────────┐
+│                                                                    │
+│  Order: PO-2026-0042  |  Supplier: Caterpillar Inc.               │
+│                                                                    │
+│  Required Appendices (from Discipline Configuration):              │
+│                                                                    │
+│  ┌─ Appendix A: Product Specifications ──────────────────────────┐│
+│  │  Template: ● [Default Product Spec Template]  [change]       ││
+│  │             ○ [Alternate Template A]                          ││
+│  │             ○ Custom Template...                              ││
+│  └───────────────────────────────────────────────────────────────┘│
+│                                                                    │
+│  ┌─ Appendix B: Safety Data Sheets ───────────────────────────────┐│
+│  │  Template: ● [Default Safety Template]         [change]       ││
+│  │  Region:   ● [Region A]   ○ [Region B]   ○ [Region C]        ││
+│  └───────────────────────────────────────────────────────────────┘│
+│                                                                    │
+│  ┌─ Appendix C: Delivery Schedule ───────────────────────────────┐│
+│  │  Template: ● [Default Schedule Template]      [change]       ││
+│  └───────────────────────────────────────────────────────────────┘│
+│                                                                    │
+│  [Use Selected Templates]  [Skip — Use Defaults]                  │
+└────────────────────────────────────────────────────────────────────┘
+```
+
+#### Dynamic AI Content Generation
+
+The AI agent does NOT have hardcoded knowledge of appendix structures. Instead, it receives the selected spec template schema as context at generation time:
+
+```javascript
+// AI Agent receives the selected template schema as context at generation time
+// The schema is loaded from the Spec Template Registry — no hardcoded knowledge
+{
+  templateId: "[selected-template-id]",
+  appendix: "[appendix-letter]",
+  discipline: "[discipline-code]",
+  sections: [
+    {
+      id: 1,
+      title: "[Section 1 Title from Template]",
+      confidenceTarget: 0.95,
+      fields: [
+        { key: "[fieldKeyA]", type: "string", required: true },
+        { key: "[fieldKeyB]", type: "string", required: true },
+        { key: "[fieldKeyC]", type: "phone", required: true },
+        { key: "[fieldKeyD]", type: "string", required: false }
+      ]
+    },
+    {
+      id: 2,
+      title: "[Section 2 Title from Template]",
+      confidenceTarget: 0.85,
+      fields: [
+        { key: "[fieldKeyE]", type: "select", required: true, options: [...] },
+        { key: "[fieldKeyF]", type: "select", required: true, options: ["[Option A]", "[Option B]"] },
+        { key: "[fieldKeyG]", type: "array", required: true },
+        { key: "[fieldKeyH]", type: "array", required: true }
+      ]
+    }
+    // ... remaining sections loaded from registry
+  ]
+}
+```
+
+The HITL review interface renders the template dynamically — field labels, validation rules, and confidence targets come from the template schema, not from hardcoded code.
+
+#### Spec Template Registry — Entity Model
+
+```yaml
+SpecTemplate:
+  id: uuid
+  discipline: string        # Discipline code (e.g., "02400" for Safety)
+  appendixLetter: string    # Appendix letter (A, B, C, D, E, F)
+  name: string              # Human-readable template name (admin-defined)
+  variant: string           # Regulatory/industry variant (admin-defined)
+  version: string           # Semantic version (admin-defined)
+  status: string            # "active" | "inactive" | "deprecated"
+  schema: json              # Sections array with field definitions
+  metadata: {
+    region: string          # Geographic region (admin-defined)
+    industry: string[]      # Applicable industries (admin-defined)
+    aiConfidenceTargets: {  # Per-section confidence thresholds
+      section1: 0.95,
+      section2: 0.85
+    }
+  }
+  createdAt: timestamp
+  updatedAt: timestamp
+  createdBy: uuid           # Admin who created this template
+```
+
+#### Spec Template Registry Flow
 
 ```mermaid
 flowchart TD
-    PHASE1[Phase 1: AI Agent Processing] -->|generate| SDS[SDS 16-Section Content]
-    SDS -->|flag hazards| FLAG[Flag for Human Review]
+    ADMIN[Admin Interface] -->|create template| REGISTRY[Spec Template Registry DB]
+    REGISTRY -->|store schema| DB[(Database)]
+    
+    ORDER[CreateOrderModal] -->|determine appendices| DOM[Document Ordering Management]
+    DOM -->|appendix list| REGISTRY
+    REGISTRY -->|return available templates| ORDER
+    
+    ORDER -->|user selects| SEL[Selected Templates per Appendix]
+    SEL -->|pass schemas| AGENT[AI Agent]
+    AGENT -->|generate against fields| CONTENT[Dynamic Content]
+    
+    CONTENT -->|display using template| HITL[HITL Review Interface]
+    HITL -->|render field labels| FIELDS[Dynamic Fields from Schema]
+    HITL -->|validate against rules| VALIDATE[Schema Validation]
+    HITL -->|check confidence| CONFIDENCE[Per-Section Confidence]
+    
+    classDef admin fill:#f3e5f5,stroke:#7b1fa2
+    classDef storage fill:#e3f2fd,stroke:#1976d2
+    classDef order fill:#fff3e0,stroke:#f57c00
+    classDef agent fill:#e8f5e8,stroke:#388e3c
+    classDef review fill:#ffebee,stroke:#d32f2f
+
+    class ADMIN admin
+    class REGISTRY,DB storage
+    class ORDER,DOM,SEL order
+    class AGENT,CONTENT agent
+    class HITL,FIELDS,VALIDATE,CONFIDENCE review
+```
+
+### 14. Appendix B Safety Data Sheets — Template-Driven HITL Detail Flow
+
+HITL workflow for Appendix B using the **Spec Template Registry** — no hardcoded 16-section assumption. The template schema is loaded dynamically, and the review interface renders whatever sections the selected template defines.
+
+```mermaid
+flowchart TD
+    PHASE1[Phase 1: Load Template from Registry] -->|fetch schema| TEMPLATE[[Selected Template Schema]]
+    TEMPLATE -->|AI Agent processes| GEN[Generate Content per Template Fields]
+    GEN -->|flag low confidence| FLAG[Flag Sections for Human Review]
     FLAG -->|create task| PHASE2[Phase 2: HITL Task Creation]
     PHASE2 -->|assign to safety officer| ASSIGN[Task in MyTasksDashboard]
     ASSIGN -->|open review| PHASE3[Phase 3: Human-AI Review]
-    PHASE3 -->|show confidence| INTERFACE[Review Interface]
-    INTERFACE -->|section 1| S1[Section 1: Identification - 95% confidence]
-    INTERFACE -->|section 2| S2[Section 2: Hazard ID - 78% confidence needs review]
-    INTERFACE -->|section 8| S8[Section 8: PPE - needs review]
+    PHASE3 -->|dynamic sections from template| INTERFACE[Dynamic Review Interface]
+    INTERFACE -->|section from template| S1[Section 1: [Title] - 95%]
+    INTERFACE -->|section from template| S2[Section 2: [Title] - 78%]
+    INTERFACE -->|section from template| S8[Section 8: [Title] - needs review]
 
     S2 -->|chatbot| CHAT[Chatbot Collaboration]
     S8 -->|chatbot| CHAT
     CHAT -->|request revision| PHASE4[Phase 4: Iterative Refinement]
-    PHASE4 -->|AI regenerates| UPDATE[Updated Content]
+    PHASE4 -->|AI regenerates| UPDATE[Updated Content per Schema]
     UPDATE -->|re-review| INTERFACE
     UPDATE -->|approve| PHASE5[Phase 5: Final Approval]
     PHASE5 -->|mark complete| INTEGRATE[Integrate into Procurement Package]
 
     classDef phase1 fill:#e3f2fd,stroke:#1976d2
+    classDef phase1b fill:#e8eaf6,stroke:#3f51b5
     classDef phase2 fill:#f3e5f5,stroke:#7b1fa2
     classDef phase3 fill:#fff3e0,stroke:#f57c00
     classDef phase4 fill:#e8f5e8,stroke:#388e3c
     classDef phase5 fill:#fce4ec,stroke:#c2185b
 
-    class PHASE1,SDS,FLAG phase1
+    class PHASE1,TEMPLATE phase1
+    class GEN,FLAG phase1b
     class PHASE2,ASSIGN phase2
     class PHASE3,INTERFACE,S1,S2,S8,CHAT phase3
     class PHASE4,UPDATE phase4
     class PHASE5,INTEGRATE phase5
 ```
 
-### 14. Template Complexity Decision Tree
+### 15. Template Complexity Decision Tree
 
 Decision tree for template complexity selection showing how each complexity level determines discipline count, appendix requirements, approval levels, and business rules.
 
 ```mermaid
-flowchart TD
+flowchart LR
     CREATE[Create Template] -->|select| COMPLEXITY{Complexity Level}
+
     COMPLEXITY -->|simple| SIMPLE[Simple Procurement]
     COMPLEXITY -->|standard| STANDARD[Standard Procurement]
     COMPLEXITY -->|complex| COMPLEX[Complex Procurement]
     COMPLEXITY -->|emergency| EMERGENCY[Emergency Procurement]
     COMPLEXITY -->|compliance| COMPLIANCE[Compliance Procurement]
 
-    SIMPLE --> S_DISC[Disciplines: 01900 only]
-    SIMPLE --> S_APP[Appendices: A, C]
-    SIMPLE --> S_APPROVAL[Approval: 1 level]
-    SIMPLE --> S_HITL[HITL: not required]
+    subgraph S[Simple]
+        SIMPLE --> S_DISC["Disciplines: 01900 only"]
+        SIMPLE --> S_APP["Appendices: A, C"]
+        SIMPLE --> S_APPR["Approval: 1 level"]
+        SIMPLE --> S_HITL["HITL: not required"]
+    end
 
-    STANDARD --> STD_DISC[Disciplines: 01900, 02400]
-    STANDARD --> STD_APP[Appendices: A, B, C, E]
-    STANDARD --> STD_APPROVAL[Approval: 2 levels]
-    STANDARD --> STD_HITL[HITL: required]
+    subgraph STD[Standard]
+        STANDARD --> STD_DISC["Disciplines: 01900, 02400"]
+        STANDARD --> STD_APP["Appendices: A, B, C, E"]
+        STANDARD --> STD_APPR["Approval: 2 levels"]
+        STANDARD --> STD_HITL["HITL: required"]
+    end
 
-    COMPLEX --> C_DISC[Disciplines: 6-12 disciplines]
-    COMPLEX --> C_APP[Appendices: A, B, C, D, E, F]
-    COMPLEX --> C_APPROVAL[Approval: 3 levels]
-    COMPLEX --> C_HITL[HITL: required]
+    subgraph C[Complex]
+        COMPLEX --> C_DISC["Disciplines: 6-12"]
+        COMPLEX --> C_APP["Appendices: A-F"]
+        COMPLEX --> C_APPR["Approval: 3 levels"]
+        COMPLEX --> C_HITL["HITL: required"]
+    end
 
-    EMERGENCY --> E_DISC[Disciplines: 01900, 02400]
-    EMERGENCY --> E_APP[Appendices: A, B, C]
-    EMERGENCY --> E_APPROVAL[Approval: 1 level]
-    EMERGENCY --> E_HITL[HITL: not required priority]
+    subgraph E[Emergency]
+        EMERGENCY --> E_DISC["Disciplines: 01900, 02400"]
+        EMERGENCY --> E_APP["Appendices: A, B, C"]
+        EMERGENCY --> E_APPR["Approval: 1 level"]
+        EMERGENCY --> E_HITL["HITL: priority"]
+    end
 
-    COMPLIANCE --> CO_DISC[Disciplines: 01900, 01300, 02400]
-    COMPLIANCE --> CO_APP[Appendices: A, B, C, F]
-    COMPLIANCE --> CO_APPROVAL[Approval: 3 levels audit]
-    COMPLIANCE --> CO_HITL[HITL: required audit trail]
+    subgraph CO[Compliance]
+        COMPLIANCE --> CO_DISC["Disciplines: 01900, 01300, 02400"]
+        COMPLIANCE --> CO_APP["Appendices: A, B, C, F"]
+        COMPLIANCE --> CO_APPR["Approval: 3 levels audit"]
+        COMPLIANCE --> CO_HITL["HITL: required audit"]
+    end
 
     classDef decision fill:#e3f2fd,stroke:#1976d2
     classDef simple fill:#e8f5e8,stroke:#388e3c
@@ -496,14 +714,14 @@ flowchart TD
     classDef compliance fill:#f3e5f5,stroke:#7b1fa2
 
     class CREATE,COMPLEXITY decision
-    class SIMPLE,S_DISC,S_APP,S_APPROVAL,S_HITL simple
-    class STANDARD,STD_DISC,STD_APP,STD_APPROVAL,STD_HITL standard
-    class COMPLEX,C_DISC,C_APP,C_APPROVAL,C_HITL complex
-    class EMERGENCY,E_DISC,E_APP,E_APPROVAL,E_HITL emergency
-    class COMPLIANCE,CO_DISC,CO_APP,CO_APPROVAL,CO_HITL compliance
+    class SIMPLE,S_DISC,S_APP,S_APPR,S_HITL simple
+    class STANDARD,STD_DISC,STD_APP,STD_APPR,STD_HITL standard
+    class COMPLEX,C_DISC,C_APP,C_APPR,C_HITL complex
+    class EMERGENCY,E_DISC,E_APP,E_APPR,E_HITL emergency
+    class COMPLIANCE,CO_DISC,CO_APP,CO_APPR,CO_HITL compliance
 ```
 
-### 15. Page State Flow with Modal Integration
+### 16. Page State Flow with Modal Integration
 
 Enhanced page state flow showing three-state navigation with modal interactions, HITL queue sub-states, and Workspace-specific operations.
 
@@ -554,7 +772,7 @@ flowchart TD
 
 ---
 
-### 16. Streamlined Workflow Architecture
+### 17. Streamlined Workflow Architecture
 
 The rationalized 4-layer architecture showing Configuration Layer through Phase 4 Intelligent Assembly, with color-coded phases and sequential flow.
 
@@ -822,6 +1040,8 @@ Per the PROCURE-TEST suite:
 
 | Version | Date | Changes |
 |---------|------|---------|
+| 1.3 | 2026-04-29 | Clarified button ownership: all buttons in all three states are pre-configured by dev team — users cannot add, edit, or delete buttons. Added note to each button table in Sections 5, 6, 7 |
+| 1.2 | 2026-04-29 | Added Spec Template Registry (Section 13), template-driven Appendix B HITL flow (Section 14), replaced hardcoded appendix content with configurable spec templates. Updated diagrams 9, 10 to use Spec Template Registry |
 | 1.1 | 2026-04-29 | Expanded Part C with 9 comprehensive Mermaid UI flow diagrams extracted from procurement workflow documentation |
 | 1.0 | 2026-04-28 | Initial UI/UX specification for 01900 Procurement reference page |
 
