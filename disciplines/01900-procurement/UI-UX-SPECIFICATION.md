@@ -107,18 +107,12 @@ The **Agents state** shows procurement AI agents for supplier management, tender
 
 | Button | Visibility Gate | Action | Modal |
 |--------|----------------|--------|-------|
-| **Add Agent** | `user.role === 'governance'` | Opens CreateNewAgent modal | `CreateNewAgent` — 98vw, template A orange gradient header |
-| **Edit** (per agent) | `user.role >= 'editor'` | Opens AgentConfig modal | `AgentConfig` — 98vw, procurement skill toggles |
-| **Remove/Archive** | `user.role === 'governance'` | Opens Confirmation modal | `Confirmation` — archive with procurement record preservation |
 | **View Details** | Always visible | Opens AgentDetails modal | `AgentDetails` — 98vw, procurement agent metrics |
 
 **Mermaid Flow**:
 ```mermaid
 flowchart TD
-    AGENTS[Agents State] -->|click Add Agent| MODAL1[CreateNewAgent Modal]
-    AGENTS -->|click Edit| MODAL2[AgentConfig Modal]
-    AGENTS -->|click Remove| MODAL3[Confirmation Modal]
-    AGENTS -->|click View| MODAL4[AgentDetails Modal]
+    AGENTS[Agents State] -->|click View| MODAL4[AgentDetails Modal]
     AGENTS -->|click nav tab| UPSERT[Upsert State]
     AGENTS -->|click nav tab| WORKSPACE[Workspace State]
 ```
@@ -165,7 +159,7 @@ The **Workspace state** is the procurement operations dashboard.
 
 **HITL Workflow**:
 ```mermaid
-flowchart LR
+flowchart TD
     AGENT[AI Procurement Agent] -->|completes action| QUEUE[HITL Review Queue]
     QUEUE -->|procurement manager| APPROVE[Approve]
     QUEUE -->|procurement manager| REJECT[Reject with Feedback]
@@ -179,22 +173,339 @@ flowchart LR
 
 ## Part C: Mermaid UI Flow Diagrams
 
-### 8. Procurement Lifecycle Flow
+### 8. Enhanced Procurement Lifecycle Flow
+
+The full procurement lifecycle from need identification through payment, incorporating template complexity selection, AI agent orchestration, HITL review gates, and multi-discipline collaboration.
 
 ```mermaid
-flowchart LR
-    NEED[Identify Need] -->|create| RFQ[RFQ Generation]
-    RFQ -->|send to| SUPPLIERS[Supplier List]
-    SUPPLIERS -->|receive| BIDS[Bid Submission]
-    BIDS -->|evaluate| EVAL[Bid Evaluation]
-    EVAL -->|select winner| AWARD[Award Contract]
-    AWARD -->|issue| PO[Purchase Order]
-    PO -->|track| DELIVERY[Delivery]
-    DELIVERY -->|verify| INVOICE[Invoice Matching]
-    INVOICE -->|process| PAYMENT[Payment]
+flowchart TD
+    NEED[Identify Need] -->|create| ORDER[Order Creation]
+    ORDER -->|select| TEMPLATE[Template Variation Selection]
+    TEMPLATE -->|simple| SIMPLE[Simple: 2-3 disciplines]
+    TEMPLATE -->|standard| STANDARD[Standard: 3-5 disciplines]
+    TEMPLATE -->|complex| COMPLEX[Complex: 6-12 disciplines]
+    TEMPLATE -->|emergency| EMERGENCY[Emergency: priority routing]
+    TEMPLATE -->|compliance| COMPLIANCE[Compliance: audit required]
+    SIMPLE --> DISCIPLINE[Discipline Inheritance]
+    STANDARD --> DISCIPLINE
+    COMPLEX --> DISCIPLINE
+    EMERGENCY --> DISCIPLINE
+    COMPLIANCE --> DISCIPLINE
+    DISCIPLINE -->|auto-assign| SOW[SOW Generation]
+    SOW -->|AI agent| APPENDIX[Appendix Generation A-F]
+    APPENDIX -->|route by discipline| COLLAB[Multi-Discipline Collaboration]
+    COLLAB -->|HITL gate| HITL{HITL Review Required?}
+    HITL -->|yes| REVIEW[HITL Review Queue]
+    HITL -->|no| APPROVAL[Approval Routing]
+    REVIEW -->|approve| APPROVAL
+    REVIEW -->|reject| SOW
+    APPROVAL -->|progressive| ASSEMBLY[Document Assembly]
+    ASSEMBLY -->|finalize| LOGISTICS[Logistics Processing]
+    LOGISTICS -->|deliver| PAYMENT[Payment]
+
+    classDef need fill:#e3f2fd,stroke:#1976d2
+    classDef create fill:#f3e5f5,stroke:#7b1fa2
+    classDef template fill:#fff3e0,stroke:#f57c00
+    classDef work fill:#e8f5e8,stroke:#388e3c
+    classDef review fill:#ffebee,stroke:#d32f2f
+    classDef final fill:#fce4ec,stroke:#c2185b
+
+    class NEED need
+    class ORDER,TEMPLATE,SIMPLE,STANDARD,COMPLEX,EMERGENCY,COMPLIANCE create
+    class DISCIPLINE,SOW,APPENDIX,COLLAB work
+    class HITL,REVIEW review
+    class APPROVAL,ASSEMBLY,LOGISTICS,PAYMENT final
 ```
 
-### 9. Page State Flow
+### 9. Order Creation with Discipline Inheritance Flow
+
+Detailed flow showing how template variation selection triggers automatic discipline inheritance from Document Ordering Management configuration, followed by user assignment and task generation.
+
+```mermaid
+flowchart TD
+    START[Create Order] -->|enter details| FORM[Order Form: PO/SO/WO]
+    FORM -->|select type| TEMPLATE[Template Variation]
+    TEMPLATE -->|auto-detect| INHERIT[Discipline Inheritance]
+    INHERIT -->|load config| DOM[Document Ordering Management]
+    DOM -->|required| REQUIRED[Required Disciplines]
+    DOM -->|recommended| RECOMMENDED[Recommended Disciplines]
+    DOM -->|optional| OPTIONAL[Optional Disciplines]
+    REQUIRED --> VALIDATE[Validate Coverage]
+    RECOMMENDED --> VALIDATE
+    OPTIONAL --> VALIDATE
+    VALIDATE -->|pass| ASSIGN[User Assignment]
+    VALIDATE -->|fail| OVERRIDE[Manual Override]
+    OVERRIDE -->|add disciplines| ASSIGN
+    ASSIGN -->|per discipline| TASKS[Task Generation]
+    TASKS -->|SOW| SOW[SOW Generation Task]
+    TASKS -->|appendices| APP[Appendix Tasks A-F]
+    TASKS -->|approval| APPROVAL[Approval Workflow]
+    SOW --> ACTIVATE[Activate Workflow]
+    APP --> ACTIVATE
+    APPROVAL --> ACTIVATE
+
+    classDef start fill:#e3f2fd,stroke:#1976d2
+    classDef config fill:#f3e5f5,stroke:#7b1fa2
+    classDef assign fill:#fff3e0,stroke:#f57c00
+    classDef task fill:#e8f5e8,stroke:#388e3c
+    classDef final fill:#fce4ec,stroke:#c2185b
+
+    class START,FORM,TEMPLATE start
+    class INHERIT,DOM,REQUIRED,RECOMMENDED,OPTIONAL config
+    class VALIDATE,OVERRIDE,ASSIGN assign
+    class TASKS,SOW,APP,APPROVAL task
+    class ACTIVATE final
+```
+
+### 10. SOW Generation and Appendix Routing Flow
+
+AI-enhanced SOW creation with appendix generation, discipline-specific routing, and HITL review gates for each appendix type.
+
+```mermaid
+flowchart TD
+    PRESELECT[Pre-selected Template] -->|load| SECTIONS[Auto-populated Sections]
+    SECTIONS -->|AI agent| SOW[SOW Content Generation]
+    SOW -->|validate| VALIDATE[Content Validation]
+    VALIDATE -->|pass| APP_GEN[Appendix Generation]
+    VALIDATE -->|fail| SOW
+
+    APP_GEN --> APP_A[Appendix A: Product Specs]
+    APP_GEN --> APP_B[Appendix B: Safety Data Sheets]
+    APP_GEN --> APP_C[Appendix C: Delivery Schedule]
+    APP_GEN --> APP_D[Appendix D: Training Materials]
+    APP_GEN --> APP_E[Appendix E: Logistics Docs]
+    APP_GEN --> APP_F[Appendix F: Packing Specs]
+
+    APP_A -->|route| ENG[Engineering Team]
+    APP_B -->|route| SAFETY[Safety Team]
+    APP_C -->|route| PROCURE[Procurement Team]
+    APP_D -->|route| TECH[Technical Team]
+    APP_E -->|route| LOGISTICS[Logistics Team]
+    APP_F -->|route| QUALITY[Quality Team]
+
+    ENG -->|HITL| HITL_A{HITL Approve?}
+    SAFETY -->|HITL| HITL_B{HITL Approve?}
+    PROCURE -->|HITL| HITL_C{HITL Approve?}
+    TECH -->|HITL| HITL_D{HITL Approve?}
+    LOGISTICS -->|HITL| HITL_E{HITL Approve?}
+    QUALITY -->|HITL| HITL_F{HITL Approve?}
+
+    HITL_A -->|yes| ASSEMBLE[Document Assembly]
+    HITL_B -->|yes| ASSEMBLE
+    HITL_C -->|yes| ASSEMBLE
+    HITL_D -->|yes| ASSEMBLE
+    HITL_E -->|yes| ASSEMBLE
+    HITL_F -->|yes| ASSEMBLE
+
+    HITL_A -->|no| APP_A
+    HITL_B -->|no| APP_B
+    HITL_C -->|no| APP_C
+    HITL_D -->|no| APP_D
+    HITL_E -->|no| APP_E
+    HITL_F -->|no| APP_F
+
+    ASSEMBLE -->|finalize| PACKAGE[Final Procurement Package]
+
+    classDef sow fill:#e3f2fd,stroke:#1976d2
+    classDef appendix fill:#f3e5f5,stroke:#7b1fa2
+    classDef route fill:#fff3e0,stroke:#f57c00
+    classDef hitl fill:#ffebee,stroke:#d32f2f
+    classDef final fill:#e8f5e8,stroke:#388e3c
+
+    class PRESELECT,SECTIONS,SOW,VALIDATE sow
+    class APP_A,APP_B,APP_C,APP_D,APP_E,APP_F appendix
+    class ENG,SAFETY,PROCURE,TECH,LOGISTICS,QUALITY route
+    class HITL_A,HITL_B,HITL_C,HITL_D,HITL_E,HITL_F hitl
+    class ASSEMBLE,PACKAGE final
+```
+
+### 11. HITL Review Workflow
+
+Human-in-the-Loop review process showing AI agent action completion, intelligent reviewer assignment, structured decision framework, and iterative refinement with chatbot collaboration.
+
+```mermaid
+flowchart TD
+    AGENT[AI Procurement Agent] -->|completes action| QUEUE[HITL Review Queue]
+    QUEUE -->|assess| ASSESS{Requires HITL?}
+    ASSESS -->|confidence low| CREATE[Create HITL Task]
+    ASSESS -->|complex content| CREATE
+    ASSESS -->|regulatory need| CREATE
+    ASSESS -->|stakeholder request| CREATE
+    ASSESS -->|confidence high| AUTO[Auto-approve]
+
+    CREATE -->|assign reviewer| ASSIGN[Reviewer Assignment Engine]
+    ASSIGN -->|expertise match| REVIEWER[Assign to Expert]
+    ASSIGN -->|availability| REVIEWER
+    ASSIGN -->|performance history| REVIEWER
+
+    REVIEWER -->|review| DECISION{Decision}
+    DECISION -->|approve| EXECUTE[Execute Action]
+    DECISION -->|minor revisions| REVISE[AI Revises Content]
+    DECISION -->|major revisions| REJECT[Return to AI Agent]
+    DECISION -->|manual override| OVERRIDE[Human Takes Over]
+
+    REVISE -->|chatbot refine| CHAT[Chatbot Collaboration]
+    CHAT -->|regenerate| REVIEWER
+    REJECT -->|feedback| AGENT
+    OVERRIDE --> EXECUTE
+
+    EXECUTE -->|log| AUDIT[Audit Trail]
+    AUDIT -->|complete| DONE[Action Complete]
+
+    classDef agent fill:#e3f2fd,stroke:#1976d2
+    classDef queue fill:#f3e5f5,stroke:#7b1fa2
+    classDef assign fill:#fff3e0,stroke:#f57c00
+    classDef review fill:#ffebee,stroke:#d32f2f
+    classDef final fill:#e8f5e8,stroke:#388e3c
+
+    class AGENT agent
+    class QUEUE,ASSESS,CREATE,AUTO queue
+    class ASSIGN,REVIEWER assign
+    class DECISION,REVISE,REJECT,OVERIDE,CHAT review
+    class EXECUTE,AUDIT,DONE final
+```
+
+### 12. Progressive Approval Matrix Flow
+
+Risk-based approval routing with value thresholds determining single, parallel, or sequential approval chains, integrated with the existing 01300 Approval Matrix system.
+
+```mermaid
+flowchart TD
+    ORDER[Procurement Order] -->|evaluate| EVAL[Approval Matrix Evaluation]
+    EVAL -->|value under 25K| SINGLE[Single Approver]
+    EVAL -->|value 25K to 250K| PARALLEL[Parallel Approvers]
+    EVAL -->|value over 250K| SEQUENTIAL[Sequential Chain]
+
+    SINGLE -->|procurement officer| LEVEL1[Level 1 Approval]
+    LEVEL1 -->|approve| COMPLETE[Approval Complete]
+    LEVEL1 -->|reject| RETURN[Return to Order]
+
+    PARALLEL -->|officer + manager| LEVEL2A[Procurement Officer]
+    PARALLEL -->|simultaneous| LEVEL2B[Department Head]
+    LEVEL2A -->|both approve| COMPLETE
+    LEVEL2B -->|both approve| COMPLETE
+    LEVEL2A -->|reject| RETURN
+    LEVEL2B -->|reject| RETURN
+
+    SEQUENTIAL -->|level 1| L1[Procurement Officer]
+    L1 -->|approve| L2[Procurement Manager]
+    L1 -->|reject| RETURN
+    L2 -->|approve| L3[Executive Approval]
+    L2 -->|reject| RETURN
+    L3 -->|approve| COMPLETE
+    L3 -->|reject| RETURN
+
+    COMPLETE -->|route| ACTIVATE[Activate Procurement Workflow]
+    RETURN -->|revise| ORDER
+
+    classDef order fill:#e3f2fd,stroke:#1976d2
+    classDef eval fill:#f3e5f5,stroke:#7b1fa2
+    classDef single fill:#e8f5e8,stroke:#388e3c
+    classDef parallel fill:#fff3e0,stroke:#f57c00
+    classDef sequential fill:#ffebee,stroke:#d32f2f
+    classDef final fill:#fce4ec,stroke:#c2185b
+
+    class ORDER order
+    class EVAL eval
+    class SINGLE,LEVEL1 single
+    class PARALLEL,LEVEL2A,LEVEL2B parallel
+    class SEQUENTIAL,L1,L2,L3 sequential
+    class COMPLETE,RETURN,ACTIVATE final
+```
+
+### 13. Appendix B Safety Data Sheets HITL Detail Flow
+
+Detailed HITL workflow for Appendix B showing the 5-phase AI-to-human collaborative review process with chatbot-driven iterative refinement.
+
+```mermaid
+flowchart TD
+    PHASE1[Phase 1: AI Agent Processing] -->|generate| SDS[SDS 16-Section Content]
+    SDS -->|flag hazards| FLAG[Flag for Human Review]
+    FLAG -->|create task| PHASE2[Phase 2: HITL Task Creation]
+    PHASE2 -->|assign to safety officer| ASSIGN[Task in MyTasksDashboard]
+    ASSIGN -->|open review| PHASE3[Phase 3: Human-AI Review]
+    PHASE3 -->|show confidence| INTERFACE[Review Interface]
+    INTERFACE -->|section 1| S1[Section 1: Identification - 95% confidence]
+    INTERFACE -->|section 2| S2[Section 2: Hazard ID - 78% confidence needs review]
+    INTERFACE -->|section 8| S8[Section 8: PPE - needs review]
+
+    S2 -->|chatbot| CHAT[Chatbot Collaboration]
+    S8 -->|chatbot| CHAT
+    CHAT -->|request revision| PHASE4[Phase 4: Iterative Refinement]
+    PHASE4 -->|AI regenerates| UPDATE[Updated Content]
+    UPDATE -->|re-review| INTERFACE
+    UPDATE -->|approve| PHASE5[Phase 5: Final Approval]
+    PHASE5 -->|mark complete| INTEGRATE[Integrate into Procurement Package]
+
+    classDef phase1 fill:#e3f2fd,stroke:#1976d2
+    classDef phase2 fill:#f3e5f5,stroke:#7b1fa2
+    classDef phase3 fill:#fff3e0,stroke:#f57c00
+    classDef phase4 fill:#e8f5e8,stroke:#388e3c
+    classDef phase5 fill:#fce4ec,stroke:#c2185b
+
+    class PHASE1,SDS,FLAG phase1
+    class PHASE2,ASSIGN phase2
+    class PHASE3,INTERFACE,S1,S2,S8,CHAT phase3
+    class PHASE4,UPDATE phase4
+    class PHASE5,INTEGRATE phase5
+```
+
+### 14. Template Complexity Decision Tree
+
+Decision tree for template complexity selection showing how each complexity level determines discipline count, appendix requirements, approval levels, and business rules.
+
+```mermaid
+flowchart TD
+    CREATE[Create Template] -->|select| COMPLEXITY{Complexity Level}
+    COMPLEXITY -->|simple| SIMPLE[Simple Procurement]
+    COMPLEXITY -->|standard| STANDARD[Standard Procurement]
+    COMPLEXITY -->|complex| COMPLEX[Complex Procurement]
+    COMPLEXITY -->|emergency| EMERGENCY[Emergency Procurement]
+    COMPLEXITY -->|compliance| COMPLIANCE[Compliance Procurement]
+
+    SIMPLE --> S_DISC[Disciplines: 01900 only]
+    SIMPLE --> S_APP[Appendices: A, C]
+    SIMPLE --> S_APPROVAL[Approval: 1 level]
+    SIMPLE --> S_HITL[HITL: not required]
+
+    STANDARD --> STD_DISC[Disciplines: 01900, 02400]
+    STANDARD --> STD_APP[Appendices: A, B, C, E]
+    STANDARD --> STD_APPROVAL[Approval: 2 levels]
+    STANDARD --> STD_HITL[HITL: required]
+
+    COMPLEX --> C_DISC[Disciplines: 6-12 disciplines]
+    COMPLEX --> C_APP[Appendices: A, B, C, D, E, F]
+    COMPLEX --> C_APPROVAL[Approval: 3 levels]
+    COMPLEX --> C_HITL[HITL: required]
+
+    EMERGENCY --> E_DISC[Disciplines: 01900, 02400]
+    EMERGENCY --> E_APP[Appendices: A, B, C]
+    EMERGENCY --> E_APPROVAL[Approval: 1 level]
+    EMERGENCY --> E_HITL[HITL: not required priority]
+
+    COMPLIANCE --> CO_DISC[Disciplines: 01900, 01300, 02400]
+    COMPLIANCE --> CO_APP[Appendices: A, B, C, F]
+    COMPLIANCE --> CO_APPROVAL[Approval: 3 levels audit]
+    COMPLIANCE --> CO_HITL[HITL: required audit trail]
+
+    classDef decision fill:#e3f2fd,stroke:#1976d2
+    classDef simple fill:#e8f5e8,stroke:#388e3c
+    classDef standard fill:#fff3e0,stroke:#f57c00
+    classDef complex fill:#ffebee,stroke:#d32f2f
+    classDef emergency fill:#fce4ec,stroke:#c2185b
+    classDef compliance fill:#f3e5f5,stroke:#7b1fa2
+
+    class CREATE,COMPLEXITY decision
+    class SIMPLE,S_DISC,S_APP,S_APPROVAL,S_HITL simple
+    class STANDARD,STD_DISC,STD_APP,STD_APPROVAL,STD_HITL standard
+    class COMPLEX,C_DISC,C_APP,C_APPROVAL,C_HITL complex
+    class EMERGENCY,E_DISC,E_APP,E_APPROVAL,E_HITL emergency
+    class COMPLIANCE,CO_DISC,CO_APP,CO_APPROVAL,CO_HITL compliance
+```
+
+### 15. Page State Flow with Modal Integration
+
+Enhanced page state flow showing three-state navigation with modal interactions, HITL queue sub-states, and Workspace-specific operations.
 
 ```mermaid
 flowchart TD
@@ -202,9 +513,102 @@ flowchart TD
     AUTH -->|no| LOGIN[Redirect to Login]
     AUTH -->|yes| STATE[State Router]
     STATE -->|default| AGENTS[Agents State]
-    AGENTS -->|nav| UPSERT[Upserts State]
-    UPSERT -->|nav| WORKSPACE[Workspace State]
-    WORKSPACE -->|nav| AGENTS
+    STATE -->|nav| UPSERT[Upserts State]
+    STATE -->|nav| WORKSPACE[Workspace State]
+
+    AGENTS -->|view details| AGENT_MODAL[AgentDetails Modal]
+    AGENTS -->|nav tab| UPSERT
+    AGENTS -->|nav tab| WORKSPACE
+
+    UPSERT -->|create new| CREATE_MODAL[CreateRecord Modal]
+    UPSERT -->|import| IMPORT_MODAL[Import Modal]
+    UPSERT -->|edit| EDIT_MODAL[EditRecord Modal]
+    UPSERT -->|delete| DELETE_MODAL[Confirmation Modal]
+    UPSERT -->|nav tab| AGENTS
+    UPSERT -->|nav tab| WORKSPACE
+
+    WORKSPACE -->|review queue| HITL_QUEUE[HITL Review Queue]
+    WORKSPACE -->|generate PO| PO_MODAL[GeneratePO Modal]
+    WORKSPACE -->|generate report| EXPORT_MODAL[Export Modal]
+    WORKSPACE -->|nav tab| AGENTS
+    WORKSPACE -->|nav tab| UPSERT
+
+    HITL_QUEUE -->|approve| APPROVE_MODAL[Approval Modal]
+    HITL_QUEUE -->|reject| REJECT_MODAL[Rejection Modal]
+    HITL_QUEUE -->|assign| ASSIGN_MODAL[Assign Modal]
+
+    classDef auth fill:#e3f2fd,stroke:#1976d2
+    classDef state fill:#f3e5f5,stroke:#7b1fa2
+    classDef agents fill:#e8f5e8,stroke:#388e3c
+    classDef upsert fill:#fff3e0,stroke:#f57c00
+    classDef workspace fill:#ffebee,stroke:#d32f2f
+    classDef modal fill:#fce4ec,stroke:#c2185b
+
+    class LOAD,AUTH,LOGIN auth
+    class STATE state
+    class AGENTS,AGENT_MODAL agents
+    class UPSERT,CREATE_MODAL,IMPORT_MODAL,EDIT_MODAL,DELETE_MODAL upsert
+    class WORKSPACE,HITL_QUEUE,PO_MODAL,EXPORT_MODAL workspace
+    class APPROVE_MODAL,REJECT_MODAL,ASSIGN_MODAL modal
+```
+
+---
+
+### 16. Streamlined Workflow Architecture
+
+The rationalized 4-layer architecture showing Configuration Layer through Phase 4 Intelligent Assembly, with color-coded phases and sequential flow.
+
+```mermaid
+flowchart TD
+    subgraph CONFIG[Configuration Layer]
+        DOM[Document Ordering Management]
+    end
+
+    subgraph P1[Phase 1: Intelligent Order Creation]
+        ORDER[CreateOrderModal with Template Variation]
+        ASSIGN[Smart User Assignment]
+        TASKS[Parallel Task Generation]
+    end
+
+    subgraph P2[Phase 2: Automated SOW Generation]
+        SOW[AI-Enhanced SOW Creation]
+        SECTIONS[Auto-populated Sections]
+        VALIDATE[Content Validation]
+    end
+
+    subgraph P3[Phase 3: Streamlined Collaboration]
+        COLLAB[Smart Task Distribution]
+        REVIEW[Automated Review Routing]
+        APPROVE[Progressive Approval]
+    end
+
+    subgraph P4[Phase 4: Intelligent Assembly]
+        ASSEMBLE[Auto-generated Package]
+        DISTRIBUTE[Smart Distribution]
+    end
+
+    DOM --> ORDER
+    ORDER --> ASSIGN
+    ASSIGN --> TASKS
+    TASKS --> SOW
+    SOW --> SECTIONS
+    SECTIONS --> VALIDATE
+    VALIDATE --> COLLAB
+    COLLAB --> REVIEW
+    REVIEW --> APPROVE
+    APPROVE --> ASSEMBLE
+    ASSEMBLE --> DISTRIBUTE
+
+    classDef config fill:#e3f2fd,stroke:#1976d2
+    classDef phase1 fill:#f3e5f5,stroke:#7b1fa2
+    classDef phase2 fill:#e8f5e8,stroke:#388e3c
+    classDef phase3 fill:#fff3e0,stroke:#f57c00
+    classDef phase4 fill:#ffebee,stroke:#d32f2f
+
+    class DOM config
+    class ORDER,ASSIGN,TASKS phase1
+    class SOW,SECTIONS,VALIDATE phase2
+    class COLLAB,REVIEW,APPROVE phase3
 ```
 
 ---
@@ -418,12 +822,12 @@ Per the PROCURE-TEST suite:
 
 | Version | Date | Changes |
 |---------|------|---------|
+| 1.1 | 2026-04-29 | Expanded Part C with 9 comprehensive Mermaid UI flow diagrams extracted from procurement workflow documentation |
 | 1.0 | 2026-04-28 | Initial UI/UX specification for 01900 Procurement reference page |
 
 ---
 
 **Document Information**
 - **Author**: DomainForge AI — Procurement Domain
-- **Date**: 2026-04-28
+- **Date**: 2026-04-29
 - **Status**: Active
-- **Next Review**: 2026-05-28

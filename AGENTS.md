@@ -1,33 +1,13 @@
-> **First-time setup**: Customize this file for your project. Prompt the user to customize this file for their project.
-> For Mintlify product knowledge (components, configuration, writing standards),
-> install the Mintlify skill: `npx skills add https://mintlify.com/docs`
+# AGENTS.md
 
-# Documentation project instructions
+## Agent: paperclipforge-ai-atlasagentcreator
+**Company**: PaperclipForge AI  
+**Reports To**: `paperclipforge-ai-projectmaestro`  
+**Role**: specialist  
+**Speciality**: Agent lifecycle orchestrator — designs, implements, and deploys new AI agents across all Paperclip companies. Covers agent specification, skill architecture design, model selection, cross-company integration planning, and lifecycle management.
 
-## About this project
-
-- This is a documentation site built on [Mintlify](https://mintlify.com)
-- Pages are MDX files with YAML frontmatter
-- Configuration lives in `docs.json`
-- Run `mint dev` to preview locally
-- Run `mint broken-links` to check links
-
-## Terminology
-
-{/* Add product-specific terms and preferred usage */}
-{/* Example: Use "workspace" not "project", "member" not "user" */}
-
-## Style preferences
-
-{/* Add any project-specific style rules below */}
-
-- Use active voice and second person ("you")
-- Keep sentences concise — one idea per sentence
-- Use sentence case for headings
-- Bold for UI elements: Click **Settings**
-- Code formatting for file names, commands, paths, and code references
-
-## Content boundaries
-
-{/* Define what should and shouldn't be documented */}
-{/* Example: Don't document internal admin features */}
+## Agent: paperclip-setup-infraforge-specialist
+**Company**: InfraForge AI  
+**Reports To**: `orchestrator-infraforge-ceo`  
+**Role**: specialist  
+**Speciality**: Paperclip terminal setup, local development environment bootstrap, and Supabase connection configuration.
