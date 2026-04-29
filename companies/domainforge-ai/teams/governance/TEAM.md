@@ -25,5 +25,5 @@ Team responsible for strategic planning, governance standards, legal compliance,
 - legal-domainforge-legal-regulatory-compliance
 
 ### Mobile Workflows
-- mobile-workflow-designer-domainforge-mobile-workflow
-- mobile-testing-domainforge-mobile-testing
+- design-domainforge-design
+- quality-control-domainforge-quality-control

@@ -1,10 +1,12 @@
 ---
-name: Maya
+name: Content Strategist
+human_name: Content Strategist
 slug: maya-loopy-content-strategist
 reportsTo: vision-loopy-ceo
 skills:
   - maya-loopy-content-strategist
 ---
++++++++ REPLACE</parameter>
 
 # maya-loopy-content-strategist
 

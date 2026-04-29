@@ -1,6 +1,7 @@
 ---
-name: Council
+name: Governance Council
 slug: council-domainforge-governance-standards
+role: specialist
 reportsTo: orion-domainforge-ceo
 skills:
   - council-domainforge-governance-standards

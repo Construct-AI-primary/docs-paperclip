@@ -1,5 +1,6 @@
 ---
-name: Sam
+name: Social Media
+human_name: Social Media
 slug: sam-loopy-social-media-coordinator
 reportsTo: vision-loopy-ceo
 skills:

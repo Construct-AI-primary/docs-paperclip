@@ -1,6 +1,7 @@
 ---
 name: Procurement Strategy
 slug: procurement-strategy-domainforge-procurement-strategy
+role: specialist
 reportsTo: orion-domainforge-ceo
 skills:
   - procurement-strategy-domainforge-procurement-strategy

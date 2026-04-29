@@ -41,7 +41,6 @@ Infrastructure and systems integration company.
 - agents/nimbus-infraforge-supabase-specialist/AGENTS.md
 - agents/postgres-infraforge-postgresql/AGENTS.md
 - agents/render-deployment-infraforge-specialist/AGENTS.md
-- agents/paperclip-setup-infraforge-specialist/AGENTS.md
 - agents/supply-chain-integration-infraforge-supply-chain/AGENTS.md
 
 ## Skills
@@ -49,9 +48,6 @@ Infrastructure and systems integration company.
 - skills/orchestrator-infraforge-ceo/SKILL.md
 - skills/database-infraforge-database-infrastructure/SKILL.md
 - skills/mobile-api-infraforge-mobile-api-integration/SKILL.md
-- skills/nimbus-infraforge-supabase-specialist/SKILL.md
-- skills/postgres-infraforge-postgresql/SKILL.md
-- skills/paperclip-setup-infraforge-specialist/SKILL.md
 - skills/supply-chain-integration-infraforge-supply-chain/SKILL.md
 - skills/render-environment-integration/SKILL.md
 - skills/environment-variable-access/SKILL.md

@@ -17,4 +17,6 @@ Manages infrastructure services, database operations, mobile API integration, an
 - database-infraforge-database-infrastructure
 - mobile-api-infraforge-mobile-api-integration
 - nimbus-infraforge-supabase-specialist
+- postgres-infraforge-postgresql
+- render-deployment-infraforge-specialist
 - supply-chain-integration-infraforge-supply-chain

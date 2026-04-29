@@ -1,6 +1,7 @@
 ---
 name: Safety Officer
 slug: safety-domainforge-safety-risk-management
+role: specialist
 reportsTo: orion-domainforge-ceo
 skills:
   - safety-domainforge-safety-risk-management

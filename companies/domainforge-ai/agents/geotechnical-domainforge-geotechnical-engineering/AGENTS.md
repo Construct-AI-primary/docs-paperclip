@@ -1,6 +1,7 @@
 ---
 name: Geotechnical Engineer
 slug: geotechnical-domainforge-geotechnical-engineering
+role: specialist
 reportsTo: orion-domainforge-ceo
 skills:
   - geotechnical-domainforge-geotechnical-engineering

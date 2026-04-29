@@ -1,5 +1,6 @@
 ---
-name: Jordan
+name: Marketing Specialist
+human_name: Marketing Specialist
 slug: jordan-loopy-marketing-specialist
 reportsTo: vision-loopy-ceo
 skills:
