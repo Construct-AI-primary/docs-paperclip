@@ -3,28 +3,41 @@
 **Generated**: 2026-04-29
 **Total UI-UX-SPECIFICATION.md Files**: 78 (59 disciplines + 19 disciplines-shared)
 
+**Knowledge Symlink**: `/Users/_A_QA of code/paperclip-render/docs-paperclip/knowledge-environment` → `/Users/_A_QA of code/paperclip-render/docs-construct-ai/para/resources/locations`
+
+## Report Summary
+
+| Metric | Count |
+|--------|-------|
+| Disciplines (disciplines/) | 4 |
+| Disciplines (disciplines-shared/) | 4 |
+| **Total Disciplines** | **8** |
+| Projects (disciplines/) | 55 |
+| Projects (disciplines-shared/) | 15 |
+| **Total Projects** | **70** |
+| **Total Issue Files** | **479** |
+| **Total Coding Estimate** | **450 hours** |
+| Parallel (5 agents) | ~12 calendar days |
+
 ## Execution Priority Order
 
-Projects are prioritised into phases based on business value and dependency chains. Phase 1 establishes the testing infrastructure. Phase 2 delivers the core procurement workflow plus electrical engineering and safety. Subsequent phases will be added as prioritised.
+Projects are prioritised into phases based on business value and dependency chains. Phase 1 validates the workflow infrastructure with a single test project (PROCURE-TEST). Subsequent phases interleave discipline-specific testing sub-projects with their corresponding implementation phases.
 
 ### Phase 1: Testing (Foundation — Validate Workflow Infrastructure)
 
-All testing projects must be completed first to validate the OpenClaw desktop automation workflow infrastructure before production coding begins.
+Only PROCURE-TEST in Phase 1 to validate the OpenClaw desktop automation workflow infrastructure before production coding begins.
 
 | Priority | Project | Discipline | Spec Lines | Issues | OpenClaw Time |
 |----------|---------|------------|------------|--------|---------------|
-| P1-1 | MOBILE-TEST | testing | 99 | 7 | 4 hours |
 | P1-2 | PROCURE-TEST | testing | 129 | 17 | 16 hours (2 days) |
-| P1-3 | PROD-TEST | testing | 129 | 17 | 16 hours (2 days) |
 
-### Phase 2a: Electrical Engineering
+### Phase: Voice Communication Core (Shared Foundation)
 
-Electrical engineering discipline workflows and voice interactions.
+Shared cross-discipline voice communication core — provides the modal container, state machine, VoiceForge AI integration, document attachment system, and audit logging that all discipline-specific voice projects consume. Must be completed before any voice-enabled discipline project (PROC-VOICE, SAFE-VOICE, CON-VOICE, CPRE-VOICE, CPOST-VOICE, QS-VOICE, LOG-VOICE, ENG-VOICE, ELEC-VOICE, etc.).
 
 | Priority | Project | Discipline | Spec Lines | Issues | OpenClaw Time |
 |----------|---------|------------|------------|--------|---------------|
-| P2a-1 | ELEC-VOICE | 00860-electrical-engineering | 116 | 5 | 4 hours |
-| P2a-2 | ELEC-WORKFLOW | 00860-electrical-engineering | 127 | 9 | 8 hours |
+| VC-1 | VOICE-COMM | voice-communication | 99 | 7 | 4 hours |
 
 ### Phase 2b: Procurement + Bidding
 
@@ -50,6 +63,14 @@ Procurement order management projects including bidding and tendering platforms.
 | P2b-16 | PROC-VETTING | 01900-procurement | 251 | 0 | 8 hours |
 | P2b-17 | PROC-VOICE | 01900-procurement | 219 | 10 | 8 hours |
 
+### Phase: SAFETY-TEST (Validation — Safety Workflow Infrastructure)
+
+Safety discipline testing to validate safety workflow automation infrastructure.
+
+| Priority | Project | Discipline | Spec Lines | Issues | OpenClaw Time |
+|----------|---------|------------|------------|--------|---------------|
+| ST-1 | SAFETY-TEST | testing | 129 | 17 | 16 hours (2 days) |
+
 ### Phase 2c: Safety
 
 Safety and compliance projects including contractor vetting, emergency response, hazard management, and training.
@@ -66,6 +87,31 @@ Safety and compliance projects including contractor vetting, emergency response,
 | P2c-8 | SAFETY-PPE | 02400-safety | 102 | 12 | 8 hours |
 | P2c-9 | SAFETY-RESEARCH-ENHANCEMENT | 02400-safety | 102 | 13 | 16 hours (2 days) |
 | P2c-10 | SAFETY-TRAINING | 02400-safety | 102 | 8 | 8 hours |
+
+### Phase: ELEC-TEST (Validation — Electrical Engineering Workflow Infrastructure)
+
+Electrical engineering discipline testing to validate electrical workflow automation infrastructure.
+
+| Priority | Project | Discipline | Spec Lines | Issues | OpenClaw Time |
+|----------|---------|------------|------------|--------|---------------|
+| ET-1 | ELEC-TEST | testing | 129 | 17 | 16 hours (2 days) |
+
+### Phase 2a: Electrical Engineering
+
+Electrical engineering discipline workflows and voice interactions.
+
+| Priority | Project | Discipline | Spec Lines | Issues | OpenClaw Time |
+|----------|---------|------------|------------|--------|---------------|
+| P2a-1 | ELEC-VOICE | 00860-electrical-engineering | 116 | 5 | 4 hours |
+| P2a-2 | ELEC-WORKFLOW | 00860-electrical-engineering | 127 | 9 | 8 hours |
+
+### Phase: QS-TEST (Validation — Quantity Surveying Workflow Infrastructure)
+
+Quantity surveying and contracts discipline testing to validate measurement workflow automation infrastructure.
+
+| Priority | Project | Discipline | Spec Lines | Issues | OpenClaw Time |
+|----------|---------|------------|------------|--------|---------------|
+| QT-1 | QS-TEST | testing | 129 | 17 | 16 hours (2 days) |
 
 ### Phase 2d: Contracts + Quantity Surveying
 
@@ -89,6 +135,23 @@ Contracts management (pre-award, post-award) and quantity surveying workflows su
 | P3-4 | MEASURE-COMM | measurement | 96 | 6 | 4 hours |
 | P3-5 | MEASURE-TEMPLATES | measurement | 84 | 2 | 2 hours |
 | P3-6 | MEASURE-TENDER | measurement | 105 | 9 | 8 hours |
+
+### Phase: LOGIS-TEST (Validation — Logistics Workflow Infrastructure)
+
+Logistics discipline testing to validate logistics workflow automation infrastructure.
+
+| Priority | Project | Discipline | Spec Lines | Issues | OpenClaw Time |
+|----------|---------|------------|------------|--------|---------------|
+| LT-1 | LOGIS-TEST | testing | 129 | 17 | 16 hours (2 days) |
+
+### Phase: Logistics (Platform + Voice)
+
+Logistics platform and voice interaction projects, following LOGIS-TEST validation.
+
+| Priority | Project | Discipline | Spec Lines | Issues | OpenClaw Time |
+|----------|---------|------------|------------|--------|---------------|
+| P5-23 | LOG-VOICE | 01700-logistics | 235 | 7 | 4 hours |
+| P5-24 | LOGISTICS-PLATFORM | 01700-logistics | 320 | 20 | 16 hours (2 days) |
 
 ### Phase 4: Engineering
 
@@ -119,15 +182,13 @@ Contracts management (pre-award, post-award) and quantity surveying workflows su
 | P5-15 | STRUC-VOICE | 00872-structural | 118 | 5 | 4 hours |
 | P5-16 | ENV-WORKFLOW | 01000-environmental | 140 | 1 | 2 hours |
 | P5-17 | ENV-VOICE | 01000-environmental | 118 | 5 | 4 hours |
-| P5-18 | LOG-VOICE | 01700-logistics | 235 | 7 | 4 hours |
-| P5-19 | LOGISTICS-PLATFORM | 01700-logistics | 320 | 20 | 16 hours (2 days) |
-| P5-20 | INTEGRATION-SETTINGS-UI | 02050-information-technology | 285 | 5 | 8 hours |
-| P5-21 | SECURITY-ASSET | 02500-security | 316 | 18 | 16 hours (2 days) |
-| P5-22 | SUNDRY-WORKFLOW | 03000-sundry | 137 | 1 | 2 hours |
-| P5-23 | SAAS-PROD-PREP | saas-operations | 93 | 5 | 4 hours |
-| P5-24 | VOICE-COMM | voice-communication | 99 | 7 | 4 hours |
+| P5-18 | INTEGRATION-SETTINGS-UI | 02050-information-technology | 285 | 5 | 8 hours |
+| P5-19 | SECURITY-ASSET | 02500-security | 316 | 18 | 16 hours (2 days) |
+| P5-20 | SUNDRY-WORKFLOW | 03000-sundry | 137 | 1 | 2 hours |
+| P5-21 | SAAS-PROD-PREP | saas-operations | 93 | 5 | 4 hours |
+| P5-22 | MOBILE-TEST | testing | 99 | 7 | 4 hours |
+| P5-23 | PROD-TEST | testing | 129 | 17 | 16 hours (2 days) |
 
-> **Note**: Additional phases will be inserted here as new priorities emerge.
 ---
 
 ## Section 1: Projects by Discipline (disciplines/)
