@@ -68,6 +68,7 @@ API Specialist specializes in mobile API integration, backend communication, dat
 **Role:** Mobile API Integration Specialist
 **Reports To:** Mobile-Maestro
 **Backup Agents:** Mobile-Developer, Cloud-Connector
+**See Also:** [APISpecialist AGENTS.md](../../agents/mobileforge-ai-APISpecialist/AGENTS.md)
 
 ## Success Metrics
 - API response time: <200ms average API response time
@@ -89,4 +90,4 @@ API Specialist specializes in mobile API integration, backend communication, dat
 **OpenStinger Context:** Mobile API integration continuity, synchronization knowledge
 **PARA Classification:** Mobile API development, data synchronization, backend communication
 **Related Skills:** Mobile-Maestro, Mobile-Developer, Cloud-Connector, Security-Guardian
-**Last Updated:** 2026-04-10
+**Last Updated:** 2026-05-05

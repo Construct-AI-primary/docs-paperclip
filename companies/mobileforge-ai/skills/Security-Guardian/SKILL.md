@@ -68,6 +68,7 @@ Security Guardian specializes in mobile security implementation, data protection
 **Role:** Mobile Security Specialist
 **Reports To:** Mobile-Maestro
 **Backup Agents:** Cloud-Connector, API-Specialist
+**See Also:** [SecurityGuardian AGENTS.md](../../agents/mobileforge-ai-SecurityGuardian/AGENTS.md)
 
 ## Success Metrics
 - Security compliance: 100% adherence to security standards and regulations
@@ -89,4 +90,4 @@ Security Guardian specializes in mobile security implementation, data protection
 **OpenStinger Context:** Mobile security continuity, threat landscape knowledge
 **PARA Classification:** Mobile security, threat prevention, compliance management
 **Related Skills:** Mobile-Maestro, Cloud-Connector, API-Specialist, Testing-Coordinator
-**Last Updated:** 2026-04-10
+**Last Updated:** 2026-05-05

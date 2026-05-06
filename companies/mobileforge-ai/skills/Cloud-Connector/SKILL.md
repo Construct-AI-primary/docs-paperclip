@@ -68,6 +68,7 @@ Cloud Connector specializes in mobile cloud integration, backend services manage
 **Role:** Cloud Integration Specialist
 **Reports To:** Mobile-Maestro
 **Backup Agents:** API-Specialist, Security-Guardian
+**See Also:** [CloudConnector AGENTS.md](../../agents/mobileforge-ai-CloudConnector/AGENTS.md)
 
 ## Success Metrics
 - API response time: <200ms average response time for mobile API calls
@@ -89,4 +90,4 @@ Cloud Connector specializes in mobile cloud integration, backend services manage
 **OpenStinger Context:** Cloud integration continuity, mobile backend knowledge
 **PARA Classification:** Mobile cloud integration, backend services, cloud architecture
 **Related Skills:** Mobile-Maestro, API-Specialist, Security-Guardian, Device-Controller
-**Last Updated:** 2026-04-10
+**Last Updated:** 2026-05-05

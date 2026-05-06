@@ -68,6 +68,7 @@ Testing Coordinator specializes in mobile app testing coordination, quality assu
 **Role:** Mobile Testing Specialist
 **Reports To:** Mobile-Maestro
 **Backup Agents:** Mobile-Developer, UI-UX-Specialist
+**See Also:** [TestingCoordinator AGENTS.md](../../agents/mobileforge-ai-TestingCoordinator/AGENTS.md)
 
 ## Success Metrics
 - Test coverage: ≥90% code coverage and ≥95% critical path coverage
@@ -89,4 +90,4 @@ Testing Coordinator specializes in mobile app testing coordination, quality assu
 **OpenStinger Context:** Mobile testing continuity, automation framework knowledge
 **PARA Classification:** Mobile app testing, quality assurance, test automation
 **Related Skills:** Mobile-Maestro, Mobile-Developer, UI-UX-Specialist, Performance-Optimizer
-**Last Updated:** 2026-04-10
+**Last Updated:** 2026-05-05

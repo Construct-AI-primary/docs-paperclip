@@ -68,6 +68,7 @@ Mobile Developer specializes in mobile application development, cross-platform c
 **Role:** Mobile Application Developer
 **Reports To:** Mobile-Maestro
 **Backup Agents:** App-Manager, UI-UX-Specialist
+**See Also:** [MobileDeveloper AGENTS.md](../../agents/mobileforge-ai-MobileDeveloper/AGENTS.md)
 
 ## Success Metrics
 - Development velocity: ≥95% completion of assigned mobile development tasks
@@ -89,4 +90,4 @@ Mobile Developer specializes in mobile application development, cross-platform c
 **OpenStinger Context:** Mobile development continuity, cross-platform implementation knowledge
 **PARA Classification:** Mobile application development, cross-platform coding, native feature implementation
 **Related Skills:** Mobile-Maestro, UI-UX-Specialist, API-Specialist, Testing-Coordinator
-**Last Updated:** 2026-04-10
+**Last Updated:** 2026-05-05

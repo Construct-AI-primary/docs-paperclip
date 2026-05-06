@@ -68,6 +68,7 @@ UI-UX Specialist specializes in mobile user interface design, user experience op
 **Role:** Mobile Interface Designer
 **Reports To:** Mobile-Maestro
 **Backup Agents:** Mobile-Developer, App-Manager
+**See Also:** [UIUXSpecialist AGENTS.md](../../agents/mobileforge-ai-UIUXSpecialist/AGENTS.md)
 
 ## Success Metrics
 - User satisfaction: ≥85% positive user feedback on interface design
@@ -89,4 +90,4 @@ UI-UX Specialist specializes in mobile user interface design, user experience op
 **OpenStinger Context:** Mobile UI/UX design continuity, user research knowledge
 **PARA Classification:** Mobile interface design, user experience optimization, interaction design
 **Related Skills:** Mobile-Maestro, Mobile-Developer, Testing-Coordinator, Performance-Optimizer
-**Last Updated:** 2026-04-10
+**Last Updated:** 2026-05-05

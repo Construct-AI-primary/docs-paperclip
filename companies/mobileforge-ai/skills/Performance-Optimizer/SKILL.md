@@ -68,6 +68,7 @@ Performance Optimizer specializes in mobile performance optimization, battery ef
 **Role:** Mobile Performance Specialist
 **Reports To:** Mobile-Maestro
 **Backup Agents:** Mobile-Developer, Testing-Coordinator
+**See Also:** [PerformanceOptimizer AGENTS.md](../../agents/mobileforge-ai-PerformanceOptimizer/AGENTS.md)
 
 ## Success Metrics
 - App launch time: <2 seconds cold start, <1 second warm start
@@ -89,4 +90,4 @@ Performance Optimizer specializes in mobile performance optimization, battery ef
 **OpenStinger Context:** Mobile performance continuity, device optimization knowledge
 **PARA Classification:** Mobile performance optimization, battery efficiency, memory management
 **Related Skills:** Mobile-Maestro, Mobile-Developer, Testing-Coordinator, UI-UX-Specialist
-**Last Updated:** 2026-04-10
+**Last Updated:** 2026-05-05

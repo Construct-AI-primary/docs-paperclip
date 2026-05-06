@@ -68,6 +68,7 @@ Mobile Maestro specializes in mobile application strategy, cross-platform develo
 **Role:** Mobile Development CEO
 **Reports To:** Paperclip Board
 **Backup Agents:** App-Manager, Mobile-Developer
+**See Also:** [MobileMaestro AGENTS.md](../../agents/mobileforge-ai-MobileMaestro/AGENTS.md)
 
 ## Success Metrics
 - App store ratings: ≥4.5 stars average across platforms
@@ -89,4 +90,4 @@ Mobile Maestro specializes in mobile application strategy, cross-platform develo
 **OpenStinger Context:** Mobile development leadership continuity, platform strategy knowledge
 **PARA Classification:** Mobile application strategy, cross-platform development, mobile ecosystem orchestration
 **Related Skills:** App-Manager, Mobile-Developer, UI-UX-Specialist, Testing-Coordinator
-**Last Updated:** 2026-04-10
+**Last Updated:** 2026-05-05
